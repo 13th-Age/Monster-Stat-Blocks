@@ -57,8 +57,6 @@ function GenerateStatBlocks() {
 					+ $(this).find("select.bookList option:selected").val()
 					+ ',"monster":'
 					+ $(this).find("select.monsterList option:selected").val()
-					+ ',"quantity":'
-					+ $(this).find("input.monsterQuantity").val()
 					+ "}"
 				)
 			}).get().join();
@@ -94,8 +92,6 @@ function InitialPopulate() {
 		+ "<td><button class='DeleteRow'>-</button></td>"
 		+ "<td><select class='bookList'>" + html_bookOptions + "</select></td>"
 		+ "<td><select class='monsterList'><option disabled selected></option></select></td>"
-		+ "<td><input class='spinner monsterQuantity' min='1' max='10' value='1' size='2'></td>"
-		+ "<td></td>"
 		+ "</tr>";
 
 	AddRow();
@@ -113,5 +109,4 @@ function MonsterSelectPopulate(ui) {
 
 $(document).ready(function() {
 	$("button").button();
-	$("input.spinner").spinner();
 });

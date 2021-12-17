@@ -21,8 +21,6 @@ Name: <input id="EncounterName">
 	<td></td>
 	<td>Book</td>
 	<td>Monster</td>
-	<td>Quantity</td>
-	<td>Options</td>
 </tr>
 </thead>
 <tbody>
