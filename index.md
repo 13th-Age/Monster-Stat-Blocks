@@ -1,6 +1,49 @@
 ---
+jQueryHead: true
 ---
 
-# Testing
+This website uses trademarks and/or copyrights owned by Fire Opal Media, which are used under the Fire Opal Media, 13th Age Community Use Policy.
+We are expressly prohibited from charging you to use or access this content.
+This website is not published, endorsed, or specifically approved by Fire Opal Media.
+For more information about Fire Opal Media’s 13th Age Community Use Policy, please visit [www.fireopalmedia.com/13th-age-community-use](www.fireopalmedia.com/13th-age-community-use).
+For more information about Fire Opal Media and 13th Age products, please visit [www.fireopalmedia.com](www.fireopalmedia.com) and [www.pelgranepress.com](www.pelgranepress.com).
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+# Encounter
+
+Name: <input id="EncounterName">
+
+<button onclick="AddRow()">Add Row</button>
+<button onclick="GenerateStatBlocks()">Generate</button>
+
+<table id="Encounter">
+<thead>
+<tr>
+	<td></td>
+	<td>Book</td>
+	<td>Monster</td>
+	<td>Quantity</td>
+	<td>Options</td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+
+
+
+<script src="{{ 'assets/js/index.js?v=' | append: site.github.build_revision }}"></script>
+
+<script>
+$(document).ready(function() {
+	//Get Monster List Data
+	$.get(
+		"{{ 'assets/json/MonsterList.json?v=' | append: site.github.build_revision }}"
+		,function(data){
+			monsterList = $(data).toArray();
+
+			InitialPopulate();
+		}
+	);
+});
+</script>
