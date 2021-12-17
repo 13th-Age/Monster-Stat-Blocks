@@ -1,0 +1,235 @@
+[{
+		"name": "13th Age"
+		, "monsters": [{
+				"name": "Dire Rat"
+				, "size": "normal"
+				, "level": 1
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 2
+				, "AC": 15
+				, "PD": 15
+				, "MD": 10
+				, "HP": 6
+				, "attacks": [{
+					"name": "Infected Bite"
+					, "specialTrigger": false
+					, "type": "melee"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "4 ongoing damage"
+					, "extraEffects": []
+				}]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Squealing pack attack"
+					, "effect": "This creature gains +1 attack bonus per other dire rat engaged with the target it's attacking."
+				}]
+			}
+			, {
+				"name": "Giant Ant"
+				, "size": "normal"
+				, "level": 0
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 0
+				, "AC": 14
+				, "PD": 13
+				, "MD": 9
+				, "HP": 20
+				, "attacks": [{
+					"name": "Mandibles"
+					, "specialTrigger": false
+					, "type": "melee"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The target also takes 1d3 ongoing acid damage."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Wall-crawler"
+					, "effect": "A giant ant can climb on ceilings and walls as easily as it moves on the ground."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Giant Scorpion"
+				, "size": "normal"
+				, "level": 1
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 6
+				, "AC": 16
+				, "PD": 15
+				, "MD": 10
+				, "HP": 22
+				, "attacks": [{
+						"name": "Pincer"
+						, "specialTrigger": false
+						, "type": "melee"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "1 damage, and the scorpion gains a +2 attack bonus against the same target this turn with its <em>stinger</em> attack."
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "2/round, each requiring a quick action.  (Hitting the same target twice with <em>pincer</em> gives the <em>string</em> attack a +4 bonus.)"
+						}]
+					}
+					, {
+						"name": "Stinger"
+						, "specialTrigger": false
+						, "type": "melee"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "3 damage, and 3 ongoing poison damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Giant Web Spider"
+				, "size": "large"
+				, "level": 2
+				, "role": "blocker"
+				, "type": "beast"
+				, "initiative": 4
+				, "AC": 17
+				, "PD": 16
+				, "MD": 12
+				, "HP": 68
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "melee"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage, and 5 ongoing poison damage."
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target also takes 2d6 ongoing poison damage if it's dazed or stuck."
+						}]
+					}
+					, {
+						"name": "Web"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": "up to 2 nearby enemies in a group"
+						, "damage": "3 damage, and the target is dazed until the end of the spider's next turn."
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "The target is also stuck until the end of the spider's next turn."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Wall-crawler"
+					, "effect": "A giant web spider can climb on ceilings and walls as easily as it moves on the ground."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Hunting Spider"
+				, "size": "normal"
+				, "level": 2
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 6
+				, "AC": 17
+				, "PD": 14
+				, "MD": 11
+				, "HP": 34
+				, "attacks": [{
+					"name": "Bite"
+					, "specialTrigger": false
+					, "type": "melee"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "8 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The target also takes 1d8 ongoing poison damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Scuttle"
+						, "effect": "A hunting spider can turn its own failed disengage check into a success by taking 1d4 damage."
+					}
+					, {
+						"name": "Wall-crawler"
+						, "effect": "A hunting spider can climb on ceilings and walls as easily as it moves on the ground."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
+		"name": "13 True Ways"
+		, "monsters": [{
+			"name": "Dire Boar"
+			, "size": "large"
+			, "level": 5
+			, "role": "troop"
+			, "type": "beast"
+			, "initiative": 6
+			, "AC": 18
+			, "PD": 16
+			, "MD": 12
+			, "HP": 180
+			, "attacks": [{
+					"name": "Battle-hardened tusks"
+					, "specialTrigger": false
+					, "type": "melee"
+					, "modifier": 13
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "22 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The fire boar can make a <em>bash</em> attack against a different target as a free action."
+					}]
+				}
+				, {
+					"name": "Bash"
+					, "specialTrigger": true
+					, "type": "melee"
+					, "modifier": 10
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "The target is weakened (-4 to attacks and defences) until the end of the boar's next turn."
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+					"name": "Bestial durability"
+					, "effect": "When an enemy's attack has an effect on the dire boar other than damage, the boar can roll and immediate hard save (16+); on a success, it negates that effect."
+				}
+				, {
+					"name": "Last stand"
+					, "effect": "The board doesn't die until it reaches -60 hp.  While at 0 hp or below but more than -60 hp, it must roll a normal save at the end of each of its turns; on a failure it dies."
+				}
+				, {
+					"name": "One random dire feature"
+					, "effect": "Use the dire features table or add something spicy."
+				}
+			]
+			, "nastierSpecials": [{
+				"name": "Furious streak"
+				, "effect": "When the dire boar can make a <em>bash</em> attack, if it isn't engaged with a different enemy, as a free action it can pop free of the enemy engaged with it and mvoe to a nearby enemy to make that <em>bash</em> attack."
+			}]
+		}]
+	}
+]

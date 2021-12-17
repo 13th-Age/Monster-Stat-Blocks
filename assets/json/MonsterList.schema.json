@@ -1,0 +1,279 @@
+{
+	"type": "array"
+	, "title": "Books"
+	, "format": "tabs-top"
+	, "uniqueItems": true
+	, "items": {
+		"type": "object"
+		, "title": "Book"
+		, "headerTemplate": "{{ self.name }}"
+		, "required": [
+			"name"
+			, "monsters"
+		]
+		, "properties": {
+			"name": {
+				"type": "string"
+				, "title": "Name"
+				, "minLength": 1
+			}
+			, "monsters": {
+				"type": "array"
+				, "title": "Monsters"
+				, "format": "tabs"
+				, "uniqueItems": true
+				, "items": {
+					"type": "object"
+					, "title": "Monster"
+					, "format": "grid-strict"
+					, "headerTemplate": "{{ self.name }}"
+					, "required": [
+						"name"
+						, "size"
+						, "level"
+						, "role"
+						, "type"
+						, "initiative"
+						, "AC"
+						, "PD"
+						, "MD"
+						, "HP"
+						, "attacks"
+						, "abilities"
+						, "nastierSpecials"
+					]
+					, "properties": {
+						"name": {
+							"type": "string"
+							, "title": "Name"
+							, "minLength": 1
+						}
+						, "size": {
+							"type": "string"
+							, "title": "Size"
+							, "enum": [
+								"normal"
+								, "large"
+								, "huge"
+							]
+						}
+						, "level": {
+							"type": "number"
+							, "title": "Level"
+							, "minimum": 0
+							, "maximum": 15
+						}
+						, "role": {
+							"type": "string"
+							, "title": "Role"
+							, "enum": [
+								"archer"
+								, "blocker"
+								, "caster"
+								, "leader"
+								, "mook"
+								, "spoiler"
+								, "troop"
+								, "wrecker"
+							]
+						}
+						, "type": {
+							"type": "string"
+							, "title": "Type"
+							, "enum": [
+								"aberration"
+								, "beast"
+								, "construct"
+								, "demon"
+								, "dragon"
+								, "giant"
+								, "humanoid"
+								, "ooze"
+								, "plant"
+								, "undead"
+							]
+							, "default": "beast"
+						}
+						, "initiative": {
+							"type": "number"
+							, "title": "Initiative"
+							, "minimum": 0
+							, "maximum": 18
+						}
+						, "AC": {
+							"type": "number"
+							, "title": "AC"
+							, "minimum": 0
+						}
+						, "PD": {
+							"type": "number"
+							, "title": "PD"
+							, "minimum": 0
+						}
+						, "MD": {
+							"type": "number"
+							, "title": "MD"
+							, "minimum": 0
+						}
+						, "HP": {
+							"type": "number"
+							, "title": "HP"
+							, "minimum": 0
+						}
+						, "attacks": {
+							"type": "array"
+							, "title": "Attacks"
+							, "format": "tabs-top"
+							, "uniqueItems": true
+							, "items": {
+								"type": "object"
+								, "title": "Attack"
+								, "format": "grid-strict"
+								, "headerTemplate": "{{ self.name }}"
+								, "required": [
+									"name"
+									, "specialTrigger"
+									, "type"
+									, "modifier"
+									, "defence"
+									, "target"
+									, "damage"
+									, "extraEffects"
+								]
+								, "properties": {
+									"name": {
+										"type": "string"
+										, "title": "Name"
+										, "minLength": 1
+									}
+									, "specialTrigger": {
+										"type": "boolean"
+										, "title": "Special Trigger?"
+										, "default": false
+									}
+									, "type": {
+										"type": "string"
+										, "title": "Type"
+										, "enum": [
+											"melee"
+											, "ranged"
+											, "close"
+										]
+									}
+									, "modifier": {
+										"type": "number"
+										, "title": "Modifier"
+										, "minimum": 0
+									}
+									, "defence": {
+										"type": "string"
+										, "title": "Defence"
+										, "enum": [
+											"AC"
+											, "PD"
+											, "MD"
+										]
+										, "default": "AC"
+									}
+									, "target": {
+										"type": "string"
+										, "title": "Target"
+									}
+									, "damage": {
+										"type": "string"
+										, "title": "Damage"
+										, "minLength": 1
+									}
+									, "extraEffects": {
+										"type": "array"
+										, "title": "Extra Effects"
+										, "format": "tabs-top"
+										, "uniqueItems": true
+										, "items": {
+											"type": "object"
+											, "title": "Extra Effect"
+											, "format": "grid-strict"
+											, "headerTemplate": "{{ self.trigger }}"
+											, "required": [
+												"trigger"
+												, "effect"
+											]
+											, "properties": {
+												"trigger": {
+													"type": "string"
+													, "title": "Trigger"
+													, "minLength": 1
+												}
+												, "effect": {
+													"type": "string"
+													, "title": "Effect"
+													, "minLength": 1
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						, "abilities": {
+							"type": "array"
+							, "title": "Abilities"
+							, "format": "tabs-top"
+							, "uniqueItems": true
+							, "items": {
+								"type": "object"
+								, "title": "Ability"
+								, "format": "grid-strict"
+								, "headerTemplate": "{{ self.name }}"
+								, "required": [
+									"name"
+									, "effect"
+								]
+								, "properties": {
+									"name": {
+										"type": "string"
+										, "title": "Name"
+										, "minLength": 1
+									}
+									, "effect": {
+										"type": "string"
+										, "title": "Effect"
+										, "minLength": 1
+									}
+								}
+							}
+						}
+						, "nastierSpecials": {
+							"type": "array"
+							, "title": "Nastier Specials"
+							, "format": "tabs-top"
+							, "uniqueItems": true
+							, "items": {
+								"type": "object"
+								, "title": "Nastier Special"
+								, "format": "grid-strict"
+								, "headerTemplate": "{{ self.name }}"
+								, "required": [
+									"name"
+									, "effect"
+								]
+								, "properties": {
+									"name": {
+										"type": "string"
+										, "title": "Name"
+										, "minLength": 1
+									}
+									, "effect": {
+										"type": "string"
+										, "title": "Effect"
+										, "minLength": 1
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
