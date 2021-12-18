@@ -1,6 +1,268 @@
 [{
 		"name": "13th Age"
 		, "monsters": [{
+				"name": "Ankheg"
+				, "size": "large"
+				, "level": 2
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 8
+				, "AC": 19
+				, "PD": 17
+				, "MD": 11
+				, "HP": 60
+				, "attacks": [{
+						"name": "Mandibles"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "If the target is small (i.e. a gnome or halfling), the ankheg grabs it.  While the ankheg is grabbing a creature, the only legal target for its <em>mandibles</em> attack is the grabbed creature."
+						}]
+					}
+					, {
+						"name": "Acid spit"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": "one nearby enemy, plus any enemy the ankheg has grabbed"
+						, "damage": "5 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/round, as a quick action."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Escape speed"
+					, "effect": "At the end of the ankheg's turn, roll a d6.  If it's equal to or less than the escalation die, the ankheg can move again as a free action."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Bear"
+				, "size": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 4
+				, "AC": 17
+				, "PD": 16
+				, "MD": 12
+				, "HP": 45
+				, "attacks": [{
+					"name": "Bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The target takes +1d6 damage from a claw swipe."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Bulette"
+				, "size": "large"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 7
+				, "AC": 22
+				, "PD": 19
+				, "MD": 14
+				, "HP": 170
+				, "attacks": [{
+						"name": "Gigantic claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Dual hit"
+							, "effect": "If both claws hit during the same turn, the bulette can make a <em>terrible bite</em> attack during its next turn as a standard action."
+						}]
+					}
+					, {
+						"name": "Terrible bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "45 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "22 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Blood frenzy"
+						, "effect": "The bulette's crit range expands to 16+ while the escalation die is 4+."
+					}
+					, {
+						"name": "Serious burrower"
+						, "effect": "A bulette can burrow incredibly quickly for short distances.  They're renowned for the mounds of dirt and rock they push above them as they surge through the ground like land torpedoes."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Savage response"
+					, "effect": "When an attacker scores a critical hit against the bulette and it survives, the bulette can make a <em>terrible bite</em> attack as a free action against one target engaged with it."
+				}]
+			}
+			, {
+				"name": "Chimera"
+				, "size": "large"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 15
+				, "AC": 24
+				, "PD": 20
+				, "MD": 16
+				, "HP": 320
+				, "attacks": [{
+						"name": "Fangs, claws, and horns"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "3 attacks"
+						, "damage": "25 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 14-15"
+								, "effect": "The target is dazed until the end of the chimera's next turn from a headbutt."
+							}
+							, {
+								"trigger": "Natural 16-17"
+								, "effect": "The target takes 20 ongoing damage from raking claws."
+							}
+							, {
+								"trigger": "Natural 18-20"
+								, "effect": "The chimera makes a <em>fiery breath</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "up to 3 nearby enemies in a group"
+						, "damage": "3d10 fire damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Bestial thresher"
+					, "effect": "Whenever a creature misses the chimera with a melee attack, the chimera's multiple sharp bits deal 3d10 damage to that attacker."
+				}]
+				, "nastierSpecials": [{
+					"name": "Now it's angry"
+					, "effect": "When an attacker scores a critical hit against the chimera and it survives, its attack rolls on its next turn deal the effects of the lower rolls as well as their own results; for example, a roll 18-20 would daze the target and deal 20 ongoing damage as well as triggering <em>fiery breath</em>."
+				}]
+			}
+			, {
+				"name": "Despoiler"
+				, "size": "normal"
+				, "level": 4
+				, "role": "caster"
+				, "type": "demon"
+				, "initiative": 9
+				, "AC": 19
+				, "PD": 14
+				, "MD": 18
+				, "HP": 52
+				, "attacks": [{
+						"name": "Horns and daggers"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "5 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The despoiler can pop free from the target."
+						}]
+					}
+					, {
+						"name": "Abyssal whispers"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "15 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 6d6 psychic damage."
+						, "extraEffects": []
+					}
+					, {
+						"name": "Sow discord"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "2 nearby enemies engaged with the same creature or with each other"
+						, "damage": "one target makes an at-will melee attack against this power's other target"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/day, as a quick action"
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Dire Bear"
+				, "size": "large"
+				, "level": 4
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 7
+				, "AC": 19
+				, "PD": 19
+				, "MD": 14
+				, "HP": 130
+				, "attacks": [{
+					"name": "Bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "24 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The target takes +2d6 damage from a claw swipe."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Savage"
+						, "effect": "The dire bear gains a +2 attack bonus against staggered enemies."
+					}
+					, {
+						"name": "One dire feature"
+						, "effect": "Roll randomly unless you know this beast's story already."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Dire Rat"
 				, "size": "normal"
 				, "level": 1
@@ -14,7 +276,7 @@
 				, "attacks": [{
 					"name": "Infected Bite"
 					, "specialTrigger": false
-					, "type": "melee"
+					, "type": "normal"
 					, "modifier": 5
 					, "defence": "AC"
 					, "target": ""
@@ -26,6 +288,68 @@
 					"name": "Squealing pack attack"
 					, "effect": "This creature gains +1 attack bonus per other dire rat engaged with the target it's attacking."
 				}]
+			}
+			, {
+				"name": "Dire Wolf"
+				, "size": "large"
+				, "level": 3
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 6
+				, "AC": 18
+				, "PD": 17
+				, "MD": 13
+				, "HP": 80
+				, "attacks": [{
+					"name": "Vicious bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "18 damage"
+					, "extraEffects": [{
+						"trigger": "Pack attack"
+						, "effect": "This creature gains a +2 bonus to attack and damage for each other ally engaged with the target (max +4 bonus)."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Chilling howl"
+						, "effect": "Whenever a dire wolf's attack drops an enemy to 0 hp or below, all dire wolves in the battle can howl as a free action.  When the wolves howl, each enemy in the battle takes a penalty to its attacks and all defences equal to the number of living dire wolves in the battle (max -5) until the end of the attacking wolf's next turn.  New howls extend the duration of the current howl rather than downgrading the howl's effect if dire wolves have been slain in the meantime."
+					}
+					, {
+						"name": "One dire feature"
+						, "effect": "Roll randomly unless you know this beast's story already."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Dretch"
+				, "size": "normal"
+				, "level": 3
+				, "role": "mook"
+				, "type": "demon"
+				, "initiative": 5
+				, "AC": 17
+				, "PD": 15
+				, "MD": 11
+				, "HP": 13
+				, "attacks": [{
+					"name": "Claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Fear"
+					, "effect": "While engaged with this creature, enemies that have 15 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+				}]
+				, "nastierSpecials": []
 			}
 			, {
 				"name": "Giant Ant"
@@ -41,7 +365,7 @@
 				, "attacks": [{
 					"name": "Mandibles"
 					, "specialTrigger": false
-					, "type": "melee"
+					, "type": "normal"
 					, "modifier": 5
 					, "defence": "AC"
 					, "target": ""
@@ -71,7 +395,7 @@
 				, "attacks": [{
 						"name": "Pincer"
 						, "specialTrigger": false
-						, "type": "melee"
+						, "type": "normal"
 						, "modifier": 6
 						, "defence": "PD"
 						, "target": ""
@@ -84,7 +408,7 @@
 					, {
 						"name": "Stinger"
 						, "specialTrigger": false
-						, "type": "melee"
+						, "type": "normal"
 						, "modifier": 6
 						, "defence": "AC"
 						, "target": ""
@@ -109,7 +433,7 @@
 				, "attacks": [{
 						"name": "Bite"
 						, "specialTrigger": false
-						, "type": "melee"
+						, "type": "normal"
 						, "modifier": 7
 						, "defence": "AC"
 						, "target": ""
@@ -153,7 +477,7 @@
 				, "attacks": [{
 					"name": "Bite"
 					, "specialTrigger": false
-					, "type": "melee"
+					, "type": "normal"
 					, "modifier": 6
 					, "defence": "AC"
 					, "target": ""
@@ -174,6 +498,79 @@
 				]
 				, "nastierSpecials": []
 			}
+			, {
+				"name": "Imp"
+				, "size": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "demon"
+				, "initiative": 8
+				, "AC": 20
+				, "PD": 13
+				, "MD": 16
+				, "HP": 40
+				, "attacks": [{
+						"name": "Festering claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "3 damage, and 5 ongoing damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Blight jet"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "7 damage, and the target is dazed (save ends)"
+						, "extraEffects": [{
+							"trigger": "First natural 16+ each turn"
+							, "effect": "The imp can choose one: the target is weakened instead of dazed; OR the imp can make a <em>blight jet</em> attack against a different target as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Curse aura"
+						, "effect": "Whenever a creature attacks the imp and rolls a natural 1-5, that creature takes 1d10 psychic damage."
+					}
+					, {
+						"name": "Flight"
+						, "effect": ""
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Wolf"
+				, "size": "normal"
+				, "level": 1
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 4
+				, "AC": 17
+				, "PD": 15
+				, "MD": 11
+				, "HP": 28
+				, "attacks": [{
+					"name": "Bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "5 damage"
+					, "extraEffects": [{
+						"trigger": "Pack attack"
+						, "effect": "This creature gains a +2 bonus to attack and damage for each other ally engaged with the target (max +4 damage)."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
 		]
 	}
 	, {
@@ -192,7 +589,7 @@
 			, "attacks": [{
 					"name": "Battle-hardened tusks"
 					, "specialTrigger": false
-					, "type": "melee"
+					, "type": "normal"
 					, "modifier": 13
 					, "defence": "AC"
 					, "target": ""
@@ -205,7 +602,7 @@
 				, {
 					"name": "Bash"
 					, "specialTrigger": true
-					, "type": "melee"
+					, "type": "normal"
 					, "modifier": 10
 					, "defence": "PD"
 					, "target": ""
