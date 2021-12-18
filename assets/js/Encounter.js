@@ -36,12 +36,13 @@ function CreateStatBlocks() {
 			+ "<tr>"
 				+ "<td>AC</td>"
 				+ "<td>" + monsterDetails.AC + "</td>"
-				+ "<td rowspan='4'>Initiative "
+				+ "<td rowspan='4' style='padding: 5px 10px 5px 30px; text-indent: -20px;'><p>Initiative "
 					+ ((monsterDetails.initiative >= 0) ? "+" : "")
 					+ monsterDetails.initiative;
+					+ "</p>"
 
 		monsterDetails.attacks.forEach(function(attack,i){
-			html += "<br><br>"
+			html += "<p>"
 				+ ((attack.specialTrigger == true) ? "<em>[Special trigger]</em> " : "")
 				+ "<strong>"
 					+ ((attack.type == "close") ? "C: " : "")
@@ -51,31 +52,30 @@ function CreateStatBlocks() {
 					+ " vs. " + attack.defence
 					+ ((attack.target != "") ? " (" + attack.target + ")" : "")
 				+ "</strong> - "
-				+ attack.damage
-				;
+				+ attack.damage;
 
 			attack.extraEffects.forEach(function(extraEffect,i){
 				html += "<br>"
-					+ "&emsp;<em>" + extraEffect.trigger + "</em>: "
+					+ "<em>" + extraEffect.trigger + "</em>: "
 					+ extraEffect.effect;
 			});
+
+			html += "</p>";
 		});
 
 		if (monsterDetails.abilities.length != 0) {
-			html += "<br>";
+			monsterDetails.abilities.forEach(function(ability,i){
+				html += "<p><em>" + ability.name + "</em>: " + ability.effect + "</p>";
+			});
 		}
-
-		monsterDetails.abilities.forEach(function(ability,i){
-			html += "<br><em>" + ability.name + "</em>: " + ability.effect;
-		});
 
 		if (monsterDetails.nastierSpecials.length != 0) {
-			html += "<br><br><strong>Nastier Specials</strong>";
-		}
+			html += "<p><strong>Nastier Specials</strong></p>";
 
-		monsterDetails.nastierSpecials.forEach(function(nastierSpecial,i){
-			html += "<br><em>" + nastierSpecial.name + "</em>: " + nastierSpecial.effect;
-		});
+			monsterDetails.nastierSpecials.forEach(function(nastierSpecial,i){
+				html += "<p><em>" + nastierSpecial.name + "</em>: " + nastierSpecial.effect + "</p>";
+			});
+		}
 
 		html += "</td>"
 				+ "<td>" + Capitalise(monsterDetails.size) + "</td>"
