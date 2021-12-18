@@ -75,7 +75,7 @@
 						, "modifier": 6
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "1 damage, and the scorpion gains a +2 attack bonus against the same target this turn with its <em>stinger</em> attack."
+						, "damage": "1 damage, and the scorpion gains a +2 attack bonus against the same target this turn with its <em>stinger</em> attack"
 						, "extraEffects": [{
 							"trigger": "Limited use"
 							, "effect": "2/round, each requiring a quick action.  (Hitting the same target twice with <em>pincer</em> gives the <em>string</em> attack a +4 bonus.)"
@@ -113,7 +113,7 @@
 						, "modifier": 7
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "5 damage, and 5 ongoing poison damage."
+						, "damage": "5 damage, and 5 ongoing poison damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
 							, "effect": "The target also takes 2d6 ongoing poison damage if it's dazed or stuck."
@@ -126,7 +126,7 @@
 						, "modifier": 7
 						, "defence": "PD"
 						, "target": "up to 2 nearby enemies in a group"
-						, "damage": "3 damage, and the target is dazed until the end of the spider's next turn."
+						, "damage": "3 damage, and the target is dazed until the end of the spider's next turn"
 						, "extraEffects": [{
 							"trigger": "Natural 18+"
 							, "effect": "The target is also stuck until the end of the spider's next turn."
