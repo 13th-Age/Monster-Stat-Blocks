@@ -115,5 +115,5 @@ function Capitalise(string) {
 
 $(document).ready(function() {
 	monsterArray = JSON.parse(getUrlParameter('monsters'));
-	$("section#title h1").html(getUrlParameter('name'))
+	$("section#title h1").text(getUrlParameter('name'))
 });
