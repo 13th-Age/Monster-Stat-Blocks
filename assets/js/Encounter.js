@@ -48,8 +48,12 @@ function CreateStatBlocks() {
 					+ ((attack.type == "close") ? "C: " : "")
 					+ ((attack.type == "ranged") ? "R: " : "")
 					+ attack.name + " "
-					+ ((attack.modifier >= 0) ? "+" : "") + attack.modifier
-					+ " vs. " + attack.defence
+					+ (
+						(attack.defence != "")
+						? ((attack.modifier >= 0) ? "+" : "") + attack.modifier
+							+ " vs. " + attack.defence
+						: ""
+					)
 					+ ((attack.target != "") ? " (" + attack.target + ")" : "")
 				+ "</strong> - "
 				+ attack.damage;

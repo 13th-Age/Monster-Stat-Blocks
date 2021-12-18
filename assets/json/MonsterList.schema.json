@@ -170,7 +170,8 @@
 										"type": "string"
 										, "title": "Defence"
 										, "enum": [
-											"AC"
+											""
+											, "AC"
 											, "PD"
 											, "MD"
 										]
