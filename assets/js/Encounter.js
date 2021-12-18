@@ -65,7 +65,9 @@ function CreateStatBlocks() {
 
 		if (monsterDetails.abilities.length != 0) {
 			monsterDetails.abilities.forEach(function(ability,i){
-				html += "<p><em>" + ability.name + "</em>: " + ability.effect + "</p>";
+				html += "<p><em>" + ability.name + "</em>"
+					+ ((ability.effect != "") ? ": " + ability.effect : "")
+					+ "</p>";
 			});
 		}
 

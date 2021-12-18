@@ -238,7 +238,6 @@
 									, "effect": {
 										"type": "string"
 										, "title": "Effect"
-										, "minLength": 1
 									}
 								}
 							}
