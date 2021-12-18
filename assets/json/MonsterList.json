@@ -45,6 +45,76 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Balor (Flame Demon)"
+				, "size": "large"
+				, "level": 13
+				, "role": "wrecker"
+				, "type": "demon"
+				, "initiative": 17
+				, "AC": 29
+				, "PD": 27
+				, "MD": 23
+				, "HP": 850
+				, "attacks": [{
+						"name": "Abyssal blade"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 18
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "160 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The balor deals +1d20 lightning damage to the target and to one other nearby enemy of balor's choice.  Then repeat that damage roll against the targets once for each point on the escalation die (so if it's 4, that's four more d20 rolls)."
+							}
+							, {
+								"trigger": "Natural even miss"
+								, "effect": "80 damage."
+							}
+						]
+					}
+					, {
+						"name": "Flaming whip"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 18
+						, "defence": "PD"
+						, "target": "one nearby enemy"
+						, "damage": "50 fire damage, and the target is pulled to the balor, who engages it"
+						, "extraEffects": [{
+								"trigger": "Natural even miss"
+								, "effect": "25 fire damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/round, as a quick action."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Desperate escalator"
+						, "effect": "White staggered, the balor adds the escalation die to its attack rolls."
+					}
+					, {
+						"name": "Fiery aura"
+						, "effect": "At the start of the balor's turn, each enemy engaged with it takes 4d10 fire damage; any die result of 10 is kept and the die rerolled."
+					}
+					, {
+						"name": "Flight"
+						, "effect": ""
+					}
+					, {
+						"name": "Shadow and flame"
+						, "effect": "The balor gains +5 bonus to all defences against attacks by far away enemies."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Vorpal blade"
+					, "effect": "Critical hits with the abyssal blade deal triple damage instead of double damage."
+				}]
+			}
+			, {
 				"name": "Bear"
 				, "size": "normal"
 				, "level": 2
@@ -217,7 +287,7 @@
 						, "modifier": 9
 						, "defence": "MD"
 						, "target": "2 nearby enemies engaged with the same creature or with each other"
-						, "damage": "one target makes an at-will melee attack against this power's other target"
+						, "damage": "One target makes an at-will melee attack against this power's other target"
 						, "extraEffects": [{
 							"trigger": "Limited use"
 							, "effect": "1/day, as a quick action"
@@ -225,6 +295,73 @@
 					}
 				]
 				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Despoiler Mage"
+				, "size": "normal"
+				, "level": 9
+				, "role": "caster"
+				, "type": "demon"
+				, "initiative": 14
+				, "AC": 24
+				, "PD": 19
+				, "MD": 23
+				, "HP": 170
+				, "attacks": [{
+						"name": "Horns and swords"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The despoiler mage can pop free from the target."
+						}]
+					}
+					, {
+						"name": "Abyssal whispers"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "45 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 10d10 psychic damage to clear their head…"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Magic missile"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 0
+						, "defence": ""
+						, "target": "one nearby or far away enemy"
+						, "damage": "10 automatic force damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/round, as a quick action."
+						}]
+					}
+					, {
+						"name": "Sow discord"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "2 nearby enemies engaged with the same creature or with each other"
+						, "damage": "One target makes an at-will melee attack against this power's other target"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, as quick action."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Aura of betrayal"
+					, "effect": "At the start of each of the despoiler mage's turns, choose a random nearby enemy.  Until the start of the despoiler mage's next turn, that creature's allies no longer consider it an ally, though its enemies' powers can still target it as an enemy.  The creature isn't compelled to attack its former friends."
+				}]
 				, "nastierSpecials": []
 			}
 			, {
@@ -352,6 +489,33 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Frenzy Demon"
+				, "size": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "demon"
+				, "initiative": 10
+				, "AC": 21
+				, "PD": 17
+				, "MD": 17
+				, "HP": 70
+				, "attacks": [{
+					"name": "Claw"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "9 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Raging frenzy"
+					, "effect": "Whenever the frenzy demon misses with a melee attack, it gains a +1 attack bonus and deals +1d4 damage until the end of the battle (maximum bonus +4, +4d4)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Giant Ant"
 				, "size": "normal"
 				, "level": 0
@@ -420,6 +584,60 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Giant Vrock (Vulture Demon)"
+				, "size": "large"
+				, "level": 9
+				, "role": "spoiler"
+				, "type": "demon"
+				, "initiative": 12
+				, "AC": 24
+				, "PD": 21
+				, "MD": 21
+				, "HP": 333
+				, "attacks": [{
+						"name": "Giant filth-covered claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "30 damage, and 15 ongoing poison damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The vrock can make a <em>demonic screech</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Demonic screech"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "15 psychic damage, and the target is vulnerable (<em>attacks vs. it have crit range expanded by 2</em>) until the end of the battle"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Sporeburst"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "all nearby enemies"
+						, "damage": "30 damage, and 30 ongoing damage; while the target is taking ongoing damage, it is hampered"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, when the escalation die is 4+."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Predation"
+					, "effect": "Creatures hit by the vrock's <em>demonic screech</em> attack that are already vulnerable are also hampered (save ends)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Giant Web Spider"
 				, "size": "large"
 				, "level": 2
@@ -462,6 +680,144 @@
 					, "effect": "A giant web spider can climb on ceilings and walls as easily as it moves on the ground."
 				}]
 				, "nastierSpecials": []
+			}
+			, {
+				"name": "Glabrezou (Pincer Demon)"
+				, "size": "large"
+				, "level": 8
+				, "role": "caster"
+				, "type": "demon"
+				, "initiative": 16
+				, "AC": 22
+				, "PD": 22
+				, "MD": 18
+				, "HP": 320
+				, "attacks": [{
+						"name": "Pincer"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "45 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The demon can grab the target as long as it isn't already grabbing a creature.  The grabbed foe can't move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the glabrezou with an attack that turn."
+							}
+							, {
+								"trigger": "Attack bonus"
+								, "effect": "The glabrezou gains a +4 attack bonus against any enemy it is grabbing."
+							}
+						]
+					}
+					, {
+						"name": "Painbolt"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "one nearby or far away creature"
+						, "damage": "70 psychic damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Hellfire"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies in a group <em>and</em> any glabrezou allies engaged with those enemies"
+						, "damage": "50 fire damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Mirror images"
+						, "effect": "At will, as a move action, a glabrezou can create multiple images of itself that make it harder to target.  The next time an attack would hit the glabrezou, the attacker has to roll 11+ with another d20 roll: success indicates a hit; failure is a miss that hits one of the mirror images instead, dealing no miss damage to the glabrezou but dispelling all the images."
+					}
+					, {
+						"name": "Mirror images whilst staggered"
+						, "effect": "Once the glabrezou is staggered, it takes 2d10 damage whenever it uses <em>mirror image</em>, so movement or escape start registering as alternatives."
+					}
+					, {
+						"name": "Power word stun"
+						, "effect": "Once per day as a free action, the glabrezou can utter a word of power, canceling a single action just taken by a nearby creature with fewer hit points than the glabrezou - whether it was casting a spell, healing an ally, or whatever.  The GM can see the results of the action, such as a die roll, before deciding whether to use the <em>power word</em>."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Hezrou (Toad Demon)"
+				, "size": "large"
+				, "level": 7
+				, "role": "troop"
+				, "type": "demon"
+				, "initiative": 11
+				, "AC": 22
+				, "PD": 16
+				, "MD": 20
+				, "HP": 210
+				, "attacks": [{
+					"name": "Meaty, clawed hands"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 12
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "28 damage"
+					, "extraEffects": [{
+							"trigger": "Any hit"
+							, "effect": "The demon can grab the target if it isn't already grabbing a creature.  The grabbed foe can't move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the hezrou with an attack that turn."
+						}
+						, {
+							"trigger": "Attack bonus"
+							, "effect": "The hezrou gains a +4 attack bonus against any enemy it is grabbing."
+						}
+					]
+				}]
+				, "abilities": [{
+					"name": "Demonic stench"
+					, "effect": "While engaged with this creature, enemies with 84hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+				}]
+				, "nastierSpecials": [{
+						"name": "Abyssal sergeant"
+						, "effect": "Lower-level non-mook demons nearby the hezrou deal damage equal to their level when they miss with an attack."
+					}
+					, {
+						"name": "Stab this now"
+						, "effect": "The hezrou's allies gain a +4 attack bonus against any creature it is grabbing."
+					}
+				]
+			}
+			, {
+				"name": "Hooked Demon"
+				, "size": "normal"
+				, "level": 9
+				, "role": "mook"
+				, "type": "demon"
+				, "initiative": 12
+				, "AC": 23
+				, "PD": 21
+				, "MD": 17
+				, "HP": 45
+				, "attacks": [{
+					"name": "Hooks and barbs"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 14
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "27 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The hooked demon can make another <em>hooks and barbs</em> attack as a free action (and yes, this can keep going up to a maximum number of attacks equal to the escalation die + 1)."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Bleeding wounds"
+					, "effect": "Whenever the hooked demon hits a creature with <em>hooks and barbs</em>, that creature takes 10 damage each time it makes a non-basic attack (save ends)."
+				}]
 			}
 			, {
 				"name": "Hunting Spider"
@@ -543,6 +899,147 @@
 					}
 				]
 				, "nastierSpecials": []
+			}
+			, {
+				"name": "Marilith (Serpent Demon)"
+				, "size": "large"
+				, "level": 12
+				, "role": "troop"
+				, "type": "demon"
+				, "initiative": 20
+				, "AC": 28
+				, "PD": 21
+				, "MD": 25
+				, "HP": 666
+				, "attacks": [{
+						"name": "Six whirling swords"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": "6 attacks"
+						, "damage": "30 damage, and the marilith can pop free from the target after the attacks"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Beguiling gaze"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 17
+						, "defence": "MD"
+						, "target": "one nearby or far away unengaged enemy"
+						, "damage": "As a free action, the target immediately moves toward the marilith, attempting to engage it or get as close as possible to it"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/round, as a quick action."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Terrible swift swords"
+					, "effect": "The marilith's crit range with melee attacks expands by a number equal to the escalation die."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Nalfeshnee (Boar Demon)"
+				, "size": "large"
+				, "level": 10
+				, "role": "caster"
+				, "type": "demon"
+				, "initiative": 13
+				, "AC": 25
+				, "PD": 20
+				, "MD": 24
+				, "HP": 400
+				, "attacks": [{
+						"name": "Musky claw or slimy hoof"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "90 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The nalfeshnee gains a +4 attack bonus until it hits.  Unlike most effects, let it stack."
+						}]
+					}
+					, {
+						"name": "Accursed burst"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "50 cold/fire/lightning/negative energy damage (your choice), and the nalfeshnee can make an <em>abyssal curse</em> attack as a free action"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Abyssal curse"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "MD"
+						, "target": "each creature hit by <em>accursed burst</em>"
+						, "damage": "The target is weakened until the end of its next turn"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": ""
+					}
+					, {
+						"name": "Unpredictable"
+						, "effect": "Nalfeshnee always have at least two random demon abilities."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Hooked mooks"
+					, "effect": "Once per battle, if the nalfeshnee is staggered, it can gat in 2d4 hooked demons as a quick action.  Roll initiative for the hooked demons; they do not appear in the battle and take their turns until their next initiative count comes up."
+				}]
+			}
+			, {
+				"name": "Vrock (Vulture Demon)"
+				, "size": "normal"
+				, "level": 6
+				, "role": "spoiler"
+				, "type": "demon"
+				, "initiative": 9
+				, "AC": 21
+				, "PD": 17
+				, "MD": 17
+				, "HP": 88
+				, "attacks": [{
+						"name": "Filth-covered claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "7 damage, and 5 ongoing poison damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The vrock can make a <em>demonic screech</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Demonic screech"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "5 psychic damage, and the target is vulnerable (<em>attacks vs. it have crit range expanded by 2</em>) until the end of the battle"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Predation"
+					, "effect": "Creatures hit by the vrock's <em>demonic screech</em> attack that are already vulnerable are also hampered (save ends)."
+				}]
 			}
 			, {
 				"name": "Wolf"
