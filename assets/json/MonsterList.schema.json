@@ -98,7 +98,7 @@
 							"type": "number"
 							, "title": "Initiative"
 							, "minimum": 0
-							, "maximum": 18
+							, "maximum": 20
 						}
 						, "AC": {
 							"type": "number"
