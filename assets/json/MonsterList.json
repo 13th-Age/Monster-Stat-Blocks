@@ -918,6 +918,297 @@
 				}]
 			}
 			, {
+				"name": "Huge Black Dragon"
+				, "size": "huge"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 17
+				, "AC": 25
+				, "PD": 23
+				, "MD": 21
+				, "HP": 510
+				, "attacks": [{
+						"name": "Claws and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "3 attacks"
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target also takes 15 ongoing acid damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "20 damage."
+							}
+						]
+					}
+					, {
+						"name": "Acid breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d3 nearby or far away enemies"
+						, "damage": "50 acid damage, and 15 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "4d12 acid damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Draconic grace"
+						, "effect": "At the start of each of the huge black dragon’s turns, roll a d4 to see if it gets an extra standard action.  If the roll is equal to or less than the escalation die, the black dragon can take an extra standard action that turn.<br>&emsp;After the first sucess, the grace die bumps up to a d6.  After the second success, it’s a d8, then a d10 after the third success.  The fourth success is a d12, and finally a d20 after the fifth one."
+					}
+					, {
+						"name": "Intermittent breath"
+						, "effect": "A huge black dragon can use <em>acid breath</em> 2d3 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Water-breathing"
+						, "effect": "Black dragons swim well and can breathe underwater."
+					}
+					, {
+						"name": "Resist acid 18+"
+						, "effect": "When an acid attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge Blue Dragon"
+				, "size": "huge"
+				, "level": 12
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 17
+				, "AC": 29
+				, "PD": 26
+				, "MD": 26
+				, "HP": 980
+				, "attacks": [{
+						"name": "Double claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "50 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The dragon can make a <em>bite</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "60 damage, and 4d10 lightning damage to the target and to one other nearby enemy of the dragon’s choice"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Far slashing lightning breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "1d6 nearby or far away enemies"
+						, "damage": "80 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is also dazed (save ends).  After the target saves, it takes a -1 attack penalty (non-cumulative) until its next full heal-up (because it’s vibrating slightly out of synch with the rest of the world)."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Intermittent breath"
+						, "effect": "A huge blue dragon can use <em>far slashing lightning breath</em> 2d4 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Counter-spell"
+						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+: impossible unless the dragon has a save bonus from some other source)."
+					}
+					, {
+						"name": "Resist lightning 18+"
+						, "effect": "When a lightning attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge Green Dragon"
+				, "size": "huge"
+				, "level": 11
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 15
+				, "AC": 28
+				, "PD": 25
+				, "MD": 20
+				, "HP": 900
+				, "attacks": [{
+						"name": "Sharp claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "100 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 11-15"
+								, "effect": "The dragon can make a <em>bite</em> attack as a free action."
+							}
+							, {
+								"trigger": "Natural 16+"
+								, "effect": "The dragon can make a <em>poison breath</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "140 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 20 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Poison breath"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "100 poison damage, and the target is hampered (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Burrow"
+						, "effect": ""
+					}
+					, {
+						"name": "Resist poison 18+"
+						, "effect": "When a poison attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge Red Dragon"
+				, "size": "huge"
+				, "level": 13
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 19
+				, "AC": 28
+				, "PD": 27
+				, "MD": 23
+				, "HP": 1200
+				, "attacks": [{
+						"name": "Fangs, claws, and tail"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 19
+						, "defence": "AC"
+						, "target": "3 attacks"
+						, "damage": "70 damage"
+						, "extraEffects": [{
+								"trigger": "First natural even hit or miss each turn"
+								, "effect": "Roll a fourth <em>fangs, claws, and tail</em> attack."
+							}
+							, {
+								"trigger": "Second natural even hit or miss each turn"
+								, "effect": "Roll a fifth <em>fangs, claws, and tail</em> attack."
+							}
+						]
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 19
+						, "defence": "PD"
+						, "target": "2d3 nearby or far away enemies"
+						, "damage": "80 fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage"
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Intermittent breath"
+						, "effect": "A huge red dragon can use <em>fiery breath</em> 1d6 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Fear"
+						, "effect": "While engaged with this creature, enemies with 144 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge White Dragon"
+				, "size": "huge"
+				, "level": 5
+				, "role": "troop"
+				, "type": "dragon"
+				, "initiative": 10
+				, "AC": 21
+				, "PD": 18
+				, "MD": 14
+				, "HP": 200
+				, "attacks": [{
+						"name": "Claws and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "25 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The white dragon can make an <em>ice breath</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Ice breath"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "20 cold damage"
+						, "extraEffects": [{
+							"trigger": "Natural odd hit or miss"
+							, "effect": "The dragon takes 2d8 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Resist cold 18+"
+					, "effect": "When a cold attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Hunting Spider"
 				, "size": "normal"
 				, "level": 2
@@ -999,6 +1290,287 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Large Black Dragon"
+				, "size": "large"
+				, "level": 6
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 13
+				, "AC": 22
+				, "PD": 20
+				, "MD": 19
+				, "HP": 160
+				, "attacks": [{
+						"name": "Claws and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 10 ongoing acid damage."
+						}]
+					}
+					, {
+						"name": "Acid breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "20 acid damage, and 10 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "10 acid damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Draconic grace"
+						, "effect": "At the start of each of the black dragon’s turns, roll a d6 to see if it gets an extra standard action.  If the roll is equal to or less than the escalation die, the black dragon can take an extra standard action that turn.<br>&emsp;After the first success, the grace die bumps up to a d8.  After the second success, it’s a d10, then a d12 after the third success, and finally a d20 after the fourth one."
+					}
+					, {
+						"name": "Intermittent breath"
+						, "effect": "A large black dragon can use <em>acid breath</em> 1d3 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Water-breathing"
+						, "effect": "Black dragons swim will and can breathe underwater."
+					}
+					, {
+						"name": "Resist acid 16+"
+						, "effect": "When an acid attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large Blue Dragon"
+				, "size": "large"
+				, "level": 8
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 13
+				, "AC": 25
+				, "PD": 22
+				, "MD": 22
+				, "HP": 260
+				, "attacks": [{
+						"name": "Double claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The dragon can make a <em>bite</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage, and 2d10 lightning damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Lightning breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "1d3 nearby or far away enemies"
+						, "damage": "40 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is also dazed (save ends)."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Intermittent breath"
+						, "effect": "A large blue dragon can use <em>lightning breath</em> 1d6 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Counter-spell"
+						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+: impossible unless the dragon has a save bonus from some other source)."
+					}
+					, {
+						"name": "Resist lightning 16+"
+						, "effect": "When a lightning attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large Green Dragon"
+				, "size": "large"
+				, "level": 7
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 11
+				, "AC": 24
+				, "PD": 21
+				, "MD": 16
+				, "HP": 230
+				, "attacks": [{
+						"name": "Sharp claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "25 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 11-15"
+								, "effect": "The dragon can make a <em>bite</em> attack as a free action."
+							}
+							, {
+								"trigger": "Natural 16+"
+								, "effect": "The draon can make a <em>poison breath</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "38 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 10 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Posion breath"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "25 poison damage, and the target is hampered (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Burrow"
+						, "effect": ""
+					}
+					, {
+						"name": "Resist poison 16+"
+						, "effect": "When an acid attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large Red Dragon"
+				, "size": "large"
+				, "level": 10
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 13
+				, "AC": 25
+				, "PD": 24
+				, "MD": 20
+				, "HP": 400
+				, "attacks": [{
+						"name": "Fangs, claws, and tail"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "35 damage"
+						, "extraEffects": [{
+							"trigger": "First natural even hit or miss each turn"
+							, "effect": "Roll a third <em>fangs, claws, and tail</em> attack."
+						}]
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "40 fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Intermittent breath"
+						, "effect": "A large red dragon can use <em>fiery breath</em> 1d4 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Fear"
+						, "effect": "While engaged with this creature, enemies with 72 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					}
+					, {
+						"name": "Resist fire 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large White Dragon"
+				, "size": "large"
+				, "level": 4
+				, "role": "troop"
+				, "type": "dragon"
+				, "initiative": 8
+				, "AC": 20
+				, "PD": 17
+				, "MD": 13
+				, "HP": 104
+				, "attacks": [{
+						"name": "Claws and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The white dragon can make an <em>ice breath</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Ice breath"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "10 cold damage"
+						, "extraEffects": [{
+							"trigger": "Natural odd hit or miss"
+							, "effect": "The dragon takes 2d4 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Resist cold 16+"
+					, "effect": "When a cold attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Marilith (Serpent Demon)"
 				, "size": "large"
 				, "level": 12
@@ -1036,6 +1608,283 @@
 				, "abilities": [{
 					"name": "Terrible swift swords"
 					, "effect": "The marilith’s crit range with melee attacks expands by a number equal to the escalation die."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Black Dragon"
+				, "size": "normal"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 9
+				, "AC": 19
+				, "PD": 17
+				, "MD": 15
+				, "HP": 42
+				, "attacks": [{
+						"name": "Claws and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "4 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 4 ongoing acid damage."
+						}]
+					}
+					, {
+						"name": "Acid breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "5 acid damage, and 5 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "3 acid damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Draconic grace"
+						, "effect": "At the start of each of the black dragon’s turns, roll a d6 to see if it gets an extra standard action.  If the roll is equal to or less than the escalation die, the black dragon can take an extra standard action that turn.<br>&emsp;After the first success, the grace die bumps up to a d8.  After the second success, it’s a d10, then a d12 after the third success, and finally a d20 after the fourth one."
+					}
+					, {
+						"name": "Intermittent breath"
+						, "effect": "A medium black dragon can use <em>acid breath</em> 1d3 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Water breathing"
+						, "effect": "Black dragons swim well and can breathe underwater."
+					}
+					, {
+						"name": "Resist acid 12+"
+						, "effect": "When an acid attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Blue Dragon"
+				, "size": "normal"
+				, "level": 5
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 9
+				, "AC": 22
+				, "PD": 19
+				, "MD": 19
+				, "HP": 76
+				, "attacks": [{
+						"name": "Dragon claw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The dragon can make a <em>bite</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage, and 2d6 lightning damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Lightning breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "8 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is also dazed (save ends)."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Counter-spell"
+						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+: impossible unless the dragon has a save bonus from some other source)."
+					}
+					, {
+						"name": "Intermittent breath"
+						, "effect": "A medium blue dragon can use <em>lightning breath</em> 1d4 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Resist lightning 12+"
+						, "effect": "When a lightning attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Green Dragon"
+				, "size": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 9
+				, "AC": 21
+				, "PD": 18
+				, "MD": 14
+				, "HP": 60
+				, "attacks": [{
+						"name": "Sharp claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 11-15"
+								, "effect": "The dragon can make a <em>bite</em> attack as a free action."
+							}
+							, {
+								"trigger": "Natural 16+"
+								, "effect": "The dragon can make a <em>poison breath</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 5 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Poison breath"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "7 poison damage, and the target is hampered (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Burrow"
+						, "effect": ""
+					}
+					, {
+						"name": "Resist posion 12+"
+						, "effect": "When a poison attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Red Dragon"
+				, "size": "normal"
+				, "level": 6
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 11
+				, "AC": 21
+				, "PD": 20
+				, "MD": 16
+				, "HP": 90
+				, "attacks": [{
+						"name": "Fangs, claws, and tail"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "First natural even hit or miss each turn"
+							, "effect": "Roll another <em>fangs, claws, and tail</em> attack."
+						}]
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "2d3 nearby enemies"
+						, "damage": "10 fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Intermittent breath"
+						, "effect": "A medium red dragon can use <em>fiery breath</em> 1d3 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Resist fire 12+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll 12+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium White Dragon"
+				, "size": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "dragon"
+				, "initiative": 6
+				, "AC": 18
+				, "PD": 15
+				, "MD": 11
+				, "HP": 38
+				, "attacks": [{
+						"name": "Claws and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "4 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The white dragon can make an <em>ice breath</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Ice breath"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "4 cold damage"
+						, "extraEffects": [{
+							"trigger": "Natural odd hit or miss"
+							, "effect": "The dragon takes 1d4 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Resist cold 12+"
+					, "effect": "When a cold attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
 				}]
 				, "nastierSpecials": []
 			}
