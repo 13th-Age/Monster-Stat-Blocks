@@ -40,7 +40,7 @@
 				]
 				, "abilities": [{
 					"name": "Escape speed"
-					, "effect": "At the end of the ankheg's turn, roll a d6.  If it's equal to or less than the escalation die, the ankheg can move again as a free action."
+					, "effect": "At the end of the ankheg’s turn, roll a d6.  If it’s equal to or less than the escalation die, the ankheg can move again as a free action."
 				}]
 				, "nastierSpecials": []
 			}
@@ -65,7 +65,7 @@
 						, "damage": "160 damage"
 						, "extraEffects": [{
 								"trigger": "Natural even hit"
-								, "effect": "The balor deals +1d20 lightning damage to the target and to one other nearby enemy of balor's choice.  Then repeat that damage roll against the targets once for each point on the escalation die (so if it's 4, that's four more d20 rolls)."
+								, "effect": "The balor deals +1d20 lightning damage to the target and to one other nearby enemy of balor’s choice.  Then repeat that damage roll against the targets once for each point on the escalation die (so if it’s 4, that’s four more d20 rolls)."
 							}
 							, {
 								"trigger": "Natural even miss"
@@ -98,7 +98,7 @@
 					}
 					, {
 						"name": "Fiery aura"
-						, "effect": "At the start of the balor's turn, each enemy engaged with it takes 4d10 fire damage; any die result of 10 is kept and the die rerolled."
+						, "effect": "At the start of the balor’s turn, each enemy engaged with it takes 4d10 fire damage; any die result of 10 is kept and the die rerolled."
 					}
 					, {
 						"name": "Flight"
@@ -181,11 +181,11 @@
 				]
 				, "abilities": [{
 						"name": "Blood frenzy"
-						, "effect": "The bulette's crit range expands to 16+ while the escalation die is 4+."
+						, "effect": "The bulette’s crit range expands to 16+ while the escalation die is 4+."
 					}
 					, {
 						"name": "Serious burrower"
-						, "effect": "A bulette can burrow incredibly quickly for short distances.  They're renowned for the mounds of dirt and rock they push above them as they surge through the ground like land torpedoes."
+						, "effect": "A bulette can burrow incredibly quickly for short distances.  They’re renowned for the mounds of dirt and rock they push above them as they surge through the ground like land torpedoes."
 					}
 				]
 				, "nastierSpecials": [{
@@ -214,7 +214,7 @@
 						, "damage": "25 damage"
 						, "extraEffects": [{
 								"trigger": "Natural 14-15"
-								, "effect": "The target is dazed until the end of the chimera's next turn from a headbutt."
+								, "effect": "The target is dazed until the end of the chimera’s next turn from a headbutt."
 							}
 							, {
 								"trigger": "Natural 16-17"
@@ -239,10 +239,10 @@
 				]
 				, "abilities": [{
 					"name": "Bestial thresher"
-					, "effect": "Whenever a creature misses the chimera with a melee attack, the chimera's multiple sharp bits deal 3d10 damage to that attacker."
+					, "effect": "Whenever a creature misses the chimera with a melee attack, the chimera’s multiple sharp bits deal 3d10 damage to that attacker."
 				}]
 				, "nastierSpecials": [{
-					"name": "Now it's angry"
+					"name": "Now it’s angry"
 					, "effect": "When an attacker scores a critical hit against the chimera and it survives, its attack rolls on its next turn deal the effects of the lower rolls as well as their own results; for example, a roll 18-20 would daze the target and deal 20 ongoing damage as well as triggering <em>fiery breath</em>."
 				}]
 			}
@@ -271,7 +271,7 @@
 							}
 							, {
 								"trigger": "Cloaking dark"
-								, "effect": "All nearby derro gain a +1 bonus to attacks and defences until the end of the derro maniac's next turn (cumulative)."
+								, "effect": "All nearby derro gain a +1 bonus to attacks and defences until the end of the derro maniac’s next turn (cumulative)."
 							}
 							, {
 								"trigger": "Sonic squeal"
@@ -300,6 +300,59 @@
 				]
 				, "abilities": []
 				, "nastierSpecials": []
+			}
+			, {
+				"name": "Derro Sage"
+				, "size": "normal"
+				, "level": 4
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 7
+				, "AC": 18
+				, "PD": 15
+				, "MD": 18
+				, "HP": 40
+				, "attacks": [{
+						"name": "Staff"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The derro can cast one of the following close-quarters spells as a quick action this turn."
+							}
+							, {
+								"trigger": "Cloaking dark"
+								, "effect": "All nearby derro gain a +1 bonus to attacks and defences until end of the derro sage’s next turn (cumulative)."
+							}
+							, {
+								"trigger": "Sonic squeal"
+								, "effect": "Two random nearby non-derro creatures take 2d8 thunder damage."
+							}
+						]
+					}
+					, {
+						"name": "Mind scream"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "12 psychic damage, and the target is confused (<em>make a basic or at-will attack vs. ally</em>) until the end of the derro sage’s next turn"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The derro sage can make another <em>mind scream</em> attack against a different nearby target as a free action."
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Group gibbering"
+					, "effect": "The derro sage starts a group of derro gibbering as a quick action.  It can maintain the gibber as a free action at the start of each turn by taking 1 damage.  Each nearby non-derro creature that hears the gibber must roll a d6 at the start of its turn and takes psychic damage equal to the die roll or to the number of gibbering derro, whichever is lower."
+				}]
 			}
 			, {
 				"name": "Despoiler"
@@ -342,7 +395,7 @@
 						, "modifier": 9
 						, "defence": "MD"
 						, "target": "2 nearby enemies engaged with the same creature or with each other"
-						, "damage": "One target makes an at-will melee attack against this power's other target"
+						, "damage": "One target makes an at-will melee attack against this power’s other target"
 						, "extraEffects": [{
 							"trigger": "Limited use"
 							, "effect": "1/day, as a quick action"
@@ -406,7 +459,7 @@
 						, "modifier": 14
 						, "defence": "MD"
 						, "target": "2 nearby enemies engaged with the same creature or with each other"
-						, "damage": "One target makes an at-will melee attack against this power's other target"
+						, "damage": "One target makes an at-will melee attack against this power’s other target"
 						, "extraEffects": [{
 							"trigger": "Limited use"
 							, "effect": "1/battle, as quick action."
@@ -415,7 +468,7 @@
 				]
 				, "abilities": [{
 					"name": "Aura of betrayal"
-					, "effect": "At the start of each of the despoiler mage's turns, choose a random nearby enemy.  Until the start of the despoiler mage's next turn, that creature's allies no longer consider it an ally, though its enemies' powers can still target it as an enemy.  The creature isn't compelled to attack its former friends."
+					, "effect": "At the start of each of the despoiler mage’s turns, choose a random nearby enemy.  Until the start of the despoiler mage’s next turn, that creature’s allies no longer consider it an ally, though its enemies’ powers can still target it as an enemy.  The creature isn’t compelled to attack its former friends."
 				}]
 				, "nastierSpecials": []
 			}
@@ -449,7 +502,7 @@
 					}
 					, {
 						"name": "One dire feature"
-						, "effect": "Roll randomly unless you know this beast's story already."
+						, "effect": "Roll randomly unless you know this beast’s story already."
 					}
 				]
 				, "nastierSpecials": []
@@ -478,7 +531,7 @@
 				, "abilities": []
 				, "nastierSpecials": [{
 					"name": "Squealing pack attack"
-					, "effect": "This creature gains +1 attack bonus per other dire rat engaged with the target it's attacking."
+					, "effect": "This creature gains +1 attack bonus per other dire rat engaged with the target it’s attacking."
 				}]
 			}
 			, {
@@ -507,11 +560,11 @@
 				}]
 				, "abilities": [{
 						"name": "Chilling howl"
-						, "effect": "Whenever a dire wolf's attack drops an enemy to 0 hp or below, all dire wolves in the battle can howl as a free action.  When the wolves howl, each enemy in the battle takes a penalty to its attacks and all defences equal to the number of living dire wolves in the battle (max -5) until the end of the attacking wolf's next turn.  New howls extend the duration of the current howl rather than downgrading the howl's effect if dire wolves have been slain in the meantime."
+						, "effect": "Whenever a dire wolf’s attack drops an enemy to 0 hp or below, all dire wolves in the battle can howl as a free action.  When the wolves howl, each enemy in the battle takes a penalty to its attacks and all defences equal to the number of living dire wolves in the battle (max -5) until the end of the attacking wolf’s next turn.  New howls extend the duration of the current howl rather than downgrading the howl’s effect if dire wolves have been slain in the meantime."
 					}
 					, {
 						"name": "One dire feature"
-						, "effect": "Roll randomly unless you know this beast's story already."
+						, "effect": "Roll randomly unless you know this beast’s story already."
 					}
 				]
 				, "nastierSpecials": []
@@ -688,7 +741,7 @@
 				]
 				, "abilities": [{
 					"name": "Predation"
-					, "effect": "Creatures hit by the vrock's <em>demonic screech</em> attack that are already vulnerable are also hampered (save ends)."
+					, "effect": "Creatures hit by the vrock’s <em>demonic screech</em> attack that are already vulnerable are also hampered (save ends)."
 				}]
 				, "nastierSpecials": []
 			}
@@ -713,7 +766,7 @@
 						, "damage": "5 damage, and 5 ongoing poison damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
-							, "effect": "The target also takes 2d6 ongoing poison damage if it's dazed or stuck."
+							, "effect": "The target also takes 2d6 ongoing poison damage if it’s dazed or stuck."
 						}]
 					}
 					, {
@@ -723,10 +776,10 @@
 						, "modifier": 7
 						, "defence": "PD"
 						, "target": "up to 2 nearby enemies in a group"
-						, "damage": "3 damage, and the target is dazed until the end of the spider's next turn"
+						, "damage": "3 damage, and the target is dazed until the end of the spider’s next turn"
 						, "extraEffects": [{
 							"trigger": "Natural 18+"
-							, "effect": "The target is also stuck until the end of the spider's next turn."
+							, "effect": "The target is also stuck until the end of the spider’s next turn."
 						}]
 					}
 				]
@@ -757,7 +810,7 @@
 						, "damage": "45 damage"
 						, "extraEffects": [{
 								"trigger": "Natural even hit"
-								, "effect": "The demon can grab the target as long as it isn't already grabbing a creature.  The grabbed foe can't move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the glabrezou with an attack that turn."
+								, "effect": "The demon can grab the target as long as it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the glabrezou with an attack that turn."
 							}
 							, {
 								"trigger": "Attack bonus"
@@ -822,7 +875,7 @@
 					, "damage": "28 damage"
 					, "extraEffects": [{
 							"trigger": "Any hit"
-							, "effect": "The demon can grab the target if it isn't already grabbing a creature.  The grabbed foe can't move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the hezrou with an attack that turn."
+							, "effect": "The demon can grab the target if it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the hezrou with an attack that turn."
 						}
 						, {
 							"trigger": "Attack bonus"
@@ -840,7 +893,7 @@
 					}
 					, {
 						"name": "Stab this now"
-						, "effect": "The hezrou's allies gain a +4 attack bonus against any creature it is grabbing."
+						, "effect": "The hezrou’s allies gain a +4 attack bonus against any creature it is grabbing."
 					}
 				]
 			}
@@ -992,7 +1045,7 @@
 				]
 				, "abilities": [{
 					"name": "Terrible swift swords"
-					, "effect": "The marilith's crit range with melee attacks expands by a number equal to the escalation die."
+					, "effect": "The marilith’s crit range with melee attacks expands by a number equal to the escalation die."
 				}]
 				, "nastierSpecials": []
 			}
@@ -1093,7 +1146,7 @@
 				, "abilities": []
 				, "nastierSpecials": [{
 					"name": "Predation"
-					, "effect": "Creatures hit by the vrock's <em>demonic screech</em> attack that are already vulnerable are also hampered (save ends)."
+					, "effect": "Creatures hit by the vrock’s <em>demonic screech</em> attack that are already vulnerable are also hampered (save ends)."
 				}]
 			}
 			, {
@@ -1158,17 +1211,17 @@
 					, "modifier": 10
 					, "defence": "PD"
 					, "target": ""
-					, "damage": "The target is weakened (-4 to attacks and defences) until the end of the boar's next turn."
+					, "damage": "The target is weakened (-4 to attacks and defences) until the end of the boar’s next turn."
 					, "extraEffects": []
 				}
 			]
 			, "abilities": [{
 					"name": "Bestial durability"
-					, "effect": "When an enemy's attack has an effect on the dire boar other than damage, the boar can roll and immediate hard save (16+); on a success, it negates that effect."
+					, "effect": "When an enemy’s attack has an effect on the dire boar other than damage, the boar can roll and immediate hard save (16+); on a success, it negates that effect."
 				}
 				, {
 					"name": "Last stand"
-					, "effect": "The board doesn't die until it reaches -60 hp.  While at 0 hp or below but more than -60 hp, it must roll a normal save at the end of each of its turns; on a failure it dies."
+					, "effect": "The board doesn’t die until it reaches -60 hp.  While at 0 hp or below but more than -60 hp, it must roll a normal save at the end of each of its turns; on a failure it dies."
 				}
 				, {
 					"name": "One random dire feature"
@@ -1177,7 +1230,7 @@
 			]
 			, "nastierSpecials": [{
 				"name": "Furious streak"
-				, "effect": "When the dire boar can make a <em>bash</em> attack, if it isn't engaged with a different enemy, as a free action it can pop free of the enemy engaged with it and mvoe to a nearby enemy to make that <em>bash</em> attack."
+				, "effect": "When the dire boar can make a <em>bash</em> attack, if it isn’t engaged with a different enemy, as a free action it can pop free of the enemy engaged with it and mvoe to a nearby enemy to make that <em>bash</em> attack."
 			}]
 		}]
 	}
