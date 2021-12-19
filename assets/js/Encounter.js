@@ -28,7 +28,7 @@ function CreateStatBlocks() {
 	var html = "";
 
 	monsterArray.forEach(function(item,i){
-		var monsterDetails = monsterList[item.book].monsters[item.monster];
+		var monsterDetails = monsterList[item.book].monsterGroups[item.monsterGroup].monsters[item.monster];
 
 		html += "<h2>" + monsterDetails.name + "</h2>"
 			+ "<table>"

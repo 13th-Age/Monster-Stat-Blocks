@@ -57,6 +57,8 @@ function GenerateStatBlocks() {
 				return (
 					'{"book":'
 					+ $(this).find("select.bookList option:selected").val()
+					+ ',"monsterGroup":'
+					+ $(this).find("select.monsterList option:selected").parent().attr("value")
 					+ ',"monster":'
 					+ $(this).find("select.monsterList option:selected").val()
 					+ "}"
@@ -74,17 +76,19 @@ function GenerateStatBlocks() {
 
 
 function InitialPopulate() {
-	// monsterList.forEach(function(item,index){
-	// 	html_monsterOptions += "<option value='" + index + "'>" + item.name + "</option>";
-	// });
-
 	monsterList.forEach(function(item,i){
 		var monsters = "<option disabled selected></option>";
 
 		html_bookOptions += "<option value='" + i + "'>" + item.name + "</option>";
 
-		item.monsters.forEach(function(item,i){
-			monsters += "<option value='" + i + "'>" + item.name + "</option>";
+		item.monsterGroups.forEach(function(item,i){
+			monsters += "<optgroup label='" + item.name + "' value='" + i + "'>";
+
+			item.monsters.forEach(function(item,i){
+				monsters += "<option value='" + i + "'>" + item.name + "</option>";
+			});
+
+			monsters += "</optgroup>";
 		});
 		html_monsterOptions.push(monsters);
 	});
