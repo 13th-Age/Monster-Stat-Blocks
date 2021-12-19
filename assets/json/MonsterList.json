@@ -809,14 +809,9 @@
 						, "target": ""
 						, "damage": "45 damage"
 						, "extraEffects": [{
-								"trigger": "Natural even hit"
-								, "effect": "The demon can grab the target as long as it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the glabrezou with an attack that turn."
-							}
-							, {
-								"trigger": "Attack bonus"
-								, "effect": "The glabrezou gains a +4 attack bonus against any enemy it is grabbing."
-							}
-						]
+							"trigger": "Natural even hit"
+							, "effect": "The demon can grab the target as long as it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the glabrezou with an attack that turn.<br>&emsp;The glabrezou gains a +4 attack bonus against any enemy it is grabbing."
+						}]
 					}
 					, {
 						"name": "Painbolt"
@@ -874,14 +869,9 @@
 					, "target": "2 attacks"
 					, "damage": "28 damage"
 					, "extraEffects": [{
-							"trigger": "Any hit"
-							, "effect": "The demon can grab the target if it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the hezrou with an attack that turn."
-						}
-						, {
-							"trigger": "Attack bonus"
-							, "effect": "The hezrou gains a +4 attack bonus against any enemy it is grabbing."
-						}
-					]
+						"trigger": "Any hit"
+						, "effect": "The demon can grab the target if it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the hezrou with an attack that turn.<br>&emsp;The hezrou gains a +4 attack bonus against any enemy it is grabbing."
+					}]
 				}]
 				, "abilities": [{
 					"name": "Demonic stench"
