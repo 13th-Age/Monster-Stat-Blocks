@@ -247,6 +247,61 @@
 				}]
 			}
 			, {
+				"name": "Derro Maniac"
+				, "size": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "AC": 19
+				, "PD": 16
+				, "MD": 18
+				, "HP": 52
+				, "attacks": [{
+						"name": "Shortsword"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "12 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The derro can cast one of the following close-quarters spells as a quick action this turn."
+							}
+							, {
+								"trigger": "Cloaking dark"
+								, "effect": "All nearby derro gain a +1 bonus to attacks and defences until the end of the derro maniac's next turn (cumulative)."
+							}
+							, {
+								"trigger": "Sonic squeal"
+								, "effect": "Two random nearby non-derro creatures take 2d4 thunder damage."
+							}
+						]
+					}
+					, {
+						"name": "Light repeating crossbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target also takes 5 ongoing poison damage"
+							}
+							, {
+								"trigger": "Natural 19+"
+								, "effect": "As above, and the derro maniac can make another <em>light repeating crossbow</em> attack as a free action."
+							}
+						]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Despoiler"
 				, "size": "normal"
 				, "level": 4
