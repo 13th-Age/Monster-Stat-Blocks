@@ -16,7 +16,9 @@ function AddRow() {
 	$("select.bookList").selectmenu({
 		width: 150
 	});
-	$("select.monsterList").selectmenu();
+	$("select.monsterList").selectmenu()
+		.selectmenu("menuWidget")
+		.addClass("overflow");
 	$("select.bookList").on("selectmenuchange",function(){
 		MonsterSelectPopulate(this);
 	});
