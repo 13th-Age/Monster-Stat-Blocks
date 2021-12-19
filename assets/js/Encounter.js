@@ -36,7 +36,7 @@ function CreateStatBlocks() {
 			+ "<tr>"
 				+ "<td>AC</td>"
 				+ "<td>" + monsterDetails.AC + "</td>"
-				+ "<td rowspan='4' style='padding: 5px 10px 5px 30px; text-indent: -20px;'><p>Initiative "
+				+ "<td rowspan='4' style='padding-left:30px; text-indent: -20px;'><p>Initiative "
 					+ ((monsterDetails.initiative >= 0) ? "+" : "")
 					+ monsterDetails.initiative;
 					+ "</p>"
