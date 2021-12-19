@@ -52,6 +52,7 @@
 									, "role"
 									, "type"
 									, "initiative"
+									, "vulnerability"
 									, "AC"
 									, "PD"
 									, "MD"
@@ -117,6 +118,10 @@
 										, "title": "Initiative"
 										, "minimum": 0
 										, "maximum": 20
+									}
+									, "vulnerability": {
+										"type": "string"
+										, "title": "Vulnerability"
 									}
 									, "AC": {
 										"type": "number"

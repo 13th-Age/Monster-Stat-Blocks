@@ -9,6 +9,7 @@
 						, "role": "troop"
 						, "type": "beast"
 						, "initiative": 4
+						, "vulnerability": ""
 						, "AC": 17
 						, "PD": 16
 						, "MD": 12
@@ -36,6 +37,7 @@
 						, "role": "troop"
 						, "type": "beast"
 						, "initiative": 7
+						, "vulnerability": ""
 						, "AC": 19
 						, "PD": 19
 						, "MD": 14
@@ -71,6 +73,7 @@
 						, "role": "mook"
 						, "type": "beast"
 						, "initiative": 2
+						, "vulnerability": ""
 						, "AC": 15
 						, "PD": 15
 						, "MD": 10
@@ -98,6 +101,7 @@
 						, "role": "troop"
 						, "type": "beast"
 						, "initiative": 6
+						, "vulnerability": ""
 						, "AC": 18
 						, "PD": 17
 						, "MD": 13
@@ -133,6 +137,7 @@
 						, "role": "troop"
 						, "type": "beast"
 						, "initiative": 0
+						, "vulnerability": ""
 						, "AC": 14
 						, "PD": 13
 						, "MD": 9
@@ -163,6 +168,7 @@
 						, "role": "wrecker"
 						, "type": "beast"
 						, "initiative": 6
+						, "vulnerability": ""
 						, "AC": 16
 						, "PD": 15
 						, "MD": 10
@@ -201,6 +207,7 @@
 						, "role": "blocker"
 						, "type": "beast"
 						, "initiative": 4
+						, "vulnerability": ""
 						, "AC": 17
 						, "PD": 16
 						, "MD": 12
@@ -245,6 +252,7 @@
 						, "role": "wrecker"
 						, "type": "beast"
 						, "initiative": 6
+						, "vulnerability": ""
 						, "AC": 17
 						, "PD": 14
 						, "MD": 11
@@ -280,6 +288,7 @@
 						, "role": "troop"
 						, "type": "beast"
 						, "initiative": 4
+						, "vulnerability": ""
 						, "AC": 17
 						, "PD": 15
 						, "MD": 11
@@ -311,6 +320,7 @@
 					, "role": "troop"
 					, "type": "beast"
 					, "initiative": 8
+					, "vulnerability": ""
 					, "AC": 19
 					, "PD": 17
 					, "MD": 11
@@ -358,6 +368,7 @@
 					, "role": "wrecker"
 					, "type": "beast"
 					, "initiative": 7
+					, "vulnerability": ""
 					, "AC": 22
 					, "PD": 19
 					, "MD": 14
@@ -413,6 +424,7 @@
 					, "role": "wrecker"
 					, "type": "beast"
 					, "initiative": 15
+					, "vulnerability": ""
 					, "AC": 24
 					, "PD": 20
 					, "MD": 16
@@ -469,6 +481,7 @@
 						, "role": "wrecker"
 						, "type": "demon"
 						, "initiative": 17
+						, "vulnerability": ""
 						, "AC": 29
 						, "PD": 27
 						, "MD": 23
@@ -539,6 +552,7 @@
 						, "role": "caster"
 						, "type": "demon"
 						, "initiative": 9
+						, "vulnerability": ""
 						, "AC": 19
 						, "PD": 14
 						, "MD": 18
@@ -590,6 +604,7 @@
 						, "role": "caster"
 						, "type": "demon"
 						, "initiative": 14
+						, "vulnerability": ""
 						, "AC": 24
 						, "PD": 19
 						, "MD": 23
@@ -657,6 +672,7 @@
 						, "role": "mook"
 						, "type": "demon"
 						, "initiative": 5
+						, "vulnerability": ""
 						, "AC": 17
 						, "PD": 15
 						, "MD": 11
@@ -684,6 +700,7 @@
 						, "role": "wrecker"
 						, "type": "demon"
 						, "initiative": 10
+						, "vulnerability": ""
 						, "AC": 21
 						, "PD": 17
 						, "MD": 17
@@ -711,6 +728,7 @@
 						, "role": "spoiler"
 						, "type": "demon"
 						, "initiative": 12
+						, "vulnerability": ""
 						, "AC": 24
 						, "PD": 21
 						, "MD": 21
@@ -765,6 +783,7 @@
 						, "role": "caster"
 						, "type": "demon"
 						, "initiative": 16
+						, "vulnerability": ""
 						, "AC": 22
 						, "PD": 22
 						, "MD": 18
@@ -825,6 +844,7 @@
 						, "role": "troop"
 						, "type": "demon"
 						, "initiative": 11
+						, "vulnerability": ""
 						, "AC": 22
 						, "PD": 16
 						, "MD": 20
@@ -863,6 +883,7 @@
 						, "role": "mook"
 						, "type": "demon"
 						, "initiative": 12
+						, "vulnerability": ""
 						, "AC": 23
 						, "PD": 21
 						, "MD": 17
@@ -893,6 +914,7 @@
 						, "role": "spoiler"
 						, "type": "demon"
 						, "initiative": 8
+						, "vulnerability": ""
 						, "AC": 20
 						, "PD": 13
 						, "MD": 16
@@ -939,6 +961,7 @@
 						, "role": "troop"
 						, "type": "demon"
 						, "initiative": 20
+						, "vulnerability": ""
 						, "AC": 28
 						, "PD": 21
 						, "MD": 25
@@ -980,6 +1003,7 @@
 						, "role": "caster"
 						, "type": "demon"
 						, "initiative": 13
+						, "vulnerability": ""
 						, "AC": 25
 						, "PD": 20
 						, "MD": 24
@@ -1039,6 +1063,7 @@
 						, "role": "spoiler"
 						, "type": "demon"
 						, "initiative": 9
+						, "vulnerability": ""
 						, "AC": 21
 						, "PD": 17
 						, "MD": 17
@@ -1084,6 +1109,7 @@
 						, "role": "troop"
 						, "type": "humanoid"
 						, "initiative": 8
+						, "vulnerability": ""
 						, "AC": 19
 						, "PD": 16
 						, "MD": 18
@@ -1139,6 +1165,7 @@
 						, "role": "caster"
 						, "type": "humanoid"
 						, "initiative": 7
+						, "vulnerability": ""
 						, "AC": 18
 						, "PD": 15
 						, "MD": 18
@@ -1196,6 +1223,7 @@
 						, "role": "wrecker"
 						, "type": "dragon"
 						, "initiative": 17
+						, "vulnerability": ""
 						, "AC": 25
 						, "PD": 23
 						, "MD": 21
@@ -1258,6 +1286,7 @@
 						, "role": "caster"
 						, "type": "dragon"
 						, "initiative": 17
+						, "vulnerability": ""
 						, "AC": 29
 						, "PD": 26
 						, "MD": 26
@@ -1321,6 +1350,7 @@
 						, "role": "spoiler"
 						, "type": "dragon"
 						, "initiative": 15
+						, "vulnerability": ""
 						, "AC": 28
 						, "PD": 25
 						, "MD": 20
@@ -1385,6 +1415,7 @@
 						, "role": "wrecker"
 						, "type": "dragon"
 						, "initiative": 19
+						, "vulnerability": ""
 						, "AC": 28
 						, "PD": 27
 						, "MD": 23
@@ -1443,6 +1474,7 @@
 						, "role": "troop"
 						, "type": "dragon"
 						, "initiative": 10
+						, "vulnerability": "fire"
 						, "AC": 21
 						, "PD": 18
 						, "MD": 14
@@ -1487,6 +1519,7 @@
 						, "role": "wrecker"
 						, "type": "dragon"
 						, "initiative": 13
+						, "vulnerability": "thunder"
 						, "AC": 22
 						, "PD": 20
 						, "MD": 19
@@ -1544,6 +1577,7 @@
 						, "role": "caster"
 						, "type": "dragon"
 						, "initiative": 13
+						, "vulnerability": "force"
 						, "AC": 25
 						, "PD": 22
 						, "MD": 22
@@ -1607,6 +1641,7 @@
 						, "role": "spoiler"
 						, "type": "dragon"
 						, "initiative": 11
+						, "vulnerability": ""
 						, "AC": 24
 						, "PD": 21
 						, "MD": 16
@@ -1671,6 +1706,7 @@
 						, "role": "wrecker"
 						, "type": "dragon"
 						, "initiative": 13
+						, "vulnerability": "cold"
 						, "AC": 25
 						, "PD": 24
 						, "MD": 20
@@ -1724,6 +1760,7 @@
 						, "role": "troop"
 						, "type": "dragon"
 						, "initiative": 8
+						, "vulnerability": "fire"
 						, "AC": 20
 						, "PD": 17
 						, "MD": 13
@@ -1768,6 +1805,7 @@
 						, "role": "wrecker"
 						, "type": "dragon"
 						, "initiative": 9
+						, "vulnerability": "thunder"
 						, "AC": 19
 						, "PD": 17
 						, "MD": 15
@@ -1825,6 +1863,7 @@
 						, "role": "caster"
 						, "type": "dragon"
 						, "initiative": 9
+						, "vulnerability": "force"
 						, "AC": 22
 						, "PD": 19
 						, "MD": 19
@@ -1888,6 +1927,7 @@
 						, "role": "spoiler"
 						, "type": "dragon"
 						, "initiative": 9
+						, "vulnerability": "psychic"
 						, "AC": 21
 						, "PD": 18
 						, "MD": 14
@@ -1952,6 +1992,7 @@
 						, "role": "wrecker"
 						, "type": "dragon"
 						, "initiative": 11
+						, "vulnerability": "cold"
 						, "AC": 21
 						, "PD": 20
 						, "MD": 16
@@ -2001,6 +2042,7 @@
 						, "role": "troop"
 						, "type": "dragon"
 						, "initiative": 6
+						, "vulnerability": "fire"
 						, "AC": 18
 						, "PD": 15
 						, "MD": 11
@@ -2053,6 +2095,7 @@
 				, "role": "troop"
 				, "type": "beast"
 				, "initiative": 6
+				, "vulnerability": ""
 				, "AC": 18
 				, "PD": 16
 				, "MD": 12

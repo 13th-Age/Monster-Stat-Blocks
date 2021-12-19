@@ -36,10 +36,11 @@ function CreateStatBlocks() {
 			+ "<tr>"
 				+ "<td>AC</td>"
 				+ "<td>" + monsterDetails.AC + "</td>"
-				+ "<td rowspan='4' style='padding-left:30px; text-indent: -20px;'><p>Initiative "
+				+ "<td rowspan='4' style='padding-left:30px; text-indent: -20px;'><p style='margin-bottom: 0px;'>Initiative "
 					+ ((monsterDetails.initiative >= 0) ? "+" : "")
-					+ monsterDetails.initiative;
+					+ monsterDetails.initiative
 					+ "</p>"
+					+ ((monsterDetails.vulnerability != "") ? "<p style='margin-top: 0px;'>Vulnerability: " + monsterDetails.vulnerability : "");
 
 		monsterDetails.attacks.forEach(function(attack,i){
 			html += "<p>"
