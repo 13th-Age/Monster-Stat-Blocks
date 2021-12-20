@@ -3875,6 +3875,68 @@
 					}
 				]
 			}
+			, {
+				"name": "Lizardman"
+				, "monsters": [{
+					"name": "Lizardman Savage"
+					, "size": "normal"
+					, "level": 2
+					, "role": "wrecker"
+					, "type": "humanoid"
+					, "initiative": 6
+					, "vulnerability": ""
+					, "AC": 17
+					, "PD": 16
+					, "MD": 12
+					, "HP": 32
+					, "attacks": [{
+							"name": "Stone-tip spear (or club)"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 7
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "7 damage"
+							, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The lizardman savage can make a <em>bite attack</em> against the target or another creature engaged with it as a free action."
+							}]
+						}
+						, {
+							"name": "Bite"
+							, "specialTrigger": true
+							, "type": "normal"
+							, "modifier": 7
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "5 damage, and the lizardman savage can make a <em>ripping frenzy</em> attack against the target as a standard action during its next turn if it’s engaged with that target"
+							, "extraEffects": []
+						}
+						, {
+							"name": "Ripping frenzy"
+							, "specialTrigger": true
+							, "type": "normal"
+							, "modifier": 9
+							, "defence": "AC"
+							, "target": "3 attacks"
+							, "damage": "5 damage"
+							, "extraEffects": []
+						}
+						, {
+							"name": "Thrown spear"
+							, "specialTrigger": false
+							, "type": "ranged"
+							, "modifier": 6
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "5 damage"
+							, "extraEffects": []
+						}
+					]
+					, "abilities": []
+					, "nastierSpecials": []
+				}]
+			}
 		]
 	}
 	, {
