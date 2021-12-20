@@ -3634,6 +3634,132 @@
 					, "nastierSpecials": []
 				}]
 			}
+			, {
+				"name": "Hydra"
+				, "monsters": [{
+						"name": "Five-Headed Hydra"
+						, "size": "huge"
+						, "level": 5
+						, "role": "wrecker"
+						, "type": "beast"
+						, "initiative": 9
+						, "vulnerability": ""
+						, "AC": 20
+						, "PD": 19
+						, "MD": 15
+						, "HP": 150
+						, "attacks": [{
+							"name": "Gnashing teeth"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 10
+							, "defence": "AC"
+							, "target": "5 attacks"
+							, "damage": "10 damage"
+							, "extraEffects": [{
+									"trigger": "Natural even hit or miss"
+									, "effect": "The hydra’s next <em>gnashing teeth</em> attack, if it has an attack left this turn, can be against any nearby enemy instead of against a creature engaged with it."
+								}
+								, {
+									"trigger": "Miss"
+									, "effect": "5 damage."
+								}
+							]
+						}]
+						, "abilities": [{
+								"name": "Too tough to trick"
+								, "effect": "Whenever the hydra would suffer any of the following conditions, it ignores the condition and takes 5 damage instead: confused, dazed, hampered, stunned, or weakened."
+							}
+							, {
+								"name": "Roiling swirl"
+								, "effect": "If the hydra has at least two <em>gnashing teeth</em> attacks left during a turn, it can expend one of those attacks to move to engage a nearby enemy as a free action (but it will take opportunity attacks to do so)."
+							}
+							, {
+								"name": "Sprout sixth head"
+								, "effect": "The first time the hydra is staggered, as a free action it gains 40 hit points and a sixth <em>gnashing teeth</em> attack, and is considered undamaged at its new hit point total.  Using the hydra’s current hit points as a new baseline, the hydra will be staggered again when it drops below 50% of that total."
+							}
+							, {
+								"name": "Sprout seventh head"
+								, "effect": "The second time the hydra is staggered, as a free action it gains 40 hit points and a seventh <em>gnashing teeth</em> attack, etc.  Use a new hit point baseline as before, but there is no eighth head waiting to sprout."
+							}
+						]
+						, "nastierSpecials": [{
+							"name": "Sprout eighth head"
+							, "effect": "You know the drill."
+						}]
+					}
+					, {
+						"name": "Seven-Headed Hydra"
+						, "size": "huge"
+						, "level": 7
+						, "role": "wrecker"
+						, "type": "beast"
+						, "initiative": 11
+						, "vulnerability": ""
+						, "AC": 24
+						, "PD": 21
+						, "MD": 17
+						, "HP": 200
+						, "attacks": [{
+								"name": "Gnashing teeth"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 12
+								, "defence": "AC"
+								, "target": "7 attacks"
+								, "damage": "12 damage"
+								, "extraEffects": [{
+										"trigger": "Natural even hit or miss"
+										, "effect": "The hydra’s next <em>gnashing teeth</em> attack, if it has an attack left this turn, can be against any nearby enemy instead of against a creature engaged with it."
+									}
+									, {
+										"trigger": "Miss"
+										, "effect": "7 damage."
+									}
+								]
+							}
+							, {
+								"name": "Flame breath"
+								, "specialTrigger": true
+								, "type": "close"
+								, "modifier": 12
+								, "defence": "PD"
+								, "target": "1d2 nearby enemies"
+								, "damage": "2d12 fire damage"
+								, "extraEffects": [{
+									"trigger": "Miss"
+									, "effect": "Half damage."
+								}]
+							}
+						]
+						, "abilities": [{
+								"name": "Too tough to trick"
+								, "effect": "Whenever the hydra would suffer any of the following conditions, it ignores the condition and takes 5 damage instead: confused, dazed, hampered, stunned, or weakened."
+							}
+							, {
+								"name": "Roiling swirl"
+								, "effect": "If the hydra has at least two <em>gnashing teeth</em> attacks left during a turn, it can expend one of those attacks to move to engage a nearby enemy as a free action (but it will take opportunity attacks for doing so)."
+							}
+							, {
+								"name": "Sprout eighth head"
+								, "effect": "The first time the hydra is staggered, as a free action it gains 50 hit points and a eighth <em>gnashing teeth</em> attack, and is considered undamaged at its new hit point total.  Using the hydra’s current hit points as a new baseline, the hydra will be staggered again when it drops below 50% of that total."
+							}
+							, {
+								"name": "Sprout ninth head"
+								, "effect": "The second time the hydra is staggered, as a free action it gains 50 hit points and a ninth <em>gnashing teeth</em> attack, etc.  Use a new hit point baseline as before, but there is no tenth head waiting to sprout."
+							}
+							, {
+								"name": "Resist opportunity attacks 16+"
+								, "effect": "When an opportunity attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+							}
+						]
+						, "nastierSpecials": [{
+							"name": "Pyrohydra"
+							, "effect": "When the hydra gets a natural even attack roll with a <em>gnashing teeth</em> attack, its next attack that turn (if it has one) is a <em>flame breath</em> attack instead.  Note that <em>flame breath</em> attacks don’t lead to other flaming breaths; the hydra has to return to making a <em>gnashing teeth</em> attack first."
+						}]
+					}
+				]
+			}
 		]
 	}
 	, {
