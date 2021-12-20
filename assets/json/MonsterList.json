@@ -3997,6 +3997,139 @@
 					, "nastierSpecials": []
 				}]
 			}
+			, {
+				"name": "Medusa"
+				, "monsters": [{
+						"name": "Medusa Noble"
+						, "sizeStrength": "double-strength"
+						, "level": 11
+						, "role": "caster"
+						, "type": "humanoid"
+						, "initiative": 17
+						, "vulnerability": ""
+						, "AC": 27
+						, "PD": 21
+						, "MD": 25
+						, "HP": 500
+						, "attacks": [{
+								"name": "Snakes and swords"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 17
+								, "defence": "AC"
+								, "target": "3 attacks"
+								, "damage": "30 damage, and 15 ongoing poison damage"
+								, "extraEffects": [{
+									"trigger": "Natural 18+"
+									, "effect": "The medusa can make a <em>petrifying gaze</em> attack against the target as a free action."
+								}]
+							}
+							, {
+								"name": "Lightning fork"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 17
+								, "defence": "PD"
+								, "target": "one nearby or far away enemy"
+								, "damage": "80 lightning damage"
+								, "extraEffects": [{
+										"trigger": "Natural odd hit or miss"
+										, "effect": "The medusa deals 1d6 × 10 lightning damage to all nearby enemies."
+									}
+									, {
+										"trigger": "Natural even hit or miss"
+										, "effect": "The medusa can make a <em>lightning fork</em> attack against a different target as a free action; keep making <em>lightning fork</em> attacks until you run out of targets that have taken damage from <em>lightning fork</em> or roll a natural odd attack."
+									}
+								]
+							}
+							, {
+								"name": "Petrifying gaze"
+								, "specialTrigger": true
+								, "type": "close"
+								, "modifier": 17
+								, "defence": "MD"
+								, "target": "one enemy"
+								, "damage": "70 psychic damage, and the target must start making last gasp saves as it turns to stone"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Caught by an eye"
+								, "effect": "Whenever a nearby enemy attacks the medusa noble and rolls a natural 1-5, the medusa can make a <em>petrifying gaze</em> attack against that attacker as a free action."
+							}
+							, {
+								"name": "Serpent wardings"
+								, "effect": "Thrice per battle, as a free action, the medusa noble can force an enemy to reroll a spell attack that targeted it.  The attacker can’t use the escalation die for the reroll."
+							}
+							, {
+								"name": "Skilled sorcerer"
+								, "effect": "If lightning isn’t working against her target, the medusa noble can take a -2 attack penalty to change the energy type of her ranged attack to fire or thunder."
+							}
+						]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Medusa Outlaw"
+						, "sizeStrength": "double-strength"
+						, "level": 6
+						, "role": "wrecker"
+						, "type": "humanoid"
+						, "initiative": 11
+						, "vulnerability": ""
+						, "AC": 22
+						, "PD": 16
+						, "MD": 20
+						, "HP": 150
+						, "attacks": [{
+								"name": "Snakes and daggers"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 11
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "10 damage, and 10 ongoing poison damage"
+								, "extraEffects": [{
+									"trigger": "Natural 18+"
+									, "effect": "The medusa can make a <em>petrifying gaze</em> attack against the target as a free action."
+								}]
+							}
+							, {
+								"name": "Poison arrow"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 11
+								, "defence": "AC"
+								, "target": "one nearby or far away enemy"
+								, "damage": "15 damage, and 10 ongoing poison damage"
+								, "extraEffects": [{
+									"trigger": "Natural 20"
+									, "effect": "The medusa can make a <em>petrifying gaze</em> attack against the target as a free action."
+								}]
+							}
+							, {
+								"name": "Petrifying gaze"
+								, "specialTrigger": true
+								, "type": "close"
+								, "modifier": 11
+								, "defence": "MD"
+								, "target": "one enemy"
+								, "damage": "20 psychic damage, and the target must start making last gasp saves as it turns to stone"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Caught by an eye"
+								, "effect": "Whenever a nearby enemy attacks the medusa outlaw and rolls a natural 1 or 2, the medusa can make a <em>petrifying gaze</em> attack against that attacker as a free action."
+							}
+							, {
+								"name": "Escalating threat"
+								, "effect": "At the start of each of the medusa’s turns, roll a d4.  If you roll less than or equal to the escalation die, the medusa can also use <em>petrifying gaze</em> as a quick action once during that turn."
+							}
+						]
+						, "nastierSpecials": []
+					}
+				]
+			}
 		]
 	}
 	, {
