@@ -2761,6 +2761,295 @@
 					}
 				]
 			}
+			, {
+				"name": "Goblin"
+				, "monsters": [{
+						"name": "Bugbear"
+						, "size": "normal"
+						, "level": 3
+						, "role": "troop"
+						, "type": "humanoid"
+						, "initiative": 6
+						, "vulnerability": ""
+						, "AC": 19
+						, "PD": 17
+						, "MD": 12
+						, "HP": 55
+						, "attacks": [{
+							"name": "Oversized weapon"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 8
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "10 damage"
+							, "extraEffects": [{
+									"trigger": "Natural even hit"
+									, "effect": "The attack deals +5 damage."
+								}
+								, {
+									"trigger": "Miss"
+									, "effect": "If the target is engaged with two or more foes, it takes 1d8 damage."
+								}
+							]
+						}]
+						, "abilities": []
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Goblin Grunt"
+						, "size": "normal"
+						, "level": 1
+						, "role": "troop"
+						, "type": "humanoid"
+						, "initiative": 3
+						, "vulnerability": ""
+						, "AC": 16
+						, "PD": 13
+						, "MD": 12
+						, "HP": 22
+						, "attacks": [{
+								"name": "Club"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "6 damage if the goblins and their allies outnumber their enemies; 4 damage if they don’t"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Shortbow"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "4 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+							"name": "Shifty bugger"
+							, "effect": "Goblins gain a +5 bonus to disengage checks."
+						}]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Goblin Scum"
+						, "size": "normal"
+						, "level": 1
+						, "role": "mook"
+						, "type": "humanoid"
+						, "initiative": 3
+						, "vulnerability": ""
+						, "AC": 16
+						, "PD": 14
+						, "MD": 11
+						, "HP": 5
+						, "attacks": [{
+								"name": "Club"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "4 damage"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Shortbow"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "3 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+							"name": "Shifty bugger"
+							, "effect": "Goblins gain a +5 bonus to disengage checks."
+						}]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Goblin Shaman"
+						, "size": "normal"
+						, "level": 2
+						, "role": "caster"
+						, "type": "humanoid"
+						, "initiative": 6
+						, "vulnerability": ""
+						, "AC": 17
+						, "PD": 12
+						, "MD": 16
+						, "HP": 34
+						, "attacks": [{
+								"name": "Pointy spear"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "5 damage"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Shaking curse"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 6
+								, "defence": "PD"
+								, "target": ""
+								, "damage": "8 damage, and until the end of the shaman’s next turn, the target takes 2 damage whenever an enemy engages it or disengages from it"
+								, "extraEffects": [{
+									"trigger": "Natural even hit or miss"
+									, "effect": "Choose another nearby enemy; it also suffers from the engage/disengage effect until the end of the shaman’s next turn."
+								}]
+							}
+						]
+						, "abilities": [{
+							"name": "Shifty bugger"
+							, "effect": "Goblins only need to roll a 6+ to disengage."
+						}]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Hobgoblin Captain"
+						, "size": "normal"
+						, "level": 4
+						, "role": "leader"
+						, "type": "humanoid"
+						, "initiative": 5
+						, "vulnerability": ""
+						, "AC": 20
+						, "PD": 17
+						, "MD": 14
+						, "HP": 50
+						, "attacks": [{
+								"name": "Longsword"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 10
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "14 damage, and <em>willing-underling</em> triggers"
+								, "extraEffects": [{
+									"trigger": "Willing-underling"
+									, "effect": "Until the start of its next turn, the first time an attack would hit the hobgoblin captain, it can partially avoid that attack if it has a nearby goblin ally.  It only takes half damage from the attack, and that ally takes the rest."
+								}]
+							}
+							, {
+								"name": "Throwing axe"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 8
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "10 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Group ability"
+								, "effect": "For every two hobgoblins in the battle (round up, ignore mooks), one of them can use <em>well-armoured</em> as a free action once during the battle."
+							}
+							, {
+								"name": "Well-armoured (group)"
+								, "effect": "Ignore all damage from a hit (but not a crit) against AC."
+							}
+						]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Hobgoblin Warmage"
+						, "size": "normal"
+						, "level": 5
+						, "role": "caster"
+						, "type": "humanoid"
+						, "initiative": 6
+						, "vulnerability": ""
+						, "AC": 20
+						, "PD": 14
+						, "MD": 19
+						, "HP": 70
+						, "attacks": [{
+								"name": "Warstaff"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 8
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "15 damage"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Fireblast"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 10
+								, "defence": "PD"
+								, "target": "up to 2 nearby enemies in a group"
+								, "damage": "10 fire damage (or 20 if used against a single target), and the target loses its next move action"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Concussive blast"
+								, "specialTrigger": false
+								, "type": "close"
+								, "modifier": 10
+								, "defence": "PD"
+								, "target": "all enemies engaged with the warmage"
+								, "damage": "10 force damage, and the warmage pops the target off of it"
+								, "extraEffects": [{
+									"trigger": "Natural 20"
+									, "effect": "The target is also dazed (save ends)."
+								}]
+							}
+						]
+						, "abilities": []
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Hobgoblin Warrior"
+						, "size": "normal"
+						, "level": 2
+						, "role": "troop"
+						, "type": "humanoid"
+						, "initiative": 3
+						, "vulnerability": ""
+						, "AC": 19
+						, "PD": 14
+						, "MD": 14
+						, "HP": 32
+						, "attacks": [{
+							"name": "Longsword"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 7
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "8 damage"
+							, "extraEffects": [{
+								"trigger": "Natural even miss"
+								, "effect": "2 damage."
+							}]
+						}]
+						, "abilities": [{
+								"name": "Group ability"
+								, "effect": "For every two hobgoblins in the battle (rounded up, ignore mooks), one of them can use <em>well-armoured</em> as a free action once during the battle."
+							}
+							, {
+								"name": "Well-armoured (group)"
+								, "effect": "Ignore all damage from a hit (but not a crit) against AC."
+							}
+						]
+						, "nastierSpecials": []
+					}
+				]
+			}
 		]
 	}
 	, {
