@@ -3937,6 +3937,66 @@
 					, "nastierSpecials": []
 				}]
 			}
+			, {
+				"name": "Manticore"
+				, "monsters": [{
+					"name": "Manticore"
+					, "size": "large"
+					, "level": 6
+					, "role": "archer"
+					, "type": "beast"
+					, "initiative": 13
+					, "vulnerability": ""
+					, "AC": 22
+					, "PD": 20
+					, "MD": 16
+					, "HP": 182
+					, "attacks": [{
+							"name": "Battering paws"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 11
+							, "defence": "AC"
+							, "target": "2 attacks"
+							, "damage": "20 damage"
+							, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The manticore can make a single <em>volley of tail spikes</em> attack (one attack roll) against a different target as a free action."
+							}]
+						}
+						, {
+							"name": "Crushing leonine jaws"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 11
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "30 damage; OR 50 damage against a creature taking ongoing poison damage"
+							, "extraEffects": []
+						}
+						, {
+							"name": "Volley of tail spikes"
+							, "specialTrigger": false
+							, "type": "close"
+							, "modifier": 13
+							, "defence": "AC"
+							, "target": "1d3 nearby or far away enemies in a group"
+							, "damage": "5 ongoing poison damage (hard save ends, 16+)"
+							, "extraEffects": []
+						}
+					]
+					, "abilities": [{
+							"name": "Flight"
+							, "effect": ""
+						}
+						, {
+							"name": "Poison reservoirs"
+							, "effect": "Each time the manticore uses its <em>volley of tail spikes</em> attack, it takes 1d6 damage, or 2d6 if it is staggered."
+						}
+					]
+					, "nastierSpecials": []
+				}]
+			}
 		]
 	}
 	, {
