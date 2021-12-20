@@ -4766,4 +4766,44 @@
 			, "nastierSpecials": []
 		}]
 	}
+	, {
+		"name": "Owlbear"
+		, "monsters": [{
+			"name": "Owlbear"
+			, "source": "13th Age"
+			, "sizeStrength": "large"
+			, "level": 4
+			, "role": "wrecker"
+			, "type": "beast"
+			, "initiative": 8
+			, "vulnerability": ""
+			, "AC": 19
+			, "PD": 17
+			, "MD": 13
+			, "HP": 101
+			, "attacks": [{
+				"name": "Rip and peck"
+				, "specialTrigger": false
+				, "type": "normal"
+				, "modifier": 9
+				, "defence": "AC"
+				, "target": ""
+				, "damage": "15 damage, and until the end of the owlbear’s next turn, the target is hampered (<em>makes only basic attacks</em>) while engaged with the owlbear"
+				, "extraEffects": [{
+					"trigger": "Vicious hybrid"
+					, "effect": "If the escalation die is even, make another <em>rip and peck</em> attack."
+				}]
+			}]
+			, "abilities": [{
+					"name": "Feed the cubs"
+					, "effect": "An owlbear that scores a critical hit against a hampered enemy tears a piece of the creature off (GM chooses a limb) and will subsequently attempt to retreat with the prize to feed its cubs.  The torn-up enemy is stunned until the end of its next turn."
+				}
+				, {
+					"name": "Silent hunter"
+					, "effect": "Owlbears are nearly silent until they strike.  Checks to hear them approaching take a -5 penalty."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
 ]
