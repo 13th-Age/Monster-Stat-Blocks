@@ -16,18 +16,14 @@ function AddRow() {
 
 	$("select.monsterGroupList").selectmenu({
 		width: 200
-	})
-		.selectmenu("menuWidget")
-		.addClass("overflow");
+	});
 	$("select.monsterGroupList").on("selectmenuchange",function(){
 		MonsterGroupChangeSelectPopulate(this);
 	});
 
 	$("select.monsterList").selectmenu({
-		width: 300
-	})
-		.selectmenu("menuWidget")
-		.addClass("overflow");
+		width: 400
+	});
 }
 
 
