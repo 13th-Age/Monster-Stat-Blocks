@@ -4552,4 +4552,162 @@
 			}
 		]
 	}
+	, {
+		"name": "Orc"
+		, "monsters": [{
+				"name": "Great Fang Cadre"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 10
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 25
+				, "MD": 21
+				, "HP": 50
+				, "attacks": [{
+						"name": "Double axe"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "25 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 11+"
+								, "effect": "The cadre can make a second <em>double axe</em> attack (no more) as a free action."
+							}
+							, {
+								"trigger": "Dangerous mooks"
+								, "effect": "The crit range of melee attacks by great fang cadre orcs expands by 3 until half the great fang cadre mob has been dropped."
+							}
+						]
+					}
+					, {
+						"name": "Big, black, creaking bow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "37 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The attack targets PD instead of AC."
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "On the spot mutation"
+					, "effect": "Whenever an attack eliminates one or more members of the mob, there is a 50% chance that each survivor gains one of these abilities: extra melee attack, damage aura: 1d20 damage vs. any enemy that starts its turn engaged with the orc, or +4 to AC."
+				}]
+			}
+			, {
+				"name": "Orc Berserker"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 15
+				, "MD": 13
+				, "HP": 40
+				, "attacks": [{
+					"name": "Greataxe"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "8 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Dangerous"
+						, "effect": "The crit range of attacks by orcs expands by 3 unless they are staggered."
+					}
+					, {
+						"name": "Unstoppable"
+						, "effect": "When an orc berserker drops to 0 hp, it does not immediately die.  Ignore any damage in excess of 0 hp, roll 2d6, and give the berserker that many temporary hit points.  No other healing can affect the berserker or give it more temporary hit points.  When the temporary hp are gone, the berserker dies."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Orc Shaman"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 2
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 12
+				, "MD": 16
+				, "HP": 36
+				, "attacks": [{
+						"name": "Spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Dangerous"
+							, "effect": "The crit range of attacks by orcs expands by 3 unless they are staggered."
+						}]
+					}
+					, {
+						"name": "Battle curse"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "4 psychic damage, and for the rest of the battle, melee attacks by orcs deal +1d4 damage against the target (non-cumulative)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Orc Warrior"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 1
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 14
+				, "MD": 10
+				, "HP": 30
+				, "attacks": [{
+					"name": "Jagged sword"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Dangerous"
+					, "effect": "The crit range of attacks by orcs expands by 3 unless they are staggered."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
 ]
