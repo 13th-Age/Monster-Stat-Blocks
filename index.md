@@ -20,6 +20,7 @@ Name: <input id="EncounterName">
 <tr>
 	<td></td>
 	<td>Book</td>
+	<td>Group</td>
 	<td>Monster</td>
 </tr>
 </thead>

@@ -1,6 +1,7 @@
 var monsterList;
 var html_row;
 var html_bookOptions = "<option disabled selected></option>";
+var html_monsterGroupOptions = [];
 var html_monsterOptions = [];
 
 
@@ -13,15 +14,26 @@ function AddRow() {
 		$(this).parents("tr").remove();
 	});
 	$("input.spinner").spinner();
+
 	$("select.bookList").selectmenu({
 		width: 150
 	});
-	$("select.monsterList").selectmenu()
+	$("select.bookList").on("selectmenuchange",function(){
+		BookChangeSelectPopulate(this);
+	});
+
+	$("select.monsterGroupList").selectmenu({
+		width: 200
+	});
+	$("select.monsterGroupList").on("selectmenuchange",function(){
+		MonsterGroupChangeSelectPopulate(this);
+	});
+
+	$("select.monsterList").selectmenu({
+		width: 300
+	})
 		.selectmenu("menuWidget")
 		.addClass("overflow");
-	$("select.bookList").on("selectmenuchange",function(){
-		MonsterSelectPopulate(this);
-	});
 }
 
 
@@ -58,7 +70,7 @@ function GenerateStatBlocks() {
 					'{"book":'
 					+ $(this).find("select.bookList option:selected").val()
 					+ ',"monsterGroup":'
-					+ $(this).find("select.monsterList option:selected").parent().attr("value")
+					+ $(this).find("select.monsterGroupList option:selected").val()
 					+ ',"monster":'
 					+ $(this).find("select.monsterList option:selected").val()
 					+ "}"
@@ -77,19 +89,24 @@ function GenerateStatBlocks() {
 
 function InitialPopulate() {
 	monsterList.forEach(function(item,i){
-		var monsters = "<option disabled selected></option>";
+		var monsterGroups = "<option disabled selected></option>";
+		var monsters = [];
 
 		html_bookOptions += "<option value='" + i + "'>" + item.name + "</option>";
 
 		item.monsterGroups.forEach(function(item,i){
-			monsters += "<optgroup label='" + item.name + "' value='" + i + "'>";
+			var monstersInGroup = "<option disabled selected></option>";
+
+			monsterGroups += "<option value='" + i + "'>" + item.name + "</option>";
 
 			item.monsters.forEach(function(item,i){
-				monsters += "<option value='" + i + "'>" + item.name + "</option>";
+				monstersInGroup += "<option value='" + i + "'>" + item.name + "</option>";
 			});
 
-			monsters += "</optgroup>";
+			monsters.push(monstersInGroup);
 		});
+
+		html_monsterGroupOptions.push(monsterGroups);
 		html_monsterOptions.push(monsters);
 	});
 
@@ -97,6 +114,7 @@ function InitialPopulate() {
 		= "<tr>"
 		+ "<td><button class='DeleteRow'>-</button></td>"
 		+ "<td><select class='bookList'>" + html_bookOptions + "</select></td>"
+		+ "<td><select class='monsterGroupList'><option disabled selected></option></select></td>"
 		+ "<td><select class='monsterList'><option disabled selected></option></select></td>"
 		+ "</tr>";
 
@@ -106,8 +124,22 @@ function InitialPopulate() {
 
 
 
-function MonsterSelectPopulate(ui) {
-	$(ui).parent().next().find("select.monsterList").html(html_monsterOptions[$(ui).find("option:selected").val()]).selectmenu("refresh");
+function BookChangeSelectPopulate(ui) {
+	$(ui).parent().next().find("select.monsterGroupList").html(html_monsterGroupOptions[$(ui).find("option:selected").val()]).selectmenu("refresh");
+	$(ui).parent().next().next().find("select.monsterList").html("<option disabled selected></option>").selectmenu("refresh");
+}
+
+
+
+
+function MonsterGroupChangeSelectPopulate(ui) {
+	$(ui).parent().next().find("select.monsterList").html(
+		html_monsterOptions[
+			$(ui).parent().prev().find("select.bookList option:selected").val()
+		][
+			$(ui).find("option:selected").val()
+		]
+	).selectmenu("refresh");
 }
 
 
