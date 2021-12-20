@@ -3050,6 +3050,202 @@
 					}
 				]
 			}
+			, {
+				"name": "Golem"
+				, "monsters": [{
+						"name": "Clay Golem"
+						, "size": "large"
+						, "level": 6
+						, "role": "spoiler"
+						, "type": "construct"
+						, "initiative": 5
+						, "vulnerability": ""
+						, "AC": 18
+						, "PD": 16
+						, "MD": 14
+						, "HP": 100
+						, "attacks": [{
+							"name": "Bare brutal hands"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 10
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "36 damage"
+							, "extraEffects": []
+						}]
+						, "abilities": [{
+								"name": "Cursed wound"
+								, "effect": "A non-dwarf creature damaged by a clay golem can’t be healed to above half its maximum hit points until after the battle."
+							}
+							, {
+								"name": "Golem immunity"
+								, "effect": "Non-organic golems are immune to effects.  They can’t be dazed, weakened, confused, made vulnerable, or touched by ongoing damage.  You can damage a golem, but that’s about it."
+							}
+							, {
+								"name": "Ignore attacks 11+"
+								, "effect": "When an attack hits this creature, the attacker must roll a natural 11+ on the attack roll or it missed instead.  That’s <em>all</em> attacks."
+							}
+						]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Flesh Golem"
+						, "size": "large"
+						, "level": 4
+						, "role": "blocker"
+						, "type": "construct"
+						, "initiative": 5
+						, "vulnerability": ""
+						, "AC": 18
+						, "PD": 16
+						, "MD": 14
+						, "HP": 100
+						, "attacks": [{
+								"name": "Sweeping fists"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 9
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "15 damage"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Maddened battlefield repairs"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 11
+								, "defence": "AC"
+								, "target": "one staggered living enemy"
+								, "damage": "20 damage, and the flesh golem heals 2d10 hit points"
+								, "extraEffects": [{
+										"trigger": "Miss"
+										, "effect": "10 damage, and the flesh golem heals 1d10 hit points."
+									}
+									, {
+										"trigger": "Limited use"
+										, "effect": "The flesh golem can only use this attack while it’s staggered."
+									}
+								]
+							}
+						]
+						, "abilities": [{
+								"name": "Energy magnet"
+								, "effect": "Whenever a spell causes cold, fire, force, lightning, or negative energy damage targets one of the flesh golem’s nearby allies, the flesh golem has a 50% chance of becoming the main target instead.  Therefore spells that affect groups would spread out from the flesh golem."
+							}
+							, {
+								"name": "Weakness of the flesh"
+								, "effect": "Flesh golems are not immune to effects."
+							}
+						]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Iron Golem"
+						, "size": "large"
+						, "level": 10
+						, "role": "wrecker"
+						, "type": "construct"
+						, "initiative": 13
+						, "vulnerability": ""
+						, "AC": 28
+						, "PD": 24
+						, "MD": 20
+						, "HP": 360
+						, "attacks": [{
+								"name": "Fists of iron"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 17
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "50 damage"
+								, "extraEffects": [{
+									"trigger": "Miss"
+									, "effect": "5d10 damage."
+								}]
+							}
+							, {
+								"name": "Poison gas cloud"
+								, "specialTrigger": true
+								, "type": "close"
+								, "modifier": 15
+								, "defence": "PD"
+								, "target": "all nearby creatures"
+								, "damage": "25 ongoing poison damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Golem immunity"
+								, "effect": "Non-organic golems are immune to effects.  They can’t be dazed, weakened, confused, made vulnerable, or touched by ongoing damage.  You can damage a golem, but that’s about it."
+							}
+							, {
+								"name": "Rampage"
+								, "effect": "At the start of each of the iron golem’s turns, roll a d6.  If the roll is equal to or less than the escalation die, the iron golem goes on a rampage that turn.  Instead of its two normal <em>fists of iron</em> attacks, it can make three attacks with <em>fists of iron</em>, each against a different random nearby creature, enemy or ally.  It can move after each such attack as a free action, if necessary, taking only half damage from opportunity attacks during the rampage."
+							}
+						]
+						, "nastierSpecials": [{
+							"name": "Poison gas"
+							, "effect": "The first time the iron golem is staggered, poison gas leaks from it into the area.  It can make a <em>poison gas cloud</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Stone Golem"
+						, "size": "large"
+						, "level": 8
+						, "role": "blocker"
+						, "type": "construct"
+						, "initiative": 11
+						, "vulnerability": ""
+						, "AC": 25
+						, "PD": 23
+						, "MD": 18
+						, "HP": 280
+						, "attacks": [{
+								"name": "Massive stone fists"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 12
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "35 damage"
+								, "extraEffects": [{
+									"trigger": "Miss"
+									, "effect": "15 damage."
+								}]
+							}
+							, {
+								"name": "Finishing smash"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 14
+								, "defence": "AC"
+								, "target": "one staggered enemy"
+								, "damage": "80 damage, and the golem pops the target off it and moves it a short distance away from the golem"
+								, "extraEffects": [{
+										"trigger": "Natural even hit or miss"
+										, "effect": "20 damage, and the target is hampered (save ends)."
+									}
+									, {
+										"trigger": "Natural odd hit or miss"
+										, "effect": "20 damage, and the target is dazed (save ends)."
+									}
+								]
+							}
+						]
+						, "abilities": [{
+							"name": "Golem immunity"
+							, "effect": "Non-organic golems are immune to effects.  They can’t be dazed, weakened, confused, made vulnerable, or touched by ongoing damage.  You can damage a golem, but that’s about it."
+						}]
+						, "nastierSpecials": [{
+							"name": "Former idol"
+							, "effect": "Evoke the powers of an ancient culture’s strange rites by giving the stone golem any weird power you wish.  If you’re stuck for inspiration, consider starting with random abilities from the demons that aren’t related to energy or the <em>cone of cold</em> from the ogre mage."
+						}]
+					}
+				]
+			}
 		]
 	}
 	, {
