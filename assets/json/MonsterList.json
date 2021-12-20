@@ -4710,4 +4710,60 @@
 			}
 		]
 	}
+	, {
+		"name": "Otyugh"
+		, "monsters": [{
+			"name": "Otyugh"
+			, "source": "13th Age"
+			, "sizeStrength": "large"
+			, "level": 3
+			, "role": "blocker"
+			, "type": "aberration"
+			, "initiative": 5
+			, "vulnerability": ""
+			, "AC": 19
+			, "PD": 17
+			, "MD": 13
+			, "HP": 84
+			, "attacks": [{
+					"name": "Grasping tentacle"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "PD"
+					, "target": "2 attacks"
+					, "damage": "5 damage"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The otyugh can grab the target."
+						}
+						, {
+							"trigger": "Natural 18 or 20"
+							, "effect": "The otyugh can grab the target and make a <em>big toothy maw</em> attack against it as a free action."
+						}
+					]
+				}
+				, {
+					"name": "Big toothy maw"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 12
+					, "defence": "AC"
+					, "target": "one enemy it’s grabbing; includes +4 grab bonus"
+					, "damage": "16 damage"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+					"name": "Trash nest defence"
+					, "effect": "The otyugh gains a +2 bonus to all defences while fighting in its nest or in similar piles of excrement and trash."
+				}
+				, {
+					"name": "Tentacle flail"
+					, "effect": "Once per round, an otyugh can make a <em>grasping tentacles</em> attack as a free action against a moving nearby creature it is not engaged with; on a natural even hit, the target is grabbed and its movement stops."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
 ]
