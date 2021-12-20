@@ -3246,6 +3246,154 @@
 					}
 				]
 			}
+			, {
+				"name": "Half-Orc"
+				, "monsters": [{
+						"name": "Half-Orc Commander"
+						, "size": "normal"
+						, "level": 8
+						, "role": "leader"
+						, "type": "humanoid"
+						, "initiative": 13
+						, "vulnerability": ""
+						, "AC": 23
+						, "PD": 22
+						, "MD": 18
+						, "HP": 150
+						, "attacks": [{
+								"name": "Jagged longsword"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 15
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "15 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit"
+									, "effect": "One nearby lower-level mook makes an attack as a free action."
+								}]
+							}
+							, {
+								"name": "Thrown javelin"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 13
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "20 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit"
+									, "effect": "The half-orc commander gains 20 temporary hit points."
+								}]
+							}
+						]
+						, "abilities": [{
+							"name": "Orcish command"
+							, "effect": "When a nearby ally of the half-orc commander scores a critical hit, that ally can roll a save against a save ends effect as a free action."
+						}]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Half-Orc Legionnaire"
+						, "size": "normal"
+						, "level": 4
+						, "role": "troop"
+						, "type": "humanoid"
+						, "initiative": 8
+						, "vulnerability": ""
+						, "AC": 20
+						, "PD": 18
+						, "MD": 14
+						, "HP": 56
+						, "attacks": [{
+								"name": "Longsword"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 10
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "12 damage"
+								, "extraEffects": [{
+										"trigger": "Natural even hit"
+										, "effect": "The half-orc legionnaire gains a +2 bonus to all defences until the start of its next turn."
+									}
+									, {
+										"trigger": "Natural odd hit"
+										, "effect": "The target takes +1d6 damage."
+									}
+									, {
+										"trigger": "Natural even miss"
+										, "effect": "4 damage."
+									}
+									, {
+										"trigger": "Natural odd miss"
+										, "effect": "If the legionnaire’s next melee attack is a natural even hit, it becomes a critical hit instead!"
+									}
+								]
+							}
+							, {
+								"name": "Javelin"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 10
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "10 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": []
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Half-Orc Tribal Champion"
+						, "size": "normal"
+						, "level": 5
+						, "role": "wrecker"
+						, "type": "humanoid"
+						, "initiative": 9
+						, "vulnerability": ""
+						, "AC": 19
+						, "PD": 18
+						, "MD": 17
+						, "HP": 80
+						, "attacks": [{
+								"name": "Great axe"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 9
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "18 damage"
+								, "extraEffects": [{
+										"trigger": "Natural odd miss"
+										, "effect": "The tribal champion heals 5 hp."
+									}
+									, {
+										"trigger": "Natural even miss"
+										, "effect": "10 damage."
+									}
+								]
+							}
+							, {
+								"name": "Longbow"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 8
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "12 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+							"name": "Tribal rage"
+							, "effect": "When the escalation die is even, a tribal champion can roll two d20 for each melee attack roll it makes and use the result it prefers.  If both dice are 11+, the melee attack is a critical hit."
+						}]
+						, "nastierSpecials": []
+					}
+				]
+			}
 		]
 	}
 	, {
