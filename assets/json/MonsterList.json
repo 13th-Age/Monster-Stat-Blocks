@@ -4436,4 +4436,120 @@
 			, "nastierSpecials": []
 		}]
 	}
+	, {
+		"name": "Ooze"
+		, "monsters": [{
+				"name": "Black Pudding"
+				, "source": "13th Age"
+				, "sizeStrength": "huge"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "ooze"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 20
+				, "MD": 19
+				, "HP": 470
+				, "attacks": [{
+					"name": "Acid-drenched pseudopod"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 14
+					, "defence": "PD"
+					, "target": "up to 4 attacks, each against a different nearby enemy"
+					, "damage": "30 acid damage, and 10 ongoing acid damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "10 acid damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Climber"
+						, "effect": "A black pudding sticks to ceilings and walls when it wishes, sliding along as easily as on the floor."
+					}
+					, {
+						"name": "Slippery"
+						, "effect": "The pudding has <em>resist weapons 12+</em>."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Gelatinous Cube"
+				, "source": "13th Age"
+				, "sizeStrength": "huge"
+				, "level": 5
+				, "role": "blocker"
+				, "type": "ooze"
+				, "initiative": 4
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 15
+				, "HP": 200
+				, "attacks": [{
+						"name": "Shlup’n’schlorp"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "30 acid damage, and the cube engulfs the target (functions like a grab) if it’s smaller than the cube"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The cube can make a <em>spasms</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Spasms"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "up to 2 attacks, each against a different nearby enemy"
+						, "damage": "15 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Engulf and dissolve"
+					, "effect": "Targets engulfed/grabbed by the cube take 30 acid damage at the start of the cube’s turn but are not viable targets for additional attacks by the cube.  Multiple targets can be held within the cube simultaneously.<br>&emsp;Any engulfed creature that is also staggered must begin making last gasp saves or become paralysed as the cube’s toxins overwhelm it."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ochre Jelly"
+				, "source": "13th Age"
+				, "sizeStrength": "large"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "ooze"
+				, "initiative": 2
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 17
+				, "MD": 16
+				, "HP": 90
+				, "attacks": [{
+					"name": "Acid-drenched pseudopod"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 8
+					, "defence": "PD"
+					, "target": "1d4 attacks, each against a different nearby enemy"
+					, "damage": "6 acid damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit or miss"
+						, "effect": "3 ongoing acid damage."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Splitter"
+					, "effect": "The first time an ochre jelly takes 20 or more damage from a single attack, it splits into two normal-size ochre jellies, each with half the original’s current hit points plus 2d6 hp.  Treat the new jellies as undamaged jellies at their new hit point totals without the <em>splitter</em> ability."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
 ]
