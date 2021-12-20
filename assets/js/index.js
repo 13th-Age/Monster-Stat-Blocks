@@ -24,7 +24,9 @@ function AddRow() {
 
 	$("select.monsterGroupList").selectmenu({
 		width: 200
-	});
+	})
+		.selectmenu("menuWidget")
+		.addClass("overflow");
 	$("select.monsterGroupList").on("selectmenuchange",function(){
 		MonsterGroupChangeSelectPopulate(this);
 	});
