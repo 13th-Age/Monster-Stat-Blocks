@@ -3451,6 +3451,54 @@
 					, "nastierSpecials": []
 				}]
 			}
+			, {
+				"name": "Hellhound"
+				, "monsters": [{
+					"name": "Hellhound"
+					, "size": "normal"
+					, "level": 3
+					, "role": "wrecker"
+					, "type": "beast"
+					, "initiative": 5
+					, "vulnerability": ""
+					, "AC": 18
+					, "PD": 16
+					, "MD": 11
+					, "HP": 58
+					, "attacks": [{
+							"name": "Savage bite"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 9
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "7 damage"
+							, "extraEffects": [{
+								"trigger": "Natural even hit or miss"
+								, "effect": "The hellhound can make a <em>fiery breath</em> attack as a free action."
+							}]
+						}
+						, {
+							"name": "Fiery breath"
+							, "specialTrigger": true
+							, "type": "close"
+							, "modifier": 9
+							, "defence": "PD"
+							, "target": "1d3 nearby enemies in a group"
+							, "damage": "10 fire damage"
+							, "extraEffects": []
+						}
+					]
+					, "abilities": [{
+						"name": "Resist fire 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a 16+ on the attack roll or it only deals half damage."
+					}]
+					, "nastierSpecials": [{
+						"name": "Fiery aura"
+						, "effect": "Each creature engaged with a hellhound at the start of its turn takes 2d6 fire damage."
+					}]
+				}]
+			}
 		]
 	}
 	, {
