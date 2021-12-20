@@ -47,7 +47,7 @@
 								, "headerTemplate": "{{ self.name }}"
 								, "required": [
 									"name"
-									, "size"
+									, "sizeStrength"
 									, "level"
 									, "role"
 									, "type"
@@ -67,13 +67,15 @@
 										, "title": "Name"
 										, "minLength": 1
 									}
-									, "size": {
+									, "sizeStrength": {
 										"type": "string"
-										, "title": "Size"
+										, "title": "Size/Strength"
 										, "enum": [
 											"normal"
 											, "large"
+											, "double-strength"
 											, "huge"
+											, "triple-strength"
 										]
 									}
 									, "level": {

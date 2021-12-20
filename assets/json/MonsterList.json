@@ -4,7 +4,7 @@
 				"name": "Animal / Critter"
 				, "monsters": [{
 						"name": "Bear"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 2
 						, "role": "troop"
 						, "type": "beast"
@@ -32,7 +32,7 @@
 					}
 					, {
 						"name": "Dire Bear"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 4
 						, "role": "troop"
 						, "type": "beast"
@@ -68,7 +68,7 @@
 					}
 					, {
 						"name": "Dire Rat"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "mook"
 						, "type": "beast"
@@ -96,7 +96,7 @@
 					}
 					, {
 						"name": "Dire Wolf"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 3
 						, "role": "troop"
 						, "type": "beast"
@@ -132,7 +132,7 @@
 					}
 					, {
 						"name": "Giant Ant"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 0
 						, "role": "troop"
 						, "type": "beast"
@@ -163,7 +163,7 @@
 					}
 					, {
 						"name": "Giant Scorpion"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "wrecker"
 						, "type": "beast"
@@ -202,7 +202,7 @@
 					}
 					, {
 						"name": "Giant Web Spider"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 2
 						, "role": "blocker"
 						, "type": "beast"
@@ -247,7 +247,7 @@
 					}
 					, {
 						"name": "Hunting Spider"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 2
 						, "role": "wrecker"
 						, "type": "beast"
@@ -283,7 +283,7 @@
 					}
 					, {
 						"name": "Wolf"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "troop"
 						, "type": "beast"
@@ -315,7 +315,7 @@
 				"name": "Ankheg"
 				, "monsters": [{
 					"name": "Ankheg"
-					, "size": "large"
+					, "sizeStrength": "large"
 					, "level": 2
 					, "role": "troop"
 					, "type": "beast"
@@ -363,7 +363,7 @@
 				"name": "Bulette"
 				, "monsters": [{
 					"name": "Bulette"
-					, "size": "large"
+					, "sizeStrength": "large"
 					, "level": 5
 					, "role": "wrecker"
 					, "type": "beast"
@@ -419,7 +419,7 @@
 				"name": "Chimera"
 				, "monsters": [{
 					"name": "Chimera"
-					, "size": "large"
+					, "sizeStrength": "large"
 					, "level": 9
 					, "role": "wrecker"
 					, "type": "beast"
@@ -476,7 +476,7 @@
 				"name": "Demon"
 				, "monsters": [{
 						"name": "Balor (Flame Demon)"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 13
 						, "role": "wrecker"
 						, "type": "demon"
@@ -547,7 +547,7 @@
 					}
 					, {
 						"name": "Despoiler"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 4
 						, "role": "caster"
 						, "type": "demon"
@@ -599,7 +599,7 @@
 					}
 					, {
 						"name": "Despoiler Mage"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 9
 						, "role": "caster"
 						, "type": "demon"
@@ -667,7 +667,7 @@
 					}
 					, {
 						"name": "Dretch"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 3
 						, "role": "mook"
 						, "type": "demon"
@@ -695,7 +695,7 @@
 					}
 					, {
 						"name": "Frenzy Demon"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 5
 						, "role": "wrecker"
 						, "type": "demon"
@@ -723,7 +723,7 @@
 					}
 					, {
 						"name": "Giant Vrock (Vulture Demon)"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 9
 						, "role": "spoiler"
 						, "type": "demon"
@@ -778,7 +778,7 @@
 					}
 					, {
 						"name": "Glabrezou (Pincer Demon)"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 8
 						, "role": "caster"
 						, "type": "demon"
@@ -839,7 +839,7 @@
 					}
 					, {
 						"name": "Hezrou (Toad Demon)"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 7
 						, "role": "troop"
 						, "type": "demon"
@@ -878,7 +878,7 @@
 					}
 					, {
 						"name": "Hooked Demon"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 9
 						, "role": "mook"
 						, "type": "demon"
@@ -909,7 +909,7 @@
 					}
 					, {
 						"name": "Imp"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 3
 						, "role": "spoiler"
 						, "type": "demon"
@@ -956,7 +956,7 @@
 					}
 					, {
 						"name": "Marilith (Serpent Demon)"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 12
 						, "role": "troop"
 						, "type": "demon"
@@ -998,7 +998,7 @@
 					}
 					, {
 						"name": "Nalfeshnee (Boar Demon)"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 10
 						, "role": "caster"
 						, "type": "demon"
@@ -1058,7 +1058,7 @@
 					}
 					, {
 						"name": "Vrock (Vulture Demon)"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 6
 						, "role": "spoiler"
 						, "type": "demon"
@@ -1104,7 +1104,7 @@
 				"name": "Derro"
 				, "monsters": [{
 						"name": "Derro Maniac"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 4
 						, "role": "troop"
 						, "type": "humanoid"
@@ -1160,7 +1160,7 @@
 					}
 					, {
 						"name": "Derro Sage"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 4
 						, "role": "caster"
 						, "type": "humanoid"
@@ -1218,7 +1218,7 @@
 				"name": "Dragon"
 				, "monsters": [{
 						"name": "Huge Black Dragon"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 9
 						, "role": "wrecker"
 						, "type": "dragon"
@@ -1281,7 +1281,7 @@
 					}
 					, {
 						"name": "Huge Blue Dragon"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 12
 						, "role": "caster"
 						, "type": "dragon"
@@ -1345,7 +1345,7 @@
 					}
 					, {
 						"name": "Huge Green Dragon"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 11
 						, "role": "spoiler"
 						, "type": "dragon"
@@ -1410,7 +1410,7 @@
 					}
 					, {
 						"name": "Huge Red Dragon"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 13
 						, "role": "wrecker"
 						, "type": "dragon"
@@ -1469,7 +1469,7 @@
 					}
 					, {
 						"name": "Huge White Dragon"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 5
 						, "role": "troop"
 						, "type": "dragon"
@@ -1514,7 +1514,7 @@
 					}
 					, {
 						"name": "Large Black Dragon"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 6
 						, "role": "wrecker"
 						, "type": "dragon"
@@ -1572,7 +1572,7 @@
 					}
 					, {
 						"name": "Large Blue Dragon"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 8
 						, "role": "caster"
 						, "type": "dragon"
@@ -1636,7 +1636,7 @@
 					}
 					, {
 						"name": "Large Green Dragon"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 7
 						, "role": "spoiler"
 						, "type": "dragon"
@@ -1701,7 +1701,7 @@
 					}
 					, {
 						"name": "Large Red Dragon"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 10
 						, "role": "wrecker"
 						, "type": "dragon"
@@ -1755,7 +1755,7 @@
 					}
 					, {
 						"name": "Large White Dragon"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 4
 						, "role": "troop"
 						, "type": "dragon"
@@ -1800,7 +1800,7 @@
 					}
 					, {
 						"name": "Medium Black Dragon"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 3
 						, "role": "wrecker"
 						, "type": "dragon"
@@ -1858,7 +1858,7 @@
 					}
 					, {
 						"name": "Medium Blue Dragon"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 5
 						, "role": "caster"
 						, "type": "dragon"
@@ -1922,7 +1922,7 @@
 					}
 					, {
 						"name": "Medium Green Dragon"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 4
 						, "role": "spoiler"
 						, "type": "dragon"
@@ -1987,7 +1987,7 @@
 					}
 					, {
 						"name": "Medium Red Dragon"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 6
 						, "role": "wrecker"
 						, "type": "dragon"
@@ -2037,7 +2037,7 @@
 					}
 					, {
 						"name": "Medium White Dragon"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 2
 						, "role": "troop"
 						, "type": "dragon"
@@ -2086,7 +2086,7 @@
 				"name": "Drider"
 				, "monsters": [{
 					"name": "Drider"
-					, "size": "large"
+					, "sizeStrength": "large"
 					, "level": 6
 					, "role": "caster"
 					, "type": "aberration"
@@ -2154,7 +2154,7 @@
 				"name": "Ettin"
 				, "monsters": [{
 					"name": "Ettin"
-					, "size": "large"
+					, "sizeStrength": "large"
 					, "level": 5
 					, "role": "troop"
 					, "type": "giant"
@@ -2204,7 +2204,7 @@
 				"name": "Gargoyle"
 				, "monsters": [{
 					"name": "Gargoyle"
-					, "size": "normal"
+					, "sizeStrength": "normal"
 					, "level": 5
 					, "role": "troop"
 					, "type": "construct"
@@ -2246,7 +2246,7 @@
 				"name": "Ghoul"
 				, "monsters": [{
 						"name": "Newly-Risen Ghoul"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 2
 						, "role": "mook"
 						, "type": "undead"
@@ -2277,7 +2277,7 @@
 					}
 					, {
 						"name": "Ghoul"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 3
 						, "role": "spoiler"
 						, "type": "undead"
@@ -2320,7 +2320,7 @@
 				"name": "Giant"
 				, "monsters": [{
 						"name": "Fire Giant"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 8
 						, "role": "wrecker"
 						, "type": "giant"
@@ -2388,7 +2388,7 @@
 					}
 					, {
 						"name": "Fire Giant Warlord"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 9
 						, "role": "leader"
 						, "type": "giant"
@@ -2442,7 +2442,7 @@
 					}
 					, {
 						"name": "Frost Giant"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 7
 						, "role": "spoiler"
 						, "type": "giant"
@@ -2512,7 +2512,7 @@
 					}
 					, {
 						"name": "Hill Giant"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 6
 						, "role": "troop"
 						, "type": "giant"
@@ -2554,7 +2554,7 @@
 					}
 					, {
 						"name": "Storm Giant"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 10
 						, "role": "archer"
 						, "type": "giant"
@@ -2643,7 +2643,7 @@
 				"name": "Gnoll"
 				, "monsters": [{
 						"name": "Gnoll Ranger"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 3
 						, "role": "archer"
 						, "type": "humanoid"
@@ -2691,7 +2691,7 @@
 					}
 					, {
 						"name": "Gnoll Savage"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 3
 						, "role": "troop"
 						, "type": "humanoid"
@@ -2730,7 +2730,7 @@
 					}
 					, {
 						"name": "Gnoll War Leader"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 4
 						, "role": "leader"
 						, "type": "humanoid"
@@ -2765,7 +2765,7 @@
 				"name": "Goblin"
 				, "monsters": [{
 						"name": "Bugbear"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 3
 						, "role": "troop"
 						, "type": "humanoid"
@@ -2798,7 +2798,7 @@
 					}
 					, {
 						"name": "Goblin Grunt"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "troop"
 						, "type": "humanoid"
@@ -2837,7 +2837,7 @@
 					}
 					, {
 						"name": "Goblin Scum"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "mook"
 						, "type": "humanoid"
@@ -2876,7 +2876,7 @@
 					}
 					, {
 						"name": "Goblin Shaman"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 2
 						, "role": "caster"
 						, "type": "humanoid"
@@ -2918,7 +2918,7 @@
 					}
 					, {
 						"name": "Hobgoblin Captain"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 4
 						, "role": "leader"
 						, "type": "humanoid"
@@ -2965,7 +2965,7 @@
 					}
 					, {
 						"name": "Hobgoblin Warmage"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 5
 						, "role": "caster"
 						, "type": "humanoid"
@@ -3014,7 +3014,7 @@
 					}
 					, {
 						"name": "Hobgoblin Warrior"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 2
 						, "role": "troop"
 						, "type": "humanoid"
@@ -3054,7 +3054,7 @@
 				"name": "Golem"
 				, "monsters": [{
 						"name": "Clay Golem"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 6
 						, "role": "spoiler"
 						, "type": "construct"
@@ -3091,7 +3091,7 @@
 					}
 					, {
 						"name": "Flesh Golem"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 4
 						, "role": "blocker"
 						, "type": "construct"
@@ -3143,7 +3143,7 @@
 					}
 					, {
 						"name": "Iron Golem"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 10
 						, "role": "wrecker"
 						, "type": "construct"
@@ -3193,7 +3193,7 @@
 					}
 					, {
 						"name": "Stone Golem"
-						, "size": "large"
+						, "sizeStrength": "large"
 						, "level": 8
 						, "role": "blocker"
 						, "type": "construct"
@@ -3250,7 +3250,7 @@
 				"name": "Half-Orc"
 				, "monsters": [{
 						"name": "Half-Orc Commander"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 8
 						, "role": "leader"
 						, "type": "humanoid"
@@ -3295,7 +3295,7 @@
 					}
 					, {
 						"name": "Half-Orc Legionnaire"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 4
 						, "role": "troop"
 						, "type": "humanoid"
@@ -3347,7 +3347,7 @@
 					}
 					, {
 						"name": "Half-Orc Tribal Champion"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 5
 						, "role": "wrecker"
 						, "type": "humanoid"
@@ -3398,7 +3398,7 @@
 				"name": "Harpy"
 				, "monsters": [{
 					"name": "Harpy"
-					, "size": "normal"
+					, "sizeStrength": "normal"
 					, "level": 4
 					, "role": "spoiler"
 					, "type": "humanoid"
@@ -3455,7 +3455,7 @@
 				"name": "Hellhound"
 				, "monsters": [{
 					"name": "Hellhound"
-					, "size": "normal"
+					, "sizeStrength": "normal"
 					, "level": 3
 					, "role": "wrecker"
 					, "type": "beast"
@@ -3503,7 +3503,7 @@
 				"name": "Human"
 				, "monsters": [{
 						"name": "Demon-Touched Human Ranger"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 5
 						, "role": "archer"
 						, "type": "humanoid"
@@ -3548,7 +3548,7 @@
 					}
 					, {
 						"name": "Human Thug"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "troop"
 						, "type": "humanoid"
@@ -3580,7 +3580,7 @@
 				"name": "Hungry Star"
 				, "monsters": [{
 					"name": "Hungry Star"
-					, "size": "normal"
+					, "sizeStrength": "normal"
 					, "level": 3
 					, "role": "wrecker"
 					, "type": "aberration"
@@ -3638,7 +3638,7 @@
 				"name": "Hydra"
 				, "monsters": [{
 						"name": "Five-Headed Hydra"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 5
 						, "role": "wrecker"
 						, "type": "beast"
@@ -3690,7 +3690,7 @@
 					}
 					, {
 						"name": "Seven-Headed Hydra"
-						, "size": "huge"
+						, "sizeStrength": "huge"
 						, "level": 7
 						, "role": "wrecker"
 						, "type": "beast"
@@ -3764,7 +3764,7 @@
 				"name": "Kobold"
 				, "monsters": [{
 						"name": "Kobold Archer"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "mook"
 						, "type": "humanoid"
@@ -3808,7 +3808,7 @@
 					}
 					, {
 						"name": "Kobold Hero"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 2
 						, "role": "leader"
 						, "type": "humanoid"
@@ -3839,7 +3839,7 @@
 					}
 					, {
 						"name": "Kobold Warrior"
-						, "size": "normal"
+						, "sizeStrength": "normal"
 						, "level": 1
 						, "role": "troop"
 						, "type": "humanoid"
@@ -3879,7 +3879,7 @@
 				"name": "Lizardman"
 				, "monsters": [{
 					"name": "Lizardman Savage"
-					, "size": "normal"
+					, "sizeStrength": "normal"
 					, "level": 2
 					, "role": "wrecker"
 					, "type": "humanoid"
@@ -3941,7 +3941,7 @@
 				"name": "Manticore"
 				, "monsters": [{
 					"name": "Manticore"
-					, "size": "large"
+					, "sizeStrength": "large"
 					, "level": 6
 					, "role": "archer"
 					, "type": "beast"
@@ -4005,7 +4005,7 @@
 			"name": "Miscellaneous"
 			, "monsters": [{
 				"name": "Dire Boar"
-				, "size": "large"
+				, "sizeStrength": "large"
 				, "level": 5
 				, "role": "troop"
 				, "type": "beast"
