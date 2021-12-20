@@ -19,7 +19,6 @@ Name: <input id="EncounterName">
 <thead>
 <tr>
 	<td></td>
-	<td>Book</td>
 	<td>Group</td>
 	<td>Monster</td>
 </tr>

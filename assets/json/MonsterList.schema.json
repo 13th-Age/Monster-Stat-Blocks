@@ -1,14 +1,15 @@
 {
 	"type": "array"
-	, "title": "Books"
-	, "format": "tabs-top"
+	, "title": "Monster Groups"
+	, "format": "tabs"
 	, "uniqueItems": true
 	, "items": {
 		"type": "object"
-		, "title": "Book"
+		, "title": "Monster Group"
 		, "headerTemplate": "{{ self.name }}"
 		, "required": [
 			"name"
+			, "monsters"
 		]
 		, "properties": {
 			"name": {
@@ -16,18 +17,32 @@
 				, "title": "Name"
 				, "minLength": 1
 			}
-			, "monsterGroups": {
+			, "monsters": {
 				"type": "array"
-				, "title": "Monster Groups"
+				, "title": "Monsters"
 				, "format": "tabs"
 				, "uniqueItems": true
 				, "items": {
 					"type": "object"
-					, "title": "Monster Group"
+					, "title": "Monster"
+					, "format": "grid-strict"
 					, "headerTemplate": "{{ self.name }}"
 					, "required": [
 						"name"
-						, "monsters"
+						, "source"
+						, "sizeStrength"
+						, "level"
+						, "role"
+						, "type"
+						, "initiative"
+						, "vulnerability"
+						, "AC"
+						, "PD"
+						, "MD"
+						, "HP"
+						, "attacks"
+						, "abilities"
+						, "nastierSpecials"
 					]
 					, "properties": {
 						"name": {
@@ -35,31 +50,113 @@
 							, "title": "Name"
 							, "minLength": 1
 						}
-						, "monsters": {
+						, "source": {
+							"type": "string"
+							, "title": "Source"
+							, "enum": [
+								"13th Age"
+								, "13 True Ways"
+								, "Bestiary"
+								, "Bestiary 2"
+							]
+						}
+						, "sizeStrength": {
+							"type": "string"
+							, "title": "Size/Strength"
+							, "enum": [
+								"normal"
+								, "large"
+								, "double-strength"
+								, "huge"
+								, "triple-strength"
+							]
+						}
+						, "level": {
+							"type": "number"
+							, "title": "Level"
+							, "minimum": 0
+							, "maximum": 15
+						}
+						, "role": {
+							"type": "string"
+							, "title": "Role"
+							, "enum": [
+								"archer"
+								, "blocker"
+								, "caster"
+								, "leader"
+								, "mook"
+								, "spoiler"
+								, "troop"
+								, "wrecker"
+							]
+						}
+						, "type": {
+							"type": "string"
+							, "title": "Type"
+							, "enum": [
+								"aberration"
+								, "beast"
+								, "construct"
+								, "demon"
+								, "dragon"
+								, "giant"
+								, "humanoid"
+								, "ooze"
+								, "plant"
+								, "undead"
+							]
+							, "default": "beast"
+						}
+						, "initiative": {
+							"type": "number"
+							, "title": "Initiative"
+							, "minimum": 0
+							, "maximum": 20
+						}
+						, "vulnerability": {
+							"type": "string"
+							, "title": "Vulnerability"
+						}
+						, "AC": {
+							"type": "number"
+							, "title": "AC"
+							, "minimum": 0
+						}
+						, "PD": {
+							"type": "number"
+							, "title": "PD"
+							, "minimum": 0
+						}
+						, "MD": {
+							"type": "number"
+							, "title": "MD"
+							, "minimum": 0
+						}
+						, "HP": {
+							"type": "number"
+							, "title": "HP"
+							, "minimum": 0
+						}
+						, "attacks": {
 							"type": "array"
-							, "title": "Monsters"
-							, "format": "tabs"
+							, "title": "Attacks"
+							, "format": "tabs-top"
 							, "uniqueItems": true
 							, "items": {
 								"type": "object"
-								, "title": "Monster"
+								, "title": "Attack"
 								, "format": "grid-strict"
 								, "headerTemplate": "{{ self.name }}"
 								, "required": [
 									"name"
-									, "sizeStrength"
-									, "level"
-									, "role"
+									, "specialTrigger"
 									, "type"
-									, "initiative"
-									, "vulnerability"
-									, "AC"
-									, "PD"
-									, "MD"
-									, "HP"
-									, "attacks"
-									, "abilities"
-									, "nastierSpecials"
+									, "modifier"
+									, "defence"
+									, "target"
+									, "damage"
+									, "extraEffects"
 								]
 								, "properties": {
 									"name": {
@@ -67,226 +164,64 @@
 										, "title": "Name"
 										, "minLength": 1
 									}
-									, "sizeStrength": {
-										"type": "string"
-										, "title": "Size/Strength"
-										, "enum": [
-											"normal"
-											, "large"
-											, "double-strength"
-											, "huge"
-											, "triple-strength"
-										]
-									}
-									, "level": {
-										"type": "number"
-										, "title": "Level"
-										, "minimum": 0
-										, "maximum": 15
-									}
-									, "role": {
-										"type": "string"
-										, "title": "Role"
-										, "enum": [
-											"archer"
-											, "blocker"
-											, "caster"
-											, "leader"
-											, "mook"
-											, "spoiler"
-											, "troop"
-											, "wrecker"
-										]
+									, "specialTrigger": {
+										"type": "boolean"
+										, "title": "Special Trigger?"
+										, "default": false
 									}
 									, "type": {
 										"type": "string"
 										, "title": "Type"
 										, "enum": [
-											"aberration"
-											, "beast"
-											, "construct"
-											, "demon"
-											, "dragon"
-											, "giant"
-											, "humanoid"
-											, "ooze"
-											, "plant"
-											, "undead"
+											"normal"
+											, "ranged"
+											, "close"
 										]
-										, "default": "beast"
+										, "default": "normal"
 									}
-									, "initiative": {
+									, "modifier": {
 										"type": "number"
-										, "title": "Initiative"
+										, "title": "Modifier"
 										, "minimum": 0
-										, "maximum": 20
 									}
-									, "vulnerability": {
+									, "defence": {
 										"type": "string"
-										, "title": "Vulnerability"
+										, "title": "Defence"
+										, "enum": [
+											""
+											, "AC"
+											, "PD"
+											, "MD"
+										]
+										, "default": "AC"
 									}
-									, "AC": {
-										"type": "number"
-										, "title": "AC"
-										, "minimum": 0
+									, "target": {
+										"type": "string"
+										, "title": "Target"
 									}
-									, "PD": {
-										"type": "number"
-										, "title": "PD"
-										, "minimum": 0
+									, "damage": {
+										"type": "string"
+										, "title": "Damage"
+										, "minLength": 1
 									}
-									, "MD": {
-										"type": "number"
-										, "title": "MD"
-										, "minimum": 0
-									}
-									, "HP": {
-										"type": "number"
-										, "title": "HP"
-										, "minimum": 0
-									}
-									, "attacks": {
+									, "extraEffects": {
 										"type": "array"
-										, "title": "Attacks"
+										, "title": "Extra Effects"
 										, "format": "tabs-top"
 										, "uniqueItems": true
 										, "items": {
 											"type": "object"
-											, "title": "Attack"
+											, "title": "Extra Effect"
 											, "format": "grid-strict"
-											, "headerTemplate": "{{ self.name }}"
+											, "headerTemplate": "{{ self.trigger }}"
 											, "required": [
-												"name"
-												, "specialTrigger"
-												, "type"
-												, "modifier"
-												, "defence"
-												, "target"
-												, "damage"
-												, "extraEffects"
-											]
-											, "properties": {
-												"name": {
-													"type": "string"
-													, "title": "Name"
-													, "minLength": 1
-												}
-												, "specialTrigger": {
-													"type": "boolean"
-													, "title": "Special Trigger?"
-													, "default": false
-												}
-												, "type": {
-													"type": "string"
-													, "title": "Type"
-													, "enum": [
-														"normal"
-														, "ranged"
-														, "close"
-													]
-													, "default": "normal"
-												}
-												, "modifier": {
-													"type": "number"
-													, "title": "Modifier"
-													, "minimum": 0
-												}
-												, "defence": {
-													"type": "string"
-													, "title": "Defence"
-													, "enum": [
-														""
-														, "AC"
-														, "PD"
-														, "MD"
-													]
-													, "default": "AC"
-												}
-												, "target": {
-													"type": "string"
-													, "title": "Target"
-												}
-												, "damage": {
-													"type": "string"
-													, "title": "Damage"
-													, "minLength": 1
-												}
-												, "extraEffects": {
-													"type": "array"
-													, "title": "Extra Effects"
-													, "format": "tabs-top"
-													, "uniqueItems": true
-													, "items": {
-														"type": "object"
-														, "title": "Extra Effect"
-														, "format": "grid-strict"
-														, "headerTemplate": "{{ self.trigger }}"
-														, "required": [
-															"trigger"
-															, "effect"
-														]
-														, "properties": {
-															"trigger": {
-																"type": "string"
-																, "title": "Trigger"
-																, "minLength": 1
-															}
-															, "effect": {
-																"type": "string"
-																, "title": "Effect"
-																, "minLength": 1
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-									, "abilities": {
-										"type": "array"
-										, "title": "Abilities"
-										, "format": "tabs-top"
-										, "uniqueItems": true
-										, "items": {
-											"type": "object"
-											, "title": "Ability"
-											, "format": "grid-strict"
-											, "headerTemplate": "{{ self.name }}"
-											, "required": [
-												"name"
+												"trigger"
 												, "effect"
 											]
 											, "properties": {
-												"name": {
+												"trigger": {
 													"type": "string"
-													, "title": "Name"
-													, "minLength": 1
-												}
-												, "effect": {
-													"type": "string"
-													, "title": "Effect"
-												}
-											}
-										}
-									}
-									, "nastierSpecials": {
-										"type": "array"
-										, "title": "Nastier Specials"
-										, "format": "tabs-top"
-										, "uniqueItems": true
-										, "items": {
-											"type": "object"
-											, "title": "Nastier Special"
-											, "format": "grid-strict"
-											, "headerTemplate": "{{ self.name }}"
-											, "required": [
-												"name"
-												, "effect"
-											]
-											, "properties": {
-												"name": {
-													"type": "string"
-													, "title": "Name"
+													, "title": "Trigger"
 													, "minLength": 1
 												}
 												, "effect": {
@@ -296,6 +231,61 @@
 												}
 											}
 										}
+									}
+								}
+							}
+						}
+						, "abilities": {
+							"type": "array"
+							, "title": "Abilities"
+							, "format": "tabs-top"
+							, "uniqueItems": true
+							, "items": {
+								"type": "object"
+								, "title": "Ability"
+								, "format": "grid-strict"
+								, "headerTemplate": "{{ self.name }}"
+								, "required": [
+									"name"
+									, "effect"
+								]
+								, "properties": {
+									"name": {
+										"type": "string"
+										, "title": "Name"
+										, "minLength": 1
+									}
+									, "effect": {
+										"type": "string"
+										, "title": "Effect"
+									}
+								}
+							}
+						}
+						, "nastierSpecials": {
+							"type": "array"
+							, "title": "Nastier Specials"
+							, "format": "tabs-top"
+							, "uniqueItems": true
+							, "items": {
+								"type": "object"
+								, "title": "Nastier Special"
+								, "format": "grid-strict"
+								, "headerTemplate": "{{ self.name }}"
+								, "required": [
+									"name"
+									, "effect"
+								]
+								, "properties": {
+									"name": {
+										"type": "string"
+										, "title": "Name"
+										, "minLength": 1
+									}
+									, "effect": {
+										"type": "string"
+										, "title": "Effect"
+										, "minLength": 1
 									}
 								}
 							}
