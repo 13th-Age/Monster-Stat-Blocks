@@ -4130,6 +4130,50 @@
 					}
 				]
 			}
+			, {
+				"name": "Minotaur"
+				, "monsters": [{
+					"name": "Minotaur"
+					, "sizeStrength": "large"
+					, "level": 4
+					, "role": "troop"
+					, "type": "humanoid"
+					, "initiative": 8
+					, "vulnerability": ""
+					, "AC": 19
+					, "PD": 17
+					, "MD": 13
+					, "HP": 94
+					, "attacks": [{
+						"name": "Axe or horns"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "27 damage, and one of the minotaur’s allies can pop free from the target as a free action"
+						, "extraEffects": []
+					}]
+					, "abilities": [{
+							"name": "Furious charge"
+							, "effect": "The attack instead deals 40 damage on a hit if the minotaur first moves before attacking an enemy it was not engaged with at the start of its turn."
+						}
+						, {
+							"name": "Blood frenzy"
+							, "effect": "Minotaurs gain a +4 melee attack bonus against staggered enemies."
+						}
+					]
+					, "nastierSpecials": [{
+							"name": "Durable"
+							, "effect": "The first time each round the minotaur takes damage, prevent 2d6 of it."
+						}
+						, {
+							"name": "Fear"
+							, "effect": "While engaged with this creature, enemies that have 24 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+						}
+					]
+				}]
+			}
 		]
 	}
 	, {
