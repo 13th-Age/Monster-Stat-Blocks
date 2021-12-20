@@ -3760,6 +3760,121 @@
 					}
 				]
 			}
+			, {
+				"name": "Kobold"
+				, "monsters": [{
+						"name": "Kobold Archer"
+						, "size": "normal"
+						, "level": 1
+						, "role": "mook"
+						, "type": "humanoid"
+						, "initiative": 4
+						, "vulnerability": ""
+						, "AC": 16
+						, "PD": 14
+						, "MD": 10
+						, "HP": 6
+						, "attacks": [{
+								"name": "Simple knife"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "3 damage"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Tiny crossbow or javelin"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 7
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "3 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Evasive"
+								, "effect": "Kobolds take no damage from missed attacks."
+							}
+							, {
+								"name": "Split off"
+								, "effect": "When one of the kobold’s allies engages a creature engaged with the kobold, the kobold can pop free as a free action."
+							}
+						]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Kobold Hero"
+						, "size": "normal"
+						, "level": 2
+						, "role": "leader"
+						, "type": "humanoid"
+						, "initiative": 3
+						, "vulnerability": ""
+						, "AC": 18
+						, "PD": 16
+						, "MD": 12
+						, "HP": 34
+						, "attacks": [{
+							"name": "Shortsword"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 7
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "6 damage, and each nearby non-leader kobold deals +3 damage with its next attack this battle that hits"
+							, "extraEffects": [{
+								"trigger": "Natural even miss"
+								, "effect": "3 damage."
+							}]
+						}]
+						, "abilities": [{
+							"name": "Evasive"
+							, "effect": "Kobolds take no damage from missed attacks."
+						}]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Kobold Warrior"
+						, "size": "normal"
+						, "level": 1
+						, "role": "troop"
+						, "type": "humanoid"
+						, "initiative": 4
+						, "vulnerability": ""
+						, "AC": 18
+						, "PD": 15
+						, "MD": 12
+						, "HP": 22
+						, "attacks": [{
+							"name": "Spear"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 8
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "4 damage"
+							, "extraEffects": [{
+								"trigger": "Natural even hit or miss"
+								, "effect": "The kobold warrior can pop free from the target."
+							}]
+						}]
+						, "abilities": [{
+								"name": "Evasive"
+								, "effect": "Kobolds take no damage from missed attacks."
+							}
+							, {
+								"name": "Not brave"
+								, "effect": "Kobold warriors with single digit hit points will run away the first chance they get."
+							}
+						]
+						, "nastierSpecials": []
+					}
+				]
+			}
 		]
 	}
 	, {
