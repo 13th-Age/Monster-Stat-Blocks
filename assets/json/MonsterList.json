@@ -3576,6 +3576,64 @@
 					}
 				]
 			}
+			, {
+				"name": "Hungry Star"
+				, "monsters": [{
+					"name": "Hungry Star"
+					, "size": "normal"
+					, "level": 3
+					, "role": "wrecker"
+					, "type": "aberration"
+					, "initiative": 8
+					, "vulnerability": ""
+					, "AC": 16
+					, "PD": 12
+					, "MD": 15
+					, "HP": 54
+					, "attacks": [{
+							"name": "Ripping tentacles"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 8
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "10 damage"
+							, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "If the target is taking ongoing psychic damage, the attack deals +2d6 damage."
+							}]
+						}
+						, {
+							"name": "Warp-pulse"
+							, "specialTrigger": false
+							, "type": "ranged"
+							, "modifier": 8
+							, "defence": "PD"
+							, "target": "1d3 enemies in a group"
+							, "damage": "5 ongoing psychic damage"
+							, "extraEffects": [{
+									"trigger": "Natural 16-18"
+									, "effect": "While the target is taking the ongoing psychic damage, it is dazed (-4 attack)."
+								}
+								, {
+									"trigger": "Natural 19-20"
+									, "effect": "While the target is taking the ongoing psychic damage, it is confused instead of dazed."
+								}
+							]
+						}
+					]
+					, "abilities": [{
+							"name": "Group ability"
+							, "effect": "For every two hungry stars in the battle (round up), one of them can use <em>warp-pulse</em> once during the battle."
+						}
+						, {
+							"name": "Limited flight"
+							, "effect": "Hungry stars flap and glide and hover, always within seven or eight feet of the ground."
+						}
+					]
+					, "nastierSpecials": []
+				}]
+			}
 		]
 	}
 	, {
