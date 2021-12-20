@@ -3499,6 +3499,83 @@
 					}]
 				}]
 			}
+			, {
+				"name": "Human"
+				, "monsters": [{
+						"name": "Demon-Touched Human Ranger"
+						, "size": "normal"
+						, "level": 5
+						, "role": "archer"
+						, "type": "humanoid"
+						, "initiative": 10
+						, "vulnerability": ""
+						, "AC": 21
+						, "PD": 14
+						, "MD": 19
+						, "HP": 80
+						, "attacks": [{
+								"name": "Demon bow"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 10
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "15 damage, and the target is dazed (-4 attack) until it pulls the arrow out using a quick action, which deals 10 ongoing damage"
+								, "extraEffects": [{
+									"trigger": "Natural odd hit or miss"
+									, "effect": "The demon bow eats at the ranger’s arm and the ranger takes 1d6 damage."
+								}]
+							}
+							, {
+								"name": "Demon bow"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 10
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "15 damage, and the target is dazed (-4 attack) until it pulls the arrow out using a quick action, which deals 10 ongoing damage"
+								, "extraEffects": [{
+									"trigger": "Natural odd hit or miss"
+									, "effect": "The demon bow eats at the ranger’s arm and the ranger takes 1d6 damage."
+								}]
+							}
+						]
+						, "abilities": [{
+							"name": "Bow teeth"
+							, "effect": "Whenever an attacker hits the ranger with a melee attack, that creature takes 1d6 damage as the bow chews on it."
+						}]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Human Thug"
+						, "size": "normal"
+						, "level": 1
+						, "role": "troop"
+						, "type": "humanoid"
+						, "initiative": 3
+						, "vulnerability": ""
+						, "AC": 17
+						, "PD": 14
+						, "MD": 12
+						, "HP": 27
+						, "attacks": [{
+							"name": "Heavy mace"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 5
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "4 damage"
+							, "extraEffects": [{
+								"trigger": "Natural even hit or miss"
+								, "effect": "The thug deals +6 damage with its <em>next</em> attack this battle."
+							}]
+						}]
+						, "abilities": []
+						, "nastierSpecials": []
+					}
+				]
+			}
 		]
 	}
 	, {
