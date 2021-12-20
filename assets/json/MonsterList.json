@@ -4360,4 +4360,80 @@
 			}]
 		}]
 	}
+	, {
+		"name": "Ogre Mage"
+		, "monsters": [{
+			"name": "Ogre Mage"
+			, "source": "13th Age"
+			, "sizeStrength": "large"
+			, "level": 7
+			, "role": "caster"
+			, "type": "giant"
+			, "initiative": 14
+			, "vulnerability": ""
+			, "AC": 23
+			, "PD": 19
+			, "MD": 21
+			, "HP": 170
+			, "attacks": [{
+					"name": "Naginata"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 13
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "35 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 18+"
+						, "effect": "Make a second <em>naginata</em> attack against a nearby enemy as a free action (engaging it is not required)"
+					}]
+				}
+				, {
+					"name": "Cone of cold"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 13
+					, "defence": "PD"
+					, "target": "up to 3 nearby enemies in a group"
+					, "damage": "50 cold damage"
+					, "extraEffects": [{
+						"trigger": "Limited use"
+						, "effect": "1/day, and the attack affects the ogre’s allies engaged with or between enemy targets."
+					}]
+				}
+				, {
+					"name": "Aura of treachery"
+					, "specialTrigger": true
+					, "type": "close"
+					, "modifier": 13
+					, "defence": "MD"
+					, "target": ""
+					, "damage": "The target is confused until the end of the ogre mage’s next turn"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+					"name": "Aura of treachery"
+					, "effect": "Once per round when a nearby enemy misses the ogre mage with an attack, the ogre mage can make an <em>aura of treachery</em> attack against it as a free action."
+				}
+				, {
+					"name": "Flight"
+					, "effect": "The ogre mage flies using the sheer power of its superior mind."
+				}
+				, {
+					"name": "Invisibility"
+					, "effect": "If the ogre mage is not engaged, it can turn invisible as an at-will standard action.  It becomes visible when it attacks.  The ogre mage takes 1d10 damage each time it uses <em>invisibility</em> while it’s staggered."
+				}
+				, {
+					"name": "Resist exceptional attacks 16+"
+					, "effect": "When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+				}
+				, {
+					"name": "Trollish regeneration 20"
+					, "effect": "While an ogre mage is damaged, its uncanny flesh heals 20 hit points at the start of the ogre mage’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limit.<br>&emsp;When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping an ogre mage to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
 ]
