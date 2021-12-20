@@ -2242,6 +2242,403 @@
 					]
 				}]
 			}
+			, {
+				"name": "Ghoul"
+				, "monsters": [{
+						"name": "Newly-Risen Ghoul"
+						, "size": "normal"
+						, "level": 2
+						, "role": "mook"
+						, "type": "undead"
+						, "initiative": 5
+						, "vulnerability": "holy"
+						, "AC": 17
+						, "PD": 15
+						, "MD": 11
+						, "HP": 9
+						, "attacks": [{
+							"name": "Scrabbling claws"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 7
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "3 damage"
+							, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target is vulnerable (<em>attacks vsd. it have crit range expanded by 2</em>) to attacks by undead until the end of the ghoul’s next turn."
+							}]
+						}]
+						, "abilities": [{
+							"name": "Pound of flesh"
+							, "effect": "The newly-risen ghoul’s <em>scrabbling claws</em> attack deals +2 damage against vulnerable targets."
+						}]
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Ghoul"
+						, "size": "normal"
+						, "level": 3
+						, "role": "spoiler"
+						, "type": "undead"
+						, "initiative": 8
+						, "vulnerability": "holy"
+						, "AC": 18
+						, "PD": 15
+						, "MD": 12
+						, "HP": 36
+						, "attacks": [{
+							"name": "Claws and bite"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 8
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "8 damage"
+							, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is vulnerable (<em>attacks vs. it have crit range expanded by 2</em>) to attacks by undead until the end of the ghoul’s next turn."
+							}]
+						}]
+						, "abilities": [{
+								"name": "Pound of flesh"
+								, "effect": "The ghoul’s <em>claws and bite</em> attack deals +4 damage against vulnerable targets."
+							}
+							, {
+								"name": "Infected bite"
+								, "effect": "Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night."
+							}
+						]
+						, "nastierSpecials": [{
+							"name": "Paralysing bite"
+							, "effect": "When the ghoul hits a vulnerable target with a natural even attack roll, the target is also stunned (save ends)."
+						}]
+					}
+				]
+			}
+			, {
+				"name": "Giant"
+				, "monsters": [{
+						"name": "Fire Giant"
+						, "size": "large"
+						, "level": 8
+						, "role": "wrecker"
+						, "type": "giant"
+						, "initiative": 12
+						, "vulnerability": "cold"
+						, "AC": 25
+						, "PD": 21
+						, "MD": 17
+						, "HP": 285
+						, "attacks": [{
+								"name": "Flaming greatsword"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 13
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "35 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit or miss"
+									, "effect": "The target also takes 10 ongoing fire damage."
+								}]
+							}
+							, {
+								"name": "Flaming black-iron javelin"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 11
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "40 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit or miss"
+									, "effect": "The target also takes 10 ongoing fire damage."
+								}]
+							}
+							, {
+								"name": "Slam"
+								, "specialTrigger": true
+								, "type": "normal"
+								, "modifier": 12
+								, "defence": "PD"
+								, "target": "one enemy smaller than it"
+								, "damage": "10 damage, the target pops free from the giant, and the target loses its next move action."
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Fiery escalator"
+								, "effect": "The fire giant adds the escalation die to its attacks against targets taking ongoing fire damage."
+							}
+							, {
+								"name": "Resist fire 16+"
+								, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+							}
+						]
+						, "nastierSpecials": [{
+								"name": "Burning blood"
+								, "effect": "When a fire giant becomes staggered, it deals 10 ongoing fire damage to each enemy engaged with it."
+							}
+							, {
+								"name": "Strength of giants"
+								, "effect": "Twice per battle, the giant can make a <em>slam</em> attack as a quick action (once per round)."
+							}
+						]
+					}
+					, {
+						"name": "Fire Giant Warlord"
+						, "size": "large"
+						, "level": 9
+						, "role": "leader"
+						, "type": "giant"
+						, "initiative": 14
+						, "vulnerability": "cold"
+						, "AC": 26
+						, "PD": 22
+						, "MD": 18
+						, "HP": 355
+						, "attacks": [{
+								"name": "Flaming greatsword"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 15
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "40 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit or miss"
+									, "effect": "The target also takes 10 ongoing fire damage."
+								}]
+							}
+							, {
+								"name": "Massive strike"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 15
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "90 damage, and 10 ongoing fire damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Fiery escalator"
+								, "effect": "The fire giant warlord adds the escalation die to its attacks against targets taking ongoing fire damage."
+							}
+							, {
+								"name": "Resist fire 16+"
+								, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+							}
+							, {
+								"name": "Warlord of fire"
+								, "effect": "As a standard action, the warlord can command one nearby ally that has resistance to fire to make a melee attack as a free action."
+							}
+						]
+						, "nastierSpecials": [{
+							"name": "Unquenchable fires"
+							, "effect": "Enemies engaged with the first giant warlord take a -5 penalty to saves against ongoing fire damage."
+						}]
+					}
+					, {
+						"name": "Frost Giant"
+						, "size": "large"
+						, "level": 7
+						, "role": "spoiler"
+						, "type": "giant"
+						, "initiative": 10
+						, "vulnerability": "fire"
+						, "AC": 23
+						, "PD": 22
+						, "MD": 17
+						, "HP": 210
+						, "attacks": [{
+								"name": "Ice-covered war axe"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 12
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "45 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit or miss"
+									, "effect": "The giant can make a <em>frost touch</em> attack against the target as a free action."
+								}]
+							}
+							, {
+								"name": "Frost touch"
+								, "specialTrigger": true
+								, "type": "normal"
+								, "modifier": 11
+								, "defence": "PD"
+								, "target": ""
+								, "damage": "10 cold damage, and the target is hampered (<em>makes only basic attacks</em>) until the end of its next turn"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Large rock or iceball"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 11
+								, "defence": "PD"
+								, "target": "one nearby enemy or far away enemy at -2 atk"
+								, "damage": "35 damage"
+								, "extraEffects": []
+							}
+							, {
+								"name": "Slam"
+								, "specialTrigger": true
+								, "type": "normal"
+								, "modifier": 10
+								, "defence": "PD"
+								, "target": "one enemy smaller than it"
+								, "damage": "20 damage, the target pops free from the giant, and the target loses its next move action"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": [{
+								"name": "Ancient cold"
+								, "effect": "Whilte battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round."
+							}
+							, {
+								"name": "Resist cold 16+"
+								, "effect": "When a cold attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+							}
+						]
+						, "nastierSpecials": [{
+							"name": "Strength of giants"
+							, "effect": "Twice per battle, the giant can make a <em>slam</em> attack as a quick action (once per round)."
+						}]
+					}
+					, {
+						"name": "Hill Giant"
+						, "size": "large"
+						, "level": 6
+						, "role": "troop"
+						, "type": "giant"
+						, "initiative": 8
+						, "vulnerability": ""
+						, "AC": 20
+						, "PD": 20
+						, "MD": 14
+						, "HP": 200
+						, "attacks": [{
+								"name": "Massive gnarly club"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 10
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "45 damage"
+								, "extraEffects": [{
+									"trigger": "Miss that’s a natural 6+"
+									, "effect": "Half damage (sometimes close is good enough)."
+								}]
+							}
+							, {
+								"name": "Two-handed boulder throw"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 8
+								, "defence": "PD"
+								, "target": ""
+								, "damage": "35 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": []
+						, "nastierSpecials": [{
+							"name": "Big bully"
+							, "effect": "The giant deals double damage with its attacks against staggered targets."
+						}]
+					}
+					, {
+						"name": "Storm Giant"
+						, "size": "huge"
+						, "level": 10
+						, "role": "archer"
+						, "type": "giant"
+						, "initiative": 16
+						, "vulnerability": ""
+						, "AC": 26
+						, "PD": 24
+						, "MD": 22
+						, "HP": 650
+						, "attacks": [{
+								"name": "Truly enormous greatsword"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 15
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "120 damage"
+								, "extraEffects": [{
+										"trigger": "Natural even hit or miss"
+										, "effect": "The giant can make a <em>lightning bolt</em> attack against a random nearby enemy as a free action."
+									}
+									, {
+										"trigger": "Miss"
+										, "effect": "40 damage OR the giant can make a <em>release the thunder</em> attack as a free action."
+									}
+								]
+							}
+							, {
+								"name": "Giant longbow"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 14
+								, "defence": "AC"
+								, "target": "2 attacks vs. nearby or far away enemies"
+								, "damage": "60 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit"
+									, "effect": "The giant can make a <em>lightning bolt</em> attack against a random enemy that is nearby the target of the <em>longbow</em> attack."
+								}]
+							}
+							, {
+								"name": "Lightning bolt"
+								, "specialTrigger": true
+								, "type": "close"
+								, "modifier": 15
+								, "defence": "PD"
+								, "target": "one random nearby enemy"
+								, "damage": "2d6 × 10 lightning damage"
+								, "extraEffects": [{
+									"trigger": "Miss"
+									, "effect": "Half damage."
+								}]
+							}
+							, {
+								"name": "Release the thunder"
+								, "specialTrigger": true
+								, "type": "close"
+								, "modifier": 15
+								, "defence": "PD"
+								, "target": "all nearby creatures"
+								, "damage": "1d10 thunder damage per <em>building thunder</em> point (see below)"
+								, "extraEffects": [{
+									"trigger": "Miss"
+									, "effect": "Half damage."
+								}]
+							}
+						]
+						, "abilities": [{
+								"name": "Building thunder"
+								, "effect": "Keep count of the number of times the storm giant uses its <em>lightning bolt</em> attack during the battle.  Add that number to the escalation die to get the current building thunder value."
+							}
+							, {
+								"name": "Skystep"
+								, "effect": "A storm giant can use its standard action to walk or run through the air, using move actions to continue.  If the storm giant makes a standard action attack, it settles back to the ground below it without falling."
+							}
+							, {
+								"name": "Storm born"
+								, "effect": "The storm giant has <em>resist thunder 16+</em> and <em>resist lightning 16+</em>."
+							}
+						]
+						, "nastierSpecials": []
+					}
+				]
+			}
 		]
 	}
 	, {
