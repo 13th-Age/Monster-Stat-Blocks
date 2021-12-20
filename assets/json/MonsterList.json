@@ -2857,14 +2857,16 @@
 					, "target": ""
 					, "damage": "14 damage"
 					, "extraEffects": [{
-						"trigger": "Natural even hit or miss"
-						, "effect": "The target is marked for death; until the end of the battle, all gnoll attacks against the target gain an attack bonus equal to the escalation die."
-					}]
+							"trigger": "Natural even hit or miss"
+							, "effect": "The target is marked for death; until the end of the battle, all gnoll attacks against the target gain an attack bonus equal to the escalation die."
+						}
+						, {
+							"trigger": "Pack ferocity"
+							, "effect": "If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage."
+						}
+					]
 				}]
-				, "abilities": [{
-					"name": "Pack ferocity"
-					, "effect": "If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage."
-				}]
+				, "abilities": []
 				, "nastierSpecials": []
 			}
 		]
@@ -3188,13 +3190,12 @@
 					, "defence": "AC"
 					, "target": ""
 					, "damage": "36 damage"
-					, "extraEffects": []
+					, "extraEffects": [{
+						"trigger": "Cursed wound"
+						, "effect": "A non-dwarf creature damaged by a clay golem can’t be healed to above half its maximum hit points until after the battle."
+					}]
 				}]
 				, "abilities": [{
-						"name": "Cursed wound"
-						, "effect": "A non-dwarf creature damaged by a clay golem can’t be healed to above half its maximum hit points until after the battle."
-					}
-					, {
 						"name": "Golem immunity"
 						, "effect": "Non-organic golems are immune to effects.  They can’t be dazed, weakened, confused, made vulnerable, or touched by ongoing damage.  You can damage a golem, but that’s about it."
 					}
@@ -4289,17 +4290,15 @@
 				, "defence": "AC"
 				, "target": ""
 				, "damage": "27 damage, and one of the minotaur’s allies can pop free from the target as a free action"
-				, "extraEffects": []
+				, "extraEffects": [{
+					"trigger": "Furious charge"
+					, "effect": "The attack instead deals 40 damage on a hit if the minotaur first moves before attacking an enemy it was not engaged with at the start of its turn."
+				}]
 			}]
 			, "abilities": [{
-					"name": "Furious charge"
-					, "effect": "The attack instead deals 40 damage on a hit if the minotaur first moves before attacking an enemy it was not engaged with at the start of its turn."
-				}
-				, {
-					"name": "Blood frenzy"
-					, "effect": "Minotaurs gain a +4 melee attack bonus against staggered enemies."
-				}
-			]
+				"name": "Blood frenzy"
+				, "effect": "Minotaurs gain a +4 melee attack bonus against staggered enemies."
+			}]
 			, "nastierSpecials": [{
 					"name": "Durable"
 					, "effect": "The first time each round the minotaur takes damage, prevent 2d6 of it."
@@ -4626,17 +4625,15 @@
 					, "defence": "AC"
 					, "target": ""
 					, "damage": "8 damage"
-					, "extraEffects": []
+					, "extraEffects": [{
+						"trigger": "Dangerous"
+						, "effect": "The crit range of attacks by orcs expands by 3 unless they are staggered."
+					}]
 				}]
 				, "abilities": [{
-						"name": "Dangerous"
-						, "effect": "The crit range of attacks by orcs expands by 3 unless they are staggered."
-					}
-					, {
-						"name": "Unstoppable"
-						, "effect": "When an orc berserker drops to 0 hp, it does not immediately die.  Ignore any damage in excess of 0 hp, roll 2d6, and give the berserker that many temporary hit points.  No other healing can affect the berserker or give it more temporary hit points.  When the temporary hp are gone, the berserker dies."
-					}
-				]
+					"name": "Unstoppable"
+					, "effect": "When an orc berserker drops to 0 hp, it does not immediately die.  Ignore any damage in excess of 0 hp, roll 2d6, and give the berserker that many temporary hit points.  No other healing can affect the berserker or give it more temporary hit points.  When the temporary hp are gone, the berserker dies."
+				}]
 				, "nastierSpecials": []
 			}
 			, {
@@ -4700,12 +4697,12 @@
 					, "defence": "AC"
 					, "target": ""
 					, "damage": "6 damage"
-					, "extraEffects": []
+					, "extraEffects": [{
+						"trigger": "Dangerous"
+						, "effect": "The crit range of attacks by orcs expands by 3 unless they are staggered."
+					}]
 				}]
-				, "abilities": [{
-					"name": "Dangerous"
-					, "effect": "The crit range of attacks by orcs expands by 3 unless they are staggered."
-				}]
+				, "abilities": []
 				, "nastierSpecials": []
 			}
 		]
