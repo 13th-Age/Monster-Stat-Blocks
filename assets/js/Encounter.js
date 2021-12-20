@@ -85,7 +85,7 @@ function CreateStatBlocks() {
 		}
 
 		html += "</td>"
-				+ "<td>" + Capitalise(monsterDetails.size) + "</td>"
+				+ "<td>" + Capitalise(monsterDetails.sizeStrength) + "</td>"
 			+ "</tr>"
 			+ "<tr>"
 				+ "<td>PD</td>"
