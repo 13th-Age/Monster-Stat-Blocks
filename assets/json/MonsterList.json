@@ -2639,6 +2639,128 @@
 					}
 				]
 			}
+			, {
+				"name": "Gnoll"
+				, "monsters": [{
+						"name": "Gnoll Ranger"
+						, "size": "normal"
+						, "level": 3
+						, "role": "archer"
+						, "type": "humanoid"
+						, "initiative": 9
+						, "vulnerability": ""
+						, "AC": 18
+						, "PD": 17
+						, "MD": 14
+						, "HP": 46
+						, "attacks": [{
+								"name": "Hand axes"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": "2 attacks"
+								, "damage": "6 damage"
+								, "extraEffects": [{
+									"trigger": "Pack ferocity"
+									, "effect": "If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage."
+								}]
+							}
+							, {
+								"name": "Longbow"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 8
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "8 damage"
+								, "extraEffects": [{
+									"trigger": "Natural even hit or miss"
+									, "effect": "The gnoll can make a second <em>longbow</em> attack (no more) as a free action."
+								}]
+							}
+						]
+						, "abilities": [{
+							"name": "Quick shot"
+							, "effect": "When the gnoll ranger is unengaged and an enemy moves to engage it, roll a d20.  On a 11+ the gnoll ranger can make a <em>longbow</em> attack against that enemy as a free action just before being engaged."
+						}]
+						, "nastierSpecials": [{
+							"name": "Hates everyone"
+							, "effect": "The crit range of attacks by gnoll rangers expands by 2 against humanoids."
+						}]
+					}
+					, {
+						"name": "Gnoll Savage"
+						, "size": "normal"
+						, "level": 3
+						, "role": "troop"
+						, "type": "humanoid"
+						, "initiative": 7
+						, "vulnerability": ""
+						, "AC": 19
+						, "PD": 16
+						, "MD": 13
+						, "HP": 42
+						, "attacks": [{
+								"name": "Spear"
+								, "specialTrigger": false
+								, "type": "normal"
+								, "modifier": 7
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "10 damage"
+								, "extraEffects": [{
+									"trigger": "Pack ferocity"
+									, "effect": "If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage."
+								}]
+							}
+							, {
+								"name": "Thrown speak"
+								, "specialTrigger": false
+								, "type": "ranged"
+								, "modifier": 6
+								, "defence": "AC"
+								, "target": ""
+								, "damage": "8 damage"
+								, "extraEffects": []
+							}
+						]
+						, "abilities": []
+						, "nastierSpecials": []
+					}
+					, {
+						"name": "Gnoll War Leader"
+						, "size": "normal"
+						, "level": 4
+						, "role": "leader"
+						, "type": "humanoid"
+						, "initiative": 8
+						, "vulnerability": ""
+						, "AC": 20
+						, "PD": 17
+						, "MD": 14
+						, "HP": 56
+						, "attacks": [{
+							"name": "Heavy flail"
+							, "specialTrigger": false
+							, "type": "normal"
+							, "modifier": 9
+							, "defence": "AC"
+							, "target": ""
+							, "damage": "14 damage"
+							, "extraEffects": [{
+								"trigger": "Natural even hit or miss"
+								, "effect": "The target is marked for death; until the end of the battle, all gnoll attacks against the target gain an attack bonus equal to the escalation die."
+							}]
+						}]
+						, "abilities": [{
+							"name": "Pack ferocity"
+							, "effect": "If more than one gnoll is engaged with the target, each gnoll melee attack that misses that target deals half damage."
+						}]
+						, "nastierSpecials": []
+					}
+				]
+			}
 		]
 	}
 	, {
