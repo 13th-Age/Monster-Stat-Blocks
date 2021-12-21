@@ -4803,4 +4803,71 @@
 			, "nastierSpecials": []
 		}]
 	}
+	, {
+		"name": "Phase Spider"
+		, "monsters": [{
+			"name": "Phase Spider"
+			, "source": "13th Age"
+			, "sizeStrength": "large"
+			, "level": 7
+			, "role": "spoiler"
+			, "type": "beast"
+			, "initiative": 16
+			, "vulnerability": ""
+			, "AC": 23
+			, "PD": 22
+			, "MD": 18
+			, "HP": 200
+			, "attacks": [{
+					"name": "Phasing fangs"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "PD"
+					, "target": "2 attacks"
+					, "damage": "25 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The spider can make a <em>rummage and filch</em> attack against the target as a free action, even if the target isn’t staggered."
+					}]
+				}
+				, {
+					"name": "Rummage and filch"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "MD"
+					, "target": "one staggered creature"
+					, "damage": "The phase spider steals a random true magic item from the target (see below)"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+					"name": "Phasing abilities"
+					, "effect": "As long as it didn’t just return from being out of phase, at the start of the phase spider’s turn, roll a d6 to see which of its phase and teleport abilities it can access that turn.  The spider doesn’t have to use the available ability and can attack normally, if it wishes."
+				}
+				, {
+					"name": "1-2: Short teleport"
+					, "effect": "As a move action, the spider can teleport anywhere it can see nearby."
+				}
+				, {
+					"name": "3: Long teleport"
+					, "effect": "As a move action, the spider can teleport anywhere it can see nearby or far away."
+				}
+				, {
+					"name": "4-5: Phase out"
+					, "effect": "As a move action, the spider can remove itself from the battlefield, returning on its next initiative turn anywhere it choose nearby.  It doesn’t get to make a phase roll at the start of its next turn though."
+				}
+				, {
+					"name": "6: Teleport away"
+					, "effect": "If the spider has stolen at least one magic item, as a move action it can teleport back to its lair, or to its master if it has one.  It leaves the battle.  If it hasn’t stolen an item yet, it won’t leave and can use its choice of the other abilities this turn."
+				}
+				, {
+					"name": "Stolen items"
+					, "effect": "If the spider is slain before it leaves battle, all items stolen from the party are recovered.  If a d20 roll results in a 20, other magic items are found."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
 ]
