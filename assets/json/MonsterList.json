@@ -4870,4 +4870,71 @@
 			, "nastierSpecials": []
 		}]
 	}
+	, {
+		"name": "Rakshasa"
+		, "monsters": [{
+			"name": "Rakshasa"
+			, "source": "13th Age"
+			, "sizeStrength": "double-strength"
+			, "level": 8
+			, "role": "caster"
+			, "type": "humanoid"
+			, "initiative": 16
+			, "vulnerability": ""
+			, "AC": 23
+			, "PD": 20
+			, "MD": 22
+			, "HP": 280
+			, "attacks": [{
+					"name": "Claws and bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "25 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The rakshasa can make a <em>rend mind</em> attack as a free action."
+					}]
+				}
+				, {
+					"name": "Striped lightning bolts"
+					, "specialTrigger": false
+					, "type": "ranged"
+					, "modifier": 13
+					, "defence": "PD"
+					, "target": "1d3 nearby enemies"
+					, "damage": "25 lightning damage, or 50 lightning damage against a staggered target"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The rakshasa can make a <em>rend mind</em> attack as a free action."
+					}]
+				}
+				, {
+					"name": "Rend mind"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 13
+					, "defence": "MD"
+					, "target": "one nearby enemy"
+					, "damage": "15 psychic damage, and the target is confused (<em>make a basic or at-will attack vs. ally</em>) until the end of the rakshasa’s next turn"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+				"name": "Shapechange"
+				, "effect": "As a standard action, the rakshasa can change its form to that of any humanoid, or back to its own shape.  Seeing through the shapechange requires a DC 25 skill check."
+			}]
+			, "nastierSpecials": [{
+					"name": "Master of chaos"
+					, "effect": "The rakshasa gains a bonus to all defences equal to the current number of confused enemies in the battle."
+				}
+				, {
+					"name": "Reversal of fate"
+					, "effect": "Once per day as a quick action, the rakshasa steals the escalation die; until the end of the battle the rakshasa gains an attack bonus equal to the die’s value when it was stolen.  Reset the escalation die to 0 for the players and increase it normally with each new round."
+				}
+			]
+		}]
+	}
 ]
