@@ -5305,4 +5305,48 @@
 			}
 		]
 	}
+	, {
+		"name": "Troll"
+		, "monsters": [{
+			"name": "Troll"
+			, "source": "13th Age"
+			, "sizeStrength": "large"
+			, "level": 4
+			, "role": "troop"
+			, "type": "giant"
+			, "initiative": 9
+			, "vulnerability": ""
+			, "AC": 17
+			, "PD": 17
+			, "MD": 13
+			, "HP": 90
+			, "attacks": [{
+				"name": "Greedy wicked claw"
+				, "specialTrigger": false
+				, "type": "normal"
+				, "modifier": 8
+				, "defence": "AC"
+				, "target": "2 attacks"
+				, "damage": "15 damage"
+				, "extraEffects": []
+			}]
+			, "abilities": [{
+				"name": "Trollish regeneration 10"
+				, "effect": "While a troll is damaged, its rubbery flesh heals 10 hit points at the start of the troll’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limite<br>&emsp;When the troll is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping a troll to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
+			}]
+			, "nastierSpecials": [{
+					"name": "Increased regeneration"
+					, "effect": "Increase the troll’s regeneration dice; the baseline amount a troll regenerates should run about 1/9 of its total hp, but you can go higher to be nasty."
+				}
+				, {
+					"name": "Mutant"
+					, "effect": "Fire and acid don’t hurt the troll’s regeneration; lightning does instead."
+				}
+				, {
+					"name": "Rending"
+					, "effect": "If both <em>claw</em> attacks hit the same target, the target also takes 10 ongoing damage."
+				}
+			]
+		}]
+	}
 ]
