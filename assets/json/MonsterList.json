@@ -5169,4 +5169,140 @@
 			}
 		]
 	}
+	, {
+		"name": "Troglodyte"
+		, "monsters": [{
+				"name": "Trog"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 2
+				, "role": "spoiler"
+				, "type": "humanoid"
+				, "initiative": 4
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 17
+				, "MD": 13
+				, "HP": 38
+				, "attacks": [{
+						"name": "Club"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Damage equal to the penalty the trog’s stench currently imposes on the target."
+						}]
+					}
+					, {
+						"name": "Javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 5
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Chameleon"
+					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a -4 penalty."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Trog Chanter"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 3
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 16
+				, "MD": 18
+				, "HP": 44
+				, "attacks": [{
+						"name": "Spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Damage equal to the penalty the trog’s stench currently imposes on the target."
+						}]
+					}
+					, {
+						"name": "Hissing curse"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "one nearby enemy, or a far away enemy at -2 atk"
+						, "damage": "10 damage, and the target is again affect by <em>trog stench</em> if it had saved against the effect"
+						, "extraEffects": [{
+							"trigger": "Natural 20"
+							, "effect": "All nearby humanoids who saved against <em>trog stench</em> earlier in the battle are affected again by it."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Chameleon"
+					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a -4 penalty."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Trog Underling"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 8
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 22
+				, "MD": 17
+				, "HP": 38
+				, "attacks": [{
+						"name": "Club"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "22 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Damage equal to three times the penalty the trog’s stench currently imposes on the target."
+						}]
+					}
+					, {
+						"name": "Javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "16 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Chameleon"
+					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a -4 penalty."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
 ]
