@@ -4937,4 +4937,58 @@
 			]
 		}]
 	}
+	, {
+		"name": "Sahuagin"
+		, "monsters": [{
+			"name": "Sahuagin"
+			, "source": "13th Age"
+			, "sizeStrength": "normal"
+			, "level": 5
+			, "role": "wrecker"
+			, "type": "humanoid"
+			, "initiative": 9
+			, "vulnerability": ""
+			, "AC": 20
+			, "PD": 19
+			, "MD": 16
+			, "HP": 70
+			, "attacks": [{
+					"name": "Trident and bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 10
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "10 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 20"
+						, "effect": "Increase the escalation die by 1, and the target is hampered (<em>makes only basic attacks</em>) until the end of its next turn."
+					}]
+				}
+				, {
+					"name": "Barbed crossbow"
+					, "specialTrigger": false
+					, "type": "ranged"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": "one nearby enemy, or a far away enemy at -2 atk"
+					, "damage": "10 damage, and 5 ongoing damage"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+					"name": "Blood frenzy"
+					, "effect": "Make a note of the escalation die when the sahuagin becomes staggered.  The sahuagin gains a bonus to its melee attacks and damage equal to the escalation die value for the rest of the battle."
+				}
+				, {
+					"name": "Water breather"
+					, "effect": "Sahuagin breathe underwater and swim very well."
+				}
+			]
+			, "nastierSpecials": [{
+				"name": "Demon-touched"
+				, "effect": "Roll a d6 on the demon abilities table.  The sahuagin gains that ability."
+			}]
+		}]
+	}
 ]
