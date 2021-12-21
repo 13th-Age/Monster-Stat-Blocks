@@ -5476,4 +5476,39 @@
 			}
 		]
 	}
+	, {
+		"name": "Wight"
+		, "monsters": [{
+			"name": "Wight"
+			, "source": "13th Age"
+			, "sizeStrength": "normal"
+			, "level": 4
+			, "role": "spoiler"
+			, "type": "undead"
+			, "initiative": 7
+			, "vulnerability": "holy"
+			, "AC": 21
+			, "PD": 17
+			, "MD": 13
+			, "HP": 48
+			, "attacks": [{
+				"name": "Sword"
+				, "specialTrigger": false
+				, "type": "normal"
+				, "modifier": 9
+				, "defence": "AC"
+				, "target": ""
+				, "damage": "10 damage"
+				, "extraEffects": [{
+					"trigger": "Natural even hit or miss"
+					, "effect": "Unless the wight is staggered, the attack also deals 8 ongoing negative energy damage."
+				}]
+			}]
+			, "abilities": []
+			, "nastierSpecials": [{
+				"name": "Barrow-touch"
+				, "effect": "The wight’s attacks against enemies taking ongoing negative energy damage are against PD instead of AC and have an expanded crit range expands by 2."
+			}]
+		}]
+	}
 ]
