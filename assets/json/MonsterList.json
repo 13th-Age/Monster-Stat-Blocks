@@ -4991,4 +4991,182 @@
 			}]
 		}]
 	}
+	, {
+		"name": "Skeleton"
+		, "monsters": [{
+				"name": "Blackamber Skeletal Legionnaire"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "undead"
+				, "initiative": 10
+				, "vulnerability": "holy"
+				, "AC": 21
+				, "PD": 15
+				, "MD": 17
+				, "HP": 48
+				, "attacks": [{
+						"name": "Shortsword"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "14 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target moves down 1d3 points in initiative order, to a minimum of 1."
+							}
+							, {
+								"trigger": "Natural even miss"
+								, "effect": "5 damage."
+							}
+						]
+					}
+					, {
+						"name": "Javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Press advantage"
+					, "effect": "The legionnaire deals +1d8 damage with its attacks against enemies that have a lower initiative than it."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Decrepit Skeleton"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 1
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 6
+				, "vulnerability": "holy"
+				, "AC": 16
+				, "PD": 14
+				, "MD": 10
+				, "HP": 7
+				, "attacks": [{
+					"name": "Sword"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Skeletal Hound"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 1
+				, "role": "blocker"
+				, "type": "undead"
+				, "initiative": 7
+				, "vulnerability": "holy"
+				, "AC": 15
+				, "PD": 13
+				, "MD": 13
+				, "HP": 24
+				, "attacks": [{
+					"name": "Bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "5 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The hound leaves teeth in the wound; the target takes 5 ongoing damage, and the hound takes 1d6 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Chomp chomp chomp"
+						, "effect": "Enemies with a lower initiative than the hound take a -5 penalty to disengage checks against it."
+					}
+					, {
+						"name": "Skilled intercept 11+"
+						, "effect": "Once per round, an engaged skeletal hound can attempt to pop free and intercept an enemy moving past it.  Roll a normal save; on 11+, it succeeds."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Skeleton Archer"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 1
+				, "role": "archer"
+				, "type": "undead"
+				, "initiative": 7
+				, "vulnerability": "holy"
+				, "AC": 16
+				, "PD": 14
+				, "MD": 11
+				, "HP": 26
+				, "attacks": [{
+						"name": "Jabby bones"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 5
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "4 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Shortbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Skeleton Warrior"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "undead"
+				, "initiative": 8
+				, "vulnerability": "holy"
+				, "AC": 16
+				, "PD": 14
+				, "MD": 11
+				, "HP": 26
+				, "attacks": [{
+					"name": "Spear"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+		]
+	}
 ]
