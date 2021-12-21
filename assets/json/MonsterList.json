@@ -5349,4 +5349,131 @@
 			]
 		}]
 	}
+	, {
+		"name": "Vampire"
+		, "monsters": [{
+				"name": "Spawn of the Master"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 10
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 16
+				, "vulnerability": "holy"
+				, "AC": 25
+				, "PD": 23
+				, "MD": 20
+				, "HP": 54
+				, "attacks": [{
+					"name": "Claws and fangs"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 15
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "30 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 18+"
+						, "effect": "If the target is staggered, it is also hampered (<em>makes only basic attacks</em>) until the end of its next turn."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Vampire"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 10
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 15
+				, "vulnerability": "holy"
+				, "AC": 26
+				, "PD": 20
+				, "MD": 26
+				, "HP": 220
+				, "attacks": [{
+						"name": "Deathly touch"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "50 negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The target is also weakened until the end of its next turn (-4 attacks and defences).  In addition, the target expends one unused limited trait (a spell, power, or talent with a once-per-battle or daily use, but not magic item powers) of its choice."
+						}]
+					}
+					, {
+						"name": "Vampiric compulsion"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 15
+						, "defence": "MD"
+						, "target": "one enemy; see below"
+						, "damage": "The target is confused and vulnerable ((save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "The vampire can use <em>vampiric compulsion</em> as a free action only when a nearby enemy attacks the vampire and misses with a natural attack roll of 1-5."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Vampiric regeneration"
+						, "effect": "The vampire regenerates 1 hp per level at the start of each round indefinitely, but it turns to mist if it drops to 0 hp (see below)."
+					}
+					, {
+						"name": "Mist form"
+						, "effect": "Unless it is slain in a manner appropriate for truly killing vampires in the campaign, a vampire that drops to 0 hp drifts away to return and fight some other day."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Vampiric compulsion"
+					, "effect": "The vampire gains the use of the <em>vampiric compulsion</em> power."
+				}]
+			}
+			, {
+				"name": "Vampire Spawn"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 6
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 10
+				, "vulnerability": "holy"
+				, "AC": 20
+				, "PD": 17
+				, "MD": 15
+				, "HP": 90
+				, "attacks": [{
+						"name": "Claw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The vampire spawn can make a <em>fangs</em> attack against the target as a free action."
+						}]
+					}
+					, {
+						"name": "Fangs"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage, and a humanoid target is weakened (-4 attack and defences) until the end of the vampire spawn’s next turn"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+		]
+	}
 ]
