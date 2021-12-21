@@ -5568,4 +5568,53 @@
 			}]
 		}]
 	}
+	, {
+		"name": "Wyvern"
+		, "monsters": [{
+			"name": "Wyvern"
+			, "source": "13th Age"
+			, "sizeStrength": "large"
+			, "level": 5
+			, "role": "wrecker"
+			, "type": "beast"
+			, "initiative": 10
+			, "vulnerability": ""
+			, "AC": 20
+			, "PD": 19
+			, "MD": 14
+			, "HP": 140
+			, "attacks": [{
+					"name": "Tearing jaws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 10
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "35 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The wyvern can make a <em>deadly tail stinger</em> attack during its next turn."
+					}]
+				}
+				, {
+					"name": "Deadly tail stinger"
+					, "specialTrigger": true
+					, "type": "normal"
+					, "modifier": 10
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "15 damage, and the target takes 10 ongoing poison damage (difficult save ends, 16+)"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+				"name": "Flight"
+				, "effect": ""
+			}]
+			, "nastierSpecials": [{
+				"name": "Escalating poison"
+				, "effect": "Add the escalation die to the wyvern’s ongoing poison damage whenever that damage is dealt."
+			}]
+		}]
+	}
 ]
