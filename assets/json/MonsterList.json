@@ -5617,4 +5617,112 @@
 			}]
 		}]
 	}
+	, {
+		"name": "Zombie"
+		, "monsters": [{
+				"name": "Giant Zombie"
+				, "source": "13th Age"
+				, "sizeStrength": "large"
+				, "level": 9
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 8
+				, "vulnerability": "holy"
+				, "AC": 23
+				, "PD": 21
+				, "MD": 17
+				, "HP": 100
+				, "attacks": [{
+					"name": "Club or club-like fists"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 14
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "50 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit or miss"
+						, "effect": "Both the zombie and its target take 6d10 damage!"
+					}]
+				}]
+				, "abilities": [{
+						"name": "Headshot"
+						, "effect": "A critical hit against a giant zombie mook deals triple damage instead of the normal double damage for a crit."
+					}
+					, {
+						"name": "Double-strength mook"
+						, "effect": "The giant zombie mook counts as two 9th level mooks when you are building battles."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Human Zombie"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "undead"
+				, "initiative": 1
+				, "vulnerability": "holy"
+				, "AC": 15
+				, "PD": 13
+				, "MD": 9
+				, "HP": 60
+				, "attacks": [{
+					"name": "Rotting fist"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "Both the zombie and its target take 1d6 damage!"
+					}]
+				}]
+				, "abilities": [{
+					"name": "Headshot"
+					, "effect": "A critical hit against a zombie drops it to 0 hp."
+				}]
+				, "nastierSpecials": [{
+					"name": "Eat brains"
+					, "effect": "More dangerous zombies don’t try to kill the moving targets before feasting on brains; they keep attacking any enemy they’ve knocked unconscious, rolling attacks againt the helpless enemy until it’s dead."
+				}]
+			}
+			, {
+				"name": "Zombie Shuffler"
+				, "source": "13th Age"
+				, "sizeStrength": "normal"
+				, "level": 1
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 0
+				, "vulnerability": "holy"
+				, "AC": 14
+				, "PD": 12
+				, "MD": 8
+				, "HP": 10
+				, "attacks": [{
+					"name": "Rotting fist"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "Both the zombie and its target take 1d4 damage!"
+					}]
+				}]
+				, "abilities": [{
+					"name": "Headshot"
+					, "effect": "A critical hit against a zombie shuffler deals triple damage instead of the normal double damage for a crit."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
 ]
