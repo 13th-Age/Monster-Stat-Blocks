@@ -635,6 +635,62 @@
 		]
 	}
 	, {
+		"name": "Bat"
+		, "monsters": [{
+			"name": "Fire Bat"
+			, "source": "13 True Ways"
+			, "sizeStrength": "normal"
+			, "level": 3
+			, "role": "mook"
+			, "type": "beast"
+			, "initiative": 9
+			, "vulnerability": ""
+			, "AC": 18
+			, "PD": 16
+			, "MD": 11
+			, "HP": 10
+			, "attacks": [{
+					"name": "Burning claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "2 damage, and 2 fire damage"
+					, "extraEffects": []
+				}
+				, {
+					"name": "Burning contrail"
+					, "specialTrigger": true
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "5 fire damage"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+					"name": "Fiery flier"
+					, "effect": "An unengaged fire bat can move, and make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
+				}
+				, {
+					"name": "Blistering heat"
+					, "effect": "When an enemy engaged with the fire bat attacks it, that enemy takes 2 fire damage."
+				}
+				, {
+					"name": "Fire resistance 16+"
+					, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+				}
+				, {
+					"name": "Flight"
+					, "effect": "Fire bats are agile fliers, especially when riding hot air currents.  They slow down a bit away from warmth."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
+	, {
 		"name": "Bulette"
 		, "monsters": [{
 			"name": "Bulette"
