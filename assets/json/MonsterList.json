@@ -524,6 +524,117 @@
 		}]
 	}
 	, {
+		"name": "Azer"
+		, "monsters": [{
+				"name": "Azer Soldier"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "dwarf"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 17
+				, "MD": 14
+				, "HP": 50
+				, "attacks": [{
+						"name": "Red-hot hammer"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "4 ongoing fire damage."
+						}]
+					}
+					, {
+						"name": "Throwing axe"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Blistering heat"
+						, "effect": "When an enemy engaged with the azer attacks it, that enemy takes 2 fire damage."
+					}
+					, {
+						"name": "Fighting surge"
+						, "effect": "Once per battle when an attack crits the azer but doesn’t kill it, the azer can heal 4d6 hp."
+					}
+					, {
+						"name": "Cold haters"
+						, "effect": "The azer adds the escalation die to its attacks against a target that is capable of dealing cold damage with a spell, attack, or magic item."
+					}
+					, {
+						"name": "Fire resistance 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Magma Brute"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "construct"
+				, "initiative": 4
+				, "vulnerability": "cold"
+				, "AC": 19
+				, "PD": 18
+				, "MD": 12
+				, "HP": 46
+				, "attacks": [{
+						"name": "Blazing-hot iron fists"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 6 extra fire damage."
+						}]
+					}
+					, {
+						"name": "Molten spray"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": "1d2 + 1 enemies engaged with the brute"
+						, "damage": "8 fire damage, and the brute loses 12 hit points"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, only while the brute is staggered."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Blistering heat"
+						, "effect": "When an enemy engaged with the brute attacks it, that enemy takes 2 fire damage."
+					}
+					, {
+						"name": "Fire resistance 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Bulette"
 		, "monsters": [{
 			"name": "Bulette"
