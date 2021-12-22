@@ -880,6 +880,47 @@
 				}]
 			}
 			, {
+				"name": "Bat Demon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 6
+				, "role": "mook"
+				, "type": "demon"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 19
+				, "MD": 16
+				, "HP": 22
+				, "attacks": [{
+					"name": "Scrabbling claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "10 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "3 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "Bat demons are indifferent fliers, better suited to gliding between stalactites and clinging to walls than to skillful flying."
+					}
+					, {
+						"name": "Murder-pile"
+						, "effect": "At the start of each of the bat demon mob’s turns, choose one random nearby conscious enemy.  All bat demons in the battle attempt to attack that enemy this turn, moving to it without disengaging and relying on their <em>shifty</em> ability to protect them.  They keep attacking their target that turn even if it drops to 0 hp or below."
+					}
+					, {
+						"name": "Shifty"
+						, "effect": "Bat demons gain a +5 AC bonus against opportunity attacks.  In addition, they have <em>resist damage 18+</em> against opportunity attacks (half damage if the natural attack roll isn’t 18+)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Despoiler"
 				, "source": "13th Age"
 				, "sizeStrength": "normal"
