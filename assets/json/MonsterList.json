@@ -151,6 +151,55 @@
 				}]
 			}
 			, {
+				"name": "Dire Tiger"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 6
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 19
+				, "MD": 15
+				, "HP": 160
+				, "attacks": [{
+						"name": "Crushing jaws and shredding claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "17 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Pounce"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "38 damage, and the target is hampered while it’s engaged with the tiger"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Pouncing opportunity"
+						, "effect": "When an enemy moves to engage the dire tiger while it’s unengaged, it can meet that enemy halfway and make a <em>pounch</em> attack as an interrupt action before the target’s attack."
+					}
+					, {
+						"name": "Springing attack"
+						, "effect": "If the dire tiger is unengaged and moves to engage an enemy (with a springing leap), it can make a <em>pounce</em> attack as a standard action."
+					}
+					, {
+						"name": "One random dire feature"
+						, "effect": "Use the dire features table."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Dire Wolf"
 				, "source": "13th Age"
 				, "sizeStrength": "large"
@@ -218,6 +267,58 @@
 					, "effect": "A giant ant can climb on ceilings and walls as easily as it moves on the ground."
 				}]
 				, "nastierSpecials": []
+			}
+			, {
+				"name": "Giant Praying Mantis"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 8
+				, "role": "blocker"
+				, "type": "beast"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 21
+				, "MD": 17
+				, "HP": 320
+				, "attacks": [{
+						"name": "Jagged claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "30 damage, and if the target’s initiative bonus is +10 or less, the target is grabbed until it disengages or until the mantis makes a <em>jagged claws</em> attack against a different target"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Chomp"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "40 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Close fighting"
+						, "effect": "When an enemy fails a disengage check against the dire mantis, the mantis can make an opportunity attack against it."
+					}
+					, {
+						"name": "Big but brittle"
+						, "effect": "While the dire mantis might rate as a huge monster in terms of size, its stats are based on those for a large monster."
+					}
+					, {
+						"name": "One random dire feature"
+						, "effect": "Use the dire features table."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Clacking mandibles"
+					, "effect": "When the dire mantis starts its turn grabbing an enemy, it can make a <em>chomp</em> attack against that enemy as a free action."
+				}]
 			}
 			, {
 				"name": "Giant Scorpion"
