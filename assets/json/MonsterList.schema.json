@@ -114,7 +114,7 @@
 							"type": "number"
 							, "title": "Initiative"
 							, "minimum": 0
-							, "maximum": 20
+							, "maximum": 24
 						}
 						, "vulnerability": {
 							"type": "string"
