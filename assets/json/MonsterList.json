@@ -1604,6 +1604,828 @@
 		]
 	}
 	, {
+		"name": "Devil"
+		, "monsters": [{
+				"name": "Barbed Devil (Hamatula)"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 10
+				, "role": "caster"
+				, "type": "devil"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 24
+				, "MD": 24
+				, "HP": 175
+				, "attacks": [{
+						"name": "Glistening claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "12 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The barded devil can make a <em>whirling barbs</em> attack as a free action."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "6 damage."
+							}
+						]
+					}
+					, {
+						"name": "Whirling barbs"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "9 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Ball of hellfire"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies in a group"
+						, "damage": "30 fire damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 20 poison damage and is hampered until the end of its next turn as it chokes on sulphurous fumes."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Barbs everywhere"
+						, "effect": "When an enemy engages the devil, the barbed devil can make a <em>whirling barbs</em> attack against it as a free action."
+					}
+					, {
+						"name": "Devil’s due (Loot)"
+						, "effect": "When you choose to add the escalation die to an attack against a barbed devil, you must expend one of your unused true magic item powers as the item gets a close encounter with the barbed devil’s “soul”.  If you can’t expend such a power, no escalation die for you."
+					}
+					, {
+						"name": "Slashing dodge"
+						, "effect": "While engaged with a single enemy, the barbed devil can “take 11” on a disengage check, taking a natural result of 11 instead of rolling.  When it does so and successfully disengages, it can make a <em>whirling barbs</em> attack against that enemy as part of the move action."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Bearded Devil (Barbazu)"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 6
+				, "role": "blocker"
+				, "type": "devil"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 20
+				, "MD": 20
+				, "HP": 200
+				, "attacks": [{
+						"name": "Wicked halberd"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The bearded devil gains a +4 bonus to all defences until the start of its next turn."
+						}]
+					}
+					, {
+						"name": "Supernaturally filthy beard"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "The target is weakened until the end of its next turn (-4 attacks and defences)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Bearded defence"
+						, "effect": "When an enemy engaged with the bearded devil misses it with an attack, the devil can make a <em>filthy beard</em> attack against that enemy as a free action."
+					}
+					, {
+						"name": "Devil’s due (Solidity)"
+						, "effect": "When you choose to add the escalation die to an attack against a bearded devil, the devil or one of its nearby allies can roll a save against a save ends effect."
+					}
+					, {
+						"name": "Opportunistic beard"
+						, "effect": "When the bearded devil makes an opportunity attack, it can also make a <em>filthy beard</em> attack against the same target as a free action."
+					}
+					, {
+						"name": "Skilled interceptor"
+						, "effect": "A bearded devil can intercept an enemy while engaged with other enemies.  As a free action, it can either make a disengage check to try to move to intercept the enemy, or move to intercept the enemy and only take half damage from opportunity attacks."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Toxic beard"
+					, "effect": "The target of the bearded devil’s <em>filthy beard</em> attack now takes 10 ongoing poison damage and is weakened (save ends both) instead."
+				}]
+			}
+			, {
+				"name": "Bone Devil (Osyluth)"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 8
+				, "role": "troop"
+				, "type": "devil"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 23
+				, "MD": 23
+				, "HP": 320
+				, "attacks": [{
+						"name": "Bone claw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "80 damage, and the bone devil can make a <em>doom venom sting</em> attack as a free action"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Doom venom sting"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "20 damage, and the target can’t use recoveries, even involuntarily (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Bone javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Free!)"
+						, "effect": "When you choose to add the escalation die to an attack against a bone devil, one bone devil in the battle can teleport to a nearby location it can see as a move action once later this battle.  Multiple attacks accumulate into multiple possible move action teleports for any bone devils in the battle."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Mana venom"
+					, "effect": "The devil’s <em>doom venom sting</em> attack also negates one spell effect created by the target until the target is able to use recoveries again.  (The effect isn’t cancelled, only suppressed until the target saves.)"
+				}]
+			}
+			, {
+				"name": "Fury Devil (Erinyes)"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 8
+				, "role": "wrecker"
+				, "type": "devil"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 22
+				, "MD": 22
+				, "HP": 120
+				, "attacks": [{
+						"name": "Stout, sharp dagger"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "24 damage"
+						, "extraEffects": [{
+								"trigger": "Any hit while hellbent"
+								, "effect": "The target also takes 8 psychic damage and 8 ongoing psychic damage (that feels like a terminal case of guilt)."
+							}
+							, {
+								"trigger": "Miss while hellbent"
+								, "effect": "4 psychic damage."
+							}
+						]
+					}
+					, {
+						"name": "Word of rebuke"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "15 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Any hit while hellbent"
+							, "effect": "The target takes 30 psychic damage instead."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Defence against the inconsequential"
+						, "effect": "Attacks against a fury devil take a -4 penalty unless the devil is hellbent against that attacker."
+					}
+					, {
+						"name": "Devil’s due (Fury)"
+						, "effect": "When you choose to add the escalation die to an attack against a fury devil, the fury devil deals 1d10 extra damage with its next attack this battle, hit or miss."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Fury devils fly from place to place but fight on their feet."
+					}
+					, {
+						"name": "Menancing charge"
+						, "effect": "When an enemy intercepts the fury devil, the next attack this battle the devil makes against that enemy that hits is a critical hit instead."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Hellbent"
+						, "effect": "Fury devils become hellbent against a creature for story reasons outside the scope of a single battle.  PCs could give devils ample reason to hate them.  Or a succession of 5s as relationship dice with icon interactions that involve the devils might suffice to make the fury devil hellbent.  More often than not, it won’t be one of the PCs who is the target, but getting in the way of hellbent furies is a problem.  They will try to bypass defenders, however, to concentrate on killing their target or targets.<br>&emsp;Typically, a single fury devil leaves the Pit to exact retribution.  If heroes manage to beat that erinyes back, then three new fury devils rise up to try to finish the mission that the first one failed at, and whoever killed the first erinyes is on their hit list, too.  If those devils fail, five erinyes come next, with another hero added to their list.  If stout-hearted heroes defeat all five fury devils, they’re safe.  Maybe."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Hell Imp"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "devil"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 18
+				, "HP": 50
+				, "attacks": [{
+						"name": "Needling taunt"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "8 psychic damage, and the target is hampered until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Stinging tail"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "8 ongoing poison damage and the target is weakened (save ends both)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "As a free action, when an enemy engaged with the hell imp misses it with an attack."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Mwahahahah!)"
+						, "effect": "When you choose to add the escalation die to an attack against a hell imp, the imp automatically hits with its next <em>needling taunt</em> attack this battle, and the target takes 2d6 extra psychic damage."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Hell imps are capable of impressive feats of aerial agility, but only when their lives depend on it."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Vanish"
+						, "effect": "Once per battle as a move action, a hell imp can become invisible, pop free from all enemies engaged with it, move away somewhere nearby, and then reappear."
+					}
+					, {
+						"name": "Free-form ability - Provoke"
+						, "effect": "Hell imps are as capable as you might expect at handling social situations, sneaking, noticing spies, and the like.  Their special talent is provocation.  They can talk their associates into all sorts of extreme emotions and imprudent behaviour.  Likewise, they can probably goad PCs into losing their cool."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Potent venom"
+					, "effect": "The <em>stinging tail</em> attack deals 3 extra ongoing poison damage (11 total), but the target must succeed on two saves (one for ongoing and one for weakened)."
+				}]
+			}
+			, {
+				"name": "Honey Devil, aka Slime Devil"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "devil"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 17
+				, "MD": 18
+				, "HP": 35
+				, "attacks": [{
+						"name": "Hidden dagger"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "The target has MD 15 or lower"
+							, "effect": "The honey devil can make a disengage check this turn as a free action."
+						}]
+					}
+					, {
+						"name": "Confusing plea"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "The target is confused (save ends)."
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Desperate plea"
+						, "effect": "When the honey devil is staggered by an attack, it makes a <em>confusing plea</em> attack against the attacker as a free action after the attack."
+					}
+					, {
+						"name": "Glamour of innocence"
+						, "effect": "This creature seems innocent, not someone a hero should hurt.  At worst, it’s ugly, but is that a crime?  When an enemy rolls a natural odd attack roll against a honey devil, the attack misses and has no effect."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Weakling"
+						, "effect": "When building battles using this monster, it only counts as half a normal monster."
+					}
+					, {
+						"name": "Free-form covert ability - Slimy"
+						, "effect": "In any non-combat struggles with a honey devil, it excels at being too slippery for the PCs, both personally and through its underground network of minions.  In an indirect contest, the PCs might try to talk sense to one of the devil’s dupes or to discern suspicious activity while staking out the devil’s secret network.  The honey devil is an expert at what it does, so use DC 25 for any such skill checks.  Assume that the devil is competent at slipping its influence through the network unnoticed.  Failure might mean that the PC has succeeded in gaining informaiton, which in turn sends them down a dead end or into a trap.  In a direct confrontation, the devil is likewise hard to pin down, see through, or otherwise get the better of.<br>&emsp;A slime devil seems unremarkable and innocuous, so downplay its significance whenever describing it, especially when it has company.  When mortals actually decide to attack or capture a honey devil, it’s probably slippery enough to escape at the last minute, maybe through a hidden exit."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Hooded Devil"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 7
+				, "role": "troop"
+				, "type": "devil"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 22
+				, "MD": 22
+				, "HP": 90
+				, "attacks": [{
+						"name": "Crushing punch or kick"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "If this is the devil’s first attack during its turn, it can make a <em>crushing punch or kick</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Telepathic harry"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "one nearby enemy"
+						, "damage": "The target takes 30 psychic damage each time it makes a non-basic attack (save ends).  The target silently hears a terribly hurtful statement, in the voice of the person who would hurt them the most by saying it."
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "If this is the devil’s first attack during its turn, it can make a <em>crushing punch or kick</em> attack as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Mastery)"
+						, "effect": "When you choose to add the escalation die to an attack against a hooded devil, it adds the escalation die to its attacks until the end of the battle and no other attacks against it can use the escalation die."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Restoration"
+						, "effect": "At the start of a hooded devil’s turn, it can roll a save against each save ends effect affecting it if it doesn’t attack that turn (so it could successfully save against confused or stunned conditions and still move that turn, for example)."
+					}
+					, {
+						"name": "Free-form covert ability - Master"
+						, "effect": "A hooded devil instinctively masters everything around it: the furniture, terrain, conversations, and people.  If the PCs attempt to overcome a hooded devil through skill checks, the check is DC 30.  Good luck if you need to win an argument, get to an exit first, use terrain to your advantage, or pressure one of the devil’s thugs to rat it out.  The name of this ability is a verb."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Horned Devil (Cornugon)"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 12
+				, "role": "troop"
+				, "type": "devil"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 28
+				, "PD": 26
+				, "MD": 26
+				, "HP": 700
+				, "attacks": [{
+						"name": "Barbed fork"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "150 damage, and until the end of the battle against the target, the devil gains a +1 bonus to attacks and its crit range expands by 1 (cumulative)"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The horned devil can make a <em>slicing tail</em> attack against a different target as a free action."
+							}
+							, {
+								"trigger": "Natural even miss"
+								, "effect": "The horned devil can make a <em>slicing tail</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Slicing tail"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "35 ongoing damage from a bleeding wound"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Flaming dart"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "60 damage, and 30 fire damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 30 ongoing fire damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Weakness)"
+						, "effect": "When you choose to add the escalation die to an attack against a horned devil, you are weakened until the end of your next turn after you make the attack."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Horned devils are clumsy but determined fliers."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ice Devil (Gelugon)"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 11
+				, "role": "leader"
+				, "type": "devil"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 24
+				, "MD": 24
+				, "HP": 270
+				, "attacks": [{
+					"name": "Wicked glaive"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 16
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "25 damage"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "As a free action, one of the ice devil’s nearby allies of its level or lower can make a basic attack as the ice devil sets the battlefield.  That attack only deals half damage."
+						}
+						, {
+							"trigger": "Natural odd hit"
+							, "effect": "The target is stuck (save ends)."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "10 damage."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Devil’s due (Rime)"
+						, "effect": "When you choose to add the escalation die to an attack against an ice devil, you are stuck (save ends)."
+					}
+					, {
+						"name": "Shattering counsel"
+						, "effect": "When a lower level nearby ally of the ice devil attacks a creature that’s stuck, the crit range of that attack expands by the escalation die."
+					}
+					, {
+						"name": "Resist cold 13+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Lemure"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 3
+				, "role": "mook"
+				, "type": "devil"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 15
+				, "MD": 17
+				, "HP": 13
+				, "attacks": [{
+					"name": "Heedless claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Devil’s due (Squirm)"
+						, "effect": "When you choose to add the escalation die to an attack against a lemure, another lemure in the mob somehow ends up in an unwanted place in the battle, though it’s hard to say how exactly.  They don’t seem to teleport, but there are so many of the things squirming around it just happens."
+					}
+					, {
+						"name": "Living wave"
+						, "effect": "When three or more lemures engage an enemy, they can pick it up and move it along with them as they please without taking opportunity attacks.  The enemy getting moved around pops free of any other enemies engaged with it."
+					}
+					, {
+						"name": "Nobody home"
+						, "effect": "When a lemure is targeted by an attack against MD, it ignores any effects of the attack and only takes damage from it.  In addition, lemures fight in a straightforward way, without tactics.  They never disengage willingly and they’re not coordinated enough to concentrate attacks on a vulnerable target."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Free-form ability - Mass"
+						, "effect": "Heedless of each other’s safety or their own, lemures use sheer numbers to press through locked doors, climb walls, or dog pile on defenders."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Too dumb to die"
+					, "effect": "At the start of the lemure mob’s turn, roll a d6 for each lemure in the mob that’s dropped this battle.  For each 6, one of them reassembles its horrid self and stumbles back into the melee that turn (add 13 hit points to the mob’s hp total).  To make sure a downed lemure is truly dead, an attacker can spend an additional 7 damage of the total dealt to finish the job instead of carrying that damage over to another lemure in the mob.  Expending the right sort of limited-use power, such as a daily spell, might also keep a number of downed lemures totally dead.  Once the last member of the mob drops, stop rolling to see if lemures rise up."
+				}]
+			}
+			, {
+				"name": "Pit Fiend"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 14
+				, "role": "wrecker"
+				, "type": "devil"
+				, "initiative": 19
+				, "vulnerability": ""
+				, "AC": 29
+				, "PD": 27
+				, "MD": 27
+				, "HP": 1600
+				, "attacks": [{
+						"name": "Fiendish weapon"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 19
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "140 damage, and until the end of the battle the target takes a -2 penalty to attacks, defences, and level-based d20 rolls.  Hit points, feats, weapon damage, and other level-based benefits don’t change.  (The penalty isn’t cumulative)."
+						, "extraEffects": [{
+								"trigger": "Natural 11+"
+								, "effect": "The pit fiend can make an <em>entangling tail</em> attack against a different target as a free action."
+							}
+							, {
+								"trigger": "Both attacks hit"
+								, "effect": "The pit fiend can use <em>fiendish vigor</em> as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Entangling tail"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 19
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "40 damage, and the target is hampered until the end of its next turn or until the pit fiend makes another <em>entangling tail</em> attack"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Burst of hellfire"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 19
+						, "defence": "PD"
+						, "target": "up to 3 nearby ot far away enemies in a group"
+						, "damage": "120 fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+					, {
+						"name": "Black utterance of denial"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 19
+						, "defence": "MD"
+						, "target": "each enemy engaged with the pit fiend"
+						, "damage": "The target is hampered until the end of its next turn"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, as a quick action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Menace)"
+						, "effect": "When you choose to add the escalation die to an attack against a pit fiend, the escalation die does not increase at the start of the next round.  Special circumstances and PC powers can still increase it."
+					}
+					, {
+						"name": "Fiendish vigor"
+						, "effect": "As a standard action, the pit fiend can heal 300 hp and roll a save against each ongoing effect on it.  It can use <em>fiendish vigor</em> up to five times per battle."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Amidst wind and flames, a pit fiend can fly with surprising agility."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Cloak of fire"
+					, "effect": "When a creature is engaged with the pit fiend at the start of its turn, that creature takes 20 fire damage."
+				}]
+			}
+			, {
+				"name": "Skin Devil"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "devil"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 16
+				, "MD": 16
+				, "HP": 28
+				, "attacks": [{
+					"name": "Fleshy limb"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Stay whole"
+						, "effect": "At the start of its turn, a skin devil heals 8 hp.  If it doesn’t heal up to its maximum hit points, it loses its ability to heal from this ability until the end of the battle."
+					}
+					, {
+						"name": "Structural collapse"
+						, "effect": "While the skin devil is staggered, when an enemy damages it, it loses and additional 4 hp as the hapless thing fails to hold its boneless, bulky mass together."
+					}
+					, {
+						"name": "Weakling"
+						, "effect": "When building battles using this monster, it only counts as half a normal monster."
+					}
+					, {
+						"name": "Free-form convert ability - Unnoticed"
+						, "effect": "The skin devil is routinely able to pass through civilised areas without alerting dogs, bouncers, city guards, or passersby.  If the thing attacks that’s when you notice that it’s not a human but a monstrous pile of flesh.  In addition to passing unnoticed in crowds, it uses its fluid shape to sneak through hidden places, and it doesn’t make much noise unless it wants to.  PCs looking for the devil won’t find it unless they have some special information or advantage, and even then it’s a hard check (DC 25).  Normally when PCs think they have the devil cornered, it escapes through a tight exit that it had previously identified."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Smoke Devil"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 5
+				, "role": "troop"
+				, "type": "devil"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 19
+				, "MD": 19
+				, "HP": 90
+				, "attacks": [{
+						"name": "Dire embrace"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "15 poison damage"
+						, "extraEffects": [{
+								"trigger": "Full embrace"
+								, "effect": "If the target is the only creature engaged with the smoke devil, the attack deals 30 poison damage instead."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "7 poison damage."
+							}
+						]
+					}
+					, {
+						"name": "Ember burst"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "each enemy engaged with the devil"
+						, "damage": "The target takes 5 fire damage for each creature hit by the smoke devil earlier in the battle (max 15 damage; remember to track this)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Ember of hate"
+						, "effect": "Each time the smoke devil hits an enemy, the embers floating in the centre of its body glow more brightly.  Once per battle as a free action during its turn, the devil can make an <em>ember burst</em> attack.  It also makes this attack as an interrupt action when it drops to 0 hp."
+					}
+					, {
+						"name": "Devil’s due (Formless)"
+						, "effect": "When you choose to add the escalation die to an attack against a smoke devil, it gains <em>resist damage 16+</em> against the attack."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Smoke devils drift and eddy as if blown by an evil wind."
+					}
+					, {
+						"name": "Resist fire 13+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Free-form covert ability - Insinuate"
+						, "effect": "Smoke devils have a preternatural ability to get to their chosen victims.  Keeping the smoke devil out is a hard, champion-tier challenge (DC 25)."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Smokey retreat"
+					, "effect": "A smoke devil can “take 12” on disengage checks, taking a natural result of 12 instead of rolling (which normally would allow it to disengage automatically from up to two enemies)."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Dragon"
 		, "monsters": [{
 				"name": "Huge Black Dragon"
