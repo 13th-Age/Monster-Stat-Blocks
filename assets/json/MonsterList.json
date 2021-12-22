@@ -6073,6 +6073,38 @@
 	, {
 		"name": "Zombie"
 		, "monsters": [{
+				"name": "Big Zombie"
+				, "source": "13th Age"
+				, "sizeStrength": "large"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "undead"
+				, "initiative": 3
+				, "vulnerability": "holy"
+				, "AC": 17
+				, "PD": 15
+				, "MD": 12
+				, "HP": 160
+				, "attacks": [{
+					"name": "Club or club-like fists"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "22 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit or miss"
+						, "effect": "Both the zombie and its target take 4d6 damage!"
+					}]
+				}]
+				, "abilities": [{
+					"name": "Headshot"
+					, "effect": "A critical hit against a zombie drops it to 0 hp."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Giant Zombie"
 				, "source": "13th Age"
 				, "sizeStrength": "large"
