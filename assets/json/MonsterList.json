@@ -2728,6 +2728,150 @@
 	, {
 		"name": "Giant"
 		, "monsters": [{
+				"name": "Cloud Giant Magician"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 7
+				, "role": "caster"
+				, "type": "giant"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 22
+				, "HP": 280
+				, "attacks": [{
+						"name": "Staff"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "40 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Sleep, little ones"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "one nearby enemy, or 1d3 nearby enemies in a group if the escalation die is 3+"
+						, "damage": "20 psychic damage, and if the target has 50 hp or fewer after the attack, it falls unconscious (hard save ends, 16+; it also ends if the target takes 10 or more damage)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Zzzzzottttttttttt!"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "35 force damage, and 35 ongoing lightning damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "20 force damage, and 20 ongoing lightning damage."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Strike with advantage"
+					, "effect": "A cloud giant gains a +4 attack bonus against any enemy taking ongoing damage or that has an ongoing condition (unconscious sleep, for instance)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Cloud Giant Thane"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 7
+				, "role": "wrecker"
+				, "type": "giant"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 21
+				, "MD": 21
+				, "HP": 290
+				, "attacks": [{
+						"name": "Cloud-forged morningstar"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "60 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target loses any <em>flight</em> abilities and can’t gain <em>flight</em> in any way (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit or miss"
+								, "effect": "The than can make a <em>chains and shrapnel</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Chains and shrapnel"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "1d4 random nearby creatures"
+						, "damage": "20 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Strike with advantage"
+					, "effect": "A cloud giant gains a +4 attack bonus against any enemy taking ongoing damage or that has an ongoing condition (dazed, for instance)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Cloud Giant Warrior"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 7
+				, "role": "troop"
+				, "type": "giant"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 22
+				, "MD": 18
+				, "HP": 300
+				, "attacks": [{
+						"name": "Sword or spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "up to 2 enemies"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is dazed (save ends)."
+						}]
+					}
+					, {
+						"name": "Hurled spear"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "up to 3 enemies in a group with a single spear"
+						, "damage": "20 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Strike with advantage"
+					, "effect": "A cloud giant gains a +4 attack bonus against any enemy taking ongoing damage or that has an ongoing condition (dazed, for instance)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Fire Giant"
 				, "source": "13th Age"
 				, "sizeStrength": "large"
