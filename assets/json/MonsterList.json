@@ -3,7 +3,9 @@
 		, "monsters": [{
 				"name": "Bear"
 				, "source": "13th Age"
+				, "page": 207
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "troop"
 				, "type": "beast"
@@ -32,7 +34,9 @@
 			, {
 				"name": "Dire Bear"
 				, "source": "13th Age"
+				, "page": 207
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "troop"
 				, "type": "beast"
@@ -69,7 +73,9 @@
 			, {
 				"name": "Dire Boar"
 				, "source": "13 True Ways"
+				, "page": 160
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "troop"
 				, "type": "beast"
@@ -124,7 +130,9 @@
 			, {
 				"name": "Dire Rat"
 				, "source": "13th Age"
+				, "page": 206
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "mook"
 				, "type": "beast"
@@ -153,7 +161,9 @@
 			, {
 				"name": "Dire Tiger"
 				, "source": "13 True Ways"
+				, "page": 160
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "troop"
 				, "type": "beast"
@@ -202,7 +212,9 @@
 			, {
 				"name": "Dire Wolf"
 				, "source": "13th Age"
+				, "page": 207
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "troop"
 				, "type": "beast"
@@ -239,7 +251,9 @@
 			, {
 				"name": "Giant Ant"
 				, "source": "13th Age"
+				, "page": 206
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 0
 				, "role": "troop"
 				, "type": "beast"
@@ -271,7 +285,9 @@
 			, {
 				"name": "Giant Praying Mantis"
 				, "source": "13 True Ways"
+				, "page": 161
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "blocker"
 				, "type": "beast"
@@ -323,7 +339,9 @@
 			, {
 				"name": "Giant Scorpion"
 				, "source": "13th Age"
+				, "page": 206
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "wrecker"
 				, "type": "beast"
@@ -363,7 +381,9 @@
 			, {
 				"name": "Giant Web Spider"
 				, "source": "13th Age"
+				, "page": 207
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "blocker"
 				, "type": "beast"
@@ -409,7 +429,9 @@
 			, {
 				"name": "Hunting Spider"
 				, "source": "13th Age"
+				, "page": 206
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "wrecker"
 				, "type": "beast"
@@ -446,7 +468,9 @@
 			, {
 				"name": "Wolf"
 				, "source": "13th Age"
+				, "page": 207
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "troop"
 				, "type": "beast"
@@ -479,7 +503,9 @@
 		, "monsters": [{
 			"name": "Ankheg"
 			, "source": "13th Age"
+			, "page": 208
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 2
 			, "role": "troop"
 			, "type": "beast"
@@ -528,7 +554,9 @@
 		, "monsters": [{
 				"name": "Azer Soldier"
 				, "source": "13 True Ways"
+				, "page": 162
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "troop"
 				, "type": "dwarf"
@@ -584,7 +612,9 @@
 			, {
 				"name": "Magma Brute"
 				, "source": "13 True Ways"
+				, "page": 163
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "wrecker"
 				, "type": "construct"
@@ -639,7 +669,9 @@
 		, "monsters": [{
 			"name": "Fire Bat"
 			, "source": "13 True Ways"
+			, "page": 162
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 3
 			, "role": "mook"
 			, "type": "beast"
@@ -695,7 +727,9 @@
 		, "monsters": [{
 			"name": "Bulette"
 			, "source": "13th Age"
+			, "page": 208
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 5
 			, "role": "wrecker"
 			, "type": "beast"
@@ -752,7 +786,9 @@
 		, "monsters": [{
 			"name": "Chimera"
 			, "source": "13th Age"
+			, "page": 209
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 9
 			, "role": "wrecker"
 			, "type": "beast"
@@ -810,7 +846,9 @@
 		, "monsters": [{
 				"name": "Balor (Flame Demon)"
 				, "source": "13th Age"
+				, "page": 215
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 13
 				, "role": "wrecker"
 				, "type": "demon"
@@ -882,7 +920,9 @@
 			, {
 				"name": "Bat Demon"
 				, "source": "13 True Ways"
+				, "page": 164
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "mook"
 				, "type": "demon"
@@ -923,7 +963,9 @@
 			, {
 				"name": "Despoiler"
 				, "source": "13th Age"
+				, "page": 210
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "caster"
 				, "type": "demon"
@@ -976,7 +1018,9 @@
 			, {
 				"name": "Despoiler Mage"
 				, "source": "13th Age"
+				, "page": 213
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "caster"
 				, "type": "demon"
@@ -1045,7 +1089,9 @@
 			, {
 				"name": "Dretch"
 				, "source": "13th Age"
+				, "page": 210
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "mook"
 				, "type": "demon"
@@ -1074,7 +1120,9 @@
 			, {
 				"name": "Frenzy Demon"
 				, "source": "13th Age"
+				, "page": 211
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "wrecker"
 				, "type": "demon"
@@ -1103,7 +1151,9 @@
 			, {
 				"name": "Giant Vrock (Vulture Demon)"
 				, "source": "13th Age"
+				, "page": 214
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "spoiler"
 				, "type": "demon"
@@ -1159,7 +1209,9 @@
 			, {
 				"name": "Glabrezou (Pincer Demon)"
 				, "source": "13th Age"
+				, "page": 212
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "caster"
 				, "type": "demon"
@@ -1221,7 +1273,9 @@
 			, {
 				"name": "Hezrou (Toad Demon)"
 				, "source": "13th Age"
+				, "page": 212
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "troop"
 				, "type": "demon"
@@ -1261,7 +1315,9 @@
 			, {
 				"name": "Hooked Demon"
 				, "source": "13th Age"
+				, "page": 213
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "mook"
 				, "type": "demon"
@@ -1293,7 +1349,9 @@
 			, {
 				"name": "Imp"
 				, "source": "13th Age"
+				, "page": 210
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "spoiler"
 				, "type": "demon"
@@ -1341,7 +1399,9 @@
 			, {
 				"name": "Marilith (Serpent Demon)"
 				, "source": "13th Age"
+				, "page": 215
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 12
 				, "role": "troop"
 				, "type": "demon"
@@ -1384,7 +1444,9 @@
 			, {
 				"name": "Nalfeshnee (Boar Demon)"
 				, "source": "13th Age"
+				, "page": 214
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "caster"
 				, "type": "demon"
@@ -1445,7 +1507,9 @@
 			, {
 				"name": "Vrock (Vulture Demon)"
 				, "source": "13th Age"
+				, "page": 211
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "spoiler"
 				, "type": "demon"
@@ -1492,7 +1556,9 @@
 		, "monsters": [{
 				"name": "Derro Maniac"
 				, "source": "13th Age"
+				, "page": 216
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "troop"
 				, "type": "humanoid"
@@ -1549,7 +1615,9 @@
 			, {
 				"name": "Derro Sage"
 				, "source": "13th Age"
+				, "page": 216
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "caster"
 				, "type": "humanoid"
@@ -1608,7 +1676,9 @@
 		, "monsters": [{
 				"name": "Barbed Devil (Hamatula)"
 				, "source": "13 True Ways"
+				, "page": 176
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "caster"
 				, "type": "devil"
@@ -1682,7 +1752,9 @@
 			, {
 				"name": "Bearded Devil (Barbazu)"
 				, "source": "13 True Ways"
+				, "page": 173
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "blocker"
 				, "type": "devil"
@@ -1745,7 +1817,9 @@
 			, {
 				"name": "Bone Devil (Osyluth)"
 				, "source": "13 True Ways"
+				, "page": 176
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "troop"
 				, "type": "devil"
@@ -1803,7 +1877,9 @@
 			, {
 				"name": "Fury Devil (Erinyes)"
 				, "source": "13 True Ways"
+				, "page": 175
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "wrecker"
 				, "type": "devil"
@@ -1875,7 +1951,9 @@
 			, {
 				"name": "Hell Imp"
 				, "source": "13 True Ways"
+				, "page": 170
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "spoiler"
 				, "type": "devil"
@@ -1938,7 +2016,9 @@
 			, {
 				"name": "Honey Devil, aka Slime Devil"
 				, "source": "13 True Ways"
+				, "page": 171
 				, "sizeStrength": "normal"
+				, "threat": "weakling"
 				, "level": 4
 				, "role": "troop"
 				, "type": "devil"
@@ -1985,10 +2065,6 @@
 						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
 					}
 					, {
-						"name": "Weakling"
-						, "effect": "When building battles using this monster, it only counts as half a normal monster."
-					}
-					, {
 						"name": "Free-form covert ability - Slimy"
 						, "effect": "In any non-combat struggles with a honey devil, it excels at being too slippery for the PCs, both personally and through its underground network of minions.  In an indirect contest, the PCs might try to talk sense to one of the devil’s dupes or to discern suspicious activity while staking out the devil’s secret network.  The honey devil is an expert at what it does, so use DC 25 for any such skill checks.  Assume that the devil is competent at slipping its influence through the network unnoticed.  Failure might mean that the PC has succeeded in gaining informaiton, which in turn sends them down a dead end or into a trap.  In a direct confrontation, the devil is likewise hard to pin down, see through, or otherwise get the better of.<br>&emsp;A slime devil seems unremarkable and innocuous, so downplay its significance whenever describing it, especially when it has company.  When mortals actually decide to attack or capture a honey devil, it’s probably slippery enough to escape at the last minute, maybe through a hidden exit."
 					}
@@ -1998,7 +2074,9 @@
 			, {
 				"name": "Hooded Devil"
 				, "source": "13 True Ways"
+				, "page": 174
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "troop"
 				, "type": "devil"
@@ -2057,7 +2135,9 @@
 			, {
 				"name": "Horned Devil (Cornugon)"
 				, "source": "13 True Ways"
+				, "page": 177
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 12
 				, "role": "troop"
 				, "type": "devil"
@@ -2127,7 +2207,9 @@
 			, {
 				"name": "Ice Devil (Gelugon)"
 				, "source": "13 True Ways"
+				, "page": 177
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 11
 				, "role": "leader"
 				, "type": "devil"
@@ -2177,7 +2259,9 @@
 			, {
 				"name": "Lemure"
 				, "source": "13 True Ways"
+				, "page": 169
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "mook"
 				, "type": "devil"
@@ -2226,7 +2310,9 @@
 			, {
 				"name": "Pit Fiend"
 				, "source": "13 True Ways"
+				, "page": 178
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 14
 				, "role": "wrecker"
 				, "type": "devil"
@@ -2316,7 +2402,9 @@
 			, {
 				"name": "Skin Devil"
 				, "source": "13 True Ways"
+				, "page": 168
 				, "sizeStrength": "normal"
+				, "threat": "weakling"
 				, "level": 2
 				, "role": "troop"
 				, "type": "devil"
@@ -2345,10 +2433,6 @@
 						, "effect": "While the skin devil is staggered, when an enemy damages it, it loses and additional 4 hp as the hapless thing fails to hold its boneless, bulky mass together."
 					}
 					, {
-						"name": "Weakling"
-						, "effect": "When building battles using this monster, it only counts as half a normal monster."
-					}
-					, {
 						"name": "Free-form convert ability - Unnoticed"
 						, "effect": "The skin devil is routinely able to pass through civilised areas without alerting dogs, bouncers, city guards, or passersby.  If the thing attacks that’s when you notice that it’s not a human but a monstrous pile of flesh.  In addition to passing unnoticed in crowds, it uses its fluid shape to sneak through hidden places, and it doesn’t make much noise unless it wants to.  PCs looking for the devil won’t find it unless they have some special information or advantage, and even then it’s a hard check (DC 25).  Normally when PCs think they have the devil cornered, it escapes through a tight exit that it had previously identified."
 					}
@@ -2358,7 +2442,9 @@
 			, {
 				"name": "Smoke Devil"
 				, "source": "13 True Ways"
+				, "page": 172
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "troop"
 				, "type": "devil"
@@ -2430,7 +2516,9 @@
 		, "monsters": [{
 				"name": "Huge Black Dragon"
 				, "source": "13th Age"
+				, "page": 221
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -2494,7 +2582,9 @@
 			, {
 				"name": "Huge Blue Dragon"
 				, "source": "13th Age"
+				, "page": 222
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 12
 				, "role": "caster"
 				, "type": "dragon"
@@ -2559,7 +2649,9 @@
 			, {
 				"name": "Huge Brass Dragon"
 				, "source": "13 True Ways"
+				, "page": 185
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "troop"
 				, "type": "dragon"
@@ -2628,7 +2720,9 @@
 			, {
 				"name": "Huge Bronze Dragon"
 				, "source": "13 True Ways"
+				, "page": 186
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -2687,7 +2781,9 @@
 			, {
 				"name": "Huge Copper Dragon"
 				, "source": "13 True Ways"
-				, "sizeStrength": "normal"
+				, "page": 187
+				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 11
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -2756,7 +2852,9 @@
 			, {
 				"name": "Huge Gold Dragon"
 				, "source": "13 True Ways"
+				, "page": 188
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 14
 				, "role": "caster"
 				, "type": "dragon"
@@ -2835,7 +2933,9 @@
 			, {
 				"name": "Huge Green Dragon"
 				, "source": "13th Age"
+				, "page": 222
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 11
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -2901,7 +3001,9 @@
 			, {
 				"name": "Huge Red Dragon"
 				, "source": "13th Age"
+				, "page": 223
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 13
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -2961,7 +3063,9 @@
 			, {
 				"name": "Huge Silver Dragon"
 				, "source": "13 True Ways"
+				, "page": 188
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 13
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -3026,7 +3130,9 @@
 			, {
 				"name": "Huge White Dragon"
 				, "source": "13th Age"
+				, "page": 219
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "troop"
 				, "type": "dragon"
@@ -3072,7 +3178,9 @@
 			, {
 				"name": "Large Black Dragon"
 				, "source": "13th Age"
+				, "page": 220
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -3131,7 +3239,9 @@
 			, {
 				"name": "Large Blue Dragon"
 				, "source": "13th Age"
+				, "page": 221
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "caster"
 				, "type": "dragon"
@@ -3196,7 +3306,9 @@
 			, {
 				"name": "Large Brass Dragon"
 				, "source": "13 True Ways"
+				, "page": 184
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "troop"
 				, "type": "dragon"
@@ -3257,7 +3369,9 @@
 			, {
 				"name": "Large Bronze Dragon"
 				, "source": "13 True Ways"
+				, "page": 185
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -3308,7 +3422,9 @@
 			, {
 				"name": "Large Copper Dragon"
 				, "source": "13 True Ways"
+				, "page": 186
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -3373,7 +3489,9 @@
 			, {
 				"name": "Large Gold Dragon"
 				, "source": "13 True Ways"
+				, "page": 187
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 11
 				, "role": "caster"
 				, "type": "dragon"
@@ -3438,7 +3556,9 @@
 			, {
 				"name": "Large Green Dragon"
 				, "source": "13th Age"
+				, "page": 220
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -3504,7 +3624,9 @@
 			, {
 				"name": "Large Red Dragon"
 				, "source": "13th Age"
+				, "page": 222
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -3559,7 +3681,9 @@
 			, {
 				"name": "Large Silver Dragon"
 				, "source": "13 True Ways"
+				, "page": 187
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -3620,7 +3744,9 @@
 			, {
 				"name": "Large White Dragon"
 				, "source": "13th Age"
+				, "page": 218
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "troop"
 				, "type": "dragon"
@@ -3666,7 +3792,9 @@
 			, {
 				"name": "Medium Black Dragon"
 				, "source": "13th Age"
+				, "page": 218
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -3725,7 +3853,9 @@
 			, {
 				"name": "Medium Blue Dragon"
 				, "source": "13th Age"
+				, "page": 219
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "caster"
 				, "type": "dragon"
@@ -3790,7 +3920,9 @@
 			, {
 				"name": "Medium Brass Dragon"
 				, "source": "13 True Ways"
+				, "page": 184
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "troop"
 				, "type": "dragon"
@@ -3856,7 +3988,9 @@
 			, {
 				"name": "Medium Bronze Dragon"
 				, "source": "13 True Ways"
+				, "page": 184
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -3907,7 +4041,9 @@
 			, {
 				"name": "Medium Copper Dragon"
 				, "source": "13 True Ways"
+				, "page": 185
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -3972,7 +4108,9 @@
 			, {
 				"name": "Medium Gold Dragon"
 				, "source": "13 True Ways"
+				, "page": 186
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "caster"
 				, "type": "dragon"
@@ -4037,7 +4175,9 @@
 			, {
 				"name": "Medium Green Dragon"
 				, "source": "13th Age"
+				, "page": 219
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -4103,7 +4243,9 @@
 			, {
 				"name": "Medium Red Dragon"
 				, "source": "13th Age"
+				, "page": 220
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "wrecker"
 				, "type": "dragon"
@@ -4154,7 +4296,9 @@
 			, {
 				"name": "Medium Silver Dragon"
 				, "source": "13 True Ways"
+				, "page": 185
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "spoiler"
 				, "type": "dragon"
@@ -4215,7 +4359,9 @@
 			, {
 				"name": "Medium White Dragon"
 				, "source": "13th Age"
+				, "page": 218
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "troop"
 				, "type": "dragon"
@@ -4265,7 +4411,9 @@
 		, "monsters": [{
 			"name": "Drider"
 			, "source": "13th Age"
+			, "page": 223
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 6
 			, "role": "caster"
 			, "type": "aberration"
@@ -4334,7 +4482,9 @@
 		, "monsters": [{
 			"name": "Ettin"
 			, "source": "13th Age"
+			, "page": 224
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 5
 			, "role": "troop"
 			, "type": "giant"
@@ -4385,7 +4535,9 @@
 		, "monsters": [{
 				"name": "Fang Devil"
 				, "source": "13 True Ways"
+				, "page": 180
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "spoiler"
 				, "type": "devil"
@@ -4468,7 +4620,9 @@
 			, {
 				"name": "The Final Devil"
 				, "source": "13 True Ways"
+				, "page": 181
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 13
 				, "role": "leader"
 				, "type": "devil"
@@ -4559,7 +4713,9 @@
 			, {
 				"name": "River Devil"
 				, "source": "13 True Ways"
+				, "page": 180
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "wrecker"
 				, "type": "devil"
@@ -4620,7 +4776,9 @@
 			, {
 				"name": "River Devil Minion"
 				, "source": "13 True Ways"
+				, "page": 181
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 13
 				, "role": "mook"
 				, "type": "devil"
@@ -4661,7 +4819,9 @@
 		, "monsters": [{
 			"name": "Gargoyle"
 			, "source": "13th Age"
+			, "page": 224
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 5
 			, "role": "troop"
 			, "type": "construct"
@@ -4704,7 +4864,9 @@
 		, "monsters": [{
 				"name": "Newly-Risen Ghoul"
 				, "source": "13th Age"
+				, "page": 225
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "mook"
 				, "type": "undead"
@@ -4736,7 +4898,9 @@
 			, {
 				"name": "Ghoul"
 				, "source": "13th Age"
+				, "page": 225
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "spoiler"
 				, "type": "undead"
@@ -4780,7 +4944,9 @@
 		, "monsters": [{
 				"name": "Cloud Giant Magician"
 				, "source": "13 True Ways"
+				, "page": 165
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "caster"
 				, "type": "giant"
@@ -4833,7 +4999,9 @@
 			, {
 				"name": "Cloud Giant Thane"
 				, "source": "13 True Ways"
+				, "page": 165
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "wrecker"
 				, "type": "giant"
@@ -4881,7 +5049,9 @@
 			, {
 				"name": "Cloud Giant Warrior"
 				, "source": "13 True Ways"
+				, "page": 165
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "troop"
 				, "type": "giant"
@@ -4924,7 +5094,9 @@
 			, {
 				"name": "Fire Giant"
 				, "source": "13th Age"
+				, "page": 227
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "wrecker"
 				, "type": "giant"
@@ -4993,7 +5165,9 @@
 			, {
 				"name": "Fire Giant Warlord"
 				, "source": "13th Age"
+				, "page": 227
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "leader"
 				, "type": "giant"
@@ -5048,7 +5222,9 @@
 			, {
 				"name": "Frost Giant"
 				, "source": "13th Age"
+				, "page": 226
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "spoiler"
 				, "type": "giant"
@@ -5119,7 +5295,9 @@
 			, {
 				"name": "Hill Giant"
 				, "source": "13th Age"
+				, "page": 225
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "troop"
 				, "type": "giant"
@@ -5160,9 +5338,69 @@
 				}]
 			}
 			, {
+				"name": "Stone Giant"
+				, "source": "13th Age"
+				, "page": 226
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "troop"
+				, "type": "giant"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 22
+				, "MD": 18
+				, "HP": 270
+				, "attacks": [{
+						"name": "Stone club"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The stone giant can also make a <em>stomp</em> attack against a single target as a free action."
+						}]
+					}
+					, {
+						"name": "Stomp"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "each smaller enemy engaged with the giant"
+						, "damage": "30 damage, and the target is dazed (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Thrown boulder"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even miss"
+							, "effect": "20 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Built of stone"
+					, "effect": "The stone giant has <em>resist weapons 16+</em>."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Storm Giant"
 				, "source": "13th Age"
+				, "page": 228
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "archer"
 				, "type": "giant"
@@ -5252,7 +5490,9 @@
 		, "monsters": [{
 				"name": "Gnoll Ranger"
 				, "source": "13th Age"
+				, "page": 229
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "archer"
 				, "type": "humanoid"
@@ -5301,7 +5541,9 @@
 			, {
 				"name": "Gnoll Savage"
 				, "source": "13th Age"
+				, "page": 228
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "troop"
 				, "type": "humanoid"
@@ -5341,7 +5583,9 @@
 			, {
 				"name": "Gnoll War Leader"
 				, "source": "13th Age"
+				, "page": 229
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "leader"
 				, "type": "humanoid"
@@ -5379,7 +5623,9 @@
 		, "monsters": [{
 				"name": "Bugbear"
 				, "source": "13th Age"
+				, "page": 230
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "troop"
 				, "type": "humanoid"
@@ -5413,7 +5659,9 @@
 			, {
 				"name": "Goblin Grunt"
 				, "source": "13th Age"
+				, "page": 229
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "troop"
 				, "type": "humanoid"
@@ -5453,7 +5701,9 @@
 			, {
 				"name": "Goblin Scum"
 				, "source": "13th Age"
+				, "page": 229
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "mook"
 				, "type": "humanoid"
@@ -5493,7 +5743,9 @@
 			, {
 				"name": "Goblin Shaman"
 				, "source": "13th Age"
+				, "page": 229
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "caster"
 				, "type": "humanoid"
@@ -5536,7 +5788,9 @@
 			, {
 				"name": "Hobgoblin Captain"
 				, "source": "13th Age"
+				, "page": 230
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "leader"
 				, "type": "humanoid"
@@ -5584,7 +5838,9 @@
 			, {
 				"name": "Hobgoblin Warmage"
 				, "source": "13th Age"
+				, "page": 230
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "caster"
 				, "type": "humanoid"
@@ -5634,7 +5890,9 @@
 			, {
 				"name": "Hobgoblin Warrior"
 				, "source": "13th Age"
+				, "page": 230
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "troop"
 				, "type": "humanoid"
@@ -5675,7 +5933,9 @@
 		, "monsters": [{
 				"name": "Clay Golem"
 				, "source": "13th Age"
+				, "page": 231
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "spoiler"
 				, "type": "construct"
@@ -5712,7 +5972,9 @@
 			, {
 				"name": "Flesh Golem"
 				, "source": "13th Age"
+				, "page": 231
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "blocker"
 				, "type": "construct"
@@ -5765,7 +6027,9 @@
 			, {
 				"name": "Iron Golem"
 				, "source": "13th Age"
+				, "page": 232
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "wrecker"
 				, "type": "construct"
@@ -5816,7 +6080,9 @@
 			, {
 				"name": "Stone Golem"
 				, "source": "13th Age"
+				, "page": 232
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "blocker"
 				, "type": "construct"
@@ -5874,7 +6140,9 @@
 		, "monsters": [{
 				"name": "Half-Orc Commander"
 				, "source": "13th Age"
+				, "page": 233
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "leader"
 				, "type": "humanoid"
@@ -5920,7 +6188,9 @@
 			, {
 				"name": "Half-Orc Legionnaire"
 				, "source": "13th Age"
+				, "page": 233
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "troop"
 				, "type": "humanoid"
@@ -5973,7 +6243,9 @@
 			, {
 				"name": "Half-Orc Tribal Champion"
 				, "source": "13th Age"
+				, "page": 233
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "wrecker"
 				, "type": "humanoid"
@@ -6025,7 +6297,9 @@
 		, "monsters": [{
 			"name": "Harpy"
 			, "source": "13th Age"
+			, "page": 234
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 4
 			, "role": "spoiler"
 			, "type": "humanoid"
@@ -6083,7 +6357,9 @@
 		, "monsters": [{
 			"name": "Hellhound"
 			, "source": "13th Age"
+			, "page": 234
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 3
 			, "role": "wrecker"
 			, "type": "beast"
@@ -6132,7 +6408,9 @@
 		, "monsters": [{
 				"name": "Demon-Touched Human Ranger"
 				, "source": "13th Age"
+				, "page": 235
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "archer"
 				, "type": "humanoid"
@@ -6178,7 +6456,9 @@
 			, {
 				"name": "Human Thug"
 				, "source": "13th Age"
+				, "page": 235
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "troop"
 				, "type": "humanoid"
@@ -6211,7 +6491,9 @@
 		, "monsters": [{
 			"name": "Hungry Star"
 			, "source": "13th Age"
+			, "page": 235
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 3
 			, "role": "wrecker"
 			, "type": "aberration"
@@ -6270,7 +6552,9 @@
 		, "monsters": [{
 				"name": "Five-Headed Hydra"
 				, "source": "13th Age"
+				, "page": 236
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "wrecker"
 				, "type": "beast"
@@ -6323,7 +6607,9 @@
 			, {
 				"name": "Seven-Headed Hydra"
 				, "source": "13th Age"
+				, "page": 236
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 7
 				, "role": "wrecker"
 				, "type": "beast"
@@ -6398,7 +6684,9 @@
 		, "monsters": [{
 				"name": "Kobold Archer"
 				, "source": "13th Age"
+				, "page": 237
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "mook"
 				, "type": "humanoid"
@@ -6443,7 +6731,9 @@
 			, {
 				"name": "Kobold Hero"
 				, "source": "13th Age"
+				, "page": 237
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "leader"
 				, "type": "humanoid"
@@ -6475,7 +6765,9 @@
 			, {
 				"name": "Kobold Warrior"
 				, "source": "13th Age"
+				, "page": 237
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "troop"
 				, "type": "humanoid"
@@ -6516,7 +6808,9 @@
 		, "monsters": [{
 			"name": "Lizardman Savage"
 			, "source": "13th Age"
+			, "page": 237
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 2
 			, "role": "wrecker"
 			, "type": "humanoid"
@@ -6579,7 +6873,9 @@
 		, "monsters": [{
 			"name": "Manticore"
 			, "source": "13th Age"
+			, "page": 238
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 6
 			, "role": "archer"
 			, "type": "beast"
@@ -6640,7 +6936,9 @@
 		, "monsters": [{
 				"name": "Medusa Noble"
 				, "source": "13th Age"
+				, "page": 239
 				, "sizeStrength": "double-strength"
+				, "threat": "normal"
 				, "level": 11
 				, "role": "caster"
 				, "type": "humanoid"
@@ -6710,7 +7008,9 @@
 			, {
 				"name": "Medusa Outlaw"
 				, "source": "13th Age"
+				, "page": 238
 				, "sizeStrength": "double-strength"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "wrecker"
 				, "type": "humanoid"
@@ -6775,7 +7075,9 @@
 		, "monsters": [{
 			"name": "Minotaur"
 			, "source": "13th Age"
+			, "page": 239
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 4
 			, "role": "troop"
 			, "type": "humanoid"
@@ -6818,7 +7120,9 @@
 		, "monsters": [{
 			"name": "Ogre"
 			, "source": "13th Age"
+			, "page": 240
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 3
 			, "role": "troop"
 			, "type": "giant"
@@ -6867,7 +7171,9 @@
 		, "monsters": [{
 			"name": "Ogre Mage"
 			, "source": "13th Age"
+			, "page": 240
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 7
 			, "role": "caster"
 			, "type": "giant"
@@ -6943,7 +7249,9 @@
 		, "monsters": [{
 				"name": "Black Pudding"
 				, "source": "13th Age"
+				, "page": 241
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "wrecker"
 				, "type": "ooze"
@@ -6980,7 +7288,9 @@
 			, {
 				"name": "Gelatinous Cube"
 				, "source": "13th Age"
+				, "page": 241
 				, "sizeStrength": "huge"
+				, "threat": "normal"
 				, "level": 5
 				, "role": "blocker"
 				, "type": "ooze"
@@ -7023,7 +7333,9 @@
 			, {
 				"name": "Ochre Jelly"
 				, "source": "13th Age"
+				, "page": 241
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "wrecker"
 				, "type": "ooze"
@@ -7059,7 +7371,9 @@
 		, "monsters": [{
 				"name": "Great Fang Cadre"
 				, "source": "13th Age"
+				, "page": 242
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "mook"
 				, "type": "humanoid"
@@ -7110,7 +7424,9 @@
 			, {
 				"name": "Orc Berserker"
 				, "source": "13th Age"
+				, "page": 242
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "troop"
 				, "type": "humanoid"
@@ -7142,7 +7458,9 @@
 			, {
 				"name": "Orc Shaman"
 				, "source": "13th Age"
+				, "page": 242
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "leader"
 				, "type": "humanoid"
@@ -7182,7 +7500,9 @@
 			, {
 				"name": "Orc Warrior"
 				, "source": "13th Age"
+				, "page": 242
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "troop"
 				, "type": "humanoid"
@@ -7215,7 +7535,9 @@
 		, "monsters": [{
 			"name": "Otyugh"
 			, "source": "13th Age"
+			, "page": 243
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 3
 			, "role": "blocker"
 			, "type": "aberration"
@@ -7271,7 +7593,9 @@
 		, "monsters": [{
 			"name": "Owlbear"
 			, "source": "13th Age"
+			, "page": 243
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 4
 			, "role": "wrecker"
 			, "type": "beast"
@@ -7311,7 +7635,9 @@
 		, "monsters": [{
 			"name": "Phase Spider"
 			, "source": "13th Age"
+			, "page": 244
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 7
 			, "role": "spoiler"
 			, "type": "beast"
@@ -7378,7 +7704,9 @@
 		, "monsters": [{
 			"name": "Rakshasa"
 			, "source": "13th Age"
+			, "page": 245
 			, "sizeStrength": "double-strength"
+			, "threat": "normal"
 			, "level": 8
 			, "role": "caster"
 			, "type": "humanoid"
@@ -7445,7 +7773,9 @@
 		, "monsters": [{
 			"name": "Sahuagin"
 			, "source": "13th Age"
+			, "page": 245
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 5
 			, "role": "wrecker"
 			, "type": "humanoid"
@@ -7499,7 +7829,9 @@
 		, "monsters": [{
 				"name": "Blackamber Skeletal Legionnaire"
 				, "source": "13th Age"
+				, "page": 246
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "troop"
 				, "type": "undead"
@@ -7547,7 +7879,9 @@
 			, {
 				"name": "Decrepit Skeleton"
 				, "source": "13th Age"
+				, "page": 246
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "mook"
 				, "type": "undead"
@@ -7573,7 +7907,9 @@
 			, {
 				"name": "Skeletal Hound"
 				, "source": "13th Age"
+				, "page": 246
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "blocker"
 				, "type": "undead"
@@ -7610,7 +7946,9 @@
 			, {
 				"name": "Skeleton Archer"
 				, "source": "13th Age"
+				, "page": 246
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "archer"
 				, "type": "undead"
@@ -7647,7 +7985,9 @@
 			, {
 				"name": "Skeleton Warrior"
 				, "source": "13th Age"
+				, "page": 246
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "troop"
 				, "type": "undead"
@@ -7677,7 +8017,9 @@
 		, "monsters": [{
 				"name": "Trog"
 				, "source": "13th Age"
+				, "page": 247
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "spoiler"
 				, "type": "humanoid"
@@ -7720,7 +8062,9 @@
 			, {
 				"name": "Trog Chanter"
 				, "source": "13th Age"
+				, "page": 247
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 3
 				, "role": "leader"
 				, "type": "humanoid"
@@ -7766,7 +8110,9 @@
 			, {
 				"name": "Trog Underling"
 				, "source": "13th Age"
+				, "page": 247
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 8
 				, "role": "mook"
 				, "type": "humanoid"
@@ -7813,7 +8159,9 @@
 		, "monsters": [{
 			"name": "Troll"
 			, "source": "13th Age"
+			, "page": 248
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 4
 			, "role": "troop"
 			, "type": "giant"
@@ -7857,7 +8205,9 @@
 		, "monsters": [{
 				"name": "Spawn of the Master"
 				, "source": "13th Age"
+				, "page": 249
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "mook"
 				, "type": "undead"
@@ -7886,7 +8236,9 @@
 			, {
 				"name": "Vampire"
 				, "source": "13th Age"
+				, "page": 248
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 10
 				, "role": "spoiler"
 				, "type": "undead"
@@ -7940,7 +8292,9 @@
 			, {
 				"name": "Vampire Spawn"
 				, "source": "13th Age"
+				, "page": 249
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 6
 				, "role": "spoiler"
 				, "type": "undead"
@@ -7984,7 +8338,9 @@
 		, "monsters": [{
 			"name": "Wight"
 			, "source": "13th Age"
+			, "page": 249
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 4
 			, "role": "spoiler"
 			, "type": "undead"
@@ -8019,7 +8375,9 @@
 		, "monsters": [{
 			"name": "Wraith"
 			, "source": "13th Age"
+			, "page": 250
 			, "sizeStrength": "normal"
+			, "threat": "normal"
 			, "level": 5
 			, "role": "spoiler"
 			, "type": "undead"
@@ -8076,7 +8434,9 @@
 		, "monsters": [{
 			"name": "Wyvern"
 			, "source": "13th Age"
+			, "page": 250
 			, "sizeStrength": "large"
+			, "threat": "normal"
 			, "level": 5
 			, "role": "wrecker"
 			, "type": "beast"
@@ -8125,7 +8485,9 @@
 		, "monsters": [{
 				"name": "Big Zombie"
 				, "source": "13th Age"
+				, "page": 251
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 4
 				, "role": "wrecker"
 				, "type": "undead"
@@ -8157,7 +8519,9 @@
 			, {
 				"name": "Giant Zombie"
 				, "source": "13th Age"
+				, "page": 251
 				, "sizeStrength": "large"
+				, "threat": "normal"
 				, "level": 9
 				, "role": "mook"
 				, "type": "undead"
@@ -8194,7 +8558,9 @@
 			, {
 				"name": "Human Zombie"
 				, "source": "13th Age"
+				, "page": 251
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 2
 				, "role": "troop"
 				, "type": "undead"
@@ -8229,7 +8595,9 @@
 			, {
 				"name": "Zombie Shuffler"
 				, "source": "13th Age"
+				, "page": 251
 				, "sizeStrength": "normal"
+				, "threat": "normal"
 				, "level": 1
 				, "role": "mook"
 				, "type": "undead"
