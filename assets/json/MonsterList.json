@@ -2557,6 +2557,282 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Huge Brass Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 4
+				, "role": "troop"
+				, "type": "dragon"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 14
+				, "MD": 18
+				, "HP": 145
+				, "attacks": [{
+						"name": "Flurry of claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "25 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The dragon can make a <em>mind-bending babble</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Mind-bending babble"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "each enemy engaged with the dragon"
+						, "damage": "The target is dazed (save ends)"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "The target is confused instead of dazed (save ends)."
+						}]
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "25 fire damage, or 30 fire damage against a dazed, weakened, or stunned target"
+						, "extraEffects": [{
+								"trigger": "Natural 6+"
+								, "effect": "The dragon can pop free from the target."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Inspire awe"
+						, "effect": "While an enemy has 24 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge Bronze Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 23
+				, "MD": 19
+				, "HP": 600
+				, "attacks": [{
+						"name": "Crushing bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "170 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The dragon can pop free from one enemy engaged with it."
+						}]
+					}
+					, {
+						"name": "Lightning breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d6 nearby or far away enemies in a rough line"
+						, "damage": "120 lightning damage, and the closest target hit is dazed (save ends)"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Inspire awe"
+						, "effect": "While an enemy has 72 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+					}
+					, {
+						"name": "Resist lightning 18+"
+						, "effect": "When a lightning attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Retributive lightning"
+						, "effect": "Once per battle as an interrupt action when an enemy targets it with an attack, the dragon can make a <em>lightning breath</em> against that attacker (and yes, if the dragon hits, the interrupted attack takes the -4 penalty due to dazed)."
+					}
+					, {
+						"name": "Rugged defences"
+						, "effect": "When a creature attacks the dragon, if it used another action this turn before the attack, the dragon gains a +4 bonus to all defences against the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge Copper Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 11
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 21
+				, "MD": 25
+				, "HP": 700
+				, "attacks": [{
+						"name": "Needle-sharp claws and teeth"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "70 damage"
+						, "extraEffects": [{
+							"trigger": "First natural 11+ each turn"
+							, "effect": "The dragon can make an <em>acrid smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Acrid smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "up to 3 enemies engaged with the dragon"
+						, "damage": "The target is hampered until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Acid breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "up to 3 enemies engaged with the dragon"
+						, "damage": "35 acid damage, and 35 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "15 ongoing acid damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Inspire awe"
+						, "effect": "While an enemy has 120 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Supreme out-think"
+						, "effect": "Once per battle as a free action when an enemy rolls a natural even attack against the dragon, the dragon negates the attack (no damage or effects).  In addition, this effect against natural even attacks lasts against the dragon’s enemies until the start of the dragon’s next turn."
+					}
+					, {
+						"name": "Swift mind"
+						, "effect": "Once per battle as a free action when an attack targets the dragon’s MD, it can force the attacker to reroll the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge Gold Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 14
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 29
+				, "PD": 25
+				, "MD": 29
+				, "HP": 1400
+				, "attacks": [{
+						"name": "Ferocious bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 19
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "240 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 11+"
+								, "effect": "The dragon can make a <em>stultifying smoke</em> attack as a free action."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "120 damage."
+							}
+						]
+					}
+					, {
+						"name": "Stultifying smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 19
+						, "defence": "MD"
+						, "target": "one enemy engaged with the dragon"
+						, "damage": "The target is stunned until the start of the dragon’s next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 19
+						, "defence": "PD"
+						, "target": "up to 5 enemies in a group"
+						, "damage": "200 fire damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target takes 40 ongoing fire damage and is dazed (save ends both)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Inspire awe"
+						, "effect": "While an enemy has 240 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+					}
+					, {
+						"name": "Spiral of golden flame"
+						, "effect": "Once per battle as a quick action while the escalation die is 3+, the dragon can fly into the ait, popping free from all enemies engaged with it, and make a <em>fiery breath</em> attack against each enemy that was engaged with it."
+					}
+					, {
+						"name": "Indomitability"
+						, "effect": "Once per battle as a free action at the start of its turn, the dragon can heal 300 hp and cancel all effects and conditions on it, including ongoing damage.  It can heal and cancel these effects enve it it’s prevented from taking actions, such as by being stunned."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Huge Green Dragon"
 				, "source": "13th Age"
 				, "sizeStrength": "huge"
@@ -2678,6 +2954,71 @@
 					, {
 						"name": "Resist fire 18+"
 						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Huge Silver Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "huge"
+				, "level": 13
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 28
+				, "PD": 24
+				, "MD": 28
+				, "HP": 1300
+				, "attacks": [{
+						"name": "Swift, keen claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "230 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 6+"
+							, "effect": "The dragon can make a <em>paralyzing smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Paralyzing smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 18
+						, "defence": "MD"
+						, "target": "1d3 enemies engaged with the dragon"
+						, "damage": "The target must roll an immediate save.  On a failure, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralyzed.  On a success, the target is dazed until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Ice breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 18
+						, "defence": "PD"
+						, "target": "1d4 enemies in a group"
+						, "damage": "160 cold damage, and the closest target hit is dazed until the start of the dragon’s next turn"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Evasive riposte"
+						, "effect": "Once per battle as a free action when an attack targets the dragon, it can force the attacker to reroll the attack and has <em>resist damage 18+</em> against that attack.  If the attack misses, the dragon can make a <em>paralyzing smoke</em> attack as a free action."
+					}
+					, {
+						"name": "Inspire awe"
+						, "effect": "While an enemy has 192 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+					}
+					, {
+						"name": "Resist cold 18+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
 					}
 				]
 				, "nastierSpecials": []
@@ -2853,6 +3194,248 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Large Brass Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 3
+				, "role": "troop"
+				, "type": "dragon"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 13
+				, "MD": 17
+				, "HP": 80
+				, "attacks": [{
+						"name": "Flurry of claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The dragon can make a <em>babble</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Babble"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "each enemy engaged with the dragon"
+						, "damage": "The target is dazed (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "15 fire damage, or 20 fire damage against a dazed, weakened, or stunned target"
+						, "extraEffects": [{
+								"trigger": "Natural 6+"
+								, "effect": "The dragon can pop free from the target."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Resist fire 16+"
+					, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large Bronze Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 200
+				, "attacks": [{
+						"name": "Crushing bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "45 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The dragon can pop free from one enemy engaged with it."
+						}]
+					}
+					, {
+						"name": "Lightning breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "1d6 nearby or far away enemies in a rough line"
+						, "damage": "32 lightning damage, and the closest target hit is dazed (save ends)"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Resist lightning 16+"
+						, "effect": "When a lightning attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Rugged defences"
+						, "effect": "When a creature attacks the dragon, if it used another action this turn before the attack, the dragon gains a +4 bonus to all defences against the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large Copper Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 9
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 19
+				, "MD": 23
+				, "HP": 290
+				, "attacks": [{
+						"name": "Needle-sharp claws and teeth"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "50 damage"
+						, "extraEffects": [{
+							"trigger": "First natural 11+ each turn"
+							, "effect": "The dragon can make an <em>acrid smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Acrid smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "up to 3 enemies engaged with the dragon"
+						, "damage": "The target is hampered until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Acid breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies in a group"
+						, "damage": "25 acid damage, and 25 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "10 ongoing acid damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Out-think"
+						, "effect": "Once per battle as a free action when an enemy rolls a natural even attack against the dragon, the dragon negates the attack (no damage or effects)."
+					}
+					, {
+						"name": "Resist fire 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Swift mind"
+						, "effect": "Once per battle as a free action when an attack targets the dragon’s MD, it can force the attacker to reroll the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large Gold Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 11
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 22
+				, "MD": 26
+				, "HP": 460
+				, "attacks": [{
+						"name": "Ferocious bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "100 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The dragon can make a <em>stultifying smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Stultifying smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "MD"
+						, "target": "one enemy engaged with the dragon"
+						, "damage": "The target is stunned until the start of the dragon’s next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "up to 5 nearby enemies in a group"
+						, "damage": "70 fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Spiral of golden flame"
+						, "effect": "Once per battle as a quick action while the escalation die is 3+, the dragon can fly into the air, popping free from all enemies engaged with it, and make a <em>fiery breath</em> attack against each enemy that was engaged with it."
+					}
+					, {
+						"name": "Indomitability"
+						, "effect": "Once per battle as a free action at the start of its turn, the dragon can cancel all effects and conditions on it, including ongoing damage.  It can cancel these effects even if it’s prevented from taking actions, such as by being stunned."
+					}
+					, {
+						"name": "Resist fire 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Large Green Dragon"
 				, "source": "13th Age"
 				, "sizeStrength": "large"
@@ -2969,6 +3552,67 @@
 					, {
 						"name": "Resist fire 16+"
 						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Large Silver Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "large"
+				, "level": 10
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 21
+				, "MD": 25
+				, "HP": 430
+				, "attacks": [{
+						"name": "Swift, keen claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "95 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 6+"
+							, "effect": "The dragon can make a <em>paralyzing smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Paralyzing smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 15
+						, "defence": "MD"
+						, "target": "1d3 enemies engaged with the dragon"
+						, "damage": "The target must roll an immediate save.  On a failure, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralyzed.  On a success, the target is dazed until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Ice breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies in a group"
+						, "damage": "60 cold damage, and the closest target hit is dazed until the start of the dragon’s next turn"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Evasive turn"
+						, "effect": "Once per battle as a free action when an attack targets the dragon, it can force the attacker to reroll the attack and has <em>resist damage 16+</em> against the that attack."
+					}
+					, {
+						"name": "Resist cold 16+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
 					}
 				]
 				, "nastierSpecials": []
@@ -3144,6 +3788,253 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Medium Brass Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "dragon"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 12
+				, "MD": 16
+				, "HP": 31
+				, "attacks": [{
+						"name": "Flurry of claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 11+"
+								, "effect": "The dragon can make a <em>babble</em> attack as a free action."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "3 damage."
+							}
+						]
+					}
+					, {
+						"name": "Babble"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": "each enemy engaged with the dragon"
+						, "damage": "The target is dazed (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies in a group"
+						, "damage": "5 fire damage, or 7 fire damage against a dazed, weakened, or stunned target"
+						, "extraEffects": [{
+								"trigger": "Natural 6+"
+								, "effect": "The dragon can pop free from the target."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Resist fire 12+"
+					, "effect": "When a fire attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Bronze Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 13
+				, "HP": 50
+				, "attacks": [{
+						"name": "Crushing bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "11 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The dragon can pop free from one enemy engaged with it."
+						}]
+					}
+					, {
+						"name": "Lightning breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d6 nearby or far away enemies in a rough line"
+						, "damage": "8 lightning damage, and the closest target hit is dazed (save ends)"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Resist lightning 12+"
+						, "effect": "When a lightning attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Rugged defence"
+						, "effect": "When a creature attacks the dragon, if it used another action this turn before the attack, the dragon gains a +4 bonus to all defences against the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Copper Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 14
+				, "MD": 18
+				, "HP": 44
+				, "attacks": [{
+						"name": "Needle-sharp claws and teeth"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "7 damage"
+						, "extraEffects": [{
+							"trigger": "First natural 11+ each turn"
+							, "effect": "The dragon can make an <em>acrid smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Acrid smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "up to 3 enemies engaged with the dragon"
+						, "damage": "The target is hampered until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Acid breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies"
+						, "damage": "4 acid damage, and 4 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "2 ongoing acid damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Out-think"
+						, "effect": "Once per battle as a free action when an enemy rolls a natural even hit against the dragon, the dragon negates the attack (no damage or effects)."
+					}
+					, {
+						"name": "Resist fire 12+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Swift mind"
+						, "effect": "Once per battle as a free action when an attack targets the dragon’s MD, it can force the attacker to reroll the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Gold Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 7
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 18
+				, "MD": 22
+				, "HP": 85
+				, "attacks": [{
+						"name": "Ferocious bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 11+"
+							, "effect": "The dragon can make a <em>stultifying smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Stultifying smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "one enemy engaged with the dragon"
+						, "damage": "The target is stunned until the start of the dragon’s next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "up to 5 nearby enemies in a group"
+						, "damage": "14 fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Spiral of golden flame"
+						, "effect": "Once per battle as a quick action while the escalation die is 3+, the dragon can fly into the ait, popping free from all enemies engaged with it, and make a <em>fiery breath</em> attack against each enemy that was engaged with it."
+					}
+					, {
+						"name": "Indomitability"
+						, "effect": "Once per battle as a free action at the start of its turn, the dragon can cancel all effects and conditions on it, including ongoing damage.  It can cancel these effects even if it’s prevented from taking actions, such as by being stunned."
+					}
+					, {
+						"name": "Resist fire 12+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Medium Green Dragon"
 				, "source": "13th Age"
 				, "sizeStrength": "normal"
@@ -3256,6 +4147,67 @@
 					, {
 						"name": "Resist fire 12+"
 						, "effect": "When a fire attack targets this creature, the attacker must roll 12+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Medium Silver Dragon"
+				, "source": "13 True Ways"
+				, "sizeStrength": "normal"
+				, "level": 6
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 17
+				, "MD": 21
+				, "HP": 90
+				, "attacks": [{
+						"name": "Swift, keen claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 6+"
+							, "effect": "The dragon can make a <em>paralyzing smoke</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Paralyzing smoke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": "1d3 enemies engaged with the dragon"
+						, "damage": "The target must roll an immediate save.  On a failue, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralyzed.  On a success, the target is dazed until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Ice breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies in a group"
+						, "damage": "10 cold damage, and the closest target hit is dazed until the start of the dragon’s next turn"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Evasive turn"
+						, "effect": "Once per battle as a free action when an attack targets the dragon, it can force the attacker to reroll the attack and has <em>resist damage 12+</em> against that attack."
+					}
+					, {
+						"name": "Resist cold 12+"
+						, "effect": "When a cold attack targets this creature, the attacker mus roll a natural 12+ on the attack roll or it only deals half damage."
 					}
 				]
 				, "nastierSpecials": []
