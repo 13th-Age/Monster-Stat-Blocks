@@ -8607,7 +8607,18 @@
 	}
 	, {
 		"name": "Ooze"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Abilities"
+			, "traits": [{
+					"name": "Flows where it likes"
+					, "description": "The ooze is immune to opportunity attacks."
+				}
+				, {
+					"name": "Ooze"
+					, "description": "The ooze is immune to effects.  When an attack applies a condition to an ooze (dazed, hampered, weakened, ongoing damage, etc.), that condition doesn’t affect it."
+				}
+			]
+		}]
 		, "monsters": [{
 				"name": "Black Pudding"
 				, "source": "13th Age"
