@@ -6486,6 +6486,62 @@
 	, {
 		"name": "Gnoll"
 		, "monsters": [{
+				"name": "Gnoll Fiendfletch"
+				, "source": "13 True Ways"
+				, "page": 196
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "archer"
+				, "type": "humanoid"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 19
+				, "MD": 15
+				, "HP": 75
+				, "attacks": [{
+						"name": "Infernal mace"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The fiendfletch can make a disengage check as a free action this turn after the attack."
+						}]
+					}
+					, {
+						"name": "Hellbent bow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is dazed until the end of its next turn as it sufferes debilitating pain from a hellish arrow."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Close-quarters archery"
+					, "effect": "While making a ranged attack, the fiendfletch gains a +4 bonus to AC against opportunity attacks."
+				}]
+				, "nastierSpecials": [{
+						"name": "Duck and cover"
+						, "effect": "While the fiendfletch has at least one blocker, troop, or wrecker ally (like a shredder) between it and an enemy, it gains a +4 bonus to all defences against ranged and close-quarters attacks from that enemy."
+					}
+					, {
+						"name": "Living arrows"
+						, "effect": "When the fiendfletch rolls a natural 16+ with a <em>hellbent bow</em> attack and hits, the target is weakened (save ends) instead of dazed."
+					}
+				]
+			}
+			, {
 				"name": "Gnoll Ranger"
 				, "source": "13th Age"
 				, "page": 229
@@ -6577,6 +6633,61 @@
 				]
 				, "abilities": []
 				, "nastierSpecials": []
+			}
+			, {
+				"name": "Gnoll Shredder"
+				, "source": "13 True Ways"
+				, "page": 196
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "blocker"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 19
+				, "MD": 15
+				, "HP": 95
+				, "attacks": [{
+						"name": "Diabolical axe"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "25 damage, and one of the shredder’s allies engaged with the target can pop free"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Spoiling strike"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "one enemy it hits with an opportunity attack"
+						, "damage": "The target loses the rest of its actions that turn (and stops moving if it was moving)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Battle lock"
+						, "effect": "Gnoll shredders gain a +2 bonus to opportunity attacks, and emeies take a -8 penalty to disengage checks against them."
+					}
+					, {
+						"name": "Legion fighting"
+						, "effect": "When the escalation die increases, if there are more gnolls in the battle than their enemies, one gnoll shredder in the battle can make a melee attack as a free action."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Spoiling strike"
+						, "effect": "When the shredder hits with an opportunity attack, it can make a <em>spoiling strike</em> attack against that enemy as a free action."
+					}
+					, {
+						"name": "Vicious in-fighting"
+						, "effect": "When an enemy would pop free from the shredder, it must roll a disengage check as a free action instead.  If it fails, the shredder can make a <em>diabolical axe</em> attack against that enemy as a free action."
+					}
+				]
 			}
 			, {
 				"name": "Gnoll War Leader"
