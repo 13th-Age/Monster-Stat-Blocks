@@ -9297,7 +9297,13 @@
 	}
 	, {
 		"name": "Skeleton"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Ability"
+			, "traits": [{
+				"name": "Resist weapons 16+"
+				, "description": "When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+			}]
+		}]
 		, "monsters": [{
 				"name": "Blackamber Skeletal Legionnaire"
 				, "source": "13th Age"
