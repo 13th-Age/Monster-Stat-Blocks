@@ -9416,6 +9416,127 @@
 		]
 	}
 	, {
+		"name": "Specter"
+		, "monsters": [{
+				"name": "Dread Specter"
+				, "source": "13 True Ways"
+				, "page": 201
+				, "sizeStrength": "triple-strength"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "undead"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 18
+				, "MD": 22
+				, "HP": 550
+				, "attacks": [{
+						"name": "Icy, life-draining touch"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "110 negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "Each enemy engaged with the specter (including the target) takes 20 negative energy damage."
+						}]
+					}
+					, {
+						"name": "Deathly stare"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "up to 2 nearby enemies"
+						, "damage": "75 negative energy damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Death grasp"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "one nearby enemy with 60 hp or fewer"
+						, "damage": "60 negative energy damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Phantom movement"
+						, "effect": "As a move action when the escalation die is odd, the specter can teleport anywhere nearby, dematerialising from its location to materialise in another."
+					}
+					, {
+						"name": "Punishing aura"
+						, "effect": "When an enemy attacks the specter and misses, it takes 24 negative energy damage."
+					}
+					, {
+						"name": "Wrack and ruin"
+						, "effect": "While a specter is in the battle, the PCs don’t add the escalation die to attack rolls, but it does."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Death grasp"
+					, "effect": "At the start of each of the specter’s turns, if any enemy in the battle has 60 hp or fewer, the specter can make a <em>death grasp</em> attack against one of those enemies as a free action.  Be sure to let players see this one coming."
+				}]
+			}
+			, {
+				"name": "Specter"
+				, "source": "13 True Ways"
+				, "page": 201
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "wrecker"
+				, "type": "undead"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 15
+				, "MD": 19
+				, "HP": 160
+				, "attacks": [{
+						"name": "Icy, life-draining touch"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "30 negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "Each enemy engaged with the specter (including the target) takes 4 negative energy damage."
+						}]
+					}
+					, {
+						"name": "Deathly stare"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "20 negative energy damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Punishing aura"
+						, "effect": "When an enemy attacks the specter and misses, it takes 8 negative energy damage."
+					}
+					, {
+						"name": "Wrack and ruin"
+						, "effect": "While a specter is in the battle, the PCs don’t add the escalation die to attack rolls, but it does."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Troglodyte"
 		, "monsters": [{
 				"name": "Trog"
