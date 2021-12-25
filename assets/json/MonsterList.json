@@ -6624,7 +6624,13 @@
 	}
 	, {
 		"name": "Gnoll"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Nastier Special for all gnolls"
+			, "traits": [{
+				"name": "Blood fury"
+				, "description": "+1d10 melee damage if the gnoll or its target is staggered."
+			}]
+		}]
 		, "monsters": [{
 				"name": "Gnoll Fiendfletch"
 				, "source": "13 True Ways"
