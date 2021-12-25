@@ -14,7 +14,7 @@ $(document).ready(function() {
 		,function(data){
 			monsterList = $(data).toArray();
 
-			CreateStatBlocks();
+			PopulatePage();
 		}
 	);
 });

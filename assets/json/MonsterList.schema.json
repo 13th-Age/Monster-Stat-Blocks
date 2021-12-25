@@ -9,6 +9,7 @@
 		, "headerTemplate": "{{ self.name }}"
 		, "required": [
 			"name"
+			, "groupTraits"
 			, "monsters"
 		]
 		, "properties": {
@@ -16,6 +17,56 @@
 				"type": "string"
 				, "title": "Name"
 				, "minLength": 1
+			}
+			, "groupTraits": {
+				"type": "array"
+				, "title": "Group Traits"
+				, "format": "tabs"
+				, "uniqueItems": true
+				, "items": {
+					"type": "object"
+					, "title": "Group Trait"
+					, "format": "grid-strict"
+					, "headerTemplate": "{{ self.name }}"
+					, "required": [
+						"name"
+						, "traits"
+					]
+					, "properties": {
+						"name": {
+							"type": "string"
+							, "title": "Name"
+							, "minLength": 1
+						}
+						, "traits": {
+							"type": "array"
+							, "title": "Traits"
+							, "format": "tabs-top"
+							, "uniqueItems": true
+							, "items": {
+								"type": "object"
+								, "title": "Trait"
+								, "format": "grid-strict"
+								, "headerTemplate": "{{ self.name }}"
+								, "required": [
+									"name"
+									, "description"
+								]
+								, "properties": {
+									"name": {
+										"type": "string"
+										, "title": "Name"
+										, "minLength": 1
+									}
+									, "description": {
+										"type": "string"
+										, "title": "Description"
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 			, "monsters": {
 				"type": "array"

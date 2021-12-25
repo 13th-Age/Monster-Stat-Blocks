@@ -24,13 +24,19 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 
 
-function CreateStatBlocks() {
-	var html = "";
+function PopulatePage() {
+	var html_monster = "";
+	var html_group = "";
+	var groupArray = []
 
 	monsterArray.forEach(function(item,i){
 		var monsterDetails = monsterList[item.monsterGroup].monsters[item.monster];
 
-		html += "<h2>" + monsterDetails.name + "</h2>"
+		if (groupArray.indexOf(item.monsterGroup) == -1) {
+			groupArray.push(item.monsterGroup);
+		}
+
+		html_monster += "<h2>" + monsterDetails.name + "</h2>"
 			+ "<table>"
 			+ "<tbody>"
 			+ "<tr>"
@@ -43,7 +49,7 @@ function CreateStatBlocks() {
 					+ ((monsterDetails.vulnerability != "") ? "<p style='margin-top: 0px;'>Vulnerability: " + monsterDetails.vulnerability : "");
 
 		monsterDetails.attacks.forEach(function(attack,i){
-			html += "<p>"
+			html_monster += "<p>"
 				+ ((attack.specialTrigger == true) ? "<em>[Special trigger]</em> " : "")
 				+ "<strong>"
 					+ ((attack.type == "close") ? "C: " : "")
@@ -60,31 +66,31 @@ function CreateStatBlocks() {
 				+ attack.damage;
 
 			attack.extraEffects.forEach(function(extraEffect,i){
-				html += "<br>"
+				html_monster += "<br>"
 					+ "<em>" + extraEffect.trigger + "</em>: "
 					+ extraEffect.effect;
 			});
 
-			html += "</p>";
+			html_monster += "</p>";
 		});
 
 		if (monsterDetails.abilities.length != 0) {
 			monsterDetails.abilities.forEach(function(ability,i){
-				html += "<p><em>" + ability.name + "</em>"
+				html_monster += "<p><em>" + ability.name + "</em>"
 					+ ((ability.effect != "") ? ": " + ability.effect : "")
 					+ "</p>";
 			});
 		}
 
 		if (monsterDetails.nastierSpecials.length != 0) {
-			html += "<p><strong>Nastier Specials</strong></p>";
+			html_monster += "<p><strong>Nastier Specials</strong></p>";
 
 			monsterDetails.nastierSpecials.forEach(function(nastierSpecial,i){
-				html += "<p><em>" + nastierSpecial.name + "</em>: " + nastierSpecial.effect + "</p>";
+				html_monster += "<p><em>" + nastierSpecial.name + "</em>: " + nastierSpecial.effect + "</p>";
 			});
 		}
 
-		html += "</td>"
+		html_monster += "</td>"
 				+ "<td>"
 					+ (
 						(
@@ -122,7 +128,29 @@ function CreateStatBlocks() {
 			+ "<hr>";
 	});
 
-	$("#StatBlocks").html(html);
+	if (groupArray.length != 0) {
+		html_group += "<h1>Group Abilities</h1>";
+
+		groupArray.forEach(function(item,i){
+			var groupDetails = monsterList[item].groupTraits;
+
+			groupDetails.forEach(function(item,i){
+				html_group += "<h2>" + item.name + "</h2><ul style='list-style-type: none; padding: 0px;'>";
+
+				item.traits.forEach(function(item,i){
+					html_group += "<li style='padding-left:30px; text-indent: -20px;'><em>"
+						+ item.name
+						+ "</em>"
+						+ ((item.description == "") ? "" : ": " + item.description)
+						+ "</li>";
+				});
+
+				html_group += "</ul>";
+			});
+		});
+	}
+
+	$("#StatBlocks").html(html_group + html_monster);
 }
 
 
