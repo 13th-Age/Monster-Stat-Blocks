@@ -876,7 +876,42 @@
 	}
 	, {
 		"name": "Demon"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Demon Ablities (d6 or d8)"
+			, "traits": [{
+					"name": "1: True seeing"
+					, "description": "The demon is immune to invisibility and ignores any illusions."
+				}
+				, {
+					"name": "2: Resist fire 18+"
+					, "description": "You’ll see that the demon resist fire the first time you use fire against it."
+				}
+				, {
+					"name": "3: Invisibility"
+					, "description": "The first time the demon is staggered in a battle, it becomes invisible until the end of its next turn."
+				}
+				, {
+					"name": "4: Resist energy 12+"
+					, "description": "The demon’s resistance to all energy types puts a damper on enemy spellcasters, but at least the resistance is only 12+."
+				}
+				, {
+					"name": "5: Fear aura"
+					, "description": "Enemies engaged with the demon who are below its fear hit point threshold are dazed and can’t use the escalation die.  See fear level (thresholds on page 200)."
+				}
+				, {
+					"name": "6: Teleport"
+					, "description": "1d3 times per battle, as a move action, the demon can teleport anywhere it can see nearby."
+				}
+				, {
+					"name": "7: Demonic speed"
+					, "description": "The demon can take an extra action each turn while the escalation die is 4+."
+				}
+				, {
+					"name": "8: Gate"
+					, "description": "Once per battle as a standard action, if the demon is staggered, it can summon a single demon ally at least two levels below its own level.  The allied demon rolls initiative and does not appear on the battlefield until its turn starts."
+				}
+			]
+		}]
 		, "monsters": [{
 				"name": "Balor (Flame Demon)"
 				, "source": "13th Age"
