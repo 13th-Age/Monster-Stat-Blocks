@@ -7394,7 +7394,13 @@
 	}
 	, {
 		"name": "Half-Orc"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Nastier Special for all half-orcs"
+			, "traits": [{
+				"name": "Lethal swing"
+				, "description": "Once per battle, a half-orc can reroll a melee attack and use the result it prefers."
+			}]
+		}]
 		, "monsters": [{
 				"name": "Half-Orc Commander"
 				, "source": "13th Age"
