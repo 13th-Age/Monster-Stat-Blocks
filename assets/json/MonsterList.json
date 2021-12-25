@@ -10540,6 +10540,67 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Headless Zombie"
+				, "source": "13 True Ways"
+				, "page": 207
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "troop"
+				, "type": "undead"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 17
+				, "HP": 270
+				, "attacks": [{
+						"name": "Flailing fists"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "25 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "Both the zombie and the target take 3d10 damage."
+						}]
+					}
+					, {
+						"name": "Mouthless cry"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "1d3 closest nearby enemies"
+						, "damage": "The target is dazed (save ends)"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 20 psychic damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Death spasms"
+						, "effect": "When a headless zombie drops to 0 hp, it flails with its fists and makes a <em>mouthless cry</em> attack as a free action before it dies."
+					}
+					, {
+						"name": "Inevitable hunger"
+						, "effect": "When a creature tries to affect the zombie’s attack, such as forcing a reroll or applying a penalty, it must roll a normal save; on a failure, the effect is negated."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Baleful aura"
+						, "effect": "While nearby a headless zombie, when a creature would heal, it only heals half the normal hit points."
+					}
+					, {
+						"name": "Necrotic supremacy"
+						, "effect": "When the escalatioin die increases to 6, each headless zombie in the battle is restored to maximum hit points, including the dead ones."
+					}
+				]
+			}
+			, {
 				"name": "Human Zombie"
 				, "source": "13th Age"
 				, "page": 251
@@ -10575,6 +10636,122 @@
 					"name": "Eat brains"
 					, "effect": "More dangerous zombies don’t try to kill the moving targets before feasting on brains; they keep attacking any enemy they’ve knocked unconscious, rolling attacks againt the helpless enemy until it’s dead."
 				}]
+			}
+			, {
+				"name": "Zombie Beast"
+				, "source": "13 True Ways"
+				, "page": 207
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "undead"
+				, "initiative": 1
+				, "vulnerability": ""
+				, "AC": 14
+				, "PD": 12
+				, "MD": 8
+				, "HP": 110
+				, "attacks": [{
+						"name": "Smash"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage, and the zombie can only attack using <em>gutburst</em> during its next turn"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "Both the zombie and its target take 2d6 damage."
+						}]
+					}
+					, {
+						"name": "Gutburst"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": "up to 2 nearby enemies"
+						, "damage": "The target takes 3 ongoing acid damage from a spray of stinking zombified gut juice.  The zombie takes 1d6 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Thrash"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": "each enemy engaged with it"
+						, "damage": "15 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Headshot"
+					, "effect": "The first time an enemy crits the zombie, the beast must roll a save.  If it succeeds, it takes normal crit damage.  If it fails, it drops to 0 hp.  A second crit just drops the thing."
+				}]
+				, "nastierSpecials": [{
+					"name": "Ghastly thrashing"
+					, "effect": "When the zombie beast is first staggered, it makes a <em>thrash</em> attack as a free action."
+				}]
+			}
+			, {
+				"name": "Zombie of the Silver Rose"
+				, "source": "13 True Ways"
+				, "page": 207
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 15
+				, "MD": 11
+				, "HP": 20
+				, "attacks": [{
+						"name": "Iron-hard hands"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "Both the zombie and its target take 1d6 damage."
+						}]
+					}
+					, {
+						"name": "Curse"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 4
+						, "defence": "MD"
+						, "target": "one nearby enemy"
+						, "damage": "The target is weakened until the start of the zombie’s next turn."
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Hand of the fallen"
+						, "effect": "When a melee attack drops one or more Silver Rose mooks, the hand of one of those zombies ends up severed from its owner and latched onto a nearby enemy.  The afflicted creature is vulnerable to all attacks until the hand is removed, which takes a standard action by that creature or an ally next to them."
+					}
+					, {
+						"name": "Shot to the head"
+						, "effect": "When an attack drops this zombie and it had 2, 4, or 6 hp remaining, the attack deals the same amount of damage to another member of the mob.  If this zombie has any other number of hit points left?  No hit to the head."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Curse of failure"
+						, "effect": "Each round, one zombie mook in the Silver Rose mob can make a <em>curse</em> attack as a quick action."
+					}
+					, {
+						"name": "Mob rule"
+						, "effect": "The <em>curse</em> gains an attack bonus equal to the number of Silver Rose zombies in the battle."
+					}
+				]
 			}
 			, {
 				"name": "Zombie Shuffler"
