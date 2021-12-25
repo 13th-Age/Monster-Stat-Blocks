@@ -4478,6 +4478,816 @@
 		}]
 	}
 	, {
+		"name": "Elemental"
+		, "monsters": [{
+				"name": "Air Elemental"
+				, "source": "13 True Ways"
+				, "page": 190
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "elemental"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 19
+				, "MD": 15
+				, "HP": 52
+				, "attacks": [{
+						"name": "Slam"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "12 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Swirling winds"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "1d3 random nearby conscious enemies"
+						, "damage": "14 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target pops free from the elemental."
+						}]
+					}
+					, {
+						"name": "Elemental whirlwind"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "each enemy engaged with it <em>and</em> one nearby enemy"
+						, "damage": "14 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "It’s quick and lively."
+					}
+					, {
+						"name": "Resist non-spell damage 16+"
+						, "effect": "When a non-spell attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Whirlwind transformation"
+						, "effect": "Roll a d10 at the start of each of the air elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into whirlwind form until the end of the battle.  While in this form it gains the <em>elemental whirlwind</em> improved attack (and you stop rolling <em>whirlwind transformation</em> checks)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Big Air Elemental"
+				, "source": "13 True Ways"
+				, "page": 191
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "wrecker"
+				, "type": "elemental"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 21
+				, "MD": 17
+				, "HP": 88
+				, "attacks": [{
+						"name": "Slam"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Swirling winds"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "1d3 random conscious nearby enemies"
+						, "damage": "22 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target pops free from the elemental."
+						}]
+					}
+					, {
+						"name": "Elemental whirlwind"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "each enemy engaged with it <em>and</em> one nearby enemy"
+						, "damage": "22 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "It’s quick and direct."
+					}
+					, {
+						"name": "Whirlwind transformation"
+						, "effect": "Roll a d8 at the start of each of the air elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into whirlwind form until the end of the battle.  While in this form it gains the <em>elemental whirlwind</em> improved attack (and you stop rolling <em>whirlwind transformation</em> checks)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Big Earth Elemental"
+				, "source": "13 True Ways"
+				, "page": 191
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "blocker"
+				, "type": "elemental"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 22
+				, "MD": 17
+				, "HP": 94
+				, "attacks": [{
+					"name": "Rocky fists"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "16 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "7 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Boulder up"
+						, "effect": "Roll a d8 at the start of each of the earth elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into boulder guardian form until the end of the battle.  While in this form, it gains a +2 bonus to AC and the <em>relentless pursuit</em> ability (and you stop rolling <em>boulder up</em> checks)."
+					}
+					, {
+						"name": "Relentless pursuit"
+						, "effect": "The elemental must be in boulder guardian form to use this ability.  Staggered enemies can’t disengage from the earth elemental.  (They can pop free, but they can’t roll disengage checks.)"
+					}
+					, {
+						"name": "Repair damage 10 and below"
+						, "effect": "When the earth elemental is targeted by a natural attack roll of 10 or less, the elemental heals 3d6 damage before taking any damage from the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Big Fire Elemental"
+				, "source": "13 True Ways"
+				, "page": 191
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "wrecker"
+				, "type": "elemental"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 22
+				, "MD": 19
+				, "HP": 92
+				, "attacks": [{
+						"name": "Whipping flames"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "22 fire damage, and 11 ongoing fire damage to a random nearby enemy (including an unconscious one)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Elemental wildfire"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "one nearby enemy OR each nearby enemy taking ongoing fire damage"
+						, "damage": "30 fire damage, and 11 ongoing fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "11 ongoing fire damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Melee burn"
+						, "effect": "When an enemy makes a natural odd melee attack roll against the fire elemental, that attacker takes 2d12 fire damage."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attaacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Wildfire transformation"
+						, "effect": "Roll a d8 at the start of each of the fire elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into wildfire form until the end of the battle.  While in this form, it gains the <em>elemental wildfire</em> improved attack (and you stop rolling <em>wildfire transformation</em> checks)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Big Water Elemental"
+				, "source": "13 True Ways"
+				, "page": 191
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "blocker"
+				, "type": "elemental"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 100
+				, "attacks": [{
+					"name": "Surge"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": "up to 2 enemies"
+					, "damage": "22 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "The elemental heals 9 hp."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Great wave transformation"
+						, "effect": "Roll a d8 at the start of each of the water elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into great wave form until the end of the battle.  While in this form, each enemy engaged with the elemental is hampered (and you stop rolling <em>great wave transformation</em> checks)."
+					}
+					, {
+						"name": "Liquid empowerment"
+						, "effect": "The water elementa gains a +2 bonus to attacks and all defences while it’s in contact with a body of water, or while it’s nearby a sizeable body of water.  A bucket or a bathtub of liquid doesn’t count; it must be at least a pond, creek, or maybe a large fountain.  If the water elemental moves far away from the body of water the empowerment ends."
+					}
+					, {
+						"name": "Resist weapon damage 16+"
+						, "effect": "When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Earth Elemental"
+				, "source": "13 True Ways"
+				, "page": 190
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "blocker"
+				, "type": "elemental"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 20
+				, "MD": 15
+				, "HP": 66
+				, "attacks": [{
+					"name": "Rocky fists"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "11 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "4 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Boulder up"
+						, "effect": "Roll a d10 at the start of each of the earth elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into boulder guardian form until the end of the battle.  While in this form, it gains a +2 bonus to AC and the <em>relentless pursuit</em> ability (and you stop rolling <em>boulder up</em> checks)."
+					}
+					, {
+						"name": "Relentless pursuit"
+						, "effect": "The elemental must be in boulder guardian form to use this ability.  Staggered enemies can’t disengage from the earth elemental.  (They can pop free, but they can’t roll disengage checks.)"
+					}
+					, {
+						"name": "Repair damage 10 and below"
+						, "effect": "When the earth elemental is targeted by a natural attack roll of 10 or less, the elemental heals 1d12 damage before taking any damage from the attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Epic Air Elemental"
+				, "source": "13 True Ways"
+				, "page": 192
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "elemental"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 23
+				, "MD": 19
+				, "HP": 140
+				, "attacks": [{
+						"name": "Slam"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "40 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Swirling winds"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "1d3 random conscious nearby enemies"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target pops free from the elemental."
+						}]
+					}
+					, {
+						"name": "Elemental whirlwind"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "each enemy engaged with it <em>and</em> one nearby enemy"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+					, {
+						"name": "Gale force jets"
+						, "specialTrigger": true
+						, "type": "ranged"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is dazed until the end of its next turn."
+							}
+							, {
+								"trigger": "Natural even miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "It’s quick and forceful."
+					}
+					, {
+						"name": "Resist non-spell damage 16+"
+						, "effect": "When a non-spell attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Whirlwind transformation"
+						, "effect": "Roll a d6 at the start of each of the air elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into whirlwind form until the end of the battle.  While in this form it gains the <em>elemental whirlwind</em> improved attack (and you stop rolling <em>whirlwind transformation</em> checks)."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Gale force jets"
+					, "effect": "The elemental gains the <em>gale force jets</em> attack."
+				}]
+			}
+			, {
+				"name": "Epic Earth Elemental"
+				, "source": "13 True Ways"
+				, "page": 192
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "blocker"
+				, "type": "elemental"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 24
+				, "MD": 19
+				, "HP": 170
+				, "attacks": [{
+					"name": "Rocky fists"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 13
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "28 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "14 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Boulder up"
+						, "effect": "Roll a d6 at the start of each of the earth elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into boulder guardian form until the end of the battle.  While in this form, it gains a +2 bonus to AC and the <em>relentless pursuit</em> ability (and you stop rolling <em>boulder up</em> checks)."
+					}
+					, {
+						"name": "Relentless pursuit"
+						, "effect": "The elemental must be in boulder guardian form to use this ability.  Staggered enemies can’t disengage from the earth elemental.  (They can pop free, but they can’t roll disengage checks.)"
+					}
+					, {
+						"name": "Repair damage 10 and below"
+						, "effect": "When the earth elemental is targeted by a natural attack roll of 10 less, the elemental heals 5d6 damage before taking any damage from the attack."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Endless vitality"
+					, "effect": "When an enemy engaged with the epic earth elemental heals using one or more recoveries, the elemental heals 5d6 hit points."
+				}]
+			}
+			, {
+				"name": "Epic Fire Elemental"
+				, "source": "13 True Ways"
+				, "page": 193
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "elemental"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 24
+				, "MD": 21
+				, "HP": 166
+				, "attacks": [{
+						"name": "Whipping flames"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "40 fire damage, and 20 ongoing fire damage to a random nearby enemy (including an unconscious one)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Elemental wildfire"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "one nearby enemy OR each nearby enemy taking ongoing fire damage"
+						, "damage": "55 fire damage, and 20 ongoing fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "20 ongoing fire damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Melee burn"
+						, "effect": "When an enemy makes a natural odd melee attack roll against the fire elemental, that attacker takes 3d12 fire damage."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Wildfire transformation"
+						, "effect": "Roll a d6 at the start of each of the fire elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into wildfire form until the end of the battle.  While in this form, it gains the <em>elemental wildfire</em> improved attack (and you stop rolling <em>wildfire transformation</em> checks)."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Flight"
+					, "effect": "Fire elementals that can fly are rare.  This one can, and it only touches the ground to set something ablaze."
+				}]
+			}
+			, {
+				"name": "Epic Water Elemental"
+				, "source": "13 True Ways"
+				, "page": 193
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "blocker"
+				, "type": "elemental"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 22
+				, "MD": 18
+				, "HP": 170
+				, "attacks": [{
+					"name": "Surge"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 13
+					, "defence": "AC"
+					, "target": "up to 2 enemies"
+					, "damage": "22 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "The elemental heals 9 hp."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Great wave transformation"
+						, "effect": "Roll a d6 at the start of each of the water elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into great wave form until the end of the battle.  While in this form, each enemy engaged with the elemental is hampered (and you stop rolling <em>great wave transformation</em> checks)."
+					}
+					, {
+						"name": "Liquid empowerment"
+						, "effect": "The water elemental gains a +2 bonus to attacks and all defences while it’s in contact with a body of water, or while it’s nearby a sizeable body of water.  A bucket or a bathtub of liquid doesn’t count; it must be at least a pond, creek, or maybe a large fountain.  If the water elemental moves far away from the body of water the empowerment ends."
+					}
+					, {
+						"name": "Resist weapon damage 16+"
+						, "effect": "When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Fire Elemental"
+				, "source": "13 True Ways"
+				, "page": 190
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "elemental"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 20
+				, "MD": 17
+				, "HP": 64
+				, "attacks": [{
+						"name": "Whipping flames"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "14 fire damage, and 7 ongoing fire damage to a random nearby enemy (including an unconscious one)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Elemental wildfire"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "one nearby enemy OR each nearby enemy taking ongoing fire damage"
+						, "damage": "20 fire damage, and 7 ongoing fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "7 ongoing fire damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Melee burn"
+						, "effect": "When an enemy makes a natural odd melee attack roll against the fire elemental, that attack takes 1d12 fire damage."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Wildfire transformation"
+						, "effect": "Roll a d10 at the start of each of the fire elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into wildfire form until the end of the battle.  While in this form, it gains the <em>elemental wildfire</em> improved attack (and you stop rolling <em>wildfire transformation</em> checks)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Small Air Elemental"
+				, "source": "13 True Ways"
+				, "page": 189
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "elemental"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 17
+				, "MD": 13
+				, "HP": 34
+				, "attacks": [{
+						"name": "Slam"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Swirling winds"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d3 random conscious nearby enemies"
+						, "damage": "5 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target pops free from the elemental."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "It’s quick and lively."
+					}
+					, {
+						"name": "Resist non-spell damage 16+"
+						, "effect": "When a non-spell attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Small Earth Elemental"
+				, "source": "13 True Ways"
+				, "page": 189
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "elemental"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 18
+				, "MD": 13
+				, "HP": 40
+				, "attacks": [{
+					"name": "Rocky fists"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "7 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "2 damage."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Repair damage 10 and below"
+					, "effect": "When the earth elemental is targeted by a natural attack roll of 10 or less, the elemntal heals 1d6 damage before taking any damage from the attack."
+				}]
+				, "nastierSpecials": [{
+					"name": "Burrow"
+					, "effect": "Not all earth elementals burrow, though if yours is particularly nasty or associated with a particular icon, it can."
+				}]
+			}
+			, {
+				"name": "Small Fire Elemental"
+				, "source": "13 True Ways"
+				, "page": 189
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "elemental"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 18
+				, "MD": 15
+				, "HP": 38
+				, "attacks": [{
+					"name": "Whipping flames"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "8 fire damage, and 4 ongoing fire damage to a random nearby enemy (including an unconscious one)"
+					, "extraEffects": [{
+							"trigger": "Melee burn"
+							, "effect": "When an enemy makes a natural odd melee attack roll against the fire elemental, that attacker takes 1d8 fire damage."
+						}
+						, {
+							"trigger": "Resist fire 18+"
+							, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+						}
+					]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Small Water Elemental"
+				, "source": "13 True Ways"
+				, "page": 189
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "blocker"
+				, "type": "elemental"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 12
+				, "HP": 40
+				, "attacks": [{
+					"name": "Surge"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": "up to 2 enemies"
+					, "damage": "8 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "The elemental heals 3 hp."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Liquid empowerment"
+						, "effect": "The water elemental gains a +2 bonus to attacks and all defences while it’s in contact with a body of water, or while it’s nearby a sizeable body of water.  A bucket or a bathtub of liquid doesn’t count; it must be at least a pond, creek, or maybe a large fountain.  If the water elemental moves far away from the body of water the empowerment ends."
+					}
+					, {
+						"name": "Resist weapon damage 16+"
+						, "effect": "When a weapon attack targets this creature, the attaacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Water Elemental"
+				, "source": "13 True Ways"
+				, "page": 190
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "blocker"
+				, "type": "elemental"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 14
+				, "HP": 66
+				, "attacks": [{
+					"name": "Surge"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": "up to 2 enemies"
+					, "damage": "14 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "The elemental heals 6 hp."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Great wave transformation"
+						, "effect": "Roll a d10 at the start of each of the water elemental’s turns.  If you roll less than or equal to the escalation die, it shifts into great wave form until the end of the battle.  While in this form, each enemy engaged with the elemental is hampered (and you stop rolling <em>great wave transformation</em> checks)."
+					}
+					, {
+						"name": "Liquid empowerment"
+						, "effect": "The water elemental gains a +2 bonus to attacks and all defences while it’s in contact with a body of water, or while it’s nearby a sizeable body of water.  A bucket or a bathtub of liquid doesn’t count; it must be at least a pond, creek, or maybe a large fountain.  If the water elemental moves far away from the body of water the empowerment ends."
+					}
+					, {
+						"name": "Resist weapon damage 16+"
+						, "effect": "When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Ettin"
 		, "monsters": [{
 			"name": "Ettin"
