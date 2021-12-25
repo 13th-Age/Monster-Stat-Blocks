@@ -132,10 +132,13 @@ function PopulatePage() {
 		html_group += "<h1>Group Abilities</h1>";
 
 		groupArray.forEach(function(item,i){
-			var groupDetails = monsterList[item].groupTraits;
+			var groupDetails = monsterList[item];
 
-			groupDetails.forEach(function(item,i){
-				html_group += "<h2>" + item.name + "</h2><ul style='list-style-type: none; padding: 0px;'>";
+			html_group += "<h2>" + groupDetails.name + "</h2>";
+
+			groupDetails.groupTraits.forEach(function(item,i){
+				html_group += "<h3>" + item.name + "</h3>"
+					+ "<ul style='list-style-type: none; padding: 0px;'>";
 
 				item.traits.forEach(function(item,i){
 					html_group += "<li style='padding-left:30px; text-indent: -20px;'><em>"
