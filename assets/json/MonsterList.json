@@ -9537,6 +9537,162 @@
 		]
 	}
 	, {
+		"name": "Treant"
+		, "monsters": [{
+				"name": "Awakened Trees"
+				, "source": "13 True Ways"
+				, "page": 202
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "plant"
+				, "initiative": 5
+				, "vulnerability": "fire"
+				, "AC": 22
+				, "PD": 20
+				, "MD": 14
+				, "HP": 13
+				, "attacks": [{
+					"name": "Lashing branches"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "7 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Hardwood resistance"
+					, "effect": "This creature has <em>resist damage 12+</em> to all damage except fire damage and melee weapon damage, which damages it normally."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Common Treant"
+				, "source": "13 True Ways"
+				, "page": 202
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "spoiler"
+				, "type": "plant"
+				, "initiative": 4
+				, "vulnerability": "fire"
+				, "AC": 23
+				, "PD": 21
+				, "MD": 15
+				, "HP": 65
+				, "attacks": [{
+						"name": "Grasping branches"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "9 damage, and the treant grabs the target.  When the treant starts its turn grabbing an enemy, it can make a <em>twist and snap</em> attack against that target as a standard action that turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Twist and snap"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "includes +4 grab bonus"
+						, "damage": "27 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Fire fire fire!"
+						, "effect": "When the treant takes 15 or more fire damage from a single attack, it releases all grabbed creatures."
+					}
+					, {
+						"name": "Hardwood resistance"
+						, "effect": "This creature has <em>resist damage 12+</em> to all damage except fire damage and melee weapon damage, which damages it normally."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Toxic haze"
+					, "effect": "The treant exudes a toxic cloud of pollen.  When an enemy engages the treant or starts its turn engaged with the treant, it takes 4 poison damage."
+				}]
+			}
+			, {
+				"name": "Treant Titan"
+				, "source": "13 True Ways"
+				, "page": 203
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 10
+				, "role": "spoiler"
+				, "type": "plant"
+				, "initiative": 9
+				, "vulnerability": "fire"
+				, "AC": 28
+				, "PD": 26
+				, "MD": 20
+				, "HP": 390
+				, "attacks": [{
+						"name": "Grasping branches"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "30 damage, and the treant grabs the target.  When the treant starts its turn grabbing an enemy, it can make a <em>twist and snap</em> attack against that target as a standard action that turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Twist and snap"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 19
+						, "defence": "PD"
+						, "target": "includes +4 grab bonus"
+						, "damage": "80 damage, and the target is dazed (save ends).  If the treant starts its turn grabbing a dazed enemy, it can make a <em>titanic rend</em> attack against that target as a standard action that turn"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "40 damage."
+						}]
+					}
+					, {
+						"name": "Titanic rend"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 19
+						, "defence": "PD"
+						, "target": "includes +4 grab bonus"
+						, "damage": "160 damage, and the treant titan can continue making <em>titanic rend</em> attacks against the target until it escapes the grab, at which point the treant will have to use a <em>grasping branches</em> attack against it again."
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "60 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Fire fire fire!"
+						, "effect": "When the treant takes 35 or more fire damage from a single attack, it release all grabbed creatures."
+					}
+					, {
+						"name": "Hardwood resistance"
+						, "effect": "This creature has <em>resist damage 18+</em> to all damage except fire damage and melee weapon damage, which damages it normally."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Coffin of living wood"
+						, "effect": "When the treant titan hits with a <em>titanic rend</em> attack, the target is pulled into a hollow chamber within the treant.  While grabbed by the treant this way, the target can’t be the target of its allies’ powers or spells."
+					}
+					, {
+						"name": "Gauntlet of branches"
+						, "effect": "Countless smaller branches whip through the air around the treant titan.  When a creature engaged with the treant misses it with an attack, that creature takes 12 damage from the whipping branches."
+					}
+				]
+			}
+		]
+	}
+	, {
 		"name": "Troglodyte"
 		, "monsters": [{
 				"name": "Trog"
