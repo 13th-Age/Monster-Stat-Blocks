@@ -8225,6 +8225,90 @@
 		}]
 	}
 	, {
+		"name": "Mummy"
+		, "monsters": [{
+			"name": "Mummy"
+			, "source": "13 True Ways"
+			, "page": 197
+			, "sizeStrength": "double-strength"
+			, "threat": "normal"
+			, "level": 8
+			, "role": "wrecker"
+			, "type": "humanoid"
+			, "initiative": 9
+			, "vulnerability": "fire"
+			, "AC": 21
+			, "PD": 17
+			, "MD": 22
+			, "HP": 350
+			, "attacks": [{
+					"name": "Unholy grasp"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "40 ongoing negative energy damage and the target is affected by <em>mummy rot</em> (save ends both)"
+					, "extraEffects": [{
+							"trigger": "Each failed save (mummy rot)"
+							, "effect": "The target’s flesh begins to rot and the ongoing damage increases by +40 (cumulative).  Saves granted by special powers don’t increase this damage if they fail, only end of turn failures."
+						}
+						, {
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 20 damage."
+						}
+					]
+				}
+				, {
+					"name": "Sepulchral glare"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 11
+					, "defence": "MD"
+					, "target": "one nearby enemy"
+					, "damage": "The target is hampered until the start of the mummy’s next turn"
+					, "extraEffects": [{
+							"trigger": "Crit"
+							, "effect": "If the target is already affected by <em>mummy rot</em>, increase the ongoing negative energy damage by 40.  If the target isn’t affected by <em>mummy rot</em> already it takes 40 ongoing negative energy damage is affected by <em>mummy rot</em> (save ends both)."
+						}
+						, {
+							"trigger": "Limited use"
+							, "effect": "1/round, as a quick action."
+						}
+					]
+				}
+				, {
+					"name": "Call of the sarcophagus"
+					, "specialTrigger": true
+					, "type": "close"
+					, "modifier": 11
+					, "defence": "MD"
+					, "target": "each nearby enemy suffering <em>mummy rot</em>"
+					, "damage": "The target is hampered until the end of its next turn"
+					, "extraEffects": []
+				}
+			]
+			, "abilities": [{
+					"name": "Mortal terror"
+					, "effect": "The presence of a mummy unnerves opponents, giving it an unusual <em>fear aura</em>.  While engaged with this creature, enemies that have 200 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks.  Each time an enemy with 200 hp or fewer attacks the mummy, hit or miss, it must roll a save.  On a success, it’s no longer affected by the <em>fear aura</em> effects of any mummy in the battle."
+				}
+				, {
+					"name": "Spiritual grit"
+					, "effect": "When the mummy takes 20 or less from a non-fire attack, it takes no damage instead."
+				}
+			]
+			, "nastierSpecials": [{
+					"name": "Blessing of preservation"
+					, "effect": "The mummy has a +4 bonus to all defences until it takes damage."
+				}
+				, {
+					"name": "Bone-chilling cry"
+					, "effect": "Once per battle as a quick action, the mummy can issue a bone-chilling cry that seems to echo from some unseen tomb or portal and it makes a <em>call of the sarcophagus</em> attack."
+				}
+			]
+		}]
+	}
+	, {
 		"name": "Ogre"
 		, "monsters": [{
 			"name": "Ogre"
