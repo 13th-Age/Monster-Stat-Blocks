@@ -145,7 +145,7 @@ function PopulatePage() {
 						+ "</li>";
 				});
 
-				html_group += "</ul>";
+				html_group += "</ul><hr>";
 			});
 		});
 	}
