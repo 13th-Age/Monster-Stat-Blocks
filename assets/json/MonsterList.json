@@ -1,5 +1,33 @@
 [{
 		"name": "Animal / Critter"
+		, "groupTraits": [{
+			"name": "Dire Features (d6)"
+			, "traits": [{
+					"name": "1: Armour plates"
+					, "description": "Add +2 to the dire animal’s AC, and add +1 to its PD."
+				}
+				, {
+					"name": "2: Spiky bits"
+					, "description": "Whenever an enemy hits the dire animal with a melee attack, deal damage equal to twice the animal’s level to that attacker."
+				}
+				, {
+					"name": "3: Carnage"
+					, "description": "The dire animal’s attacks that miss deal damage equal to its level.  When staggered, its missed attacks deal damage equal to double its level."
+				}
+				, {
+					"name": "4: Poison"
+					, "description": "The dire animal’s main attack also deals 5 ongoing poison damage per tier (5 ongoing poison at levels 1-4, 10 at 5-7, etc.)."
+				}
+				, {
+					"name": "5: Dire regeneration"
+					, "description": "When the escalation die is even, this animal heals damage equal to triple its level at the start of its turn."
+				}
+				, {
+					"name": "6: Fury"
+					, "description": "While staggered, the dire animal gains a +2 attack bonus and deals +4 damage, but at the end of each of its turns it takes 2d6 damage."
+				}
+			]
+		}]
 		, "monsters": [{
 				"name": "Bear"
 				, "source": "13th Age"
@@ -500,6 +528,7 @@
 	}
 	, {
 		"name": "Ankheg"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Ankheg"
 			, "source": "13th Age"
@@ -551,6 +580,7 @@
 	}
 	, {
 		"name": "Azer"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Azer Soldier"
 				, "source": "13 True Ways"
@@ -666,6 +696,7 @@
 	}
 	, {
 		"name": "Bat"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Fire Bat"
 			, "source": "13 True Ways"
@@ -724,6 +755,7 @@
 	}
 	, {
 		"name": "Bulette"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Bulette"
 			, "source": "13th Age"
@@ -783,6 +815,7 @@
 	}
 	, {
 		"name": "Chimera"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Chimera"
 			, "source": "13th Age"
@@ -843,6 +876,7 @@
 	}
 	, {
 		"name": "Demon"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Balor (Flame Demon)"
 				, "source": "13th Age"
@@ -1553,6 +1587,7 @@
 	}
 	, {
 		"name": "Derro"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Derro Maniac"
 				, "source": "13th Age"
@@ -1673,6 +1708,7 @@
 	}
 	, {
 		"name": "Devil"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Barbed Devil (Hamatula)"
 				, "source": "13 True Ways"
@@ -2513,6 +2549,7 @@
 	}
 	, {
 		"name": "Dragon"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Huge Black Dragon"
 				, "source": "13th Age"
@@ -4408,6 +4445,7 @@
 	}
 	, {
 		"name": "Drider"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Drider"
 			, "source": "13th Age"
@@ -4479,6 +4517,7 @@
 	}
 	, {
 		"name": "Elemental"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Air Elemental"
 				, "source": "13 True Ways"
@@ -5289,6 +5328,7 @@
 	}
 	, {
 		"name": "Ettin"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Ettin"
 			, "source": "13th Age"
@@ -5342,6 +5382,7 @@
 	}
 	, {
 		"name": "Fang Devil"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Fang Devil"
 				, "source": "13 True Ways"
@@ -5626,6 +5667,7 @@
 	}
 	, {
 		"name": "Flower of Unlife"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Blood Rose"
 				, "source": "13 True Ways"
@@ -5814,6 +5856,7 @@
 	}
 	, {
 		"name": "Gargoyle"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Gargoyle"
 			, "source": "13th Age"
@@ -5859,6 +5902,7 @@
 	}
 	, {
 		"name": "Ghoul"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Newly-Risen Ghoul"
 				, "source": "13th Age"
@@ -5939,6 +5983,7 @@
 	}
 	, {
 		"name": "Giant"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Cloud Giant Magician"
 				, "source": "13 True Ways"
@@ -6485,6 +6530,7 @@
 	}
 	, {
 		"name": "Gnoll"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Gnoll Fiendfletch"
 				, "source": "13 True Ways"
@@ -6729,6 +6775,7 @@
 	}
 	, {
 		"name": "Goblin"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Bugbear"
 				, "source": "13th Age"
@@ -7039,6 +7086,7 @@
 	}
 	, {
 		"name": "Golem"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Clay Golem"
 				, "source": "13th Age"
@@ -7246,6 +7294,7 @@
 	}
 	, {
 		"name": "Half-Orc"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Half-Orc Commander"
 				, "source": "13th Age"
@@ -7403,6 +7452,7 @@
 	}
 	, {
 		"name": "Harpy"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Harpy"
 			, "source": "13th Age"
@@ -7463,6 +7513,7 @@
 	}
 	, {
 		"name": "Hellhound"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Hellhound"
 			, "source": "13th Age"
@@ -7514,6 +7565,7 @@
 	}
 	, {
 		"name": "Human"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Demon-Touched Human Ranger"
 				, "source": "13th Age"
@@ -7597,6 +7649,7 @@
 	}
 	, {
 		"name": "Hungry Star"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Hungry Star"
 			, "source": "13th Age"
@@ -7658,6 +7711,7 @@
 	}
 	, {
 		"name": "Hydra"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Five-Headed Hydra"
 				, "source": "13th Age"
@@ -7790,6 +7844,7 @@
 	}
 	, {
 		"name": "Kobold"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Kobold Archer"
 				, "source": "13th Age"
@@ -7914,6 +7969,7 @@
 	}
 	, {
 		"name": "Lizardman"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Lizardman Savage"
 			, "source": "13th Age"
@@ -7979,6 +8035,7 @@
 	}
 	, {
 		"name": "Manticore"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Manticore"
 			, "source": "13th Age"
@@ -8042,6 +8099,7 @@
 	}
 	, {
 		"name": "Medusa"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Medusa Noble"
 				, "source": "13th Age"
@@ -8181,6 +8239,7 @@
 	}
 	, {
 		"name": "Minotaur"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Minotaur"
 			, "source": "13th Age"
@@ -8226,6 +8285,7 @@
 	}
 	, {
 		"name": "Mummy"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Mummy"
 			, "source": "13 True Ways"
@@ -8310,6 +8370,7 @@
 	}
 	, {
 		"name": "Ogre"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Ogre"
 			, "source": "13th Age"
@@ -8361,6 +8422,7 @@
 	}
 	, {
 		"name": "Ogre Mage"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Ogre Mage"
 			, "source": "13th Age"
@@ -8439,6 +8501,7 @@
 	}
 	, {
 		"name": "Ooze"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Black Pudding"
 				, "source": "13th Age"
@@ -8561,6 +8624,7 @@
 	}
 	, {
 		"name": "Orc"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Great Fang Cadre"
 				, "source": "13th Age"
@@ -8725,6 +8789,7 @@
 	}
 	, {
 		"name": "Otyugh"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Otyugh"
 			, "source": "13th Age"
@@ -8783,6 +8848,7 @@
 	}
 	, {
 		"name": "Owlbear"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Owlbear"
 			, "source": "13th Age"
@@ -8825,6 +8891,7 @@
 	}
 	, {
 		"name": "Phase Spider"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Phase Spider"
 			, "source": "13th Age"
@@ -8894,6 +8961,7 @@
 	}
 	, {
 		"name": "Pixie"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Pixie Warrior"
 			, "source": "13 True Ways"
@@ -8985,6 +9053,7 @@
 	}
 	, {
 		"name": "Rakshasa"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Rakshasa"
 			, "source": "13th Age"
@@ -9054,6 +9123,7 @@
 	}
 	, {
 		"name": "Sahuagin"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Sahuagin"
 			, "source": "13th Age"
@@ -9110,6 +9180,7 @@
 	}
 	, {
 		"name": "Skeleton"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Blackamber Skeletal Legionnaire"
 				, "source": "13th Age"
@@ -9298,6 +9369,7 @@
 	}
 	, {
 		"name": "Soul Flenser"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Soul Flenser"
 				, "source": "13 True Ways"
@@ -9417,6 +9489,7 @@
 	}
 	, {
 		"name": "Specter"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Dread Specter"
 				, "source": "13 True Ways"
@@ -9538,6 +9611,7 @@
 	}
 	, {
 		"name": "Treant"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Awakened Trees"
 				, "source": "13 True Ways"
@@ -9694,6 +9768,7 @@
 	}
 	, {
 		"name": "Troglodyte"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Trog"
 				, "source": "13th Age"
@@ -9836,6 +9911,7 @@
 	}
 	, {
 		"name": "Troll"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Troll"
 			, "source": "13th Age"
@@ -9882,6 +9958,7 @@
 	}
 	, {
 		"name": "Vampire"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Spawn of the Master"
 				, "source": "13th Age"
@@ -10015,6 +10092,7 @@
 	}
 	, {
 		"name": "Werebeasts"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Werebear"
 				, "source": "13 True Ways"
@@ -10319,6 +10397,7 @@
 	}
 	, {
 		"name": "Wight"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Wight"
 			, "source": "13th Age"
@@ -10356,6 +10435,7 @@
 	}
 	, {
 		"name": "Wraith"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Wraith"
 			, "source": "13th Age"
@@ -10415,6 +10495,7 @@
 	}
 	, {
 		"name": "Wyvern"
+		, "groupTraits": []
 		, "monsters": [{
 			"name": "Wyvern"
 			, "source": "13th Age"
@@ -10466,6 +10547,7 @@
 	}
 	, {
 		"name": "Zombie"
+		, "groupTraits": []
 		, "monsters": [{
 				"name": "Big Zombie"
 				, "source": "13th Age"
