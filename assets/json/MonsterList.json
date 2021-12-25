@@ -8893,6 +8893,97 @@
 		}]
 	}
 	, {
+		"name": "Pixie"
+		, "monsters": [{
+			"name": "Pixie Warrior"
+			, "source": "13 True Ways"
+			, "page": 198
+			, "sizeStrength": "normal"
+			, "threat": "normal"
+			, "level": 3
+			, "role": "spoiler"
+			, "type": "humanoid"
+			, "initiative": 12
+			, "vulnerability": ""
+			, "AC": 20
+			, "PD": 13
+			, "MD": 17
+			, "HP": 24
+			, "attacks": [{
+					"name": "Diminutive sparkly sword"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "5 psychic damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The pixie warrior can make a <em>madness</em> attack against the target as a free action."
+					}]
+				}
+				, {
+					"name": "Enchanged bowshot"
+					, "specialTrigger": false
+					, "type": "ranged"
+					, "modifier": 8
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "4 psychic damage, and the pixie warrior can make a <em>madness</em> attack against the target as a free action."
+					, "extraEffects": []
+				}
+				, {
+					"name": "Madness"
+					, "specialTrigger": true
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "MD"
+					, "target": ""
+					, "damage": "The target is maddened until the end of the pixie’s next turn.  The first thing the creature does on its turn is use a standard action to make a display of power that has no practical benefit.  The GM chooses the attacck, spell, or other power, which should be the most powerful one the character has, preferably a daily.  The target expends the power in a great show of prowess, aimed for display rather than effect.  Wizards cast their fireballs into the sky, monks demonstrate flawless form while shadow-boxing, and clerics bless the very stones underfoot instead of allies<br>&emsp;When the madness effect gets old, substitute any of the following effects, by choice or at random"
+					, "extraEffects": [{
+							"trigger": "1"
+							, "effect": "You love pixies and hate those who threaten them.  The target is confused until the end of the pixie’s next turn."
+						}
+						, {
+							"trigger": "2"
+							, "effect": "Brains knocked loose.  The target takes 4 psychic damage each time it takes an action (save ends; yes that could be 3 times per round or more)."
+						}
+						, {
+							"trigger": "3"
+							, "effect": "Reality bender.  The target takes 5 ongoing psychic damage.  Each time the target fails the save, the ongoing damage increases by 5, cumulative."
+						}
+						, {
+							"trigger": "4"
+							, "effect": "Massive attack on the unconscious mind.  The target chooses one: either let the onslaught slam its mind (take 15 psychic damage), or steel its mind against the onslaught (stunned until the end of the pixie’s next turn)."
+						}
+						, {
+							"trigger": "5"
+							, "effect": "Compulsion to dance.  The target takes 5 ongoing psychic damage (no save) until it spends a standard action to dance maniacally.  Dancing ends all such ongoing damage, even if the target has been hit multiple times with this effect."
+						}
+						, {
+							"trigger": "6"
+							, "effect": "Pacifism.  The target can’t attack until the end of the pixie’s next turn."
+						}
+					]
+				}
+			]
+			, "abilities": [{
+					"name": "Dazzling light"
+					, "effect": "During battle, pixies fill the air with the light and sound of countless flashy illusions.  The effects are disorientating enough that the PCs don’t get to add the escalation die to their attacks."
+				}
+				, {
+					"name": "Flight"
+					, "effect": "Pixies maky flying look like a lot of fun."
+				}
+				, {
+					"name": "Invisibility"
+					, "effect": "When an enemy attacks a pixie and misses, the pixie turns invisible until the start of its next turn (even if it makes opportunity attacks).  A pixie can also turn invisible as a standard action, in which case the invisibility still lasts until the start of its next turn."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
+	, {
 		"name": "Rakshasa"
 		, "monsters": [{
 			"name": "Rakshasa"
