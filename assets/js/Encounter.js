@@ -134,22 +134,24 @@ function PopulatePage() {
 		groupArray.forEach(function(item,i){
 			var groupDetails = monsterList[item];
 
-			html_group += "<h2>" + groupDetails.name + "</h2>";
+			if (groupDetails.groupTraits.length != 0) {
+				html_group += "<h2>" + groupDetails.name + "</h2>";
 
-			groupDetails.groupTraits.forEach(function(item,i){
-				html_group += "<h3>" + item.name + "</h3>"
-					+ "<ul style='list-style-type: none; padding: 0px;'>";
+				groupDetails.groupTraits.forEach(function(item,i){
+					html_group += "<h3>" + item.name + "</h3>"
+						+ "<ul style='list-style-type: none; padding: 0px;'>";
 
-				item.traits.forEach(function(item,i){
-					html_group += "<li style='padding-left:30px; text-indent: -20px;'><em>"
-						+ item.name
-						+ "</em>"
-						+ ((item.description == "") ? "" : ": " + item.description)
-						+ "</li>";
+					item.traits.forEach(function(item,i){
+						html_group += "<li style='padding-left:30px; text-indent: -20px;'><em>"
+							+ item.name
+							+ "</em>"
+							+ ((item.description == "") ? "" : ": " + item.description)
+							+ "</li>";
+					});
+
+					html_group += "</ul><hr>";
 				});
-
-				html_group += "</ul><hr>";
-			});
+			}
 		});
 	}
 
