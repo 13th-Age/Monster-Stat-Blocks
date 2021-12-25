@@ -10014,6 +10014,310 @@
 		]
 	}
 	, {
+		"name": "Werebeasts"
+		, "monsters": [{
+				"name": "Werebear"
+				, "source": "13 True Ways"
+				, "page": 206
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 21
+				, "HP": 140
+				, "attacks": [{
+						"name": "Massive claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The werebear grabs the target.  As a standard action, it can make a <em>head chomp</em> attack against an enemy it’s grabbing."
+						}]
+					}
+					, {
+						"name": "Head chomp"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "includes +4 grab bonus - one enemy it’s grabbing"
+						, "damage": "70 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "20 damage."
+						}]
+					}
+					, {
+						"name": "Arm crunch"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "70 damage, and the target is weakened until it regains maximum hit points"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Bestial fury (hybrid form only)"
+						, "effect": "Werebears gain a bonus to damage equal to the escalation die (champion: double the die; epic: quadruple the die)."
+					}
+					, {
+						"name": "Unnatural vigour (hybrid or animal form only)"
+						, "effect": "When the werebear is not stagged at the start of its turn, it heals 20 hp."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Chew on arm"
+					, "effect": "Instead of chomping on a grabbed enemy’s head, the werebear can make an <em>arm crunch</em> attack against an enemy it’s grabbing."
+				}]
+			}
+			, {
+				"name": "Wereboar"
+				, "source": "13 True Ways"
+				, "page": 205
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 20
+				, "HP": 120
+				, "attacks": [{
+						"name": "Goring tusks"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "1d3 enemies"
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Slashing tusks"
+							, "effect": "While the escalation die is 3+, the crit range of this attack expands by 2."
+						}]
+					}
+					, {
+						"name": "Smash"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "The target is dazed (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Beastly grit"
+						, "effect": "When the wereboar takes 8 damage or less from any source, it takes no damage instead."
+					}
+					, {
+						"name": "Bestial durability"
+						, "effect": "The wereboar can roll normal saves against effects that aren’t save ends (until end of turn or battle, for example)."
+					}
+					, {
+						"name": "Bestial fury (hybrid form only)"
+						, "effect": "Wereboars gain a bonus to damage equal to the escalation die (champion: double the die; epic: quadruple the die)."
+					}
+					, {
+						"name": "Unnatural vigour (hybrid or animal form only)"
+						, "effect": "When the wereboar is not staggered at the start of its turn, it heals 18 hp."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Vicious turn"
+					, "effect": "Once per battle, the wereboar can make a <em>smash</em> attack as a free action."
+				}]
+			}
+			, {
+				"name": "Wererat"
+				, "source": "13 True Ways"
+				, "page": 205
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 15
+				, "PD": 14
+				, "MD": 18
+				, "HP": 34
+				, "attacks": [{
+						"name": "Infected bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "2 damage and 2 ongoing damage, and the crit range for each wererat in the battle against the target expands by 1 (cumulative)"
+						, "extraEffects": [{
+								"trigger": "Natural 11+"
+								, "effect": "The target can’t make opportunity attacks until the end of the turn (making it easier for the wererat to move away from the target)."
+							}
+							, {
+								"trigger": "Hybrid miss"
+								, "effect": "While in hybrid form, when the wererat makes an opportunity attack with <em>infected bite</em>, it deals damage equal to its level on a miss."
+							}
+						]
+					}
+					, {
+						"name": "Piercing shriek"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": "the closest nearby enemy"
+						, "damage": "4 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "2 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Unatural vigour (hybrid or animal form only)"
+						, "effect": "When the wererat is not staggered at the start of its turn, it heals 5 hp."
+					}
+					, {
+						"name": "Bestial fury (hybrid form only)"
+						, "effect": "Wererats gain a bonus to damage equal to the escalation die (champion: double the die; epic: quadruple the die)."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Uncanny moves"
+						, "effect": "The wererat takes no damage and suffers no effects from attacks that miss."
+					}
+					, {
+						"name": "Piercing shriek"
+						, "effect": "Once per battle when the escalation die is 2+ and there are three or more wererats in the battle, a wererat can make a <em>piercing shriek</em> attack as a free action.  Usually all the wererats in the battle will do this at the same time."
+					}
+				]
+			}
+			, {
+				"name": "Weretiger"
+				, "source": "13 True Ways"
+				, "page": 206
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 22
+				, "HP": 180
+				, "attacks": [{
+						"name": "Claws and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+								"trigger": "First natural 11+ each turn"
+								, "effect": "The weretiger can make a second <em>claws and bite</em> attack as a free action."
+							}
+							, {
+								"trigger": "Second natural 11+ each turn"
+								, "effect": "The weretiger can make a third <em>claws and bite</em> attack as a free action if the escalation die is 3+."
+							}
+						]
+					}
+					, {
+						"name": "Springing strike"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "25 damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "When an enemy engages the weretiger, if the weretiger isn’t already engaged, it can make a <em>springing strike</em> attack against that enemy as an interrupt action before the attack."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Bestial fury (hybrid form only)"
+						, "effect": "Weretigers gain a bonus to damage equal to the escalation die (champion: double the die; epic: quadruple the die)."
+					}
+					, {
+						"name": "Unnatural vigour (hybrid or animal form only)"
+						, "effect": "When the weretiger is not staggered at the start of its turn, it heals 24 hp."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Stymie"
+					, "effect": "When the weretiger hits with a <em>springing strike</em> attack, the target pops free from it and can’t take any more actions that turn unless it succeeds on a save."
+				}]
+			}
+			, {
+				"name": "Werewolf"
+				, "source": "13 True Ways"
+				, "page": 205
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 15
+				, "MD": 19
+				, "HP": 42
+				, "attacks": [{
+					"name": "Ravening bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "10 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "The werewolf gains a +2 attack bonus (cumulative) to <em>ravening bite</em> attacks until the end of the battle."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Bestial fury (hybrid form only)"
+						, "effect": "Werewolves gain a bonus to damage equal to the escalation die (champion: double the die; epic: quadruple the die)."
+					}
+					, {
+						"name": "Pack attack"
+						, "effect": "When the werewolf attacks a creature that is engaged with one of its allies, the target is vulnerable to that attack."
+					}
+					, {
+						"name": "Unnatural vigour (hybrid or animal form only)"
+						, "effect": "When the werewolf is not staggered at the start of its turn, it heals 8 hp."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Sustaining blood"
+					, "effect": "When the werewolf hits with a <em>ravening bite</em> sttack, it heals 4 hp."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Wight"
 		, "monsters": [{
 			"name": "Wight"
