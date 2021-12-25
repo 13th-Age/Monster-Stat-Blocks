@@ -9297,6 +9297,125 @@
 		]
 	}
 	, {
+		"name": "Soul Flenser"
+		, "monsters": [{
+				"name": "Soul Flenser"
+				, "source": "13 True Ways"
+				, "page": 199
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "spoiler"
+				, "type": "aberration"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 21
+				, "MD": 23
+				, "HP": 180
+				, "attacks": [{
+						"name": "Soul flensing tentacles"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit, or any hit against a weakened, stunned, or confused target"
+								, "effect": "Randomly selected one of the target’s limited-use powers or spells.  The soul flenser flenses it away, removing it from the target until that creature regains it via a successful connection to the oversoul (see below)."
+							}
+							, {
+								"trigger": "Natural 3, 6, or 9"
+								, "effect": "The target is confused (save ends)."
+							}
+						]
+					}
+					, {
+						"name": "Soul blast"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "1d4 nearby enemies in a group"
+						, "damage": "35 psychic damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is weakened (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "It the target is already weakened, it’s also stunned until end of its next turn."
+							}
+							, {
+								"trigger": "Natural 3, 6, or 9"
+								, "effect": "The target is confused (save ends)."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Connection to the oversoul"
+						, "effect": "When a creature slays a soul flenser, it can roll a hard save (16+).  If it succeeds, the creature regains one power it has had <em>flensed</em> away."
+					}
+					, {
+						"name": "Intellect fortress"
+						, "effect": "When an enemy misses the soul flenser with an attack against MD, that attack takes half the miss damage, if any."
+					}
+					, {
+						"name": "Underkraken teleport"
+						, "effect": "A soul flenser that has successfully flensed at least once can (and usually will, provided some of its enemies are confused, weakened, or stunned) use a standard action to prepare itself to teleport.  Once it does this, during its next turn it can use a move action to teleport back to its home underkraken, no matter how distant, leaving the battle behind.  Soul flensers fighting beside or within their underkraken can’t use this ability; they’re already home."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Flensing escalator"
+						, "effect": "The soul flenser gains an attack bonus equal to the escalation die against creatures that have had one or more powers flensed away."
+					}
+					, {
+						"name": "Oversoul control"
+						, "effect": "While confused by a soul flenser’s effect, a creature that has had a power flensed away can use and re-use that limited power against their erstwhile allies, if that GM sees how to use the power in a useful way."
+					}
+				]
+			}
+			, {
+				"name": "The Flensed"
+				, "source": "13 True Ways"
+				, "page": 200
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "mook"
+				, "type": "aberration"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 22
+				, "HP": 60
+				, "attacks": [{
+					"name": "Fists, claws, or shoddy weapons"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 13
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "20 damage, or 40 damage against a target that currently has one or more powers <em>flensed</em> away"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Connection to the oversoul"
+						, "effect": "When a creature slays one of the flensed, it can roll a hard save (16+).  If it succeeds, the creature regains one power it had <em>flensed</em> away."
+					}
+					, {
+						"name": "Flensing escalator"
+						, "effect": "The flensed gains an attack bonus equal to the escalation die against creatures that have had one or more power <em>flensed</em> away."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Troglodyte"
 		, "monsters": [{
 				"name": "Trog"
