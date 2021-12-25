@@ -1743,7 +1743,50 @@
 	}
 	, {
 		"name": "Devil"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Abilities (0, 1, or 2)"
+			, "traits": [{
+					"name": "1: Alternative element"
+					, "description": "Change the <em>resist fire 13+</em> ability to a different element, e.g. lightning or acid."
+				}
+				, {
+					"name": "2: Beast form"
+					, "description": "This rare special ability lets a devil pass unnoticed through populated areas, though with a tell-tale sign that it’s preternatural, such as a big cat that looks normal except for its forked tongue.  Changing forms is a move action."
+				}
+				, {
+					"name": "3: Devilish resilience"
+					, "description": "The devil gains a +4 bonus to saves."
+				}
+				, {
+					"name": "4: Fear"
+					, "description": "The devil gains fear aura.  Players with fewer hit points than double the devil’s current hit points are dazed.  They cannot use the escalation die."
+				}
+				, {
+					"name": "5: Final-gasp strike"
+					, "description": "When the devil drops to 0 hp, it stays up until its turn, at which point it can take one last standard action before dropping.  The devil will drop without getting that last action if it takes enough damage to reduce its hit points to negative 25% of its starting hp."
+				}
+				, {
+					"name": "6: Humanoid form"
+					, "description": "This rare special ability lets the heroes meet a pit fiend over dinner and not know it until too late.  Changing forms is usually a move action."
+				}
+				, {
+					"name": "7: Resist non-damage effects"
+					, "description": "The devil resists the effects (but not the damage) of attacks with a natural roll of 12 or less.  Ongoing damage isn’t affected by this ability.  If the attack deals energy damage that the devil is resistant to (like fire), that damage is halved as normal.  This ability is tied to a devil’s energy resistance number, so if you increase that number for a devil with this ability, the non-damage range also increases."
+				}
+				, {
+					"name": "8: Summon other devils"
+					, "description": "This ability is better used as a conditional feature of a particular battle than as a standard special ability.  On the first round of battle, a group of devils keens eerily, and everyone knows they’re summoning something, but no one knows exactly what, or when it will show up."
+				}
+				, {
+					"name": "9: True seeing, see invisible"
+					, "description": "Powerful deveils might have the ability to see through simple ruses and illusions."
+				}
+				, {
+					"name": "10: Unearthly toughness"
+					, "description": "If a devil takes X damage or less, negate that damage.  Bigger blows have full effect, but petty blows are beneath the devil’s notice.  Set X at the devil’s level + 1.  It will be immune to normal miss damage from enemies that are its level or lower.  Or set X at 5% of its starting hit points to have the value scale up faster at higher levels."
+				}
+			]
+		}]
 		, "monsters": [{
 				"name": "Barbed Devil (Hamatula)"
 				, "source": "13 True Ways"
