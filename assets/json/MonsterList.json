@@ -9891,7 +9891,38 @@
 	}
 	, {
 		"name": "Troglodyte"
-		, "groupTraits": []
+		, "groupTraits": [{
+				"name": "Ability"
+				, "traits": [{
+					"name": "Trog stench"
+					, "description": "Trogs spray scents that stink so badly that other humanoids take penalties to all attacks, defences, and saves when engaged with a troglydtye or when nearby three or more troglodytes.  Non-humanoids aren’t affected.<br>&emsp;Humanoids affected by <em>trog stench</em> can make a normal save (with a penalty) at the end of each of their turns.  If the save succeeds, the humanoid can ignore all <em>trog stench</em> for the rest of the battle."
+				}]
+			}
+			, {
+				"name": "Trog stench penalty"
+				, "traits": [{
+						"name": "-4"
+						, "description": "Elves, gnolls, gnomes"
+					}
+					, {
+						"name": "-3"
+						, "description": "Humans, halflings, half-elves, holy ones, tieflings, etc."
+					}
+					, {
+						"name": "-2"
+						, "description": "Half-orcs, draconics"
+					}
+					, {
+						"name": "-1"
+						, "description": "Dwarves"
+					}
+					, {
+						"name": "0"
+						, "description": "Forgeborn"
+					}
+				]
+			}
+		]
 		, "monsters": [{
 				"name": "Trog"
 				, "source": "13th Age"
