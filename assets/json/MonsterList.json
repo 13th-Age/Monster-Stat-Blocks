@@ -9771,10 +9771,25 @@
 		]
 	}
 	, {
-		"name": "Specter"
-		, "groupTraits": []
+		"name": "Spectre"
+		, "groupTraits": [{
+			"name": "Nastier Specials for all spectres"
+			, "traits": [{
+					"name": "Aura of loss"
+					, "description": "The first time during a battle the spectre is staggered, a wave of loss rolls out from it in all directions.  Each nearby enemy with 30 hp or fewer is hampered until the end of the spectre’s next turn.  (9<sup>th</sup> level dread spectre affects enemies with 60 hp or fewer."
+				}
+				, {
+					"name": "Healing drain"
+					, "description": "When an enemy engaged with a spectre heals, it heals only half the normal hit points, and the spectre heals the other half (round down)."
+				}
+				, {
+					"name": "Spectral evasion"
+					, "description": "Once per battle as a free action when an enemy attacks the spectre, it can force the attacker to reroll the attack and use the result the spectre prefers."
+				}
+			]
+		}]
 		, "monsters": [{
-				"name": "Dread Specter"
+				"name": "Dread Spectre"
 				, "source": "13 True Ways"
 				, "page": 201
 				, "sizeStrength": "triple-strength"
@@ -9798,7 +9813,7 @@
 						, "damage": "110 negative energy damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit or miss"
-							, "effect": "Each enemy engaged with the specter (including the target) takes 20 negative energy damage."
+							, "effect": "Each enemy engaged with the spectre (including the target) takes 20 negative energy damage."
 						}]
 					}
 					, {
@@ -9824,24 +9839,24 @@
 				]
 				, "abilities": [{
 						"name": "Phantom movement"
-						, "effect": "As a move action when the escalation die is odd, the specter can teleport anywhere nearby, dematerialising from its location to materialise in another."
+						, "effect": "As a move action when the escalation die is odd, the spectre can teleport anywhere nearby, dematerialising from its location to materialise in another."
 					}
 					, {
 						"name": "Punishing aura"
-						, "effect": "When an enemy attacks the specter and misses, it takes 24 negative energy damage."
+						, "effect": "When an enemy attacks the spectre and misses, it takes 24 negative energy damage."
 					}
 					, {
 						"name": "Wrack and ruin"
-						, "effect": "While a specter is in the battle, the PCs don’t add the escalation die to attack rolls, but it does."
+						, "effect": "While a spectre is in the battle, the PCs don’t add the escalation die to attack rolls, but it does."
 					}
 				]
 				, "nastierSpecials": [{
 					"name": "Death grasp"
-					, "effect": "At the start of each of the specter’s turns, if any enemy in the battle has 60 hp or fewer, the specter can make a <em>death grasp</em> attack against one of those enemies as a free action.  Be sure to let players see this one coming."
+					, "effect": "At the start of each of the spectre’s turns, if any enemy in the battle has 60 hp or fewer, the spectre can make a <em>death grasp</em> attack against one of those enemies as a free action.  Be sure to let players see this one coming."
 				}]
 			}
 			, {
-				"name": "Specter"
+				"name": "Spectre"
 				, "source": "13 True Ways"
 				, "page": 201
 				, "sizeStrength": "double-strength"
@@ -9865,7 +9880,7 @@
 						, "damage": "30 negative energy damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit or miss"
-							, "effect": "Each enemy engaged with the specter (including the target) takes 4 negative energy damage."
+							, "effect": "Each enemy engaged with the spectre (including the target) takes 4 negative energy damage."
 						}]
 					}
 					, {
@@ -9881,11 +9896,11 @@
 				]
 				, "abilities": [{
 						"name": "Punishing aura"
-						, "effect": "When an enemy attacks the specter and misses, it takes 8 negative energy damage."
+						, "effect": "When an enemy attacks the spectre and misses, it takes 8 negative energy damage."
 					}
 					, {
 						"name": "Wrack and ruin"
-						, "effect": "While a specter is in the battle, the PCs don’t add the escalation die to attack rolls, but it does."
+						, "effect": "While a spectre is in the battle, the PCs don’t add the escalation die to attack rolls, but it does."
 					}
 				]
 				, "nastierSpecials": []
