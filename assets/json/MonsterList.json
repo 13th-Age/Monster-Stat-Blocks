@@ -9232,7 +9232,13 @@
 	}
 	, {
 		"name": "Pixie"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Ability"
+			, "traits": [{
+				"name": "Glamour"
+				, "description": "Outside of combat, pixies can create complex illusions at will.  For the PC, it’s usually a normal or hard skill check to sort out what’s real."
+			}]
+		}]
 		, "monsters": [{
 			"name": "Pixie Warrior"
 			, "source": "13 True Ways"
