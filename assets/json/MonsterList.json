@@ -2628,7 +2628,7 @@
 	, {
 		"name": "Dragon, Chromatic"
 		, "groupTraits": [{
-			"name": "Dragon Ability (d8, d12, or d12 + 2)"
+			"name": "Chromatic Dragon Ability (d8, d12, or d12 + 2)"
 			, "traits": [{
 					"name": "1: True seeing"
 					, "description": "The dragon is immune to invisibility and ignores any illusions."
@@ -3600,7 +3600,107 @@
 	}
 	, {
 		"name": "Dragon, Metallic"
-		, "groupTraits": []
+		, "groupTraits": [{
+				"name": "Breath Weapon Recharge (Natural Attack Roll)"
+				, "traits": [{
+						"name": "1-5"
+						, "description": "The dragon can use its breath weapon again next turn."
+					}
+					, {
+						"name": "6-10"
+						, "description": "The dragon must wait one turn before it can use its breath weapon."
+					}
+					, {
+						"name": "11+"
+						, "description": "After waiting one turn, the dragon rolls a normal save at the start of its next turn.  If it succeeds, it can use its breath weapon that turn.  Otherwise it keeps rolling a save at the start of each turn until it regains its breath weapon attack.  Once it uses its breath again, use the attack roll again to determine its next breath weapon attack."
+					}
+				]
+			}
+			, {
+				"name": "Metallic Dragon Ability (d20)"
+				, "traits": [{
+						"name": "1: True seeing"
+						, "description": "The dragon is immune to invisibility and ignores illusions."
+					}
+					, {
+						"name": "2: Whipping tail"
+						, "description": "When an enemy engaged with the dragon rolls a natural 1 or 2 with an attack roll, the dragon can make an opportunity attack against that creature as a free action.  The attack is set up by the dragon’s whipping tail but delivered by the dragon’s usual melee attack."
+					}
+					, {
+						"name": "3: Tough hide"
+						, "description": "The dragon has +1 bonus to AC."
+					}
+					, {
+						"name": "4: Fortress mind"
+						, "description": "The dragon has +2 bonus to MD."
+					}
+					, {
+						"name": "5: Nimble"
+						, "description": "The dragon has +2 bonus to PD."
+					}
+					, {
+						"name": "6: Murderous"
+						, "description": "The crit range of the dragon’s melee attacks expands by 2."
+					}
+					, {
+						"name": "7: Now I'm mad!"
+						, "description": "The first time the dragon is staggered each battle, it uses its breath weapon attack as a free action that does not count against the normal uses of its breath."
+					}
+					, {
+						"name": "8: Serious threat"
+						, "description": "Disengage checks against the dragon take a -5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
+					}
+					, {
+						"name": "9: PC-style racial power"
+						, "description": "The dragon has one of the racial powers of a player character race.  If the dragon’s story suggests a specific power, choose that.  Otherwise, use the most common exression per colour: brass (gnome, halfling); bronze (dark elf, dwarf, half-orc, human); copper (dwarf, human, wood elf); silver (forgeborn, wood elf); gold (high elf, holy one, human, wood elf)."
+					}
+					, {
+						"name": "10: Raw power"
+						, "description": "Until it’s staggered the dragon rolls 2d20 with its melee attacks and uses the higher roll."
+					}
+					, {
+						"name": "11: Damage aura"
+						, "description": "When an enemy starts its turn engaged with the dragon, it takes damage equal to the dragon’s level (adventurer tier), double the level (champion tier), or triple the level (epic tier).  The damage type is the same as the dragon’s breath weapon."
+					}
+					, {
+						"name": "12: More breath"
+						, "description": "The dragon gains a +5 bonus to saves to regain its breath weapon."
+					}
+					, {
+						"name": "13: Spellbreaker"
+						, "description": "When the dragon hits a creature with an attack, one spell effect that creature created is negated (hard save ends, 16+).  Once the creature saves, the effect returns."
+					}
+					, {
+						"name": "14: Shake off"
+						, "description": "At the start of each of its turns, the dragon can roll a save against one save ends effect on it."
+					}
+					, {
+						"name": "15: Free to flee"
+						, "description": "Like the PCs, the dragon can escape at any time by giving up what amounts for it to a campaign loss.  If the PCs are the ones to benefit from this, they should experience this as a major victory.  But the dragon is still out there."
+					}
+					, {
+						"name": "16: Air supremacy"
+						, "description": "The crit range of the dragon’s attacks against flying creatures expands by an amount equal to the escalation die."
+					}
+					, {
+						"name": "17: Denial"
+						, "description": "If a PC or other creature uses an attack against the dragon that is related to an icon that the dragon also has a relationship with, the dragon gains a +5 bonus to all defences against that attack, and it only takes damage from the attack without suffering any of its effects."
+					}
+					, {
+						"name": "18: Survivor"
+						, "description": "Each time the dragon drops to 0 hit points, it can roll a save.  The first save in a battle is easy (6+), the second normal, the third and subsequent saves are hard (16+).  If it succeeds, the dragon stays conscious and takes no damage from the attack or effect that would have dropped it."
+					}
+					, {
+						"name": "19: Humanoid form"
+						, "description": "The dragon is capable of shapechanging into a humanoid form, usually of a warrior or spellcaster appropriate to its nature and usually not obviously draconic, registering as a normal human or elf or whatever.  This ability is best used for long-term dragon characters that make it worth the GM’s time to create a double- or triple-strength humanoid monster to represent the shapechanged form.  The dragon has the PC-style racial power of their humanoid form, but only while in shapechaged form.  Shapechanging is a move action."
+					}
+					, {
+						"name": "20: Some unique thing"
+						, "description": "The dragon has an entirely unique characteristic, something akin to a player character’s one unique thing except that the dragon’s version may be relevant in combat.  GM, if you don’t feel like making something up, choose an ability from the list above."
+					}
+				]
+			}
+		]
 		, "monsters": [{
 				"name": "Huge Brass Dragon"
 				, "source": "13 True Ways"
