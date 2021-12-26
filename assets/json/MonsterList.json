@@ -695,6 +695,271 @@
 		]
 	}
 	, {
+		"name": "Basilisk"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Black Basilisk"
+				, "source": "Bestiary"
+				, "page": 10
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 19
+				, "MD": 18
+				, "HP": 85
+				, "attacks": [{
+						"name": "Multi-legged attack"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "3 attacks, each against a different enemy"
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 5 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Basilisk’s stare"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "extraEffects": [{
+								"trigger": "Failed save"
+								, "effect": "The target’s blood begins to coagulate and harden, and dust puffs out of their lungs through their mouth."
+							}
+							, {
+								"trigger": "Fourth failed save"
+								, "effect": "The target’s body turns to stone and they die."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Basilisk’s stare"
+						, "effect": "When a basilisk hits an enemy that is already taking ongoing poison damage, the basilisk can make a <em>basilisk’s stare</em> attack against the target as a free action."
+					}
+					, {
+						"name": "Resist melee damage 18+"
+						, "effect": "When a melee attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage.  An attacker can ignore this resistance by declaring they are looking directly at the basilisk during the attack.  If they do, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack.  Constructs and undead are not affected by this resistance."
+					}
+					, {
+						"name": "Stare-down"
+						, "effect": "When an enemy makes a ranged attack against the basilisk, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Death breath"
+					, "effect": "Each creature engaged with the basilisk at the end of the basilisk’s turn takes 10 poison damage."
+				}]
+			}
+			, {
+				"name": "Green Basilisk"
+				, "source": "Bestiary"
+				, "page": 10
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 19
+				, "MD": 18
+				, "HP": 85
+				, "attacks": [{
+						"name": "Multi-legged attack"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "3 attacks, each against a different enemy"
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 5 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Basilisk’s stare"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "extraEffects": [{
+								"trigger": "Failed save"
+								, "effect": "The target takes 25 poison damage as its blood turns to poison."
+							}
+							, {
+								"trigger": "Fourth failed save"
+								, "effect": "The target’s body liquefies and they die."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Basilisk’s stare"
+						, "effect": "When a basilisk hits an enemy that is already taking ongoing poison damage, the basilisk can make a <em>basilisk’s stare</em> attack against the target as a free action."
+					}
+					, {
+						"name": "Resist melee damage 18+"
+						, "effect": "When a melee attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage.  An attacker can ignore this resistance by declaring they are looking directly at the basilisk during the attack.  If they do, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack.  Constructs and undead are not affected by this resistance."
+					}
+					, {
+						"name": "Stare-down"
+						, "effect": "When an enemy makes a ranged attack against the basilisk, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Death breath"
+					, "effect": "Each creature engaged with the basilisk at the end of the basilisk’s turn takes 10 poison damage."
+				}]
+			}
+			, {
+				"name": "Red Basilisk"
+				, "source": "Bestiary"
+				, "page": 10
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 19
+				, "MD": 18
+				, "HP": 85
+				, "attacks": [{
+						"name": "Multi-legged attack"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "3 attacks, each against a different enemy"
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 5 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Basilisk’s stare"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "extraEffects": [{
+								"trigger": "Failed save"
+								, "effect": "The target takes 15 fire damage, and each of the target’s nearby allies takes 5 fire damage as the target’s blood boils under their skin and sprays outward in gouts of liquid fire."
+							}
+							, {
+								"trigger": "Fourth failed save"
+								, "effect": "The target’s body ignites as their flaming skull shoots upward on a jet of burning blood, killing them."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Basilisk’s stare"
+						, "effect": "When a basilisk hits an enemy that is already taking ongoing poison damage, the basilisk can make a <em>basilisk’s stare</em> attack against the target as a free action."
+					}
+					, {
+						"name": "Resist melee damage 18+"
+						, "effect": "When a melee attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage.  An attacker can ignore this resistance by declaring they are looking directly at the basilisk during the attack.  If they do, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack.  Constructs and undead are not affected by this resistance."
+					}
+					, {
+						"name": "Stare-down"
+						, "effect": "When an enemy makes a ranged attack against the basilisk, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Death breath"
+					, "effect": "Each creature engaged with the basilisk at the end of the basilisk’s turn takes 10 poison damage."
+				}]
+			}
+			, {
+				"name": "White Basilisk"
+				, "source": "Bestiary"
+				, "page": 10
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 19
+				, "MD": 18
+				, "HP": 85
+				, "attacks": [{
+						"name": "Multi-legged attack"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "3 attacks, each against a different enemy"
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 5 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Basilisk’s stare"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "extraEffects": [{
+								"trigger": "Failed save"
+								, "effect": "The target begins to evapourate.  The target must make an immediate normal save (11+) or it loses a chunk of flesh or a limb, whatever is dramatic but will allow the creature to survive (perhaps with minuses until healed)."
+							}
+							, {
+								"trigger": "Fourth failed save"
+								, "effect": "The target’s body explodes into a fine red mist and they die."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Basilisk’s stare"
+						, "effect": "When a basilisk hits an enemy that is already taking ongoing poison damage, the basilisk can make a <em>basilisk’s stare</em> attack against the target as a free action."
+					}
+					, {
+						"name": "Resist melee damage 18+"
+						, "effect": "When a melee attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage.  An attacker can ignore this resistance by declaring they are looking directly at the basilisk during the attack.  If they do, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack.  Constructs and undead are not affected by this resistance."
+					}
+					, {
+						"name": "Stare-down"
+						, "effect": "When an enemy makes a ranged attack against the basilisk, the basilisk can make a <em>basilisk’s stare</em> attack against them as a free action before the attack."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Death breath"
+					, "effect": "Each creature engaged with the basilisk at the end of the basilisk’s turn takes 10 poison damage."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Bat"
 		, "groupTraits": []
 		, "monsters": [{
