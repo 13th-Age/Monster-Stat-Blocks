@@ -5909,7 +5909,13 @@
 	}
 	, {
 		"name": "Flower of Unlife"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Nastier Special for all flowers of unlife"
+			, "traits": [{
+				"name": "Iconic energy drain"
+				, "description": "When a character with an icon relationship with the High Druid or the Lich King rolls a natural 1-5 with an attack against the flower, the attacker takes 2d6 damage and the flower heals that many hit points."
+			}]
+		}]
 		, "monsters": [{
 				"name": "Blood Rose"
 				, "source": "13 True Ways"
