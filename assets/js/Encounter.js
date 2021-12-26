@@ -25,7 +25,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 
 function PopulatePage() {
-	var html_monster = "";
+	var html_monster = "<h1>Monsters</h1>";
 	var html_group = "";
 	var groupArray = []
 
@@ -129,12 +129,14 @@ function PopulatePage() {
 	});
 
 	if (groupArray.length != 0) {
-		html_group += "<h1>Group Abilities</h1>";
-
 		groupArray.forEach(function(item,i){
 			var groupDetails = monsterList[item];
 
 			if (groupDetails.groupTraits.length != 0) {
+				if (html_group == "") {
+					html_group += "<h1>Group Abilities</h1>"
+				}
+
 				html_group += "<h2>" + groupDetails.name + "</h2>";
 
 				groupDetails.groupTraits.forEach(function(item,i){
