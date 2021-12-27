@@ -1856,6 +1856,185 @@
 		]
 	}
 	, {
+		"name": "Chaos Beast"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Chaos Beast"
+				, "source": "Bestiary"
+				, "page": 39
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "aberration"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 14
+				, "MD": 17
+				, "HP": 48
+				, "attacks": [{
+					"name": "Bestial chaos"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "Damage and effect depends on the natural roll"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "7 damage, and the chaos beast can make another <em>bestial chaos</em> attack as a free action."
+						}
+						, {
+							"trigger": "Natural odd hit"
+							, "effect": "15 ongoing damage."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "The chaos beast pops free from all enemies and moves to engage a random nearby enemy as a free action, preferably one it wasn’t just engaged with."
+						}
+					]
+				}]
+				, "abilities": [{
+					"name": "Chaos combined"
+					, "effect": "Once a chaos beast is staggered, it can combine with another chaos beast next to it as a quick action to become a full-strength chaos brute acting on this beast’s initiative.  Replace the other beast with a chaos glorp mook."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Chaos Behemoth"
+				, "source": "Bestiary"
+				, "page": 40
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "aberration"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 16
+				, "MD": 16
+				, "HP": 90
+				, "attacks": [{
+						"name": "Behemoth chaos"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "Damage and effect depends on the natural roll"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "30 damage, and the chaos behemoth can make a <em>mewhowlwail</em> attack as a free action."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "25 ongoing damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "10 damage, and the target is hampered until the end of its next turn."
+							}
+						]
+					}
+					, {
+						"name": "Mewhowlwail"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "each nearby enemy"
+						, "damage": "10 psychic damage, and if the target is taking ongoing damage, saves against that ongoing damage become hard saves (16+)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "The betrayal of flesh"
+					, "effect": "When a nearby enemy taking ongoing damage drops to 0 hp or below, add +15 to the amount of ongoing damage that enemy is taking as it body melts and warps.  At the GM’s option, a creature slain in a battle involving a chaos behemoth might transform into a chaos glorp or chaos beast instead of having the decency to just die."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Chaos Brute"
+				, "source": "Bestiary"
+				, "page": 39
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "aberration"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 17
+				, "MD": 13
+				, "HP": 60
+				, "attacks": [{
+					"name": "Brute chaos"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "Damage and effect depends on the natural roll"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "25 damage."
+						}
+						, {
+							"trigger": "Natural odd hit"
+							, "effect": "15 ongoing damage."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "1d3 random nearby enemies each take 10 psychic damage."
+						}
+					]
+				}]
+				, "abilities": [{
+					"name": "Chaos combined"
+					, "effect": "Once a chaos brute is staggered, it can combine with another chaos brute or chaos beast* next to it as a quick action to become a full-strength chaos behemoth: the new creature rolls initiative as if it had just entered the battle.<br>&emsp;If a chaos beast and a chaos brute combine to create a chaos behemoth, the behemoth starts with 70 hp instead of 90 hp and takes a -1 penalty to all attacks and defences."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Chaos Glorp"
+				, "source": "Bestiary"
+				, "page": 39
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "aberration"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 16
+				, "MD": 13
+				, "HP": 20
+				, "attacks": [{
+					"name": "Oozespasm"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 ongoing damage, or 10 damage if the target is already taking ongoing damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "The chaos glorp pops free from all enemies and moves as a free action to engage a nerby enemy taking ongoing damage."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Spontaneous chaos"
+					, "effect": "When the escalation die reaches 6, the chaos glorp rolls a normal save.  If it succeeds, it transforms into a chaos beast with full hit points."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Chimera"
 		, "groupTraits": []
 		, "monsters": [{
