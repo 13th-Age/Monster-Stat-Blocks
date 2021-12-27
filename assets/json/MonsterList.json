@@ -8841,6 +8841,87 @@
 		"name": "Human"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "Blue Sorcerer"
+				, "source": "Bestiary"
+				, "page": 21
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 14
+				, "MD": 17
+				, "HP": 48
+				, "attacks": [{
+						"name": "Nasty dagger or short spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Minor spell: Lightning fork"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "6 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The sorcerer can target a different nearby enemy with the attack."
+						}]
+					}
+					, {
+						"name": "Major spell: Breath of the Blue"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "one nearby enemy"
+						, "damage": "10 lightning damage, and at the start of the target’s next turn, 1d6 nearby allies of the target take 4 lightning damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Major Spell: Chaos orb"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "8 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The sorcerer gains one use of the target’s racial power, if any.  It must use that power by the end of the battle or lose it, and it can’t use the power this turn."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Power-monger"
+						, "effect": "When the blue sorcerer starts its turn and it didn't <em>gather power</em> the previous turn, choose whether it will gather power or cast a spell this turn.  When it chooses to cast a spell, roll a d20 to see if it uses a minor spell or a major spell: <strong>1-10</strong>: minor spell; <strong>11-20</strong>: major spell."
+					}
+					, {
+						"name": "Gather power"
+						, "effect": "Like a PC sorceror, a blue sorcerer can use its standard action to gather power in order to cast a double-strength and double-damage spell with its next standard action.  When it gathers power, the sorcerer rolls a d6 and gains one of the following chaotic benefits.<br>&emsp;<strong>1-2</strong>: The sorcerer gains a +1 bonus to AC and until the start of its next turn.<br>&emsp;<strong>3-4</strong>: One nearby enemy of the sorcerer’s choice takes damage equal to the sorcerer’s level (3).<br>&emsp;<strong>5-6</strong>: Each nearby enemy engaged with the sorcerer’s allies takes damage equal to the sorcerer’s level (3); OR grant one nearby dragon with <em>intermittent breath</em> an additional use of its breath weapon this battle."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Escalating caster"
+						, "effect": "Add the escalation die to the sorcerer’s <em>power-monger</em> rolls and attack rolls."
+					}
+					, {
+						"name": "Sorcerous evasion (kobold sorcerers only)"
+						, "effect": "Once per battle when an attack misses the sorcerer, the attacker takes the miss damage from that attack, if any, and the sorcerer takes no damage."
+					}
+				]
+			}
+			, {
 				"name": "Demon-Touched Human Ranger"
 				, "source": "13th Age"
 				, "page": 235
