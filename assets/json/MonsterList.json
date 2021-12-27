@@ -1805,6 +1805,239 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Cambion Dirk"
+				, "source": "Bestiary"
+				, "page": 31
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "demon"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 14
+				, "HP": 13
+				, "attacks": [{
+					"name": "Damned dirk"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 10
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "7 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit or miss"
+						, "effect": "The cambion becomes cloaked until it’s hit by an attack against MD or until it misses with a natural odd attack roll."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Dark step"
+					, "effect": "While cloaked, the cambion dirk automatically succeeds on all disengage checks."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Cambion Hellblade"
+				, "source": "Bestiary"
+				, "page": 32
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "wrecker"
+				, "type": "demon"
+				, "initiative": 17
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 21
+				, "MD": 21
+				, "HP": 140
+				, "attacks": [{
+						"name": "Damned hellblade"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "40 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit or miss"
+								, "effect": "The cambion becomes cloaked until it’s hit by an attack against MD or until it misses with a natural odd attack roll."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "20 damage."
+							}
+						]
+					}
+					, {
+						"name": "Spiky headbutt"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage, and 15 ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Ray of darkness"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "20 negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is confused until the end of its next turn, or if the cambion was cloaked when it attacked the confusion is save ends."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Cloaked in evil"
+						, "effect": "The cambion hellblade starts every battle cloaked.  As a quick action, the hellblade can drop its cloaking to make a <em>spiky headbutt</em> attack as a free action."
+					}
+					, {
+						"name": "Corruption aura"
+						, "effect": "When an enemy misses the cambion hellblade with a melee attack, it suffers one of the following effects:"
+					}
+					, {
+						"name": "Natural even miss"
+						, "effect": "The attacker takes 15 poison damage."
+					}
+					, {
+						"name": "Natural odd miss"
+						, "effect": "The cambion hellblade can make a <em>spiky headbutt</em> attack against the attacker as a free action."
+					}
+					, {
+						"name": "Ultimate dark step"
+						, "effect": "While cloaked, the cambion hellblade automatically succeeds on all disengage checks, gains a +2 bonus to all defences against close and ranged attacks, and can drop its cloaking as a quick action to teleport to a nearby location it can see (instead of making an extra attack)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Cambion Katar"
+				, "source": "Bestiary"
+				, "page": 31
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "wrecker"
+				, "type": "demon"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 15
+				, "HP": 80
+				, "attacks": [{
+						"name": "Damned katar"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The cambion becomes cloaked until it’s hit by an attack against MD or until it misses with a natural odd attack roll."
+						}]
+					}
+					, {
+						"name": "Spiky headbutt"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage, and 10 ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Ray of darkness"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "10 negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is confused until the end of its next turn, or if the cambion was cloaked when it attacked, the confusion is save ends."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Corruption aura"
+						, "effect": "When an enemy missed the cambion katar with a melee attack, it suffers one of the following effects:"
+					}
+					, {
+						"name": "Natural even miss"
+						, "effect": "The attacker takes 5 poison damage."
+					}
+					, {
+						"name": "Natural odd miss"
+						, "effect": "The cambion katar can make a <em>spiky headbutt</em> attack against the attacker as a free action."
+					}
+					, {
+						"name": "Superior dark step"
+						, "effect": "While cloaked, the cambion katar automatically succeeds on all disengage checks and gains a +2 bonus to all defences against close and ranged attacks."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Cambion Sickle"
+				, "source": "Bestiary"
+				, "page": 31
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "troop"
+				, "type": "demon"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 15
+				, "HP": 70
+				, "attacks": [{
+						"name": "Damned sickle"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "17 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The cambion becomes cloaked until it’s hit by an attack against MD or until it misses with a natural odd attack roll."
+						}]
+					}
+					, {
+						"name": "Ray of darkness"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "10 negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is confused until the end of its next turn, or if the cambion was cloaked when it attacked, the confusion is save ends."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Improved dark step"
+					, "effect": "While cloaked, the cambion sickle automatically succeeds on all disengage checks and gains a +2 bonus to all defences against ranged attacks."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Despoiler"
 				, "source": "13th Age"
 				, "page": 210
