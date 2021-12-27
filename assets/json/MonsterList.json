@@ -4194,6 +4194,413 @@
 		]
 	}
 	, {
+		"name": "Dragon, Chromatic Variant"
+		, "groupTraits": [{
+				"name": "Abilities"
+				, "traits": [{
+						"name": "Escalator"
+						, "description": "A dragon adds the escalation die to its attack rolls."
+					}
+					, {
+						"name": "Flight"
+						, "description": "A dragon flies reasonably well, powerful and fast in a straight line though not as manoeuverable as more agile fliers."
+					}
+				]
+			}
+			, {
+				"name": "Chromatic Dragon Ability (d8, d12, or d12 + 2)"
+				, "traits": [{
+						"name": "1: True seeing"
+						, "description": "The dragon is immune to invisibility and ignores any illusions."
+					}
+					, {
+						"name": "2: Whipping tail"
+						, "description": "When an enemy engaged with the dragon rolls a natural 1 or 2 with an attack roll, the dragon can make an opportunity attack against that creature as a free action.  The attack is set up by the dragon’s whipping tail but delivered by the dragon’s usual melee attack."
+					}
+					, {
+						"name": "3: Tough hide"
+						, "description": "The dragon has a +1 bonus to AC."
+					}
+					, {
+						"name": "4: Twisted mind"
+						, "description": "The dragon has a +2 bonus to MD."
+					}
+					, {
+						"name": "5: Nimble"
+						, "description": "The dragon has a +2 bonus to PD."
+					}
+					, {
+						"name": "6: No vulnerability"
+						, "description": "Unlike other dragons of its colour, this dragon has no vulnerability.  The PCs will figure that out the first time they try to use its supposed vulnerability against it."
+					}
+					, {
+						"name": "7: Now I'm mad!"
+						, "description": "The first time the dragon is staggered each battle, it uses its breath weapon attack as a free action that does not count against the normal uses of its breath."
+					}
+					, {
+						"name": "8: Serious threat"
+						, "description": "Disengage checks against the dragon take a -5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
+					}
+					, {
+						"name": "9: PC-style racial power"
+						, "description": "The dragon has one of the racial powers of a player character race.  The most common expressions per colour are: white (halfling); black (halfling, half-orc, human, wood elf); green (dwarf, dark elf); blue (high elf, half-orc); red (half-orc, human, wood elf)."
+					}
+					, {
+						"name": "10: Raw power"
+						, "description": "Until it is staggered, the dragon rolls 2d20 with its melee attacks and uses the higher roll."
+					}
+					, {
+						"name": "11: Damage aura"
+						, "description": "When an enemy starts its turn engaged with the dragon, it takes damage equal to the dragon’s level (adventurer tier), double the level (champion tier), or triple the level (epic tier).  The damage type is the same as the dragon’s breath weapon."
+					}
+					, {
+						"name": "12: More breath"
+						, "description": "The dragon can use its intermittent breath 1d4 more times each battle.  If its breath weapon isn’t intermittent (white and green dragons), the dragon gains the extra uses anyway, making it more dangerous than lesser specimens of its colour."
+					}
+					, {
+						"name": "13: Humanoid form"
+						, "description": "The dragon is capable of shapechanging into a humanoid form, usually of a warrior or spellcaster appropriate to its nature and usually not obviously draconic, registering as a normal humanoid.  the dragon has the PC-style racial power of their humanoid form, but only while in the shapechanged form."
+					}
+					, {
+						"name": "14: Some unique thing"
+						, "description": "The dragon has an entirely unique characteristic, something akin to a player character’s one unique thing except that the dragon’s version may be relevant to combat.  GM, if you don’t feel like making something up, choose an ability from the list above."
+					}
+				]
+			}
+		]
+		, "monsters": [{
+				"name": "Catacomb Dragon (Black)"
+				, "source": "Bestiary"
+				, "page": 17
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 9
+				, "vulnerability": "thunder"
+				, "AC": 19
+				, "PD": 17
+				, "MD": 15
+				, "HP": 104
+				, "attacks": [{
+						"name": "Acid fangs"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "8 damage, and 5 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "The dragon regains is use of its <em>caustic breath</em> if it’s expended and can use it during its next turn."
+						}]
+					}
+					, {
+						"name": "Caustic breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "10 acid damge, 5 ongoing acid damage, and the target is caught in an acidic haze (see below) with an effect that depends on the roll"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "While in the haze, the target is fazzed from choking or blinding."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "While in the haze, the target takes a -5 penalty to all saves against acid damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "5 ongoing acid damage."
+							}
+							, {
+								"trigger": "Acidic haze"
+								, "effect": "The haze is magical, semi-aware, and remains around the target until the end of the battle or until removed magically  A spell caster can cast a spell that targets AC or PD to attack the haze and destroy it - the haze has 1 HP and an AC/PD of 22.  The GM is encouraged to play fast and loose with physics here: the mist can be burned, condensed/frozen, blown away, absorbed, transmuted, etc.  At the GM’s discretion, there may be physical ways to remove the haze, bit should require a hard DC."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle, as a quick action."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "All-terrain terror"
+						, "effect": "A catacomb dragon flies reasonably well, powerful and fast in a straight line though it’s not as manoeuverable as more agile fliers.  It can also burrow quickly and effectively due to the acid coating on its skin."
+					}
+					, {
+						"name": "Corrosive contact"
+						, "effect": "When an enemy is engaged with the catacomb dragon at the start of its turn, it takes 3 acid damage."
+					}
+					, {
+						"name": "Resist acid 14+"
+						, "effect": "When an acid attack targets this creature, the attacker must roll a natural 14+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Empyrean Dragon (Black)"
+				, "source": "Bestiary"
+				, "page": 18
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 17
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 23
+				, "MD": 21
+				, "HP": 510
+				, "attacks": [{
+						"name": "Gleaming bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 damage, and one effect triggers based on the head that attacks (GM’s choice)"
+						, "extraEffects": [{
+								"trigger": "Head 1"
+								, "effect": "The target can’t use recoveries until end of its next turn."
+							}
+							, {
+								"trigger": "Head 2"
+								, "effect": "One enemy that hit the dragon since the dragon’s last turn takes 12 damage."
+							}
+							, {
+								"trigger": "Head 3"
+								, "effect": "The target moves to a nearby non-harmful location of the dragon’s choice as a free action.  This movement can provoke opportunity attacks."
+							}
+						]
+					}
+					, {
+						"name": "Venom breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "1d3 + 1 nearby enemies"
+						, "damage": "35 damage"
+						, "extraEffects": [{
+							"trigger": "Swarming motes"
+							, "effect": "Each time the dragon uses this attack, a swarm of light motes that resolve into scorpions and stinging insects swirl around the targets.  The swarm harasses each targeted enemy, hit or miss.  During its next turn, any enemy being swarmed this way must choose one: Take 25 damage; OR roll twice for each attack roll it makes that turn, taking the lower result."
+						}]
+					}
+					, {
+						"name": "Crying heavens"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "each enemy in the battle"
+						, "damage": "20 ongoing damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "10 ongoing damage."
+							}
+							, {
+								"trigger": "Temporal manastorm"
+								, "effect": "The empyrean dragon’s connection to the overworld falters, creating a storm of distorted time and magic in the area.  The dragon’s critical hit range for all attacks expands by 2 until the end of the battle.  In addition, when a target saves against the ongoing damage from this attack, the crit range of its attacks against the dragon expands by 1 until the end of the battle."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle, as a free action when first staggered."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Three heads are better than one"
+						, "effect": "The empyrean dragon can make two <em>gleaming bite</em> attacks as a single standard action, one each from two heads.  The third head is assumed to be manoeuvering the body around.  It can choose not to make one of those attacks to end any condition affecting it except for ongoing damage (this includes the stunned condition, even though it technically doesn’t get an action when stunned).<be>&emsp;An enemy who scores a critical hit against an empyrean dragon can forego the extra damage to lop off one of the dragon’s heads.  If an enemy deals 150 damage with a single attack against the dragon, the attack will also remove a head.  An empyrean dragon with two remaining heads can make only one <em>gleaming bite</em> attack as a standard action and can’t sacrifice that attack to remove conditions.  The dragon dies if all three heads are removed."
+					}
+					, {
+						"name": "Intermittent breath"
+						, "effect": "An empyrean dragon can use <em>venom breath</em> 1d2 + 1 times per battle, but never two turns in a row."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Gorge Dragon (Black)"
+				, "source": "Bestiary"
+				, "page": 17
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 13
+				, "vulnerability": "fire"
+				, "AC": 21
+				, "PD": 19
+				, "MD": 17
+				, "HP": 164
+				, "attacks": [{
+						"name": "Coiling"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "18 damage, and the dragon grabs the target; while grabbed, the target takes 9 damage at the start of each of its turns"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "The dragon regains the use of its <em>dazzling breath</em> if it’s expended and can use it during its next turn."
+						}]
+					}
+					, {
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "includes grab bonus - one enemy it’s grabbing"
+						, "damage": "25 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target takes no damage and is instead <em>swallowed whole</em> (see below)."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle, as a quick action."
+							}
+						]
+					}
+					, {
+						"name": "Dazzling breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "14 damage, and if the target has 40 hp or fewer after being hit, it’s weakened until the end of its next turn."
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, as a quick action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Swallowed whole"
+						, "effect": "A creature that is swallowed whole must start making last gasp saves during its next turn.  An ally can assist with the save as normal, but the save remains hard (16+) in that case.  A roll of 16-19 causes the creature to be regurgitated from the dragon’s gut, while a 20 means that the creature cuts/rips a hole through the dragon’s flesh to escape (dealing basic attack damage automatically)."
+					}
+					, {
+						"name": "Chain constrictor"
+						, "effect": "The gorge dragon can have up to two enemies grabbed at the same time."
+					}
+					, {
+						"name": "Resist cold 14+"
+						, "effect": "When a cold attack target this creature, the attacker must roll a natural 14+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Water-breathing"
+						, "effect": "Gorge dragons swim well and can breathe underwater."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Void Beast"
+				, "source": "Bestiary"
+				, "page": 18
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 0
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 18
+				, "HP": 27
+				, "attacks": [{
+					"name": "Slam"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "18 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 5, 10, 15, or 20"
+						, "effect": "The void beast spawns a new void beast at full hit points.  It follows the same rules for beasts formed by <em>ensorceling breath</em>."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Void Dragon (Black)"
+				, "source": "Bestiary"
+				, "page": 18
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 21
+				, "MD": 19
+				, "HP": 290
+				, "attacks": [{
+						"name": "Jaws and claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "26 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 5, 10, 15, or 20"
+								, "effect": "The dragon regains the use of its <em>ensorceling breath</em> if it’s expended and can use it during its next turn."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "13 damage."
+							}
+						]
+					}
+					, {
+						"name": "Ensorceling breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "24 damage, and the dragon’s breath coalesces into two small void beasts of rapidly shifting form (see below)"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "The dragon’s breath coalesces into one small void beast (see below)."
+							}
+							, {
+								"trigger": "Void beasts"
+								, "effect": "Each beast appears next to the dragon, acts as it wishes and enters initiative order after the next two creatures have taken their turns.  See void beast."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle, as a quick action."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Draconic grace"
+					, "effect": "At the start of each of the void dragon’s turns, roll a d6 to see if it gets an extra standard action.  If the roll is equal to or less than the escalation die, the void dragon can take an extra standard action that turn.<be>&emsp;After the first success, the grace die bumps up to a d8.  After the second success, it’s a d10, then a d12 after the third success, and finally a d20 after the fourth one."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Dragon, Metallic"
 		, "groupTraits": [{
 				"name": "Abilities"
