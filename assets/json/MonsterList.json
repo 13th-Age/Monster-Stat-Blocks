@@ -1339,61 +1339,254 @@
 		"name": "Bulette"
 		, "groupTraits": []
 		, "monsters": [{
-			"name": "Bulette"
-			, "source": "13th Age"
-			, "page": 208
-			, "sizeStrength": "large"
-			, "threat": "normal"
-			, "level": 5
-			, "role": "wrecker"
-			, "type": "beast"
-			, "initiative": 7
-			, "vulnerability": ""
-			, "AC": 22
-			, "PD": 19
-			, "MD": 14
-			, "HP": 170
-			, "attacks": [{
-					"name": "Gigantic claws"
+				"name": "Bulette"
+				, "source": "13th Age"
+				, "page": 208
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 19
+				, "MD": 14
+				, "HP": 170
+				, "attacks": [{
+						"name": "Gigantic claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Dual hit"
+							, "effect": "If both claws hit during the same turn, the bulette can make a <em>terrible bite</em> attack during its next turn as a standard action."
+						}]
+					}
+					, {
+						"name": "Terrible bite"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "45 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "22 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Blood frenzy"
+						, "effect": "The bulette’s crit range expands to 16+ while the escalation die is 4+."
+					}
+					, {
+						"name": "Serious burrower"
+						, "effect": "A bulette can burrow incredibly quickly for short distances.  They’re renowned for the mounds of dirt and rock they push above them as they surge through the ground like land torpedoes."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Savage response"
+					, "effect": "When an attacker scores a critical hit against the bulette and it survives, the bulette can make a <em>terrible bite</em> attack as a free action against one target engaged with it."
+				}]
+			}
+			, {
+				"name": "Deep Bulette"
+				, "source": "Bestiary"
+				, "page": 28
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 23
+				, "MD": 19
+				, "HP": 378
+				, "attacks": [{
+					"name": "Pulverising maw"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 15
+					, "defence": "AC"
+					, "target": "1d3 enemies"
+					, "damage": "90 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "45 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Blood frenzy"
+						, "effect": "The deep bulette’s crit range expands by 4 while the escalation die is 4+."
+					}
+					, {
+						"name": "Tunnel fighter"
+						, "effect": "While fighting in a tunnel with nowhere for its enemies to move but ahead of it, the deep bulette gains the following abilities based on the escalation die."
+					}
+					, {
+						"name": "Escalation die is odd"
+						, "effect": "When the bulette hits an enemy engaged with it with an attack, that target pops free from it and is hampered (save ends)."
+					}
+					, {
+						"name": "Escalation die is even"
+						, "effect": "The deep bulette engages each nearby enemy in front of it as it pushes its bulk inexorably forward down the tunnel.  Enemies pushed ahead of it this way don’t get to make opportunity attacks."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Green Bulette"
+				, "source": "Bestiary"
+				, "page": 27
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 13
+				, "HP": 92
+				, "attacks": [{
+					"name": "Charging maw"
 					, "specialTrigger": false
 					, "type": "normal"
 					, "modifier": 12
 					, "defence": "AC"
-					, "target": "2 attacks"
-					, "damage": "15 damage"
+					, "target": ""
+					, "damage": "30 damage"
 					, "extraEffects": [{
-						"trigger": "Dual hit"
-						, "effect": "If both claws hit during the same turn, the bulette can make a <em>terrible bite</em> attack during its next turn as a standard action."
-					}]
-				}
-				, {
-					"name": "Terrible bite"
-					, "specialTrigger": true
+							"trigger": "Natural even miss"
+							, "effect": "The target pops free from all enemies engaged with it and is vulnerable to all attacks (save ends)."
+						}
+						, {
+							"trigger": "Leaping bite"
+							, "effect": "The green bulette gains a +3 bonus to attack and damage with its first attack each battle."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Into the earth"
+						, "effect": "The first time each round an attack hits the bulette, it can choose to hunker down as a free action.  If it does, it gains a +3 bonus to AC and PD until the start of its next turn.  Force attacks and opporunity attacks don’t trigger this ability.  If the green bulette hunkers down while it’s moving (for example, from a readied action), its movement ends that turn."
+					}
+					, {
+						"name": "Blood-frenzy escalator"
+						, "effect": "While at least one creature in the battle is staggered or unconscious, the bulette gains a bonnus to its attacks and damage equal to the escalation die but can’t use <em>into the earth</em>.  Ceatures that have no blood (constructs, oozes, plant creatures, etc.) don’t trigger this ability."
+					}
+					, {
+						"name": "Occasional burrower"
+						, "effect": "Like all bulettes, the green bulette can burrow.  While above ground, it prefers to move slowly on the surface and rely on its plant- and soil-covered shell to stay hidden until it attacks."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Lumberland Dirt-Fisher"
+				, "source": "Bestiary"
+				, "page": 28
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 15
+				, "MD": 11
+				, "HP": 135
+				, "attacks": [{
+						"name": "Tongue lash and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "1d3 nearby enemies"
+						, "damage": "30 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Sticky tongue"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target pops free from all enemies engaged with it, is pulled into the pit with the dirt-fisher (who engages it), and loses its next move action.  Climbing out of the pit requires a move action and a DC 20 check.  It the bulette is not in its pit, the bulette pulls the target to itself and engages it."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Hole digger"
+						, "effect": "A dirt-fisher can burrow incredibly quickly for short distances, but it prefers to attack from within its pre-dug trap-door pit.  It usually has a few pits dug nearby if forced to leave its current pit."
+					}
+					, {
+						"name": "Into the earth"
+						, "effect": "The first time each round an attack hits the dirt-fisher, it can hunker down and pull the lid on its pit shut.  If it does, it gains a +3 bonus to all defences until the start of its next turn, and any creature in the pit takes a -5 penalty to checks to climb out of the pit.  Force attacks and opportunity attacks don’t trigger this ability."
+					}
+					, {
+						"name": "Nowhere to run"
+						, "effect": "The dist-fisher deals double damage against creatures engaged with it in its pit."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ravenous Bumoorah"
+				, "source": "Bestiary"
+				, "page": 28
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 15
+				, "MD": 11
+				, "HP": 46
+				, "attacks": [{
+					"name": "Land-shark maw"
+					, "specialTrigger": false
 					, "type": "normal"
-					, "modifier": 14
+					, "modifier": 15
 					, "defence": "AC"
 					, "target": ""
-					, "damage": "45 damage"
+					, "damage": "14 damage"
 					, "extraEffects": [{
-						"trigger": "Miss"
-						, "effect": "22 damage."
+						"trigger": "Natural even hit"
+						, "effect": "The target takes 10 thunder damage."
 					}]
-				}
-			]
-			, "abilities": [{
-					"name": "Blood frenzy"
-					, "effect": "The bulette’s crit range expands to 16+ while the escalation die is 4+."
-				}
-				, {
-					"name": "Serious burrower"
-					, "effect": "A bulette can burrow incredibly quickly for short distances.  They’re renowned for the mounds of dirt and rock they push above them as they surge through the ground like land torpedoes."
-				}
-			]
-			, "nastierSpecials": [{
-				"name": "Savage response"
-				, "effect": "When an attacker scores a critical hit against the bulette and it survives, the bulette can make a <em>terrible bite</em> attack as a free action against one target engaged with it."
-			}]
-		}]
+				}]
+				, "abilities": [{
+						"name": "Blood-frenzy escalator"
+						, "effect": "While at least one creature in the battle is staggered or unconscious, the bulette gains a bonus to its attacks and damage equal to the escalation die.  Creatures that have no blood (constructs, oozes, plant creatures, etc.) don’t trigger this ability."
+					}
+					, {
+						"name": "Earth surge"
+						, "effect": "Whenever the bumoorah takes damage from an attack, it rolls a save; on a 16+ it can immediately dive beneath the ground, preventing further attacks against it until it surfaces at the start of its next turn.  Force attacks and opportunity attacks don’t trigger this ability."
+					}
+					, {
+						"name": "Serious burrower"
+						, "effect": "The bumoorah can burrow incredibly quickly for short distances.  Bumoorahs are renowned for the dust-spurts and vibrating sound they generate as they shoot through the ground like hungry spears."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
 	}
 	, {
 		"name": "Chimera"
