@@ -8045,6 +8045,54 @@
 		"name": "Goblin"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "Barbarous Bugbear"
+				, "source": "Bestiary"
+				, "page": 25
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 17
+				, "MD": 16
+				, "HP": 51
+				, "attacks": [{
+						"name": "Warclub"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "11 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "Each enemy engaged with the barbarous bugbear takes 1d8 damage."
+						}]
+					}
+					, {
+						"name": "Throwing axe"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "2/battle."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Ferocious start"
+					, "effect": "Until the barbarous bugbear is staggered or the escalation die is 2+, it acts twice per round.  Roll initiative once at +12.  It takes its second turn when the initiative count is seven less (minimum 1)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Bugbear"
 				, "source": "13th Age"
 				, "page": 230
@@ -8079,6 +8127,143 @@
 				}]
 				, "abilities": []
 				, "nastierSpecials": []
+			}
+			, {
+				"name": "Bugbear Schemer"
+				, "source": "Bestiary"
+				, "page": 25
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 14
+				, "MD": 17
+				, "HP": 42
+				, "attacks": [{
+						"name": "Big-ass warclub"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit or miss"
+								, "effect": "Each of the bugbear schemer’s next turn."
+							}
+							, {
+								"trigger": "Natural odd miss"
+								, "effect": "4 damage."
+							}
+						]
+					}
+					, {
+						"name": "Ridiculously heavy crossbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": "one nearby or far away enemy"
+						, "damage": "14 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target takes 1d6 extra damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+					, {
+						"name": "Rebuke to fools"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "one nearby enemy"
+						, "damage": "2d6 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/round as an interrupt action, when a nearby enemy rolls a natural 1-5 with an attack against it."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Combat reload"
+						, "effect": "During the bugbear schemer’s turn, if it doesn’t engage an enemy or move, it regains a use of <em>ridiculously heavy crossbow</em> if it’s expended as it reloads the crossbow."
+					}
+					, {
+						"name": "Fighting withdrawal"
+						, "effect": "When the bugbear schemer successfully disengages, one of the enemies engaged with it takes 1d6 damage."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Flee is a four-letter word"
+					, "effect": "When the bugbear schemer thinks the battle is out of reach and it isn’t engaged, it can try to flee once per battle.  As a move action, roll a hard save.  On a success, the bugbear schemer had a bolt-hole or escape plan ready and it gets away (though it’s probably just getting more troops)."
+				}]
+			}
+			, {
+				"name": "Bugbear Scout"
+				, "source": "Bestiary"
+				, "page": 24
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 15
+				, "HP": 88
+				, "attacks": [{
+						"name": "Flanged mace"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Throwing axe"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle."
+						}]
+					}
+					, {
+						"name": "Stealthy manoeuver"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": "the nearby enemy with the highest MD"
+						, "damage": "The next attack the bugbear scout makes against the target this turn deals +1d12 extra damage."
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/round, as a quick action when the bugbear scout starts its turn unengaged."
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Unpredictable"
+					, "effect": "The bugbear scout gains a +5 bonus to disengage checks, and when it successfully disengages, one of the enemies engaged with it takes 1d6 damage."
+				}]
 			}
 			, {
 				"name": "Goblin Grunt"
