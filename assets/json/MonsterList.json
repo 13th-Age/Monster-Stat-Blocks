@@ -3210,65 +3210,78 @@
 	, {
 		"name": "Dragon, Chromatic"
 		, "groupTraits": [{
-			"name": "Chromatic Dragon Ability (d8, d12, or d12 + 2)"
-			, "traits": [{
-					"name": "1: True seeing"
-					, "description": "The dragon is immune to invisibility and ignores any illusions."
-				}
-				, {
-					"name": "2: Whipping tail"
-					, "description": "When an enemy engaged with the dragon rolls a natural 1 or 2 with an attack roll, the dragon can make an opportunity attack against that creature as a free action.  The attack is set up by the dragon’s whipping tail but delivered by the dragon’s usual melee attack."
-				}
-				, {
-					"name": "3: Tough hide"
-					, "description": "The dragon has a +1 bonus to AC."
-				}
-				, {
-					"name": "4: Twisted mind"
-					, "description": "The dragon has a +2 bonus to MD."
-				}
-				, {
-					"name": "5: Nimble"
-					, "description": "The dragon has a +2 bonus to PD."
-				}
-				, {
-					"name": "6: No vulnerability"
-					, "description": "Unlike other dragons of its colour, this dragon has no vulnerability.  The PCs will figure that out the first time they try to use its supposed vulnerability against it."
-				}
-				, {
-					"name": "7: Now I'm mad!"
-					, "description": "The first time the dragon is staggered each battle, it uses its breath weapon attack as a free action that does not count against the normal uses of its breath."
-				}
-				, {
-					"name": "8: Serious threat"
-					, "description": "Disengage checks against the dragon take a -5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
-				}
-				, {
-					"name": "9: PC-style racial power"
-					, "description": "The dragon has one of the racial powers of a player character race.  The most common expressions per colour are: white (halfling); black (halfling, half-orc, human, wood elf); green (dwarf, dark elf); blue (high elf, half-orc); red (half-orc, human, wood elf)."
-				}
-				, {
-					"name": "10: Raw power"
-					, "description": "Until it is staggered, the dragon rolls 2d20 with its melee attacks and uses the higher roll."
-				}
-				, {
-					"name": "11: Damage aura"
-					, "description": "When an enemy starts its turn engaged with the dragon, it takes damage equal to the dragon’s level (adventurer tier), double the level (champion tier), or triple the level (epic tier).  The damage type is the same as the dragon’s breath weapon."
-				}
-				, {
-					"name": "12: More breath"
-					, "description": "The dragon can use its intermittent breath 1d4 more times each battle.  If its breath weapon isn’t intermittent (white and green dragons), the dragon gains the extra uses anyway, making it more dangerous than lesser specimens of its colour."
-				}
-				, {
-					"name": "13: Humanoid form"
-					, "description": "The dragon is capable of shapechanging into a humanoid form, usually of a warrior or spellcaster appropriate to its nature and usually not obviously draconic, registering as a normal humanoid.  the dragon has the PC-style racial power of their humanoid form, but only while in the shapechanged form."
-				}
-				, {
-					"name": "14: Some unique thing"
-					, "description": "The dragon has an entirely unique characteristic, something akin to a player character’s one unique thing except that the dragon’s version may be relevant to combat.  GM, if you don’t feel like making something up, choose an ability from the list above."
-				}
-			]
-		}]
+				"name": "Abilities"
+				, "traits": [{
+						"name": "Escalator"
+						, "description": "A dragon adds the escalation die to its attack rolls."
+					}
+					, {
+						"name": "Flight"
+						, "description": "A dragon flies reasonably well, powerful and fast in a straight line though not as manoeuverable as more agile fliers."
+					}
+				]
+			}
+			, {
+				"name": "Chromatic Dragon Ability (d8, d12, or d12 + 2)"
+				, "traits": [{
+						"name": "1: True seeing"
+						, "description": "The dragon is immune to invisibility and ignores any illusions."
+					}
+					, {
+						"name": "2: Whipping tail"
+						, "description": "When an enemy engaged with the dragon rolls a natural 1 or 2 with an attack roll, the dragon can make an opportunity attack against that creature as a free action.  The attack is set up by the dragon’s whipping tail but delivered by the dragon’s usual melee attack."
+					}
+					, {
+						"name": "3: Tough hide"
+						, "description": "The dragon has a +1 bonus to AC."
+					}
+					, {
+						"name": "4: Twisted mind"
+						, "description": "The dragon has a +2 bonus to MD."
+					}
+					, {
+						"name": "5: Nimble"
+						, "description": "The dragon has a +2 bonus to PD."
+					}
+					, {
+						"name": "6: No vulnerability"
+						, "description": "Unlike other dragons of its colour, this dragon has no vulnerability.  The PCs will figure that out the first time they try to use its supposed vulnerability against it."
+					}
+					, {
+						"name": "7: Now I'm mad!"
+						, "description": "The first time the dragon is staggered each battle, it uses its breath weapon attack as a free action that does not count against the normal uses of its breath."
+					}
+					, {
+						"name": "8: Serious threat"
+						, "description": "Disengage checks against the dragon take a -5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
+					}
+					, {
+						"name": "9: PC-style racial power"
+						, "description": "The dragon has one of the racial powers of a player character race.  The most common expressions per colour are: white (halfling); black (halfling, half-orc, human, wood elf); green (dwarf, dark elf); blue (high elf, half-orc); red (half-orc, human, wood elf)."
+					}
+					, {
+						"name": "10: Raw power"
+						, "description": "Until it is staggered, the dragon rolls 2d20 with its melee attacks and uses the higher roll."
+					}
+					, {
+						"name": "11: Damage aura"
+						, "description": "When an enemy starts its turn engaged with the dragon, it takes damage equal to the dragon’s level (adventurer tier), double the level (champion tier), or triple the level (epic tier).  The damage type is the same as the dragon’s breath weapon."
+					}
+					, {
+						"name": "12: More breath"
+						, "description": "The dragon can use its intermittent breath 1d4 more times each battle.  If its breath weapon isn’t intermittent (white and green dragons), the dragon gains the extra uses anyway, making it more dangerous than lesser specimens of its colour."
+					}
+					, {
+						"name": "13: Humanoid form"
+						, "description": "The dragon is capable of shapechanging into a humanoid form, usually of a warrior or spellcaster appropriate to its nature and usually not obviously draconic, registering as a normal humanoid.  the dragon has the PC-style racial power of their humanoid form, but only while in the shapechanged form."
+					}
+					, {
+						"name": "14: Some unique thing"
+						, "description": "The dragon has an entirely unique characteristic, something akin to a player character’s one unique thing except that the dragon’s version may be relevant to combat.  GM, if you don’t feel like making something up, choose an ability from the list above."
+					}
+				]
+			}
+		]
 		, "monsters": [{
 				"name": "Huge Black Dragon"
 				, "source": "13th Age"
@@ -4183,6 +4196,18 @@
 	, {
 		"name": "Dragon, Metallic"
 		, "groupTraits": [{
+				"name": "Abilities"
+				, "traits": [{
+						"name": "Escalator"
+						, "description": "A dragon adds the escalation die to its attack rolls."
+					}
+					, {
+						"name": "Flight"
+						, "description": "A dragon flies reasonably well, powerful and fast in a straight line though not as manoeuverable as more agile fliers."
+					}
+				]
+			}
+			, {
 				"name": "Breath Weapon Recharge (Natural Attack Roll)"
 				, "traits": [{
 						"name": "1-5"
