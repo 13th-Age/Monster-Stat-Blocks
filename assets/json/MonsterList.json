@@ -1589,6 +1589,273 @@
 		]
 	}
 	, {
+		"name": "Centaur"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Centaur Champion"
+				, "source": "Bestiary"
+				, "page": 36
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 170
+				, "attacks": [{
+						"name": "Two-handed sword"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Champion’s challenge"
+							, "effect": "If the centaur champion scores a crit against the target, it can challenge that enemy.  If it does, until the end of the battle the champion and the target each take a -4 attack penalty against any target except the other.  If the centaur champion dies or challenges a new for, the old challenge is cancelled."
+						}]
+					}
+					, {
+						"name": "Crushing hooves"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "2 attacks"
+						, "damage": "13 damage, and the target is vulnerable until the start of its next turn"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Hooves and slash"
+						, "effect": "As a standard action, the centaur champion can make a <em>crushing hooves</em> attack and a single <em>two-handed sword</em> attack (one attack roll) against the same enemy."
+					}
+					, {
+						"name": "Leader of the clan"
+						, "effect": "When the centaur champion engages an enemy, each other centaur ally engaged with that creature can pop free from it."
+					}
+					, {
+						"name": "Moving combatant"
+						, "effect": "The centaur champion gains +4 AC bonus against opportunity attacks and only takes half damage from opportunity attacks that hit it.  When an enemy makes an opportunity attack against it and misses, that enemy takes 20 damage from a counter-attack."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Chief’s challenge"
+						, "effect": "When the champion issues a <em>champion’s challenge</em>, it only takes a -2 attack penalty against other enemies than its chosen for, but that enemy still takes the -4 attack penalty.  In addition, the champion can use <em>champion’s challenge</em> as a free action when it becomes staggered."
+					}
+					, {
+						"name": "Champion’s scorn"
+						, "effect": "Each of the champion’s centaur allies in the battle gains a +5 damage bonus with ranged attacks."
+					}
+				]
+			}
+			, {
+				"name": "Centaur Lancer"
+				, "source": "Bestiary"
+				, "page": 35
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 17
+				, "MD": 14
+				, "HP": 60
+				, "attacks": [{
+						"name": "Charging lance"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage, and the target pops free from the centaur"
+						, "extraEffects": [{
+								"trigger": "Hit ’em hard"
+								, "effect": "The crit range of the attack expands by 2 and instead deals 20 damage on a hit if the centaur first moves before attacking an enemy it wasn’t engaged with at the start of its turn."
+							}
+							, {
+								"trigger": "Natural 18+"
+								, "effect": "The target is also dazed until the end of its next turn."
+							}
+						]
+					}
+					, {
+						"name": "Spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "13 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The centaur lancer can make a <em>kick</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Kick"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d2 enemies engaged with the centaur"
+						, "damage": "The target takes 5 damage and pops free from the centaur"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Harnessed speed"
+					, "effect": "The centaur lancer gains a +4 AC bonus against opportunity attacks."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Centaur Raider"
+				, "source": "Bestiary"
+				, "page": 35
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 19
+				, "MD": 14
+				, "HP": 70
+				, "attacks": [{
+						"name": "Hoof and weapon"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "As a free action, the centaur raider can move and make another <em>hoof and weapon</em> attack against a different nearby enemy (it will take oppotunity attacks for moving)."
+						}]
+					}
+					, {
+						"name": "Short bow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The centaur raider can take an additional move action this turn."
+						}]
+					}
+					, {
+						"name": "Sweeping blow"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "1d3 nearby enemies"
+						, "damage": "15 damage, and the target loses its next move action"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Harnessed speed"
+					, "effect": "The centaur raider gains a +4 AC bonus against opportunity attacks and only takes half damage from opportunity attacks that hit it."
+				}]
+				, "nastierSpecials": [{
+					"name": "Barreling charge"
+					, "effect": "When the escalation die is even, the centaur raider can use a standard action and a move action to make a <em>sweeping blow</em> attack against multiple enemies as it moves past them (it will take opportunity attacks).  It ends this move and attack unengaged."
+				}]
+			}
+			, {
+				"name": "Centaur Ranger"
+				, "source": "Bestiary"
+				, "page": 35
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "archer"
+				, "type": "humanoid"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 85
+				, "attacks": [{
+						"name": "Twin scimitars"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "10 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Longbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The centaur ranger can take an additional move action this turn."
+							}
+							, {
+								"trigger": "Natural 16+"
+								, "effect": "The centaur ranger can make a second (but not a third) <em>longbow</em> attack this turn as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Pinning volley"
+						, "specialTrigger": true
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "8 damage, and the target is hampered until the end of its next turn"
+						, "extraEffects": [{
+								"trigger": "Natural 18+"
+								, "effect": "The target is stuck (save ends) instead of hampered."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "2/battle."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Moving combatant"
+						, "effect": "The centaur ranger gains a +4 AC bonus against opportunity attacks and only takes half damage from opportunity attacks that hit it.  When an enemy makes an opportunity attack against it and misses, that enemy takes 10 damage from a counter-attack."
+					}
+					, {
+						"name": "Terrain familiarity"
+						, "effect": "Once each round when the escalation die is odd, the centaur ranger can make use of the area’s terrain to its advantage as a free action.  It can choose either to gain a +2 attack bonus for its attacks that turn, or to gain a +2 bonus to all defences against the next attack that targets it by using a flashy or tricky maneouver (leaping off a rock over an enemy, stirring up a hornet’s next near an attacker, etc.).  The target of its attack or a creature attacing it when it attempts this stunt rolls a normal save; on a success, the bonus is negated."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Pinning volley"
+					, "effect": "The centaur ranger gains the <em>pinning volley</em> power."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Chimera"
 		, "groupTraits": []
 		, "monsters": [{
