@@ -2038,6 +2038,63 @@
 		"name": "Chimera"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "Chimera"
+				, "source": "13th Age"
+				, "page": 209
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 20
+				, "MD": 16
+				, "HP": 320
+				, "attacks": [{
+						"name": "Fangs, claws, and horns"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "3 attacks"
+						, "damage": "25 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 14-15"
+								, "effect": "The target is dazed until the end of the chimera’s next turn from a headbutt."
+							}
+							, {
+								"trigger": "Natural 16-17"
+								, "effect": "The target takes 20 ongoing damage from raking claws."
+							}
+							, {
+								"trigger": "Natural 18-20"
+								, "effect": "The chimera makes a <em>fiery breath</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Fiery breath"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "up to 3 nearby enemies in a group"
+						, "damage": "3d10 fire damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Bestial thresher"
+					, "effect": "Whenever a creature misses the chimera with a melee attack, the chimera’s multiple sharp bits deal 3d10 damage to that attacker."
+				}]
+				, "nastierSpecials": [{
+					"name": "Now it’s angry"
+					, "effect": "When an attacker scores a critical hit against the chimera and it survives, its attack rolls on its next turn deal the effects of the lower rolls as well as their own results; for example, a roll 18-20 would daze the target and deal 20 ongoing damage as well as triggering <em>fiery breath</em>."
+				}]
+			}
+			, {
 				"name": "Iconic Chimera"
 				, "source": "Bestiary"
 				, "page": 42
@@ -2156,63 +2213,6 @@
 					}
 				]
 				, "nastierSpecials": []
-			}
-			, {
-				"name": "Chimera"
-				, "source": "13th Age"
-				, "page": 209
-				, "sizeStrength": "large"
-				, "threat": "normal"
-				, "level": 9
-				, "role": "wrecker"
-				, "type": "beast"
-				, "initiative": 15
-				, "vulnerability": ""
-				, "AC": 24
-				, "PD": 20
-				, "MD": 16
-				, "HP": 320
-				, "attacks": [{
-						"name": "Fangs, claws, and horns"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 14
-						, "defence": "AC"
-						, "target": "3 attacks"
-						, "damage": "25 damage"
-						, "extraEffects": [{
-								"trigger": "Natural 14-15"
-								, "effect": "The target is dazed until the end of the chimera’s next turn from a headbutt."
-							}
-							, {
-								"trigger": "Natural 16-17"
-								, "effect": "The target takes 20 ongoing damage from raking claws."
-							}
-							, {
-								"trigger": "Natural 18-20"
-								, "effect": "The chimera makes a <em>fiery breath</em> attack as a free action."
-							}
-						]
-					}
-					, {
-						"name": "Fiery breath"
-						, "specialTrigger": true
-						, "type": "normal"
-						, "modifier": 14
-						, "defence": "PD"
-						, "target": "up to 3 nearby enemies in a group"
-						, "damage": "3d10 fire damage"
-						, "extraEffects": []
-					}
-				]
-				, "abilities": [{
-					"name": "Bestial thresher"
-					, "effect": "Whenever a creature misses the chimera with a melee attack, the chimera’s multiple sharp bits deal 3d10 damage to that attacker."
-				}]
-				, "nastierSpecials": [{
-					"name": "Now it’s angry"
-					, "effect": "When an attacker scores a critical hit against the chimera and it survives, its attack rolls on its next turn deal the effects of the lower rolls as well as their own results; for example, a roll 18-20 would daze the target and deal 20 ongoing damage as well as triggering <em>fiery breath</em>."
-				}]
 			}
 		]
 	}
