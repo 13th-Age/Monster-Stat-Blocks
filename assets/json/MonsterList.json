@@ -963,60 +963,377 @@
 		"name": "Bat"
 		, "groupTraits": []
 		, "monsters": [{
-			"name": "Fire Bat"
-			, "source": "13 True Ways"
-			, "page": 162
-			, "sizeStrength": "normal"
-			, "threat": "normal"
-			, "level": 3
-			, "role": "mook"
-			, "type": "beast"
-			, "initiative": 9
-			, "vulnerability": ""
-			, "AC": 18
-			, "PD": 16
-			, "MD": 11
-			, "HP": 10
-			, "attacks": [{
-					"name": "Burning claws"
+				"name": "Dire Bat"
+				, "source": "Bestiary"
+				, "page": 14
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 8
+				, "vulnerability": "thunder"
+				, "AC": 18
+				, "PD": 17
+				, "MD": 14
+				, "HP": 32
+				, "attacks": [{
+					"name": "Fangs and wings"
 					, "specialTrigger": false
 					, "type": "normal"
-					, "modifier": 8
+					, "modifier": 6
 					, "defence": "AC"
 					, "target": ""
-					, "damage": "2 damage, and 2 fire damage"
-					, "extraEffects": []
-				}
-				, {
-					"name": "Burning contrail"
-					, "specialTrigger": true
-					, "type": "normal"
+					, "damage": "5 damage, and 5 ongoing damage"
+					, "extraEffects": [{
+						"trigger": "Natural 2-5"
+						, "effect": "The dire bat pops free from the target and can move as a free action."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Resist ranged damage 16+"
+						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.  (Shifty spinning bats are hard to hit unless they’re grounded or stuck.)"
+					}
+					, {
+						"name": "Skittish"
+						, "effect": "A dire bat engaged with a conscious enemy after attacking it will attempt to disengage and fly into the air if it has a move action remaining that turn."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Blood drinker"
+						, "effect": "When the dire bat drops an enemy to 0 hp or below, it continues to attack that enemy (until it dies) instead of attacking other enemies."
+					}
+					, {
+						"name": "Dire feature"
+						, "effect": "This bat is a dire animal and has a dire feature."
+					}
+				]
+			}
+			, {
+				"name": "Bat Cavalry"
+				, "source": "Bestiary"
+				, "page": 14
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "wrecker"
+				, "type": "beast & humanoid"
+				, "initiative": 6
+				, "vulnerability": "thunder"
+				, "AC": 19
+				, "PD": 17
+				, "MD": 14
+				, "HP": 70
+				, "attacks": [{
+						"name": "Fangs, wings, and sword"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "Damage and effect depends on the natural roll"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target takes 10 damage from a sword strike, and the bat cavalry pops free from the target and can move as a free action."
+							}
+							, {
+								"trigger": "Natural even miss against a target taking ongoing damage"
+								, "effect": "The target takes 6 damage from clawing wings."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The target takes 8 damage, and 5 ongoing damage from bat fangs."
+							}
+							, {
+								"trigger": "Natural 2-5"
+								, "effect": "In addition to any other effect, the bat cavalry pops free from the target, and as a free action, it can move to another nearby enemy and make a <em>fangs, wings, and sword</em> attack against it."
+							}
+						]
+					}
+					, {
+						"name": "Thrown javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 5
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Resist ranged damage 16+"
+						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.  (Shifty spinning bats are hard to hit unless they’re grounded or stuck.)"
+					}
+					, {
+						"name": "Skittish"
+						, "effect": "A bat cavalry engaged with a conscious enemy after attacking it will attempt to disengage and fly into the air if it has a move action remaining that turn."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Blood drinker"
+					, "effect": "When the bat cavalry drops an enemy to 0 hp or below, it continues to attack that enemy (until it dies) instead of attacking other enemies."
+				}]
+			}
+			, {
+				"name": "Fire Bat"
+				, "source": "13 True Ways"
+				, "page": 162
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 11
+				, "HP": 10
+				, "attacks": [{
+						"name": "Burning claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "2 damage, and 2 fire damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Burning contrail"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "5 fire damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Fiery flier"
+						, "effect": "An unengaged fire bat can move, and make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
+					}
+					, {
+						"name": "Blistering heat"
+						, "effect": "When an enemy engaged with the fire bat attacks it, that enemy takes 2 fire damage."
+					}
+					, {
+						"name": "Fire resistance 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Fire bats are agile fliers, especially when riding hot air currents.  They slow down a bit away from warmth."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Goblin Bat Mage"
+				, "source": "Bestiary"
+				, "page": 14
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "beast & humanoid"
+				, "initiative": 7
+				, "vulnerability": "thunder"
+				, "AC": 19
+				, "PD": 16
+				, "MD": 16
+				, "HP": 44
+				, "attacks": [{
+						"name": "Bloody fangs"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage, and 6 ongoing damage"
+						, "extraEffects": [{
+							"trigger": "Natural 2-5"
+							, "effect": "The goblin bat mage pops free from the target and can move as a free action."
+						}]
+					}
+					, {
+						"name": "Blood bolt spell"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "8 negative energy damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "If the target is staggered after taking the damage, it’s also hampered until the end of its next turn."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "One random nearby ally of the target takes 2d6 negative energy damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Resist ranged damage 16+"
+						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Skittish"
+						, "effect": "A goblin bat mage engaged with a conscious enemy after attacking it will attempt to disengage and fly into the air if it has a move action remaining that turn."
+					}
+					, {
+						"name": "Unwieldly flier"
+						, "effect": "When the goblin bat mage is staggered, it must roll an immediate save.  On a failure, it loses its ability to fly until the end of its next turn.  If flying near the ground, it lands immediately.  If flying far away from the ground it lands badly and takes 15 damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Swarm of Bats"
+				, "source": "Bestiary"
+				, "page": 13
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 1
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 5
+				, "vulnerability": "thunder"
+				, "AC": 16
+				, "PD": 16
+				, "MD": 11
+				, "HP": 30
+				, "attacks": [{
+					"name": "Swarming bits"
+					, "specialTrigger": false
+					, "type": "close"
 					, "modifier": 7
 					, "defence": "PD"
-					, "target": ""
-					, "damage": "5 fire damage"
-					, "extraEffects": []
-				}
-			]
-			, "abilities": [{
-					"name": "Fiery flier"
-					, "effect": "An unengaged fire bat can move, and make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
-				}
-				, {
-					"name": "Blistering heat"
-					, "effect": "When an enemy engaged with the fire bat attacks it, that enemy takes 2 fire damage."
-				}
-				, {
-					"name": "Fire resistance 16+"
-					, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
-				}
-				, {
-					"name": "Flight"
-					, "effect": "Fire bats are agile fliers, especially when riding hot air currents.  They slow down a bit away from warmth."
-				}
-			]
-			, "nastierSpecials": []
-		}]
+					, "target": "1d3 nearby enemies"
+					, "damage": "2 damage, and after the attack, the swarm of bats engages one of the targets"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The target is hampered until the end of its next turn.  It can end the effect by attacking the swarm, or if the swarm drops to 0 hp."
+					}]
+				}]
+				, "abilities": [{
+						"name": "No opportunities"
+						, "effect": "The swarm of bats can’t make opportunity attacks, and enemies can’t make opportunity attacks against it."
+					}
+					, {
+						"name": "Swarming resistance"
+						, "effect": "Each turn, the swarm of bats gains <em>resist damage 18+</em> to all damage from attacks by enemies that the swarm did NOT attack that turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Thunder bat"
+				, "source": "Bestiary"
+				, "page": 15
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "archer"
+				, "type": "beast"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 18
+				, "MD": 15
+				, "HP": 70
+				, "attacks": [{
+						"name": "Fangs"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit against a dazed enemy"
+							, "effect": "The target takes 20 ongoing thunder damage."
+						}]
+					}
+					, {
+						"name": "Thunder screech"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "1d3 nearby creatures in a group"
+						, "damage": "12 thunder damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is dazed (save ends)."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Resist ranged damage 16+"
+						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Resist thunder 18+"
+						, "effect": "When a thunder attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Unwieldly flier"
+						, "effect": "When the thunder bat is staggered, it must roll an immediate save.  On a failure, it loses its ability to fly until the end of its next turn.  If flying near the ground, it lands immediately.  If flying far away from the ground, it lands badly and takes 25 damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Wraith Bat"
+				, "source": "Bestiary"
+				, "page": 15
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 23
+				, "MD": 20
+				, "HP": 36
+				, "attacks": [{
+						"name": "Ghostly fangs"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "25 negative energy damage, and the target takes +1d8 negative energy damage for each relationship point it has with the Lich King"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Spiraling assault"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "22 negative energy damage, and after the attack the wraith bat teleports to and engages with one target it hit"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "Regardless of the number of wraith bats in the battle, only one wraith bat can use this attack each round."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Ghostly"
+					, "effect": "This creature has <em>resist damage 16+</em> to all damage except force damage, which damages it normally.  A wraith bat can move through solid objects bit it can’t end its movement inside them."
+				}]
+				, "nastierSpecials": []
+			}
+		]
 	}
 	, {
 		"name": "Bulette"

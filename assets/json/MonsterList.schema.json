@@ -167,6 +167,7 @@
 							, "enum": [
 								"aberration"
 								, "beast"
+								, "beast & humanoid"
 								, "construct"
 								, "demon"
 								, "devil"
