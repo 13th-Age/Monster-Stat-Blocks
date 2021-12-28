@@ -8048,6 +8048,209 @@
 		]
 	}
 	, {
+		"name": "Elder Beast"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Hagunemnon"
+				, "source": "Bestiary"
+				, "page": 69
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 13
+				, "role": "wrecker"
+				, "type": "aberration"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 29
+				, "PD": 23
+				, "MD": 27
+				, "HP": 864
+				, "attacks": [{
+					"name": "Spontaneous metamorphosing limbs"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 18
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "110 damage, and the hagunemnon can make a <em>spontaneous metamorphosing limbs</em> attack against a different target as a free action"
+					, "extraEffects": [{
+							"trigger": "Natural 19+"
+							, "effect": "The target starts making last gasp saves.  On the fourth failure, it becomes a shapeless ooze."
+						}
+						, {
+							"trigger": "Diminishing limbs"
+							, "effect": "With each subsequent hit after the first, <em>spontaneous metamorphosing limbs</em> deals 20 less damage.  The hagunemnon also doesn’t gain any extra attacks when it makes a basic attack."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Dimension hop"
+						, "effect": "As a move action when the escalation die is odd, the hagunemnon can teleport nearby or far away to a location it can see."
+					}
+					, {
+						"name": "Resist psychic 18+"
+						, "effect": "When a psychic attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Shapechange"
+						, "effect": "As a standard action, the hagunemnon can change its form to that of any large or medium creature, or back to its own shape.  Seeing through the shapechange requires a DC 25 skill check."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Madness aura"
+					, "effect": "When a creature is engaged with the hagunemnon at the start of its turn, it takes 4d10 psychich damage.  If it takes 31 or more damage this way during a single turn, it’s also confused until the start of its next turn."
+				}]
+			}
+			, {
+				"name": "Umluppuk"
+				, "source": "Bestiary"
+				, "page": 69
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "spoiler"
+				, "type": "aberration"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 21
+				, "MD": 20
+				, "HP": 310
+				, "attacks": [{
+						"name": "Pods of mouths and eyes"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "4 attacks"
+						, "damage": "20 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is stuck (easy save ends, 6+)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "10 damage."
+							}
+						]
+					}
+					, {
+						"name": "Chorus of madness"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "up to 3 random nearby creatures"
+						, "damage": "10 ongoing psychic damage, and the target is confused (save ends both)"
+						, "extraEffects": [{
+							"trigger": "Quick use"
+							, "effect": "This ability only requires a quick action (once per round) instead of a standard action when the umluppuk starts its turn unengaged (or without an enemy consumed if you are using the nastier special!)."
+						}]
+					}
+					, {
+						"name": "Consume"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 18
+						, "defence": "PD"
+						, "target": "one stuck enemy"
+						, "damage": "50 damage, and the target takes 10 ongoing acid damage and is absorbed into the umluppuk (hard save ends both, 16+); while inside the umluppuk, the target is vulnerable to the umluppuk’s <em>pods of mouths and eyes</em> attacks (<em>attacks vs. it have crit range expanded by 2</em>), and it’s stuck."
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Resist psychic 18+"
+					, "effect": "When a psychic attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+				}]
+				, "nastierSpecials": [{
+					"name": "Consume"
+					, "effect": "Once per round during its turn, the umluppuk can make a <em>consume</em> attack against a stuck enemy as a quick action.  The umluppuk can only have one target consumed at a time."
+				}]
+			}
+			, {
+				"name": "Warped Beasst"
+				, "source": "Bestiary"
+				, "page": 70
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "aberration"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 17
+				, "MD": 15
+				, "HP": 75
+				, "attacks": [{
+						"name": "Tentacle maw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 19
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "16 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 18+"
+								, "effect": "The target is hampered until the end of its next turn."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "The warped beast can make a <em>psychic blast</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Psychic blast"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "8 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "The target is confused until the end of its next turn."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "One madness feature"
+						, "effect": "At the start of each of the warped beast’s turns, roll a d6.  The warped beast gains the corresponding ability until the start of its next turn."
+					}
+					, {
+						"name": "1. Amorphous oozing form"
+						, "effect": "The beast has <em>resist damage 11+</em> to all damage."
+					}
+					, {
+						"name": "2. Dimensional slide"
+						, "effect": "Once during its turn, the warped beast can teleport anywhere nearby it can see as a move action.  Each enemy engaged with it when it teleports is confused until the end of its next turn."
+					}
+					, {
+						"name": "3. Fear aura"
+						, "effect": "While engaged with the warped beast, enemies that have 24 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					}
+					, {
+						"name": "4. Gibbering mouths"
+						, "effect": "When an enemy ends its turn engaged with the warped beast, it’s confused until the end of its next turn."
+					}
+					, {
+						"name": "5. Many spontaneous limbs"
+						, "effect": "When the warped beast makes a <em>tentacle maw</em> attack during its turn, roll a d4.  That many additioinal limbs or tentacles spontaneously erupt from the creature and make an additional basic attack that turn (special abilities/effects don’t trigger on those extra attacks).  Each of those attacks only deals half damage."
+					}
+					, {
+						"name": "6. Warping touch"
+						, "effect": "When the warped beast hits a creature with a <em>tentacle maw</em> attack, the target also takes 5 ongoing psychic damage and a -2 penalty to saves (save ends both)."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Warped mutant"
+					, "effect": "Roll two madness features instead of one each round (reroll similar results)."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Elemental"
 		, "groupTraits": []
 		, "monsters": [{
