@@ -3162,6 +3162,54 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Corpse Dybbuk"
+				, "source": "Bestiary"
+				, "page": 64
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "troop"
+				, "type": "demon"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 16
+				, "MD": 20
+				, "HP": 180
+				, "attacks": [{
+					"name": "Supernatural strength"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "35 damage"
+					, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is vulnerable to the dybbuk’s attacks until the end of the battle."
+						}
+						, {
+							"trigger": "Natural 18+"
+							, "effect": "The dybbuk gains a <em>fear</em> aura against the target (save ends) as the dybbuk warps its corpse-flesh into a horrifying form.  While engaged with the dybbuk, if the scared target has 30 hp or fewer, it’s dazed (-4 attack) and does not add the escalation die to its attacks."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "3d6 damage."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Unholy aversion"
+						, "effect": "When an enemy makes a spell attack or magic weapon attack against the corpse dybbuk that deals holy damage and rolls a natural 18+, the dybbuk leaves its host body.  The body drops in place and the corpse dybbuk becomes an undamaged ethereal dybbuk (see that entry).  If the escalation die is 3+, reset the escalation die to 2."
+					}
+					, {
+						"name": "Warp another’s flesh"
+						, "effect": "Once per battle as a free action, the corpse dybbuk can grant a nearby ally a +2 bonus to attack and damage until the end of the battle.  The warped ally takes damage equal to its level each time it uses a standard action to attack.  If this ability is expended, the dybbuk regains it when the escalation die reaches 4+."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Despoiler"
 				, "source": "13th Age"
 				, "page": 210
@@ -3316,6 +3364,53 @@
 					"name": "Fear"
 					, "effect": "While engaged with this creature, enemies that have 15 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
 				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ethereal Dybbuk"
+				, "source": "Bestiary"
+				, "page": 65
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "wrecker"
+				, "type": "demon"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 24
+				, "MD": 20
+				, "HP": 206
+				, "attacks": [{
+					"name": "Soul-suck"
+					, "specialTrigger": false
+					, "type": "ranged"
+					, "modifier": 12
+					, "defence": "MD"
+					, "target": "3 attacks, against nearby or far away enemies"
+					, "damage": "38 negative energy damage"
+					, "extraEffects": [{
+						"trigger": "Limited use"
+						, "effect": "If the dybbuk hits the same target with its first two <em>soul-suck</em> attacks, it must make the third attack against a different target if it can (or loses the attack)."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Fading"
+						, "effect": "When the escalation die is 2+, the dybbuk’s <em>soul-suck</em> attack only deals 19 damage, and when it’s 4+, <em>soul-suck</em> only deals 10 damage.  When the escalation die reaches 6, the dybbuk fades away at the end of the round.  A dybbuk that fades away undefeated is not gone forever and may return in a later adventure."
+					}
+					, {
+						"name": "Fear"
+						, "effect": "While engaged with this creature, enemies that have 36 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "The dybbuk hovers eerily, roughly 6 feet off the ground."
+					}
+					, {
+						"name": "Otherworldly"
+						, "effect": "When a melee attack that doesn’t deal holy damage targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
 				, "nastierSpecials": []
 			}
 			, {
@@ -3704,6 +3799,113 @@
 					"name": "Hooked mooks"
 					, "effect": "Once per battle, if the nalfeshnee is staggered, it can gat in 2d4 hooked demons as a quick action.  Roll initiative for the hooked demons; they do not appear in the battle and take their turns until their next initiative count comes up."
 				}]
+			}
+			, {
+				"name": "Parasitic Dybbuk"
+				, "source": "Bestiary"
+				, "page": 64
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "spoiler"
+				, "type": "demon"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 16
+				, "MD": 20
+				, "HP": 180
+				, "attacks": [{
+						"name": "Loathsome vomity smear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "40 poison damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "3d10 poison damage."
+						}]
+					}
+					, {
+						"name": "Unearthly glare"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "one nearby enemy"
+						, "damage": "30 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "One special dybbuk ability triggers as a free action (see below)."
+						}]
+					}
+					, {
+						"name": "Visage of innocence"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": "one nearby enemy"
+						, "damage": "The target can’t attack the dybbuk until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Horrific visage"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "The target is weakened (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Puppet strings"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "The target is confused (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Shapechange"
+						, "effect": "As a standard action, the dybbuk can change its host’s form to that of another humanoid, or back to its own shape.  Seeing through the shapechange requires a DC 25 skill check.  When the dybbuk is driven out of the host body, the body reverts to its original form."
+					}
+					, {
+						"name": "Unholy aversion"
+						, "effect": "When an enemy makes a spell attack or magic weapon attack against the parasitic dybbuk that deals holy damage and rolls a natural 18+, the dybbuk leaves the host body.  The body drops in place (unconscious) and the parasitic dybbuk becomes an undamaged ethereal dybbuk (see that entry).  If the escalation die is 3+, reset the escalation die to 2."
+					}
+					, {
+						"name": "Wall-crawler"
+						, "effect": "A dybbuk can climb on ceilings and walls as easily as it moves on the ground."
+					}
+					, {
+						"name": "Special Dybbuk Abilities"
+						, "effect": "Choose ONE of <em>visage of innocence</em>, <em>horrific visage</em>, or <em>puppet strings</em>."
+					}
+					, {
+						"name": "Scratching nails"
+						, "effect": "When the target is engaged with the dybbuk at the start of its turn, it takes 20 damage."
+					}
+					, {
+						"name": "Warped flesh"
+						, "effect": "The dybbuk heals 30 hp."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Experienced possessor"
+						, "effect": "When the dybbuk rolls a natural odd hit or miss with <em>unearthly glare</em>, one special dybbuk ability triggers."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "The dybbuk can hover 6 feet off the ground and make boneless flea-like leaps."
+					}
+				]
 			}
 			, {
 				"name": "Vrock (Vulture Demon)"
