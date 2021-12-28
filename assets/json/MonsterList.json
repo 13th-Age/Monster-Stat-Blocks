@@ -7322,6 +7322,530 @@
 		}]
 	}
 	, {
+		"name": "Drow"
+		, "groupTraits": [{
+				"name": "Nastier Specials"
+				, "traits": [{
+						"name": "Nastier special"
+						, "description": "Drow may optionally include one of these abilities as nastier specials: <em>Drow Cruelty</em> or <em>Poisons and Potions</em>."
+					}
+					, {
+						"name": "Drow Cruelty"
+						, "description": "Choose an ability for all non-mook drow in a battle to have."
+					}
+					, {
+						"name": "Potions and Potions"
+						, "description": "Drinking a potion, applying a poison, or using a substance requires only a quick action for a drow with one of these options.  Characters who acquire any of these drow items must use a standard action to drink/apply them."
+					}
+				]
+			}
+			, {
+				"name": "Drow Cruelty"
+				, "traits": [{
+						"name": "Poisoner"
+						, "description": "When the drow scores a critical hit, it can forgo damage to force the target to start making last gasp saves.  On the fourth failure, the target falls unconscious (and can’t be woken normally) for 2d4 minutes."
+					}
+					, {
+						"name": "Take advantage of weakness"
+						, "description": "Whenever an enemy nearby a drow rolls a save, it takes its level in damage."
+					}
+					, {
+						"name": "Umbral caul"
+						, "description": "As long as at least one drow uses a standard action each round to maintain the supernatural darkness, each non-drow creature in the battle becomes dazed (save ends) whenever it rolls a natural 1-5 with an attack roll."
+					}
+					, {
+						"name": "Venomous"
+						, "description": "The first time each battle a drow hits with a weapon attack, the target also takes 5 ongoing poison damage."
+					}
+				]
+			}
+			, {
+				"name": "Poisons and Potions"
+				, "traits": [{
+						"name": "Draft of Eschaton (potion)"
+						, "description": "When drunk it immediately purges the body of all poisons and toxins and ends any ongoing conditions.  All the drinker’s saves (including last gasp saves and death saves) automatically succeed for the rest of the battle or for five minutes.  Immediately after the battle, the drinker must make a DC 30 Constitution check or be completely debilitated and unable to travel far or to fight for a day."
+					}
+					, {
+						"name": "Dragon Apples"
+						, "description": "Small ceramic spheres that explode.  Make a basic ranged attack against a nearby enemy (or level + 5 for drow); on a hit, the target takes 10 ongoing fire damage."
+					}
+					, {
+						"name": "Midnight Tincture"
+						, "description": "When this glass vial is broken, the nearby area is shrouded in clinging darkness.  The darkless lasts 3 rounds.  Each creature in the darkness except drow takes a -4 attack penalty.  The tincture can be attacked to an arrow or bolt."
+					}
+					, {
+						"name": "Potion of Spider Climbing"
+						, "description": "For one battle or five minutes the drinker can climb on ceilings and walls as easily as it moves on the ground."
+					}
+					, {
+						"name": "Spider Venom"
+						, "description": "A creature hit by a melee weapon coated in the venom takes 5 ongoing poison damage when the attack roll is a natural 16+."
+					}
+					, {
+						"name": "Web Dust"
+						, "description": "Made from dessicated spiders, this dust can hold a door shut or stick an object to a wall for five minutes.  Champion-tier creatures can make a DC 20 skill check to rip through something held by <em>web dust</em> before it fully dissolves, and epic-tier creatures can rip through such objects in a round.  Further applications increase the effectiveness: three applications last for fifteen minutes, requires 3 successful checks, and takes 3 rounds for epic-tier characters to get through."
+					}
+				]
+			}
+		]
+		, "monsters": [{
+				"name": "Drow Cavalry"
+				, "source": "Bestiary"
+				, "page": 59
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 23
+				, "MD": 18
+				, "HP": 270
+				, "attacks": [{
+						"name": "Glass-tipped lance"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "75 (90/25) daage, and the target pops free from the cavalry and is weakened (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, during a surprise round or the first round of battle."
+						}]
+					}
+					, {
+						"name": "Spider saber"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "75 (90/25) damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Expert spider-rider"
+						, "effect": "While mounted, the drow cavalry deals +15 damage with its attacks, hit or miss, against unmounted enemies."
+					}
+					, {
+						"name": "Mounted combatant"
+						, "effect": "Reduce the drow cavalry’s attack damage by 50 when it’s not riding a spider."
+					}
+					, {
+						"name": "Spider mount"
+						, "effect": "Whenever the drow cavalry rolls a natural 1-10 on an attack roll, its spider mount acts independently, choosing one of the following options<br>&emsp;<strong>Bite</strong> - The spide makes a <em>bite</em> attack.<br>&emsp;<strong>Jump & Scuttle</strong> - The spider and its rider pop free from all enemies and can move somewhere nearby.<br>&emsp;<strong>Web</strong> - The spider makes a <em>web</em> attack."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Drow Darkbolt"
+				, "source": "Bestiary"
+				, "page": 59
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "archer"
+				, "type": "humanoid"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 21
+				, "MD": 17
+				, "HP": 100
+				, "attacks": [{
+						"name": "Dagger and spidersilk link"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "one nearby enemy"
+						, "damage": "22 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "8 damage."
+						}]
+					}
+					, {
+						"name": "Exsanguinating barbed arrows"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "one nearby or far away enemy"
+						, "damage": "20 damage, and 6 ongoing damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "As a free action, the darkbolt can make a second <em>barbed arrows</em> attack against a different enemy with a -2 attack penalty.  If it gets another natural even hit, it can make a third (and final) <em>barbed arrows</em> attack against a different enemy with a -4 attack penalty as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Darkbold vanish!"
+						, "effect": "If unengaged, when the darkbolt attacks and rolls a natural even miss, it can step into a shadow-dimension that turn as a move action.  While in the shadows, it can’t be seen or targeted with attacks, and it reappears anywhere nearby at the start of its next turn."
+					}
+					, {
+						"name": "Wall-crawler"
+						, "effect": "A darkbolt can climb on ceilings and walls as easily as it moves on the ground thanks to its rope-dagger and spiked bracers."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Well equipped"
+					, "effect": "The drow has a potion or poison that it can use as a quick action twice this battle (see Drow Abilities)."
+				}]
+			}
+			, {
+				"name": "Drow Spider-Mage"
+				, "source": "Bestiary"
+				, "page": 58
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 13
+				, "MD": 17
+				, "HP": 40
+				, "attacks": [{
+						"name": "Sharpened wand"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Shadowfire"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "8 damage, and the target is weakened (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "Once the spider-mage hits with <em>shadowfire</em>, she can’t use it again until the target saves against it."
+						}]
+					}
+					, {
+						"name": "Malediction of webs"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "up to 2 nearby enemies in a group"
+						, "damage": "The target is stuck (save ends), and takes 5 damage each time it fails the save"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Dark orison"
+						, "effect": "Each time the spider-mage misses with an attack, the crit range of attacks by drow and spiders in the battle expands by 1."
+					}
+					, {
+						"name": "Spider speaker"
+						, "effect": "The first time each battle an enemy hits the spider-mage with a melee attack, that attacker takes 8 ongoing poison damage from her familiar."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Drow Spider-Sorceress"
+				, "source": "Bestiary"
+				, "page": 59
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 16
+				, "MD": 20
+				, "HP": 84
+				, "attacks": [{
+						"name": "Sharpened wand"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Darkfire"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "20 damage, and the target is weakened (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "Once the sorceress hits with <em>darkfire</em>, she can’t use it again until the target saves."
+						}]
+					}
+					, {
+						"name": "Greater malediction of webs"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "up to 2 nearby enemies in a group"
+						, "damage": "10 damage, and the target is stuck (save ends) and takes 10 damage each time it fails the save"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Dark orison"
+						, "effect": "Each time the spider-sorceress misses with an attack, the crit range of attacks by drow and spiders in the battle expands by 1."
+					}
+					, {
+						"name": "Spider speaker"
+						, "effect": "The first time each battle an enemy hits the spider-sorceress with a melee attack, that attacker takes 16 ongoing poison damage from her familiar."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Arcane arachnids"
+					, "effect": "The spider-sorceress has a true magic item (probably an implement) and uses it to her benefit (adjust stats accordingly)."
+				}]
+			}
+			, {
+				"name": "Drow Soldier"
+				, "source": "Bestiary"
+				, "page": 58
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 19
+				, "MD": 14
+				, "HP": 18
+				, "attacks": [{
+						"name": "Paired swords"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Crossbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "one nearby enemy or a far away enemy at -2 atk"
+						, "damage": "7 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "With my dying breath I curse at thee"
+					, "effect": "When the drow soldier drops to 0 hp, one enemy engaged with it takes 2 poison damage before the drow soldier dies."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Drow Sword Maiden"
+				, "source": "Bestiary"
+				, "page": 58
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 15
+				, "HP": 75
+				, "attacks": [{
+						"name": "Cruel cutlass"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Dagger dance"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "one nearby enemy, or a far away enemy at -2 atk"
+						, "damage": "14 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "Each other enemy engaged with the sword maiden takes 10 damage."
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+						"name": "Effortless grace"
+						, "effect": "Once per round when an attack misses the sword maiden, she can move or make a <em>cruel cutlass</em> attack as a free action."
+					}
+					, {
+						"name": "Arcane warrior"
+						, "effect": "The sword maiden has a true magic item (probably a weapon) and uses it to her benefit (adjust stats accordingly)."
+					}
+				]
+			}
+			, {
+				"name": "Lokkris"
+				, "source": "Bestiary"
+				, "page": 61
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 21
+				, "MD": 14
+				, "HP": 23
+				, "attacks": [{
+					"name": "Stingers on each leg"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "8 damage and 5 ongoing poison damage"
+					, "extraEffects": [{
+						"trigger": "Lays eggs in your eyes!"
+						, "effect": "Each time the lokkris hits with the attack, the crit range for all lokkris against that target expands by 1 until the end of the battle."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "Lokkris are quick darting fliers that move with an angry buzzing sound."
+					}
+					, {
+						"name": "Wall-crawler"
+						, "effect": "A lokkris can climb on ceilings and walls as easily as it moves on the ground."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Spider Mount"
+				, "source": "Bestiary"
+				, "page": 60
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 16
+				, "MD": 20
+				, "HP": 90
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage, and 10 ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Web"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "up to 2 nearby enemies in a group"
+						, "damage": "The target is stuck (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Wall-crawler"
+						, "effect": "A spider mount can climb on ceilings and walls as easily as it moves on the ground, and so can its rider."
+					}
+					, {
+						"name": "Uncontrolled"
+						, "effect": "A riderless spider mount will eventually run away.  At the start of the spider’s turn roll a d4; if you roll less than the escalation die, the mount flees."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Weaver Swarm"
+				, "source": "Bestiary"
+				, "page": 61
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 13
+				, "HP": 10
+				, "attacks": [{
+					"name": "A thousand needle wounds"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "5 damage"
+					, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is hampered until the end of its next turn."
+						}
+						, {
+							"trigger": "Natural 18+"
+							, "effect": "As above, and the target is also stuck until the end of its next turn."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Clinging"
+						, "effect": "Enemies take a -5 penalty to disengage checks against the swarm."
+					}
+					, {
+						"name": "Wall-crawer"
+						, "effect": "The swarm can climb on ceilings and walls as easily as it moves on the ground."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Elemental"
 		, "groupTraits": []
 		, "monsters": [{
