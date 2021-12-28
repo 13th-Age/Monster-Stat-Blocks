@@ -2528,6 +2528,252 @@
 		]
 	}
 	, {
+		"name": "Couatl"
+		, "groupTraits": [{
+			"name": "Icon-centred Abilities"
+			, "traits": [{
+					"name": "Archmage"
+					, "description": ""
+				}
+				, {
+					"name": "8<sup>th</sup> level"
+					, "description": "<br><strong>C: Striking comets +13 vs. PD (each nearby creature)</strong> - 40 damage<br>&emsp;<em>Natural even miss</em>: The target is dazed (save ends).<br>&emsp;<em>Natural odd miss</em>: 20 damage.<br>&emsp;<em>Limited use</em>: 1/battle, when the escalation die is 2+."
+				}
+				, {
+					"name": "11<sup>th</sup> level"
+					, "description": "<br><strong>C: Comet strike +17 vs. PD (each nearby creature)</strong> - 70 damage<br>&emsp;<em>Natural even miss</em>: The target is weakened (save ends).<br>&emsp;<em>Natural odd miss</em>: 35 damage.<br>&emsp;<em>Limited use</em>: 1/battle, when the escalation die is 2+."
+				}
+				, {
+					"name": "Crusader"
+					, "description": "The couatl gains a +1 bonus to AC and PD.  In addition, all the couatl’s melee attacks deal half damage when they miss."
+				}
+				, {
+					"name": "Diabolist"
+					, "description": "Roll a d6 and a d8 on the Demon Ability table.  If you get the same result, reroll the d8 until you have two <em>different</em> demonic abilities for the couatl."
+				}
+				, {
+					"name": "Dwarf King"
+					, "description": "Secretly roll a d6 at the start of each battle.  If the roll is odd, the PCs can’t use any of their magic items’ powers when the escalation die is odd this battle.  If the roll is even, the PCs can’t use their magic items’ powers when the escalation die is even this battle.  Defauly chakra bonuses still function, but powers don’t.  And for the fun of it, once they’ve been powered off for a turn, all the PCs’ magic items will be freaking out and creating roleplaying havoc by forcing their quirks to the forefront for the rest of the battle."
+				}
+				, {
+					"name": "Elf Queen"
+					, "description": "At the start of each battle, the couatl gains 1d4 powers of its choice from this list:<br><ul><li><em>Cruel</em>: Once per battle, deal ongoing damage to a target you hit with a natural even attack roll as a free action.  The ongoing damage equals 5 times your level.  As usual, a normal save (11+) ends the damage.  A critical hit doesn’t double this ongoing damage.</li><li><em>Highblood Teleport</em>: Once per battle as a move action, place yourself in a nearby location you can see.</li><li><em>Elven Grace</em>: At the start of each of your turns, roll a die to see if you get an extra standard action.  If your roll is equal to or lower than the escalation die, you get an extra standard action that turn.  At the start of the battle, you roll a d6.  Each time you successfully gain an extra action, the size of the die you roll increases by one step on the following progression: (d4), d6, d8, d10, d12, d20.  If you get an extra action after rolling a d20, you can’t get any more extra actions that battle.</li><li><em>Surprising</em>: Once per batte, subtract one from the natural result of one of your own d20 rolls.</li></ul>"
+				}
+				, {
+					"name": "Emperor"
+					, "description": "The couatl gains a +4 bonus to MD.  It also gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the icon(s) associated with the Lich King or Orc Lord."
+				}
+				, {
+					"name": "Great Gold Wyrm"
+					, "description": "The couatl gains a +1 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Diabolist or the Three.  In addition, the couatl can use the following attack once per battle:"
+				}
+				, {
+					"name": "8<sup>th</sup> level"
+					, "description": "<br><strong>C: Golden dragon breath +13 vs. PD (2d4 nearby enemies)</strong> - 50 fire damage<br>&emsp;<em>Miss</em>: Half damage."
+				}
+				, {
+					"name": "11<sup>th</sup> level"
+					, "description": "<br><strong>C: Golden dragon breath +17 vs. PD (2d4 nearby enemies)</strong> - 90 fire damage<br>&emsp;<em>Miss</em>: Half damage."
+				}
+				, {
+					"name": "High Druid"
+					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with Archmage or Emperor.  In addition, the couatl regenerates 10% of its maximum hit points at the start of its turn when the escalation die is even and it has taken damage."
+				}
+				, {
+					"name": "Lich King"
+					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Emperor.  In addtion, all PCs take a -4 penalty to death saves this battle."
+				}
+				, {
+					"name": "Orc Lord"
+					, "description": "The couatl gains a +4 bonus to PD.  It also gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Dwarf King or Elf Queen."
+				}
+				, {
+					"name": "Priestess"
+					, "description": ""
+				}
+				, {
+					"name": "8<sup>th</sup> level"
+					, "description": "<br><strong>C: Visions of a higher plane +13 vs. MD (1d3 nearby enemies)</strong> - 30 psychic damage<br>&emsp;<em>Natural even hit</em>: The target is confused (save ends).<br>&emsp;<em>Natural odd hit</em>: The target treats the escalation die as if it was 0 (not in effect) for its attacks and effects (save ends)."
+				}
+				, {
+					"name": "11<sup>th</sup> level"
+					, "description": "<br><strong>C: Visions of a higher plane +17 vs. MD (1d4 nearby enemies)</strong> - 50 psychic damage<br>&emsp;<em>Natural even hit</em>: The target is confused (save ends).<br>&emsp;<em>Natural odd hit</em>: The target treats the escalation die as if it was 0 (not in effect) for its attacks and effects (save ends)."
+				}
+				, {
+					"name": "The Three"
+					, "description": "<em>Intermittent dragon breath</em>: A couatl can use <em>dragon breath</em> 1d3 times per battle, but never two turns in a row.  The couatl’s personal relationship with the Three determines whether the damage is acid, fire, or lightning."
+				}
+				, {
+					"name": "8<sup>th</sup> level"
+					, "description": "<br><strong>C: Dragon breath +13 vs. PD (2d3 nearby enemies)</strong> - 36 [energy] damage<br>&emsp;<em>Miss</em>: Half damage."
+				}
+				, {
+					"name": "11<sup>th</sup> level"
+					, "description": "<br><strong>C: Dragon breath +17 vs. PD (2d3 nearby enemies)</strong> - 70 [energy] damage<br>&emsp;<em>Miss</em>: Half damage."
+				}
+			]
+		}]
+		, "monsters": [{
+				"name": "Elder Couatl"
+				, "source": "Bestiary"
+				, "page": 53
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 11
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 24
+				, "MD": 24
+				, "HP": 600
+				, "attacks": [{
+						"name": "Rippling scales"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "each enemy engaged with it"
+						, "damage": "25 damage, and the couatl must pop free from the target"
+						, "extraEffects": [{
+							"trigger": "Quick use"
+							, "effect": "This attack only requires a quick action (once per round) to use."
+						}]
+					}
+					, {
+						"name": "Serpert strike"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": "one dazed, confused, staggered, or stunned enemy"
+						, "damage": "110 damage, and 40 ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Forked devastation"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "90 damage of the following type (couatl’s choice): fire, holy, or lightning"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The couatl can make a <em>forked devastation</em> attack against a different enemy as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Cyclic salvation escalator"
+						, "effect": "When the escalation die is even, the couatl adds the escalation die to its attack rolls and saves."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Couatls fly and hover so smoothly on their multi-coloured wings that other fliers get jealous."
+					}
+					, {
+						"name": "One or two icon-centric abilities"
+						, "effect": "Choose each appropriate ability from the couatl’s Icon-centered Abilities list."
+					}
+					, {
+						"name": "Resist holy and poison 16+"
+						, "effect": "When a holy or poison attack targets this creature, the attacker must roll a natural 16+ on the attack roll or only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Ever-rippling"
+						, "effect": "The couatl can use more than one <em>rippling scales</em> attack during its turn."
+					}
+					, {
+						"name": "Flee"
+						, "effect": "Once per campaign, the couatl can take a “campaign loss” similar to the PC-orientated flee special action to escape from certain death, along with its allies."
+					}
+				]
+			}
+			, {
+				"name": "Couatl"
+				, "source": "Bestiary"
+				, "page": 52
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 21
+				, "MD": 21
+				, "HP": 300
+				, "attacks": [{
+						"name": "Rippling scales"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "each enemy engaged with it"
+						, "damage": "10 damage, and the couatl must pop free from the target"
+						, "extraEffects": [{
+							"trigger": "Quick use"
+							, "effect": "This attack only requires a quick action (once per round) to use."
+						}]
+					}
+					, {
+						"name": "Serpent strike"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "one dazed, confused, staggered, or stunned enemy"
+						, "damage": "60 damage, and 20 ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Forked devastation"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "50 damage of the following type (couatl’s choice): fire, holy, or lightning"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The couatl can make a <em>forked devastation</em> attack against a different enemy as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Resist holy and poison 16+"
+						, "effect": "When a holy or poison attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Couatls fly and hover so smoothly on their multi-coloured wings that other fliers get jealous."
+					}
+					, {
+						"name": "Cyclic escalator"
+						, "effect": "When the escalation die is even, the couatl adds the escalation die to its attack rolls."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Ever-rippling"
+						, "effect": "The couatl can use more than one <em>rippling scales</em> attack during its turn."
+					}
+					, {
+						"name": "Flee"
+						, "effect": "Once per campaign, the couatl can take a “campaign loss” similar to the PC-orientated flee special action to escape from certain death, along with its allies."
+					}
+					, {
+						"name": "One or two icon-centric abilities"
+						, "effect": "Choose each appropriate ability from the couatl’s Icon-centered Abilities list."
+					}
+				]
+			}
+		]
+	}
+	, {
 		"name": "Demon"
 		, "groupTraits": [{
 			"name": "Demon Ablities (d6 or d8)"
