@@ -10040,6 +10040,73 @@
 		"name": "Giant"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "Bergship Raider (Frost)"
+				, "source": "Bestiary"
+				, "page": 77
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "spoiler"
+				, "type": "giant"
+				, "initiative": 10
+				, "vulnerability": "fire"
+				, "AC": 21
+				, "PD": 21
+				, "MD": 18
+				, "HP": 270
+				, "attacks": [{
+						"name": "Whirling ice hook"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 damage, and the target takes a -5 penalty to disengage checks until the end of its next turn"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "15 damage to each enemy engaged with the giant."
+						}]
+					}
+					, {
+						"name": "Frost chain"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "one nearby enemy or far away enemy at -2 atk"
+						, "damage": "40 damage, and the target is pulled next to the giant, who engages it"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Knockdown"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "one enemy smaller than it"
+						, "damage": "20 damage, and the target can’t disengage until the end of its next turn"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Ancient cold"
+						, "effect": "While battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round."
+					}
+					, {
+						"name": "Resist cold 16+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Winter’s bite"
+						, "effect": "When the escalation die is odd, each enemy engaged with the raider takes 35 cold damage at the start of its turn."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Overbearing"
+					, "effect": "Twice per battle, the raider can make a <em>knockdown</em> attack as a quick action (once per round)."
+				}]
+			}
+			, {
 				"name": "Cloud Giant Magician"
 				, "source": "13 True Ways"
 				, "page": 165
@@ -10391,6 +10458,49 @@
 				}]
 			}
 			, {
+				"name": "Frost Giant Adventurer"
+				, "source": "Bestiary"
+				, "page": 78
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "spoiler"
+				, "type": "giant"
+				, "initiative": 13
+				, "vulnerability": "fire"
+				, "AC": 24
+				, "PD": 23
+				, "MD": 18
+				, "HP": 280
+				, "attacks": [{
+					"name": "Overlarge club"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 13
+					, "defence": "AC"
+					, "target": "one nearby enemy or one enemy engaged with the giant"
+					, "damage": "75 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The target loses its next move action, and if it’s engaged with the giant, it pops free."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Ancient cold"
+						, "effect": "While battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round."
+					}
+					, {
+						"name": "Blood of the niefelheim"
+						, "effect": "When an enemy the frost giant adventurer is engaged with scores a critical hit against the giant, that enemy is hampered (hard save ends, 16+)."
+					}
+					, {
+						"name": "Resist cold 16+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Hill Giant"
 				, "source": "13th Age"
 				, "page": 225
@@ -10434,6 +10544,178 @@
 					"name": "Big bully"
 					, "effect": "The giant deals double damage with its attacks against staggered targets."
 				}]
+			}
+			, {
+				"name": "Ice Sorceress (Frost)"
+				, "source": "Bestiary"
+				, "page": 77
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "caster"
+				, "type": "giant"
+				, "initiative": 10
+				, "vulnerability": "fire"
+				, "AC": 23
+				, "PD": 22
+				, "MD": 17
+				, "HP": 190
+				, "attacks": [{
+						"name": "Icicle staff"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage, 20 cold damage, and the sorceress can make an <em>icy delusions</em> attack against the target as a free action"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Winter wind"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "55 cold damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The sorceress can make an <em>icy delusions</em> attack against the target as a free action."
+						}]
+					}
+					, {
+						"name": "Icy delusions"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "one enemy"
+						, "damage": "At the start of each round, the target loses 2d6 points from their initiative count as they slowly freeze from the inside out (save ends)"
+						, "extraEffects": [{
+							"trigger": "Frozen flesh"
+							, "effect": "When a creature is reduced to 0 initiative or lower from <em>icy delusions</em>, it becomes delusional and frozen and must choose one condition that will affect it: confused (hard save ends, 16+); OR stunned (save ends).  After saving, the creature rerolls its initiative."
+						}]
+					}
+					, {
+						"name": "Ice wall"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "one moving enemy or ranged attacker"
+						, "damage": "The target stops its movement or loses its ranged attack that turn, and the wall of ice remains until the end of the battle (GM’s choice on its size, but it shouldn’t be too large or thick; normal DC to break through it)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Ice summoner"
+						, "effect": "Once per round as a free action, the giant can make an <em>ice wall</em> attack to conjure forth a wall of ice that stops one enemy’s movement or ranged attack.  The giant can’t use this ability to target creatures making fire attacks or wielding weapons that deal fire damage."
+					}
+					, {
+						"name": "Ancient cold"
+						, "effect": "While battling one or more frost giants, there is only a 50% chance that the escalation die increases at the start of the round."
+					}
+					, {
+						"name": "Resist cold 16+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Ice armour"
+					, "effect": "The ice sorceress has <em>resist damage 16+</em> unless the attack deals fire damage."
+				}]
+			}
+			, {
+				"name": "Ice Zombie"
+				, "source": "Bestiary"
+				, "page": 79
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 5
+				, "vulnerability": "fire, holy"
+				, "AC": 22
+				, "PD": 22
+				, "MD": 13
+				, "HP": 20
+				, "attacks": [{
+						"name": "Chill claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "12 cold damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Icy breath of the grave"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "9 cold damage, and the target is vulnerable to cold attacks (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Resist cold 18+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Fiery decapitation"
+						, "effect": "Ice zombies have frozen, iron-hard flesh that makes them tougher than normal zombies - critical hits that deal fire damage deal triple damage to ice zombies; other critical hits just deal double damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Jotun Auroch"
+				, "source": "Bestiary"
+				, "page": 78
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 13
+				, "HP": 70
+				, "attacks": [{
+						"name": "Trampling hooves"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 1-5"
+							, "effect": "The jotun auroch can make a <em>fiery or frosty breath</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Fiery or frosty breath"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies"
+						, "damage": "5 fire or cold damage, depending on what the jotun auroch has been eating lately"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Resist cold and fire 18+"
+					, "effect": "When a cold or fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+				}]
+				, "nastierSpecials": []
 			}
 			, {
 				"name": "Stone Giant"
@@ -10577,6 +10859,54 @@
 					, {
 						"name": "Storm born"
 						, "effect": "The storm giant has <em>resist thunder 16+</em> and <em>resist lightning 16+</em>."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Winter Beast"
+				, "source": "Bestiary"
+				, "page": 79
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 14
+				, "HP": 170
+				, "attacks": [{
+					"name": "Fang, claw, or tusk"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "21 damage, and the beast’s special ability triggers"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Resist cold 12+"
+						, "effect": "When a cold attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Winter Beast Special Ability"
+						, "effect": "Choose ONE."
+					}
+					, {
+						"name": "Armoured polar bear"
+						, "effect": "The target takes 10 extra damage, and if the target makes an opportunity attack against the polar bear before the start of the bear’s next turn, the bear can make a <em>fang, claw, or tusk</em> attack against the target as a free action."
+					}
+					, {
+						"name": "Giant walrus"
+						, "effect": "The target takes 14 extra damage and is stuck (save ends; also ends if the walrus moves)."
+					}
+					, {
+						"name": "Winter wolf"
+						, "effect": "The target takes 14 extra damage, or 28 extra damage if another winter wolf is engaged with it."
 					}
 				]
 				, "nastierSpecials": []
