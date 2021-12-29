@@ -9062,6 +9062,320 @@
 		]
 	}
 	, {
+		"name": "Ettercap"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Ettercap Acolyte"
+				, "source": "Bestiary"
+				, "page": 73
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 1
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 2
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 13
+				, "MD": 15
+				, "HP": 7
+				, "attacks": [{
+					"name": "Sacrificial dagger"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Fanatical devotion"
+						, "effect": "As a standard action, an ettercap acolyte can deal 2d6 poison damage to one dazed, hampered, or stuck enemy engaged with it.  The ettercap acolyte also takes 7 damage from this kamikaze action, killing it."
+					}
+					, {
+						"name": "Goopy webs"
+						, "effect": "When an enemy of level 3 or lower rolls a natural 1-5 with a melee attack against an ettercap acolyte, that enemy is dazed (save ends)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ettercap Hunter"
+				, "source": "Bestiary"
+				, "page": 73
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "blocker"
+				, "type": "humanoid"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 14
+				, "MD": 14
+				, "HP": 32
+				, "attacks": [{
+						"name": "Poison bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage, and 4 ongoing poison damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "If the target is dazed, hampered, or stuck, it takes 4 extra damage."
+						}]
+					}
+					, {
+						"name": "Web spray"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies in a group"
+						, "damage": "3 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is hampered (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The target is stuck (save ends)."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Goopy webs"
+					, "effect": "When an enemy of level 4 or lower rolls a natural 1-5 with a melee attack against an ettercap hunter, that enemy is dazed (save ends)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ettercap Keeper"
+				, "source": "Bestiary"
+				, "page": 74
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 15
+				, "MD": 18
+				, "HP": 50
+				, "attacks": [{
+						"name": "Staff and fangs"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "5 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Staff of tongues"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "15 psychic damage, and the target can’t cast spells or speak (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Her first whisper"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "each nearby enemy engaged with one or more ettercaps"
+						, "damage": "10 ongoing psychic damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle."
+						}]
+					}
+					, {
+						"name": "Her other thought"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "one nearby enemy per point on esc. die"
+						, "damage": "13 psychic damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "7 psychic damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "The web of faith"
+						, "effect": "While one or more lower-level non-mook ettercap allies are nearby it, the ettercap keeper gains <em>resist damage 16+</em>."
+					}
+					, {
+						"name": "Goopy webs"
+						, "effect": "When an enemy of level 6 or lower rolls a natural 1-5 with a melee attack against an ettercap keeper, that enemy is dazed (save ends)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ettercap Supplicant"
+				, "source": "Bestiary"
+				, "page": 73
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 14
+				, "MD": 17
+				, "HP": 44
+				, "attacks": [{
+						"name": "Sacrifical dagger"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage, and the ettercap supplicant can use <em>the web that burns</em> an additional time this battle"
+						, "extraEffects": []
+					}
+					, {
+						"name": "The skein of pain"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "10 psychic damage, and until the end of the battle, the target takes 1d6 psychic damage each time it fails a save."
+						, "extraEffects": []
+					}
+					, {
+						"name": "The web that burns"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies in a group"
+						, "damage": "6 ongoing acid damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is hampered (save ends)."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Goopy webs"
+					, "effect": "When an enemy of level 5 or lower rolls a natural 1-5 with a melee attack against an ettercap supplicant, that enemy is dazed (save ends)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ettercap Warrior"
+				, "source": "Bestiary"
+				, "page": 74
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "blocker"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 15
+				, "MD": 15
+				, "HP": 48
+				, "attacks": [{
+						"name": "Thrusting spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The ettercap warrior can make a <em>poison bite</em> attack as a free action."
+							}
+							, {
+								"trigger": "Natural even miss"
+								, "effect": "4 damage."
+							}
+						]
+					}
+					, {
+						"name": "Poison bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage, and 4 ongoing poison damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "If the target is dazed, hampered, or stuck, it takes 4 damage."
+						}]
+					}
+					, {
+						"name": "Web spray"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies in a group"
+						, "damage": "4 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is hampered (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The target is stuck (save ends)."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Goopy webs"
+					, "effect": "When an enemy of level 5 or lower rolls a natural 1-5 with a melee attack against an ettercap warrior, that enemy is dazed (save ends)."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Ettin"
 		, "groupTraits": []
 		, "monsters": [{
