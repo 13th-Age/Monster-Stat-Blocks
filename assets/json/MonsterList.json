@@ -9910,6 +9910,379 @@
 		]
 	}
 	, {
+		"name": "Fungaloid"
+		, "groupTraits": [{
+			"name": "Fungal Attacks"
+			, "traits": [{
+				"name": "Some fungaloids can make special attacks.  For thsoe, add the fungaloid’s level to attacks and damage, as indicated"
+				, "description": "<br><strong>C: Poison tentacles 5 + level vs. PD (1d3 nearby enemies)</strong> - 3 + level poison damage, and the target is vulnerable to <em>fungal attacks</em> (save ends)<br><strong>C: Brown noise 5 + level vs. PD (1d3 nearby enemies)</strong> - 3 + level ongoing thunder damage<br><strong>C: Hallucinogenia 3 + level vs. MD (one nearby enemy)</strong> - The target is confused (easy save ends, 6+)<br><strong>C: Infectious spores 5 + level vs. PD (1d3 nearby enemies)</strong> - 3 + level ongoing poison damage<br><strong>C: Piercing shriek 5 + level vs. PD (1d3 nearby enemies)</strong> - 4 + level psychic damage"
+			}]
+		}]
+		, "monsters": [{
+				"name": "Aerial Spore"
+				, "source": "Bestiary"
+				, "page": 83
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "mook"
+				, "type": "plant"
+				, "initiative": 1
+				, "vulnerability": ""
+				, "AC": 15
+				, "PD": 9
+				, "MD": 13
+				, "HP": 7
+				, "attacks": [{
+					"name": "Stinging tendrils"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 6
+					, "defence": "PD"
+					, "target": "one nearby enemy"
+					, "damage": "4 poison damage, and the target is weakened until the end of its next turn"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Puffball exploder"
+						, "effect": "The first time each round an aerial spore in the battle drops to 0 hp, it explodes and 1d3 nearby non-fungus non-construct creatures are covered in spores and begin to choke.  Until the end of the battle, when a choking creature rolls a natural 1-5 on an attack roll, it takes damage equal to the natural roll.  If a creature is affected twice by this attack, the damage it takes on a natural 1-5 doubles; if affected three times, it triples, etc.."
+					}
+					, {
+						"name": "Spores"
+						, "effect": "A creature choking from <em>puffball exploder</em> can use a standard action to wash the spores off itself and/or cough them up, preventing further choking effects until it’s affected by <em>puffball exploder</em> again."
+					}
+					, {
+						"name": "Weightless"
+						, "effect": "The aerial spore floats upon air currents, but it prefers to stay within 5 to 7 feet of the ground so it can use its tendrils to keep it in place or propel it.  A free-floating spore too far away from the ground to use its tendrils can easily be blown about from strong winds or similar magical effects."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Braincap"
+				, "source": "Bestiary"
+				, "page": 84
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "plant"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 13
+				, "MD": 17
+				, "HP": 90
+				, "attacks": [{
+						"name": "Focused brain blast"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1 nearby or far away staggered enemy"
+						, "damage": "21 force damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 psychic damage."
+						}]
+					}
+					, {
+						"name": "Hallucinogenia"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "The target is confused (easy save ends, 6+) and vulnerable to psychic damage until the end of the battle"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The target sees odd colours at the corners of its vision until it has taken a full heal-up (-2 penalty to skill checks to see things)."
+						}]
+					}
+					, {
+						"name": "Psionic filaments"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "15 psychic damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Programmed brain"
+						, "effect": "During its turn when one or more nearby enemies are staggered, the braincap uses <em>focused brain blast</em>.  When no enemies are staggered, the braincap uses <em>hallucinogenia</em> if its hit points are even, and <em>psionic filaments</em> if its hit points are odd."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Elder Spore"
+				, "source": "Bestiary"
+				, "page": 85
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "plant"
+				, "initiative": 0
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 12
+				, "MD": 16
+				, "HP": 7
+				, "attacks": [{
+					"name": "Slime spikes"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 poison damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Initiative"
+					, "effect": "Directly after the fungaloid empress in the initiative order"
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Fungaloid Creeper"
+				, "source": "Bestiary"
+				, "page": 83
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 1
+				, "role": "troop"
+				, "type": "plant"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 15
+				, "MD": 10
+				, "HP": 30
+				, "attacks": [{
+					"name": "Probing tendrils"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": "1d3 attacks"
+					, "damage": "2 damage"
+					, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "The target is stuck until the end of its next turn."
+						}
+						, {
+							"trigger": "Natural 1-5"
+							, "effect": "Both the fungaloid and its target take 1d4 damge."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Food is here"
+						, "effect": "When a fungaloid creeper scores a critical hit with an attack, all nearby fungaloids move to engage the fungaloid’s target, even if that target has dropped to 0 hp.  The move is a free action, and engaged creepers can roll disengage attempts instead of taking opportunity attacks."
+					}
+					, {
+						"name": "Slow, rolling wave"
+						, "effect": "Whenever the escalation die is even, each creeper must succeed on a normal save at the start of its turn or lose its move action that turn."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Fungal attack"
+					, "effect": "Make ONE fungal attack."
+				}]
+			}
+			, {
+				"name": "Fungaloid Drudge"
+				, "source": "Bestiary"
+				, "page": 84
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "plant"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 13
+				, "HP": 32
+				, "attacks": [{
+					"name": "Pitchfork"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "10 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The drudge can make a <em>fungal attack</em> this turn as a quick action."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Fungal attack"
+					, "effect": "Make ONE fungal attack."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Fungaloid Empress"
+				, "source": "Bestiary"
+				, "page": 85
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "plant"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 18
+				, "HP": 170
+				, "attacks": [{
+					"name": "Crushing limbs"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": "1d3 enemies engaged with the empress"
+					, "damage": "18 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Combat womb"
+						, "effect": "At the end of each of the empress’ turns, if there are fewer than two elder spores (see entry) per enemy, add a number of elder spores to the battle so that there are two spores per enemy.  A spore can “sprout” already engaged with a nearby or far away enemy on its own, it’s up to you."
+					}
+					, {
+						"name": "Sporulating spiracles"
+						, "effect": "Fungus grows on everything in the area!  Whenever a non-fungus creature attempts to move, it must make a DC 18 Dexterity or Strength check to do so or it loses its move action.  If the creature uses a standard action to clear away fungus, it can move normally that turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Fungaloid Monarch"
+				, "source": "Bestiary"
+				, "page": 84
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "leader"
+				, "type": "plant"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 14
+				, "MD": 18
+				, "HP": 98
+				, "attacks": [{
+					"name": "Mycotic sceptre"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "24 damage"
+					, "extraEffects": [{
+							"trigger": "Natural 12+"
+							, "effect": "One nearby fungaloid can make a <em>fungal attack</em> as a free action."
+						}
+						, {
+							"trigger": "Natural 16+"
+							, "effect": "Up to three nearby fungaloids can each make a <em>fungal attack</em> as a free action."
+						}
+						, {
+							"trigger": "Natural 20"
+							, "effect": "Up to five nearby fungaloids can each make a <em>fungal attack</em> as a free action."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Group mind"
+						, "effect": "The monarch’s attacks deal +1 damage for each other allied creature with the plant type in the battle (max +10)."
+					}
+					, {
+						"name": "Drudge-summons"
+						, "effect": "If there are not enough nearby fungaloids to use up all the <em>fungal attacks</em> granted by the <em>mycotic sceptre</em>, skip the extra fungal attacks but add a full-strength fungaloid drudge to the battle next to the fungaloid monarch."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Sporrior"
+				, "source": "Bestiary"
+				, "page": 84
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "wrecker"
+				, "type": "plant"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 12
+				, "HP": 36
+				, "attacks": [{
+						"name": "Chitinous bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The sporrior can make a <em>spore cloud</em> attack this turn as a quick action."
+						}]
+					}
+					, {
+						"name": "Parasitic darts"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": "1d3 nearby or far away enemies in a group"
+						, "damage": "5 poison damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The sporrior can make a <em>spore cloud</em> attack this turn as a quick action."
+						}]
+					}
+					, {
+						"name": "Spore cloud"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "4 poison damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Sprinter"
+						, "effect": "A sporrior gains an extra move action when the escalation die is odd."
+					}
+					, {
+						"name": "Wall-crawler"
+						, "effect": "A sporrior can climb on ceilings and walls as easily as it moves on the ground."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Gargoyle"
 		, "groupTraits": []
 		, "monsters": [{
