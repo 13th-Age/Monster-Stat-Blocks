@@ -14426,6 +14426,174 @@
 		]
 	}
 	, {
+		"name": "Intellect Devourer"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Intellect Assassin"
+				, "source": "Bestiary"
+				, "page": 118
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "blocker"
+				, "type": "aberration"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 16
+				, "MD": 20
+				, "HP": 90
+				, "attacks": [{
+						"name": "Formless first"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "one enemy"
+						, "damage": "25 damage; OR if the target is fighting a <em>psychic duel</em> (see below), it can choose to take a -4 to penalty to its next check instead"
+						, "extraEffects": [{
+							"trigger": "Quick use"
+							, "effect": "The assassin can take 15 damage to make this attack as a quick action (once per round)."
+						}]
+					}
+					, {
+						"name": "Insidious domination"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": "one enemy"
+						, "damage": "14 damage, and the opponent is locked in a psychic duel with the assassin (see below)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Mind thrust"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "one confused enemy"
+						, "damage": "35 damage (but only 50 damage on a crit)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Exploit trauma"
+						, "effect": "An intellect assassin’s crit range with attacks against MD expands by 2."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+					, {
+						"name": "Psychovore"
+						, "effect": "An intellect devourer remembers the cur"
+					}
+					, {
+						"name": "Psychic duel"
+						, "effect": "A psychic duel occurs when the intellect assassin hit with an <em>insiduous domination</em> attack against a creature.  At the start of the creature’s next turn, it must make an Intelligence skill check and can use a background that applies to psychic ability (if any).  The result of this check determines that creature’s status until the start of its next turn.  To maintain the psychic duel, the assassin must spend a move action each turn."
+					}
+					, {
+						"name": "Psychic Duel Result"
+						, "effect": "Status"
+					}
+					, {
+						"name": "15 or less"
+						, "effect": "The creature is confused until the end of its turn.  It also can’t make opportunity attacks until the start of its next turn and takes a -2 penalty to its next <em>psychic duel</em> check."
+					}
+					, {
+						"name": "16-22"
+						, "effect": "The creature is pressured - it takes a -2 penalty to attacks against any enemy except the assassin (duelling opponent)."
+					}
+					, {
+						"name": "23-27"
+						, "effect": "The creature steadies itself and can use a move action this turn to escape the <em>psychic duel</em>.  If the creature chooses not to (or can’t) escape the duel, it gains a +2 bonus to its next <em>psychic duel</em> check."
+					}
+					, {
+						"name": "28+"
+						, "effect": "As 23-27, but the creature takes advantage and gains a +4 bonus to its next <em>psychic duel</em> check instead of +2.  In addition, the assassin takes a -2 penalty to attack rolls that target other creatures."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Intellect Devourer"
+				, "source": "Bestiary"
+				, "page": 116
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "aberration"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 15
+				, "MD": 19
+				, "HP": 56
+				, "attacks": [{
+						"name": "Recall trauma"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "one nearby enemy"
+						, "damage": "16 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target can’t add the escalation die to its attacks (save ends)."
+						}]
+					}
+					, {
+						"name": "Ego scourge"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "10 psychic damage, and the target must choose one: take 10 extra damage; OR lose two points (cumulative) from its highest current background (min 0) until the next full heal-up"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Mind wipe"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "one nearby enemy per point on esc. die"
+						, "damage": "The target can neither detect the intellect devourer’s presence nor rememeber it was ever there to begin with.  If no enemy in the battle remembers the devourer is there, remove it from play.  Each nearby enemy immediately detects the devourer’s presence if it makes an attack or if it doesn’t leave the battle by the end of its next turn."
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Exploit trauma"
+						, "effect": "The intellect devourer’s crit range with attacks against MD expands by 2."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+					, {
+						"name": "Psychovore"
+						, "effect": "An intellect devourer remembers the current escalation die value the first time its host body drops to 0 hit points in a battle and gains a bonus equal to that value to all attacks and defences until the end of the battle."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Increased trauma"
+						, "effect": "Add the following extra effect trigger to the intellect devourer’s <em>recall trauma</em> attack."
+					}
+					, {
+						"name": "Natural 5, 10, 15, or 20"
+						, "effect": "The target can’t case spells until the end of its next turn."
+					}
+				]
+			}
+		]
+	}
+	, {
 		"name": "Kobold"
 		, "groupTraits": []
 		, "monsters": [{
