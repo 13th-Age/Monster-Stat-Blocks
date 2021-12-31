@@ -13502,6 +13502,345 @@
 		}]
 	}
 	, {
+		"name": "Haunted Skull"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Black Skull"
+				, "source": "Bestiary"
+				, "page": 110
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "caster"
+				, "type": "undead"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 15
+				, "MD": 23
+				, "HP": 110
+				, "attacks": [{
+					"name": "Telekinetic grasp"
+					, "specialTrigger": false
+					, "type": "ranged"
+					, "modifier": 15
+					, "defence": "PD"
+					, "target": "1d3 nearby enemies"
+					, "damage": "28 force damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "The target is stuck (save ends)."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Telekinetic crush"
+					, "effect": "When the escalation die is even, one enemy of the skull’s choice that is stuck from its <em>telekinetic grasp</em> takes 18 force damage at the start of the skull’s turn.  When the escalation die is odd, one such stuck enemy of its choice is hampered (save ends)."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Flaming Skull"
+				, "source": "Bestiary"
+				, "page": 110
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "caster"
+				, "type": "undead"
+				, "initiative": 10
+				, "vulnerability": "holy OR negative energy, depending on the skull"
+				, "AC": 20
+				, "PD": 12
+				, "MD": 20
+				, "HP": 54
+				, "attacks": [{
+						"name": "Burning gaze"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies or one far away enemy"
+						, "damage": "10 fire damage"
+						, "extraEffects": [{
+							"trigger": "First natural even hit each battle"
+							, "effect": "The target is confused (easy save ends, 6+)."
+						}]
+					}
+					, {
+						"name": "Smoldering flames"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "one nearby enemy"
+						, "damage": "14 fire damage, and each time the target fails a save this battle, it bursts into flames and takes 5 ongoing fire damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Limited flight"
+						, "effect": "The haunted skull can glide and hover, always within seven or eight feet of the ground."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+					, {
+						"name": "Resist fire 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Jest Bones"
+				, "source": "Bestiary"
+				, "page": 109
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 11
+				, "MD": 19
+				, "HP": 41
+				, "attacks": [{
+					"name": "Puns"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 11
+					, "defence": "PD"
+					, "target": "1d4 nearby enemies"
+					, "damage": "5 psychic damage, plus 1d6 ongoing psychic damage if the GM makes a horrible pun while rolling the attacks"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Bad puns"
+						, "effect": "Creatures that can’t hear or that have attempted to reduce their hearing are only affected by a jest bones’ <em>pun</em> attack if the natural roll is odd."
+					}
+					, {
+						"name": "Limited flight"
+						, "effect": "The haunted skull can glide and hover, always within seven or eight feet of the ground.  It also performs barrel rolls."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Screaming Skull"
+				, "source": "Bestiary"
+				, "page": 110
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "undead"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 11
+				, "MD": 19
+				, "HP": 45
+				, "attacks": [{
+					"name": "Treacherous scream"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 11
+					, "defence": "MD"
+					, "target": "up to 2 nearby or far away enemies"
+					, "damage": "6 psychic damage, and the target takes 2d6 psychic damage the first time it succeeds at a save before the end of its next turn."
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Limited flight"
+						, "effect": "The haunted skull can glide and hover, always within seven or eight feet of the ground."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Skull of the Beast"
+				, "source": "Bestiary"
+				, "page": 110
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "wrecker"
+				, "type": "undead"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 13
+				, "MD": 21
+				, "HP": 400
+				, "attacks": [{
+						"name": "Huge club"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "18 thunder damage to 1d3 nearby enemies (the beast screams and bellows in disappointment)."
+						}]
+					}
+					, {
+						"name": "Baleful gaze"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "25 negative energy damage"
+						, "extraEffects": [{
+								"trigger": "Natural odd hit"
+								, "effect": "The target is stuck (save ends) from looking into the void within it."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Fear"
+					, "effect": "While engaged with this creature, enemies that have 60 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Slime-Skull"
+				, "source": "Bestiary"
+				, "page": 109
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 10
+				, "MD": 18
+				, "HP": 36
+				, "attacks": [{
+						"name": "Slam"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Grasping slime tendrils"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "one nearby enemy"
+						, "damage": "7 acid damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 3 extra acid damage and is stuck (hard save ends, 16+)."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Acidic"
+						, "effect": "When a creature is engaged with the slime-skull or stuck from its <em>grasping slime tendrils</em> attack at the start of its turn, it takes 3 acid damage."
+					}
+					, {
+						"name": "Slimy blastback"
+						, "effect": "When an enemy engaged with the slime-skull hits it with a melee attack, the slime-skull fires a blast of acidic slime back at that creature, which takes 1d4 acid damage."
+					}
+					, {
+						"name": "Slow"
+						, "effect": "This creature is slow.  It only moves when the escalation die is odd or 6+."
+					}
+					, {
+						"name": "Wall-crawler"
+						, "effect": "A slime-skull can climb on ceilings and walls as easily as it moves on the ground."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Breeder"
+					, "effect": "If the slime-skull kills a creature, it takes that creature’s head as a standard action and attempts to escape (it can squeeze through gaps as small as the skull).  The slain creature can’t be resurrected until its skull is recovered because its spirit is now trapped within the skull.  If the PCs don’t track down the slime-skull before their next full heal-up (or within a day), the stolen skull will transform into another slime-skull.  Attempts to resurrect the creature become much more difficult, perhaps even impossible, at that point."
+				}]
+			}
+			, {
+				"name": "Watch Skull"
+				, "source": "Bestiary"
+				, "page": 109
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 1
+				, "role": "troop"
+				, "type": "undead"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 11
+				, "MD": 16
+				, "HP": 20
+				, "attacks": [{
+					"name": "Screech"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 8
+					, "defence": "MD"
+					, "target": "1d3 random nearby creatures"
+					, "damage": "4 psychic damage"
+					, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is stuck (save ends)."
+						}
+						, {
+							"trigger": "Natural roll is equal to or lower than the escalation die"
+							, "effect": "1d3 nearby enemies hear the alarm and join the battle.  The creatures attracted by the constant screeching are (usually) level 1 mooks of a type that would be appropriate for the skull’s location."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Immobile"
+						, "effect": "The skull can’t hop, jump, roll, or fly.  It can’t even move its jaw."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Allies"
+						, "effect": "Creatures that have been mystically “keyed” to the skull aren’t affected by its <em>screech</em> attack."
+					}
+					, {
+						"name": "Gem eyes"
+						, "effect": "The skull can sense the unseen and things from beyong the world.  A wizard using a <em>blur</em> spell, a rogue shadow walking, and other similar abilities offer no protection from the skull and its <em>screech</em> attack.  (If the PCs come up with a plausible tactic to bypass the skull, give the skull a normal save to detect them.)"
+					}
+					, {
+						"name": "Move-triggered"
+						, "effect": "When an enemy near the skull uses a move action to move, the skull can make a <em>screech</em> attack against that creature as a free action that interrupts the move.  The skull can use this ability twice per round.  Shadow walking, teleporting, and other non-standard modes of movement will trigger the <em>screech</em> attack."
+					}
+				]
+			}
+		]
+	}
+	, {
 		"name": "Hellhound"
 		, "groupTraits": []
 		, "monsters": [{
