@@ -13841,6 +13841,179 @@
 		]
 	}
 	, {
+		"name": "Hellbugs"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Boombug"
+				, "source": "Bestiary"
+				, "page": 113
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 15
+				, "MD": 11
+				, "HP": 36
+				, "attacks": [{
+						"name": "Gnawing teeth"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "2 damage."
+							}
+							, {
+								"trigger": "Puff go boom"
+								, "effect": "When an enemy’s attack hits the boombug and leaves it staggered with an odd number of hit points, it explodes and dies.  (Even hit points does nothing.)  When it explodes, each nearby creature not engaged with it takes 1d4 thunder damage, and it makes a <em>thunderous explosion</em> attack against each creature engaged with it."
+							}
+						]
+					}
+					, {
+						"name": "Thunderous explosion"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "each creature engaged with it"
+						, "damage": "12 thunder damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 thunder damage."
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Latches on"
+					, "effect": "When the boombug hits with <em>gnawing teeth</em>, the target takes a -5 penalty to disengage checks until it’s no longer engaged with the boombug."
+				}]
+			}
+			, {
+				"name": "Hellwasp"
+				, "source": "Bestiary"
+				, "page": 113
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 12
+				, "HP": 28
+				, "attacks": [{
+					"name": "Necrotising stinger"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 6
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "5 damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "5 ongoing acid damage (easy save ends, 6+), and the hellwasp can pop free from the target."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Virulent injection"
+						, "effect": "When a creature fails a save against the hellwasp’s ongoing acid damage, it gains a random condition until it saves against that damage.  Have the player roll a d4 to determine the condition: 1. confused; 2. weakened; 3. dazed; 4. vulnerable."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Hellwasps are adroit fliers that can hover and even fly backward."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Lethal injection"
+					, "effect": "The save versus the stinger’s ongoing acid damage is a normal save (11+) instead of an easy save."
+				}]
+			}
+			, {
+				"name": "Hook Scuttler"
+				, "source": "Bestiary"
+				, "page": 113
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "blocker"
+				, "type": "beast"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 15
+				, "MD": 14
+				, "HP": 30
+				, "attacks": [{
+					"name": "Claws and mandibles"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "8 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Spiky bits"
+					, "effect": "When a hook scuttler moves to engage an enemy it wasn’t engaged with at the start of its turn, that enemy takes 1d6 damage.  When an enemy tries to disengage from the hook scuttler and fails, it takes 1d6 damage."
+				}]
+				, "nastierSpecials": [{
+					"name": "Corpse eater"
+					, "effect": "When a nearby enemy drops to 0 hit points or below in the battle, the hook scuttler will ignore other enemies and move to attack that unconscious enemy until that enemy is dead."
+				}]
+			}
+			, {
+				"name": "Swarming Maw"
+				, "source": "Bestiary"
+				, "page": 113
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 15
+				, "MD": 14
+				, "HP": 38
+				, "attacks": [{
+					"name": "Serrated maw"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The swarming maw can teleport to engage a nearby enemy it can see that is already engaged by at least one other hellbug."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "The first time each battle the serrated maw misses, the target takes 1d4 damage for each hellbug engaged with it."
+						}
+					]
+				}]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Ongoing swarm"
+					, "effect": "The serrated maw also deals miss damage the second time it misses with a <em>serrated maw</em> attack each battle."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Hellhound"
 		, "groupTraits": []
 		, "monsters": [{
