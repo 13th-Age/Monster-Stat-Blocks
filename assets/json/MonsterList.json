@@ -10329,6 +10329,342 @@
 		}]
 	}
 	, {
+		"name": "Gelahedron"
+		, "groupTraits": [{
+			"name": "Abilities"
+			, "traits": [{
+					"name": "Flows where it likes"
+					, "description": "The ooze is immune to opportunity attacks."
+				}
+				, {
+					"name": "Ooze"
+					, "description": "The ooze is immune to effects.  When an attack applies a condition to an ooze (dazed, hampered, weakened, ongoing damage, etc.), that condition doesn’t affect it."
+				}
+			]
+		}]
+		, "monsters": [{
+				"name": "Gelatinous Cubahedron (aka Cube)"
+				, "source": "Bestiary"
+				, "page": 89
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "blocker"
+				, "type": "ooze"
+				, "initiative": 4
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 15
+				, "HP": 200
+				, "attacks": [{
+						"name": "Shlup’n’schlorp"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "30 acid damage, and the cube engulfs the target (functions like a grab; see below) if it’s smaller than the cube"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The cube can make a <em>spasms</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Spasms"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "up to 2 attacks, each against a different nearby enemy"
+						, "damage": "15 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Engulf and dissolve"
+						, "effect": "Targets engulfed/grabbed by the cube take 30 acid damage at the start of the cube’s turn but are not viable targets for additional attacks by the cube.  Multiple targets can be held within the cube simultaneously.<br>&emsp;Any engulfed creature that is also staggered must begin making last gasp saves or become paralysed as the cube’s toxins overwhelm it."
+					}
+					, {
+						"name": "Instinctive actions"
+						, "effect": "Gelatinous creatures have no brains, sometimes they just <em>do things</em>.  When the escalation die is odd, instead of making an attack or moving, roll a d6 to see what the cubahedron does.  If an option is not viable (you roll a 5 but there is no engulfed enemy), reroll until you get a valid option."
+					}
+					, {
+						"name": "1"
+						, "effect": "The cubahedron jiggles in place.  Each nearby enemy takes 5 acid damage.  Each creature engulfed by the cube takes a -4 penalty to its saves until the end of its next turn."
+					}
+					, {
+						"name": "2"
+						, "effect": "The cubahedron moves as a quick action.  If the cube ends its move engaged with enemies, each of those enemies must roll a save; on a failure, the cubahedron grabs them (but they’re not engulfed)."
+					}
+					, {
+						"name": "3"
+						, "effect": "The cubahedron spits an engulfed creature into the air above it and makes a <em>shlup’n’schlorp</em> attack against that creature with a +5 attack bonus.  Then the creature is engulfed again."
+					}
+					, {
+						"name": "4"
+						, "effect": "The cubahedron flattens itself slightly and crawls up a wall and possibly across the ceiling.  The cube fall at the end of its turn.  Each creature engulfed by the cubes takes 30 damage, and it makes a <em>gel drop</em> attack against enemies below it.<br><strong>Gel drop +10 vs. PD (1d3 nearby enemies)</strong> - 15 damage, and the cube engulfs the target if it’s smaller than the cube"
+					}
+					, {
+						"name": "5"
+						, "effect": "The cubahedron moves one creature engulfed by it to the surface.  The target gains a +4 bonus to attempts to escape the cube, but each time the cube is targeted by an attack, the engulfed creature must roll a save; on a failure, it becomes the target of the attack instead."
+					}
+					, {
+						"name": "6"
+						, "effect": "The cubahedron spits out each enemy engulfed by it with great force in different directions; each of those creatures takes 50 damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Gelatinous Dodecahedron"
+				, "source": "Bestiary"
+				, "page": 90
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "blocker"
+				, "type": "ooze"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 16
+				, "HP": 550
+				, "attacks": [{
+						"name": "Shlup’n’schlorp"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "30 acid damage, and the dodecahedron engulfs the target (functions like a grab; see below) if it’s smaller than the dodecahedron"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The cube can make a <em>spasms</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Spasms"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "up to 2 attacks, each against a different nearby enemy"
+						, "damage": "15 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Engulf and dissolve"
+						, "effect": "Targets engulfed/grabbed by the cube take 30 acid damage at the start of the cube’s turn but are not viable targets for additional attacks by the cube.  Multiple targets can be held within the cube simultaneously.<br>&emsp;Any engulfed creature that is also staggered must begin making last gasp saves or become paralysed as the cube’s toxins overwhelm it."
+					}
+					, {
+						"name": "Instinctive actions"
+						, "effect": "Gelationous creatures have no brains, sometimes they just <em>do things</em>.  When the escalation die is odd, instead of making an attack or moving, roll a d12 to see what the dodecahedron does.  If an option is not available (you roll a 1 but there are no nearby enemies), reroll until you get a valid option."
+					}
+					, {
+						"name": "1"
+						, "effect": "The dodecahedron makes a <em>squash</em> attack against 1d4 nearby enemies as it rolls and shlorps around the area.  Any enemies already engulfed by the dodecahedron take 10 thunder damage.<br><strong>C: Squash +10 vs. PD (1d4 nearby enemies)</strong> - 20 damage, and the target is stunned (easy save ends, 6+)"
+					}
+					, {
+						"name": "2"
+						, "effect": "The dodecahedron throws out whip-like tendrils and makes a <em>sudden orifice</em> attack against each enemy engaged with it.  Then it pulls each nearby enemy next to it and engages that creature.<br><strong>Sudden orifice +12 vs. PD (each enemy engaged with it)</strong> - The dodecahedron engulfs the target it it’s smaller than the dodecahedron"
+					}
+					, {
+						"name": "3"
+						, "effect": "Hundreds of finger-size slimes slither out from the interior of the dodecahedron and begin worming their way across the bodies of each of its enemies in the battle.  Until the end of the battle, when a non-ooze creature takes any damage besides ongoing acid damage, it also takes 10 acid damage."
+					}
+					, {
+						"name": "4"
+						, "effect": "The dodecahedron bounces and thrums.  Each enemy engaged with it or engulfed by it must roll a save; on a failure, that enemy takes 30 thunder damage.  On a success, it takes 15 thunder damage and pops free from the dodecahedron."
+					}
+					, {
+						"name": "5"
+						, "effect": "The dodecahedron hunkers down and produces acidic spikes.  It gains a +4 bonus to all defences until the end of the battle, and each enemy who makes a melee attack against it with a non-magical weapon must roll a save; on a failure the weapon dissolves.  When a creature’s weapon dissolves, that creature is hampered and weakened (save ends both).  Magical weapons lose their bonuses to hit and damage until the end of the battle instead of being dissolved (but the owner is still hampered and weakened).  They can be “restored” after the battle by taking a few minutes during a rest to re-attune them."
+					}
+					, {
+						"name": "6"
+						, "effect": "The dodecahedron moves, rolling around the battlefield, then makes a <em>shlup’n’schlorp</em> attack at the end its movement with a +5 bonus.  If the attack misses, instead of making a <em>spasms</em> attack the dodecahedron rolls about the area again and makes a second <em>shlup’n’schlorp</em> attack with a +10 bonus.  If the second attack misses, it doesn’t get a <em>spasms</em> attack and the dodecahedron’s turn ends."
+					}
+					, {
+						"name": "7"
+						, "effect": "The dodecahedron makes a <em>spasms</em> attack.  If it misses with either attack roll, after the attacks, it can make a <em>stretch and engulf</em> attack as a free action.<br><strong>C: Stretch and engulf +12 vs. PD (one nearby or far away enemy)</strong> - 30 acid damage, and the dodecahedron engulfs the target if it’s smaller than the dodecahedron"
+					}
+					, {
+						"name": "8"
+						, "effect": "<strong>C: Pseudopod slaps +10 vs. AC (one nearby enemy)</strong> - 25 thunder damage<br>&emsp;<em>Natural odd hit</em>: The target pops free from the dodecahedron and is knocked far away, and the ooze makes the attack again against a different nearby enemy as a free action.<br>&emsp;<em>Natural even hit</em>: The dodecahedron engulfs the target if it’s smaller than the dodecahedron."
+					}
+					, {
+						"name": "9"
+						, "effect": "Each enemy engulfed by the dodecahedron takes 40 acid damge, and the dodecahedron heals 40 hp for each enemy it has engulfed."
+					}
+					, {
+						"name": "10"
+						, "effect": "The dodecahedron splits into an octahedron and a tetrahedron, and each one can act this turn (roll a d8 and d4 for the <em>instinctive actions</em> of each one).  Divide the dodecahedron’s current hit points into thirds, and give on third to the tetrahedron and two thirds to the octahedron."
+					}
+					, {
+						"name": "11"
+						, "effect": "The dodecahedron splits into three tetrahedrons, and each one can act this turn (roll a d4 for the <em>instinctive actions</em> of each one).  Divide the dodecahedron’s current hit points equally between the three new creatures."
+					}
+					, {
+						"name": "12"
+						, "effect": "The dodecahedron splits into two cubahedrons, and each one can act this turn (roll a d6 for the <em>instinctive actions</em> of each one).  Divide the dodecahedron’s current hit points equally between the two new creatures."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Gelatinous Octahedron"
+				, "source": "Bestiary"
+				, "page": 89
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "blocker"
+				, "type": "ooze"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 16
+				, "HP": 280
+				, "attacks": [{
+						"name": "Shlup’n’schlorp"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "38 acid damage, and the cube engulfs the target (functions like a grab; see below) it it’s smaller than the cube"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The cube can make a <em>spasms</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Spasms"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "up to 2 attacks, each against a different nearby enemy"
+						, "damage": "19 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Engulf and dissolve"
+						, "effect": "Targets engulfed/grabbed by the cube take 38 acid damage at the start of the cube’s turn but are not viable targets for additional attacks by the cube.  Multiple targets can be held within the cube simultaneously.<br>&emsp;Any engulfed creature that is also staggered must begin making last gasp saves or become paralysed as the cube’s toxins overwhelm it."
+					}
+					, {
+						"name": "Instinctive actions"
+						, "effect": "Gelatinous creatures have no brains, sometimes they just <em>do things</em>.  When the escalation die is odd, instead of making an attack or moving, roll a d8 to see what the octahedron does.  If an option is not viable (you roll a 3 but there are no nearby targets), reroll until you get a valid option."
+					}
+					, {
+						"name": "1"
+						, "effect": "<strong>C: Acid splash +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> - 8 ongoing acid damage<br>&emsp;<em>Each failed save</em>: Acid destroys one of the target’s non-magical items.  The target takes a cumulative -1 attack penalty until the end of the battle (boots fall apart, shield straps snap, etc.).<br>&emsp;<em>Miss</em>: 5 ongoing acid damage."
+					}
+					, {
+						"name": "2"
+						, "effect": "The octahedron grows an orifice that gushes out a liquid glue that floods the area.  Each enemy engaged with the octahedron is stuck (hard save ends, 16+).  Each nearby enemy not engaged with the octahedron is stuck (save ends).  Each far away enemy is stuck (easy save ends, 6+).  The glue has no effect on creatures who are flying or that have some way of avoiding it."
+					}
+					, {
+						"name": "3"
+						, "effect": "The octahedron squirts a slick slime that targets 1d3 nearby enemies.  Until the end of the battle, each target must roll an easy save each time it moves; on a failure, it’s hampered until the end of its next turn."
+					}
+					, {
+						"name": "4"
+						, "effect": "The octahedron makes a <em>fire gout</em> attack as it splashes out a gel that ignites in the air and sticks to skin and clothing.<br><strong>C: Fire gout +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> - 8 ongoing fire damage<br>&emsp;<em>Each failed save</em>: The ongoing damage for all enemies hit by the attack increases by 1."
+					}
+					, {
+						"name": "5"
+						, "effect": "The octahedron sweats acid.  Each enemy engaged with the octahedron must roll a normal save; on a failure, it takes 40 acid damage.  On a success it takes 20 acid damage."
+					}
+					, {
+						"name": "6"
+						, "effect": "<strong>C: Acid jet +11 vs. PD (one nearby or far away enemy)</strong> - 45 acid damage<br>&emsp;<em>Miss</em>: 8 ongoing acid damage."
+					}
+					, {
+						"name": "7"
+						, "effect": "<strong>C: Acid geyser + 11 vs. PD (1d3 nearby or far away enemies)</strong> - 30 acid damage, and the octahedron is propelled uncontrollably about the area, passing next to each of its enemies.  Unlike normal, each enemy can make an opportunity attack against the ooze as it moves this way, but the ooze can make a <em>glomp</em> attack against those who do as a free action as it passes.  (Tell the PCs that the ooze will get a counter-attack.)<br><strong>Glomp +9 vs. PD</strong> - 10 acid damage, and the cube engulfs the target if it’s smaller than the cube"
+					}
+					, {
+						"name": "8"
+						, "effect": "The octahedron splits into two tetrahedrons, and each one can act this turn (roll a d4 for the <em>instinctive actions</em> of each one).  Divide the octahedron’s current hit points equally between the two new creatures."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Gelatinous Tetrahedron"
+				, "source": "Bestiary"
+				, "page": 88
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "blocker"
+				, "type": "ooze"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 14
+				, "HP": 160
+				, "attacks": [{
+						"name": "Shlup’n’schlorp"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "22 acid damage, and the tetrahedron engulfs the target (functions like a grab; see below) if it’s smaller than the tetrahedron"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The tetrahedron can make a <em>spasms</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Spasms"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "up to 2 attacks, each against a different nearby enemy"
+						, "damage": "11 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Engulf and dissolve"
+						, "effect": "Targets engulfed/grabbed by the tetrahedron take 22 acid damage at the start of the cube’s turn but are not viable targets for additional attacks by the tetrahedron.  Multiple targets can be held within the tetrahedron simultaneously.<br>&emsp;Any engulfed creature that is also staggered must begin making last gasp saves or become paralysed as the tetrahedron’s toxins overwhelm it."
+					}
+					, {
+						"name": "Instinctive actions"
+						, "effect": "Gelatinous creatures have no brains, somtimes they just <em>do things</em>.  When the escalation die is odd, instead of making an attack or moving, roll a d4 to see what the tetrahedron does.  If an option is not viable (you roll a 1 but there is no engaged enemy), reroll until you get a valid option."
+					}
+					, {
+						"name": "1"
+						, "effect": "<strong>C: Fling +9 vs. PD (one engaged enemy)</strong> - 14 damage, and the target pops free from the ooze and must roll an easy save (6+); on a failure, it loses its next move action"
+					}
+					, {
+						"name": "2"
+						, "effect": "<strong>C: Fling +9 vs. PD (one nearby enemy not engaged with the ooze)</strong> - 28 damage, and the target is flung somewhere nearby and must roll an easy save (6+); on a failure, it loses its next move action"
+					}
+					, {
+						"name": "3"
+						, "effect": "<strong>C: Fling +9 vs. PD (one far away enemy)</strong> - 42 damage, and the target is flung somewhere far away and must roll an easy save (6+); on a failure, it loses its next move action"
+					}
+					, {
+						"name": "4"
+						, "effect": "As a standard action the ooze quickly moves around the battlefield, oozing over 1d3 nearby enemies.  Those enemies become engaged with the ooze and stuck (save ends).<br>&emsp;<em>First failed save</em>: The target is engulfed instead of stuck"
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Ghoul"
 		, "groupTraits": []
 		, "monsters": [{
