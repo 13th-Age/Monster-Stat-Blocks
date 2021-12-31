@@ -14594,6 +14594,290 @@
 		]
 	}
 	, {
+		"name": "Jorogumo"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Binding Bride"
+				, "source": "Bestiary"
+				, "page": 121
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "spoiler"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 15
+				, "MD": 19
+				, "HP": 72
+				, "attacks": [{
+						"name": "Biting kiss"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 10 ongoing poison damage."
+						}]
+					}
+					, {
+						"name": "Unwrapping my gift"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The binding bride can make a <em>biting kiss</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "A bouquet of webs"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "up to 2 enemies in a group"
+						, "damage": "The target is hampered (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "You ruined my special day"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "The target takes 18 psychic damage each time it attacks the binding bride (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, as a quick action."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Give me your heart"
+					, "effect": "When the binding bride drops an enemy to 0 hit points or lower, she will move next to that creature as a free action and attempt to remove the target’s heart.  The creature must begin making last gasp saves as she cuts its chest open.  On the fourth failed save, the bride takes the heart and the target dies and becomes undead under her control.  If the bridge is stunned or moved away from the creature and can’t return to it on her turn, the creature doesn’t have to make a last gasp save that turn."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Leathal Lothario"
+				, "source": "Bestiary"
+				, "page": 121
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 17
+				, "HP": 50
+				, "attacks": [{
+						"name": "Brutal kiss"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "Any woven engaged with the target can attack it as a free action."
+						}]
+					}
+					, {
+						"name": "Unhealthy attraction"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "nearby enemy with the fewest hit points"
+						, "damage": "10 psychic damage and the target is hampered until the end of the battle or until it takes one turn as if it were confused"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 ongoing psychic damage."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Give me your heart"
+					, "effect": "When the lothario drops an enemy to 0 hit points or lower, he will move next to that creature and attempt to remove the target’s heart.  The creature must begin making last gasp saves as he cuts their chest open.  On the fourth failure, the lothario takes the heart and the target dies and becomes undead under her control.  If the lothario is stunned or moved away from the creature and can’t return to it on his turn, the creature doesn’t have to make a last gasp save that turn."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Spinneret Doxy"
+				, "source": "Bestiary"
+				, "page": 120
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "humanoid"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 13
+				, "HP": 45
+				, "attacks": [{
+						"name": "Bite of the love bug"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "or automatic critical hit vs. an <em>infatuated</em> enemy"
+						, "damage": "10 damage, and target is <em>infatuated</em> (save ends)"
+						, "extraEffects": [{
+							"trigger": "Infatuated"
+							, "effect": "Infatuated enemies can’t attack the spinneret doxy or her Woven, but can convince themselves that other allies of the doxy don’t love her properly and should be slain.  They also prattle on about how their friends shouldn’t attack her, but are too love-smitten to properly prevent it - they won’t attack their real allies."
+						}]
+					}
+					, {
+						"name": "Bring me flowers"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "one <em>infatuated</em> enemy"
+						, "damage": "The target chooses one: it takes 6d6 psychic damage; OR as a free action, it mvoes next to the spinneret doxy (possibly provoking opportunity attacks), who engages it"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Stop in the name of love"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "each nearby <em>infatuated</em> enemy"
+						, "damage": "The target chooses one: it takes 6d6 psychic damage; OR it’s stuck (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Give me your heart"
+					, "effect": "When the doxy drops an enemy to 0 hit points or lower, she will move next to that creature and attempt to remove the target’s heart.  The creature must begin making last gasp saves as she cuts their chest open.  On the fourth failure, the doxy takes the heart and the target dies and becomes undead under her control.  If the bride is stunned or move away from the creature and can’t return to it on her turn, the creature doesn’t have to make a last gasp save that turn."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Swarm Prince"
+				, "source": "Bestiary"
+				, "page": 121
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "spoiler"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 18
+				, "MD": 16
+				, "HP": 80
+				, "attacks": [{
+						"name": "Palm strike"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "10 damage, and 10 ongoing poison damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 damage."
+						}]
+					}
+					, {
+						"name": "Royal blessing"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "15 negative energy damage, and if one or more Woven have been slain this battle, return one Woven to life in the location where it died"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "The swarm prince can use this ability only when the escalation die is even."
+						}]
+					}
+					, {
+						"name": "Hush my darling"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "the nearby conscious enemy with the fewest hit points"
+						, "damage": "5 psychic damage, and the target is unconscious (hard save ends, 16+; it also ends if the target takes 15 damage)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, and the ability recharges when the swarm prince hits with <em>palm strike</em>."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Surrounded by friends"
+						, "effect": "The swarm prince gains a +1 bonus to all defences for each nearby Woven."
+					}
+					, {
+						"name": "Give me your heart"
+						, "effect": "When the prince drops an enemy to 0 hit points or lower, he will move next to that creature and attempt to remove the target’s heart.  The creature must begin making last gasp saves as he cuts their chest open.  On the fourth failure, the prince takes the heart and the target dies and becomes undead under his control.  If the prince is stunned or moved away from the creature and can’t return to it on his turn, the creature doesn’t have to make a last gasp save that turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "The Woven"
+				, "source": "Bestiary"
+				, "page": 121
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 12
+				, "HP": 13
+				, "attacks": [{
+						"name": "Clumsy strike"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Why aren’t you happy for ussss"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "5 psychic damage as the target’s mind reels against the horror of the truth"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Kobold"
 		, "groupTraits": []
 		, "monsters": [{
