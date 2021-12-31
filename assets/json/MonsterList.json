@@ -6776,17 +6776,17 @@
 						, "damage": "230 damage"
 						, "extraEffects": [{
 							"trigger": "Natural 6+"
-							, "effect": "The dragon can make a <em>paralyzing smoke</em> attack as a free action."
+							, "effect": "The dragon can make a <em>paralysing smoke</em> attack as a free action."
 						}]
 					}
 					, {
-						"name": "Paralyzing smoke"
+						"name": "Paralysing smoke"
 						, "specialTrigger": true
 						, "type": "close"
 						, "modifier": 18
 						, "defence": "MD"
 						, "target": "1d3 enemies engaged with the dragon"
-						, "damage": "The target must roll an immediate save.  On a failure, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralyzed.  On a success, the target is dazed until the end of its next turn"
+						, "damage": "The target must roll an immediate save.  On a failure, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralysed.  On a success, the target is dazed until the end of its next turn"
 						, "extraEffects": []
 					}
 					, {
@@ -6805,7 +6805,7 @@
 				]
 				, "abilities": [{
 						"name": "Evasive riposte"
-						, "effect": "Once per battle as a free action when an attack targets the dragon, it can force the attacker to reroll the attack and has <em>resist damage 18+</em> against that attack.  If the attack misses, the dragon can make a <em>paralyzing smoke</em> attack as a free action."
+						, "effect": "Once per battle as a free action when an attack targets the dragon, it can force the attacker to reroll the attack and has <em>resist damage 18+</em> against that attack.  If the attack misses, the dragon can make a <em>paralysing smoke</em> attack as a free action."
 					}
 					, {
 						"name": "Inspire awe"
@@ -7093,17 +7093,17 @@
 						, "damage": "95 damage"
 						, "extraEffects": [{
 							"trigger": "Natural 6+"
-							, "effect": "The dragon can make a <em>paralyzing smoke</em> attack as a free action."
+							, "effect": "The dragon can make a <em>paralysing smoke</em> attack as a free action."
 						}]
 					}
 					, {
-						"name": "Paralyzing smoke"
+						"name": "Paralysing smoke"
 						, "specialTrigger": true
 						, "type": "close"
 						, "modifier": 15
 						, "defence": "MD"
 						, "target": "1d3 enemies engaged with the dragon"
-						, "damage": "The target must roll an immediate save.  On a failure, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralyzed.  On a success, the target is dazed until the end of its next turn"
+						, "damage": "The target must roll an immediate save.  On a failure, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralysed.  On a success, the target is dazed until the end of its next turn"
 						, "extraEffects": []
 					}
 					, {
@@ -7411,17 +7411,17 @@
 						, "damage": "15 damage"
 						, "extraEffects": [{
 							"trigger": "Natural 6+"
-							, "effect": "The dragon can make a <em>paralyzing smoke</em> attack as a free action."
+							, "effect": "The dragon can make a <em>paralysing smoke</em> attack as a free action."
 						}]
 					}
 					, {
-						"name": "Paralyzing smoke"
+						"name": "Paralysing smoke"
 						, "specialTrigger": true
 						, "type": "close"
 						, "modifier": 11
 						, "defence": "MD"
 						, "target": "1d3 enemies engaged with the dragon"
-						, "damage": "The target must roll an immediate save.  On a failue, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralyzed.  On a success, the target is dazed until the end of its next turn"
+						, "damage": "The target must roll an immediate save.  On a failue, the target can’t take any actions and is helpless until the start of the dragon’s next turn as its limbs become paralysed.  On a success, the target is dazed until the end of its next turn"
 						, "extraEffects": []
 					}
 					, {
