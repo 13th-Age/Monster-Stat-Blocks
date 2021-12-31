@@ -14879,7 +14879,26 @@
 	}
 	, {
 		"name": "Kobold"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Trapster"
+			, "traits": [{
+					"name": "Trigger"
+					, "description": "When a kobold makes a <em>trapster</em> attack and rolls a natural attack roll that is higher than the target’s Wisdom, the creature has manoeuvered the target into a trap with the attack.  A creature can only be subkect to one trap per round."
+				}
+				, {
+					"name": "Damage"
+					, "description": "1d4 + esc. die, 1d8 if a dungeon-shaman in the battle."
+				}
+				, {
+					"name": "Ongoing damage"
+					, "description": "The traps can deal ongoing damage instead of regular damage.  1d4 + esc. die - 1 (or 1d8 if a dungeon-shaman present in the battle)."
+				}
+				, {
+					"name": "Conditions"
+					, "description": "Traps can impose conditions upon the target.  Roll normal trap damage, but it deals half damage.  Then roll a d4 for the condition imposed upon the target until the end of its next turn: 1. Stuck; 2. Hampered; 3. Dazed; 4. Vulnerable."
+				}
+			]
+		}]
 		, "monsters": [{
 				"name": "Kobold Archer"
 				, "source": "13th Age"
@@ -14928,6 +14947,307 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Kobold Bravescale"
+				, "source": "Bestiary"
+				, "page": 125
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "blocker"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 14
+				, "HP": 55
+				, "attacks": [{
+						"name": "Spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "13 damage"
+						, "extraEffects": [{
+							"trigger": "Natural roll is above target’s Wisdom (trapster)"
+							, "effect": "The kobold pushes or trips the target into a trap.  See Trapster Kobold ability."
+						}]
+					}
+					, {
+						"name": "Spear porcupine"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Disciplined manoeuver"
+						, "effect": "If the escalation die is 3+ and this creature has at least two bracescale allies in the battle, whenever an enemy moves to engage the bravescale, it can make a <em>spear porcupine</em> attack against that enemy as a free action."
+					}
+					, {
+						"name": "Lock shields"
+						, "effect": "For each other kobold bravescale next to the bravescale or engaged with a creature that this bravescale is engaged with, the bravescale gains a +2 bonus to AC (maximum of +4), and each enemy engaged with the bravescale takes a -2 penalty (maximum of -4) to disengage checks."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Kobold Dog-Rider"
+				, "source": "Bestiary"
+				, "page": 124
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 16
+				, "MD": 12
+				, "HP": 41
+				, "attacks": [{
+						"name": "Flaming lance"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage, and 3 ongoing fire damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The kobold and its steed pop free from all enemies and can move as a free action."
+						}]
+					}
+					, {
+						"name": "Tiny crossbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "9 damage, and the kobold and its steed can move as a free action."
+						, "extraEffects": [{
+							"trigger": "Natural roll is above target’s Wisdom (trapster)"
+							, "effect": "There is a line tied to the barbed dart, pulling/tripping the target into a trap.  See Trapster Kobold ability."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Evasive"
+						, "effect": "Kobolds take no damage from missed attacks."
+					}
+					, {
+						"name": "Canine steed"
+						, "effect": "The steed can’t be targeted separately from the kobold/  If the kobold dies the dog runs away."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Kobold Dragon-Soul"
+				, "source": "Bestiary"
+				, "page": 125
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 19
+				, "MD": 14
+				, "HP": 70
+				, "attacks": [{
+						"name": "Claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "17 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target also takes 8 ongoing acid damage."
+						}]
+					}
+					, {
+						"name": "Fire spit"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "18 fire damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "If flying, the kobold can remain in the air until the end of its next turn if it would normally have to land at the end of this turn."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Evasive"
+						, "effect": "Kobolds take no damage from missed attacks."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "A dragon-soul’s wings aren’t strong enough for sustained flapping flight, but with a headwind and a tall place to launch from it can glide for hours.  During battle, however, it must land at the end of its turn if the escalation die is even (but see <em>fire spit</em>)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Kobold Dungeon-Shaman"
+				, "source": "Bestiary"
+				, "page": 125
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 15
+				, "HP": 110
+				, "attacks": [{
+						"name": "Bear traps on chains"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "13 damage"
+						, "extraEffects": [{
+							"trigger": "Natural roll is above target’s Wisdom (trapster)"
+							, "effect": "The kobold drags the target into a trap.  See Trapster Kobold ability."
+						}]
+					}
+					, {
+						"name": "Hex of entrapment"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "26 damage"
+						, "extraEffects": [{
+								"trigger": "Natural roll is above target’s Wisdom (trapster)"
+								, "effect": "The kobold summons a trap that was not previously there, which the target triggers.  See Trapster Kobold ability."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "The target is stuck and hampered (save ends both)."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Evasive"
+					, "effect": "Kobolds take no damage from missed attacks."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Kobold Engineer"
+				, "source": "Bestiary"
+				, "page": 124
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 13
+				, "HP": 45
+				, "attacks": [{
+						"name": "Wrench, pick, or shovel"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The engineer’s kobold allies gain a +2 attack bonus against the target until the start of the engineer’s next turn."
+						}]
+					}
+					, {
+						"name": "Explosive flask"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 5
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "The target is vulnerable to non-magical attacks (easy save ends, 6+)"
+						, "extraEffects": [{
+								"trigger": "Natural roll is above the target’s Wisdom (trapster)"
+								, "effect": "The blast knocks the target into a trap.  See Trapster Kobold ability."
+							}
+							, {
+								"trigger": "Evasive"
+								, "effect": "Kobolds take no damage from missed attacks."
+							}
+						]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Kobold Grand-Wizard"
+				, "source": "Bestiary"
+				, "page": 123
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 0
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 15
+				, "PD": 13
+				, "MD": 9
+				, "HP": 5
+				, "attacks": [{
+						"name": "Static jolt"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 5
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "2 lightning damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Painful liver inversion hex"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 4
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "4 poison damage, or 6 poison damage against dwarves"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Evasive"
+					, "effect": "Kobolds take no damage from missed attacks."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Kobold Hero"
 				, "source": "13th Age"
 				, "page": 237
@@ -14959,6 +15279,134 @@
 					"name": "Evasive"
 					, "effect": "Kobolds take no damage from missed attacks."
 				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Kobold Shadow-Warrior"
+				, "source": "Bestiary"
+				, "page": 125
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 13
+				, "MD": 17
+				, "HP": 14
+				, "attacks": [{
+						"name": "Throwing star"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "one nearby enemy"
+						, "damage": "7 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Stinging dust"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": "up to 2 nearby enemies in a group"
+						, "damage": "5 damage, and the target takes a -1 penalty to attacks until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Elusive strike"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "one nearby enemy"
+						, "damage": "18 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Elusive"
+						, "effect": "If a shadow-warrior hasn’t been attacked since the end of its last turn, it can spend all of its actions on its turn to disappear from sight (remove it from play as it gets into position).  At the start of its next turn, it reappears (dropping down from the ceiling or springing out of cover and re-entering play) and can make an <em>elusive strike</em> attack as a standard action."
+					}
+					, {
+						"name": "Evasive"
+						, "effect": "Kobolds take no damage from missed attacks."
+					}
+					, {
+						"name": "Wall-crawler"
+						, "effect": "A kobold shadow-warrior can climb on ceilings and walls as easily as it moves on the ground."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Kobold Skyclaw"
+				, "source": "Bestiary"
+				, "page": 124
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 13
+				, "HP": 7
+				, "attacks": [{
+						"name": "Spike-toed boots"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 5
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "4 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Alchemical flask"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": "one nearby enemy or a far away enemy at -2 atk"
+						, "damage": "3 damage, and roll a d4 for the effect of the flask’s contents"
+						, "extraEffects": [{
+								"trigger": "1. Distilled ankheg spit"
+								, "effect": "The target takes 3 ongoing acid damage."
+							}
+							, {
+								"trigger": "2. Reconstituted remorhaz lymph"
+								, "effect": "The target takes 3 ongoing fire damage."
+							}
+							, {
+								"trigger": "3. Essence of giant spide web"
+								, "effect": "The target is stuck (save ends)."
+							}
+							, {
+								"trigger": "4. Kobold blasting powder"
+								, "effect": "There’s a loud bang and the battlefield is obscured with thick smoke.  Each non-kobold creature takes a -2 attack penalty during its next turn."
+							}
+							, {
+								"trigger": "Natural 1"
+								, "effect": "The kobold explodes (see <em>mook</em>)."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Erratic flight"
+						, "effect": "The kobold flings itself from a trebuchet or ignites an unstable alchemical propellant and lands among its enemies.  Each time the kobold uses a move action to fly, roll a d20<br><strong>1</strong>: It crashes and explodes (see <em>mook</em>).<br><strong>2-15</strong>: It lands safely.<br><strong>16+</strong>: It stays aloft and can keep flying."
+					}
+					, {
+						"name": "Evasive"
+						, "effect": "Kobolds take no damage from missed attacks."
+					}
+				]
 				, "nastierSpecials": []
 			}
 			, {
