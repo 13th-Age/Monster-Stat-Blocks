@@ -12788,6 +12788,66 @@
 		"name": "Golem"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "Bronze Golem"
+				, "source": "Bestiary"
+				, "page": 100
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "blocker"
+				, "type": "construct"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 21
+				, "MD": 17
+				, "HP": 190
+				, "attacks": [{
+					"name": "Gong-like fists of bronze"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 12
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "20 damage"
+					, "extraEffects": [{
+							"trigger": "Natural even hit against a target in heavy armour"
+							, "effect": "The target is dazed (save ends)."
+						}
+						, {
+							"trigger": "Natural odd hit against a target in light or no armour"
+							, "effect": "The target takes 10 extra damage."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "4d6 damage."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Goelm immunity"
+						, "effect": "Non-organic golems are immune to effects.  They can’t be dazed, weakened, confused, made vulnerable, or touched by ongoing damage.  You can damage a golem, but that’s about it."
+					}
+					, {
+						"name": "Hidden flaw"
+						, "effect": "An enemy who hits the bronze golem with a natural 18+ attack roll can roll a DC 25 skill check using Intelligence or Wisdom to notice the bronze golem’s hidden flaw!  On a success, until the end of the battle, the golem loses its damage resistance and becomes vulnerable to all attacks (against each enemy informed of the flaw)."
+					}
+					, {
+						"name": "Resist damage 18+"
+						, "effect": "When an attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Percussion resonance"
+						, "effect": "When the escalation die reaches 3+, the bronze golem gains a bonus to its first <em>gong-like fists of bronze</em> attack roll each turn equal to the number of attacks made against it so far that turn.  (Each turn is separate, not cumulative.)"
+					}
+					, {
+						"name": "Spiky"
+						, "effect": "When an enemy engaged with the bronze golem misses it with a melee attack, that enemy takes 2d12 damage."
+					}
+				]
+			}
+			, {
 				"name": "Clay Golem"
 				, "source": "13th Age"
 				, "page": 231
@@ -12932,6 +12992,91 @@
 				, "nastierSpecials": [{
 					"name": "Poison gas"
 					, "effect": "The first time the iron golem is staggered, poison gas leaks from it into the area.  It can make a <em>poison gas cloud</em> attack as a free action."
+				}]
+			}
+			, {
+				"name": "Marble Golem"
+				, "source": "Bestiary"
+				, "page": 101
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "troop"
+				, "type": "construct"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 20
+				, "MD": 22
+				, "HP": 340
+				, "attacks": [{
+						"name": "Enormous maul"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "60 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The golem can make a <em>backswing</em> attack as a free action."
+						}]
+					}
+					, {
+						"name": "Backswing"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "40 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Golem immunity"
+						, "effect": "Non-organic golems are immune to effects.  They can’t be dazed, weakened, confused, made vulnerable, or touched by ongoing damage.  You can damage a golem, but that’s about it."
+					}
+					, {
+						"name": "Special virtues"
+						, "effect": "Each marble golem is infused with <em>two</em> virtues - magical properties that relate to the emotion or feeling incorporated into the sculpture as its dominant theme.  Choose two virtues from the list below, or for a unique marble golem, invent your own."
+					}
+					, {
+						"name": "Awe (fear effect)"
+						, "effect": "While nearby the golem, enemies with 40 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					}
+					, {
+						"name": "Beauty"
+						, "effect": "The first time each enemy attacks the marble golem this battle, it must roll a normal save; on a failure, the attack takes a -6 penalty."
+					}
+					, {
+						"name": "Courage"
+						, "effect": "While staggered, the marble golem adds the escalation die to its attack rolls."
+					}
+					, {
+						"name": "Endurance"
+						, "effect": "When the marble golem rolls a natural 1-5 with an attack roll, it heals 1d10 hit points per point on the escalation die.  (It was checking for damage and got distracted.)"
+					}
+					, {
+						"name": "Hatred"
+						, "effect": "When an enemy is staggered by the marble golem’s attack, that enemy takes 4d10 extra damage."
+					}
+					, {
+						"name": "Patience"
+						, "effect": "Each turn, the marble golem can use one standard action to gain a +2 bonus to all defences until the start of its next turn.  If it does, it gains an extra standard action during its next turn."
+					}
+					, {
+						"name": "Protection"
+						, "effect": "When the marble golem rolls a natural 16+ with an attack, decrease the escalation die by 1."
+					}
+					, {
+						"name": "Strength"
+						, "effect": "The marble golem’s melee attacks now deal half damage on a miss."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "More virtues"
+					, "effect": "Statues that capture even more themes make stronger marble golems.  Add one or two more virtues to the golem."
 				}]
 			}
 			, {
