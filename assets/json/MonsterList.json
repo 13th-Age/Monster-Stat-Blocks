@@ -10665,6 +10665,194 @@
 		]
 	}
 	, {
+		"name": "Genie"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Djinn"
+				, "source": "Bestiary"
+				, "page": 93
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "spoiler"
+				, "type": "giant"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 22
+				, "MD": 21
+				, "HP": 350
+				, "attacks": [{
+						"name": "Greatsword"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "Increase the escalation die by 1 (cumulative), and until the end of the battle, the djinn adds the escalation die to its attacks"
+						}]
+					}
+					, {
+						"name": "Assault of the whirlwind"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "1d4 + 1  nearby creatures, including invisible creatures"
+						, "damage": "35 damage, and after the attack the djinn teleports to one of the targets and engages it"
+						, "extraEffects": [{
+								"trigger": "Nautral 5, 10, 15, or 20"
+								, "effect": "The target is hampered until the end of its next turn."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "10 damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "The djinn can only use this attack while it’s not staggered."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "Genies fly extremely well, but lumber, at best, when walking on the ground."
+					}
+					, {
+						"name": "Grant-a-wish"
+						, "effect": "A PC whose attack drops a djinn to 0 hp gains the equivalent of an extremely favourable roll of 6 with an icon relationship die with an icon of the PC’s choice that the PC already has a positive or conflicted relationship with.  Treat this advantage as if it came from a positive relationship.  The GM is encouraged to treat this result with the utmost benevolence and compassion."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Protection boon (Archmage or Priestess)"
+						, "effect": "While not staggered, the djinn gains <em>resist spell damage 16+</em> against all spells except those cast by a PC that has at least a one point icon relationship with the icon that is channeling the djinn."
+					}
+					, {
+						"name": "Spiky bits (Crusader)"
+						, "effect": "When an enemy makes a melee attack against the djinn and misses, it takes 2d20 damage."
+					}
+					, {
+						"name": "Demonic taint (Diabolist)"
+						, "effect": "The djinn gains a random demonic feature (see Demon)."
+					}
+					, {
+						"name": "Unwelcome resonance (Dwarf King)"
+						, "effect": "Whenever a nearby enemy attempts to trigger a magic item power, there’s a 50% chance that the power fails.  If it does, the item refuses to let its owner use that power until the end of the battle."
+					}
+					, {
+						"name": "Sorcerous reach (Elf Queen or the Three)"
+						, "effect": "The djinn’s <em>assault of the whirlwind</em> attack can also target far away enemies."
+					}
+					, {
+						"name": "Aura of command (Emperor or Lich King)"
+						, "effect": "Twice per battle as a free action, the djinn can turn an ally’s normal save into an easy save (6+), or an enemy’s normal save into a hard save (16+)."
+					}
+					, {
+						"name": "Wind/Shadow form (High Druid or Prince of Shadows)"
+						, "effect": "While not staggered, the djinn has <em>resist melee damage 16+</em>."
+					}
+					, {
+						"name": "Frenzied (Orc Lord)"
+						, "effect": "The djinn takes a -1 penalty to all defences.  While not staggered, its crit range expands by 3."
+					}
+				]
+			}
+			, {
+				"name": "Efreet"
+				, "source": "Bestiary"
+				, "page": 93
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 10
+				, "role": "wrecker"
+				, "type": "giant"
+				, "initiative": 15
+				, "vulnerability": "cold (only while staggered)"
+				, "AC": 25
+				, "PD": 24
+				, "MD": 23
+				, "HP": 420
+				, "attacks": [{
+						"name": "Blade of the perfect warrior"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": "3 attacks"
+						, "damage": "35 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "Each nearby enemy takes 20 fire damage."
+						}]
+					}
+					, {
+						"name": "Jet of absolute conflagration"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "one random nearby conscious enemy"
+						, "damage": "110 fire damage"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "The target loses all fire resistance until the end of the battle and is hampered (save ends)."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "Efreet don’t fly as well or as quickly as djinn, but they are able to get around okay."
+					}
+					, {
+						"name": "Grant-a-wish"
+						, "effect": "A PC whose attack drops an efreet to 0 hp gains the equivalent of an extremely favourable roll of 6 with an icon relationship die with an icon of the PC’s choice that the PC already has a positive or conflicted relationship with.  Treat this advantage as if it came from a positive relationship.  The GM is encouraged to treat this result with the utmost benevolence and compassion."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attack must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Reinfordced aura/spirit (Archmage or Priestess)"
+						, "effect": "The efreet gains a +1 bonus to MD and has no vulnerability to cold while staggered."
+					}
+					, {
+						"name": "Spiky bits (Crusader)"
+						, "effect": "When an enemy makes a melee attack against the efreet and misses, it takes 2d20 damage."
+					}
+					, {
+						"name": "Demonic taint (Diabolist)"
+						, "effect": "The efreet gains a random demonic feature (see Demon)."
+					}
+					, {
+						"name": "Stone slumbers (Dwarf King or Lich King)"
+						, "effect": "When the escalation die is 4+ at the start of a round, reset the escalation value by rolling it."
+					}
+					, {
+						"name": "Energy transformation (Elf Queen or the Three)"
+						, "effect": "The efreet can choose to deal lightning damage instead of fire damage with its attacks."
+					}
+					, {
+						"name": "Imperial mark (Emperor)"
+						, "effect": "While not staggered, the efreet gains <em>resist damage 16+</em> against enemies that have a positive or conflicted relationship with the Emperor."
+					}
+					, {
+						"name": "Wind/Shadow form (High Druid or Prince of Shadows)"
+						, "effect": "While not staggered, the efreet gains <em>resist melee damage 16+</em>."
+					}
+					, {
+						"name": "Frenzied (Orc Lord)"
+						, "effect": "The efreet takes a -1 penalty to all defences.  While not staggered, its crit range expands by 3."
+					}
+				]
+			}
+		]
+	}
+	, {
 		"name": "Ghoul"
 		, "groupTraits": []
 		, "monsters": [{
