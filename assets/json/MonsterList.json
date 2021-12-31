@@ -13138,6 +13138,145 @@
 		]
 	}
 	, {
+		"name": "Hag"
+		, "groupTraits": [{
+				"name": "Hag Traits"
+				, "traits": [{
+						"name": "Abilities"
+						, "description": "Hags get TWO of the following abilities."
+					}
+					, {
+						"name": "Death curse"
+						, "description": "When a hag dies she curses the one who killed her.  The only known way to remove the curse is to seek the aid of another had, though there may be some ways to end such a curse that are not readily known.<br>&emsp;Create one curse per hag.  A good curse makes life horribly weird for a character, but isn’t something that debilitates them.  Avoid ones that blid, deafen, cripple, or mute characters.  Odd habits, ugly features, unusual smells, strange and digusting giets - all these are good.  They should make the character and the story more interesting."
+					}
+				]
+			}
+			, {
+				"name": "Abilities"
+				, "traits": [{
+						"name": "Adept Illusionist"
+						, "description": "The hag gains a +5 bonus to initiative checks due to being not quite where she seems.<br><em>Hag abilitiy</em>: As a distraction, the hag creates an illusion of her doing one thing, when she is in fact setting a trap.  The hag throws out a bear-trap or other impediment and one nearby enemy becomes stuck (save ends).  While stuck this way, the target takes 6 damage at the start of each of its turns."
+					}
+					, {
+						"name": "Another skin"
+						, "description": "One the hag’s first round of combat each battle, she gains a +2 attack bonus due to her victims being shocked as she bursts out of her false outer skin.<br><em>Hag ability</em>: The hag coughs up a glob of liquid pseudo-flesh that globs onto a nearby enemy (no attack roll).  The glob solidifies causing an effect of the hag’s choice: the target is stuck (save ends); OR the target is unable to cast spells during its next turn (the pseudo-flesh covers their mouth and face)."
+					}
+					, {
+						"name": "Blood pact"
+						, "description": "Each creature allied to the hag through a pact gains a +2 bonus with their first attack each battle if the hag is present.<br><em>Hag ability</em>: The hag spits blood in the face of the target and makes a command.  The target must roll an immediate save; on a failure, as a free action it makes basic attack against an ally or against itself (target’s choice)."
+					}
+					, {
+						"name": "Breath stealing"
+						, "description": "The hag starts combat with 10 temporary hit points.<br><em>Hag ability</em>: The hag steals a recovery from the target and heals 20 hp."
+					}
+					, {
+						"name": "Death shriek"
+						, "description": "When a melee attack hits the hag, she lets out a shriek as a free action and the attacker takes 2d4 thunder damage.<br><em>Hag ability</em>: The hag begins to shriek, and each enemy in the battle takes a -4 attack penalty with spells until the start of her next turn."
+					}
+					, {
+						"name": "Dusk walk"
+						, "description": "Once per day the hag can implant a suggestion in the mind of a target sleeping within a day’s travel of her.  The hag rolls an attack: <strong>+10 vs. MD</strong>; on a hit, she implants a suggestion in the target that they must obey when a condition she chooses is met.  Suggested actions can’t cause direct harm (the target can’t be forced to fight another or harm themselves), can be no longer than 12 words, and affects the target for a week or until triggered.  GM keeps the roll hidden.<br><em>Hag ability</em>: The hag becomes immaterial, pops free from all enemies engaged with her, and enters the land of dreams re-appearing next to any nearby conscious creature (or a nearby or far away creature that is unconscious).  The hag then makes the following attack: <strong>C: +10 vs. MD (eacn nearby unconscious enemy)</strong> - The hag implants a suggestion in the target that they must obey when they become conscious (unusually “When you awake, flee this fight and discard your equipment.”).  Suggested actions can’t cause direct harm.  The round after the target acts on the implanted suggestion it can start rolling normal saves to throw off the effect."
+					}
+					, {
+						"name": "Fateful visions"
+						, "description": "The hag uses a +2 magical weapon traded to her for her services (she gains a +2 bonus to attack and damage with melee attacks).<br><em>Hag ability</em>: The had has seen this fight in a vision.  Her crit range expands by 2 until the end of the battle.  Each increase is cumulative."
+					}
+					, {
+						"name": "Foul-touched"
+						, "description": "When an enemy is battling the hag, at the start of each of its turns, it takes 2d6 psychic damage from the horror of the hag’s visage unless it takes precautions to avoid directly glancing at her terribly face (mirror, blindfold, etc., which might cause attack penalties).<br><em>Hag ability</em>: The hag choose a nearby enemy and glares at it.  That target must roll an immediate; on a failure the target is stricken blind by her ugliness.  While blinded this way, the target is hampered, weakened, and can’t make ranged attacks.  The target can end the effect by splashing liquid into their eyes or using a similar act to clear the ugly out as a standard action."
+					}
+					, {
+						"name": "Song of dreams"
+						, "description": "Enemies take a -4 penalty to their initiative rolls in battles with the hag.<br><em>Hag ability</em>: The hag begins to sing and the two enemies closest to her (even if far away) must roll an immediate save; on a failure, the target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save end).  If the weakened target fails its second save, instead it’s helpless (save ends)."
+					}
+					, {
+						"name": "Thief of mist"
+						, "description": "The hag ignores opportunity attacks and can’t be intercepted while moving.<br><em>Hag ability</em>: The hag becomes a mist until the start of her next turn.  While a mist, only spells cast with a +3 implement and attacks using a +3 magical weapon can harm her.  (Some special story item might also allow attacks to hit of no PC has a +3 item.)"
+					}
+					, {
+						"name": "Twist the path"
+						, "description": "Once per day the hag can enspell an area to attract visitors, causing those travelling nearby to get lost and wander to that location.  Alternatively, the hag can cause the location to repel visitors.  Finding the correct path to that location requires a DC 20 check if it is a familiar place, a DC 25 check if the travellers only have a map or guide, or a DC 30 check if the travellers are unfamiliar with the area.<br><em>Hag ability</em>: The target is also confused (easy save ends, 6+)."
+					}
+					, {
+						"name": "Weakening touch"
+						, "description": "Each enemy fighting the hag must roll a normal save at the start of the battle; on a failure, that creature starts the battle weakened (easy save ends, 6+).<br><em>Hag ability</em>: The target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save ends).  When the target saves against this effect, it takes a -2 attack penalty until the end of its next turn."
+					}
+					, {
+						"name": "Winter breath"
+						, "description": "The hag’s attacks deal cold damage.<br><em>Hag ability</em>: The target takes 6 ongoing cold damage."
+					}
+				]
+			}
+		]
+		, "monsters": [{
+			"name": "Hag"
+			, "source": "Bestiary"
+			, "page": 105
+			, "sizeStrength": "normal"
+			, "threat": "normal"
+			, "level": 6
+			, "role": "spoiler"
+			, "type": "undead"
+			, "initiative": 10
+			, "vulnerability": ""
+			, "AC": 21
+			, "PD": 19
+			, "MD": 15
+			, "HP": 108
+			, "attacks": [{
+					"name": "Iron claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 10
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "9 damage"
+					, "extraEffects": [{
+							"trigger": "Natural 14+"
+							, "effect": "The hag triggers on <em>hag ability</em> as a free action."
+						}
+						, {
+							"trigger": "Natural 18+"
+							, "effect": "The hag triggers two <em>hag abilities</em> as a free action (can’t by the same ability twice)."
+						}
+					]
+				}
+				, {
+					"name": "Evil eye"
+					, "specialTrigger": false
+					, "type": "ranged"
+					, "modifier": 10
+					, "defence": "MD"
+					, "target": ""
+					, "damage": "Ongoing 12 damage (hard save ends, 16+)"
+					, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The attack roll also targets a second different enemy of the hag’s choice (but a third with another 16+)."
+						}
+						, {
+							"trigger": "Natural 18+"
+							, "effect": "As above, and the attack roll also targets a third different enemy of the hag’s choice (but not a fourth with another 18+)."
+						}
+					]
+				}
+			]
+			, "abilities": [{
+					"name": "Death curse"
+					, "effect": "Each hag can lay a curse upon the one who ends its horrible life.  After dropping to 0 hit points, a hag always lingers long enough to pronounce the words of the curse.  (See Death Curses.)"
+				}
+				, {
+					"name": "Delusionist"
+					, "effect": "All hags have the ability to twist the perceptions of others.  If the hag has a short time to prepare, it can hide a small hut, disguise a volunteer or captive as a monster, disguise itself as a harmless peasant woman etc..  A DC 30 skill check is required to overcome the delusion and see the truth of it (if a player gives a reason for not trusting what their character sees; perhaps add subtle clues toward that end).  The magic fades as soon as the hag enters combat."
+				}
+				, {
+					"name": "Fear"
+					, "effect": "While engaged with this creature, enemies with 30 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
+	, {
 		"name": "Half-Orc"
 		, "groupTraits": [{
 			"name": "Nastier Special for all half-orcs"
