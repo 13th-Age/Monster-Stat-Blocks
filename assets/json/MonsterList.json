@@ -10856,37 +10856,55 @@
 		"name": "Ghoul"
 		, "groupTraits": []
 		, "monsters": [{
-				"name": "Newly-Risen Ghoul"
-				, "source": "13th Age"
-				, "page": 225
+				"name": "Ghast"
+				, "source": "Bestiary"
+				, "page": 98
 				, "sizeStrength": "normal"
 				, "threat": "normal"
-				, "level": 2
-				, "role": "mook"
+				, "level": 5
+				, "role": "wrecker"
 				, "type": "undead"
-				, "initiative": 5
-				, "vulnerability": "holy"
-				, "AC": 17
-				, "PD": 15
-				, "MD": 11
-				, "HP": 9
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 18
+				, "MD": 14
+				, "HP": 74
 				, "attacks": [{
-					"name": "Scrabbling claws"
-					, "specialTrigger": false
-					, "type": "normal"
-					, "modifier": 7
-					, "defence": "AC"
-					, "target": ""
-					, "damage": "3 damage"
-					, "extraEffects": [{
-						"trigger": "Natural 16+"
-						, "effect": "The target is vulnerable (<em>attacks vsd. it have crit range expanded by 2</em>) to attacks by undead until the end of the ghoul’s next turn."
-					}]
-				}]
-				, "abilities": [{
-					"name": "Pound of flesh"
-					, "effect": "The newly-risen ghoul’s <em>scrabbling claws</em> attack deals +2 damage against vulnerable targets."
-				}]
+						"name": "Finely honed claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "8 damage, and the target is vulnerable (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Paralysing bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "one vulnerable enemy"
+						, "damage": "12 damage, and the target is stunned (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Hungry howl"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "MD"
+						, "target": "each nearby enemy"
+						, "damage": "The target must choose one: 15 psychic damage; OR 5 psychic damage and the target is vulnerable (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle."
+						}]
+					}
+				]
+				, "abilities": []
 				, "nastierSpecials": []
 			}
 			, {
@@ -10930,6 +10948,215 @@
 					"name": "Paralysing bite"
 					, "effect": "When the ghoul hits a vulnerable target with a natural even attack roll, the target is also stunned (save ends)."
 				}]
+			}
+			, {
+				"name": "Ghoul Fleshripper"
+				, "source": "Bestiary"
+				, "page": 97
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "undead"
+				, "initiative": 9
+				, "vulnerability": "holy"
+				, "AC": 19
+				, "PD": 18
+				, "MD": 13
+				, "HP": 54
+				, "attacks": [{
+					"name": "Bony claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": "2 attacks"
+					, "damage": "6 damage, and the target is vulnerable (save ends)"
+					, "extraEffects": [{
+						"trigger": "Critical hit"
+						, "effect": "Until the target saves against the vulnerable effect, it also takes 2d6 ongoing damage each turn."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Infected bite"
+					, "effect": "Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ghoul Licklash"
+				, "source": "Bestiary"
+				, "page": 97
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "undead"
+				, "initiative": 8
+				, "vulnerability": "holy"
+				, "AC": 21
+				, "PD": 17
+				, "MD": 13
+				, "HP": 48
+				, "attacks": [{
+						"name": "Bloody claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "12 damage, and target is vulnerable (save ends)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Flesh-seeking tongue"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "one nearby enemy"
+						, "damage": "8 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target pops free from each enemy it’s engaged with and is pulled to the ghoul licklash, who engages it."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The target is vulnerable (save ends)."
+							}
+							, {
+								"trigger": "Critical hit"
+								, "effect": "The licklash can make a <em>flesh-seeking tongue</em> attack against a different target as a free action."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Infected bite"
+						, "effect": "Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night."
+					}
+					, {
+						"name": "Tongue lash"
+						, "effect": "Once per round when a nearby enemy makes a ranged attack, the ghoul licklash can make a <em>flesh-seeking tongue</em> attack against that enemy before the attack as free action."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ghoul Pusbuster"
+				, "source": "Bestiary"
+				, "page": 97
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 7
+				, "vulnerability": "holy"
+				, "AC": 19
+				, "PD": 16
+				, "MD": 13
+				, "HP": 60
+				, "attacks": [{
+						"name": "Feeble claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "9 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Vomit comet"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "10 ongoing damage, and the target is vulnerable (save ends both)"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is hampered (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The target is dazed (save ends)."
+							}
+							, {
+								"trigger": "Self-diminishing"
+								, "effect": "The ghoul pusbuster takes 2d6 damage for each creature it targets with this attack."
+							}
+						]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Gravemeat"
+				, "source": "Bestiary"
+				, "page": 97
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 1
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 2
+				, "vulnerability": "holy"
+				, "AC": 17
+				, "PD": 12
+				, "MD": 10
+				, "HP": 5
+				, "attacks": [{
+					"name": "Dirtcaked claw"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 damage, or 6 damage if the target is vulnerable"
+					, "extraEffects": [{
+						"trigger": "Natural 18+"
+						, "effect": "The gravemeat can make another <em>dirtcaked claw</em> attack as a free action, then it takes 1d6 damage from the exertion."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Newly-Risen Ghoul"
+				, "source": "13th Age"
+				, "page": 225
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "mook"
+				, "type": "undead"
+				, "initiative": 5
+				, "vulnerability": "holy"
+				, "AC": 17
+				, "PD": 15
+				, "MD": 11
+				, "HP": 9
+				, "attacks": [{
+					"name": "Scrabbling claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The target is vulnerable (<em>attacks vsd. it have crit range expanded by 2</em>) to attacks by undead until the end of the ghoul’s next turn."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Pound of flesh"
+					, "effect": "The newly-risen ghoul’s <em>scrabbling claws</em> attack deals +2 damage against vulnerable targets."
+				}]
+				, "nastierSpecials": []
 			}
 		]
 	}
