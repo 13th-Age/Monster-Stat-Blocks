@@ -15451,6 +15451,317 @@
 		]
 	}
 	, {
+		"name": "Lammasu"
+		, "groupTraits": [{
+			"name": "Abilities"
+			, "traits": [{
+					"name": "Flight"
+					, "description": "All lammasu fly.  Warrior lammasu fly with upright dignity, sometimes a bit slower than is wise.  Fallen lammasu fly well enough to keep up with all but the quickest demons.  Lammasu wizards and priests fly more gracefully than the warriors, but only because they’re less eager to run into things."
+				}
+				, {
+					"name": "Minor servitors"
+					, "description": "When a lammasu isn’t in combat or resting in stone-form, it’s usually surrounded by a fawning retinue of spirit servants.  The servants look like people from ages the world no longer remembers.  They stick close to the lammasu, seldom or never speak, and in truth may be a projection of the lammasu’s spirit or will.  The spirits are no use in combat, but they can manipulate small objects such as combs and scented perfumes to use upon the lammasu’s beard, hair, and jewelry."
+				}
+				, {
+					"name": "Stone rest"
+					, "description": "Outside the overworld, lammasu who wish to rest can transform themselves into solid stone.  A lammasu can see and hear as if it were still made of flesh.  It can change back to flesh as a free action, but must wait a day before returning to stone, which is no great delay for lammasu guardians whose positions extend for decades or centuries.  Considering that many sculptors carve stone lammasu to place in front of or within important structures, it’s deliberately difficult for a thief or assassin to know whether he is facing a stone statue or a transformed beast.<br>&emsp;Note that this form of solid stone is different from the living stone form sometimes adopted by the lammasu warrior, wizard, and priest during battle."
+				}
+			]
+		}]
+		, "monsters": [{
+				"name": "Fallen Lammasu"
+				, "source": "Bestiary"
+				, "page": 131
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 16
+				, "MD": 21
+				, "HP": 205
+				, "attacks": [{
+						"name": "Fiery hoof"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target takes 20 ongoing fire damage."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The fallen lammasu can make a second <em>fiery hoof</em> attack (but not a third) as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Rain of hellfire"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "1d4 random nearby enemies"
+						, "damage": "20 fire damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit against an ally"
+								, "effect": "The target takes 10 ongoing fire damage instead of 20 fire damge, and until that ally saves against that damage, it adds the escalation die to its attacks."
+							}
+							, {
+								"trigger": "Natural even hit against an enemy"
+								, "effect": "The target also takes 15 ongoing fire damage."
+							}
+						]
+					}
+					, {
+						"name": "Abyssal curse"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "one nearby enemy"
+						, "damage": "The target takes 10 ongoing negative energy damage each time the fallen lammasu hits it with an attack (hard save ends, 16+)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "When the escalation die is odd, as a quick action (once per round)."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Blessing of hellfire"
+					, "effect": "When the fallen lammasu fails a save against an effect created by an enemy, each enemy engaged with it takes 3d10 fire damage."
+				}]
+				, "nastierSpecials": [{
+						"name": "Curse of the fallen"
+						, "effect": "The lammasu gains a <em>Abyssal curse</em> attack."
+					}
+					, {
+						"name": "The fire that burns"
+						, "effect": "When the fallen lammasu makes an attack that deals fire damage and the attack roll beats the target’s fire resistance, the target loses its fire resistance until the end of the battle."
+					}
+				]
+			}
+			, {
+				"name": "Lammasu Priest"
+				, "source": "Bestiary"
+				, "page": 132
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "caster"
+				, "type": "beast"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 17
+				, "MD": 23
+				, "HP": 230
+				, "attacks": [{
+						"name": "Hooves of command"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "40 damage, and the target can’t attack the lammasu priest until the end of its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Righteous ray of faith"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "80 holy damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The lammasu priest can make a <em>righteous ray of faith</em> attack against a differeent target."
+						}]
+					}
+					, {
+						"name": "Judgment of the lammasu"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "each nearby conscious enemy that’s staggered"
+						, "damage": "50 holy damage"
+						, "extraEffects": [{
+								"trigger": "Natural even miss"
+								, "effect": "Half damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "2/battle."
+							}
+						]
+					}
+					, {
+						"name": "Overworld’s rebuke"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "one nearby enemy"
+						, "damage": "25 holy or lightning damage, and the target can’t move to engage an enemy until the end of its next turn (it can move if it doesn’t engage)"
+						, "extraEffects": [{
+							"trigger": "Natural even miss"
+							, "effect": "Half damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Invocation of the world unseen"
+						, "effect": "Once per battle, the lammasu priest can make this invocation as a quick action.  At the start of each of the lammasu priest’s turns until the roll succeeds, roll a d4.  If the roll is less than or equal to the escalation die, each nearby enemy is hampered (easy save ends, 6+)."
+					}
+					, {
+						"name": "Invocation of the highest court"
+						, "effect": "Once per battle, the lammasu priest can make this invocation as a quick action if it has used <em>invocation of the world unseen</em>.  At the start of each of the lammasu priest’s turns, roll a d8.  If the roll is less than or equal to the escalation die, the lammasu can make an <em>overworld’s rebuke</em> attack as a free action that turn."
+					}
+					, {
+						"name": "Refuge of stone"
+						, "effect": "When the lammasu fails a save, it becomes a creature of living stone until the end of its next turn.  While made of living stone, the lammasu wizard gains <em>resist damage 16+</em> to all attacks against AC and PD.  If it’s flying when it becomes living stone, its magic allows it to remain in the air if it wishes."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Lammasu Warrior"
+				, "source": "Bestiary"
+				, "page": 131
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 20
+				, "MD": 17
+				, "HP": 220
+				, "attacks": [{
+						"name": "Hooves"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "28 damage, and lammasu can pop free from the target"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss while the warrior is staggered"
+							, "effect": "The target is hampered (save ends)."
+						}]
+					}
+					, {
+						"name": "Roaring impact"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "35 damage, and 1d4 nearby enemies each take 2d10 thunder damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "1d4 nearby enemies each take 2d6 thunder damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "The lammasu warrior can make this attack only when it starts its turn flying and unengaged.  It engages the target as it lands and ends its turn on the ground."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Refuge of stone"
+					, "effect": "When the lammasu fails a save, it becomes a creature of living stone until the end of its next turn.  While made of living stone, the lammasu warrior gains <em>resist damage 16+</em> to all attacks against AC and PD.  If it’s flying when it becomes living stone, its magic allows it to remain in the air if it wishes."
+				}]
+				, "nastierSpecials": [{
+					"name": "On the crusade"
+					, "effect": "When an enemy misses the lammasu warrior with a melee attack, that enemy takes 2d10 damage."
+				}]
+			}
+			, {
+				"name": "Lammasu Wizard"
+				, "source": "Bestiary"
+				, "page": 132
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 18
+				, "MD": 23
+				, "HP": 275
+				, "attacks": [{
+						"name": "Disdainful hoof"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "60 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Perfect energy sphere"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "1d3 nearby or far away enemies in a group"
+						, "damage": "40 damage of an energy type of the lammasu’s choice: cold, fire, lightning, or thunder"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "The target can’t cast spells (easy save ends, 6+)."
+						}]
+					}
+					, {
+						"name": "Superior words of power"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "65 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "One spell or effect created by the target this battle is cancelled (lammasu’s choice)."
+						}]
+					}
+					, {
+						"name": "Master wizard’s rejoinder"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "one enemy spellcaster"
+						, "damage": "30 damage, the triggering attack misses and has no effect against the lammasu wizard, and the target is hampered (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/round, as an interrupt action when an enemy attacks the lammasu wizard with a spell and rolls a natural odd attack roll."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Refuge of stone"
+					, "effect": "When the lammasu fails a save, it becomes a creature of living stone until the end of its next turn.  While made of living ston, the lammasu wizard gains <em>resist damage 16+</em> to all attacks against AC and PD.  If it’s flying when it becomes living stone, its magic allows it to remain in the air if it wishes."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Lizardman"
 		, "groupTraits": []
 		, "monsters": [{
