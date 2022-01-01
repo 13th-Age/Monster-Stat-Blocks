@@ -15762,6 +15762,263 @@
 		]
 	}
 	, {
+		"name": "Lich"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Lich Baroness"
+				, "source": "Bestiary"
+				, "page": 135
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 14
+				, "MD": 18
+				, "HP": 54
+				, "attacks": [{
+						"name": "Crystal scepter"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is dazed (save ends)."
+						}]
+					}
+					, {
+						"name": "Soul blast"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "10 negative energy damage, and 5 ongoing psychic damage (hard save ends, 16+)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Shroud of souls"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "each enemy engaged with it"
+						, "damage": "5 psychic damage, and the target takes 10 psychic damage each time it attacks the baroness (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "I drink your death save"
+						, "effect": "When the lich baroness scores a critical hit, the target loses a death save until the end of the battle (effectively, it now dies after failing three death saves, and the effect is cumulative).  In addition, the crit range of attacks by the lich against the target expands by the escalation die."
+					}
+					, {
+						"name": "Immortaility"
+						, "effect": "When the lich drops to 0 hit points, it crumbles to dust but does not die.  It begins to reform near it phylactery, taking a number of days to regain its full strength equal to its level.  If the phylactery has been destroyed, the lich dies when it drops to 0 hit points."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Lich Count"
+				, "source": "Bestiary"
+				, "page": 135
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 18
+				, "MD": 22
+				, "HP": 240
+				, "attacks": [{
+						"name": "Touch of the grave"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 cold damage, and the target is dazed (hard save ends, 16+)"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is weakened instead of dazed (hard save ends, 16+)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "25 cold damage."
+							}
+						]
+					}
+					, {
+						"name": "Shadow rays"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "2 attacks"
+						, "damage": "35 negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is encased in shadows (save ends).  While under the effect, it’s weakened and takes 10 ongoing cold damage."
+						}]
+					}
+					, {
+						"name": "Empowered fireball"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "1d3 + 1 nearby creatures in a group"
+						, "damage": "35 fire damage, and 10 ongoing fire damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target takes 20 ongoing fire damage instead of 10."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "15 fire damage, and 5 ongoing fire damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "2/battle."
+							}
+						]
+					}
+					, {
+						"name": "Look upon your doom"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "up to 3 nearby enemies"
+						, "damage": "The lich gains a <em>fear aura</em> against the target until the end of the battle"
+						, "extraEffects": [{
+							"trigger": "Fear aura"
+							, "effect": "While engaged with this creature, if the target has 48 hp or fewer, it’s dazed (-4 attack) and does not add the escalation die to its attacks."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Thank you for the best ten years of your life"
+						, "effect": "When the lich count scores a critical hit, the target loses a death save until the end of the battle (effectively, it now dies after failing three death saves, and the effect is cumulative).  In addition, the crit range of attacks by the lich against the target expands by the escalation die and the lich heals 40 hit points."
+					}
+					, {
+						"name": "Immortality"
+						, "effect": "When the lich drops to 0 hit points, it crumbles to dust but does not die.  It begins to reform near its phylactery, taking a number of days to regain its full strength equal to its level.  If the phylactery has been destroyed the lich dies when it drops to 0 hit points."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Look upon your doom"
+					, "effect": "The lich count gains the <em>look upon your doom</em> power."
+				}]
+			}
+			, {
+				"name": "Lich Prince"
+				, "source": "Bestiary"
+				, "page": 136
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 12
+				, "role": "spoiler"
+				, "type": "undead"
+				, "initiative": 17
+				, "vulnerability": ""
+				, "AC": 28
+				, "PD": 24
+				, "MD": 26
+				, "HP": 620
+				, "attacks": [{
+						"name": "Draining bone rod"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "40 damage, 60 negative energy damage, and the target is dazed (hard save ends, 16+)"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is weakened instead of dazed (hard save ends, 16+)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "40 damage."
+							}
+						]
+					}
+					, {
+						"name": "Arcane blast"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "up to 3 nearby or far away enemies in a group"
+						, "damage": "50 force damage, and the target must roll a normal save; on a failure, it loses its next move action"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "Each enemy engaged with the lich prince pops free from it as a bubble of arcane energy pushes them away."
+						}]
+					}
+					, {
+						"name": "Soul rend"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "each nearby enemy"
+						, "damage": "30 negative energy damage, and ghostly hands reach up from the ground and grab the target (as they try to pull the target’s spirit out of its body)"
+						, "extraEffects": [{
+								"trigger": "Ghostly grasping hands"
+								, "effect": "When a creature is being grabbed by the ghostly hands, it takes 30 neagtive energy damage at the start of its turn and must make a last gasp save.  On the fourth failed last gasp save, the creature’s soul is torn from it and it dies.  Unconscious creatures take a -4 penalty to their last gasp saves.  Note, grabbed creatures take a -5 penalty to disengage checks."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "2/battle."
+							}
+						]
+					}
+					, {
+						"name": "Look upon your doom"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 17
+						, "defence": "MD"
+						, "target": "each enemy engaged with the lich’s allies"
+						, "damage": "The lich gains a <em>fear aura</em> against the target until the end of the battle"
+						, "extraEffects": [{
+							"trigger": "Fear aura"
+							, "effect": "While engaged with this creature, if the target has 120 hp or fewer, it’s dazed (-4 attack) and does not add the escalation die to its attacks."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Blink and you missed it"
+						, "effect": "Once per battle when an attack would hit the lich prince, the attack misses instead and the lich teleports to a nearby location it can see as a free action."
+					}
+					, {
+						"name": "Heartstopper"
+						, "effect": "When the lich prince scores a critical hit, if after taking damage the target still has hit points, it drops to 0 hp, falls unconscious, and begins making death saves.  When the target saves against this affect, it regains hit points equal to the amount it had before dropping to 0 hp (after the crit damage).  In addition, the crit range of attacks by the lich against the target expands by an amount equal to the escalation die and the lich heals 60 hit points."
+					}
+					, {
+						"name": "Immortality"
+						, "effect": "When the lich drops to 0 hit points, it crumbles to dust but does not die.  It begins to reform near its phylactery, taking a number of days to regain its full strength equal to its level.  If the phylactery has been destroyed, the lich dies when it drops to 0 hit points."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Look upon your doom"
+					, "effect": "The lich prince gains the <em>look upon your doom</em> power."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Lizardman"
 		, "groupTraits": []
 		, "monsters": [{
