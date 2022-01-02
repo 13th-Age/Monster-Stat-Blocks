@@ -18002,6 +18002,112 @@
 		"name": "Orc"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "Cave Orc"
+				, "source": "Bestiary"
+				, "page": 156
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 18
+				, "MD": 12
+				, "HP": 10
+				, "attacks": [{
+						"name": "Obsidian knife"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "4 damage, and +1d4 damage for each other orc engaged with the target (max +4d4)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Rock"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Hears everything"
+						, "effect": "Increase the DC to sneak past cave orcs silently by +5."
+					}
+					, {
+						"name": "Nocturnal predator"
+						, "effect": "If the battle is at night (or in darkness), the orc gains +6 to initiative (to +12), and a +2 attack bonus.  If the battle is during the day (or in daylight) it takes a -2 penalty to all defences."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Death-Plague Orc"
+				, "source": "Bestiary"
+				, "page": 156
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "humanoid"
+				, "initiative": 2
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 18
+				, "MD": 12
+				, "HP": 90
+				, "attacks": [{
+					"name": "Huge spiked flail"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 8
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "21 damage"
+					, "extraEffects": [{
+						"trigger": "Natural roll is above target’s Constitution"
+						, "effect": "The target catches a disease (see below)."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Death-Plague Orc Diseases"
+						, "effect": "When a creature contracts a death-plague orc disease, roll a d4 for the disease type and a d6 for that disease’s symptoms <em>after the battle</em>.  Until cured, at the start of each day (after each full heal-up) the PC makes a Constitution check (including any appropriate background) to determine the severity of the disease for that day, or if the PC is cured.<br>&emsp;Full bed rest under the care of a healer reduces severity roll from a d6 to a d4 (so a severity check result of 18 would be 1d4 + 2 not 1d6 + 2).  A PC under the care of an experienced healer or someone who knows healing magic gains a +10 to the Constitution check.  At the GM’s option, special ingredients or healing items, found via quest, can give additional bonuses to the check."
+					}
+					, {
+						"name": "Disease Type (d4)"
+						, "effect": "<ul><li><em>1.</em> Filthy Fever (d6 roll for symptoms that day)</li><li><em>2.</em> Chatter Pox (d6 roll for symptoms that day)</li><li><em>3.</em> Slug Scourge (d6 roll for symptoms that day)</li><li><em>4.</em> Red Fever (d6 roll for symptoms that day)</li></ul>"
+					}
+					, {
+						"name": "Filthy Fever Symptoms (d6)"
+						, "effect": "<ul><li><em>1.</em> Slight temperature</li><li><em>2-3.</em> The runs.  You gain 1 less recovery than normal after a full heal-up due to fluid loss</li><li><em>4+.</em> You have a hacking cough that sounds like insane laughter and are losing fluids.  You gain 2 fewer recoveries than normal after a full heal-up and can’t remain silent</li></ul>"
+					}
+					, {
+						"name": "Chatter Pox Symptoms (d6)"
+						, "effect": "<ul><li><em>1.</em> Unsightly and painful sores, occasional shivers</li><li><em>2-3.</em> Running sores, shivering and chattering teeth.  You take a -3 penalty to social skill checks and to attack rolls with spells</li><li><em>4.</em> Infected sores, fever dreams.  Your constitution is weakened.  After each full heal-up, roll 1d4 + 3 to determine your starting maximum recoveries for that day.  Each time you cast a spell that isn’t a at-will, there’s a 25% chance it fails (but you don’t expend the spell)</li></ul>"
+					}
+					, {
+						"name": "Slug Scourge Symptoms (d6)"
+						, "effect": "<ul><li><em>1.</em> Extreme appetite, nausea</li><li><em>2-3.</em> Vomiting up slugs.  Whenever you make a non-combat Charisma check, roll 2d20 and take the lower result</li><li><em>4+.</em> The slugs are inside your lungs!  After each quick rest, you lost 25% of your maximum hit points.  If you drop this way, you enter into a coma until the next day</li></ul>"
+					}
+					, {
+						"name": "Red Fever Symptoms (d6)"
+						, "effect": "<ul><li><em>1.</em> Scarlet stripes on the eyeballs, itching, buzzing in ears</li><li><em>2-3.</em> Blurred vision.  You take a -3 penalty to ranged attacks</li><li><em>4+.</em> Fever, rage, and confusion.  Whenever you roll a natural odd attack roll, you are confused until the end of your next turn.  Ranged attacks have a 25% chance of accidently targeting an ally (check before making the attack roll)</li></ul>"
+					}
+					, {
+						"name": "Disease Severity"
+						, "effect": "Con check each day; result affects d6 symptoms roll.<ul><li><em>1-14.</em> d6 + 3</li><li><em>15-19.</em> d6 + 2</li><li><em>20-24.</em> d6 + 1</li><li><em>25-29.</em> d6 + 0</li><li><em>30+.</em> Cured</li></ul>"
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Great Fang Cadre"
 				, "source": "13th Age"
 				, "page": 242
@@ -18053,6 +18159,68 @@
 					"name": "On the spot mutation"
 					, "effect": "Whenever an attack eliminates one or more members of the mob, there is a 50% chance that each survivor gains one of these abilities: extra melee attack, damage aura: 1d20 damage vs. any enemy that starts its turn engaged with the orc, or +4 to AC."
 				}]
+			}
+			, {
+				"name": "Orc Battle Screamer"
+				, "source": "Bestiary"
+				, "page": 157
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "leader"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 15
+				, "MD": 15
+				, "HP": 33
+				, "attacks": [{
+						"name": "Sharpened flute or club-like drumstick"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Skull drum"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "8 damage, and as a free action, one nearby orc ally can mvoe or make a basic attack (doesn’t trigger special abilities)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Bone flute"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "8 damage, and one nearby orc ally gains +1d6 damage on a hit during its next turn"
+						, "extraEffects": []
+					}
+					, {
+						"name": "War bagpipes"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 0
+						, "defence": ""
+						, "target": ""
+						, "damage": "1d3 nearby or far away enemies that can hear the bagpipes must immediately roll a normal save; on a failure, the target is hampered until the end of its next turn"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Orcish Instruments"
+					, "effect": "Choose ONE of <em>skull drum</em>, <em>bone flute</em>, or <em>war bagpipes</em>."
+				}]
+				, "nastierSpecials": []
 			}
 			, {
 				"name": "Orc Berserker"
@@ -18131,6 +18299,42 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Orc Tusker"
+				, "source": "Bestiary"
+				, "page": 157
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 17
+				, "MD": 13
+				, "HP": 45
+				, "attacks": [{
+					"name": "Club’n’tusk"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "7 damage"
+					, "extraEffects": [{
+							"trigger": "Furious charge"
+							, "effect": "The attack instead deals 12 damage on a hit if the orc tusker first moves before attacking an enemy it was not engaged with at the start of its turn."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "4 damage, and the orc tusker pops free from all enemies."
+						}
+					]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Orc Warrior"
 				, "source": "13th Age"
 				, "page": 242
@@ -18160,6 +18364,85 @@
 				}]
 				, "abilities": []
 				, "nastierSpecials": []
+			}
+			, {
+				"name": "Orcish Archer"
+				, "source": "Bestiary"
+				, "page": 156
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "archer"
+				, "type": "humanoid"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 17
+				, "MD": 11
+				, "HP": 32
+				, "attacks": [{
+						"name": "Scimitar"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Short bow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 1-5"
+							, "effect": "Reroll the attack against a random nearby creature.  If the rerolled attack is also a natural 1-5, the orcish archer takes 3 damage from sheer agonised frustration, but it doesn’t get to make another attack."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Final frenzy"
+					, "effect": "When the escalation die is 3+, the orcish archer gains a +3 bonus to melee attacks and melee damage."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Pit-Spawn Orc"
+				, "source": "Bestiary"
+				, "page": 156
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 2
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 15
+				, "MD": 12
+				, "HP": 18
+				, "attacks": [{
+					"name": "Punch or bludgeon"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "5 damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Mob attack"
+					, "effect": "The crit range for pit-spawn orcs is 17+.  Whenever a pit-spawn orc scores a critical hit, each pit-spawn orc mook in the battle gains a +1 cumulative bonus to damage until the end of the battle."
+				}]
+				, "nastierSpecials": [{
+					"name": "Boiling rage"
+					, "effect": "When an enemy engaged with the orc hits it with an attack, the enemy takes 4 damage as the orc bites and claws it back."
+				}]
 			}
 		]
 	}
