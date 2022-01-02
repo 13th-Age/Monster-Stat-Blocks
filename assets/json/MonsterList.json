@@ -17517,80 +17517,352 @@
 		"name": "Ogre Mage"
 		, "groupTraits": []
 		, "monsters": [{
-			"name": "Ogre Mage"
-			, "source": "13th Age"
-			, "page": 240
-			, "sizeStrength": "large"
-			, "threat": "normal"
-			, "level": 7
-			, "role": "caster"
-			, "type": "giant"
-			, "initiative": 14
-			, "vulnerability": ""
-			, "AC": 23
-			, "PD": 19
-			, "MD": 21
-			, "HP": 170
-			, "attacks": [{
-					"name": "Naginata"
-					, "specialTrigger": false
-					, "type": "normal"
-					, "modifier": 13
-					, "defence": "AC"
-					, "target": ""
-					, "damage": "35 damage"
-					, "extraEffects": [{
-						"trigger": "Natural 18+"
-						, "effect": "Make a second <em>naginata</em> attack against a nearby enemy as a free action (engaging it is not required)"
-					}]
-				}
-				, {
-					"name": "Cone of cold"
-					, "specialTrigger": false
-					, "type": "close"
-					, "modifier": 13
-					, "defence": "PD"
-					, "target": "up to 3 nearby enemies in a group"
-					, "damage": "50 cold damage"
-					, "extraEffects": [{
-						"trigger": "Limited use"
-						, "effect": "1/day, and the attack affects the ogre’s allies engaged with or between enemy targets."
-					}]
-				}
-				, {
-					"name": "Aura of treachery"
-					, "specialTrigger": true
-					, "type": "close"
-					, "modifier": 13
-					, "defence": "MD"
-					, "target": ""
-					, "damage": "The target is confused until the end of the ogre mage’s next turn"
-					, "extraEffects": []
-				}
-			]
-			, "abilities": [{
-					"name": "Aura of treachery"
-					, "effect": "Once per round when a nearby enemy misses the ogre mage with an attack, the ogre mage can make an <em>aura of treachery</em> attack against it as a free action."
-				}
-				, {
-					"name": "Flight"
-					, "effect": "The ogre mage flies using the sheer power of its superior mind."
-				}
-				, {
-					"name": "Invisibility"
-					, "effect": "If the ogre mage is not engaged, it can turn invisible as an at-will standard action.  It becomes visible when it attacks.  The ogre mage takes 1d10 damage each time it uses <em>invisibility</em> while it’s staggered."
-				}
-				, {
-					"name": "Resist exceptional attacks 16+"
-					, "effect": "When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
-				}
-				, {
-					"name": "Trollish regeneration 20"
-					, "effect": "While an ogre mage is damaged, its uncanny flesh heals 20 hit points at the start of the ogre mage’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limit.<br>&emsp;When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping an ogre mage to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
-				}
-			]
-			, "nastierSpecials": []
-		}]
+				"name": "Ogre Lightning Mage"
+				, "source": "Bestiary"
+				, "page": 152
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "caster"
+				, "type": "giant"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 20
+				, "MD": 22
+				, "HP": 230
+				, "attacks": [{
+						"name": "Naginata"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "15 damage."
+						}]
+					}
+					, {
+						"name": "Lightning from torn sky"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "up to 2 nearby enemies, plus one far away enemy, if any"
+						, "damage": "52 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle, but the ogre lightning mage regains the use of this attack if it’s expended each time it uses its <em>naginata</em> attack."
+						}]
+					}
+					, {
+						"name": "Past master’s judgment"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "25 psychic damage"
+						, "extraEffects": [{
+							"trigger": "First natural even hit each attack"
+							, "effect": "The ogre lightning mage can cancel one spell or magical effect created by the target."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "The ogre lightning mage flies well using the sheer power of its superior mind."
+					}
+					, {
+						"name": "Invisibility"
+						, "effect": "While not engaged, the ogre lightning mage can turn invisible as an at-will standard action.  It becomes visible when it attacks.  The ogre mage takes 1d10 damage each time it uses <em>invisibility</em> while it’s staggered."
+					}
+					, {
+						"name": "Resist exceptional attacks 16+"
+						, "effect": "When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Trollish regeneration 20"
+						, "effect": "While an ogre mage is damaged, its uncanny flesh heals 20 hit points at the start of the ogre mage’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limit.<br>&emsp;When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping an ogre mage to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ogre Mage"
+				, "source": "13th Age"
+				, "page": 240
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "caster"
+				, "type": "giant"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 19
+				, "MD": 21
+				, "HP": 170
+				, "attacks": [{
+						"name": "Naginata"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "35 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "Make a second <em>naginata</em> attack against a nearby enemy as a free action (engaging it is not required)"
+						}]
+					}
+					, {
+						"name": "Cone of cold"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": "up to 3 nearby enemies in a group"
+						, "damage": "50 cold damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/day, and the attack affects the ogre’s allies engaged with or between enemy targets."
+						}]
+					}
+					, {
+						"name": "Aura of treachery"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "The target is confused until the end of the ogre mage’s next turn"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Aura of treachery"
+						, "effect": "Once per round when a nearby enemy misses the ogre mage with an attack, the ogre mage can make an <em>aura of treachery</em> attack against it as a free action."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "The ogre mage flies using the sheer power of its superior mind."
+					}
+					, {
+						"name": "Invisibility"
+						, "effect": "If the ogre mage is not engaged, it can turn invisible as an at-will standard action.  It becomes visible when it attacks.  The ogre mage takes 1d10 damage each time it uses <em>invisibility</em> while it’s staggered."
+					}
+					, {
+						"name": "Resist exceptional attacks 16+"
+						, "effect": "When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Trollish regeneration 20"
+						, "effect": "While an ogre mage is damaged, its uncanny flesh heals 20 hit points at the start of the ogre mage’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limit.<br>&emsp;When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping an ogre mage to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ogre Mage Knight"
+				, "source": "Bestiary"
+				, "page": 152
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "wrecker"
+				, "type": "giant"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 19
+				, "MD": 17
+				, "HP": 160
+				, "attacks": [{
+						"name": "Naginata"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "The effect depends on the roll"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "25 damage, and the ogre mage knight can use <em>lightning pulse</em> as a free action."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "20 damage, and the ogre mage knight can use <em>voice of thunder</em> as a free action."
+							}
+							, {
+								"trigger": "Natural even miss"
+								, "effect": "10 damage, and the ogre mage knight can teleport to any nearby location it can see before using <em>magi’s lightning chain</em> as a free action."
+							}
+							, {
+								"trigger": "Natural odd miss"
+								, "effect": "The ogre mage knight can use <em>cone of cold</em> as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Magi’s lightning chain"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "15 lightning damage, and each time this attack has a natural even attack roll, the ogre mage knight can target a different creature with the ability"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Cone of cold"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "up to 3 nearby enemies in a group, also targets the ogre’s allies engaged with the targets"
+						, "damage": "20 cold damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "10 cold damage."
+						}]
+					}
+					, {
+						"name": "Lightning pulse"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "one random nearby or far away enemy"
+						, "damage": "20 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is weakened (save ends)."
+						}]
+					}
+					, {
+						"name": "Voice of thunder"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "15 thunder damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Resist exceptional attacks 16+"
+						, "effect": "When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Trollish regeneration 15"
+						, "effect": "While an ogre mage is damaged, its uncanny flesh heals 15 hit points at the start of the ogre mage’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of regeneration doesn’t count against the five-use limit.<br>&emsp;When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping an ogre mage to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Ki"
+					, "effect": "Gain 1d4 ki at the start of each battle.  Spend a point of ki as a free action, once per round, to change the ogre mage knight’s natural attack result by one; a natural 1 could become a 2, a natural 19 could become a natural 20, and so on."
+				}]
+			}
+			, {
+				"name": "Prismatic Ogre Mage"
+				, "source": "Bestiary"
+				, "page": 153
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "caster"
+				, "type": "giant"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 22
+				, "MD": 18
+				, "HP": 360
+				, "attacks": [{
+						"name": "Horns and claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "75 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 2-5"
+							, "effect": "The prismatic ogre mage can use <em>prismatic blast</em> as a free action without provoking an opportunity attack."
+						}]
+					}
+					, {
+						"name": "Force shove"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "each enemy engaged with ogre"
+						, "damage": "10 force damage, and the target pops free from the ogre mage"
+						, "extraEffects": [{
+							"trigger": "Quick use"
+							, "effect": "This power only requires a quick action (once per round) instead of a standard action when the escalation die is odd."
+						}]
+					}
+					, {
+						"name": "Prismatic blast"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 15
+						, "defence": "PD"
+						, "target": "1d3 nearby or far away enemies in a group"
+						, "damage": "Roll a d8 against each hit target to determine the type of ray and effect"
+						, "extraEffects": [{
+								"trigger": "1. Red"
+								, "effect": "75 fire damage; <em>Miss</em: 40 fire damage."
+							}
+							, {
+								"trigger": "2. Orange"
+								, "effect": "50 damage, and the target is confused (save ends)."
+							}
+							, {
+								"trigger": "3. Yellow"
+								, "effect": "40 ongoing poison damage."
+							}
+							, {
+								"trigger": "4. Green"
+								, "effect": "The target loses a recovery, and the prismatic ogre mage heals 70 hp."
+							}
+							, {
+								"trigger": "5. Blue"
+								, "effect": "60 lightning damage, and make a secondary attack:<br><strong>+15 vs. PD (one enemy near the target)</strong> - 20 lightning damage."
+							}
+							, {
+								"trigger": "6. Cyan"
+								, "effect": "The target is stunned (save ends)."
+							}
+							, {
+								"trigger": "7. Purple"
+								, "effect": "The target is dazed and confused (save ends both).  When the target saves, it takes 40 psychic damage."
+							}
+							, {
+								"trigger": "8. Magenta"
+								, "effect": "The target is transported into the future.  Remove that creature from play, returning it to the battle in (or near) its previous location at the end of its next turn.  No time seems to pass for the target while it’s gone."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Resist exceptional attacks 16+"
+						, "effect": "When a limited attack (not an at-will attack) targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Warp"
+						, "effect": "The prismatic ogre mage warps reality with its presence.  Each character hit by the <em>prismatic blast</em> attack during battle must write down one true personal trait or preference about their character such as: “Yellow hair”, “Afraid of spiders”, “Prefers white wine to red”, or “Tatto of a halfling on left bicep”.  These personal traits are shuffled, and randomly distributed equally by the GM after the battle is over.  Whichever trait each player receives is now true for their character as well as for the character fo the player who wrote it down (unless there has somehow turned out to be a swap…).  These traits don’t alter game mechanics (feats, powers, backgrounds, icon relationships, attributes, bonuses, etc.).  They are personal details that have been warped and scrambled by the prismatic ogre mage’s magic."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
 	}
 	, {
 		"name": "Ooze"
