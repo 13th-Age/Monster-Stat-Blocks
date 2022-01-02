@@ -17134,53 +17134,384 @@
 		"name": "Ogre"
 		, "groupTraits": []
 		, "monsters": [{
-			"name": "Ogre"
-			, "source": "13th Age"
-			, "page": 240
-			, "sizeStrength": "large"
-			, "threat": "normal"
-			, "level": 3
-			, "role": "troop"
-			, "type": "giant"
-			, "initiative": 5
-			, "vulnerability": ""
-			, "AC": 19
-			, "PD": 16
-			, "MD": 12
-			, "HP": 90
-			, "attacks": [{
-					"name": "Big honkin’ club"
+				"name": "Demonis Ogre"
+				, "source": "Bestiary"
+				, "page": 149
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "spoiler"
+				, "type": "giant"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 16
+				, "MD": 16
+				, "HP": 100
+				, "attacks": [{
+						"name": "Demon-kissed blade"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "24 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 5, 10, 15, or 20"
+								, "effect": "The ogre gains a random <em>demonic advantage</em> (see below) until the end of the battle.  All demonic advantages end if the ogre experiences a demonic eruption."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+					, {
+						"name": "Flaming spear"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "The target takes 10 ongoing fire damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Demonic advantage"
+						, "effect": "Roll a d6 to determine which demonic ability the ogre gains:<ul><li>1. The ogre gains <em>resist energy 16+</em>.</li><li>2. Once per battle, the ogre can teleport anywhere it can see as a move action.</li><li>3. The ogre’s attacks deal +1d8 damage, hit or miss.</li><li>4. At the start of the ogre’s turn, each enemy engaged with it takes 2d6 negative energy damage.</li><li>5. The ogre gains a +5 bonus to saves this battle.</li><li>6. The ogre begins making <em>demonic eruption</em> rolls when the escalation die is 4+ instead of 6+.</li></ul>"
+					}
+					, {
+						"name": "Demonic eruption"
+						, "effect": "When the escalation die is 6+, the demonic ogre rolls a normal save at the start of each of its turns.  On a success, roll a d6 and replace the demonic ogre with a new undamged demon.  1-2: Imp; 3-4: Despoiler; 5: Frenzy demon; 6: Cambion sickle."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Early eruption"
+					, "effect": "Begin making <em>demonic eruption</em> rolls when the escalation die is 5+ instead of 6+.  Also use stronger demons for the options that the ogre could turn into."
+				}]
+			}
+			, {
+				"name": "Ogre"
+				, "source": "13th Age"
+				, "page": 240
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "giant"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 16
+				, "MD": 12
+				, "HP": 90
+				, "attacks": [{
+						"name": "Big honkin’ club"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage"
+						}]
+					}
+					, {
+						"name": "Big shove"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "PD"
+						, "target": "each enemy engaged with ogre"
+						, "damage": "1d6 damage, and the target pops free from the ogre"
+						, "extraEffects": [{
+							"trigger": "Quick use"
+							, "effect": "This power only requires a quick action (once per round) instead of a standard action when the escalation die is even."
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Tough skin"
+					, "effect": "Whenever the ogre takes weapon damage, reduce that damage by 1d8 points."
+				}]
+			}
+			, {
+				"name": "Ogre Berserker"
+				, "source": "Bestiary"
+				, "page": 149
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "wrecker"
+				, "type": "giant"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 18
+				, "MD": 15
+				, "HP": 120
+				, "attacks": [{
+					"name": "Giant axe or sword"
 					, "specialTrigger": false
 					, "type": "normal"
-					, "modifier": 7
+					, "modifier": 8
 					, "defence": "AC"
 					, "target": ""
-					, "damage": "18 damage"
+					, "damage": "28 damage"
 					, "extraEffects": [{
-						"trigger": "Miss"
-						, "effect": "Half damage"
-					}]
-				}
-				, {
-					"name": "Big shove"
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "The ogre berserker gains the <em>escalator</em> ability (it adds the escalation die to its attacks) until the end of the battle."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "Half damage, and the ogre berserker takes 1d6 damage."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "You shouldn’t have done that"
+						, "effect": "When an enemy engaged with the berserker scores a critical hit against it, that enemy takes 7d6 damage."
+					}
+					, {
+						"name": "Incidental damage"
+						, "effect": "When an enemy makes an opportunity attack against the berserker, hit or miss, that enemy takes 2d6 damage."
+					}
+					, {
+						"name": "Rauguguggh"
+						, "effect": "Once per battle as a free action, when the ogre berserker fails a save, it can take 3d6 damage to succeed at the save instead."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ogre Champion"
+				, "source": "Bestiary"
+				, "page": 150
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "giant"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 18
+				, "HP": 140
+				, "attacks": [{
+						"name": "Champion’s battle-axe"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 5, 10, 15, or 20"
+								, "effect": "The ogre champion gains a second standard action this turn, but not a third."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+					, {
+						"name": "Heavy javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "one nearby or far away enemy"
+						, "damage": "26 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "10 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Orc Lord’s enemies"
+						, "effect": "Whenever a nearby dwarf or elf enemy attempts to use their racial power, they must roll a hard save (16+).  On a failure, the power fails and has no effect that turn (but they can try again next turn)."
+					}
+					, {
+						"name": "Slayer of wizards"
+						, "effect": "Creatures engaged with the ogre champion take opportunity attacks from it when casting close spells as if they were casting ranged spells."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Escalating danger"
+					, "effect": "The ogre champion adds the escalation die to the damage it deals with its attacks, hit or miss."
+				}]
+			}
+			, {
+				"name": "Ogre Crusader"
+				, "source": "Bestiary"
+				, "page": 150
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "troop"
+				, "type": "giant"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 17
+				, "MD": 15
+				, "HP": 106
+				, "attacks": [{
+						"name": "Jagged greatsword or greataxe"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "18 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 5, 10, 15, or 20"
+								, "effect": "The ogre crusader can make a <em>war-curse</em> attack as a free action."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+					, {
+						"name": "War javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "War-curse"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "the nearby conscious enemy with the lowest hit points"
+						, "damage": "10 psychic damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Special hate"
+					, "effect": "When the ogre crusader attacks an enemy that has a positive or conflicted relationship with either the Diabolist or the Great Gold Wyrm, it adds the escalation die to the attack roll."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Ogre Minion"
+				, "source": "Bestiary"
+				, "page": 150
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "mook"
+				, "type": "giant"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 23
+				, "MD": 19
+				, "HP": 80
+				, "attacks": [{
+						"name": "Ogre-sized chopper"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "35 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Half damage."
+						}]
+					}
+					, {
+						"name": "Ogre-sized javelin"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "one nearby or far away enemy"
+						, "damage": "20 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Incidental damage"
+						, "effect": "When an enemy makes an opportunity attack against the ogre minion, hit or miss, that enemy takes 4d6 damage."
+					}
+					, {
+						"name": "Double-strength mook"
+						, "effect": "The ogre minion mook counts as two 9th level mooks when you’re building battles."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Punching above its weight"
+					, "effect": "Once per round, the ogre minion mob can take 5d10 damage to reroll an attack (a member of the mob takes one for the team)."
+				}]
+			}
+			, {
+				"name": "Ogre Penitent"
+				, "source": "Bestiary"
+				, "page": 149
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "blocker"
+				, "type": "giant"
+				, "initiative": 4
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 14
+				, "HP": 100
+				, "attacks": [{
+					"name": "Remorseful flail"
 					, "specialTrigger": false
 					, "type": "normal"
-					, "modifier": 9
-					, "defence": "PD"
-					, "target": "each enemy engaged with ogre"
-					, "damage": "1d6 damage, and the target pops free from the ogre"
+					, "modifier": 6
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "20 damage"
 					, "extraEffects": [{
-						"trigger": "Quick use"
-						, "effect": "This power only requires a quick action (once per round) instead of a standard action when the escalation die is even."
-					}]
-				}
-			]
-			, "abilities": []
-			, "nastierSpecials": [{
-				"name": "Tough skin"
-				, "effect": "Whenever the ogre takes weapon damage, reduce that damage by 1d8 points."
-			}]
-		}]
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "Until the end of the battle, when an enemy engaged with the ogre attacks it, that enemy can’t target other enemies with that attack."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "Half damage to a different nearby enemy."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Closer my death to thee"
+						, "effect": "While staggered, the ogre penitent gains a +4 attack bonus."
+					}
+					, {
+						"name": "Crumbling ego"
+						, "effect": "Each time the ogre fails a save, it takes 1d8 psychic damage."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Frenzied disappointment"
+					, "effect": "If the ogre penitent rolls a natural 1 or 2 with an attack roll, it can take an extra standard action during its next turn."
+				}]
+			}
+		]
 	}
 	, {
 		"name": "Ogre Mage"
