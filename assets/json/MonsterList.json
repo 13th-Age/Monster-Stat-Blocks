@@ -16673,6 +16673,458 @@
 		}]
 	}
 	, {
+		"name": "Naga"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Elder Manafang Naga"
+				, "source": "Bestiary"
+				, "page": 145
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 10
+				, "role": "leader"
+				, "type": "beast"
+				, "initiative": 18
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 20
+				, "MD": 24
+				, "HP": 210
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "45 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The naga gains <em>resist spell damage 16+</em> against the target’s spells until the end of the battle."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "25 damage."
+							}
+						]
+					}
+					, {
+						"name": "Force missiles"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 0
+						, "defence": ""
+						, "target": ""
+						, "damage": "45 force damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle."
+						}]
+					}
+					, {
+						"name": "Ritual movements"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 15
+						, "defence": "MD"
+						, "target": "one nearby enemy, or one nearby enemy per point of esc. die if <em>supreme mystic escalator</em> benefit is active"
+						, "damage": "45 psychic damage, and the target can’t cast spells or use the activated powers of true magic items (save ends)"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "20 psychic damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Arcane mirror"
+						, "effect": "Whenever an enemy targets the elder manafang naga with a spell, the naga regains the use of <em>force missiles</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spellcaster doesn’t expend the spell."
+					}
+					, {
+						"name": "Supreme mystic escalator"
+						, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been hit by two enemy spells since its last turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Elder Sparkscale Naga"
+				, "source": "Bestiary"
+				, "page": 145
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "leader"
+				, "type": "beast"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 23
+				, "MD": 19
+				, "HP": 190
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "Each nearby enemy takes 10 thunder damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "20 damage."
+							}
+						]
+					}
+					, {
+						"name": "Bloom of lightning"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d3 nearby or far away enemies"
+						, "damage": "30 lightning damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "Each nearby enemy takes 10 thunder damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Each nearby creature (including allies) takes 5 thunder damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+					, {
+						"name": "Sparking aura"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "one nearby enemy, or one nearby enemy per point of esc. die if <em>supreme mystic escalator</em> benefit is active"
+						, "damage": "40 lightning damage, and the target is vulnerable (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Arcane mirror"
+						, "effect": "Whenever an enemy targets the elder sparkscale naga with a spell, the naga regains the use of <em>bloom of lightning</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spellcaster doesn’t expend the spell."
+					}
+					, {
+						"name": "Supreme mystic escalator"
+						, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been hit by two enemy spells since its last turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Elder Swaysong Naga"
+				, "source": "Bestiary"
+				, "page": 144
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "leader"
+				, "type": "beast"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 19
+				, "MD": 21
+				, "HP": 144
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "24 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target also takes 15 ongoing poison damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "12 damage."
+							}
+						]
+					}
+					, {
+						"name": "Song of reversals"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "1d3 nearby or far away enemies"
+						, "damage": "25 psychic damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target is confused (save ends)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "10 psychic damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+					, {
+						"name": "Hypnotic movements"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "one nearby enemy, or one nearby enemy per point of esc. die if <em>supreme mystic escalator</em> benefit is active"
+						, "damage": "15 psychic damage, and the target is hampered (save ends); until the target saves, it takes 15 psychic damage each time it attacks the naga"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Arcane mirror"
+						, "effect": "Whenever an enemy targets the elder swaysong naga with a spell, the naga regains the use of <em>song of reversals</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spellcaster doesn’t expend the spell."
+					}
+					, {
+						"name": "Supreme mystic escalator"
+						, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been hit by two enemy spells since its last turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Manafang Naga"
+				, "source": "Bestiary"
+				, "page": 144
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "leader"
+				, "type": "beast"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 17
+				, "MD": 21
+				, "HP": 210
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "45 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The naga gains <em>resist spell damage 16+</em> against the target’s spells until the end of the battle."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "25 damage."
+							}
+						]
+					}
+					, {
+						"name": "Force missiles"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 0
+						, "defence": ""
+						, "target": "1d4 nearby or far away enemies"
+						, "damage": "25 force damage"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "1/battle."
+						}]
+					}
+					, {
+						"name": "Ritual movements"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "one nearby enemy, or one nearby enemy per point of esc. die if <em>mysstic escalator</em> benefit is active"
+						, "damage": "40 psychic damage, and the target can’t cast spells or use the activated powers of true magic items (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Arcane mirror"
+						, "effect": "When an enemy target the manafang naga with a spell, the naga regains the use of <em>force missiles</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spellcaster doesn’t expend the spell."
+					}
+					, {
+						"name": "Mystic escalator"
+						, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy’s spell since its last turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Sparkscale Naga"
+				, "source": "Bestiary"
+				, "page": 144
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "leader"
+				, "type": "beast"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 20
+				, "MD": 16
+				, "HP": 190
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "Each nearby enemy takes 10 thunder damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "20 damage."
+							}
+						]
+					}
+					, {
+						"name": "Bloom of lightning"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "1d3 nearby or far away enemies"
+						, "damage": "30 lightning damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "Each nearby enemy takes 10 thunder damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Each nearby creature (including allies) takes 5 thunder damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+					, {
+						"name": "Sparking aura"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "one nearby enemy, or one nearby enemy per point of esc. die if <em>mystic escalator</em> benefit is active"
+						, "damage": "20 lightning damage, and the target is vulnerable (save ends)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Arcane mirror"
+						, "effect": "When an enemy targets the sparkscale naga with a spell, the naga regains the use of <em>sparking aura</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spell caster doesn’t expend the spell."
+					}
+					, {
+						"name": "Mystic escalator"
+						, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy’s spell since its last turn."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Swaysong Naga"
+				, "source": "Bestiary"
+				, "page": 143
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "leader"
+				, "type": "beast"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 16
+				, "MD": 18
+				, "HP": 144
+				, "attacks": [{
+						"name": "Bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "24 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target also takes 15 ongoing poison damage."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "12 damage."
+							}
+						]
+					}
+					, {
+						"name": "Song of reversals"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "1d3 nearby or far away enemies"
+						, "damage": "25 psychic damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target is confused (save ends)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "10 psychic damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+					, {
+						"name": "Hypnotic movements"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "one nearby enemy, or one nearby enemy per point of esc. die if <em>mystic escalator</em> benefit is active"
+						, "damage": "10 psychic damage, and the target is hampered (save ends)"
+						, "extraEffects": [{
+								"trigger": "Arcane mirror"
+								, "effect": "When an enemy targets the swaysong naga with a spell, the naga regains the use of <em>song of reversals</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spellcaster doesn’t expend the spell."
+							}
+							, {
+								"trigger": "Mystic escalator"
+								, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy’s spell since its last turn."
+							}
+						]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Ogre"
 		, "groupTraits": []
 		, "monsters": [{
