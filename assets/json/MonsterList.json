@@ -16088,65 +16088,318 @@
 		"name": "Manticore"
 		, "groupTraits": []
 		, "monsters": [{
-			"name": "Manticore"
-			, "source": "13th Age"
-			, "page": 238
-			, "sizeStrength": "large"
-			, "threat": "normal"
-			, "level": 6
-			, "role": "archer"
-			, "type": "beast"
-			, "initiative": 13
-			, "vulnerability": ""
-			, "AC": 22
-			, "PD": 20
-			, "MD": 16
-			, "HP": 182
-			, "attacks": [{
-					"name": "Battering paws"
-					, "specialTrigger": false
-					, "type": "normal"
-					, "modifier": 11
-					, "defence": "AC"
-					, "target": "2 attacks"
-					, "damage": "20 damage"
-					, "extraEffects": [{
-						"trigger": "Natural 16+"
-						, "effect": "The manticore can make a single <em>volley of tail spikes</em> attack (one attack roll) against a different target as a free action."
-					}]
-				}
-				, {
-					"name": "Crushing leonine jaws"
-					, "specialTrigger": false
-					, "type": "normal"
-					, "modifier": 11
-					, "defence": "AC"
-					, "target": ""
-					, "damage": "30 damage; OR 50 damage against a creature taking ongoing poison damage"
-					, "extraEffects": []
-				}
-				, {
-					"name": "Volley of tail spikes"
-					, "specialTrigger": false
-					, "type": "close"
-					, "modifier": 13
-					, "defence": "AC"
-					, "target": "1d3 nearby or far away enemies in a group"
-					, "damage": "5 ongoing poison damage (hard save ends, 16+)"
-					, "extraEffects": []
-				}
-			]
-			, "abilities": [{
-					"name": "Flight"
-					, "effect": ""
-				}
-				, {
+				"name": "Coursing Manticore"
+				, "source": "Bestiary"
+				, "page": 140
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 21
+				, "MD": 15
+				, "HP": 170
+				, "attacks": [{
+						"name": "Battering paws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The manticore can make a <em>scorpion sting</em> attack against a different target as a free action."
+						}]
+					}
+					, {
+						"name": "Crushing leonine jaws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage, or 50 damage against a creature taking ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Scorpion sting"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage, and 5 ongoing poison damage (hard save ends, 16+)"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Volley of tail spikes"
+						, "specialTrigger": true
+						, "type": "ranged"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "1d3 nearby or far away enemies in a group"
+						, "damage": "5 ongoing poison damage (hard save ends, 16+)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Fly-by attack"
+						, "effect": "While flying, the manticore can make a <em>scorpion sting</em> attack, pop free from the target, and keep flying to somewhere nearby."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Giant batlike dragon wings put the final horrid touch on the coursing manticore’s “everthing awful” design aesthetic."
+					}
+					, {
+						"name": "Poison reservoirs"
+						, "effect": "Each time the manticore uses its <em>scorpion sting</em> attack, it takes 1d6 damage, or 2d6 damage if it’s staggered."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Aerial archer"
+						, "effect": "Instead of a scorpion tail, the manticore has a spiked tail full of quills and can make <em>volley of tail spikes</em> attacks instead of <em>scorpion sting</em> attacks."
+					}
+					, {
+						"name": "Diving leap"
+						, "effect": "The manticore leaps toward its prey, using its wings to arrow into battle at tremendous speed.  During its first turn only, add +6 to its initiative count.  After that, the beast returns to its normal initiative order."
+					}
+				]
+			}
+			, {
+				"name": "Manticore"
+				, "source": "13th Age"
+				, "page": 238
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "archer"
+				, "type": "beast"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 182
+				, "attacks": [{
+						"name": "Battering paws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The manticore can make a single <em>volley of tail spikes</em> attack (one attack roll) against a different target as a free action."
+						}]
+					}
+					, {
+						"name": "Crushing leonine jaws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage; OR 50 damage against a creature taking ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Volley of tail spikes"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "1d3 nearby or far away enemies in a group"
+						, "damage": "5 ongoing poison damage (hard save ends, 16+)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": ""
+					}
+					, {
+						"name": "Poison reservoirs"
+						, "effect": "Each time the manticore uses its <em>volley of tail spikes</em> attack, it takes 1d6 damage, or 2d6 if it is staggered."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Manticore Bard"
+				, "source": "Bestiary"
+				, "page": 139
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "caster"
+				, "type": "beast"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 15
+				, "HP": 150
+				, "attacks": [{
+						"name": "Battering paws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The manticore can make a single <em>volley of tail spikes</em> attack (one attack roll) against a different target as a free action without taking an opportunity attack."
+						}]
+					}
+					, {
+						"name": "Crushing leonine jaws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage, or 40 damage against a creature taking ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Musical voice"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "20 psychic damage, and the target is dazed (hard save ends, 16+)"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "In addition, the target can’t use the escalation die until it saves."
+							}
+							, {
+								"trigger": "Intermittent song"
+								, "effect": "The manticore can use <em>musical voice</em> only 1d4 times during the battle, and never two turns in a row."
+							}
+						]
+					}
+					, {
+						"name": "Volley of tail spikes"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "1d3 nearby or far away enemies in a group"
+						, "damage": "5 ongoing poison damage (hard save ends, 16+)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
 					"name": "Poison reservoirs"
-					, "effect": "Each time the manticore uses its <em>volley of tail spikes</em> attack, it takes 1d6 damage, or 2d6 if it is staggered."
-				}
-			]
-			, "nastierSpecials": []
-		}]
+					, "effect": "Each time the manticore uses its <em>volley of tail spikes</em> attack, it takes 1d6 damage, or 2d6 damage if it’s staggered."
+				}]
+				, "nastierSpecials": [{
+						"name": "Battle music"
+						, "effect": "The manticore has songs for many different purposes.  When the manticore makes a <em>musical voice</em> attack and rolls a natural even hit, choose one song (or roll a d4):"
+					}
+					, {
+						"name": "1. Fortissimo"
+						, "effect": "Each of the manticore’s allies gains a +2d6 damage bonus with attacks that hit until the end of the battle (non-cumulative)."
+					}
+					, {
+						"name": "2. Profundo"
+						, "effect": "The manticore’s <em>musical voice</em> attack now deals 40 psychic damage instead of 20 until the end of the battle."
+					}
+					, {
+						"name": "3. Furioso"
+						, "effect": "The target is confused instead of dazed."
+					}
+					, {
+						"name": "4. Largo"
+						, "effect": "The manticore can make a <em>musical voice</em> attack during its next turn as a free action, but with a +3 attack bonus.  This free attack won’t trigger another <em>battle music</em> effect."
+					}
+				]
+			}
+			, {
+				"name": "Mantikumhar"
+				, "source": "Bestiary"
+				, "page": 139
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 19
+				, "MD": 15
+				, "HP": 119
+				, "attacks": [{
+						"name": "Pincer claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "18 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The mantikumhar pulls its target under the soil/ground.  The target is stuck, hampered, and takes 5 ongoing damage from suffocation (save ends all)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "The target must roll an immediate save; on a failure, it’s dazed until the end of its next turn from dirt or sand thrown in its face."
+							}
+						]
+					}
+					, {
+						"name": "Crushing leonine jaws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "30 damage, or 40 damage against a creature taking ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Serpent sting"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage, and 5 ongoing poison damage (hard save ends, 16+)"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Burrowing"
+						, "effect": "The mantikumhar can move rapidly through sand, loose soil, or dry eroded earth.  It prefers to gid out a wide pit and lie in wait for prey."
+					}
+					, {
+						"name": "Can’t be blinded"
+						, "effect": "Between nictitating membranes that keep its eyes from being scratched out by the sand and its weird burrowing echolocation sense, the mantikumhar can’t be blinded."
+					}
+					, {
+						"name": "Poison reservoirs"
+						, "effect": "Each time the mantikumhar uses its <em>serpent sting</em> attack, it takes 1d6 damage, or 2d6 damage if it’s staggered."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Hunker down"
+						, "effect": "A mantikumhar can burrow into the soil as a move action, concealing itself from attacks.  A hunkered mantihumhar gains a +3 bonus to AC and PD, but it can’t use <em>crushing leonine jaws</em>."
+					}
+					, {
+						"name": "Sand ambush"
+						, "effect": "The mantihumhar’s extensible tail can strike by surprise like a cobra from anywhere in its pit.  The mantikumhar’s <em>serpent sting</em> attack is now <strong>+15 vs. AC (one nearby enemy)</strong>."
+					}
+				]
+			}
+		]
 	}
 	, {
 		"name": "Medusa"
