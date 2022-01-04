@@ -18717,6 +18717,176 @@
 		}]
 	}
 	, {
+		"name": "Predatory Plant"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Claw Flower"
+				, "source": "Bestiary"
+				, "page": 161
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "spoiler"
+				, "type": "plant"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 12
+				, "MD": 15
+				, "HP": 40
+				, "attacks": [{
+						"name": "Serrated claw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 1-5"
+							, "effect": "The claw flower takes 1d4 damage from burst roots."
+						}]
+					}
+					, {
+						"name": "Bumble spores"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 4
+						, "defence": "MD"
+						, "target": "1d2 nearby random non-plant creatures"
+						, "damage": "The effect depends on the roll"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "4 psychic damage, and the target is confused until the end of its next turn."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "3 psychic damage, and the target is stuck until the end of its next turn."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "2 psychic damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Immobile until pressed"
+						, "effect": "The claw flower has roots and normally can’t move, but when it takes 10 or more damage from a single attack it can move normally during its next turn."
+					}
+					, {
+						"name": "Spore escalator"
+						, "effect": "The claw flower adds the escalation die to its <em>bumble spores</em> attack rolls."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Gentle roar"
+					, "effect": "Once per battle, the claw flower can make a <em>bumble spores</em> attack as a quick action."
+				}]
+			}
+			, {
+				"name": "Pixie Pod"
+				, "source": "Bestiary"
+				, "page": 161
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "leader"
+				, "type": "plant"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 13
+				, "MD": 16
+				, "HP": 40
+				, "attacks": [{
+					"name": "Peripheral summoning"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 8
+					, "defence": "MD"
+					, "target": "one random nearby enemy"
+					, "damage": "8 psychic damage"
+					, "extraEffects": [{
+						"trigger": "Natural even hit"
+						, "effect": "Add a new podling into the battle in a random location."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Release the pods"
+						, "effect": "Once per battle when the pixie pod rolls a natural even hit with peripheral summoning.  It adds a number of podlings into the battle equal to the escalation die instead of only one."
+					}
+					, {
+						"name": "Immobile"
+						, "effect": "Although its podlings occasionally pick up and move it around out of combat, in battle the pixie pod can’t move and is stuck except for its teleport ability."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+					, {
+						"name": "Lurching teleport"
+						, "effect": "Once per battle as a move action, the pixie-pod can teleport to a nearby location.  But its control sucks.  The teleport goes in a random direction.  Roll it using a d8 for direction."
+					}
+					, {
+						"name": "Magical concealment"
+						, "effect": "As long as one or more of its podlings are nearby, the pixie pod is invisible and extremely difficult to even detect.  A PC who wants to locate the pixie pod must spend a standard action searching and succeed at a DC 25 skill check using Wisdom.  Backgrounds connected to plants and the wilderness help normally, and general searching skills and magic talents might help a bit but not at full strength.  Once located, the plant can be attacked like a normal invisible creature.  When it teleports, however, it must be located all over again."
+					}
+					, {
+						"name": "Start with mooks"
+						, "effect": "The pixie pod is normally accompanied by five active podlings that don’t count toward the total when building a battle with the pod.  Additional podlings do count, however."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Podling"
+				, "source": "Bestiary"
+				, "page": 161
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "mook"
+				, "type": "plant"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 17
+				, "MD": 13
+				, "HP": 10
+				, "attacks": [{
+						"name": "Needle sword"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target can’t choose to search for the pixie pod plant until all podlings in the battle are slain."
+						}]
+					}
+					, {
+						"name": "Tiny green bow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": [{
+					"name": "Flight"
+					, "effect": "The podling that can fly, hovering out of reach and firing arrows."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Rakshasa"
 		, "groupTraits": []
 		, "monsters": [{
