@@ -6179,6 +6179,84 @@
 				, "nastierSpecials": []
 			}
 			, {
+				"name": "Flamewreathed Dragon (Red)"
+				, "source": "Bestiary"
+				, "page": 170
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 12
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 28
+				, "PD": 21
+				, "MD": 27
+				, "HP": 1100
+				, "attacks": [{
+						"name": "Fangs and claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": "3 attacks"
+						, "damage": "75 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 20 ongoing fire damage."
+						}]
+					}
+					, {
+						"name": "Primal fire breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "1d4 + 1 nearby enemies, or one enemy"
+						, "damage": "60 fire damage, and 15 ongoing fire damage; OR 180 fire damage, and 30 ongoing fire damage and the target is weakened (save ends both) if used against a single enemy"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "If the breath targeted multiple enemies, the target takes 25 ongoing fire damage instead of 15.  If the breath targeted a single enemy, the target takes 60 ongoing fire damage instead of 30."
+						}]
+					}
+					, {
+						"name": "Whirling inferno"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "each nearby enemy taking ongoing fire damage"
+						, "damage": "The target’s ongoing fire damage increases by 5 and becomes hard save ends (16+) as the dragon fans the flames"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "2/battle, as a quick action (once per round)."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Intermittent breath"
+						, "effect": "A flamewreathed dragon can use <em>primal fire</em> 1d4 + 2 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Resist fire 18+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Wyrm of fear and flame"
+						, "effect": "While engaged with this creature, enemies with 120 hp or fewer are dazed (-4 attacks), do not add the escalation die to their attacks, and take 4d20 fire damage at the start of their turn."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Draconic fire"
+						, "effect": "The dragon’s will and magic are so powerful that it ignores the fire resistance of creatures battling it."
+					}
+					, {
+						"name": "Smoke minions"
+						, "effect": "The dragon’s lair is wreathed in smoke and fumes, and through its magic the dragon has some control over those hot gases.  Once per round as a quick action, the flamewreathed dragon can summon 1d4 smoke minions that take humanoid or bestial form and defend the dragon’s lair.  Roll initiative for the minions once and use that count for all additional minions."
+					}
+				]
+			}
+			, {
 				"name": "Gorge Dragon (Black)"
 				, "source": "Bestiary"
 				, "page": 17
@@ -6258,7 +6336,233 @@
 				, "nastierSpecials": []
 			}
 			, {
-				"name": "Void Beast"
+				"name": "Greathoard Elder (Red)"
+				, "source": "Bestiary"
+				, "page": 170
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 11
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 26
+				, "MD": 20
+				, "HP": 870
+				, "attacks": [{
+						"name": "Fangs, claws, and wings"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "90 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 14+"
+								, "effect": "The target takes 12 extra damage from a wing buffet."
+							}
+							, {
+								"trigger": "Natural 16+"
+								, "effect": "The target takes 20 extra damage from a claw strike."
+							}
+							, {
+								"trigger": "Natural 19+"
+								, "effect": "The dragon can make a <em>treasury master</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Treasury master"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "MD"
+						, "target": "the nearby non-confused enemy with the most true magic items"
+						, "damage": "30 psychic damage, and the target is confused (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "2/battle, as a quick action (once per round)."
+						}]
+					}
+					, {
+						"name": "Precise breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "1d4 + 1 nearby enemies, or one enemy"
+						, "damage": "50 fire damage, and 15 ongoing fire damage; OR 170 fire damage, and 30 ongoing fire damage if used against a single enemy"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "If the breath targeted multiple enemies, the target takes 25 ongoing fire damage instead of 15.  If the breath targeted a single enemy, the target takes 60 ongoing fire damage instead of 30."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Call of the hoard"
+						, "effect": "When in its lair, the greathoard elder has +1 AC.  When an enemy is engaged with the greathoard elder in its lair at the start of its turn, it must roll a normal save; on a failure, it hurls one random non-armour true magic item into the dragon’s hoard (adjust stats accordingly).  The item is unavailable until the end of the battle.  If the dragon flees or is defeated, lost magic items can be retrieved."
+					}
+					, {
+						"name": "Greathoard rage"
+						, "effect": "When an enemy scores a critical hit against the greathoard elder while it’s in its lair, the elder can reroll one of its missed attacks each round (cumulative) as its hoard sings a song of carnage to it."
+					}
+					, {
+						"name": "Intermittent breath"
+						, "effect": "A greathoard elder can use <em>precise breath</em> 1d4 + 1 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Resist fire 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Iconic comparisons"
+					, "effect": "The dragon is enamoured/envious of the icons with the greatest hoards: the Dwarf King, Elf Queen, Emperor, Prince of Shadows, and the Three.  For each PC who has at least one positive or conflicted relationship point with one or more of these icons, the greathoard elder gains an extra use of <em>treasury master</em> this battle."
+				}]
+			}
+			, {
+				"name": "Hoard Spirit (Red)"
+				, "source": "Bestiary"
+				, "page": 169
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "mook"
+				, "type": "construct"
+				, "initiative": 15
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 22
+				, "MD": 18
+				, "HP": 50
+				, "attacks": [{
+					"name": "Hoard-fuelled strike"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 14
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "35 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The target is stuck under a pile of treasure until the end of its next turn."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Hoardsong Dragon (Red)"
+				, "source": "Bestiary"
+				, "page": 169
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "spoiler"
+				, "type": "dragon"
+				, "initiative": 13
+				, "vulnerability": "cold"
+				, "AC": 25
+				, "PD": 24
+				, "MD": 18
+				, "HP": 360
+				, "attacks": [{
+						"name": "Fangs and claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "3 attacks"
+						, "damage": "30 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 15 extra damage from a precise strike."
+						}]
+					}
+					, {
+						"name": "Hoardsong"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "one nearby enemy in the dragon’s lair"
+						, "damage": "10 psychic damage, and the target is confused (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "2/battle, as a quick action (once per round)."
+						}]
+					}
+					, {
+						"name": "Precise breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d4 + 1 nearby enemies, or one enemy"
+						, "damage": "20 fire damage, and 10 ongoing fire damage OR 80 fire damage, and 20 ongoing fire damage if used against a single enemy"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "If the breath targeted multiple enemies, the target takes 20 ongoing fire damage instead of 10.  If the breath targeted a single enemy, the target takes 40 ongoing fire damage instead of 20."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Intermittent breath"
+						, "effect": "A hoardsong dragon can use <em>precise breath</em> 1d4 times per battle, but never two turns in a row."
+					}
+					, {
+						"name": "Known to an ounce"
+						, "effect": "The dragon knows where every treasure in its hoard is located, allowing it to detect any movement or shifting of the coins and valuables.  When in its lair with its hoard, the hoardsong dragon has +1 AC, is immune to invisibility and ignores illusions, and creatures attempting to hide from it take a -5 penalty to their checks."
+					}
+					, {
+						"name": "Resist fire 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Hoard minions"
+						, "effect": "The dragon’s connection to its hoard is so strong that it has some control over the souls of those it previously killed who owned the treasures.  Once per round as a quick action, the hoardsong dragon can summon 1d4 hoard spirits that take form by sorrounding themselves in coins, wear empty suits of armour, etc., and defend the dragon’s hoard.  Roll initiative for the minions once and use that count for all additional minions."
+					}
+					, {
+						"name": "The call of the hoard"
+						, "effect": "The connection of a hoardsong dragon to its hoard imparts the dragon’s magic upon the hoard.  Before battle, if the PCs are able to see the hoard while the dragon speaks to them, each PC that can hear the dragon must roll a Wisdom check.  On a result of 24 or less, that PC is charmed as per the <em>charm person</em> spell and considers the dragon a friend.  On a result of 25-29, the PC is lulled by the dragon’s words and the sight of the hoard; if combat occurs, the PC will be stunned during their first round.  The dragon will make a suggestion to charmed PCs to leave and bring it more treasure for its hoard (while it prepares surprises for their return).  Charmed PCs won’t attack the dragon, but can make a normal save each round in battle to break the charm effect (or every day outside of combat)."
+					}
+				]
+			}
+			, {
+				"name": "Smoke Minions (Red)"
+				, "source": "Bestiary"
+				, "page": 171
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 12
+				, "role": "mook"
+				, "type": "construct"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 20
+				, "MD": 24
+				, "HP": 80
+				, "attacks": [{
+					"name": "Invasive gases"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 17
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "55 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The target is hampered from burning eyes and gases in its lungs until the end of its next turn."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Void Beast (Black)"
 				, "source": "Bestiary"
 				, "page": 18
 				, "sizeStrength": "normal"
@@ -6348,6 +6652,86 @@
 					"name": "Draconic grace"
 					, "effect": "At the start of each of the void dragon’s turns, roll a d6 to see if it gets an extra standard action.  If the roll is equal to or less than the escalation die, the void dragon can take an extra standard action that turn.<be>&emsp;After the first success, the grace die bumps up to a d8.  After the second success, it’s a d10, then a d12 after the third success, and finally a d20 after the fourth one."
 				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Volcano Dragon (Red)"
+				, "source": "Bestiary"
+				, "page": 168
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "wrecker"
+				, "type": "dragon"
+				, "initiative": 12
+				, "vulnerability": "cold"
+				, "AC": 23
+				, "PD": 22
+				, "MD": 16
+				, "HP": 220
+				, "attacks": [{
+						"name": "Fangs, claws, and wings"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "18 damage"
+						, "extraEffects": [{
+								"trigger": "Natural 16+"
+								, "effect": "The target takes 5 extra damage from a wing buffet."
+							}
+							, {
+								"trigger": "Natural 18+"
+								, "effect": "The target takes 10 extra damage from a claw strike."
+							}
+						]
+					}
+					, {
+						"name": "Tail smash"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "one nearby enemy"
+						, "damage": "18 damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "9 damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "When a nearby enemy attacks and rolls a natural even hit against the dragon, the dragon can make a <em>tail smash</em> attack against it as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Volcanic breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "each nearby enemy"
+						, "damage": "20 fire damage, and 5 ongoing fire damage"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "The target takes 10 ongoing fire damage instead of 5."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Burning skin"
+						, "effect": "When an enemy is engaged with the volcanic dragon at the start of its turn, it takes 5 fire damage."
+					}
+					, {
+						"name": "Continuous breath"
+						, "effect": "A volcanic dragon can use <em>volcanic breath</em> 1d3 times per battle, but if it does not use its breath weapon on consecutive rounds, it loses its remaining <em>volcanic breath</em> attacks for the battle."
+					}
+					, {
+						"name": "Resist fire 14+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 14+ on the attack roll or it only deals half damage."
+					}
+				]
 				, "nastierSpecials": []
 			}
 		]
