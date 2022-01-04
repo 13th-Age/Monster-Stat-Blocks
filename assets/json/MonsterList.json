@@ -19612,6 +19612,276 @@
 		}]
 	}
 	, {
+		"name": "Redcap"
+		, "groupTraits": [{
+			"name": "Abilities"
+			, "traits": [{
+				"name": "The Bad Word"
+				, "description": "Before every battle against redcaps, the GM should determine the <em>bad word</em> for that battle.  Whenever a PC or a player at the table says the word, every redcap in the battle can use their associated ability as a free action that interrupts whatever action is currently happening."
+			}]
+		}]
+		, "monsters": [{
+				"name": "Crimsoncap"
+				, "source": "Bestiary"
+				, "page": 176
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "spoiler"
+				, "type": "humanoid"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 21
+				, "MD": 18
+				, "HP": 84
+				, "attacks": [{
+						"name": "Huge bloody cleavers"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "13 damage, and the crimsoncap can pop free from the target"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Horrible stompy boots"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "PD"
+						, "target": "one staggered or unconscious enemy"
+						, "damage": "20 damage, and the target is hampered (save ends)"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 damage."
+						}]
+					}
+					, {
+						"name": "Pop-out and slash ’em"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "1d4 nearby enemies"
+						, "damage": "15 damage, and 5 ongoing damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "10 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Impossible teleport"
+						, "effect": "When the crimsoncap scores a critical hit OR when a PC or a player at the table says the <em>bad word</em>, the crimsoncap can teleport to a nearby hidden location it can see or can’t see (like inside a closet) as a free action."
+					}
+					, {
+						"name": "Pop-out surprise"
+						, "effect": "When the crimsoncap starts its turn and no enemy can see it, it can make a <em>pop-out and slash ’em</em> attack that turn as a standard action."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "F*** T***"
+					, "effect": "The crimsoncap has two <em>bad words</em> instead of one.  And the PCs find that out the hard way.  Write the words down ahead of time to prove you’re not <em>just</em> being a mean GM."
+				}]
+			}
+			, {
+				"name": "Crustycap"
+				, "source": "Bestiary"
+				, "page": 176
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 22
+				, "MD": 19
+				, "HP": 100
+				, "attacks": [{
+						"name": "Big bloody axe"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "10 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The crustycap can make a single <em>big bloody axe</em> attack against a different nearby enemy as a free action."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "5 ongoing damage."
+							}
+						]
+					}
+					, {
+						"name": "Devastating stompy boots"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "one staggered or unconscious enemy"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "10 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Oh no oh no"
+					, "effect": "When a PC or a player at the table says the <em>bad word</em>, the crustycap can take an extra standard action during its next turn.  Feel free to let the extra actions stack a few times if someone gets cocky."
+				}]
+				, "nastierSpecials": [{
+					"name": "Just plain mean"
+					, "effect": "When the crustycap scores a critical hit OR when a PC or a player at the table says the <em>bad word</em>, the crustycap can teleport away as a free action.  Far away, even to a location it can’t see, and out of the battle.  Then at the start of the PCs’ next battle, it teleports back and attacks the PCs, no matter what enemies they are fighting.  It will continue to use this power if it can until the PCs take a full heal-up, at which point, if it’s still alive, it loses interest."
+				}]
+			}
+			, {
+				"name": "Redcap"
+				, "source": "Bestiary"
+				, "page": 175
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 18
+				, "MD": 15
+				, "HP": 42
+				, "attacks": [{
+						"name": "Twin skinning knives"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Damage equal to the escalation die."
+						}]
+					}
+					, {
+						"name": "Stompy iron boots"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "one staggered or unconscious enemy"
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 damage."
+						}]
+					}
+					, {
+						"name": "Pop-out and ride ’em"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "one nearby enemy"
+						, "damage": "10 damage, and 5 ongoing damage"
+						, "extraEffects": [{
+								"trigger": "Ridey-horsey"
+								, "effect": "While the target is taking ongoing damage from this attack, the redcap is riding the target’s shoulders with its knives in the target’s ears, and once during its turn the redcap can use a move action to make the target move anywhere nearby that won’t directly cause it harm (but opportunity attacks are fair game)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "5 damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Impossible teleport"
+						, "effect": "When the redcap scores a critical hit OR when a PC or a player at the table says the <em>bad word</em>, the redcap can teleport to a nearby hidden location it can see as a free action."
+					}
+					, {
+						"name": "Pop-out surprise"
+						, "effect": "When the redcap starts its turn and no enemy can see it, it can make a <em>pop-out and ride ’em</em> attack that turn as a standard action."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Splotchcap"
+				, "source": "Bestiary"
+				, "page": 175
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "archer"
+				, "type": "humanoid"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 17
+				, "MD": 14
+				, "HP": 32
+				, "attacks": [{
+						"name": "Stabby knife"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 5
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also takes 2 ongoing damage."
+						}]
+					}
+					, {
+						"name": "Smashy slingstone"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "7 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 18+"
+							, "effect": "The target can’t cast a spell until the end of its next turn or until the splotchcap drops to 0 hp, whichever comes first."
+						}]
+					}
+					, {
+						"name": "Pop-out and stab ’em"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": "one nearby enemy"
+						, "damage": "8 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "Damage equal to the escalation die."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Impossible teleport"
+						, "effect": "When the splotchcap scores a critical hit OR when a PC or a player at the table says the <em>bad word</em>, the splotchcap can teleport to a nearby hidden location it can see as a free action."
+					}
+					, {
+						"name": "Pop-out surprise"
+						, "effect": "When the splotchcap starts its turn and no enemy can see it, it can make a <em>pop-out and stab ’em</em> attack that turn as a standard action."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Sahuagin"
 		, "groupTraits": []
 		, "monsters": [{
