@@ -18887,6 +18887,277 @@
 		]
 	}
 	, {
+		"name": "Purple Worm"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Ancient Purple Worm"
+				, "source": "Bestiary"
+				, "page": 165
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 12
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 17
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 25
+				, "MD": 21
+				, "HP": 1200
+				, "attacks": [{
+						"name": "Devouring maw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 18
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "100 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is swallowed whole if it’s smaller than the worm (see below)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+					, {
+						"name": "Tail sting"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 18
+						, "defence": "AC"
+						, "target": "up to 2 random nearby enemies"
+						, "damage": "40 damage, and 40 ongoing poison damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "20 damage."
+						}]
+					}
+					, {
+						"name": "Prodigious thrash"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 18
+						, "defence": "AC"
+						, "target": "1d4 random nearby enemies"
+						, "damage": "50 damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+							, {
+								"trigger": "Natural 1-2"
+								, "effect": "The worm and any creatures it has swallowed take 8d6 damage (but it still deals miss damage on a 2)."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "The worm can make this attack as a free action if it has one enemy swawllowed or less after using its standard action during its turn."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Swallow whole"
+						, "effect": "While a creature is swallwed whole, it takes 10d12 acid damage at the start of its turn and is stuck, hampered, and unable to attack or affect anything outside the worm’s stomach (and vice versa).  Most teleport abilites don’t work because you’re hampered <em>and</em> you can’t see the location out of the worm you want to teleport to.  There are two ways out.<br>&emsp;<strong>Cut your way out</strong>: Deal 80 damage to the worm with a single attack and you can cut your way out.  All edged or bladed weapons are reduced to d6 damage dice (at most) instead the worm’s gullet, so good luck.  At least you’ll be damaging the worm attacking it from within.<br>&emsp;<strong>Get upchucked</strong>: While the worm is staggered, you can use a standard action to try and crawl out of its mouth.  Roll a hard save (16+); on a success, the worm vomits you out and spits you somewhere nearby.  The worm also vomits out all creatures it has swallowed when it drops to 0 hp."
+					}
+					, {
+						"name": "Burrow"
+						, "effect": "As the standard monster ability, but with a +5 bonus to the check."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Resist most energy damage 16+"
+					, "effect": "Purple worms generate weird energy resistances thanks to underworld radiation and their odd diets.  Roll a d8 twice, in secret, to determine what energy types the worm is not resistant to.  The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm.<br>&emsp;<strong>1</strong>: acid; <strong>2</strong>: cold; <strong>3</strong>: fire; <strong>4</strong>: lightning; <strong>5</strong>: thunder; <strong>6</strong>: holy; <strong>7</strong>: negative energy; <strong>8</strong>: poison."
+				}]
+			}
+			, {
+				"name": "Purple Larvae"
+				, "source": "Bestiary"
+				, "page": 165
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 44
+				, "attacks": [{
+						"name": "Bitey maw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The larvae can make <em>tail stinger</em> attack against a random enemy engaged with it as a free action."
+						}]
+					}
+					, {
+						"name": "Tail sting"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage, and 10 ongoing poison damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Merge with worm"
+					, "effect": "Purple larvae can dig quickly in and out of the skin of the purple worm as if they were burrowing but without needing die rolls to succeed."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Parasitic Lightning Beetle"
+				, "source": "Bestiary"
+				, "page": 164
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 14
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 22
+				, "MD": 17
+				, "HP": 36
+				, "attacks": [{
+						"name": "Mouthparts"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The target also takes 5 lightning damage."
+						}]
+					}
+					, {
+						"name": "Lightning zap"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "one nearby enemy not engaged with a purple worm, purple larvae, or parasitic beetle"
+						, "damage": "20 lightning damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The target takes 5 extra lightning damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "The beetles fly badly, usually just enough to get back to the worm when they’ve been shaken off from their hiding spots in its segments."
+					}
+					, {
+						"name": "Scaredy bugs"
+						, "effect": "Whenever one or more parasitic lightning beetles drop to 0 hp, roll a d6.  If you roll less than or equal to the number of beetles that were destroyed by that attack, all beetles in the battle stop fighting, using all their actions during their next turn to disengage and fly away."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Purple Worm"
+				, "source": "Bestiary"
+				, "page": 164
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 23
+				, "PD": 22
+				, "MD": 17
+				, "HP": 440
+				, "attacks": [{
+						"name": "Devouring maw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "50 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is swallowed whole if it’s smaller than the worm (see below)."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+						]
+					}
+					, {
+						"name": "Tail sting"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "one random nearby enemy"
+						, "damage": "20 damage, and 20 ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Mighty thrash"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": "1d3 random nearby enemies"
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "Half damage."
+							}
+							, {
+								"trigger": "Natural 1-5"
+								, "effect": "The worm takes 10 damage (but it still deals miss damage on a 2-5)."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "The worm can make this attack as a free action if it has no enemies swallowed after using its standard action during its turn."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Swallow whole"
+						, "effect": "While a creature is swallowed whole, it takes 7d10 acid damage at the start of its turn and is stuck, hampered, and unable to attack or affect anything outside of the worm’s stomach (and vice versa).  Most teleport abilities don’t work because you’re hampered <em>and</em> you can’t see the location out of the worm you want to teleport to.  There are two ways out.<br>&emsp;<strong>Cut your way out</strong>: Deal 40 damage to the worm with a single attack and you can cut your way out.  All edged or bladed weapons are reduced to d6 damage dice (at most) inside the worm’s gullet, so good luck.  At least you’ll be damaging the worm attacking it from within.<br>&emsp;<strong>Get upchucked</strong>: While the worm is staggered, you can use a standard action to try and crawl out of its mouth.  Roll a hard save (16+); on a success, the worm vomits you out and spits you somewhere nearby.  The worm also vomits out all creatures it has swallowed when it drops to 0 hp."
+					}
+					, {
+						"name": "Burrow"
+						, "effect": "As the standard monster ability."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Larval feeding"
+						, "effect": "The worm’s stomach also includes a mob of larval mooks (purple larvae or parasitic lightning beetles).  Feel free to add this nastier special if a PC acts dismissive about the possibility of being swallowed by the worm."
+					}
+					, {
+						"name": "Resist most energy damage 16+"
+						, "effect": "Purple worms generate weird energy resistance thanks to underworld radiation and their odd diets.  Roll a d8 twice, in secret, to determine what energy types the worm is not resistant to.  The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm.<br>&emsp;<strong>1</strong>: acid; <strong>2</strong>: cold; <strong>3</strong>: fire; <strong>4</strong>: lightning; <strong>5</strong>: thunder; <strong>6</strong>: holy; <strong>7</strong>: negative energy; <strong>8</strong>: poison."
+					}
+				]
+			}
+		]
+	}
+	, {
 		"name": "Rakshasa"
 		, "groupTraits": []
 		, "monsters": [{
