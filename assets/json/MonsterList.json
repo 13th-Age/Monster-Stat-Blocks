@@ -21184,6 +21184,190 @@
 		]
 	}
 	, {
+		"name": "Stirge"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Archer Stirge"
+				, "source": "Bestiary"
+				, "page": 197
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 1
+				, "role": "archer"
+				, "type": "beast"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 14
+				, "MD": 12
+				, "HP": 22
+				, "attacks": [{
+						"name": "Serrated claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "4 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Barbed stinger"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "one nearby enemy"
+						, "damage": "3 damage, and 3 ongoing damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "One stirge ally engaged with the target can make a melee attack against it as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+					"name": "Flight"
+					, "effect": "The archer stirge flies faster and higher than a normal stirge, but on louder wings."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Cobbler Stirge"
+				, "source": "Bestiary"
+				, "page": 197
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 1
+				, "role": "blocker"
+				, "type": "beast"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 14
+				, "MD": 12
+				, "HP": 30
+				, "attacks": [{
+						"name": "Claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Gooey bloody spray"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": "1d4 nearby enemies"
+						, "damage": "5 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit or miss"
+								, "effect": "The target is stuck (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit or miss"
+								, "effect": "The cobbler stirge takes 3 damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Painful flight"
+					, "effect": "The cobbler has stubby ill-proportioned wings and 1d6 damage at the end of each round that it flies during battle."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Stirge"
+				, "source": "Bestiary"
+				, "page": 197
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 0
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 4
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 14
+				, "MD": 10
+				, "HP": 18
+				, "attacks": [{
+						"name": "Claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "2 damage, and the stirge make a <em>draining probe</em> attack against the target during its next turn if it’s still engaged with the target"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Draining probe"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": "one enemy hit by <em>claws</em> last turn"
+						, "damage": "5 damage, and 5 ongoing damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Flight"
+					, "effect": "Stirges fly well.  Also, the pitch of their wings is high and thin, allowing a stirge to get very close without tiping off its prey."
+				}]
+				, "nastierSpecials": [{
+					"name": "One and done"
+					, "effect": "After hitting a living creature that has blood with its <em>draining probe</em> attack, the stirge heals 5 hit points and will use its next turn to move, fleeing to the hive to feed the stirgelings…and to alert the hive that there is an easy meal nearby.  A new full-strength stirge enters the battle during the next round onf the same initiative count."
+				}]
+			}
+			, {
+				"name": "Stirgelings"
+				, "source": "Bestiary"
+				, "page": 197
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 0
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 2
+				, "vulnerability": ""
+				, "AC": 15
+				, "PD": 13
+				, "MD": 9
+				, "HP": 4
+				, "attacks": [{
+					"name": "Claws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "The effect depends on the roll"
+					, "extraEffects": [{
+							"trigger": "Natural odd hit"
+							, "effect": "2 damage."
+						}
+						, {
+							"trigger": "Natural even hit"
+							, "effect": "Choose one effect, and then the stirgeling mob takes 4 damage (killing this creature first).<br>&emsp;<em>Regular stirgeling</em>: The target takes 3 damage, and 3 ongoing damage.<br>&emsp;<em>Archer stirgeling</em>: The target takes 6 damage.<br>&emsp;<em>Cobbler stirgeling</em>: The target takes 3 damage and is stuck until end of its next turn."
+						}
+					]
+				}]
+				, "abilities": [{
+					"name": "Flight"
+					, "effect": "They aren’t strong fliers but they are quick and agile."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Treant"
 		, "groupTraits": [{
 			"name": "Ability (except awakened trees)"
