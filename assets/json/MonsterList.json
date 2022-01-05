@@ -7836,6 +7836,135 @@
 		]
 	}
 	, {
+		"name": "Dragon, Other"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Shadow Dragon"
+				, "source": "Bestiary"
+				, "page": 193
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "caster"
+				, "type": "dragon"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 22
+				, "MD": 22
+				, "HP": 260
+				, "attacks": [{
+						"name": "Shadow claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is confused (hard save ends, 16+)."
+						}]
+					}
+					, {
+						"name": "Nightmare breath"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 12
+						, "defence": "MD"
+						, "target": "1d3 nearby or far away enemies"
+						, "damage": "60 negative energy damage, and the target becomes a living shadow (hard save ends, 16+)"
+						, "extraEffects": [{
+								"trigger": "Living shadow"
+								, "effect": "While a living shadow, the target can’t physically interact with or gain aid from companions or aid them (including healing, bonuses, and effects) but is otherwise “normal”."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle, but the ability recharges when the dragon is staggered.  If it hasn’t already made a <em>nightmare breath</em> attack when it becomes staggered, the dragon makes the attack as a free action and then the breath recharges."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Made of shadow"
+						, "effect": "The shadow dragon perceives the invisible, is unaffected by the <em>blur</em> spell, and ignores illusions.  Rogues attempting to <em>shadow walk</em> near a shadow dragon end up in the dragon’s belly (save ends).  While there, they are helpless and take 2d12 damage at the start of each of their turns until they save and fall back out of the shadow."
+					}
+					, {
+						"name": "Shadowy escalation"
+						, "effect": "When in poorly lit areas of shadow, the dragon adds the escalation die to its attack rolls.  Complete darkness or bright daylight negates the ability."
+					}
+					, {
+						"name": "On holy ground"
+						, "effect": "While on “holy ground” such as a temple or consecrated shrine, all hard saves against shadow dragon effects become normal saves.  As a standard action, a cleric who invokes the gods can produce a similar anti-shadow effect in the nearby area until the start of their next turn, or they can turn hard saves against shadow dragon abilities to easy saves if that area is already on holy ground.  Shadow dragons try to avoid holy ground, and shadow thieves can only enter it while possessing victims and will flee once the possession ends.  It’s up to the GM what counts as “holy ground” in their game."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Shadow illusions"
+						, "effect": "As a standard action, the dragon can appear to be humanoid, usually disguising itself as an unthreatening old man in a cloak (DC 35 to detect).  Daylight will show the illusion for what it is - an insubstantial dragon.  Dragons with a <em>Book of Many Faces</em> will have perfect humanoid disguises.  Dropping the illusion is a free action."
+					}
+					, {
+						"name": "Shadow phasing"
+						, "effect": "When the escalation die is even, natural odd attack rolls against the dragon automatically miss.  When the escalation die is odd, natural even attack rolls against the dragon automatically miss.  Attacks that deal holy damage ignore this ability."
+					}
+				]
+			}
+			, {
+				"name": "Shadow Thief"
+				, "source": "Bestiary"
+				, "page": 193
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "mook"
+				, "type": "dragon"
+				, "initiative": 17
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 20
+				, "MD": 16
+				, "HP": 38
+				, "attacks": [{
+						"name": "Shadow strangulation"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 20 negative energy damage, and the shadow thief can make a <em>shadow possession</em> attack as a free action (but see <em>group ability</em>)."
+						}]
+					}
+					, {
+						"name": "Shadow possession"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 13
+						, "defence": "MD"
+						, "target": "one enemy hit by <em>shadow strangulation</em>"
+						, "damage": "The shadow thief “crawls inside” the target.  The target is confused (save ends), and the shadow thief can’t be the target of an attack or effect until it’s forced from the target’s body when that creature saves against the confusion effect"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Group ability"
+						, "effect": "For every four shadow thieves in the battle (round up), one of them can use <em>shadow possession</em> during the battle."
+					}
+					, {
+						"name": "Shadow thievery"
+						, "effect": "The shadow thief is an extension of the shadow dragon, not really a separate entity.  When it drops to 0 hp, it flees back to the shadow dragon and merges with it.  When this happens, if there is at least one enemy engaged with that shadow thief, the thief chooses one enemy engaged with it.  Roll a d20; on a 16+, the shadow thief steals a random magic item from the chosen enemy as it flees back to the dragon (but see <em>stop…thief!</em> below).  Stolen items are replaced with shadowy duplicates that work until the end of the battle then fade to nothingness.  The items can be recovered if the dragon is slain in the same battle."
+					}
+					, {
+						"name": "Stop…thief!"
+						, "effect": "When a shadow thief steals an item, the creature it steals from can choose to prevent the theft, but at a cost.  If the natural d20 thievery roll was odd, the target of the thievery attempt can choose to keep the item but become hampered (save ends) as they wrestle with the shadow.  If the natural thievery roll was even, the target has the same choice, but it’s a hard save (16+) to end the hampered effect."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Drider"
 		, "groupTraits": []
 		, "monsters": [{
