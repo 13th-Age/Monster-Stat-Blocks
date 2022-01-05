@@ -20155,6 +20155,125 @@
 		]
 	}
 	, {
+		"name": "Rust Monster"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Rust Monster"
+				, "source": "Bestiary"
+				, "page": 184
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "aberration"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 17
+				, "MD": 13
+				, "HP": 45
+				, "attacks": [{
+						"name": "Caustic bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": "one creature wearing light armour or no armour"
+						, "damage": "10 damage, and 5 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is now considered to be wearing no armour (the armour is damaged beyond repair; adjust defences accordingly).  If the target’s armour is magical, the target must roll a hard save (16+).  On a success, the armour isn’t affected.  This effect is permanent until the creature obtains new armour."
+						}]
+					}
+					, {
+						"name": "Rusting antenna"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "PD"
+						, "target": "one creature wearing heavy armour"
+						, "damage": "1 damage, and the target is now considered to be wearing no armour (the armour is damaged beyond repair; adjust defences accordingly).  If the target’s armour is magical, the target must roll a hard save (16+).  On a success, the armour isn’t affected.  This effect is permanent until the creature obtains new armour."
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Corrupting body"
+						, "effect": "Whenever a creature hits the rust monster with a melee weapon, the attacker must roll a save; on a failure, the weapon is destroyed.  Magic weapons require an easy save (6+) instead.  This effect is permanent."
+					}
+					, {
+						"name": "Rust’s targets"
+						, "effect": "Magic items wielded by creatures with 60 hp or more are not affected by the rust monster’s ability to destory items (but the target still takes damage)."
+					}
+					, {
+						"name": "Saving quirks"
+						, "effect": "Before rolling a save for a magic item, a PC can gain a +5 bonus to the save by agreeing to roleplay the item’s quirk as a huge element of their personality until the next full heal-up.  Failure to live up to this roleplaying agreement means that the item hasn’t received the support it needs from its owner to survive the rust monster’s destructive effects, and the item is destroyed at the end of the next battle even if its owner successfully saved."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Big antenna"
+					, "effect": "When the rust monster scores a critical hit, it can try to destroy another random magic item in the target’s possession (or a random normal item if the target has no other magic items).  The creature must roll a save for the item, as usual."
+				}]
+			}
+			, {
+				"name": "Rust Monster Obliterator"
+				, "source": "Bestiary"
+				, "page": 184
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "spoiler"
+				, "type": "demon"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 19
+				, "MD": 15
+				, "HP": 72
+				, "attacks": [{
+						"name": "Caustic bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "one creature wearing light armour or no armour"
+						, "damage": "18 damage, and 5 ongoing acid damage"
+						, "extraEffects": [{
+							"trigger": "Natural 14+"
+							, "effect": "The target is now considered to be wearing no armour (the armour is damaged beyond repair; adjust defences accordingly).  If the target’s armour is magical, the target must roll a hard save (16+).  On a success, the armour isn’t affected.  This effect is permanent until the creature obtains new armour."
+						}]
+					}
+					, {
+						"name": "Rusting antenna"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "one creature wearing heavy armour"
+						, "damage": "10 damage, and the target is now considered to be wearing no armour (the armour is damaged beyond repair; adjust defences accordingly).  If the target’s armour is magical, the target must roll a hard save (16+).  On a success, the armour isn’t affected.  This effect is permanent until the creature obtains new armour.<br>&emsp;Each time the rust monster obliterator destroys heavy armour with this attack, it gains a different random demon ability until the end of the battle (reroll duplicate abilities).  (See Demon Abilities table)."
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Corrupting body"
+						, "effect": "Whenever a creature hits the rust monster with a melee weapon, the attacker must roll a save; on a failure, the weapon is destroyed.  Magic weapons require an easy save (6+) instead.  This effect is permanent."
+					}
+					, {
+						"name": "Rust’s targets"
+						, "effect": "Magic items wielded by creatures with 100 hp or more are not affected by the rust monster’s ability to destroy items (but the target still takes damage)."
+					}
+					, {
+						"name": "Saving quirks"
+						, "effect": "Before rolling a save for a magic item, a PC can gain a +5 bonus to the save by agreeing to roleplay the item’s quirk as a huge element of their personality until the next full heal-up.  Failure to live up to this roleplaying agreement means that the item hasn’t received the support it needs from its owner to survive the rust monster’s destructive effects, and the item is destroyed at the end of the next battle even if its owner saved."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Tail whirligig"
+					, "effect": "When an enemy targets the rust monster obliterator with a spell, the rust monster rolls a save.  On a success, the spell has no effect on the rust monster.  If the rust monster is staggered, it must roll a hard save (16+) instead."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Sahuagin"
 		, "groupTraits": []
 		, "monsters": [{
