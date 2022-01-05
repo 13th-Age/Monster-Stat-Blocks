@@ -20732,6 +20732,152 @@
 		]
 	}
 	, {
+		"name": "The Saved"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Avenging Orb"
+				, "source": "Bestiary"
+				, "page": 204
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 13
+				, "MD": 13
+				, "HP": 46
+				, "attacks": [{
+						"name": "Gauntlet slap"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 5
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "3 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "The target also takes 3 ongoing psychic damage."
+						}]
+					}
+					, {
+						"name": "Orb of pain"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": "one or more nearby or far away enemies; see <em>history of abuse</em>"
+						, "damage": "5 psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural 5, 10, 15, or 20"
+							, "effect": "The target also takes 3 ongoing psychic damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Beyond saving"
+						, "effect": "The avenging orb takes a -5 penalty to saving throws."
+					}
+					, {
+						"name": "History of abuse"
+						, "effect": "Keep track of the number of enemy attacks that hit the avenging orb during the battle.  Until the end of the battle, the avenging orb can target an additional enemy beyong the first with its <em>orb of pain</em> attack for each of those hits.  (Note that avenging orbs engaged in melee usually choose to use <em>orb of pain</em> and suffer any resulting opportunity attacks; if they’re lucky they’ll survive the attack and be able to choose more targets for the <em>orb of pain</em>.)"
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Destroying Sword"
+				, "source": "Bestiary"
+				, "page": 204
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 4
+				, "vulnerability": ""
+				, "AC": 16
+				, "PD": 14
+				, "MD": 13
+				, "HP": 38
+				, "attacks": [{
+						"name": "Cheap greatsword"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "3 damage"
+						, "extraEffects": [{
+							"trigger": "Natural odd hit"
+							, "effect": "The target takes extra damage equal to half the amount the destroying sword took from the last attack that hit it this battle."
+						}]
+					}
+					, {
+						"name": "Shortbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": "one nearby or far away enemy"
+						, "damage": "6 damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Beyond saving"
+					, "effect": "The destroying sword takes a -5 penalty to saving throws."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Enduring Shield"
+				, "source": "Bestiary"
+				, "page": 204
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "blocker"
+				, "type": "humanoid"
+				, "initiative": 3
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 15
+				, "MD": 13
+				, "HP": 40
+				, "attacks": [{
+					"name": "Steel hammer"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "6 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "1d4 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Auguished interceptor"
+						, "effect": "When an enduring shield is engaged and an enemy attempts to move past it, the enduring shield can roll a disengage check to intercept it as an interrupt action (once per round).  If the attempt fails, the enduring shield takes 1d6 psychic damage."
+					}
+					, {
+						"name": "Beyond saving"
+						, "effect": "The enduring shield takes a -5 penalty to saving throws."
+					}
+					, {
+						"name": "Supernatural endurance"
+						, "effect": "When an attack hits the enduring shield, it gains a +5 bonus to the defence that the attack targeted until the end of the battle or until another attack hits it, in which case the bonus switches to the defences most recently hit."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Skeleton"
 		, "groupTraits": [{
 			"name": "Ability"
