@@ -20277,58 +20277,330 @@
 		"name": "Sahuagin"
 		, "groupTraits": []
 		, "monsters": [{
-			"name": "Sahuagin"
-			, "source": "13th Age"
-			, "page": 245
-			, "sizeStrength": "normal"
-			, "threat": "normal"
-			, "level": 5
-			, "role": "wrecker"
-			, "type": "humanoid"
-			, "initiative": 9
-			, "vulnerability": ""
-			, "AC": 20
-			, "PD": 19
-			, "MD": 16
-			, "HP": 70
-			, "attacks": [{
-					"name": "Trident and bite"
+				"name": "Razor Shark"
+				, "source": "Bestiary"
+				, "page": 187
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 14
+				, "MD": 11
+				, "HP": 10
+				, "attacks": [{
+					"name": "Razortoothed jaws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "4 damage"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "Increase the damage by +1 for each razor shark mook that has dropped this battle."
+						}
+						, {
+							"trigger": "Natural even miss"
+							, "effect": "The target and the razor shark each take 1d6 damage."
+						}
+					]
+				}]
+				, "abilities": [{
+						"name": "Frenzy (group)"
+						, "effect": "When two or more razor sharks in the same mob are dropped to 0 hp by an attack, as a free action each dropped razor shark attacks one random nearby non-razor shark creature before it dies.  That creature takes 1d8 damage."
+					}
+					, {
+						"name": "Water breather"
+						, "effect": "Sharks breathe underwater and swim very well.  They’re not so good out of sea water (even if they jump), so treat them as semi-hazardous terrain while they’re busy thrashing to death outside the water."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Sahuagin"
+				, "source": "13th Age"
+				, "page": 245
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 19
+				, "MD": 16
+				, "HP": 70
+				, "attacks": [{
+						"name": "Trident and bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 20"
+							, "effect": "Increase the escalation die by 1, and the target is hampered (<em>makes only basic attacks</em>) until the end of its next turn."
+						}]
+					}
+					, {
+						"name": "Barbed crossbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "one nearby enemy, or a far away enemy at -2 atk"
+						, "damage": "10 damage, and 5 ongoing damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Blood frenzy"
+						, "effect": "Make a note of the escalation die when the sahuagin becomes staggered.  The sahuagin gains a bonus to its melee attacks and damage equal to the escalation die value for the rest of the battle."
+					}
+					, {
+						"name": "Water breather"
+						, "effect": "Sahuagin breathe underwater and swim very well."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Demon-touched"
+					, "effect": "Roll a d6 on the demon abilities table.  The sahuagin gains that ability."
+				}]
+			}
+			, {
+				"name": "Sahuagin Glowpriest"
+				, "source": "Bestiary"
+				, "page": 188
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "caster"
+				, "type": "humanoid"
+				, "initiative": 10
+				, "vulnerability": ""
+				, "AC": 21
+				, "PD": 16
+				, "MD": 19
+				, "HP": 70
+				, "attacks": [{
+						"name": "Coral rod"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "12 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The priest teleports the target next to one of its nearby allies that it can see, who engages it as a free action.  It can’t teleport the target to a location that causes it direct damage (so into a pool of flaming oil is out, but off a ship in the sea is fine)."
+						}]
+					}
+					, {
+						"name": "Glowpriest’s prayer"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "12 psychic damage, and if the attack hits 2 or more targets, roll 1d8 after the tattack for the prayer’s effect"
+						, "extraEffects": [{
+								"trigger": "1-2 (Hymn of hate)"
+								, "effect": "One random nearby conscious enemy takes 4d6 negative energy damage."
+							}
+							, {
+								"trigger": "3-4 (Curse of despair)"
+								, "effect": "Each target that was hit takes a -2 penalty (non-cumulative) to all saves until the end of the battle."
+							}
+							, {
+								"trigger": "5-6 (Scream of victory)"
+								, "effect": "Until the start of the glowpriest’s next turn, each sahuagin and demon in the battle adds the escalation die to its attacks and the PCs don’t."
+							}
+							, {
+								"trigger": "7-8 (Word of refuge)"
+								, "effect": "Remove the glowpriest from play.  At the start of its next turn, return it to play nearby its original location.  It gains a +4 bonus to all defences until the end of its next turn after it returns to play."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "Water breather"
+					, "effect": "Sahuagin breathe underwater and swim very well."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Sahaugin Mutant"
+				, "source": "13th Age"
+				, "page": 189
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "wrecker"
+				, "type": "humanoid"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 15
+				, "HP": 200
+				, "attacks": [{
+						"name": "Four-armed frenzy"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "1d4 attacks"
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 4, 8, 12, 16, or 20"
+							, "effect": "The target takes 10 ongoing damage."
+						}]
+					}
+					, {
+						"name": "Heavy crossbow"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 10
+						, "defence": "AC"
+						, "target": "one nearby or far away enemy"
+						, "damage": "30 damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target takes 10 ongoing damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Limited escalator"
+						, "effect": "The sahuagin mutant adds the escalation die to its attacks until the die is 5+."
+					}
+					, {
+						"name": "Water breather"
+						, "effect": "Sahuagin breathe underwater and swim very well."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Punisher"
+						, "effect": "When an enemy intercepts the sahuagin mutant, it takes 4d8 damage from the mutant’s claws and teeth."
+					}
+					, {
+						"name": "Ripper"
+						, "effect": "When an enemy makes a melee attack against the sahuagin mutant and rolls a natural odd miss, that enemy takes 2d8 damage."
+					}
+				]
+			}
+			, {
+				"name": "Sahuagin Raider"
+				, "source": "Bestiary"
+				, "page": 187
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "troop"
+				, "type": "humanoid"
+				, "initiative": 4
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 14
+				, "MD": 13
+				, "HP": 34
+				, "attacks": [{
+						"name": "Coral-tipped spear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 6
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit against a stuck or hampered enemy"
+							, "effect": "The target takes 1d6 extra damage."
+						}]
+					}
+					, {
+						"name": "Hooked net"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 6
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "3 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is hampered (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The target is stuck (save ends)."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Blood rage"
+						, "effect": "The sahuagin raider gains a +2 attack bonus while it’s staggered."
+					}
+					, {
+						"name": "Water breather"
+						, "effect": "Sahuagin breathe underwater and swim very well."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Iron Sea Shark"
+				, "source": "Bestiary"
+				, "page": 188
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 19
+				, "MD": 14
+				, "HP": 32
+				, "attacks": [{
+					"name": "Massive iron jaws"
 					, "specialTrigger": false
 					, "type": "normal"
 					, "modifier": 10
 					, "defence": "AC"
-					, "target": "2 attacks"
-					, "damage": "10 damage"
+					, "target": ""
+					, "damage": "14 damage"
 					, "extraEffects": [{
-						"trigger": "Natural 20"
-						, "effect": "Increase the escalation die by 1, and the target is hampered (<em>makes only basic attacks</em>) until the end of its next turn."
+						"trigger": "Miss"
+						, "effect": "2d6 damage."
 					}]
-				}
-				, {
-					"name": "Barbed crossbow"
-					, "specialTrigger": false
-					, "type": "ranged"
-					, "modifier": 9
-					, "defence": "AC"
-					, "target": "one nearby enemy, or a far away enemy at -2 atk"
-					, "damage": "10 damage, and 5 ongoing damage"
-					, "extraEffects": []
-				}
-			]
-			, "abilities": [{
-					"name": "Blood frenzy"
-					, "effect": "Make a note of the escalation die when the sahuagin becomes staggered.  The sahuagin gains a bonus to its melee attacks and damage equal to the escalation die value for the rest of the battle."
-				}
-				, {
-					"name": "Water breather"
-					, "effect": "Sahuagin breathe underwater and swim very well."
-				}
-			]
-			, "nastierSpecials": [{
-				"name": "Demon-touched"
-				, "effect": "Roll a d6 on the demon abilities table.  The sahuagin gains that ability."
-			}]
-		}]
+				}]
+				, "abilities": [{
+						"name": "Frenzy"
+						, "effect": "While staggered, if the iron sea shark is unengaged at the start of its turn, it must roll an easy save (6+).  On a failure, the shark must move and attack a random nearby enemy that’s staggered, or a random nearby if there are no staggered enemies."
+					}
+					, {
+						"name": "Shredder"
+						, "effect": "When an enemy misses with a melee attack against an iron sea shark and rolls a natural 1-5, the attacker takes 2d6 damage."
+					}
+					, {
+						"name": "Water breather"
+						, "effect": "Sharks breathe underwater and swim very well.  They’re not so good out of sea water (even if they jump), so treat them as semi-hazardous terrain while they’re busy thrashing to death outside the water."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
 	}
 	, {
 		"name": "Skeleton"
