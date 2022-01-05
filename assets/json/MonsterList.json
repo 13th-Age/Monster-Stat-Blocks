@@ -21368,6 +21368,175 @@
 		]
 	}
 	, {
+		"name": "Tarrasque"
+		, "groupTraits": [{
+			"name": "Abilities"
+			, "traits": [{
+				"name": "Creature of Legend"
+				, "description": "The tarrasque can make one close attack and one melee attack each round as a standard action.  Note that flying is usually no defence against a tarrasque, which is huge and powerful enough to pluck or whack enemies out of the sky with surprising leaps."
+			}]
+		}]
+		, "monsters": [{
+			"name": "Tarrasque"
+			, "source": "Bestiary"
+			, "page": 201
+			, "sizeStrength": "huge"
+			, "threat": "normal"
+			, "level": 15
+			, "role": "wrecker"
+			, "type": "beast"
+			, "initiative": 20
+			, "vulnerability": ""
+			, "AC": 31
+			, "PD": 29
+			, "MD": 25
+			, "HP": 2130
+			, "attacks": [{
+					"name": "All-enveloping toothy maw"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 19
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "155 damage"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The tarrasque grabs the target.  It will swallow a grabbed enemy in 1d3 rounds (see <em>swallow whole</em>)."
+						}
+						, {
+							"trigger": "Natural 16+"
+							, "effect": "The tarrasque swallows the target immediately (see <em>swallow whole</em>)."
+						}
+					]
+				}
+				, {
+					"name": "Immense spike, horn, or tusk"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 18
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "155 damage"
+					, "extraEffects": [{
+						"trigger": "Natural 16+"
+						, "effect": "The target taks 9d6 extra damage and pops free from the tarrasque as it’s hurled far away."
+					}]
+				}
+				, {
+					"name": "Earth-shaking, taloned claw"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 20
+					, "defence": "AC"
+					, "target": "each nearby enemy in a group"
+					, "damage": "155 damage"
+					, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is vulnerable (save ends)."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "The target is dazed (save ends)."
+						}
+					]
+				}
+				, {
+					"name": "Catclysmic tail slam"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 18
+					, "defence": "PD"
+					, "target": "each nearby enemy in a group"
+					, "damage": "170 damage"
+					, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target is vulnerable (save ends)."
+						}
+						, {
+							"trigger": "Miss"
+							, "effect": "The target is dazed until the end of its next turn."
+						}
+					]
+				}
+				, {
+					"name": "Drag"
+					, "specialTrigger": true
+					, "type": "normal"
+					, "modifier": 21
+					, "defence": "PD"
+					, "target": "each creature on its back"
+					, "damage": "130 damage, the target pops free of the tarrasque, and the target is hampered (save ends)"
+					, "extraEffects": []
+				}
+				, {
+					"name": "Collapse"
+					, "specialTrigger": true
+					, "type": "normal"
+					, "modifier": 18
+					, "defence": "PD"
+					, "target": "each creature in/on the structure"
+					, "damage": "90 damage, and the target is stuck and takes 20 ongoing damage (hard save ends both, 16+)"
+					, "extraEffects": []
+				}
+				, {
+					"name": "Gullet digestion"
+					, "specialTrigger": true
+					, "type": "normal"
+					, "modifier": 19
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "80 acid damage, and 20 ongoing acid damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "5d12 acid damage."
+					}]
+				}
+			]
+			, "abilities": [{
+					"name": "Amphibious"
+					, "effect": "The tarrasque can swim and breathe underwater (or it holds so much air in its vast lungs that it makes no difference)."
+				}
+				, {
+					"name": "Enormously bulky"
+					, "effect": "The tarrasque is so huge that it ignores opportunity attacks.  In addition, normal-sized enemies are like fleas to it, and disengaging from the tarrasque requires only an easy save (6+), unless the target is grabbed."
+				}
+				, {
+					"name": "Immortal"
+					, "effect": "The tarrasque can’t be killed, save by the explicit will of a god (and not some jumped-up local god, either) or, perhaps, the sacrifice of a great icon.  The tarrasque’s hp total indicates the amount of damage required to make it disgorge swallowed enemies and flee to go hibernate while it regenerates the damage it suffered and decide if it wants to rampage again."
+				}
+				, {
+					"name": "Inflexible"
+					, "effect": "The tarrasque can’t easily fight foes that get onto its back, and may not even notice them if they aren’t attacking it.  When it does tire of a passenger, it can either use its <em>tail slam</em> attack (-2 attack penalty: on a hit, the target only takes half damage and is knocked off the tarrasque [possibly falling damage]; on a miss, the target takes no damage) or a <em>drag</em> attack as a standard action, crushing the rider between its shell and a mountainside or other high, hard obstacle."
+				}
+				, {
+					"name": "Legendary resistance"
+					, "effect": "The tarrasque is immune to normal conditions and effects (stunned, weakened, etc.), but it isn’t completely impervious.  Bypassing its resistances requires icon-supported effort.  A PC can use one 5 or 6 they acquired from icon relationship dice rolls to overcome the resistance each time they use an attack or power that would apply a condition or effect upon the tarrasque.  Of course, they must also provide a story to go along with the reason the tarrasque is affected."
+				}
+				, {
+					"name": "Leveller"
+					, "effect": "When the escalation die is even, as a move action the tarrasque can demolish any ordinary structure it can reach, such as a house, castle wall, temple, or ship.  The beast automatically reduces the structure to rubble rendering it useless.  Each creature on top of or within the structure is subject to a <em>collapse</em> attack."
+				}
+				, {
+					"name": "Swallow whole"
+					, "effect": "Once a creature is swallowed, it goes inside one of the tarrasque’s gigantic stomachs.  It can still act while inside the tarrasque, but it will have to deal with the beast’s stomach acid that is splashing around.  A swallowed creature must deal 400 damage to the tarrasque to force it to disgorge the contents of its gullet, freeing the creature.  During the tarrasque’s turn, it can make a <em>gullet digestion</em> attack against the target as a free action."
+				}
+				, {
+					"name": "Soft-ish innerbelly"
+					, "effect": "The tarrasque doesn’t have scales on the inside.  It takes a -5 penalty to all defences against attacks from inside its gullet, though only melee and close attacks can be made in there.  The tarrasque’s insides are immune to acid damage, however."
+				}
+			]
+			, "nastierSpecials": [{
+					"name": "Fear"
+					, "effect": "While engaged with the tarrasque, enemies that have 216 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+				}
+				, {
+					"name": "Regeneration 230"
+					, "effect": "While a tarrasque is damage, its malign magical flesh heals 230 hit points at the start of the tarrasque’s turn.  It can regenerate five times per battle.  If it heals up to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limit.  With this power, the monstrosity is likely unstoppable without a powerful magical artifact designed specifically to bind, wound, or otherwise hamper the tarrasque."
+				}
+			]
+		}]
+	}
+	, {
 		"name": "Treant"
 		, "groupTraits": [{
 			"name": "Ability (except awakened trees)"
