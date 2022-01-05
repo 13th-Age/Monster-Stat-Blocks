@@ -19882,6 +19882,279 @@
 		]
 	}
 	, {
+		"name": "Remorhaz"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Adult Remorhaz"
+				, "source": "Bestiary"
+				, "page": 180
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 22
+				, "MD": 18
+				, "HP": 280
+				, "attacks": [{
+						"name": "Death from below!"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "AC"
+						, "target": "each nearby creature"
+						, "damage": "45 damage; OR 22 damage, and the target is stunned (save ends)"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "15 damage."
+							}
+							, {
+								"trigger": "Limited use"
+								, "effect": "1/battle, during the remorhaz’s first turn or if appearing on the surface after burrowing."
+							}
+						]
+					}
+					, {
+						"name": "Savage bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "50 damage, 20 fire damage, and the remorhaz grabs the target if it’s not already grabbing a creature"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "15 fire damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Burrow"
+						, "effect": "As the standard monster ability, except the remorhaz only needs to roll 6+ in snow and ice."
+					}
+					, {
+						"name": "Furnace aura"
+						, "effect": "When a creature is engaged with the remorhaz (or grabbed by it) at the start of its turn, it takes fire damage equal to 6 × the escalation die."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Bejewelled remorhaz"
+						, "effect": "The remorhaz has glowing “jewels” on its armoured plates.  When a nearby or far away enemy misses with an attack against the remorhaz, that enemy chooses one: It takes 10 fire damage; OR one piece of its non-magical equipment (something useful, but player’s choice) melts or burns up.  Adjust skill checks or stats accordingly."
+					}
+					, {
+						"name": "Remorhaz steamer"
+						, "effect": "The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air.  Ranged attacks against the remorhaz take a -2 penalty, or a -4 penalty if the attacker is far away."
+					}
+					, {
+						"name": "Spiney remorhaz"
+						, "effect": "The remorhaz is covered in red-hot spines.  When a nearby enemy rolls a natural 1-5 with an attack roll, it takes 20 fire damage unless it has somehow protected itself from the heat."
+					}
+				]
+			}
+			, {
+				"name": "Barbellite"
+				, "source": "Bestiary"
+				, "page": 179
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 12
+				, "HP": 36
+				, "attacks": [{
+					"name": "Arctic bite"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 11
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "7 cold damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Heat absorption"
+						, "effect": "When a creature is engaged with the remorhaz at the start of its turn, it takes cold damage equal to the escalation die."
+					}
+					, {
+						"name": "Shatterer"
+						, "effect": "Death can cause fluid-filled sacks inside the barbellite to explode.  When the attack roll that kills the barbellite is a natural even roll, each nearby creature takes 10 cold damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Frost-Würm"
+				, "source": "Bestiary"
+				, "page": 180
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "troop"
+				, "type": "beast"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 180
+				, "attacks": [{
+						"name": "Würm glaciation"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target and one other nearby enemy takes 18 cold damage as the area freezes over."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "The target and one other nearby enemy takes 6 cold damage."
+							}
+						]
+					}
+					, {
+						"name": "Trilling vibrations"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies in a group"
+						, "damage": "The target is stunned (save ends)"
+						, "extraEffects": [{
+							"trigger": "Limited use"
+							, "effect": "The remorhaz can use <em>trilling vibrations</em> only when the escalation die is odd."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Burrow"
+						, "effect": "As the standard monster ability, except the remorhaz only needs to roll 6+ in snow."
+					}
+					, {
+						"name": "Massive heat absorption"
+						, "effect": "When a creature is engaged with the remorhaz at the start of its turn, it takes cold damage equal to twice the escalation die."
+					}
+					, {
+						"name": "Shatterer"
+						, "effect": "Death can cause fluid-filled sacks inside the frost-würm to explode.  When the attack roll that kills the frost-würm is a natural even roll, each nearby creature takes 20 cold damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Remorhaz Queen"
+				, "source": "Bestiary"
+				, "page": 180
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 11
+				, "role": "wrecker"
+				, "type": "beast"
+				, "initiative": 0
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 26
+				, "MD": 22
+				, "HP": 580
+				, "attacks": [{
+						"name": "Bite and trample"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "80 damage, 40 fire damage, and the remorhaz grabs the target"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "The target and each other creature engaged with the remorhaz takes 20 fire damage."
+						}]
+					}
+					, {
+						"name": "Nova blast"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 16
+						, "defence": "PD"
+						, "target": "1d3 nearby enemies"
+						, "damage": "100 fire damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "25 fire damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Burrow"
+						, "effect": "As the standard monster ability, except the remorhaz only needs to roll 6+ in snow and ice."
+					}
+					, {
+						"name": "Furnace aura"
+						, "effect": "When a creature is engaged with the remorhaz (or grabbed by it) at the start of its turn, it takes fire damage equal to 10 × the escalation die."
+					}
+					, {
+						"name": "Sluggish initiative"
+						, "effect": "The queen may be sluggish after eating unsuccessful suitors, laying eggs, or moving across the ice like a rushing avalanche.  Roll 2d10 to determine her current initiative."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Bejewelled remorhaz"
+						, "effect": "The remorhaz has glowing “jewels” on its armoured plates.  When a nearby or far away enemy misses with an attack against the remorhaz, that enemy chooses one: It takes 25 fire damage; OR one piece of its non-magical equipment (something useful, GM’s choice) melts or burns up.  Adjust skill checks or stats accordingly."
+					}
+					, {
+						"name": "Remorhaz steamer"
+						, "effect": "The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air.  Ranged attacks against the remorhaz take a -2 penalty, or a -4 penalty if the attacker is far away."
+					}
+					, {
+						"name": "Spiney remorhaz"
+						, "effect": "The remorhaz is covered in red-hot spines.  When a nearby enemy rolls a natural 1-5 with an attack roll, it takes 30 fire damage unless it has somehow protected itself from the heat."
+					}
+				]
+			}
+			, {
+				"name": "Squib Swarm"
+				, "source": "Bestiary"
+				, "page": 179
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 0
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 0
+				, "vulnerability": ""
+				, "AC": 14
+				, "PD": 12
+				, "MD": 8
+				, "HP": 5
+				, "attacks": [{
+					"name": "Sharp nibbling beaks"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 5
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "3 cold damage"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+					"name": "Heat absorption"
+					, "effect": "When a creature is engaged with the squib swarm at the start of its turn, it takes cold damage equal to the escalation die."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Sahuagin"
 		, "groupTraits": []
 		, "monsters": [{
