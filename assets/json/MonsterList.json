@@ -24159,7 +24159,7 @@
 						]
 					}
 					, {
-						"name": "Shaking the hourglas"
+						"name": "Shaking the hourglass"
 						, "specialTrigger": false
 						, "type": "close"
 						, "modifier": 15
