@@ -23140,6 +23140,77 @@
 		]
 	}
 	, {
+		"name": "Whispering Prophet"
+		, "groupTraits": []
+		, "monsters": [{
+			"name": "Whispering Prophet"
+			, "source": "Bestiary"
+			, "page": 216
+			, "sizeStrength": "normal"
+			, "threat": "normal"
+			, "level": 5
+			, "role": "leader"
+			, "type": "aberration"
+			, "initiative": 15
+			, "vulnerability": ""
+			, "AC": 22
+			, "PD": 14
+			, "MD": 20
+			, "HP": 62
+			, "attacks": [{
+					"name": "Tentacle caress"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 9
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "12 damage, and the target is vulnerable to psychic damage (save ends)"
+					, "extraEffects": []
+				}
+				, {
+					"name": "Whispered secrets"
+					, "specialTrigger": false
+					, "type": "close"
+					, "modifier": 10
+					, "defence": "MD"
+					, "target": "1d3 nearby enemies"
+					, "damage": "5 psychic damage, and the target’s mind is filled with a delusional scene from its past that depends on the roll"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is confused until the end of its next turn as it sees a for from its past."
+						}
+						, {
+							"trigger": "Natural odd hit"
+							, "effect": "The target is weakened until the end of its next turn as it remembers a past failure."
+						}
+						, {
+							"trigger": "Rewards of the patron"
+							, "effect": "So long as the attack hits one or more targets, one ally of the prophet’s choice gains a cumulative +1 attack bonus until the end of the battle that increases that ally’s natural attack roll (so a roll of natural 15 becomes a roll of natural 16 with a +1 bonus, or a natural 17 with a +2 bonus, etc.).  They ally can choose not to use the bonus."
+						}
+					]
+				}
+			]
+			, "abilities": [{
+					"name": "Saw it coming"
+					, "effect": "Twice per battle as a free action, the prophet can try to avoid a non-critical attack that hits it.  The attacker must reroll the attack roll with a -4 penalty."
+				}
+				, {
+					"name": "Knows the angles"
+					, "effect": "Twice per battle as a move action, the prophet can teleport to anywhere it can see, or to a location it can’t see but has the correct geometry and that it has previously prepared (a lair)."
+				}
+			]
+			, "nastierSpecials": [{
+					"name": "Haruspicy master"
+					, "effect": "When an enemy has dropped to 0 hp or lower since the prophet’s last turn, as a quick action it can get a glimpse of the near-future.  It grants 1d3 nearby allies a +4 bonus to attacks and to all defences until the start of its next turn."
+				}
+				, {
+					"name": "A special secret"
+					, "effect": "When the prophet makes a <em>whispered secrets</em> attack, it can choose to target only one nearby enemy.  If it does, it gains a +4 attack bonus against that enemy and the hit effects are save ends."
+				}
+			]
+		}]
+	}
+	, {
 		"name": "Wight"
 		, "groupTraits": []
 		, "monsters": [{
