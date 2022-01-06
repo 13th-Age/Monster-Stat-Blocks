@@ -24015,4 +24015,174 @@
 			}
 		]
 	}
+	, {
+		"name": "Zorigami"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Alex Zorigami"
+				, "source": "Bestiary"
+				, "page": 225
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 6
+				, "role": "spoiler"
+				, "type": "construct"
+				, "initiative": 11
+				, "vulnerability": ""
+				, "AC": 24
+				, "PD": 17
+				, "MD": 19
+				, "HP": 75
+				, "attacks": [{
+						"name": "Multi-geared mace"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The target can’t use the bonuses and powers of one of its randomly determined true magic items until the end of the battle."
+						}]
+					}
+					, {
+						"name": "Spray of sharpened gears"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 11
+						, "defence": "AC"
+						, "target": "1d3 nearby enemies or one far away enemy"
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "8 damage."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Lethal parries"
+						, "effect": "When an enemy engaged with the apex zorigami misses it with an attack, the apex zorigami rolls a normal save; on a success, it can make a <em>multi-geared mace</em> attack as a free action."
+					}
+					, {
+						"name": "Take five"
+						, "effect": "The escalation die does not increase the round after an apex zorigami is staggered or drops to 0 hp."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Dawn Zorigami"
+				, "source": "Bestiary"
+				, "page": 225
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "spoiler"
+				, "type": "construct"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 13
+				, "MD": 17
+				, "HP": 30
+				, "attacks": [{
+						"name": "Headbutt"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage, and the target moves down 1d6 points in initiative order"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Ray of wasted time"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "1d3 nearby enemies or one far away enemy"
+						, "damage": "5 psychic damage, and 5 ongoing psychic damage"
+						, "extraEffects": [{
+							"trigger": "Natural 16+"
+							, "effect": "The target also moves down 1d6 points in initiative order."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "A moment of silence"
+						, "effect": "The escalation die does not increase the round after a dawn zorigami drops to 0 hp."
+					}
+					, {
+						"name": "On pause"
+						, "effect": "A creature that is reduced to a negative initiative count in a battle involving one or more dawn zorigami moves forward in time, reappearing somewhere nearby in a number of minutes equal to their negative initiative count, presumably long after the current battle is over.  The target may be confused by this effect, since the ways of the zorigami are mysterious."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Dusk Zorigami"
+				, "source": "Bestiary"
+				, "page": 225
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 10
+				, "role": "wrecker"
+				, "type": "construct"
+				, "initiative": 18
+				, "vulnerability": ""
+				, "AC": 28
+				, "PD": 23
+				, "MD": 23
+				, "HP": 200
+				, "attacks": [{
+						"name": "Arm full of blades"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is hampered (save ends)."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The target can’t heal using its own recoveries (save ends)."
+							}
+							, {
+								"trigger": "Natural 1-5"
+								, "effect": "The dusk zorigami can make a <em>shaking the hourglass</em> attack against a single target as a free action."
+							}
+						]
+					}
+					, {
+						"name": "Shaking the hourglas"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 15
+						, "defence": "MD"
+						, "target": "each nearby enemy not engaged with a zorigami"
+						, "damage": "20 psychic damage, and the target is vulnerable (save ends)"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The escalation die increases by one."
+							}
+							, {
+								"trigger": "Natural odd hit"
+								, "effect": "The escalation die decreases by one."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+					"name": "The ticking clock of its own mortality"
+					, "effect": "While it’s staggered, the dusk zorigami uses the escalation die."
+				}]
+				, "nastierSpecials": []
+			}
+		]
+	}
 ]
