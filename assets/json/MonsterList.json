@@ -22601,6 +22601,205 @@
 		]
 	}
 	, {
+		"name": "Wendigo"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Elder Wendigo"
+				, "source": "Bestiary"
+				, "page": 212
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "spoiler"
+				, "type": "demon"
+				, "initiative": 18
+				, "vulnerability": ""
+				, "AC": 26
+				, "PD": 22
+				, "MD": 22
+				, "HP": 600
+				, "attacks": [{
+						"name": "Icy claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "3 attacks, each against a different nearby enemy"
+						, "damage": "50 cold damage"
+						, "extraEffects": [{
+							"trigger": "Frostburn"
+							, "effect": "If all three attacks hit, each nearby enemy takes 4d10 fire damage."
+						}]
+					}
+					, {
+						"name": "Flame blizzard"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "PD"
+						, "target": "1d6 nearby or far away enemies, but not more than esc. die"
+						, "damage": "90 fire or cold damage (GM choice)"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target is hampered until the end of its next turn."
+						}]
+					}
+					, {
+						"name": "Horrific gaze"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 14
+						, "defence": "MD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "120 psychic damage, and the target is confused (save ends)"
+						, "extraEffects": [{
+								"trigger": "Fourth failed confusion save"
+								, "effect": "The target slips into madness and becomes a cannibal cultist or wendigo or some other terrible demon-thing of the GM’s or player’s choice in 2d10 hours."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "60 psychic damage."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "The elder wendigo can walk on the wind.  It is not a graceful flier, but it moves as fast as the wind that carries it."
+					}
+					, {
+						"name": "Swirling snow and fog and flame"
+						, "effect": "The elder wendigo gains a +5 bonus to all defences against attacks by far away enemies."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Force of disruption"
+						, "effect": "When the elder wendigo scores a critical hit against a target or drops a target to 0 hp or lower, that creature must permanently change one of its icon relationship points to a relationship with a different icon - one of a few that the GM chooses.  Alternatively, a point the character already has with one those icons changes to involve another icon (of the PC’s choice)."
+					}
+					, {
+						"name": "The demon stares back"
+						, "effect": "Once per round when a nearby or far away enemy attacks the elder wendigo and rolls a natural odd miss, the wendigo can make a <em>horrific gaze</em> attack against that attacker as a free action."
+					}
+				]
+			}
+			, {
+				"name": "Ravenous Cannibal"
+				, "source": "Bestiary"
+				, "page": 212
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 15
+				, "MD": 11
+				, "HP": 13
+				, "attacks": [{
+						"name": "Bloody melee weapon"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "4 damage, and 4 ongoing damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Latching bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": "one staggered enemy, or one enemy making saving throw rolls"
+						, "damage": "6 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "Add another ravenous cannibal mook to the mob (it must have been hiding somewhere nearby, or wasn’t really dead when it dropped earlier in the battle)."
+						}]
+					}
+				]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Wendigo Spirit"
+				, "source": "Bestiary"
+				, "page": 212
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "wrecker"
+				, "type": "undead"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 15
+				, "MD": 19
+				, "HP": 100
+				, "attacks": [{
+						"name": "Soul bite"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "MD"
+						, "target": ""
+						, "damage": "36 psychic damage, and the target is affected by <em>wendigo’s hunger</em> (save ends)"
+						, "extraEffects": [{
+								"trigger": "Wendigo’s hunger"
+								, "effect": "Until the target saves, roll a d6 at the start of each of its turns.  It takes the corresponding action for its full turn instead of its normal turn:"
+							}
+							, {
+								"trigger": "1-2"
+								, "effect": "The target takes 10 damage as it bites itself."
+							}
+							, {
+								"trigger": "3-4"
+								, "effect": "The target makes a basic attack against its nearest or most vulnerable ally (moving to that target if necessary)."
+							}
+							, {
+								"trigger": "5-6"
+								, "effect": "The target attacks the wendigo if it can; otherwise, it does nothing."
+							}
+						]
+					}
+					, {
+						"name": "Wind claw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 10
+						, "defence": "PD"
+						, "target": "2 attacks"
+						, "damage": "15 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "After the attack the wendigo can teleport somewhere nearby as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Flight"
+						, "effect": "The wendigo can walk on the wind.  It is not a graceful flier, but it moves as fast as the wind that carries it.  Nearby creatures can see its feet blazing with fire as it runs."
+					}
+					, {
+						"name": "Spirit form"
+						, "effect": "The wendigo has <em>resist damage 16+</em> to all damage except thunder damage.  A wendigo spirit can move through solid objects but it can’t end its movement inside them."
+					}
+					, {
+						"name": "Unseen horror"
+						, "effect": "The wendigo is invisible to far away creatures.  When the wendigo attacks, if its target couldn’t see it at the start of its turn, the wendigo gains a +2 attack bonus that turn."
+					}
+				]
+				, "nastierSpecials": [{
+					"name": "Curse of the wendigo"
+					, "effect": "If a creature subject to <em>wendigo’s hunger</em> drops itself (through biting) or an ally (with a basic attack) to 0 hp or lower, that creature also begins making last gasp saves.  Failing the fourth last gasp save turns the creature into a raving cannibal; it loses all its normal abilities and becomes an NPC until the PCs find a way to restore their ally (at GM’s discretion)."
+				}]
+			}
+		]
+	}
+	, {
 		"name": "Werebeasts"
 		, "groupTraits": [{
 				"name": "Humanoid, Hybrid, and Beast Forms"
