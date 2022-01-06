@@ -23492,6 +23492,54 @@
 		}]
 	}
 	, {
+		"name": "Wibble"
+		, "groupTraits": []
+		, "monsters": [{
+			"name": "Wibble"
+			, "source": "Bestiary"
+			, "page": 223
+			, "sizeStrength": "normal"
+			, "threat": "normal"
+			, "level": 1
+			, "role": "mook"
+			, "type": "construct"
+			, "initiative": 1
+			, "vulnerability": ""
+			, "AC": 13
+			, "PD": 13
+			, "MD": 13
+			, "HP": 6
+			, "attacks": [{
+				"name": "Force burp spell"
+				, "specialTrigger": false
+				, "type": "ranged"
+				, "modifier": 6
+				, "defence": "PD"
+				, "target": ""
+				, "damage": "4 force damage"
+				, "extraEffects": []
+			}]
+			, "abilities": [{
+					"name": "Disengaged"
+					, "effect": "Wibbles gain a +5 bonus to disengage checks.  They also don’t remain engaged with their foes and will move every turn in battle.  When they fail a disengage check, a wibble moves away anyway."
+				}
+				, {
+					"name": "Eruptive blorp"
+					, "effect": "When an enemy hits a wibble with a melee attack, it takes force damage equal to its level."
+				}
+				, {
+					"name": "Flight"
+					, "effect": "Wibbles waft about.  They can fly well enough to ignore most wind, but not strong gale winds."
+				}
+				, {
+					"name": "Whiff and wibble"
+					, "effect": "When a creature makes a non-spell attack against a wibble and rolls a natural 1-2, 1d3 new wibbles are created in the same area.  These new wibbles typically melt back into their “parent” at the end of a battle if not destroyed, but sometimes they remain separate and drift off on their own."
+				}
+			]
+			, "nastierSpecials": []
+		}]
+	}
+	, {
 		"name": "Wight"
 		, "groupTraits": []
 		, "monsters": [{
