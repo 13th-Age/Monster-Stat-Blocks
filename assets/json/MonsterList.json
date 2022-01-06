@@ -22201,6 +22201,406 @@
 		]
 	}
 	, {
+		"name": "Warbanner"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Crusader Warbanner"
+				, "source": "Bestiary"
+				, "page": 208
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "caster"
+				, "type": "construct"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 19
+				, "PD": 15
+				, "MD": 15
+				, "HP": 86
+				, "attacks": [{
+						"name": "Whipping hook"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage, and 10 ongoing damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 damage."
+						}]
+					}
+					, {
+						"name": "Banner magic"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 0
+						, "defence": ""
+						, "target": ""
+						, "damage": "Roll 2d20 and use each roll (or a lower result of your choice) to determine one effect"
+						, "extraEffects": [{
+								"trigger": "1-5"
+								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
+							}
+							, {
+								"trigger": "6-10"
+								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d8 psychic damage."
+							}
+							, {
+								"trigger": "11-15"
+								, "effect": "Until the end of the battle, each ally in the warbanner’s band gains a +2 cumulative bonus to damage on hits with melee attacks."
+							}
+							, {
+								"trigger": "16-20"
+								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "False rally"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "one nearby enemy with 15 hp or fewer"
+						, "damage": "The target is confused (hard save ends, 16+)"
+						, "extraEffects": [{
+							"trigger": "Critical hit"
+							, "effect": "The target can now only save against the confusion with a natural 20 (or until the warbanner drops) and can’t flee if the rest of the PCs choose to do so."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Designated bearer"
+						, "effect": "Once per round as a quick action, the warbanner can fly directly above a lower-level ally in its band and designate that ally as its bearer.  Alternately, it can release itself from a bearer and fly free."
+					}
+					, {
+						"name": "Bearer beware"
+						, "effect": "While the warbanner has a bearer it moves with the bearer and is engaged by enemies that engage the bearer.  The bearer is vulnerable to all attacks but it can use the escalation die."
+					}
+					, {
+						"name": "Conditional resist damage 16+"
+						, "effect": "Unless an ally in the warbanner’s band dropped to 0 hp since the start of the current round, an enemy attacking the warbanner must roll a natural 16+ on the attack roll or it only takes half damage.  This ability has no effect if the warbanner has no allies in its band."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+					}
+					, {
+						"name": "Mook morale"
+						, "effect": "Mooks fighting in the warbanner’s band gain a bonus to their hit points equal to the warbanner’s level (3)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Deathly Warbanner"
+				, "source": "Bestiary"
+				, "page": 210
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 4
+				, "role": "caster"
+				, "type": "construct"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 20
+				, "PD": 14
+				, "MD": 18
+				, "HP": 104
+				, "attacks": [{
+						"name": "Bladed fringe"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "15 damage, and 10 ongoing negative energy damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "10 damage."
+						}]
+					}
+					, {
+						"name": "Banner magic"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 0
+						, "defence": ""
+						, "target": ""
+						, "damage": "Roll 2d20 and use each roll (or a lower result of your choice) to determine one effect"
+						, "extraEffects": [{
+								"trigger": "1-5"
+								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
+							}
+							, {
+								"trigger": "6-10"
+								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d10 psychic damage."
+							}
+							, {
+								"trigger": "11-15"
+								, "effect": "If any mooks in the warbanner’s band have dropped this battle, return one of those mooks to the battle next to the warbanner.  (If the warbanner has no mooks in its band, choose a lower result.)"
+							}
+							, {
+								"trigger": "16-20"
+								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "False rally"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 9
+						, "defence": "MD"
+						, "target": "one nearby enemy with 18 hp or fewer"
+						, "damage": "The target is confused (hard save ends, 16+)"
+						, "extraEffects": [{
+							"trigger": "Critical hit"
+							, "effect": "The target can now only save against the confusion with a natural 20 (or until the warbanner drops) and can’t flee if the rest of the PCs choose to do so."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Designated bearer"
+						, "effect": "Once per round as a quick action, the warbanner can fly directly above a lower-level ally in its band and designate that ally as its bearer.  Alternately, it can release itself from a bearer and fly free."
+					}
+					, {
+						"name": "Bearer beware"
+						, "effect": "While the warbanner has a bearer it moves with the bearer and is engaged by enemies that engage the bearer.  The bearer is vulnerable to all attacks but it can use the escalation die."
+					}
+					, {
+						"name": "Conditional resist damage 16+"
+						, "effect": "Unless an ally in the warbanner’s band dropped to 0 hp since the start of the current round, an enemy attacking the warbanner must roll a natural 16+ on the attack roll or it only takes half damage.  This ability has no effect if the warbanner has no allies in its band."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+					}
+					, {
+						"name": "Mook morale"
+						, "effect": "Mooks fighting in the warbanner’s band gain a bonus to their hit points equal to the warbanner’s level (4)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Feral Warbanner"
+				, "source": "Bestiary"
+				, "page": 207
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "caster"
+				, "type": "construct"
+				, "initiative": 7
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 14
+				, "MD": 14
+				, "HP": 70
+				, "attacks": [{
+						"name": "Whipping barbed tassel"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "5 damage."
+						}]
+					}
+					, {
+						"name": "Banner magic"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 0
+						, "defence": ""
+						, "target": ""
+						, "damage": "Roll 2d20 and use each roll (or a lower result of your choice) to determine one effect"
+						, "extraEffects": [{
+								"trigger": "1-5"
+								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
+							}
+							, {
+								"trigger": "6-10"
+								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d6 psychic damage."
+							}
+							, {
+								"trigger": "11-15"
+								, "effect": "If any mooks in the warbanner’s band have dropped this battle, return one of those mooks to the battle next to the warbanner.  (If the warbanner has no mooks in its band, choose a lower result.)"
+							}
+							, {
+								"trigger": "16-20"
+								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "False rally"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 7
+						, "defence": "MD"
+						, "target": "one nearby enemy with 12 hp or fewer"
+						, "damage": "The target is confused (hard save ends, 16+)"
+						, "extraEffects": [{
+							"trigger": "Critical hit"
+							, "effect": "The target can now only save against the confusion with a natural 20 (or until the warbanner drops) and can’t flee if the rest of the PCs choose to do so."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Designated bearer"
+						, "effect": "Once per round as a quick action, the warbanner can fly directly above a lower-level ally in its band and designate that ally as its bearer.  Alternately, it can release itself from a bearer and fly free."
+					}
+					, {
+						"name": "Bearer beware"
+						, "effect": "While the warbanner has a bearer it moves with the bearer and is engaged by enemies that engage the bearer.  The bearer is vulnerable to all attacks but it can use the escalation die."
+					}
+					, {
+						"name": "Conditional resist damage 16+"
+						, "effect": "Unless an ally in the warbanner’s band dropped to 0 hp since the start of the current round, an enemy attacking the warbanner must roll a natural 16+ on the attack roll or it only takes half damage.  This ability has no effect if the warbanner has no allies in its band."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+					}
+					, {
+						"name": "Mook morale"
+						, "effect": "Mooks fighting in the warbanner’s band gain a bonus to their hit points equal to the warbanner’s level (2)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Human Rabble"
+				, "source": "Bestiary"
+				, "page": 208
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 2
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 5
+				, "vulnerability": ""
+				, "AC": 17
+				, "PD": 14
+				, "MD": 11
+				, "HP": 9
+				, "attacks": [{
+					"name": "Spear, sword, or club"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 7
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "4 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "1 damage."
+					}]
+				}]
+				, "abilities": []
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Orc Lord Warbanner"
+				, "source": "Bestiary"
+				, "page": 209
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "caster"
+				, "type": "construct"
+				, "initiative": 8
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 13
+				, "HP": 100
+				, "attacks": [{
+						"name": "Flagspear"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 9
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "18 damage"
+						, "extraEffects": [{
+							"trigger": "Miss"
+							, "effect": "8 damage."
+						}]
+					}
+					, {
+						"name": "Banner magic"
+						, "specialTrigger": false
+						, "type": "close"
+						, "modifier": 0
+						, "defence": ""
+						, "target": ""
+						, "damage": "Roll 2d20 and use each roll (or lower result of your choice) to determine one effect"
+						, "extraEffects": [{
+								"trigger": "1-5"
+								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
+							}
+							, {
+								"trigger": "6-10"
+								, "effect": "Add a 3<sup>rd</sup> level orc mook to the warbanner’s band."
+							}
+							, {
+								"trigger": "11-15"
+								, "effect": "The warbanner can make a <em>flagspear</em> attack as a free action."
+							}
+							, {
+								"trigger": "16-20"
+								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
+							}
+						]
+					}
+					, {
+						"name": "False rally"
+						, "specialTrigger": true
+						, "type": "close"
+						, "modifier": 8
+						, "defence": "MD"
+						, "target": "one nearby enemy with 15 hp or fewer"
+						, "damage": "The target is confused (hard save ends, 16+)"
+						, "extraEffects": [{
+							"trigger": "Critical hit"
+							, "effect": "The target can now only save against the confusion with a natural 20 (or until the warbanner drops) and can’t flee if the rest of the PCs choose to do so."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Designated bearer"
+						, "effect": "Once per round as a quick action, the warbanner can fly directly above a lower-level ally in its band and designate that ally as its bearer.  Alternately, it can release itself from a bearer and fly free."
+					}
+					, {
+						"name": "Bearer beware"
+						, "effect": "While the warbanner has a bearer it moves with the bearer and is engaged by enemies that engage the bearer.  The bearer is vulnerable to all attacks but it can use the escalation die."
+					}
+					, {
+						"name": "Conditional resist damage 16+"
+						, "effect": "Unless an ally in the warbanner’s band dropped to 0 hp since the start of the current round, an enemy attacking the warbanner must roll a natural 16+ on the attack roll or it only takes half damage.  This ability has no effect if the warbanner has no allies in its band."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+					}
+					, {
+						"name": "Mook morale"
+						, "effect": "Mooks fighting in the warbanner’s band gain a bonus to their hit points equal to the warbanner’s level (3)."
+					}
+				]
+				, "nastierSpecials": []
+			}
+		]
+	}
+	, {
 		"name": "Werebeasts"
 		, "groupTraits": [{
 				"name": "Humanoid, Hybrid, and Beast Forms"
