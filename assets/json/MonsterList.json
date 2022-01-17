@@ -389,7 +389,7 @@
 						, "damage": "1 damage, and the scorpion gains a +2 attack bonus against the same target this turn with its <em>stinger</em> attack"
 						, "extraEffects": [{
 							"trigger": "Limited use"
-							, "effect": "2/round, each requiring a quick action.  (Hitting the same target twice with <em>pincer</em> gives the <em>string</em> attack a +4 bonus.)"
+							, "effect": "2/round, each requiring a quick action.  (Hitting the same target twice with <em>pincer</em> gives the <em>stinger</em> attack a +4 bonus.)"
 						}]
 					}
 					, {
@@ -518,7 +518,7 @@
 					, "damage": "5 damage"
 					, "extraEffects": [{
 						"trigger": "Pack attack"
-						, "effect": "This creature gains a +2 bonus to attack and damage for each other ally engaged with the target (max +4 damage)."
+						, "effect": "This creature gains a +2 bonus to attack and damage for each other ally engaged with the target (max +4 bonus)."
 					}]
 				}]
 				, "abilities": []
@@ -554,7 +554,7 @@
 					, "damage": "8 damage"
 					, "extraEffects": [{
 						"trigger": "Natural even hit"
-						, "effect": "If the target is small (i.e. a gnome or halfling), the ankheg grabs it.  While the ankheg is grabbing a creature, the only legal target for its <em>mandibles</em> attack is the grabbed creature."
+						, "effect": "If the target is small, the ankheg grabs it.  While the ankheg is grabbing a creature, the only legal target for its <em>mandibles</em> attack is the grabbed creature."
 					}]
 				}
 				, {
@@ -2776,8 +2776,12 @@
 	, {
 		"name": "Demon"
 		, "groupTraits": [{
-			"name": "Demon Ablities (d6 or d8)"
+			"name": "Demon Abilities (d6 or d8)"
 			, "traits": [{
+					"name": "Ability"
+					, "description": "Roll 1d10 for each non-mook normal-sized demon.  If you roll less than or equal to the demon’s level, it has a random ability.  Large or huge (or double- or triple-strength) demons automatically get one random ability, and as a nastier option, you can give them more."
+				}
+				, {
 					"name": "1: True seeing"
 					, "description": "The demon is immune to invisibility and ignores any illusions."
 				}
@@ -2865,7 +2869,7 @@
 				]
 				, "abilities": [{
 						"name": "Desperate escalator"
-						, "effect": "White staggered, the balor adds the escalation die to its attack rolls."
+						, "effect": "While staggered, the balor adds the escalation die to its attack rolls."
 					}
 					, {
 						"name": "Fiery aura"
@@ -2873,7 +2877,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": ""
+						, "effect": "Giant bat wings are good for something besides looking tough."
 					}
 					, {
 						"name": "Shadow and flame"
@@ -2882,7 +2886,7 @@
 				]
 				, "nastierSpecials": [{
 					"name": "Vorpal blade"
-					, "effect": "Critical hits with the abyssal blade deal triple damage instead of double damage."
+					, "effect": "Critical hits with the <em>abyssal blade</em> deal triple damage instead of double damage."
 				}]
 			}
 			, {
@@ -3244,7 +3248,7 @@
 						, "modifier": 9
 						, "defence": "MD"
 						, "target": "one nearby or far away enemy"
-						, "damage": "15 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 6d6 psychic damage."
+						, "damage": "15 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 6d6 psychic damage to clear their head…"
 						, "extraEffects": []
 					}
 					, {
@@ -3331,7 +3335,7 @@
 				]
 				, "abilities": [{
 					"name": "Aura of betrayal"
-					, "effect": "At the start of each of the despoiler mage’s turns, choose a random nearby enemy.  Until the start of the despoiler mage’s next turn, that creature’s allies no longer consider it an ally, though its enemies’ powers can still target it as an enemy.  The creature isn’t compelled to attack its former friends."
+					, "effect": "At the start of each of the despoiler mage’s turns, choose a random nearby enemy.  Until the start of the despoiler mage’s next turn, that creature’s allies no longer consider it an ally, though its enemies’ powers can still target it as an enemy.  The creature isn’t compelled to attack its former friends, but the effect tends to screw up all sorts of spells, bardic songs, etc."
 				}]
 				, "nastierSpecials": []
 			}
@@ -3553,15 +3557,11 @@
 				]
 				, "abilities": [{
 						"name": "Mirror images"
-						, "effect": "At will, as a move action, a glabrezou can create multiple images of itself that make it harder to target.  The next time an attack would hit the glabrezou, the attacker has to roll 11+ with another d20 roll: success indicates a hit; failure is a miss that hits one of the mirror images instead, dealing no miss damage to the glabrezou but dispelling all the images."
-					}
-					, {
-						"name": "Mirror images whilst staggered"
-						, "effect": "Once the glabrezou is staggered, it takes 2d10 damage whenever it uses <em>mirror image</em>, so movement or escape start registering as alternatives."
+						, "effect": "At will, as a move action, a glabrezou can create multiple images of itself that make it harder to target.  The next time an attack would hit the glabrezou, the attacker has to roll 11+ with another d20 roll: success indicates a hit; failure is a miss that hits one of the mirror images instead, dealing no miss damage to the glabrezou but dispelling all the images<br>&emsp;Once the glabrezou is staggered, it takes 2d10 damage whenever it uses <em>mirror image</em>, so movement or escape start registering as alternatives."
 					}
 					, {
 						"name": "Power word stun"
-						, "effect": "Once per day as a free action, the glabrezou can utter a word of power, canceling a single action just taken by a nearby creature with fewer hit points than the glabrezou - whether it was casting a spell, healing an ally, or whatever.  The GM can see the results of the action, such as a die roll, before deciding whether to use the <em>power word</em>."
+						, "effect": "Once per day as a free action, the glabrezou can utter a word of power, cancelling a single action just taken by a nearby creature with fewer hit points than the glabrezou - whether it was casting a spell, healing an ally, or whatever.  The GM can see the results of the action, such as a die roll, before deciding whether to use the <em>power word</em>."
 					}
 				]
 				, "nastierSpecials": []
@@ -3677,7 +3677,7 @@
 						, "damage": "7 damage, and the target is dazed (save ends)"
 						, "extraEffects": [{
 							"trigger": "First natural 16+ each turn"
-							, "effect": "The imp can choose one: the target is weakened instead of dazed; OR the imp can make a <em>blight jet</em> attack against a different target as a free action."
+							, "effect": "The imp can choose one: The target is weakened instead of dazed; OR the imp can make a <em>blight jet</em> attack against a different target as a free action."
 						}]
 					}
 				]
@@ -3687,7 +3687,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": ""
+						, "effect": "Imps are hard to pin down because they fly.  Not fast or well, but you don’t have to fly well to fly better than humans and elves."
 					}
 				]
 				, "nastierSpecials": []
@@ -3788,7 +3788,7 @@
 				]
 				, "abilities": [{
 						"name": "Flight"
-						, "effect": ""
+						, "effect": "Nalfeshnee are clumsy but powerful fliers with strangely small wings."
 					}
 					, {
 						"name": "Unpredictable"
@@ -3919,8 +3919,8 @@
 				, "initiative": 9
 				, "vulnerability": ""
 				, "AC": 21
-				, "PD": 17
-				, "MD": 17
+				, "PD": 18
+				, "MD": 18
 				, "HP": 88
 				, "attacks": [{
 						"name": "Filth-covered claws"
@@ -5000,8 +5000,8 @@
 						, "description": "Unlike other dragons of its colour, this dragon has no vulnerability.  The PCs will figure that out the first time they try to use its supposed vulnerability against it."
 					}
 					, {
-						"name": "7: Now I'm mad!"
-						, "description": "The first time the dragon is staggered each battle, it uses its breath weapon attack as a free action that does not count against the normal uses of its breath."
+						"name": "7: Now I’m mad!"
+						, "description": "The first time the dragon is staggered each battle, it uses its <em>breath weapon</em> attack as a free action that does not count against the normal uses of its breath."
 					}
 					, {
 						"name": "8: Serious threat"
@@ -5021,11 +5021,11 @@
 					}
 					, {
 						"name": "12: More breath"
-						, "description": "The dragon can use its intermittent breath 1d4 more times each battle.  If its breath weapon isn’t intermittent (white and green dragons), the dragon gains the extra uses anyway, making it more dangerous than lesser specimens of its colour."
+						, "description": "The dragon can use its <em>intermittent breath</em> 1d4 more times each battle.  If its breath weapon isn’t intermittent (white and green dragons), the dragon gains the extra uses anyway, making it more dangerous than lesser specimens of its colour."
 					}
 					, {
 						"name": "13: Humanoid form"
-						, "description": "The dragon is capable of shapechanging into a humanoid form, usually of a warrior or spellcaster appropriate to its nature and usually not obviously draconic, registering as a normal humanoid.  the dragon has the PC-style racial power of their humanoid form, but only while in the shapechanged form."
+						, "description": "The dragon is capable of shapechanging into a humanoid form, usually of a warrior or spellcaster appropriate to its nature and usually not obviously draconic, registering as a normal humanoid.  The dragon has the PC-style racial power of their humanoid form, but only while in the shapechanged form."
 					}
 					, {
 						"name": "14: Some unique thing"
@@ -5144,7 +5144,7 @@
 						, "type": "close"
 						, "modifier": 16
 						, "defence": "PD"
-						, "target": "1d6 nearby or far away enemies"
+						, "target": "1d4 nearby or far away enemies"
 						, "damage": "80 lightning damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
@@ -5158,7 +5158,7 @@
 					}
 					, {
 						"name": "Counter-spell"
-						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+: impossible unless the dragon has a save bonus from some other source)."
+						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+; impossible unless the dragon has a save bonus from some other source)."
 					}
 					, {
 						"name": "Resist lightning 18+"
@@ -5226,7 +5226,7 @@
 				]
 				, "abilities": [{
 						"name": "Burrow"
-						, "effect": ""
+						, "effect": "As the standard monster ability."
 					}
 					, {
 						"name": "Resist poison 18+"
@@ -5278,7 +5278,7 @@
 						, "damage": "80 fire damage"
 						, "extraEffects": [{
 							"trigger": "Miss"
-							, "effect": "Half damage"
+							, "effect": "Half damage."
 						}]
 					}
 				]
@@ -5358,7 +5358,7 @@
 				, "vulnerability": "thunder"
 				, "AC": 22
 				, "PD": 20
-				, "MD": 19
+				, "MD": 18
 				, "HP": 160
 				, "attacks": [{
 						"name": "Claws and bite"
@@ -5427,7 +5427,7 @@
 						, "type": "normal"
 						, "modifier": 12
 						, "defence": "AC"
-						, "target": ""
+						, "target": "2 attacks"
 						, "damage": "15 damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit or miss"
@@ -5464,7 +5464,7 @@
 					}
 					, {
 						"name": "Counter-spell"
-						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+: impossible unless the dragon has a save bonus from some other source)."
+						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+; impossible unless the dragon has a save bonus from some other source)."
 					}
 					, {
 						"name": "Resist lightning 16+"
@@ -5483,7 +5483,7 @@
 				, "role": "spoiler"
 				, "type": "dragon"
 				, "initiative": 11
-				, "vulnerability": ""
+				, "vulnerability": "psychic"
 				, "AC": 24
 				, "PD": 21
 				, "MD": 16
@@ -5502,7 +5502,7 @@
 							}
 							, {
 								"trigger": "Natural 16+"
-								, "effect": "The draon can make a <em>poison breath</em> attack as a free action."
+								, "effect": "The dragon can make a <em>poison breath</em> attack as a free action."
 							}
 						]
 					}
@@ -5520,7 +5520,7 @@
 						}]
 					}
 					, {
-						"name": "Posion breath"
+						"name": "Poison breath"
 						, "specialTrigger": true
 						, "type": "close"
 						, "modifier": 12
@@ -5532,7 +5532,7 @@
 				]
 				, "abilities": [{
 						"name": "Burrow"
-						, "effect": ""
+						, "effect": "As the standard monster ability."
 					}
 					, {
 						"name": "Resist poison 16+"
@@ -5575,7 +5575,7 @@
 						, "type": "close"
 						, "modifier": 15
 						, "defence": "PD"
-						, "target": ""
+						, "target": "2d3 nearby enemies"
 						, "damage": "40 fire damage"
 						, "extraEffects": [{
 							"trigger": "Miss"
@@ -5761,7 +5761,7 @@
 				]
 				, "abilities": [{
 						"name": "Counter-spell"
-						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+: impossible unless the dragon has a save bonus from some other source)."
+						, "effect": "When an enemy targets the blue dragon with a spell, the dragon can roll a save; success means the spell has no effect on the dragon.  If the level of the spell is lower than the dragon’s level, it’s a normal save (11+).  Against an equal or higher-level spell, the save is a hard save (16+).  If the dragon is staggered, the save target increases by +5 (normal becomes hard, hard becomes 21+; impossible unless the dragon has a save bonus from some other source)."
 					}
 					, {
 						"name": "Intermittent breath"
@@ -5833,7 +5833,7 @@
 				]
 				, "abilities": [{
 						"name": "Burrow"
-						, "effect": ""
+						, "effect": "As the standard monster ability."
 					}
 					, {
 						"name": "Resist posion 12+"
