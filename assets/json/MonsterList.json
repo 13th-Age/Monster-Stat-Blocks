@@ -123,7 +123,7 @@
 						, "damage": "22 damage"
 						, "extraEffects": [{
 							"trigger": "Natural 16+"
-							, "effect": "The fire boar can make a <em>bash</em> attack against a different target as a free action."
+							, "effect": "The dire boar can make a <em>bash</em> attack against a different target as a free action."
 						}]
 					}
 					, {
@@ -133,7 +133,7 @@
 						, "modifier": 10
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "The target is weakened (-4 to attacks and defences) until the end of the boar’s next turn."
+						, "damage": "The target is weakened (-4 to attacks and defences) until the end of the boar’s next turn"
 						, "extraEffects": []
 					}
 				]
@@ -224,7 +224,7 @@
 				]
 				, "abilities": [{
 						"name": "Pouncing opportunity"
-						, "effect": "When an enemy moves to engage the dire tiger while it’s unengaged, it can meet that enemy halfway and make a <em>pounch</em> attack as an interrupt action before the target’s attack."
+						, "effect": "When an enemy moves to engage the dire tiger while it’s unengaged, it can meet that enemy halfway and make a <em>pounce</em> attack as an interrupt action before the target’s attack."
 					}
 					, {
 						"name": "Springing attack"
@@ -232,7 +232,7 @@
 					}
 					, {
 						"name": "One random dire feature"
-						, "effect": "Use the dire features table."
+						, "effect": "Use the dire features table or add something striped."
 					}
 				]
 				, "nastierSpecials": []
@@ -580,7 +580,13 @@
 	}
 	, {
 		"name": "Azer"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Azer Lava Pool Terrain"
+			, "traits": [{
+				"name": "Lava defender"
+				, "description": "Each time an attack hits an azer during the battle, the lava pool becomes more agitated.  After every three attacks that hit any azers in the battle, the pool makes a <em>lava shot</em> attack as a free action.  The pool is full of molten rock but not actually a monster, so it can’t be killed normally.  There might be other ways to cool it down though.  Anyone who ends up in the lava takes 4d8 fire damage per round until they leave the pool.<br><strong>Lava shot +9 vs. PD (one random nearby enemy of the azers)</strong> - 10 fire damage, and 10 ongoing fire damage<br>&emsp;<em>Miss:</em> 5 fire damage, and 5 ongoing fire damage."
+			}]
+		}]
 		, "monsters": [{
 				"name": "Azer Soldier"
 				, "source": "13 True Ways"
@@ -635,6 +641,61 @@
 					, {
 						"name": "Fire resistance 18+"
 						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 18+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Fire Bat"
+				, "source": "13 True Ways"
+				, "page": 162
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 3
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 18
+				, "PD": 16
+				, "MD": 11
+				, "HP": 10
+				, "attacks": [{
+						"name": "Burning claws"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 8
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "2 damage, and 2 fire damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Burning contrail"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 7
+						, "defence": "PD"
+						, "target": ""
+						, "damage": "5 fire damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+						"name": "Fiery flier"
+						, "effect": "An unengaged fire bat can move, and make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
+					}
+					, {
+						"name": "Blistering heat"
+						, "effect": "When an enemy engaged with the fire bat attacks it, that enemy takes 2 fire damage."
+					}
+					, {
+						"name": "Fire resistance 16+"
+						, "effect": "When a fire attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Fire bats are agile fliers, especially when riding hot air currents.  They slow down a bit away from warmth."
 					}
 				]
 				, "nastierSpecials": []
@@ -2890,7 +2951,7 @@
 				}]
 			}
 			, {
-				"name": "Bat Demon"
+				"name": "Bat Demon, aka Squishies"
 				, "source": "13 True Ways"
 				, "page": 164
 				, "sizeStrength": "normal"
@@ -11109,7 +11170,7 @@
 			}]
 			, "abilities": [{
 				"name": "Flight"
-				, "effect": ""
+				, "effect": "Gargoyles can fly, but not very well.  They would rather crawl or climb."
 			}]
 			, "nastierSpecials": [{
 					"name": "Rocky hide"
@@ -11117,7 +11178,7 @@
 				}
 				, {
 					"name": "Statues, statues, everywhere"
-					, "effect": "Because they often look like statues, gargoyles are capable of springing a surprise on inattentive PCs.  When there’s a chance of such an ambush, give the PCs a champion-tier skill check (DC 20) to notice the gargoyles and avoid being surprised."
+					, "effect": "Because they often look like statues, gargoyles are capable of springing a surprise on inattentive PCs.  When there’s a chance of such an ambush, give the PCs a champion-tier skill check (usually DC 20) to notice the gargoyles and avoid being surprised."
 				}
 			]
 		}]
@@ -11713,7 +11774,7 @@
 				, "initiative": 8
 				, "vulnerability": "holy"
 				, "AC": 18
-				, "PD": 15
+				, "PD": 16
 				, "MD": 12
 				, "HP": 36
 				, "attacks": [{
@@ -12108,7 +12169,7 @@
 							}
 							, {
 								"trigger": "Natural odd hit or miss"
-								, "effect": "The than can make a <em>chains and shrapnel</em> attack as a free action."
+								, "effect": "The thane can make a <em>chains and shrapnel</em> attack as a free action."
 							}
 						]
 					}
@@ -12222,7 +12283,7 @@
 						, "modifier": 12
 						, "defence": "PD"
 						, "target": "one enemy smaller than it"
-						, "damage": "10 damage, the target pops free from the giant, and the target loses its next move action."
+						, "damage": "10 damage, the target pops free from the giant, and the target loses its next move action"
 						, "extraEffects": []
 					}
 				]
@@ -12722,7 +12783,7 @@
 							}
 							, {
 								"trigger": "Miss"
-								, "effect": "40 damage OR the giant can make a <em>release the thunder</em> attack as a free action."
+								, "effect": "40 damage; OR the giant can make a <em>release the thunder</em> attack as a free action."
 							}
 						]
 					}
@@ -12976,7 +13037,7 @@
 						}]
 					}
 					, {
-						"name": "Thrown speak"
+						"name": "Thrown spear"
 						, "specialTrigger": false
 						, "type": "ranged"
 						, "modifier": 6
@@ -13431,7 +13492,7 @@
 				]
 				, "abilities": [{
 					"name": "Shifty bugger"
-					, "effect": "Goblins only need to roll a 6+ to disengage."
+					, "effect": "Goblins gain a +5 bonus to disengage checks."
 				}]
 				, "nastierSpecials": []
 			}
@@ -13652,10 +13713,10 @@
 				, "type": "construct"
 				, "initiative": 5
 				, "vulnerability": ""
-				, "AC": 18
-				, "PD": 16
+				, "AC": 20
+				, "PD": 18
 				, "MD": 14
-				, "HP": 100
+				, "HP": 120
 				, "attacks": [{
 					"name": "Bare brutal hands"
 					, "specialTrigger": false
@@ -14275,22 +14336,22 @@
 					, "damage": "5 psychic damage"
 					, "extraEffects": [{
 							"trigger": "Natural 16-17"
-							, "effect": "The target is hampered (easy save ends, 6+)"
+							, "effect": "The target is hampered (easy save ends, 6+)."
 						}
 						, {
 							"trigger": "Natural 18-19"
-							, "effect": "The target is weakened instead of hampered (easy save ends, 6+)"
+							, "effect": "The target is weakened instead of hampered (easy save ends, 6+)."
 						}
 						, {
 							"trigger": "Natural 20"
-							, "effect": "The target is confused instead of weakened (easy save ends, 6+)"
+							, "effect": "The target is confused instead of weakened (easy save ends, 6+)."
 						}
 					]
 				}
 			]
 			, "abilities": [{
 				"name": "Flight"
-				, "effect": ""
+				, "effect": "Harpies are neither quick nor graceful, but their wings get the job done."
 			}]
 			, "nastierSpecials": []
 		}]
@@ -15057,7 +15118,7 @@
 				}
 				, {
 					"name": "Warp-pulse"
-					, "specialTrigger": false
+					, "specialTrigger": true
 					, "type": "ranged"
 					, "modifier": 8
 					, "defence": "PD"
@@ -16840,7 +16901,7 @@
 					, "damage": "7 damage"
 					, "extraEffects": [{
 						"trigger": "Natural 16+"
-						, "effect": "The lizardman savage can make a <em>bite attack</em> against the target or another creature engaged with it as a free action."
+						, "effect": "The lizardman savage can make a <em>bite</em> attack against the target or another creature engaged with it as a free action."
 					}]
 				}
 				, {
@@ -17014,7 +17075,7 @@
 				]
 				, "abilities": [{
 						"name": "Flight"
-						, "effect": ""
+						, "effect": "Manticores are poor fliers in tight spaces, but out in the open, they are more capable."
 					}
 					, {
 						"name": "Poison reservoirs"
@@ -18013,7 +18074,7 @@
 						, "damage": "18 damage"
 						, "extraEffects": [{
 							"trigger": "Miss"
-							, "effect": "Half damage"
+							, "effect": "Half damage."
 						}]
 					}
 					, {
@@ -18409,7 +18470,7 @@
 						, "damage": "35 damage"
 						, "extraEffects": [{
 							"trigger": "Natural 18+"
-							, "effect": "Make a second <em>naginata</em> attack against a nearby enemy as a free action (engaging it is not required)"
+							, "effect": "Make a second <em>naginata</em> attack against a nearby enemy as a free action (engaging it is not required)."
 						}]
 					}
 					, {
@@ -18733,7 +18794,7 @@
 						, "modifier": 10
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "30 acid damage, and the cube engulfs the target (functions like a grab) if it’s smaller than the cube"
+						, "damage": "30 acid damage, and the cube engulfs the target (functions like a grab; see below) if it’s smaller than the cube"
 						, "extraEffects": [{
 							"trigger": "Miss"
 							, "effect": "The cube can make a <em>spasms</em> attack as a free action."
@@ -18951,7 +19012,7 @@
 				, "abilities": []
 				, "nastierSpecials": [{
 					"name": "On the spot mutation"
-					, "effect": "Whenever an attack eliminates one or more members of the mob, there is a 50% chance that each survivor gains one of these abilities: extra melee attack, damage aura: 1d20 damage vs. any enemy that starts its turn engaged with the orc, or +4 to AC."
+					, "effect": "Whenever an attack eliminates one or more members of the mob, there is a 50% chance that each survivor gains one of these abilities: Extra melee attack, damage aura: 1d20 damage vs. any enemy that starts its turn engaged with the orc, or +4 to AC."
 				}]
 			}
 			, {
@@ -19047,6 +19108,40 @@
 				, "abilities": [{
 					"name": "Unstoppable"
 					, "effect": "When an orc berserker drops to 0 hp, it does not immediately die.  Ignore any damage in excess of 0 hp, roll 2d6, and give the berserker that many temporary hit points.  No other healing can affect the berserker or give it more temporary hit points.  When the temporary hp are gone, the berserker dies."
+				}]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Orc Rager"
+				, "source": "13th Age"
+				, "page": 242
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "mook"
+				, "type": "humanoid"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 27
+				, "attacks": [{
+					"name": "Greataxe"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 12
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "16 damage"
+					, "extraEffects": [{
+						"trigger": "Dangerous mooks"
+						, "effect": "The crit range of attacks by orc ragers expands by 3 until half the orc rager mob has been dropped."
+					}]
+				}]
+				, "abilities": [{
+					"name": "Dying strike"
+					, "effect": "When an orc rager drops to 0 hp, it can make a final attack as a free action.  (Feel free to make these extra attacks come from the ragers engaged with a PC.)"
 				}]
 				, "nastierSpecials": []
 			}
@@ -19386,23 +19481,7 @@
 			]
 			, "abilities": [{
 					"name": "Phasing abilities"
-					, "effect": "As long as it didn’t just return from being out of phase, at the start of the phase spider’s turn, roll a d6 to see which of its phase and teleport abilities it can access that turn.  The spider doesn’t have to use the available ability and can attack normally, if it wishes."
-				}
-				, {
-					"name": "1-2: Short teleport"
-					, "effect": "As a move action, the spider can teleport anywhere it can see nearby."
-				}
-				, {
-					"name": "3: Long teleport"
-					, "effect": "As a move action, the spider can teleport anywhere it can see nearby or far away."
-				}
-				, {
-					"name": "4-5: Phase out"
-					, "effect": "As a move action, the spider can remove itself from the battlefield, returning on its next initiative turn anywhere it choose nearby.  It doesn’t get to make a phase roll at the start of its next turn though."
-				}
-				, {
-					"name": "6: Teleport away"
-					, "effect": "If the spider has stolen at least one magic item, as a move action it can teleport back to its lair, or to its master if it has one.  It leaves the battle.  If it hasn’t stolen an item yet, it won’t leave and can use its choice of the other abilities this turn."
+					, "effect": "As long as it didn’t just return from being out of phase, at the start of the phase spider’s turn, roll a d6 to see which of its phase and teleport abilities it can access that turn.  The spider doesn’t have to use the available ability and can attack normally, if it wishes.<ul><li><strong>1-2:</strong> <em>Short teleport:</em> As a move action, the spider can teleport anywhere it can see nearby</li><li><strong>3:</strong> <em>Long teleport:</em> As a move action, the spider can teleport anywhere it can see nearby or far away</li><li><strong>4-5:</strong> <em>Phase out:</em> As a move action, the spider can remove itself from the battlefield, returning on its next initiative turn anywhere it choose nearby.  It doesn’t get to make a phase roll at the start of its next turn though</li><li><strong>6:</strong> <em>Teleport away:</em> If the spider has stolen at least one magic item, as a move action it can teleport back to its lair, or to its master if it has one.  It leaves the battle.  If it hasn’t stolen an item yet, it won’t leave and can use its choice of the other abilities this turn</li></ul>"
 				}
 				, {
 					"name": "Stolen items"
@@ -20780,7 +20859,7 @@
 				]
 				, "nastierSpecials": [{
 					"name": "Demon-touched"
-					, "effect": "Roll a d6 on the demon abilities table.  The sahuagin gains that ability."
+					, "effect": "Roll a d6 on the Demon Random Abilities table.  The sahuagin gains that ability."
 				}]
 			}
 			, {
@@ -22143,7 +22222,7 @@
 					}
 					, {
 						"name": "-3"
-						, "description": "Humans, halflings, half-elves, holy ones, tieflings, etc."
+						, "description": "Humans, halflings, half-elves, holy ones, tieflings, almost everyone else"
 					}
 					, {
 						"name": "-2"
@@ -23624,7 +23703,7 @@
 			]
 			, "abilities": [{
 					"name": "Flight"
-					, "effect": ""
+					, "effect": "The wraith hovers and zooms about."
 				}
 				, {
 					"name": "Ghostly"
@@ -23681,7 +23760,7 @@
 			]
 			, "abilities": [{
 				"name": "Flight"
-				, "effect": ""
+				, "effect": "Wyverns are poor fliers in tight spaces, but out in the open, they are more capable."
 			}]
 			, "nastierSpecials": [{
 				"name": "Escalating poison"
