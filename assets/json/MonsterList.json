@@ -4329,7 +4329,7 @@
 				, "page": 176
 				, "sizeStrength": "large"
 				, "threat": "normal"
-				, "level": 8
+				, "level": 9
 				, "role": "troop"
 				, "type": "devil"
 				, "initiative": 12
@@ -4557,7 +4557,7 @@
 						, "modifier": 9
 						, "defence": "MD"
 						, "target": ""
-						, "damage": "The target is confused (save ends)."
+						, "damage": "The target is confused (save ends)"
 						, "extraEffects": []
 					}
 				]
@@ -4734,7 +4734,7 @@
 					, "type": "normal"
 					, "modifier": 16
 					, "defence": "AC"
-					, "target": ""
+					, "target": "2 attacks"
 					, "damage": "25 damage"
 					, "extraEffects": [{
 							"trigger": "Natural even hit"
@@ -4838,14 +4838,14 @@
 						, "modifier": 19
 						, "defence": "AC"
 						, "target": "2 attacks"
-						, "damage": "140 damage, and until the end of the battle the target takes a -2 penalty to attacks, defences, and level-based d20 rolls.  Hit points, feats, weapon damage, and other level-based benefits don’t change.  (The penalty isn’t cumulative)."
+						, "damage": "140 damage, and until the end of the battle the target takes a -2 penalty to attacks, defences, and level-based d20 rolls.  Hit points, feats, weapon damage, and other level-based benefits don’t change.  (The penalty isn’t cumulative.)"
 						, "extraEffects": [{
 								"trigger": "Natural 11+"
 								, "effect": "The pit fiend can make an <em>entangling tail</em> attack against a different target as a free action."
 							}
 							, {
 								"trigger": "Both attacks hit"
-								, "effect": "The pit fiend can use <em>fiendish vigor</em> as a free action."
+								, "effect": "The pit fiend can use <em>fiendish vigour</em> as a free action."
 							}
 						]
 					}
@@ -4891,8 +4891,8 @@
 						, "effect": "When you choose to add the escalation die to an attack against a pit fiend, the escalation die does not increase at the start of the next round.  Special circumstances and PC powers can still increase it."
 					}
 					, {
-						"name": "Fiendish vigor"
-						, "effect": "As a standard action, the pit fiend can heal 300 hp and roll a save against each ongoing effect on it.  It can use <em>fiendish vigor</em> up to five times per battle."
+						"name": "Fiendish vigour"
+						, "effect": "As a standard action, the pit fiend can heal 300 hp and roll a save against each ongoing effect on it.  It can use <em>fiendish vigour</em> up to five times per battle."
 					}
 					, {
 						"name": "Flight"
@@ -5017,6 +5017,291 @@
 					"name": "Smokey retreat"
 					, "effect": "A smoke devil can “take 12” on disengage checks, taking a natural result of 12 instead of rolling (which normally would allow it to disengage automatically from up to two enemies)."
 				}]
+			}
+		]
+	}
+	, {
+		"name": "Devil of the Fangs"
+		, "groupTraits": []
+		, "monsters": [{
+				"name": "Devil of the Fangs"
+				, "source": "13 True Ways"
+				, "page": 180
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 7
+				, "role": "spoiler"
+				, "type": "devil"
+				, "initiative": 13
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 22
+				, "MD": 22
+				, "HP": 360
+				, "attacks": [{
+						"name": "Mighty tentacles"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "PD"
+						, "target": "2 attacks; can target nearby enemies"
+						, "damage": "20 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target pops free from each enemy and moves next to the Devil, which engages and grabs it.  (The Devil can grab any number of enemies simultaneously.)  If it has quick actions left, it will use its <em>devil’s beak</em> and <em>cutting talen</em> attacks."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "10 damage."
+							}
+						]
+					}
+					, {
+						"name": "Cutting talon"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 12
+						, "defence": "AC"
+						, "target": "+16 against a grabbed enemy"
+						, "damage": "40 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target also takes 20 ongoing damage."
+							}
+							, {
+								"trigger": "Natural odd miss"
+								, "effect": "20 ongoing damage."
+							}
+							, {
+								"trigger": "Quick use"
+								, "effect": "This ability only requires a quick action (once per round) to use."
+							}
+						]
+					}
+					, {
+						"name": "Devil’s beak"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 16
+						, "defence": "AC"
+						, "target": "one enemy it’s grabbing; includes +4 grab bonus"
+						, "damage": "30 damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "15 damage."
+							}
+							, {
+								"trigger": "Quick use"
+								, "effect": "This ability only requires a quick action (once per round) to use."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Trouble)"
+						, "effect": "When you choose to add the escalation die to an attack against the Devil of the Fangs, you are hampered until the end of your next turn after you make the attack."
+					}
+					, {
+						"name": "Resist energy 13+"
+						, "effect": "When an energy attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "The Final Devil"
+				, "source": "13 True Ways"
+				, "page": 181
+				, "sizeStrength": "huge"
+				, "threat": "normal"
+				, "level": 13
+				, "role": "leader"
+				, "type": "devil"
+				, "initiative": 20
+				, "vulnerability": ""
+				, "AC": 28
+				, "PD": 28
+				, "MD": 28
+				, "HP": 1300
+				, "attacks": [{
+						"name": "Mighty tentacles"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 18
+						, "defence": "PD"
+						, "target": "3 attacks; can target nearby enemies"
+						, "damage": "50 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target pops free from each enemy and moves next to the Devil, which engages and grabs it.  (The Devil can grab any number of enemies simultaneously.)  If it has quick actions left, it will use its <em>devil’s beck</em> and <em>cutting talon</em> attacks."
+							}
+							, {
+								"trigger": "Miss"
+								, "effect": "30 damage."
+							}
+						]
+					}
+					, {
+						"name": "Cutting talon"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 18
+						, "defence": "AC"
+						, "target": "+22 against a grabbed enemy"
+						, "damage": "100 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target also takes 50 ongoing damage."
+							}
+							, {
+								"trigger": "Natural odd miss"
+								, "effect": "50 ongoing damage."
+							}
+							, {
+								"trigger": "Quick use"
+								, "effect": "This ability only requires a quick action (once per round) to use."
+							}
+						]
+					}
+					, {
+						"name": "Devil’s beck"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 22
+						, "defence": "AC"
+						, "target": "one enemy it’s grabbing; includes +4 grab bonus"
+						, "damage": "50 damage"
+						, "extraEffects": [{
+								"trigger": "Miss"
+								, "effect": "30 damage."
+							}
+							, {
+								"trigger": "Quick use"
+								, "effect": "This ability only requires a quick action (once per round) to use."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Destiny)"
+						, "effect": "When you choose to add the escalation die to an attack against the Final Devil, one of the Final Devil’s nearby allies can make an attack as an interrupt action before your attack."
+					}
+					, {
+						"name": "Resist energy 13+"
+						, "effect": "When an energy attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "The icons are speechless"
+						, "effect": "Icon relationship dice don’t provide any help in a battle (or even an adventure) that involves the Final Devil.  The Devil broke the icons’ hold on it, and it’s up to pure mortals to solve this problem, because the icons can’t cope."
+					}
+					, {
+						"name": "Lord of the waters"
+						, "effect": "If the Final Devil is fighting in a sea or river, when a nearby enemy rolls a normal save, it’s a hard save (16+) instead.  The same goes for easy saves; they’re normal saves instead."
+					}
+				]
+			}
+			, {
+				"name": "River Devil"
+				, "source": "13 True Ways"
+				, "page": 180
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 10
+				, "role": "wrecker"
+				, "type": "devil"
+				, "initiative": 18
+				, "vulnerability": ""
+				, "AC": 25
+				, "PD": 25
+				, "MD": 25
+				, "HP": 230
+				, "attacks": [{
+						"name": "Cutting talons"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": "2 attacks"
+						, "damage": "20 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target also takes 10 ongoing damage."
+							}
+							, {
+								"trigger": "Natural odd miss"
+								, "effect": "10 ongoing damage."
+							}
+						]
+					}
+					, {
+						"name": "Ripping tentacle"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 15
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "10 damage"
+						, "extraEffects": [{
+								"trigger": "Natural even hit"
+								, "effect": "The target is hampered until the end of its next turn."
+							}
+							, {
+								"trigger": "Quick use"
+								, "effect": "This ability only requires a quick action (once per round) to use."
+							}
+						]
+					}
+				]
+				, "abilities": [{
+						"name": "Devil’s due (Foreshadowed weakness)"
+						, "effect": "When you choose to add the escalation die to an attack against a river devil, you only heal half the normal hit points the next time you heal using a recovery this battle.  The effect is cumulative (so the second time you heal, the third time, etc.) if you pay the <em>devil’s due</em> more than once before using a recovery."
+					}
+					, {
+						"name": "Resist energy 13+"
+						, "effect": "When an energy attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "River Devil Minion"
+				, "source": "13 True Ways"
+				, "page": 181
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 13
+				, "role": "mook"
+				, "type": "devil"
+				, "initiative": 24
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 25
+				, "MD": 25
+				, "HP": 100
+				, "attacks": [{
+					"name": "Tentacles and talons"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 18
+					, "defence": "PD"
+					, "target": ""
+					, "damage": "60 damage"
+					, "extraEffects": [{
+							"trigger": "Natural even hit"
+							, "effect": "The target also takes 20 ongoing damage."
+						}
+						, {
+							"trigger": "Natural odd hit"
+							, "effect": "The target is vulnerable (save ends)."
+						}
+					]
+				}]
+				, "abilities": [{
+					"name": "Devil’s due (Obsession)"
+					, "effect": "When you choose to add the escalation die to an attack against a river devil minion, you must only attack river devil minions until the end of the battle or until all river devil minion mobs have dropped to 0 hp."
+				}]
+				, "nastierSpecials": []
 			}
 		]
 	}
@@ -7135,7 +7420,7 @@
 						, "description": "The crit range of the dragon’s melee attacks expands by 2."
 					}
 					, {
-						"name": "7: Now I'm mad!"
+						"name": "7: Now I’m mad!"
 						, "description": "The first time the dragon is staggered each battle, it uses its breath weapon attack as a free action that does not count against the normal uses of its breath."
 					}
 					, {
@@ -7369,7 +7654,7 @@
 						, "type": "close"
 						, "modifier": 16
 						, "defence": "PD"
-						, "target": "up to 3 enemies engaged with the dragon"
+						, "target": "1d4 nearbyt enemies in a group"
 						, "damage": "35 acid damage, and 35 ongoing acid damage"
 						, "extraEffects": [{
 							"trigger": "Miss"
@@ -7464,7 +7749,7 @@
 					}
 					, {
 						"name": "Spiral of golden flame"
-						, "effect": "Once per battle as a quick action while the escalation die is 3+, the dragon can fly into the ait, popping free from all enemies engaged with it, and make a <em>fiery breath</em> attack against each enemy that was engaged with it."
+						, "effect": "Once per battle as a quick action while the escalation die is 3+, the dragon can fly into the air, popping free from all enemies engaged with it, and make a <em>fiery breath</em> attack against each enemy that was engaged with it."
 					}
 					, {
 						"name": "Indomitability"
@@ -9279,7 +9564,10 @@
 						, "effect": "When the earth elemental is targeted by a natural attack roll of 10 or less, the elemental heals 3d6 damage before taking any damage from the attack."
 					}
 				]
-				, "nastierSpecials": []
+				, "nastierSpecials": [{
+					"name": "Burrow"
+					, "effect": "Not all earth elementals burrow, though if yours is particularly nasty or associated with a particular icon, it can."
+				}]
 			}
 			, {
 				"name": "Big Fire Elemental"
@@ -9419,7 +9707,10 @@
 						, "effect": "When the earth elemental is targeted by a natural attack roll of 10 or less, the elemental heals 1d12 damage before taking any damage from the attack."
 					}
 				]
-				, "nastierSpecials": []
+				, "nastierSpecials": [{
+					"name": "Burrow"
+					, "effect": "Not all earth elementals burrow, though if yours is particularly nasty or associated with a particular icon, it can."
+				}]
 			}
 			, {
 				"name": "Epic Air Elemental"
@@ -9551,9 +9842,13 @@
 					}
 				]
 				, "nastierSpecials": [{
-					"name": "Endless vitality"
-					, "effect": "When an enemy engaged with the epic earth elemental heals using one or more recoveries, the elemental heals 5d6 hit points."
-				}]
+						"name": "Burrow"
+						, "effect": "Not all earth elementals burrow, though if yours is particularly nasty or associated with a particular icon, it can."
+					, {
+						"name": "Endless vitality"
+						, "effect": "When an enemy engaged with the epic earth elemental heals using one or more recoveries, the elemental heals 5d6 hit points."
+					}
+				]
 			}
 			, {
 				"name": "Epic Fire Elemental"
@@ -10285,291 +10580,6 @@
 		}]
 	}
 	, {
-		"name": "Fang Devil"
-		, "groupTraits": []
-		, "monsters": [{
-				"name": "Fang Devil"
-				, "source": "13 True Ways"
-				, "page": 180
-				, "sizeStrength": "huge"
-				, "threat": "normal"
-				, "level": 7
-				, "role": "spoiler"
-				, "type": "devil"
-				, "initiative": 13
-				, "vulnerability": ""
-				, "AC": 22
-				, "PD": 22
-				, "MD": 22
-				, "HP": 360
-				, "attacks": [{
-						"name": "Mighty tentacles"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 12
-						, "defence": "PD"
-						, "target": "2 attacks; can target nearby enemies"
-						, "damage": "20 damage"
-						, "extraEffects": [{
-								"trigger": "Natural even hit"
-								, "effect": "The target pops free from each enemy and moves next to the Devil, which engages and grabs it.  (The Devil can grab any number of enemies simultaneously.)  If it has quick actions left, it will use its <em>devil’s beak</em> and <em>cutting talen</em> attacks."
-							}
-							, {
-								"trigger": "Miss"
-								, "effect": "10 damage."
-							}
-						]
-					}
-					, {
-						"name": "Cutting talon"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 12
-						, "defence": "AC"
-						, "target": "+16 against a grabbed enemy"
-						, "damage": "40 damage"
-						, "extraEffects": [{
-								"trigger": "Natural even hit"
-								, "effect": "The target also takes 20 ongoing damage."
-							}
-							, {
-								"trigger": "Natural odd miss"
-								, "effect": "20 ongoing damage."
-							}
-							, {
-								"trigger": "Quick use"
-								, "effect": "This ability only requires a quick action (once per round) to use."
-							}
-						]
-					}
-					, {
-						"name": "Devil’s beak"
-						, "specialTrigger": true
-						, "type": "normal"
-						, "modifier": 16
-						, "defence": "AC"
-						, "target": "one enemy it’s grabbing; includes +4 grab bonus"
-						, "damage": "30 damage"
-						, "extraEffects": [{
-								"trigger": "Miss"
-								, "effect": "15 damage."
-							}
-							, {
-								"trigger": "Quick use"
-								, "effect": "This ability only requires a quick action (once per round) to use."
-							}
-						]
-					}
-				]
-				, "abilities": [{
-						"name": "Devil’s due (Trouble)"
-						, "effect": "When you choose to add the escalation die to an attack against Fang Devil, you are hampered until the end of your next turn after you make the attack."
-					}
-					, {
-						"name": "Resist energy 13+"
-						, "effect": "When an energy attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
-					}
-				]
-				, "nastierSpecials": []
-			}
-			, {
-				"name": "The Final Devil"
-				, "source": "13 True Ways"
-				, "page": 181
-				, "sizeStrength": "huge"
-				, "threat": "normal"
-				, "level": 13
-				, "role": "leader"
-				, "type": "devil"
-				, "initiative": 20
-				, "vulnerability": ""
-				, "AC": 28
-				, "PD": 28
-				, "MD": 28
-				, "HP": 1300
-				, "attacks": [{
-						"name": "Mighty tentacles"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 18
-						, "defence": "PD"
-						, "target": "3 attacks; can target nearby enemies"
-						, "damage": "50 damage"
-						, "extraEffects": [{
-								"trigger": "Natural even hit"
-								, "effect": "The target pops free from each enemy and moves next to the Devil, which engages and grabs it.  (The Devil can grab any number of enemies simultaneously.)  If it has quick actions left, it will use its <em>devil’s beck</em> and <em>cutting talon</em> attacks."
-							}
-							, {
-								"trigger": "Miss"
-								, "effect": "30 damage."
-							}
-						]
-					}
-					, {
-						"name": "Cutting talon"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 18
-						, "defence": "AC"
-						, "target": "+22 against a grabbed enemy"
-						, "damage": "100 damage"
-						, "extraEffects": [{
-								"trigger": "Natural even hit"
-								, "effect": "The target also takes 50 ongoing damage."
-							}
-							, {
-								"trigger": "Natural odd miss"
-								, "effect": "50 ongoing damage."
-							}
-							, {
-								"trigger": "Quick use"
-								, "effect": "This ability only requires a quick action (once per round) to use."
-							}
-						]
-					}
-					, {
-						"name": "Devil’s beck"
-						, "specialTrigger": true
-						, "type": "normal"
-						, "modifier": 22
-						, "defence": "AC"
-						, "target": "one enemy it’s grabbing; includes +4 grab bonus"
-						, "damage": "50 damage"
-						, "extraEffects": [{
-								"trigger": "Miss"
-								, "effect": "30 damage."
-							}
-							, {
-								"trigger": "Quick use"
-								, "effect": "This ability only requires a quick action (once per round) to use."
-							}
-						]
-					}
-				]
-				, "abilities": [{
-						"name": "Devil’s due (Destiny)"
-						, "effect": "When you choose to add the escalation die to an attack against the Final Devil, one of the Final Devil’s nearby allies can make an attack as an interrupt action before your attack."
-					}
-					, {
-						"name": "Resist energy 13+"
-						, "effect": "When an energy attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
-					}
-				]
-				, "nastierSpecials": [{
-						"name": "The icons are speechless"
-						, "effect": "Icon relationship dice don’t provide any help in a battle (or even an adventure) that involves the Final Devil.  The Devil broke the icons’ hold on it, and it’s up to pure mortals to solve this problem, because the icons can’t cope."
-					}
-					, {
-						"name": "Lord of the waters"
-						, "effect": "If the Final Devil is fighting in a sea or river, when a nearby enemy rolls a normal save, it’s a hard save (16+) instead.  The same goes for easy saves; they’re normal saves instead."
-					}
-				]
-			}
-			, {
-				"name": "River Devil"
-				, "source": "13 True Ways"
-				, "page": 180
-				, "sizeStrength": "normal"
-				, "threat": "normal"
-				, "level": 10
-				, "role": "wrecker"
-				, "type": "devil"
-				, "initiative": 18
-				, "vulnerability": ""
-				, "AC": 25
-				, "PD": 25
-				, "MD": 25
-				, "HP": 230
-				, "attacks": [{
-						"name": "Cutting talons"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 15
-						, "defence": "AC"
-						, "target": "2 attacks"
-						, "damage": "20 damage"
-						, "extraEffects": [{
-								"trigger": "Natural even hit"
-								, "effect": "The target also takes 10 ongoing damage."
-							}
-							, {
-								"trigger": "Natural odd miss"
-								, "effect": "10 ongoing damage."
-							}
-						]
-					}
-					, {
-						"name": "Ripping tentacle"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 15
-						, "defence": "AC"
-						, "target": ""
-						, "damage": "10 damage"
-						, "extraEffects": [{
-								"trigger": "Natural even hit"
-								, "effect": "The target is hampered until the end of its next turn."
-							}
-							, {
-								"trigger": "Quick use"
-								, "effect": "This ability only requires a quick action (once per round) to use."
-							}
-						]
-					}
-				]
-				, "abilities": [{
-						"name": "Devil’s due (Foreshadowed weakness)"
-						, "effect": "When you choose to add the escalation die to an attack against a river devil, you only heal half the normal hit points the next time you heal using a recovery this battle.  The effect is cumulative (so the second time you heal, the third time, etc.) if you pay the <em>devil’s due</em> more than once before using a recovery."
-					}
-					, {
-						"name": "Resist energy 13+"
-						, "effect": "When an energy attack targets this creature, the attacker must roll a natural 13+ on the attack roll or it only deals half damage."
-					}
-				]
-				, "nastierSpecials": []
-			}
-			, {
-				"name": "River Devil Minion"
-				, "source": "13 True Ways"
-				, "page": 181
-				, "sizeStrength": "normal"
-				, "threat": "normal"
-				, "level": 13
-				, "role": "mook"
-				, "type": "devil"
-				, "initiative": 24
-				, "vulnerability": ""
-				, "AC": 27
-				, "PD": 25
-				, "MD": 25
-				, "HP": 100
-				, "attacks": [{
-					"name": "Tentacles and talons"
-					, "specialTrigger": false
-					, "type": "normal"
-					, "modifier": 18
-					, "defence": "PD"
-					, "target": ""
-					, "damage": "60 damage"
-					, "extraEffects": [{
-							"trigger": "Natural even hit"
-							, "effect": "The target also takes 20 ongoing damage."
-						}
-						, {
-							"trigger": "Natural odd hit"
-							, "effect": "The target is vulnerable (save ends)."
-						}
-					]
-				}]
-				, "abilities": [{
-					"name": "Devil’s due (Obsession)"
-					, "effect": "When you choose to add the escalation die to an attack against a river devil minion, you must only attack river devil minions until the end of the battle or until all river devil minion mobs have dropped to 0 hp."
-				}]
-				, "nastierSpecials": []
-			}
-		]
-	}
-	, {
 		"name": "Flower of Unlife"
 		, "groupTraits": [{
 			"name": "Nastier Special for all flowers of unlife"
@@ -10586,7 +10596,7 @@
 				, "threat": "normal"
 				, "level": 6
 				, "role": "wrecker"
-				, "type": "undead"
+				, "type": "plant"
 				, "initiative": 10
 				, "vulnerability": "fire"
 				, "AC": 22
@@ -10722,7 +10732,7 @@
 				, "threat": "normal"
 				, "level": 6
 				, "role": "spoiler"
-				, "type": "undead"
+				, "type": "plant"
 				, "initiative": 10
 				, "vulnerability": "fire"
 				, "AC": 24
