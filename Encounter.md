@@ -10,7 +10,7 @@ jQueryHead: true
 $(document).ready(function() {
 	//Get Monster List Data
 	$.get(
-		"{{ 'assets/json/MonsterList.json?v=' | append: site.github.build_revision }}"
+		"{{ './assets/json/MonsterList.json?v=' | append: site.github.build_revision }}"
 		,function(data){
 			monsterList = $(data).toArray();
 
