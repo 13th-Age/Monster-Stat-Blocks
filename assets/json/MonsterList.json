@@ -9844,6 +9844,7 @@
 				, "nastierSpecials": [{
 						"name": "Burrow"
 						, "effect": "Not all earth elementals burrow, though if yours is particularly nasty or associated with a particular icon, it can."
+					}
 					, {
 						"name": "Endless vitality"
 						, "effect": "When an enemy engaged with the epic earth elemental heals using one or more recoveries, the elemental heals 5d6 hit points."
@@ -19539,13 +19540,13 @@
 					}]
 				}
 				, {
-					"name": "Enchanged bowshot"
+					"name": "Enchanted bowshot"
 					, "specialTrigger": false
 					, "type": "ranged"
 					, "modifier": 8
 					, "defence": "PD"
 					, "target": ""
-					, "damage": "4 psychic damage, and the pixie warrior can make a <em>madness</em> attack against the target as a free action."
+					, "damage": "4 psychic damage, and the pixie warrior can make a <em>madness</em> attack against the target as a free action"
 					, "extraEffects": []
 				}
 				, {
@@ -19555,7 +19556,7 @@
 					, "modifier": 8
 					, "defence": "MD"
 					, "target": ""
-					, "damage": "The target is maddened until the end of the pixie’s next turn.  The first thing the creature does on its turn is use a standard action to make a display of power that has no practical benefit.  The GM chooses the attacck, spell, or other power, which should be the most powerful one the character has, preferably a daily.  The target expends the power in a great show of prowess, aimed for display rather than effect.  Wizards cast their fireballs into the sky, monks demonstrate flawless form while shadow-boxing, and clerics bless the very stones underfoot instead of allies<br>&emsp;When the madness effect gets old, substitute any of the following effects, by choice or at random"
+					, "damage": "The target is maddened until the end of the pixie’s next turn.  The first thing the creature does on its turn is use a standard action to make a display of power that has no practical benefit.  The GM chooses the attacck, spell, or other power, which should be the most powerful one the character has, preferably a daily.  The target expends the power in a great show of prowess, aimed for display rather than effect.  Wizards cast their fireballs into the sky, monks demonstrate flawless form while shadow-boxing, and clerics bless the very stones underfoot instead of allies<br>&emsp;The target is also likely to proclaim its own greatness in the grandiose manner of the mad.  Allies may be curious to hear what comes out of the target’s mouth when it has been pixie-struck.  When the madness effect gets old, substitute any of the following effects, by choice or at random"
 					, "extraEffects": [{
 							"trigger": "1"
 							, "effect": "You love pixies and hate those who threaten them.  The target is confused until the end of the pixie’s next turn."
@@ -21446,6 +21447,42 @@
 		"name": "Soul Flenser"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "The Flensed"
+				, "source": "13 True Ways"
+				, "page": 200
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 9
+				, "role": "mook"
+				, "type": "aberration"
+				, "initiative": 12
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 22
+				, "HP": 60
+				, "attacks": [{
+					"name": "Fists, claws, or shoddy weapons"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 13
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "20 damage, or 40 damage against a target that currently has one or more powers <em>flensed</em> away"
+					, "extraEffects": []
+				}]
+				, "abilities": [{
+						"name": "Connection to the Oversoul"
+						, "effect": "When a creature slays one of the flensed, it can roll a hard save (16+).  If it succeeds, the creature regains one power it had <em>flensed</em> away."
+					}
+					, {
+						"name": "Flensing escalator"
+						, "effect": "The flensed gains an attack bonus equal to the escalation die against creatures that have had one or more power <em>flensed</em> away."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Soul Flenser"
 				, "source": "13 True Ways"
 				, "page": 199
@@ -21470,7 +21507,7 @@
 						, "damage": "30 damage"
 						, "extraEffects": [{
 								"trigger": "Natural even hit, or any hit against a weakened, stunned, or confused target"
-								, "effect": "Randomly selected one of the target’s limited-use powers or spells.  The soul flenser flenses it away, removing it from the target until that creature regains it via a successful connection to the oversoul (see below)."
+								, "effect": "Randomly selected one of the target’s limited-use powers or spells.  The soul flenser flenses it away, removing it from the target until that creature regains it via a successful <em>Connection to the Oversoul</em> (see below)."
 							}
 							, {
 								"trigger": "Natural 3, 6, or 9"
@@ -21502,7 +21539,7 @@
 					}
 				]
 				, "abilities": [{
-						"name": "Connection to the oversoul"
+						"name": "Connection to the Oversoul"
 						, "effect": "When a creature slays a soul flenser, it can roll a hard save (16+).  If it succeeds, the creature regains one power it has had <em>flensed</em> away."
 					}
 					, {
@@ -21523,42 +21560,6 @@
 						, "effect": "While confused by a soul flenser’s effect, a creature that has had a power flensed away can use and re-use that limited power against their erstwhile allies, if that GM sees how to use the power in a useful way."
 					}
 				]
-			}
-			, {
-				"name": "The Flensed"
-				, "source": "13 True Ways"
-				, "page": 200
-				, "sizeStrength": "normal"
-				, "threat": "normal"
-				, "level": 9
-				, "role": "mook"
-				, "type": "aberration"
-				, "initiative": 12
-				, "vulnerability": ""
-				, "AC": 22
-				, "PD": 20
-				, "MD": 22
-				, "HP": 60
-				, "attacks": [{
-					"name": "Fists, claws, or shoddy weapons"
-					, "specialTrigger": false
-					, "type": "normal"
-					, "modifier": 13
-					, "defence": "AC"
-					, "target": ""
-					, "damage": "20 damage, or 40 damage against a target that currently has one or more powers <em>flensed</em> away"
-					, "extraEffects": []
-				}]
-				, "abilities": [{
-						"name": "Connection to the oversoul"
-						, "effect": "When a creature slays one of the flensed, it can roll a hard save (16+).  If it succeeds, the creature regains one power it had <em>flensed</em> away."
-					}
-					, {
-						"name": "Flensing escalator"
-						, "effect": "The flensed gains an attack bonus equal to the escalation die against creatures that have had one or more power <em>flensed</em> away."
-					}
-				]
-				, "nastierSpecials": []
 			}
 		]
 	}
