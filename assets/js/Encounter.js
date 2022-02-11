@@ -62,7 +62,7 @@ function PopulatePage() {
 						: ""
 					)
 					+ ((attack.target != "") ? " (" + attack.target + ")" : "")
-				+ "</strong> - "
+				+ "</strong> – "
 				+ attack.damage;
 
 			attack.extraEffects.forEach(function(extraEffect,i){
