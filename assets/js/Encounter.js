@@ -42,7 +42,7 @@ function PopulatePage() {
 			+ "<tr>"
 				+ "<td>AC</td>"
 				+ "<td>" + monsterDetails.AC + "</td>"
-				+ "<td rowspan='4' style='padding-left:30px; text-indent: -20px;'><p style='margin-bottom: 0px;'>Initiative "
+				+ "<td rowspan='4' style='padding-left:30px; text-indent: -20px;'><p style='margin-bottom: 0px;'>Initiative: "
 					+ ((monsterDetails.initiative >= 0) ? "+" : "")
 					+ monsterDetails.initiative
 					+ "</p>"
