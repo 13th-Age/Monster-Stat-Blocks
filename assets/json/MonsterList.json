@@ -2152,7 +2152,7 @@
 				}]
 				, "nastierSpecials": [{
 					"name": "Now it’s angry"
-					, "effect": "When an attacker scores a critical hit against the chimera and it survives, its attack rolls on its next turn deal the effects of the lower rolls as well as their own results; for example, a roll 18-20 would daze the target and deal 20 ongoing damage as well as triggering <em>fiery breath</em>."
+					, "effect": "When an attacker scores a critical hit against the chimera and it survives, its attack rolls on its next turn deal the effects of the lower rolls as well as their own results."
 				}]
 			}
 			, {
@@ -2852,7 +2852,7 @@
 				}
 				, {
 					"name": "3: Invisibility"
-					, "description": "The first time the demon is staggered in a battle, it becomes invisible until the end of its next turn."
+					, "description": "The first time the demon is staggered each battle, it becomes invisible until the end of its next turn."
 				}
 				, {
 					"name": "4: Resist energy 12+"
@@ -2938,7 +2938,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": "Giant bat wings are good for something besides looking tough."
+						, "effect": "As the standard monster ability."
 					}
 					, {
 						"name": "Shadow and flame"
@@ -3309,7 +3309,7 @@
 						, "modifier": 9
 						, "defence": "MD"
 						, "target": "one nearby or far away enemy"
-						, "damage": "15 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 6d6 psychic damage to clear their head…"
+						, "damage": "15 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 6d6 psychic damage"
 						, "extraEffects": []
 					}
 					, {
@@ -3364,7 +3364,7 @@
 						, "modifier": 14
 						, "defence": "MD"
 						, "target": "one nearby or far away enemy"
-						, "damage": "45 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 10d10 psychic damage to clear their head…"
+						, "damage": "45 psychic damage, and the target is confused (save ends); OR the target can choose to avoid the confusion effect by taking 10d10 psychic damage"
 						, "extraEffects": []
 					}
 					, {
@@ -3396,7 +3396,7 @@
 				]
 				, "abilities": [{
 					"name": "Aura of betrayal"
-					, "effect": "At the start of each of the despoiler mage’s turns, choose a random nearby enemy.  Until the start of the despoiler mage’s next turn, that creature’s allies no longer consider it an ally, though its enemies’ powers can still target it as an enemy.  The creature isn’t compelled to attack its former friends, but the effect tends to screw up all sorts of spells, bardic songs, etc."
+					, "effect": "At the start of each of the despoiler mage’s turns, choose a random nearby enemy.  Until the start of the despoiler mage’s next turn, that creature’s allies no longer consider it an ally, though its enemies’ powers can still target it as an enemy.  The creature isn’t compelled to attack its former friends."
 				}]
 				, "nastierSpecials": []
 			}
@@ -3694,7 +3694,7 @@
 					, "damage": "27 damage"
 					, "extraEffects": [{
 						"trigger": "Natural 16+"
-						, "effect": "The hooked demon can make another <em>hooks and barbs</em> attack as a free action (and yes, this can keep going up to a maximum number of attacks equal to the escalation die + 1)."
+						, "effect": "The hooked demon can make another <em>hooks and barbs</em> attack as a free action (this can keep going up to a maximum number of attacks equal to the escalation die + 1)."
 					}]
 				}]
 				, "abilities": []
@@ -3748,7 +3748,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": "Imps are hard to pin down because they fly.  Not fast or well, but you don’t have to fly well to fly better than humans and elves."
+						, "effect": "As the standard monster ability."
 					}
 				]
 				, "nastierSpecials": []
@@ -3849,7 +3849,7 @@
 				]
 				, "abilities": [{
 						"name": "Flight"
-						, "effect": "Nalfeshnee are clumsy but powerful fliers with strangely small wings."
+						, "effect": "As the standard monster ability."
 					}
 					, {
 						"name": "Unpredictable"
@@ -3858,7 +3858,7 @@
 				]
 				, "nastierSpecials": [{
 					"name": "Hooked mooks"
-					, "effect": "Once per battle, if the nalfeshnee is staggered, it can gat in 2d4 hooked demons as a quick action.  Roll initiative for the hooked demons; they do not appear in the battle and take their turns until their next initiative count comes up."
+					, "effect": "Once per battle, if the nalfeshnee is staggered, it can gate in 2d4 hooked demons as a quick action.  Roll initiative for the hooked demons; they do not appear in the battle and take their turns until their next initiative count comes up."
 				}]
 			}
 			, {
@@ -4017,7 +4017,13 @@
 	}
 	, {
 		"name": "Derro"
-		, "groupTraits": []
+		, "groupTraits": [{
+			"name": "Ability"
+			, "traits": [{
+				"name": "Confused"
+				, "description": "Confusion effects only affect derro if they secretly want to murder one of their own companions."
+			}]
+		}]
 		, "monsters": [{
 				"name": "Derro Maniac"
 				, "source": "13th Age"
@@ -4065,7 +4071,7 @@
 						, "damage": "10 damage"
 						, "extraEffects": [{
 								"trigger": "Natural 16+"
-								, "effect": "The target also takes 5 ongoing poison damage"
+								, "effect": "The target also takes 5 ongoing poison damage."
 							}
 							, {
 								"trigger": "Natural 19+"
@@ -5494,7 +5500,7 @@
 						, "damage": "80 lightning damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
-							, "effect": "The target is also dazed (save ends).  After the target saves, it takes a -1 attack penalty (non-cumulative) until its next full heal-up (because it’s vibrating slightly out of synch with the rest of the world)."
+							, "effect": "The target is also dazed (save ends).  After the target saves, it takes a -1 attack penalty (non-cumulative) until its next full heal-up."
 						}]
 					}
 				]
@@ -6182,7 +6188,7 @@
 						, "effect": "As the standard monster ability."
 					}
 					, {
-						"name": "Resist posion 12+"
+						"name": "Resist poison 12+"
 						, "effect": "When a poison attack targets this creature, the attacker must roll a natural 12+ on the attack roll or it only deals half damage."
 					}
 				]
@@ -23500,12 +23506,12 @@
 					}
 					, {
 						"name": "Unnatural vigour (hybrid or animal form only)"
-						, "effect": "When the werewolf is not staggered at the start of its turn, it heals 8 hp."
+						, "effect": "When the werewolf is not staggered at the start of its turn, it heals 6 hp."
 					}
 				]
 				, "nastierSpecials": [{
 					"name": "Sustaining blood"
-					, "effect": "When the werewolf hits with a <em>ravening bite</em> sttack, it heals 4 hp."
+					, "effect": "When the werewolf hits with a <em>ravening bite</em> attack, it heals 4 hp."
 				}]
 			}
 		]
