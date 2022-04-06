@@ -133,7 +133,7 @@
 						, "modifier": 10
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "The target is weakened (-4 to attacks and defences) until the end of the boar’s next turn"
+						, "damage": "The target is weakened (<em>-4 to attacks and defences</em>) until the end of the boar’s next turn"
 						, "extraEffects": []
 					}
 				]
@@ -147,7 +147,7 @@
 					}
 					, {
 						"name": "One random dire feature"
-						, "effect": "Use the dire features table or add something spicy."
+						, "effect": "Use the dire features table."
 					}
 				]
 				, "nastierSpecials": [{
@@ -683,7 +683,7 @@
 				]
 				, "abilities": [{
 						"name": "Fiery flier"
-						, "effect": "An unengaged fire bat can move, and make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
+						, "effect": "An unengaged fire bat can move, make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
 					}
 					, {
 						"name": "Blistering heat"
@@ -1174,7 +1174,7 @@
 				]
 				, "abilities": [{
 						"name": "Fiery flier"
-						, "effect": "An unengaged fire bat can move, and make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
+						, "effect": "An unengaged fire bat can move, make a <em>burning contrail</em> attack, and move away from the target as a standard action without taking an opportunity attack from the target."
 					}
 					, {
 						"name": "Blistering heat"
@@ -4213,7 +4213,7 @@
 						, "damage": "12 damage"
 						, "extraEffects": [{
 								"trigger": "Natural 16+"
-								, "effect": "The barded devil can make a <em>whirling barbs</em> attack as a free action."
+								, "effect": "The barbed devil can make a <em>whirling barbs</em> attack as a free action."
 							}
 							, {
 								"trigger": "Miss"
@@ -4581,7 +4581,7 @@
 					}
 					, {
 						"name": "Free-form covert ability - Slimy"
-						, "effect": "In any non-combat struggles with a honey devil, it excels at being too slippery for the PCs, both personally and through its underground network of minions.  In an indirect contest, the PCs might try to talk sense to one of the devil’s dupes or to discern suspicious activity while staking out the devil’s secret network.  The honey devil is an expert at what it does, so use DC 25 for any such skill checks.  Assume that the devil is competent at slipping its influence through the network unnoticed.  Failure might mean that the PC has succeeded in gaining informaiton, which in turn sends them down a dead end or into a trap.  In a direct confrontation, the devil is likewise hard to pin down, see through, or otherwise get the better of.<br>&emsp;A slime devil seems unremarkable and innocuous, so downplay its significance whenever describing it, especially when it has company.  When mortals actually decide to attack or capture a honey devil, it’s probably slippery enough to escape at the last minute, maybe through a hidden exit."
+						, "effect": "In any non-combat struggles with a honey devil, it excels at being too slippery for the PCs, both personally and through its underground network of minions.  In an indirect contest, the PCs might try to talk sense to one of the devil’s dupes or to discern suspicious activity while staking out the devil’s secret network.  The honey devil is an expert at what it does, so use DC 25 for any such skill checks.  Assume that the devil is competent at slipping its influence through the network unnoticed.  Failure might mean that the PC has succeeded in gaining information, which in turn sends them down a dead end or into a trap.  In a direct confrontation, the devil is likewise hard to pin down, see through, or otherwise get the better of.<br>&emsp;A slime devil seems unremarkable and innocuous, so downplay its significance whenever describing it, especially when it has company.  When mortals actually decide to attack or capture a honey devil, it’s probably slippery enough to escape at the last minute, maybe through a hidden exit."
 					}
 				]
 				, "nastierSpecials": []
@@ -4611,7 +4611,7 @@
 						, "damage": "18 damage"
 						, "extraEffects": [{
 							"trigger": "Natural 16+"
-							, "effect": "If this is the devil’s first attack during its turn, it can make a <em>crushing punch or kick</em> attack as a free action."
+							, "effect": "If this is the devil’s first attack during its turn, it can make a <em>telepathic harry</em> attack as a free action."
 						}]
 					}
 					, {
@@ -4949,7 +4949,7 @@
 					}
 					, {
 						"name": "Free-form convert ability - Unnoticed"
-						, "effect": "The skin devil is routinely able to pass through civilised areas without alerting dogs, bouncers, city guards, or passersby.  If the thing attacks that’s when you notice that it’s not a human but a monstrous pile of flesh.  In addition to passing unnoticed in crowds, it uses its fluid shape to sneak through hidden places, and it doesn’t make much noise unless it wants to.  PCs looking for the devil won’t find it unless they have some special information or advantage, and even then it’s a hard check (DC 25).  Normally when PCs think they have the devil cornered, it escapes through a tight exit that it had previously identified."
+						, "effect": "The skin devil is routinely able to pass through civilised areas without alerting dogs, bouncers, city guards, or passersby.  If the thing attacks that’s when you notice that it’s not a human but a monstrous pile of flesh.  In addition to passing unnoticed in crowds, it uses its fluid shape to sneak through hidden places, and it doesn’t make much noise unless it wants to.  PCs looking for the devil won’t find it unless they have some special information or advantage, and even then it’s a ridiculously hard check (DC 25).  Normally when PCs think they have the devil cornered, it escapes through a tight exit that it had previously identified."
 					}
 				]
 				, "nastierSpecials": []
@@ -5027,10 +5027,10 @@
 		]
 	}
 	, {
-		"name": "Devil of the Fangs"
+		"name": "Devil, Fangs"
 		, "groupTraits": []
 		, "monsters": [{
-				"name": "Devil of the Fangs"
+				"name": "Fang Devil"
 				, "source": "13 True Ways"
 				, "page": 180
 				, "sizeStrength": "huge"
@@ -5105,7 +5105,7 @@
 				]
 				, "abilities": [{
 						"name": "Devil’s due (Trouble)"
-						, "effect": "When you choose to add the escalation die to an attack against the Devil of the Fangs, you are hampered until the end of your next turn after you make the attack."
+						, "effect": "When you choose to add the escalation die to an attack against the Fang Devil, you are hampered until the end of your next turn after you make the attack."
 					}
 					, {
 						"name": "Resist energy 13+"
@@ -5290,7 +5290,7 @@
 					, "specialTrigger": false
 					, "type": "normal"
 					, "modifier": 18
-					, "defence": "PD"
+					, "defence": "AC"
 					, "target": ""
 					, "damage": "60 damage"
 					, "extraEffects": [{
@@ -7904,7 +7904,7 @@
 				, "page": 185
 				, "sizeStrength": "large"
 				, "threat": "normal"
-				, "level": 9
+				, "level": 6
 				, "role": "wrecker"
 				, "type": "dragon"
 				, "initiative": 9
@@ -9506,7 +9506,7 @@
 					}
 					, {
 						"name": "Elemental whirlwind"
-						, "specialTrigger": false
+						, "specialTrigger": true
 						, "type": "normal"
 						, "modifier": 13
 						, "defence": "PD"
@@ -9521,6 +9521,10 @@
 				, "abilities": [{
 						"name": "Flight"
 						, "effect": "It’s quick and direct."
+					}
+					, {
+						"name": "Resist non-spell damage 16+"
+						, "effect": "When a non-spell attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
 					}
 					, {
 						"name": "Whirlwind transformation"
@@ -9844,7 +9848,7 @@
 					}
 					, {
 						"name": "Repair damage 10 and below"
-						, "effect": "When the earth elemental is targeted by a natural attack roll of 10 less, the elemental heals 5d6 damage before taking any damage from the attack."
+						, "effect": "When the earth elemental is targeted by a natural attack roll of 10 or less, the elemental heals 5d6 damage before taking any damage from the attack."
 					}
 				]
 				, "nastierSpecials": [{
@@ -9984,7 +9988,7 @@
 					}
 					, {
 						"name": "Elemental wildfire"
-						, "specialTrigger": false
+						, "specialTrigger": true
 						, "type": "close"
 						, "modifier": 10
 						, "defence": "PD"
@@ -10577,7 +10581,7 @@
 			}]
 			, "nastierSpecials": [{
 					"name": "Big bully"
-					, "effect": "The ettin deals double damage with its attacks againt staggered enemies."
+					, "effect": "The ettin deals double damage with its attacks against staggered enemies."
 				}
 				, {
 					"name": "Escalating agreement"
@@ -10592,7 +10596,7 @@
 			"name": "Nastier Special for all flowers of unlife"
 			, "traits": [{
 				"name": "Iconic energy drain"
-				, "description": "When a character with an icon relationship with the High Druid or the Lich King rolls a natural 1-5 with an attack against the flower, the attacker takes 2d6 damage and the flower heals that many hit points."
+				, "description": "When a character with an icon relationship with the nature or undead icon rolls a natural 1-5 with an attack against the flower, the attacker takes 2d6 damage and the flower heals that many hit points."
 			}]
 		}]
 		, "monsters": [{
@@ -11187,7 +11191,7 @@
 			}]
 			, "abilities": [{
 				"name": "Flight"
-				, "effect": "Gargoyles can fly, but not very well.  They would rather crawl or climb."
+				, "effect": "As the standard monster ability."
 			}]
 			, "nastierSpecials": [{
 					"name": "Rocky hide"
@@ -12021,7 +12025,7 @@
 					, "damage": "3 damage"
 					, "extraEffects": [{
 						"trigger": "Natural 16+"
-						, "effect": "The target is vulnerable (<em>attacks vsd. it have crit range expanded by 2</em>) to attacks by undead until the end of the ghoul’s next turn."
+						, "effect": "The target is vulnerable (<em>attacks vs. it have crit range expanded by 2</em>) to attacks by undead until the end of the ghoul’s next turn."
 					}]
 				}]
 				, "abilities": [{
@@ -12377,7 +12381,7 @@
 				]
 				, "nastierSpecials": [{
 					"name": "Unquenchable fires"
-					, "effect": "Enemies engaged with the first giant warlord take a -5 penalty to saves against ongoing fire damage."
+					, "effect": "Enemies engaged with the fire giant warlord take a -5 penalty to saves against ongoing fire damage."
 				}]
 			}
 			, {
@@ -12521,7 +12525,7 @@
 						, "damage": "45 damage"
 						, "extraEffects": [{
 							"trigger": "Miss that’s a natural 6+"
-							, "effect": "Half damage (sometimes close is good enough)."
+							, "effect": "Half damage."
 						}]
 					}
 					, {
@@ -13645,7 +13649,7 @@
 				}]
 				, "abilities": [{
 						"name": "Group ability"
-						, "effect": "For every two hobgoblins in the battle (rounded up, ignore mooks), one of them can use <em>well-armoured</em> as a free action once during the battle."
+						, "effect": "For every two hobgoblins in the battle (round up, ignore mooks), one of them can use <em>well-armoured</em> as a free action once during the battle."
 					}
 					, {
 						"name": "Well-armoured (group)"
@@ -13728,7 +13732,7 @@
 				, "level": 6
 				, "role": "spoiler"
 				, "type": "construct"
-				, "initiative": 5
+				, "initiative": 6
 				, "vulnerability": ""
 				, "AC": 20
 				, "PD": 18
@@ -13753,7 +13757,7 @@
 					}
 					, {
 						"name": "Ignore attacks 11+"
-						, "effect": "When an attack hits this creature, the attacker must roll a natural 11+ on the attack roll or it missed instead.  That’s <em>all</em> attacks."
+						, "effect": "When an attack hits this creature, the attacker must roll a natural 11+ on the attack roll or it misses instead.  That’s <em>all</em> attacks."
 					}
 				]
 				, "nastierSpecials": []
@@ -13808,7 +13812,7 @@
 					}
 					, {
 						"name": "Weakness of the flesh"
-						, "effect": "Flesh golems are not immune to effects."
+						, "effect": "Unlike other golems, flesh golems are not immune to effects."
 					}
 				]
 				, "nastierSpecials": []
@@ -14368,7 +14372,7 @@
 			]
 			, "abilities": [{
 				"name": "Flight"
-				, "effect": "Harpies are neither quick nor graceful, but their wings get the job done."
+				, "effect": "As the standard monster ability."
 			}]
 			, "nastierSpecials": []
 		}]
@@ -15206,7 +15210,7 @@
 					}
 					, {
 						"name": "Roiling swirl"
-						, "effect": "If the hydra has at least two <em>gnashing teeth</em> attacks left during a turn, it can expend one of those attacks to move to engage a nearby enemy as a free action (but it will take opportunity attacks to do so)."
+						, "effect": "If the hydra has at least two <em>gnashing teeth</em> attacks left during a turn, it can expend one of those attacks to move to engage a nearby enemy as a free action (but it will take opportunity attacks for doing so)."
 					}
 					, {
 						"name": "Sprout sixth head"
@@ -17092,7 +17096,7 @@
 				]
 				, "abilities": [{
 						"name": "Flight"
-						, "effect": "Manticores are poor fliers in tight spaces, but out in the open, they are more capable."
+						, "effect": "As the standard monster ability."
 					}
 					, {
 						"name": "Poison reservoirs"
@@ -17470,7 +17474,7 @@
 			, "threat": "normal"
 			, "level": 8
 			, "role": "wrecker"
-			, "type": "humanoid"
+			, "type": "undead"
 			, "initiative": 9
 			, "vulnerability": "fire"
 			, "AC": 21
@@ -17505,7 +17509,7 @@
 					, "damage": "The target is hampered until the start of the mummy’s next turn"
 					, "extraEffects": [{
 							"trigger": "Crit"
-							, "effect": "If the target is already affected by <em>mummy rot</em>, increase the ongoing negative energy damage by 40.  If the target isn’t affected by <em>mummy rot</em> already it takes 40 ongoing negative energy damage is affected by <em>mummy rot</em> (save ends both)."
+							, "effect": "If the target is already affected by <em>mummy rot</em>, increase the ongoing negative energy damage by 40.  If the target isn’t affected by <em>mummy rot</em> already it takes 40 ongoing negative energy damage and is affected by <em>mummy rot</em> (save ends both)."
 						}
 						, {
 							"trigger": "Limited use"
@@ -18811,7 +18815,7 @@
 						, "modifier": 10
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "30 acid damage, and the cube engulfs the target (functions like a grab; see below) if it’s smaller than the cube"
+						, "damage": "30 acid damage, and the cube engulfs the target (functions like a grab) if it’s smaller than the cube"
 						, "extraEffects": [{
 							"trigger": "Miss"
 							, "effect": "The cube can make a <em>spasms</em> attack as a free action."
@@ -19562,7 +19566,7 @@
 					, "modifier": 8
 					, "defence": "MD"
 					, "target": ""
-					, "damage": "The target is maddened until the end of the pixie’s next turn.  The first thing the creature does on its turn is use a standard action to make a display of power that has no practical benefit.  The GM chooses the attacck, spell, or other power, which should be the most powerful one the character has, preferably a daily.  The target expends the power in a great show of prowess, aimed for display rather than effect.  Wizards cast their fireballs into the sky, monks demonstrate flawless form while shadow-boxing, and clerics bless the very stones underfoot instead of allies<br>&emsp;The target is also likely to proclaim its own greatness in the grandiose manner of the mad.  Allies may be curious to hear what comes out of the target’s mouth when it has been pixie-struck.  When the madness effect gets old, substitute any of the following effects, by choice or at random"
+					, "damage": "The target is maddened until the end of the pixie’s next turn.  The first thing the creature does on its turn is use a standard action to make a display of power that has no practical benefit.  The GM chooses the attacck, spell, or other power, which should be the most powerful one the character has, preferably a daily.  The target expends the power in a great show of prowess, aimed for display rather than effect.  Wizards cast their fireballs into the sky, monks demonstrate flawless form while shadow-boxing, and clerics bless the very stones underfoot instead of allies<br>&emsp;When the madness effect gets old, substitute any of the following effects, by choice or at random"
 					, "extraEffects": [{
 							"trigger": "1"
 							, "effect": "You love pixies and hate those who threaten them.  The target is confused until the end of the pixie’s next turn."
@@ -21575,7 +21579,7 @@
 			"name": "Nastier Specials for all spectres"
 			, "traits": [{
 					"name": "Aura of loss"
-					, "description": "The first time during a battle the spectre is staggered, a wave of loss rolls out from it in all directions.  Each nearby enemy with 30 hp or fewer is hampered until the end of the spectre’s next turn.  (9<sup>th</sup> level dread spectre affects enemies with 60 hp or fewer."
+					, "description": "The first time during a battle the spectre is staggered, each nearby enemy with 30 hp or fewer is hampered until the end of the spectre’s next turn.  (9<sup>th</sup> level dread spectre affects enemies with 60 hp or fewer."
 				}
 				, {
 					"name": "Healing drain"
@@ -22203,7 +22207,7 @@
 				]
 				, "abilities": [{
 						"name": "Fire fire fire!"
-						, "effect": "When the treant takes 35 or more fire damage from a single attack, it release all grabbed creatures."
+						, "effect": "When the treant takes 35 or more fire damage from a single attack, it releases all grabbed creatures."
 					}
 					, {
 						"name": "Hardwood resistance"
@@ -22243,7 +22247,7 @@
 					}
 					, {
 						"name": "-2"
-						, "description": "Half-orcs, draconics"
+						, "description": "Half-orcs, dragonics"
 					}
 					, {
 						"name": "-1"
@@ -22310,7 +22314,7 @@
 				, "level": 3
 				, "role": "leader"
 				, "type": "humanoid"
-				, "initiative": 8
+				, "initiative": 5
 				, "vulnerability": ""
 				, "AC": 19
 				, "PD": 16
@@ -22426,7 +22430,7 @@
 			}]
 			, "abilities": [{
 				"name": "Trollish regeneration 10"
-				, "effect": "While a troll is damaged, its rubbery flesh heals 10 hit points at the start of the troll’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limite<br>&emsp;When the troll is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping a troll to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
+				, "effect": "While a troll is damaged, its rubbery flesh heals 10 hit points at the start of the troll’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limit.<br>&emsp;When the troll is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping a troll to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
 			}]
 			, "nastierSpecials": [{
 					"name": "Increased regeneration"
@@ -23198,7 +23202,7 @@
 					}
 					, {
 						"name": "Cursed bite (hybrid or animal form only)"
-						, "description": "While the moon is full, the first time each battle a creature takes damage from a werebeast melee attack, it takes 10 extra damage (champion: 20 damage; epic: 40 damage).  The malignant curse, transmitted through the attack, shocks the mortal flesh.  Further attacks, even from weres of different types, don’t cause extra damage.  Unless blessed, purged, or otherwise cursed, the damaged creature will turn into a werebeast on the night of the next full moon.  Heroes powerful enough to fight werebeasts can usually find benefactors or rituals to cure them, but there’s an exception to every rule.  GM, if you’re unsure whether it’s a full moon, roll a d10.  On a 1-3, the moon is full enough."
+						, "description": "While the moon is full, the first time each battle a creature takes damage from a werebeast melee attack, it takes 10 extra damage (champion: 20 damage; epic: 40 damage).  The malignant curse, transmitted through the attack, shocks the mortal flesh.  Further attacks, even from weres of different types, don’t cause extra damage.  Unless blessed, purged, or otherwise cured, the damaged creature will turn into a werebeast on the night of the next full moon.  Heroes powerful enough to fight werebeasts can usually find benefactors or rituals to cure them, but there’s an exception to every rule.  GM, if you’re unsure whether it’s a full moon, roll a d10.  On a 1-3, the moon is full enough."
 					}
 					, {
 						"name": "Resilient shifting (all three forms)"
@@ -23272,7 +23276,7 @@
 					}
 					, {
 						"name": "Unnatural vigour (hybrid or animal form only)"
-						, "effect": "When the werebear is not stagged at the start of its turn, it heals 20 hp."
+						, "effect": "When the werebear is not staggered at the start of its turn, it heals 20 hp."
 					}
 				]
 				, "nastierSpecials": [{
@@ -23669,7 +23673,7 @@
 			, "abilities": []
 			, "nastierSpecials": [{
 				"name": "Barrow-touch"
-				, "effect": "The wight’s attacks against enemies taking ongoing negative energy damage are against PD instead of AC and have an expanded crit range expands by 2."
+				, "effect": "The wight’s attacks against enemies taking ongoing negative energy damage are against PD instead of AC and their crit range expands by 2."
 			}]
 		}]
 	}
@@ -23720,7 +23724,7 @@
 			]
 			, "abilities": [{
 					"name": "Flight"
-					, "effect": "The wraith hovers and zooms about."
+					, "effect": "As the standard monster ability."
 				}
 				, {
 					"name": "Ghostly"
@@ -23777,7 +23781,7 @@
 			]
 			, "abilities": [{
 				"name": "Flight"
-				, "effect": "Wyverns are poor fliers in tight spaces, but out in the open, they are more capable."
+				, "effect": "As the standard monster ability."
 			}]
 			, "nastierSpecials": [{
 				"name": "Escalating poison"
@@ -24053,7 +24057,10 @@
 						, "defence": "MD"
 						, "target": "one nearby enemy"
 						, "damage": "The target is weakened until the start of the zombie’s next turn."
-						, "extraEffects": []
+						, "extraEffects": [{
+							"trigger": "Mob rule"
+							, "effect": "The <em>curse</em> gains an attack bonus equal to the number of Silver Rose zombies in the battle."
+						}]
 					}
 				]
 				, "abilities": [{
@@ -24066,14 +24073,9 @@
 					}
 				]
 				, "nastierSpecials": [{
-						"name": "Curse of failure"
-						, "effect": "Each round, one zombie mook in the Silver Rose mob can make a <em>curse</em> attack as a quick action."
-					}
-					, {
-						"name": "Mob rule"
-						, "effect": "The <em>curse</em> gains an attack bonus equal to the number of Silver Rose zombies in the battle."
-					}
-				]
+					"name": "Curse of failure"
+					, "effect": "Each round, one zombie mook in the Silver Rose mob can make a <em>curse</em> attack as a quick action."
+				}]
 			}
 			, {
 				"name": "Zombie Shuffler"
