@@ -16,7 +16,7 @@
 				}
 				, {
 					"name": "4: Poison"
-					, "description": "The dire animal’s main attack also deals 5 ongoing poison damage per tier (5 ongoing poison at levels 1-4, 10 at 5-7, etc.)."
+					, "description": "The dire animal’s main attack also deals 5 ongoing poison damage per tier (5 ongoing poison at levels 1–4, 10 at 5–7, etc.)."
 				}
 				, {
 					"name": "5: Dire regeneration"
@@ -133,7 +133,7 @@
 						, "modifier": 10
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "The target is weakened (<em>-4 to attacks and defences</em>) until the end of the boar’s next turn"
+						, "damage": "The target is weakened (<em>–4 to attacks and defences</em>) until the end of the boar’s next turn"
 						, "extraEffects": []
 					}
 				]
@@ -143,7 +143,7 @@
 					}
 					, {
 						"name": "Last stand"
-						, "effect": "The board doesn’t die until it reaches -60 hp.  While at 0 hp or below but more than -60 hp, it must roll a normal save at the end of each of its turns; on a failure it dies."
+						, "effect": "The board doesn’t die until it reaches –60 hp.  While at 0 hp or below but more than –60 hp, it must roll a normal save at the end of each of its turns; on a failure it dies."
 					}
 					, {
 						"name": "One random dire feature"
@@ -267,7 +267,7 @@
 				}]
 				, "abilities": [{
 						"name": "Chilling howl"
-						, "effect": "Whenever a dire wolf’s attack drops an enemy to 0 hp or below, all dire wolves in the battle can howl as a free action.  When the wolves howl, each enemy in the battle takes a penalty to its attacks and all defences equal to the number of living dire wolves in the battle (max -5) until the end of the attacking wolf’s next turn.  New howls extend the duration of the current howl rather than downgrading the howl’s effect if dire wolves have been slain in the meantime."
+						, "effect": "Whenever a dire wolf’s attack drops an enemy to 0 hp or below, all dire wolves in the battle can howl as a free action.  When the wolves howl, each enemy in the battle takes a penalty to its attacks and all defences equal to the number of living dire wolves in the battle (max –5) until the end of the attacking wolf’s next turn.  New howls extend the duration of the current howl rather than downgrading the howl’s effect if dire wolves have been slain in the meantime."
 					}
 					, {
 						"name": "One dire feature"
@@ -1047,7 +1047,7 @@
 					, "target": ""
 					, "damage": "5 damage, and 5 ongoing damage"
 					, "extraEffects": [{
-						"trigger": "Natural 2-5"
+						"trigger": "Natural 2–5"
 						, "effect": "The dire bat pops free from the target and can move as a free action."
 					}]
 				}]
@@ -1106,7 +1106,7 @@
 								, "effect": "The target takes 8 damage, and 5 ongoing damage from bat fangs."
 							}
 							, {
-								"trigger": "Natural 2-5"
+								"trigger": "Natural 2–5"
 								, "effect": "In addition to any other effect, the bat cavalry pops free from the target, and as a free action, it can move to another nearby enemy and make a <em>fangs, wings, and sword</em> attack against it."
 							}
 						]
@@ -1215,7 +1215,7 @@
 						, "target": ""
 						, "damage": "6 damage, and 6 ongoing damage"
 						, "extraEffects": [{
-							"trigger": "Natural 2-5"
+							"trigger": "Natural 2–5"
 							, "effect": "The goblin bat mage pops free from the target and can move as a free action."
 						}]
 					}
@@ -1595,7 +1595,7 @@
 					}
 					, {
 						"name": "Into the earth"
-						, "effect": "The first time each round an attack hits the dirt-fisher, it can hunker down and pull the lid on its pit shut.  If it does, it gains a +3 bonus to all defences until the start of its next turn, and any creature in the pit takes a -5 penalty to checks to climb out of the pit.  Force attacks and opportunity attacks don’t trigger this ability."
+						, "effect": "The first time each round an attack hits the dirt-fisher, it can hunker down and pull the lid on its pit shut.  If it does, it gains a +3 bonus to all defences until the start of its next turn, and any creature in the pit takes a –5 penalty to checks to climb out of the pit.  Force attacks and opportunity attacks don’t trigger this ability."
 					}
 					, {
 						"name": "Nowhere to run"
@@ -1677,7 +1677,7 @@
 						, "damage": "20 damage"
 						, "extraEffects": [{
 							"trigger": "Champion’s challenge"
-							, "effect": "If the centaur champion scores a crit against the target, it can challenge that enemy.  If it does, until the end of the battle the champion and the target each take a -4 attack penalty against any target except the other.  If the centaur champion dies or challenges a new for, the old challenge is cancelled."
+							, "effect": "If the centaur champion scores a crit against the target, it can challenge that enemy.  If it does, until the end of the battle the champion and the target each take a –4 attack penalty against any target except the other.  If the centaur champion dies or challenges a new for, the old challenge is cancelled."
 						}]
 					}
 					, {
@@ -1706,7 +1706,7 @@
 				]
 				, "nastierSpecials": [{
 						"name": "Chief’s challenge"
-						, "effect": "When the champion issues a <em>champion’s challenge</em>, it only takes a -2 attack penalty against other enemies than its chosen foe, but that enemy still takes the -4 attack penalty.  In addition, the champion can use <em>champion’s challenge</em> as a free action when it becomes staggered."
+						, "effect": "When the champion issues a <em>champion’s challenge</em>, it only takes a –2 attack penalty against other enemies than its chosen foe, but that enemy still takes the –4 attack penalty.  In addition, the champion can use <em>champion’s challenge</em> as a free action when it becomes staggered."
 					}
 					, {
 						"name": "Champion’s scorn"
@@ -2055,7 +2055,7 @@
 				}]
 				, "abilities": [{
 					"name": "Chaos combined"
-					, "effect": "Once a chaos brute is staggered, it can combine with another chaos brute or chaos beast* next to it as a quick action to become a full-strength chaos behemoth: the new creature rolls initiative as if it had just entered the battle.<br>&emsp;If a chaos beast and a chaos brute combine to create a chaos behemoth, the behemoth starts with 70 hp instead of 90 hp and takes a -1 penalty to all attacks and defences."
+					, "effect": "Once a chaos brute is staggered, it can combine with another chaos brute or chaos beast* next to it as a quick action to become a full-strength chaos behemoth: the new creature rolls initiative as if it had just entered the battle.<br>&emsp;If a chaos beast and a chaos brute combine to create a chaos behemoth, the behemoth starts with 70 hp instead of 90 hp and takes a –1 penalty to all attacks and defences."
 				}]
 				, "nastierSpecials": []
 			}
@@ -2122,15 +2122,15 @@
 						, "target": "3 attacks"
 						, "damage": "25 damage"
 						, "extraEffects": [{
-								"trigger": "Natural 14-15"
+								"trigger": "Natural 14–15"
 								, "effect": "The target is dazed until the end of the chimera’s next turn from a headbutt."
 							}
 							, {
-								"trigger": "Natural 16-17"
+								"trigger": "Natural 16–17"
 								, "effect": "The target takes 20 ongoing damage from raking claws."
 							}
 							, {
-								"trigger": "Natural 18-20"
+								"trigger": "Natural 18–20"
 								, "effect": "The chimera makes a <em>fiery breath</em> attack as a free action."
 							}
 						]
@@ -2179,15 +2179,15 @@
 						, "target": "3 attacks"
 						, "damage": "25 damage"
 						, "extraEffects": [{
-								"trigger": "Natural 14-15"
+								"trigger": "Natural 14–15"
 								, "effect": "The target is dazed until the end of the chimera’s next turn from a headbutt."
 							}
 							, {
-								"trigger": "Natural 16-17"
+								"trigger": "Natural 16–17"
 								, "effect": "The target takes 20 ongoing damage from raking claws."
 							}
 							, {
-								"trigger": "Natural 18-20"
+								"trigger": "Natural 18–20"
 								, "effect": "The chimera can make a <em>fiery breath</em> attack as a free action."
 							}
 						]
@@ -2230,7 +2230,7 @@
 					}
 					, {
 						"name": "Diabolist"
-						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Flaming oil glands</em>: When a creature is engaged with the chimera at the start of its turn, it takes 20 fire damage.<br>&emsp;<strong>(F)</strong> <em>Overconfident predator</em>: Each time the chimera scores a critical hit, it takes a cumulative -2 penalty to all defences."
+						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Flaming oil glands</em>: When a creature is engaged with the chimera at the start of its turn, it takes 20 fire damage.<br>&emsp;<strong>(F)</strong> <em>Overconfident predator</em>: Each time the chimera scores a critical hit, it takes a cumulative –2 penalty to all defences."
 					}
 					, {
 						"name": "Dwarf King"
@@ -2250,7 +2250,7 @@
 					}
 					, {
 						"name": "High Druid"
-						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Wild heart</em>: The chimera is constantly evolving and changing.  When an enemy rolls a natural 1-5 on an attack roll against it, the chimera adds the escalation die to its attack rolls until the end of its next turn.<br>&emsp;<strong>(F)</strong> <em>Vilnerability, poison</em>: The crit range of poison attacks against the chimera expands by 2."
+						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Wild heart</em>: The chimera is constantly evolving and changing.  When an enemy rolls a natural 1–5 on an attack roll against it, the chimera adds the escalation die to its attack rolls until the end of its next turn.<br>&emsp;<strong>(F)</strong> <em>Vilnerability, poison</em>: The crit range of poison attacks against the chimera expands by 2."
 					}
 					, {
 						"name": "Lich King"
@@ -2258,7 +2258,7 @@
 					}
 					, {
 						"name": "Orc Lord"
-						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Mighty tusks</em>: As a standard action, the chimera can make a <em>tusk charge</em> attack.  It can’t make any other attacks the same turn.<br>&emsp;<strong>(F)</strong> <em>Too many horns</em>: The horns and tusks of the chimera lock together at inopportune moments.  When it rolls a natural 1-5 with an attack against multiple targets, it loses any further attacks that turn."
+						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Mighty tusks</em>: As a standard action, the chimera can make a <em>tusk charge</em> attack.  It can’t make any other attacks the same turn.<br>&emsp;<strong>(F)</strong> <em>Too many horns</em>: The horns and tusks of the chimera lock together at inopportune moments.  When it rolls a natural 1–5 with an attack against multiple targets, it loses any further attacks that turn."
 					}
 					, {
 						"name": "Priestess"
@@ -2266,7 +2266,7 @@
 					}
 					, {
 						"name": "Prince of Shadows"
-						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Poison fangs</em>: When the chimera rolls a natural 1-5 with an attack and misses, the target takes 20 ongoing poison damage.<br>&emsp;<strong>(F)</strong> <em>Bickering heads</em>: The first time each turn the chimera hits with an attack, it rerolls the attack and takes the lower roll."
+						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Poison fangs</em>: When the chimera rolls a natural 1–5 with an attack and misses, the target takes 20 ongoing poison damage.<br>&emsp;<strong>(F)</strong> <em>Bickering heads</em>: The first time each turn the chimera hits with an attack, it rerolls the attack and takes the lower roll."
 					}
 					, {
 						"name": "The Three"
@@ -2404,7 +2404,7 @@
 							}
 							, {
 								"trigger": "Grossness"
-								, "effect": "The slave is a large blob-like mess.  It has 72 hp but takes a -2 penalty to all defences."
+								, "effect": "The slave is a large blob-like mess.  It has 72 hp but takes a –2 penalty to all defences."
 							}
 						]
 					}
@@ -2642,7 +2642,7 @@
 				}
 				, {
 					"name": "Lich King"
-					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Emperor.  In addtion, all PCs take a -4 penalty to death saves this battle."
+					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Emperor.  In addtion, all PCs take a –4 penalty to death saves this battle."
 				}
 				, {
 					"name": "Orc Lord"
@@ -3255,7 +3255,7 @@
 						}
 						, {
 							"trigger": "Natural 18+"
-							, "effect": "The dybbuk gains a <em>fear</em> aura against the target (save ends) as the dybbuk warps its corpse-flesh into a horrifying form.  While engaged with the dybbuk, if the scared target has 30 hp or fewer, it’s dazed (-4 attack) and does not add the escalation die to its attacks."
+							, "effect": "The dybbuk gains a <em>fear</em> aura against the target (save ends) as the dybbuk warps its corpse-flesh into a horrifying form.  While engaged with the dybbuk, if the scared target has 30 hp or fewer, it’s dazed (–4 attack) and does not add the escalation die to its attacks."
 						}
 						, {
 							"trigger": "Miss"
@@ -3427,7 +3427,7 @@
 				}]
 				, "abilities": [{
 					"name": "Fear"
-					, "effect": "While engaged with this creature, enemies that have 15 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					, "effect": "While engaged with this creature, enemies that have 15 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 				}]
 				, "nastierSpecials": []
 			}
@@ -3465,7 +3465,7 @@
 					}
 					, {
 						"name": "Fear"
-						, "effect": "While engaged with this creature, enemies that have 36 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+						, "effect": "While engaged with this creature, enemies that have 36 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 					}
 					, {
 						"name": "Flight"
@@ -3592,7 +3592,7 @@
 						, "damage": "45 damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
-							, "effect": "The demon can grab the target as long as it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the glabrezou with an attack that turn.<br>&emsp;The glabrezou gains a +4 attack bonus against any enemy it is grabbing."
+							, "effect": "The demon can grab the target as long as it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a –5 penalty unless the creature hit the glabrezou with an attack that turn.<br>&emsp;The glabrezou gains a +4 attack bonus against any enemy it is grabbing."
 						}]
 					}
 					, {
@@ -3652,12 +3652,12 @@
 					, "damage": "28 damage"
 					, "extraEffects": [{
 						"trigger": "Any hit"
-						, "effect": "The demon can grab the target if it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a -5 penalty unless the creature hit the hezrou with an attack that turn.<br>&emsp;The hezrou gains a +4 attack bonus against any enemy it is grabbing."
+						, "effect": "The demon can grab the target if it isn’t already grabbing a creature.  The grabbed foe can’t move except to teleport, pop free, or attempt to disengage, and disengage attempts take a –5 penalty unless the creature hit the hezrou with an attack that turn.<br>&emsp;The hezrou gains a +4 attack bonus against any enemy it is grabbing."
 					}]
 				}]
 				, "abilities": [{
 					"name": "Demonic stench"
-					, "effect": "While engaged with this creature, enemies with 84hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					, "effect": "While engaged with this creature, enemies with 84hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 				}]
 				, "nastierSpecials": [{
 						"name": "Abyssal sergeant"
@@ -3744,7 +3744,7 @@
 				]
 				, "abilities": [{
 						"name": "Curse aura"
-						, "effect": "Whenever a creature attacks the imp and rolls a natural 1-5, that creature takes 1d10 psychic damage."
+						, "effect": "Whenever a creature attacks the imp and rolls a natural 1–5, that creature takes 1d10 psychic damage."
 					}
 					, {
 						"name": "Flight"
@@ -4299,7 +4299,7 @@
 						, "modifier": 11
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "The target is weakened until the end of its next turn (-4 attacks and defences)"
+						, "damage": "The target is weakened until the end of its next turn (–4 attacks and defences)"
 						, "extraEffects": []
 					}
 				]
@@ -4438,7 +4438,7 @@
 				]
 				, "abilities": [{
 						"name": "Defence against the inconsequential"
-						, "effect": "Attacks against a fury devil take a -4 penalty unless the devil is hellbent against that attacker."
+						, "effect": "Attacks against a fury devil take a –4 penalty unless the devil is hellbent against that attacker."
 					}
 					, {
 						"name": "Devil’s due (Fury)"
@@ -4844,7 +4844,7 @@
 						, "modifier": 19
 						, "defence": "AC"
 						, "target": "2 attacks"
-						, "damage": "140 damage, and until the end of the battle the target takes a -2 penalty to attacks, defences, and level-based d20 rolls.  Hit points, feats, weapon damage, and other level-based benefits don’t change.  (The penalty isn’t cumulative.)"
+						, "damage": "140 damage, and until the end of the battle the target takes a –2 penalty to attacks, defences, and level-based d20 rolls.  Hit points, feats, weapon damage, and other level-based benefits don’t change.  (The penalty isn’t cumulative.)"
 						, "extraEffects": [{
 								"trigger": "Natural 11+"
 								, "effect": "The pit fiend can make an <em>entangling tail</em> attack against a different target as a free action."
@@ -5357,7 +5357,7 @@
 					}
 					, {
 						"name": "8: Serious threat"
-						, "description": "Disengage checks against the dragon take a -5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
+						, "description": "Disengage checks against the dragon take a –5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
 					}
 					, {
 						"name": "9: PC-style racial power"
@@ -5500,7 +5500,7 @@
 						, "damage": "80 lightning damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
-							, "effect": "The target is also dazed (save ends).  After the target saves, it takes a -1 attack penalty (non-cumulative) until its next full heal-up."
+							, "effect": "The target is also dazed (save ends).  After the target saves, it takes a –1 attack penalty (non-cumulative) until its next full heal-up."
 						}]
 					}
 				]
@@ -5543,7 +5543,7 @@
 						, "target": ""
 						, "damage": "100 damage"
 						, "extraEffects": [{
-								"trigger": "Natural 11-15"
+								"trigger": "Natural 11–15"
 								, "effect": "The dragon can make a <em>bite</em> attack as a free action."
 							}
 							, {
@@ -5640,7 +5640,7 @@
 					}
 					, {
 						"name": "Fear"
-						, "effect": "While engaged with this creature, enemies with 144 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+						, "effect": "While engaged with this creature, enemies with 144 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 					}
 					, {
 						"name": "Resist fire 18+"
@@ -5849,7 +5849,7 @@
 						, "target": ""
 						, "damage": "25 damage"
 						, "extraEffects": [{
-								"trigger": "Natural 11-15"
+								"trigger": "Natural 11–15"
 								, "effect": "The dragon can make a <em>bite</em> attack as a free action."
 							}
 							, {
@@ -5941,7 +5941,7 @@
 					}
 					, {
 						"name": "Fear"
-						, "effect": "While engaged with this creature, enemies with 72 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+						, "effect": "While engaged with this creature, enemies with 72 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 					}
 					, {
 						"name": "Resist fire 16+"
@@ -6150,7 +6150,7 @@
 						, "target": ""
 						, "damage": "7 damage"
 						, "extraEffects": [{
-								"trigger": "Natural 11-15"
+								"trigger": "Natural 11–15"
 								, "effect": "The dragon can make a <em>bite</em> attack as a free action."
 							}
 							, {
@@ -6343,7 +6343,7 @@
 					}
 					, {
 						"name": "8: Serious threat"
-						, "description": "Disengage checks against the dragon take a -5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
+						, "description": "Disengage checks against the dragon take a –5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
 					}
 					, {
 						"name": "9: PC-style racial power"
@@ -6476,7 +6476,7 @@
 							}
 							, {
 								"trigger": "Natural odd hit"
-								, "effect": "While in the haze, the target takes a -5 penalty to all saves against acid damage."
+								, "effect": "While in the haze, the target takes a –5 penalty to all saves against acid damage."
 							}
 							, {
 								"trigger": "Miss"
@@ -6710,7 +6710,7 @@
 					}
 					, {
 						"name": "Wyrm of fear and flame"
-						, "effect": "While engaged with this creature, enemies with 120 hp or fewer are dazed (-4 attacks), do not add the escalation die to their attacks, and take 4d20 fire damage at the start of their turn."
+						, "effect": "While engaged with this creature, enemies with 120 hp or fewer are dazed (–4 attacks), do not add the escalation die to their attacks, and take 4d20 fire damage at the start of their turn."
 					}
 				]
 				, "nastierSpecials": [{
@@ -6785,7 +6785,7 @@
 				]
 				, "abilities": [{
 						"name": "Swallowed whole"
-						, "effect": "A creature that is swallowed whole must start making last gasp saves during its next turn.  An ally can assist with the save as normal, but the save remains hard (16+) in that case.  A roll of 16-19 causes the creature to be regurgitated from the dragon’s gut, while a 20 means that the creature cuts/rips a hole through the dragon’s flesh to escape (dealing basic attack damage automatically)."
+						, "effect": "A creature that is swallowed whole must start making last gasp saves during its next turn.  An ally can assist with the save as normal, but the save remains hard (16+) in that case.  A roll of 16–19 causes the creature to be regurgitated from the dragon’s gut, while a 20 means that the creature cuts/rips a hole through the dragon’s flesh to escape (dealing basic attack damage automatically)."
 					}
 					, {
 						"name": "Chain constrictor"
@@ -6980,7 +6980,7 @@
 					}
 					, {
 						"name": "Known to an ounce"
-						, "effect": "The dragon knows where every treasure in its hoard is located, allowing it to detect any movement or shifting of the coins and valuables.  When in its lair with its hoard, the hoardsong dragon has +1 AC, is immune to invisibility and ignores illusions, and creatures attempting to hide from it take a -5 penalty to their checks."
+						, "effect": "The dragon knows where every treasure in its hoard is located, allowing it to detect any movement or shifting of the coins and valuables.  When in its lair with its hoard, the hoardsong dragon has +1 AC, is immune to invisibility and ignores illusions, and creatures attempting to hide from it take a –5 penalty to their checks."
 					}
 					, {
 						"name": "Resist fire 16+"
@@ -6993,7 +6993,7 @@
 					}
 					, {
 						"name": "The call of the hoard"
-						, "effect": "The connection of a hoardsong dragon to its hoard imparts the dragon’s magic upon the hoard.  Before battle, if the PCs are able to see the hoard while the dragon speaks to them, each PC that can hear the dragon must roll a Wisdom check.  On a result of 24 or less, that PC is charmed as per the <em>charm person</em> spell and considers the dragon a friend.  On a result of 25-29, the PC is lulled by the dragon’s words and the sight of the hoard; if combat occurs, the PC will be stunned during their first round.  The dragon will make a suggestion to charmed PCs to leave and bring it more treasure for its hoard (while it prepares surprises for their return).  Charmed PCs won’t attack the dragon, but can make a normal save each round in battle to break the charm effect (or every day outside of combat)."
+						, "effect": "The connection of a hoardsong dragon to its hoard imparts the dragon’s magic upon the hoard.  Before battle, if the PCs are able to see the hoard while the dragon speaks to them, each PC that can hear the dragon must roll a Wisdom check.  On a result of 24 or less, that PC is charmed as per the <em>charm person</em> spell and considers the dragon a friend.  On a result of 25–29, the PC is lulled by the dragon’s words and the sight of the hoard; if combat occurs, the PC will be stunned during their first round.  The dragon will make a suggestion to charmed PCs to leave and bring it more treasure for its hoard (while it prepares surprises for their return).  Charmed PCs won’t attack the dragon, but can make a normal save each round in battle to break the charm effect (or every day outside of combat)."
 					}
 				]
 			}
@@ -7101,7 +7101,7 @@
 				]
 				, "abilities": [{
 						"name": "Lunar resonance"
-						, "effect": "A moon dragon gains a +1 bonus to attacks when the full moon is within seven days or when within its lair.  A moon dragon takes a -1 penalty to all defences and gains <em>vulnerability: fire</em> when the new moon is within seven days."
+						, "effect": "A moon dragon gains a +1 bonus to attacks when the full moon is within seven days or when within its lair.  A moon dragon takes a –1 penalty to all defences and gains <em>vulnerability: fire</em> when the new moon is within seven days."
 					}
 					, {
 						"name": "Resist cold 18+"
@@ -7386,11 +7386,11 @@
 			, {
 				"name": "Breath Weapon Recharge (Natural Attack Roll)"
 				, "traits": [{
-						"name": "1-5"
+						"name": "1–5"
 						, "description": "The dragon can use its breath weapon again next turn."
 					}
 					, {
-						"name": "6-10"
+						"name": "6–10"
 						, "description": "The dragon must wait one turn before it can use its breath weapon."
 					}
 					, {
@@ -7431,7 +7431,7 @@
 					}
 					, {
 						"name": "8: Serious threat"
-						, "description": "Disengage checks against the dragon take a -5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
+						, "description": "Disengage checks against the dragon take a –5 penalty.  When a creature fails to disengage from the dragon, it takes damage equal to double the dragon’s level."
 					}
 					, {
 						"name": "9: PC-style racial power"
@@ -7546,7 +7546,7 @@
 				]
 				, "abilities": [{
 						"name": "Inspire awe"
-						, "effect": "While an enemy has 24 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+						, "effect": "While an enemy has 24 hp or fewer, it takes a –4 penalty to limited attacks against the dragon."
 					}
 					, {
 						"name": "Resist fire 18+"
@@ -7599,7 +7599,7 @@
 				]
 				, "abilities": [{
 						"name": "Inspire awe"
-						, "effect": "While an enemy has 72 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+						, "effect": "While an enemy has 72 hp or fewer, it takes a –4 penalty to limited attacks against the dragon."
 					}
 					, {
 						"name": "Resist lightning 18+"
@@ -7607,7 +7607,7 @@
 					}
 					, {
 						"name": "Retributive lightning"
-						, "effect": "Once per battle as an interrupt action when an enemy targets it with an attack, the dragon can make a <em>lightning breath</em> against that attacker (and yes, if the dragon hits, the interrupted attack takes the -4 penalty due to dazed)."
+						, "effect": "Once per battle as an interrupt action when an enemy targets it with an attack, the dragon can make a <em>lightning breath</em> against that attacker (and yes, if the dragon hits, the interrupted attack takes the –4 penalty due to dazed)."
 					}
 					, {
 						"name": "Rugged defences"
@@ -7670,7 +7670,7 @@
 				]
 				, "abilities": [{
 						"name": "Inspire awe"
-						, "effect": "While an enemy has 120 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+						, "effect": "While an enemy has 120 hp or fewer, it takes a –4 penalty to limited attacks against the dragon."
 					}
 					, {
 						"name": "Resist fire 18+"
@@ -7751,7 +7751,7 @@
 				]
 				, "abilities": [{
 						"name": "Inspire awe"
-						, "effect": "While an enemy has 240 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+						, "effect": "While an enemy has 240 hp or fewer, it takes a –4 penalty to limited attacks against the dragon."
 					}
 					, {
 						"name": "Spiral of golden flame"
@@ -7826,7 +7826,7 @@
 					}
 					, {
 						"name": "Inspire awe"
-						, "effect": "While an enemy has 192 hp or fewer, it takes a -4 penalty to limited attacks against the dragon."
+						, "effect": "While an enemy has 192 hp or fewer, it takes a –4 penalty to limited attacks against the dragon."
 					}
 					, {
 						"name": "Resist cold 18+"
@@ -8699,7 +8699,7 @@
 					}
 					, {
 						"name": "Umbral caul"
-						, "description": "As long as at least one drow uses a standard action each round to maintain the supernatural darkness, each non-drow creature in the battle becomes dazed (save ends) whenever it rolls a natural 1-5 with an attack roll."
+						, "description": "As long as at least one drow uses a standard action each round to maintain the supernatural darkness, each non-drow creature in the battle becomes dazed (save ends) whenever it rolls a natural 1–5 with an attack roll."
 					}
 					, {
 						"name": "Venomous"
@@ -8719,7 +8719,7 @@
 					}
 					, {
 						"name": "Midnight Tincture"
-						, "description": "When this glass vial is broken, the nearby area is shrouded in clinging darkness.  The darkless lasts 3 rounds.  Each creature in the darkness except drow takes a -4 attack penalty.  The tincture can be attacked to an arrow or bolt."
+						, "description": "When this glass vial is broken, the nearby area is shrouded in clinging darkness.  The darkless lasts 3 rounds.  Each creature in the darkness except drow takes a –4 attack penalty.  The tincture can be attacked to an arrow or bolt."
 					}
 					, {
 						"name": "Potion of Spider Climbing"
@@ -8785,7 +8785,7 @@
 					}
 					, {
 						"name": "Spider mount"
-						, "effect": "Whenever the drow cavalry rolls a natural 1-10 on an attack roll, its spider mount acts independently, choosing one of the following options<br>&emsp;<strong>Bite</strong> - The spide makes a <em>bite</em> attack.<br>&emsp;<strong>Jump & Scuttle</strong> - The spider and its rider pop free from all enemies and can move somewhere nearby.<br>&emsp;<strong>Web</strong> - The spider makes a <em>web</em> attack."
+						, "effect": "Whenever the drow cavalry rolls a natural 1–10 on an attack roll, its spider mount acts independently, choosing one of the following options<br>&emsp;<strong>Bite</strong> - The spide makes a <em>bite</em> attack.<br>&emsp;<strong>Jump & Scuttle</strong> - The spider and its rider pop free from all enemies and can move somewhere nearby.<br>&emsp;<strong>Web</strong> - The spider makes a <em>web</em> attack."
 					}
 				]
 				, "nastierSpecials": []
@@ -8828,7 +8828,7 @@
 						, "damage": "20 damage, and 6 ongoing damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
-							, "effect": "As a free action, the darkbolt can make a second <em>barbed arrows</em> attack against a different enemy with a -2 attack penalty.  If it gets another natural even hit, it can make a third (and final) <em>barbed arrows</em> attack against a different enemy with a -4 attack penalty as a free action."
+							, "effect": "As a free action, the darkbolt can make a second <em>barbed arrows</em> attack against a different enemy with a –2 attack penalty.  If it gets another natural even hit, it can make a third (and final) <em>barbed arrows</em> attack against a different enemy with a –4 attack penalty as a free action."
 						}]
 					}
 				]
@@ -9000,7 +9000,7 @@
 						, "type": "ranged"
 						, "modifier": 9
 						, "defence": "AC"
-						, "target": "one nearby enemy or a far away enemy at -2 atk"
+						, "target": "one nearby enemy or a far away enemy at –2 atk"
 						, "damage": "7 damage"
 						, "extraEffects": []
 					}
@@ -9042,7 +9042,7 @@
 						, "type": "close"
 						, "modifier": 10
 						, "defence": "AC"
-						, "target": "one nearby enemy, or a far away enemy at -2 atk"
+						, "target": "one nearby enemy, or a far away enemy at –2 atk"
 						, "damage": "14 damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
@@ -9182,7 +9182,7 @@
 				}]
 				, "abilities": [{
 						"name": "Clinging"
-						, "effect": "Enemies take a -5 penalty to disengage checks against the swarm."
+						, "effect": "Enemies take a –5 penalty to disengage checks against the swarm."
 					}
 					, {
 						"name": "Wall-crawer"
@@ -9374,7 +9374,7 @@
 					}
 					, {
 						"name": "3. Fear aura"
-						, "effect": "While engaged with the warped beast, enemies that have 24 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+						, "effect": "While engaged with the warped beast, enemies that have 24 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 					}
 					, {
 						"name": "4. Gibbering mouths"
@@ -9386,7 +9386,7 @@
 					}
 					, {
 						"name": "6. Warping touch"
-						, "effect": "When the warped beast hits a creature with a <em>tentacle maw</em> attack, the target also takes 5 ongoing psychic damage and a -2 penalty to saves (save ends both)."
+						, "effect": "When the warped beast hits a creature with a <em>tentacle maw</em> attack, the target also takes 5 ongoing psychic damage and a –2 penalty to saves (save ends both)."
 					}
 				]
 				, "nastierSpecials": [{
@@ -10256,7 +10256,7 @@
 					}
 					, {
 						"name": "Goopy webs"
-						, "effect": "When an enemy of level 3 or lower rolls a natural 1-5 with a melee attack against an ettercap acolyte, that enemy is dazed (save ends)."
+						, "effect": "When an enemy of level 3 or lower rolls a natural 1–5 with a melee attack against an ettercap acolyte, that enemy is dazed (save ends)."
 					}
 				]
 				, "nastierSpecials": []
@@ -10314,7 +10314,7 @@
 				]
 				, "abilities": [{
 					"name": "Goopy webs"
-					, "effect": "When an enemy of level 4 or lower rolls a natural 1-5 with a melee attack against an ettercap hunter, that enemy is dazed (save ends)."
+					, "effect": "When an enemy of level 4 or lower rolls a natural 1–5 with a melee attack against an ettercap hunter, that enemy is dazed (save ends)."
 				}]
 				, "nastierSpecials": []
 			}
@@ -10394,7 +10394,7 @@
 					}
 					, {
 						"name": "Goopy webs"
-						, "effect": "When an enemy of level 6 or lower rolls a natural 1-5 with a melee attack against an ettercap keeper, that enemy is dazed (save ends)."
+						, "effect": "When an enemy of level 6 or lower rolls a natural 1–5 with a melee attack against an ettercap keeper, that enemy is dazed (save ends)."
 					}
 				]
 				, "nastierSpecials": []
@@ -10455,7 +10455,7 @@
 				]
 				, "abilities": [{
 					"name": "Goopy webs"
-					, "effect": "When an enemy of level 5 or lower rolls a natural 1-5 with a melee attack against an ettercap supplicant, that enemy is dazed (save ends)."
+					, "effect": "When an enemy of level 5 or lower rolls a natural 1–5 with a melee attack against an ettercap supplicant, that enemy is dazed (save ends)."
 				}]
 				, "nastierSpecials": []
 			}
@@ -10530,7 +10530,7 @@
 				]
 				, "abilities": [{
 					"name": "Goopy webs"
-					, "effect": "When an enemy of level 5 or lower rolls a natural 1-5 with a melee attack against an ettercap warrior, that enemy is dazed (save ends)."
+					, "effect": "When an enemy of level 5 or lower rolls a natural 1–5 with a melee attack against an ettercap warrior, that enemy is dazed (save ends)."
 				}]
 				, "nastierSpecials": []
 			}
@@ -10596,7 +10596,7 @@
 			"name": "Nastier Special for all flowers of unlife"
 			, "traits": [{
 				"name": "Iconic energy drain"
-				, "description": "When a character with an icon relationship with the nature or undead icon rolls a natural 1-5 with an attack against the flower, the attacker takes 2d6 damage and the flower heals that many hit points."
+				, "description": "When a character with an icon relationship with the nature or undead icon rolls a natural 1–5 with an attack against the flower, the attacker takes 2d6 damage and the flower heals that many hit points."
 			}]
 		}]
 		, "monsters": [{
@@ -10726,7 +10726,7 @@
 				}]
 				, "abilities": [{
 						"name": "Strage vapours"
-						, "effect": "While engaged with the lich flower, non-undead and non-plant creatures are dazed (-4 attacks)."
+						, "effect": "While engaged with the lich flower, non-undead and non-plant creatures are dazed (–4 attacks)."
 					}
 					, {
 						"name": "Red-yellow resurrection"
@@ -10821,7 +10821,7 @@
 				}]
 				, "abilities": [{
 						"name": "Puffball exploder"
-						, "effect": "The first time each round an aerial spore in the battle drops to 0 hp, it explodes and 1d3 nearby non-fungus non-construct creatures are covered in spores and begin to choke.  Until the end of the battle, when a choking creature rolls a natural 1-5 on an attack roll, it takes damage equal to the natural roll.  If a creature is affected twice by this attack, the damage it takes on a natural 1-5 doubles; if affected three times, it triples, etc.."
+						, "effect": "The first time each round an aerial spore in the battle drops to 0 hp, it explodes and 1d3 nearby non-fungus non-construct creatures are covered in spores and begin to choke.  Until the end of the battle, when a choking creature rolls a natural 1–5 on an attack roll, it takes damage equal to the natural roll.  If a creature is affected twice by this attack, the damage it takes on a natural 1–5 doubles; if affected three times, it triples, etc.."
 					}
 					, {
 						"name": "Spores"
@@ -10872,7 +10872,7 @@
 						, "damage": "The target is confused (easy save ends, 6+) and vulnerable to psychic damage until the end of the battle"
 						, "extraEffects": [{
 							"trigger": "Miss"
-							, "effect": "The target sees odd colours at the corners of its vision until it has taken a full heal-up (-2 penalty to skill checks to see things)."
+							, "effect": "The target sees odd colours at the corners of its vision until it has taken a full heal-up (–2 penalty to skill checks to see things)."
 						}]
 					}
 					, {
@@ -10956,7 +10956,7 @@
 							, "effect": "The target is stuck until the end of its next turn."
 						}
 						, {
-							"trigger": "Natural 1-5"
+							"trigger": "Natural 1–5"
 							, "effect": "Both the fungaloid and its target take 1d4 damge."
 						}
 					]
@@ -11267,7 +11267,7 @@
 					}
 					, {
 						"name": "1"
-						, "effect": "The cubahedron jiggles in place.  Each nearby enemy takes 5 acid damage.  Each creature engulfed by the cube takes a -4 penalty to its saves until the end of its next turn."
+						, "effect": "The cubahedron jiggles in place.  Each nearby enemy takes 5 acid damage.  Each creature engulfed by the cube takes a –4 penalty to its saves until the end of its next turn."
 					}
 					, {
 						"name": "2"
@@ -11439,7 +11439,7 @@
 					}
 					, {
 						"name": "1"
-						, "effect": "<strong>C: Acid splash +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> - 8 ongoing acid damage<br>&emsp;<em>Each failed save</em>: Acid destroys one of the target’s non-magical items.  The target takes a cumulative -1 attack penalty until the end of the battle (boots fall apart, shield straps snap, etc.).<br>&emsp;<em>Miss</em>: 5 ongoing acid damage."
+						, "effect": "<strong>C: Acid splash +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> - 8 ongoing acid damage<br>&emsp;<em>Each failed save</em>: Acid destroys one of the target’s non-magical items.  The target takes a cumulative –1 attack penalty until the end of the battle (boots fall apart, shield straps snap, etc.).<br>&emsp;<em>Miss</em>: 5 ongoing acid damage."
 					}
 					, {
 						"name": "2"
@@ -11633,7 +11633,7 @@
 					}
 					, {
 						"name": "Frenzied (Orc Lord)"
-						, "effect": "The djinn takes a -1 penalty to all defences.  While not staggered, its crit range expands by 3."
+						, "effect": "The djinn takes a –1 penalty to all defences.  While not staggered, its crit range expands by 3."
 					}
 				]
 			}
@@ -11722,7 +11722,7 @@
 					}
 					, {
 						"name": "Frenzied (Orc Lord)"
-						, "effect": "The efreet takes a -1 penalty to all defences.  While not staggered, its crit range expands by 3."
+						, "effect": "The efreet takes a –1 penalty to all defences.  While not staggered, its crit range expands by 3."
 					}
 				]
 			}
@@ -12061,7 +12061,7 @@
 						, "modifier": 13
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "50 damage, and the target takes a -5 penalty to disengage checks until the end of its next turn"
+						, "damage": "50 damage, and the target takes a –5 penalty to disengage checks until the end of its next turn"
 						, "extraEffects": [{
 							"trigger": "Miss"
 							, "effect": "15 damage to each enemy engaged with the giant."
@@ -12073,7 +12073,7 @@
 						, "type": "ranged"
 						, "modifier": 13
 						, "defence": "AC"
-						, "target": "one nearby enemy or far away enemy at -2 atk"
+						, "target": "one nearby enemy or far away enemy at –2 atk"
 						, "damage": "40 damage, and the target is pulled next to the giant, who engages it"
 						, "extraEffects": []
 					}
@@ -12381,7 +12381,7 @@
 				]
 				, "nastierSpecials": [{
 					"name": "Unquenchable fires"
-					, "effect": "Enemies engaged with the fire giant warlord take a -5 penalty to saves against ongoing fire damage."
+					, "effect": "Enemies engaged with the fire giant warlord take a –5 penalty to saves against ongoing fire damage."
 				}]
 			}
 			, {
@@ -12428,7 +12428,7 @@
 						, "type": "ranged"
 						, "modifier": 11
 						, "defence": "PD"
-						, "target": "one nearby enemy or far away enemy at -2 atk"
+						, "target": "one nearby enemy or far away enemy at –2 atk"
 						, "damage": "35 damage"
 						, "extraEffects": []
 					}
@@ -12696,7 +12696,7 @@
 						, "target": ""
 						, "damage": "6 damage"
 						, "extraEffects": [{
-							"trigger": "Natural 1-5"
+							"trigger": "Natural 1–5"
 							, "effect": "The jotun auroch can make a <em>fiery or frosty breath</em> attack as a free action."
 						}]
 					}
@@ -13109,7 +13109,7 @@
 				]
 				, "abilities": [{
 						"name": "Battle lock"
-						, "effect": "Gnoll shredders gain a +2 bonus to opportunity attacks, and emeies take a -8 penalty to disengage checks against them."
+						, "effect": "Gnoll shredders gain a +2 bonus to opportunity attacks, and emeies take a –8 penalty to disengage checks against them."
 					}
 					, {
 						"name": "Legion fighting"
@@ -13312,7 +13312,7 @@
 						, "damage": "2d6 psychic damage"
 						, "extraEffects": [{
 							"trigger": "Limited use"
-							, "effect": "1/round as an interrupt action, when a nearby enemy rolls a natural 1-5 with an attack against it."
+							, "effect": "1/round as an interrupt action, when a nearby enemy rolls a natural 1–5 with an attack against it."
 						}]
 					}
 				]
@@ -13919,11 +13919,11 @@
 					}
 					, {
 						"name": "Awe (fear effect)"
-						, "effect": "While nearby the golem, enemies with 40 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+						, "effect": "While nearby the golem, enemies with 40 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 					}
 					, {
 						"name": "Beauty"
-						, "effect": "The first time each enemy attacks the marble golem this battle, it must roll a normal save; on a failure, the attack takes a -6 penalty."
+						, "effect": "The first time each enemy attacks the marble golem this battle, it must roll a normal save; on a failure, the attack takes a –6 penalty."
 					}
 					, {
 						"name": "Courage"
@@ -13931,7 +13931,7 @@
 					}
 					, {
 						"name": "Endurance"
-						, "effect": "When the marble golem rolls a natural 1-5 with an attack roll, it heals 1d10 hit points per point on the escalation die.  (It was checking for damage and got distracted.)"
+						, "effect": "When the marble golem rolls a natural 1–5 with an attack roll, it heals 1d10 hit points per point on the escalation die.  (It was checking for damage and got distracted.)"
 					}
 					, {
 						"name": "Hatred"
@@ -14047,7 +14047,7 @@
 					}
 					, {
 						"name": "Death shriek"
-						, "description": "When a melee attack hits the hag, she lets out a shriek as a free action and the attacker takes 2d4 thunder damage.<br><em>Hag ability</em>: The hag begins to shriek, and each enemy in the battle takes a -4 attack penalty with spells until the start of her next turn."
+						, "description": "When a melee attack hits the hag, she lets out a shriek as a free action and the attacker takes 2d4 thunder damage.<br><em>Hag ability</em>: The hag begins to shriek, and each enemy in the battle takes a –4 attack penalty with spells until the start of her next turn."
 					}
 					, {
 						"name": "Dusk walk"
@@ -14063,7 +14063,7 @@
 					}
 					, {
 						"name": "Song of dreams"
-						, "description": "Enemies take a -4 penalty to their initiative rolls in battles with the hag.<br><em>Hag ability</em>: The hag begins to sing and the two enemies closest to her (even if far away) must roll an immediate save; on a failure, the target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save end).  If the weakened target fails its second save, instead it’s helpless (save ends)."
+						, "description": "Enemies take a –4 penalty to their initiative rolls in battles with the hag.<br><em>Hag ability</em>: The hag begins to sing and the two enemies closest to her (even if far away) must roll an immediate save; on a failure, the target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save end).  If the weakened target fails its second save, instead it’s helpless (save ends)."
 					}
 					, {
 						"name": "Thief of mist"
@@ -14075,7 +14075,7 @@
 					}
 					, {
 						"name": "Weakening touch"
-						, "description": "Each enemy fighting the hag must roll a normal save at the start of the battle; on a failure, that creature starts the battle weakened (easy save ends, 6+).<br><em>Hag ability</em>: The target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save ends).  When the target saves against this effect, it takes a -2 attack penalty until the end of its next turn."
+						, "description": "Each enemy fighting the hag must roll a normal save at the start of the battle; on a failure, that creature starts the battle weakened (easy save ends, 6+).<br><em>Hag ability</em>: The target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save ends).  When the target saves against this effect, it takes a –2 attack penalty until the end of its next turn."
 					}
 					, {
 						"name": "Winter breath"
@@ -14146,7 +14146,7 @@
 				}
 				, {
 					"name": "Fear"
-					, "effect": "While engaged with this creature, enemies with 30 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					, "effect": "While engaged with this creature, enemies with 30 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 				}
 			]
 			, "nastierSpecials": []
@@ -14356,11 +14356,11 @@
 					, "target": "1d3 nearby enemies"
 					, "damage": "5 psychic damage"
 					, "extraEffects": [{
-							"trigger": "Natural 16-17"
+							"trigger": "Natural 16–17"
 							, "effect": "The target is hampered (easy save ends, 6+)."
 						}
 						, {
-							"trigger": "Natural 18-19"
+							"trigger": "Natural 18–19"
 							, "effect": "The target is weakened instead of hampered (easy save ends, 6+)."
 						}
 						, {
@@ -14593,7 +14593,7 @@
 				]
 				, "abilities": [{
 					"name": "Fear"
-					, "effect": "While engaged with this creature, enemies that have 60 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					, "effect": "While engaged with this creature, enemies that have 60 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 				}]
 				, "nastierSpecials": []
 			}
@@ -14769,7 +14769,7 @@
 				, "abilities": []
 				, "nastierSpecials": [{
 					"name": "Latches on"
-					, "effect": "When the boombug hits with <em>gnawing teeth</em>, the target takes a -5 penalty to disengage checks until it’s no longer engaged with the boombug."
+					, "effect": "When the boombug hits with <em>gnawing teeth</em>, the target takes a –5 penalty to disengage checks until it’s no longer engaged with the boombug."
 				}]
 			}
 			, {
@@ -15008,11 +15008,11 @@
 				]
 				, "abilities": [{
 						"name": "Power-monger"
-						, "effect": "When the blue sorcerer starts its turn and it didn't <em>gather power</em> the previous turn, choose whether it will gather power or cast a spell this turn.  When it chooses to cast a spell, roll a d20 to see if it uses a minor spell or a major spell: <strong>1-10</strong>: minor spell; <strong>11-20</strong>: major spell."
+						, "effect": "When the blue sorcerer starts its turn and it didn't <em>gather power</em> the previous turn, choose whether it will gather power or cast a spell this turn.  When it chooses to cast a spell, roll a d20 to see if it uses a minor spell or a major spell: <strong>1–10</strong>: minor spell; <strong>11–20</strong>: major spell."
 					}
 					, {
 						"name": "Gather power"
-						, "effect": "Like a PC sorceror, a blue sorcerer can use its standard action to gather power in order to cast a double-strength and double-damage spell with its next standard action.  When it gathers power, the sorcerer rolls a d6 and gains one of the following chaotic benefits.<br>&emsp;<strong>1-2</strong>: The sorcerer gains a +1 bonus to AC and until the start of its next turn.<br>&emsp;<strong>3-4</strong>: One nearby enemy of the sorcerer’s choice takes damage equal to the sorcerer’s level (3).<br>&emsp;<strong>5-6</strong>: Each nearby enemy engaged with the sorcerer’s allies takes damage equal to the sorcerer’s level (3); OR grant one nearby dragon with <em>intermittent breath</em> an additional use of its breath weapon this battle."
+						, "effect": "Like a PC sorceror, a blue sorcerer can use its standard action to gather power in order to cast a double-strength and double-damage spell with its next standard action.  When it gathers power, the sorcerer rolls a d6 and gains one of the following chaotic benefits.<br>&emsp;<strong>1–2</strong>: The sorcerer gains a +1 bonus to AC and until the start of its next turn.<br>&emsp;<strong>3–4</strong>: One nearby enemy of the sorcerer’s choice takes damage equal to the sorcerer’s level (3).<br>&emsp;<strong>5–6</strong>: Each nearby enemy engaged with the sorcerer’s allies takes damage equal to the sorcerer’s level (3); OR grant one nearby dragon with <em>intermittent breath</em> an additional use of its breath weapon this battle."
 					}
 				]
 				, "nastierSpecials": [{
@@ -15047,7 +15047,7 @@
 						, "modifier": 10
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "15 damage, and the target is dazed (-4 attack) until it pulls the arrow out using a quick action, which deals 10 ongoing damage"
+						, "damage": "15 damage, and the target is dazed (–4 attack) until it pulls the arrow out using a quick action, which deals 10 ongoing damage"
 						, "extraEffects": [{
 							"trigger": "Natural odd hit or miss"
 							, "effect": "The demon bow eats at the ranger’s arm and the ranger takes 1d6 damage."
@@ -15060,7 +15060,7 @@
 						, "modifier": 10
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "15 damage, and the target is dazed (-4 attack) until it pulls the arrow out using a quick action, which deals 10 ongoing damage"
+						, "damage": "15 damage, and the target is dazed (–4 attack) until it pulls the arrow out using a quick action, which deals 10 ongoing damage"
 						, "extraEffects": [{
 							"trigger": "Natural odd hit or miss"
 							, "effect": "The demon bow eats at the ranger’s arm and the ranger takes 1d6 damage."
@@ -15146,11 +15146,11 @@
 					, "target": "1d3 enemies in a group"
 					, "damage": "5 ongoing psychic damage"
 					, "extraEffects": [{
-							"trigger": "Natural 16-18"
-							, "effect": "While the target is taking the ongoing psychic damage, it is dazed (-4 attack)."
+							"trigger": "Natural 16–18"
+							, "effect": "While the target is taking the ongoing psychic damage, it is dazed (–4 attack)."
 						}
 						, {
-							"trigger": "Natural 19-20"
+							"trigger": "Natural 19–20"
 							, "effect": "While the target is taking the ongoing psychic damage, it is confused instead of dazed."
 						}
 					]
@@ -15326,7 +15326,7 @@
 						, "modifier": 9
 						, "defence": "PD"
 						, "target": "one enemy"
-						, "damage": "25 damage; OR if the target is fighting a <em>psychic duel</em> (see below), it can choose to take a -4 to penalty to its next check instead"
+						, "damage": "25 damage; OR if the target is fighting a <em>psychic duel</em> (see below), it can choose to take a –4 to penalty to its next check instead"
 						, "extraEffects": [{
 							"trigger": "Quick use"
 							, "effect": "The assassin can take 15 damage to make this attack as a quick action (once per round)."
@@ -15375,19 +15375,19 @@
 					}
 					, {
 						"name": "15 or less"
-						, "effect": "The creature is confused until the end of its turn.  It also can’t make opportunity attacks until the start of its next turn and takes a -2 penalty to its next <em>psychic duel</em> check."
+						, "effect": "The creature is confused until the end of its turn.  It also can’t make opportunity attacks until the start of its next turn and takes a –2 penalty to its next <em>psychic duel</em> check."
 					}
 					, {
-						"name": "16-22"
-						, "effect": "The creature is pressured - it takes a -2 penalty to attacks against any enemy except the assassin (duelling opponent)."
+						"name": "16–22"
+						, "effect": "The creature is pressured - it takes a –2 penalty to attacks against any enemy except the assassin (duelling opponent)."
 					}
 					, {
-						"name": "23-27"
+						"name": "23–27"
 						, "effect": "The creature steadies itself and can use a move action this turn to escape the <em>psychic duel</em>.  If the creature chooses not to (or can’t) escape the duel, it gains a +2 bonus to its next <em>psychic duel</em> check."
 					}
 					, {
 						"name": "28+"
-						, "effect": "As 23-27, but the creature takes advantage and gains a +4 bonus to its next <em>psychic duel</em> check instead of +2.  In addition, the assassin takes a -2 penalty to attack rolls that target other creatures."
+						, "effect": "As 23–27, but the creature takes advantage and gains a +4 bonus to its next <em>psychic duel</em> check instead of +2.  In addition, the assassin takes a –2 penalty to attack rolls that target other creatures."
 					}
 				]
 				, "nastierSpecials": []
@@ -15867,7 +15867,7 @@
 					}
 					, {
 						"name": "Lock shields"
-						, "effect": "For each other kobold bravescale next to the bravescale or engaged with a creature that this bravescale is engaged with, the bravescale gains a +2 bonus to AC (maximum of +4), and each enemy engaged with the bravescale takes a -2 penalty (maximum of -4) to disengage checks."
+						, "effect": "For each other kobold bravescale next to the bravescale or engaged with a creature that this bravescale is engaged with, the bravescale gains a +2 bonus to AC (maximum of +4), and each enemy engaged with the bravescale takes a –2 penalty (maximum of –4) to disengage checks."
 					}
 				]
 				, "nastierSpecials": []
@@ -16189,7 +16189,7 @@
 						, "modifier": 6
 						, "defence": "PD"
 						, "target": "up to 2 nearby enemies in a group"
-						, "damage": "5 damage, and the target takes a -1 penalty to attacks until the end of its next turn"
+						, "damage": "5 damage, and the target takes a –1 penalty to attacks until the end of its next turn"
 						, "extraEffects": []
 					}
 					, {
@@ -16249,7 +16249,7 @@
 						, "type": "close"
 						, "modifier": 6
 						, "defence": "PD"
-						, "target": "one nearby enemy or a far away enemy at -2 atk"
+						, "target": "one nearby enemy or a far away enemy at –2 atk"
 						, "damage": "3 damage, and roll a d4 for the effect of the flask’s contents"
 						, "extraEffects": [{
 								"trigger": "1. Distilled ankheg spit"
@@ -16265,7 +16265,7 @@
 							}
 							, {
 								"trigger": "4. Kobold blasting powder"
-								, "effect": "There’s a loud bang and the battlefield is obscured with thick smoke.  Each non-kobold creature takes a -2 attack penalty during its next turn."
+								, "effect": "There’s a loud bang and the battlefield is obscured with thick smoke.  Each non-kobold creature takes a –2 attack penalty during its next turn."
 							}
 							, {
 								"trigger": "Natural 1"
@@ -16276,7 +16276,7 @@
 				]
 				, "abilities": [{
 						"name": "Erratic flight"
-						, "effect": "The kobold flings itself from a trebuchet or ignites an unstable alchemical propellant and lands among its enemies.  Each time the kobold uses a move action to fly, roll a d20<br><strong>1</strong>: It crashes and explodes (see <em>mook</em>).<br><strong>2-15</strong>: It lands safely.<br><strong>16+</strong>: It stays aloft and can keep flying."
+						, "effect": "The kobold flings itself from a trebuchet or ignites an unstable alchemical propellant and lands among its enemies.  Each time the kobold uses a move action to fly, roll a d20<br><strong>1</strong>: It crashes and explodes (see <em>mook</em>).<br><strong>2–15</strong>: It lands safely.<br><strong>16+</strong>: It stays aloft and can keep flying."
 					}
 					, {
 						"name": "Evasive"
@@ -16778,7 +16778,7 @@
 						, "damage": "The lich gains a <em>fear aura</em> against the target until the end of the battle"
 						, "extraEffects": [{
 							"trigger": "Fear aura"
-							, "effect": "While engaged with this creature, if the target has 48 hp or fewer, it’s dazed (-4 attack) and does not add the escalation die to its attacks."
+							, "effect": "While engaged with this creature, if the target has 48 hp or fewer, it’s dazed (–4 attack) and does not add the escalation die to its attacks."
 						}]
 					}
 				]
@@ -16852,7 +16852,7 @@
 						, "damage": "30 negative energy damage, and ghostly hands reach up from the ground and grab the target (as they try to pull the target’s spirit out of its body)"
 						, "extraEffects": [{
 								"trigger": "Ghostly grasping hands"
-								, "effect": "When a creature is being grabbed by the ghostly hands, it takes 30 neagtive energy damage at the start of its turn and must make a last gasp save.  On the fourth failed last gasp save, the creature’s soul is torn from it and it dies.  Unconscious creatures take a -4 penalty to their last gasp saves.  Note, grabbed creatures take a -5 penalty to disengage checks."
+								, "effect": "When a creature is being grabbed by the ghostly hands, it takes 30 neagtive energy damage at the start of its turn and must make a last gasp save.  On the fourth failed last gasp save, the creature’s soul is torn from it and it dies.  Unconscious creatures take a –4 penalty to their last gasp saves.  Note, grabbed creatures take a –5 penalty to disengage checks."
 							}
 							, {
 								"trigger": "Limited use"
@@ -16870,7 +16870,7 @@
 						, "damage": "The lich gains a <em>fear aura</em> against the target until the end of the battle"
 						, "extraEffects": [{
 							"trigger": "Fear aura"
-							, "effect": "While engaged with this creature, if the target has 120 hp or fewer, it’s dazed (-4 attack) and does not add the escalation die to its attacks."
+							, "effect": "While engaged with this creature, if the target has 120 hp or fewer, it’s dazed (–4 attack) and does not add the escalation die to its attacks."
 						}]
 					}
 				]
@@ -17339,7 +17339,7 @@
 				]
 				, "abilities": [{
 						"name": "Caught by an eye"
-						, "effect": "Whenever a nearby enemy attacks the medusa noble and rolls a natural 1-5, the medusa can make a <em>petrifying gaze</em> attack against that attacker as a free action."
+						, "effect": "Whenever a nearby enemy attacks the medusa noble and rolls a natural 1–5, the medusa can make a <em>petrifying gaze</em> attack against that attacker as a free action."
 					}
 					, {
 						"name": "Serpent wardings"
@@ -17347,7 +17347,7 @@
 					}
 					, {
 						"name": "Skilled sorcerer"
-						, "effect": "If lightning isn’t working against her target, the medusa noble can take a -2 attack penalty to change the energy type of her ranged attack to fire or thunder."
+						, "effect": "If lightning isn’t working against her target, the medusa noble can take a –2 attack penalty to change the energy type of her ranged attack to fire or thunder."
 					}
 				]
 				, "nastierSpecials": []
@@ -17458,7 +17458,7 @@
 				}
 				, {
 					"name": "Fear"
-					, "effect": "While engaged with this creature, enemies that have 24 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					, "effect": "While engaged with this creature, enemies that have 24 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 				}
 			]
 		}]
@@ -17530,7 +17530,7 @@
 			]
 			, "abilities": [{
 					"name": "Mortal terror"
-					, "effect": "The presence of a mummy unnerves opponents, giving it an unusual <em>fear aura</em>.  While engaged with this creature, enemies that have 200 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks.  Each time an enemy with 200 hp or fewer attacks the mummy, hit or miss, it must roll a save.  On a success, it’s no longer affected by the <em>fear aura</em> effects of any mummy in the battle."
+					, "effect": "The presence of a mummy unnerves opponents, giving it an unusual <em>fear aura</em>.  While engaged with this creature, enemies that have 200 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks.  Each time an enemy with 200 hp or fewer attacks the mummy, hit or miss, it must roll a save.  On a success, it’s no longer affected by the <em>fear aura</em> effects of any mummy in the battle."
 				}
 				, {
 					"name": "Spiritual grit"
@@ -17554,7 +17554,7 @@
 			"name": "Nastier Special"
 			, "traits": [{
 				"name": "Arcane balance"
-				, "description": "Whenever the naga rolls a natural 1-5 with an attack roll, it can cancel one magical effect created by a spell or magic item that is affecting the naga or a nearby creature (including beneficial effect on a PC).  It can be an ongoing effect, an effect that only lasts a round, or even an effect that was supposed to last until the end of the battle.  Use your sense of what is magical and what isn’t: a bard’s song is clearly magical, but a rogue’s Shadow Walk talent probably isn’t, despite the wazard’s arguments that it <em>should</em> be."
+				, "description": "Whenever the naga rolls a natural 1–5 with an attack roll, it can cancel one magical effect created by a spell or magic item that is affecting the naga or a nearby creature (including beneficial effect on a PC).  It can be an ongoing effect, an effect that only lasts a round, or even an effect that was supposed to last until the end of the battle.  Use your sense of what is magical and what isn’t: a bard’s song is clearly magical, but a rogue’s Shadow Walk talent probably isn’t, despite the wazard’s arguments that it <em>should</em> be."
 			}]
 		}]
 		, "monsters": [{
@@ -18062,7 +18062,7 @@
 					}
 					, {
 						"name": "Demonic eruption"
-						, "effect": "When the escalation die is 6+, the demonic ogre rolls a normal save at the start of each of its turns.  On a success, roll a d6 and replace the demonic ogre with a new undamged demon.  1-2: Imp; 3-4: Despoiler; 5: Frenzy demon; 6: Cambion sickle."
+						, "effect": "When the escalation die is 6+, the demonic ogre rolls a normal save at the start of each of its turns.  On a success, roll a d6 and replace the demonic ogre with a new undamged demon.  1–2: Imp; 3–4: Despoiler; 5: Frenzy demon; 6: Cambion sickle."
 					}
 				]
 				, "nastierSpecials": [{
@@ -18667,7 +18667,7 @@
 						, "target": ""
 						, "damage": "75 damage"
 						, "extraEffects": [{
-							"trigger": "Natural 2-5"
+							"trigger": "Natural 2–5"
 							, "effect": "The prismatic ogre mage can use <em>prismatic blast</em> as a free action without provoking an opportunity attack."
 						}]
 					}
@@ -18919,7 +18919,7 @@
 					}
 					, {
 						"name": "Nocturnal predator"
-						, "effect": "If the battle is at night (or in darkness), the orc gains +6 to initiative (to +12), and a +2 attack bonus.  If the battle is during the day (or in daylight) it takes a -2 penalty to all defences."
+						, "effect": "If the battle is at night (or in darkness), the orc gains +6 to initiative (to +12), and a +2 attack bonus.  If the battle is during the day (or in daylight) it takes a –2 penalty to all defences."
 					}
 				]
 				, "nastierSpecials": []
@@ -18962,23 +18962,23 @@
 					}
 					, {
 						"name": "Filthy Fever Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Slight temperature</li><li><em>2-3.</em> The runs.  You gain 1 less recovery than normal after a full heal-up due to fluid loss</li><li><em>4+.</em> You have a hacking cough that sounds like insane laughter and are losing fluids.  You gain 2 fewer recoveries than normal after a full heal-up and can’t remain silent</li></ul>"
+						, "effect": "<ul><li><em>1.</em> Slight temperature</li><li><em>2–3.</em> The runs.  You gain 1 less recovery than normal after a full heal-up due to fluid loss</li><li><em>4+.</em> You have a hacking cough that sounds like insane laughter and are losing fluids.  You gain 2 fewer recoveries than normal after a full heal-up and can’t remain silent</li></ul>"
 					}
 					, {
 						"name": "Chatter Pox Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Unsightly and painful sores, occasional shivers</li><li><em>2-3.</em> Running sores, shivering and chattering teeth.  You take a -3 penalty to social skill checks and to attack rolls with spells</li><li><em>4.</em> Infected sores, fever dreams.  Your constitution is weakened.  After each full heal-up, roll 1d4 + 3 to determine your starting maximum recoveries for that day.  Each time you cast a spell that isn’t a at-will, there’s a 25% chance it fails (but you don’t expend the spell)</li></ul>"
+						, "effect": "<ul><li><em>1.</em> Unsightly and painful sores, occasional shivers</li><li><em>2–3.</em> Running sores, shivering and chattering teeth.  You take a –3 penalty to social skill checks and to attack rolls with spells</li><li><em>4.</em> Infected sores, fever dreams.  Your constitution is weakened.  After each full heal-up, roll 1d4 + 3 to determine your starting maximum recoveries for that day.  Each time you cast a spell that isn’t a at-will, there’s a 25% chance it fails (but you don’t expend the spell)</li></ul>"
 					}
 					, {
 						"name": "Slug Scourge Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Extreme appetite, nausea</li><li><em>2-3.</em> Vomiting up slugs.  Whenever you make a non-combat Charisma check, roll 2d20 and take the lower result</li><li><em>4+.</em> The slugs are inside your lungs!  After each quick rest, you lost 25% of your maximum hit points.  If you drop this way, you enter into a coma until the next day</li></ul>"
+						, "effect": "<ul><li><em>1.</em> Extreme appetite, nausea</li><li><em>2–3.</em> Vomiting up slugs.  Whenever you make a non-combat Charisma check, roll 2d20 and take the lower result</li><li><em>4+.</em> The slugs are inside your lungs!  After each quick rest, you lost 25% of your maximum hit points.  If you drop this way, you enter into a coma until the next day</li></ul>"
 					}
 					, {
 						"name": "Red Fever Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Scarlet stripes on the eyeballs, itching, buzzing in ears</li><li><em>2-3.</em> Blurred vision.  You take a -3 penalty to ranged attacks</li><li><em>4+.</em> Fever, rage, and confusion.  Whenever you roll a natural odd attack roll, you are confused until the end of your next turn.  Ranged attacks have a 25% chance of accidently targeting an ally (check before making the attack roll)</li></ul>"
+						, "effect": "<ul><li><em>1.</em> Scarlet stripes on the eyeballs, itching, buzzing in ears</li><li><em>2–3.</em> Blurred vision.  You take a –3 penalty to ranged attacks</li><li><em>4+.</em> Fever, rage, and confusion.  Whenever you roll a natural odd attack roll, you are confused until the end of your next turn.  Ranged attacks have a 25% chance of accidently targeting an ally (check before making the attack roll)</li></ul>"
 					}
 					, {
 						"name": "Disease Severity"
-						, "effect": "Con check each day; result affects d6 symptoms roll.<ul><li><em>1-14.</em> d6 + 3</li><li><em>15-19.</em> d6 + 2</li><li><em>20-24.</em> d6 + 1</li><li><em>25-29.</em> d6 + 0</li><li><em>30+.</em> Cured</li></ul>"
+						, "effect": "Con check each day; result affects d6 symptoms roll.<ul><li><em>1–14.</em> d6 + 3</li><li><em>15–19.</em> d6 + 2</li><li><em>20–24.</em> d6 + 1</li><li><em>25–29.</em> d6 + 0</li><li><em>30+.</em> Cured</li></ul>"
 					}
 				]
 				, "nastierSpecials": []
@@ -19309,8 +19309,8 @@
 						, "target": ""
 						, "damage": "7 damage"
 						, "extraEffects": [{
-							"trigger": "Natural 1-5"
-							, "effect": "Reroll the attack against a random nearby creature.  If the rerolled attack is also a natural 1-5, the orcish archer takes 3 damage from sheer agonised frustration, but it doesn’t get to make another attack."
+							"trigger": "Natural 1–5"
+							, "effect": "Reroll the attack against a random nearby creature.  If the rerolled attack is also a natural 1–5, the orcish archer takes 3 damage from sheer agonised frustration, but it doesn’t get to make another attack."
 						}]
 					}
 				]
@@ -19452,7 +19452,7 @@
 				}
 				, {
 					"name": "Silent hunter"
-					, "effect": "Owlbears are nearly silent until they strike.  Checks to hear them approaching take a -5 penalty."
+					, "effect": "Owlbears are nearly silent until they strike.  Checks to hear them approaching take a –5 penalty."
 				}
 			]
 			, "nastierSpecials": []
@@ -19502,7 +19502,7 @@
 			]
 			, "abilities": [{
 					"name": "Phasing abilities"
-					, "effect": "As long as it didn’t just return from being out of phase, at the start of the phase spider’s turn, roll a d6 to see which of its phase and teleport abilities it can access that turn.  The spider doesn’t have to use the available ability and can attack normally, if it wishes.<ul><li><strong>1-2:</strong> <em>Short teleport:</em> As a move action, the spider can teleport anywhere it can see nearby</li><li><strong>3:</strong> <em>Long teleport:</em> As a move action, the spider can teleport anywhere it can see nearby or far away</li><li><strong>4-5:</strong> <em>Phase out:</em> As a move action, the spider can remove itself from the battlefield, returning on its next initiative turn anywhere it choose nearby.  It doesn’t get to make a phase roll at the start of its next turn though</li><li><strong>6:</strong> <em>Teleport away:</em> If the spider has stolen at least one magic item, as a move action it can teleport back to its lair, or to its master if it has one.  It leaves the battle.  If it hasn’t stolen an item yet, it won’t leave and can use its choice of the other abilities this turn</li></ul>"
+					, "effect": "As long as it didn’t just return from being out of phase, at the start of the phase spider’s turn, roll a d6 to see which of its phase and teleport abilities it can access that turn.  The spider doesn’t have to use the available ability and can attack normally, if it wishes.<ul><li><strong>1–2:</strong> <em>Short teleport:</em> As a move action, the spider can teleport anywhere it can see nearby</li><li><strong>3:</strong> <em>Long teleport:</em> As a move action, the spider can teleport anywhere it can see nearby or far away</li><li><strong>4–5:</strong> <em>Phase out:</em> As a move action, the spider can remove itself from the battlefield, returning on its next initiative turn anywhere it choose nearby.  It doesn’t get to make a phase roll at the start of its next turn though</li><li><strong>6:</strong> <em>Teleport away:</em> If the spider has stolen at least one magic item, as a move action it can teleport back to its lair, or to its master if it has one.  It leaves the battle.  If it hasn’t stolen an item yet, it won’t leave and can use its choice of the other abilities this turn</li></ul>"
 				}
 				, {
 					"name": "Stolen items"
@@ -19637,7 +19637,7 @@
 						, "target": ""
 						, "damage": "8 damage"
 						, "extraEffects": [{
-							"trigger": "Natural 1-5"
+							"trigger": "Natural 1–5"
 							, "effect": "The claw flower takes 1d4 damage from burst roots."
 						}]
 					}
@@ -19842,7 +19842,7 @@
 								, "effect": "Half damage."
 							}
 							, {
-								"trigger": "Natural 1-2"
+								"trigger": "Natural 1–2"
 								, "effect": "The worm and any creatures it has swallowed take 8d6 damage (but it still deals miss damage on a 2)."
 							}
 							, {
@@ -20020,8 +20020,8 @@
 								, "effect": "Half damage."
 							}
 							, {
-								"trigger": "Natural 1-5"
-								, "effect": "The worm takes 10 damage (but it still deals miss damage on a 2-5)."
+								"trigger": "Natural 1–5"
+								, "effect": "The worm takes 10 damage (but it still deals miss damage on a 2–5)."
 							}
 							, {
 								"trigger": "Limited use"
@@ -20456,11 +20456,11 @@
 					}
 					, {
 						"name": "Remorhaz steamer"
-						, "effect": "The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air.  Ranged attacks against the remorhaz take a -2 penalty, or a -4 penalty if the attacker is far away."
+						, "effect": "The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air.  Ranged attacks against the remorhaz take a –2 penalty, or a –4 penalty if the attacker is far away."
 					}
 					, {
 						"name": "Spiney remorhaz"
-						, "effect": "The remorhaz is covered in red-hot spines.  When a nearby enemy rolls a natural 1-5 with an attack roll, it takes 20 fire damage unless it has somehow protected itself from the heat."
+						, "effect": "The remorhaz is covered in red-hot spines.  When a nearby enemy rolls a natural 1–5 with an attack roll, it takes 20 fire damage unless it has somehow protected itself from the heat."
 					}
 				]
 			}
@@ -20623,11 +20623,11 @@
 					}
 					, {
 						"name": "Remorhaz steamer"
-						, "effect": "The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air.  Ranged attacks against the remorhaz take a -2 penalty, or a -4 penalty if the attacker is far away."
+						, "effect": "The remorhaz is melting the ice/snow all the time and obscuring steam rises into the air.  Ranged attacks against the remorhaz take a –2 penalty, or a –4 penalty if the attacker is far away."
 					}
 					, {
 						"name": "Spiney remorhaz"
-						, "effect": "The remorhaz is covered in red-hot spines.  When a nearby enemy rolls a natural 1-5 with an attack roll, it takes 30 fire damage unless it has somehow protected itself from the heat."
+						, "effect": "The remorhaz is covered in red-hot spines.  When a nearby enemy rolls a natural 1–5 with an attack roll, it takes 30 fire damage unless it has somehow protected itself from the heat."
 					}
 				]
 			}
@@ -20864,7 +20864,7 @@
 						, "type": "ranged"
 						, "modifier": 9
 						, "defence": "AC"
-						, "target": "one nearby enemy, or a far away enemy at -2 atk"
+						, "target": "one nearby enemy, or a far away enemy at –2 atk"
 						, "damage": "10 damage, and 5 ongoing damage"
 						, "extraEffects": []
 					}
@@ -20920,19 +20920,19 @@
 						, "target": "1d3 nearby enemies"
 						, "damage": "12 psychic damage, and if the attack hits 2 or more targets, roll 1d8 after the tattack for the prayer’s effect"
 						, "extraEffects": [{
-								"trigger": "1-2 (Hymn of hate)"
+								"trigger": "1–2 (Hymn of hate)"
 								, "effect": "One random nearby conscious enemy takes 4d6 negative energy damage."
 							}
 							, {
-								"trigger": "3-4 (Curse of despair)"
-								, "effect": "Each target that was hit takes a -2 penalty (non-cumulative) to all saves until the end of the battle."
+								"trigger": "3–4 (Curse of despair)"
+								, "effect": "Each target that was hit takes a –2 penalty (non-cumulative) to all saves until the end of the battle."
 							}
 							, {
-								"trigger": "5-6 (Scream of victory)"
+								"trigger": "5–6 (Scream of victory)"
 								, "effect": "Until the start of the glowpriest’s next turn, each sahuagin and demon in the battle adds the escalation die to its attacks and the PCs don’t."
 							}
 							, {
-								"trigger": "7-8 (Word of refuge)"
+								"trigger": "7–8 (Word of refuge)"
 								, "effect": "Remove the glowpriest from play.  At the start of its next turn, return it to play nearby its original location.  It gains a +4 bonus to all defences until the end of its next turn after it returns to play."
 							}
 						]
@@ -21101,7 +21101,7 @@
 					}
 					, {
 						"name": "Shredder"
-						, "effect": "When an enemy misses with a melee attack against an iron sea shark and rolls a natural 1-5, the attacker takes 2d6 damage."
+						, "effect": "When an enemy misses with a melee attack against an iron sea shark and rolls a natural 1–5, the attacker takes 2d6 damage."
 					}
 					, {
 						"name": "Water breather"
@@ -21159,7 +21159,7 @@
 				]
 				, "abilities": [{
 						"name": "Beyond saving"
-						, "effect": "The avenging orb takes a -5 penalty to saving throws."
+						, "effect": "The avenging orb takes a –5 penalty to saving throws."
 					}
 					, {
 						"name": "History of abuse"
@@ -21209,7 +21209,7 @@
 				]
 				, "abilities": [{
 					"name": "Beyond saving"
-					, "effect": "The destroying sword takes a -5 penalty to saving throws."
+					, "effect": "The destroying sword takes a –5 penalty to saving throws."
 				}]
 				, "nastierSpecials": []
 			}
@@ -21247,7 +21247,7 @@
 					}
 					, {
 						"name": "Beyond saving"
-						, "effect": "The enduring shield takes a -5 penalty to saving throws."
+						, "effect": "The enduring shield takes a –5 penalty to saving throws."
 					}
 					, {
 						"name": "Supernatural endurance"
@@ -21375,7 +21375,7 @@
 				}]
 				, "abilities": [{
 						"name": "Chomp chomp chomp"
-						, "effect": "Enemies with a lower initiative than the hound take a -5 penalty to disengage checks against it."
+						, "effect": "Enemies with a lower initiative than the hound take a –5 penalty to disengage checks against it."
 					}
 					, {
 						"name": "Skilled intercept 11+"
@@ -22033,7 +22033,7 @@
 				}
 				, {
 					"name": "Inflexible"
-					, "effect": "The tarrasque can’t easily fight foes that get onto its back, and may not even notice them if they aren’t attacking it.  When it does tire of a passenger, it can either use its <em>tail slam</em> attack (-2 attack penalty: on a hit, the target only takes half damage and is knocked off the tarrasque [possibly falling damage]; on a miss, the target takes no damage) or a <em>drag</em> attack as a standard action, crushing the rider between its shell and a mountainside or other high, hard obstacle."
+					, "effect": "The tarrasque can’t easily fight foes that get onto its back, and may not even notice them if they aren’t attacking it.  When it does tire of a passenger, it can either use its <em>tail slam</em> attack (–2 attack penalty: on a hit, the target only takes half damage and is knocked off the tarrasque [possibly falling damage]; on a miss, the target takes no damage) or a <em>drag</em> attack as a standard action, crushing the rider between its shell and a mountainside or other high, hard obstacle."
 				}
 				, {
 					"name": "Legendary resistance"
@@ -22049,12 +22049,12 @@
 				}
 				, {
 					"name": "Soft-ish innerbelly"
-					, "effect": "The tarrasque doesn’t have scales on the inside.  It takes a -5 penalty to all defences against attacks from inside its gullet, though only melee and close attacks can be made in there.  The tarrasque’s insides are immune to acid damage, however."
+					, "effect": "The tarrasque doesn’t have scales on the inside.  It takes a –5 penalty to all defences against attacks from inside its gullet, though only melee and close attacks can be made in there.  The tarrasque’s insides are immune to acid damage, however."
 				}
 			]
 			, "nastierSpecials": [{
 					"name": "Fear"
-					, "effect": "While engaged with the tarrasque, enemies that have 216 hp or fewer are dazed (-4 attack) and do not add the escalation die to their attacks."
+					, "effect": "While engaged with the tarrasque, enemies that have 216 hp or fewer are dazed (–4 attack) and do not add the escalation die to their attacks."
 				}
 				, {
 					"name": "Regeneration 230"
@@ -22238,19 +22238,19 @@
 			, {
 				"name": "Trog stench penalty"
 				, "traits": [{
-						"name": "-4"
+						"name": "–4"
 						, "description": "Elves, gnolls, gnomes"
 					}
 					, {
-						"name": "-3"
+						"name": "–3"
 						, "description": "Humans, halflings, half-elves, holy ones, tieflings, almost everyone else"
 					}
 					, {
-						"name": "-2"
+						"name": "–2"
 						, "description": "Half-orcs, dragonics"
 					}
 					, {
-						"name": "-1"
+						"name": "–1"
 						, "description": "Dwarves"
 					}
 					, {
@@ -22301,7 +22301,7 @@
 				]
 				, "abilities": [{
 					"name": "Chameleon"
-					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a -4 penalty."
+					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a –4 penalty."
 				}]
 				, "nastierSpecials": []
 			}
@@ -22339,7 +22339,7 @@
 						, "type": "ranged"
 						, "modifier": 10
 						, "defence": "MD"
-						, "target": "one nearby enemy, or a far away enemy at -2 atk"
+						, "target": "one nearby enemy, or a far away enemy at –2 atk"
 						, "damage": "10 damage, and the target is again affect by <em>trog stench</em> if it had saved against the effect"
 						, "extraEffects": [{
 							"trigger": "Natural 20"
@@ -22349,7 +22349,7 @@
 				]
 				, "abilities": [{
 					"name": "Chameleon"
-					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a -4 penalty."
+					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a –4 penalty."
 				}]
 				, "nastierSpecials": []
 			}
@@ -22394,7 +22394,7 @@
 				]
 				, "abilities": [{
 					"name": "Chameleon"
-					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a -4 penalty."
+					, "effect": "Underground, or in swamps and rivers, attacks against troglodytes by enemies who aren’t engaged with them take a –4 penalty."
 				}]
 				, "nastierSpecials": []
 			}
@@ -22506,7 +22506,7 @@
 						, "damage": "50 negative energy damage"
 						, "extraEffects": [{
 							"trigger": "Natural 11+"
-							, "effect": "The target is also weakened until the end of its next turn (-4 attacks and defences).  In addition, the target expends one unused limited trait (a spell, power, or talent with a once-per-battle or daily use, but not magic item powers) of its choice."
+							, "effect": "The target is also weakened until the end of its next turn (–4 attacks and defences).  In addition, the target expends one unused limited trait (a spell, power, or talent with a once-per-battle or daily use, but not magic item powers) of its choice."
 						}]
 					}
 					, {
@@ -22519,7 +22519,7 @@
 						, "damage": "The target is confused and vulnerable ((save ends)"
 						, "extraEffects": [{
 							"trigger": "Limited use"
-							, "effect": "The vampire can use <em>vampiric compulsion</em> as a free action only when a nearby enemy attacks the vampire and misses with a natural attack roll of 1-5."
+							, "effect": "The vampire can use <em>vampiric compulsion</em> as a free action only when a nearby enemy attacks the vampire and misses with a natural attack roll of 1–5."
 						}]
 					}
 				]
@@ -22572,7 +22572,7 @@
 						, "modifier": 14
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "7 damage, and a humanoid target is weakened (-4 attack and defences) until the end of the vampire spawn’s next turn"
+						, "damage": "7 damage, and a humanoid target is weakened (–4 attack and defences) until the end of the vampire spawn’s next turn"
 						, "extraEffects": []
 					}
 				]
@@ -22621,19 +22621,19 @@
 						, "target": ""
 						, "damage": "Roll 2d20 and use each roll (or a lower result of your choice) to determine one effect"
 						, "extraEffects": [{
-								"trigger": "1-5"
+								"trigger": "1–5"
 								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
 							}
 							, {
-								"trigger": "6-10"
+								"trigger": "6–10"
 								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d8 psychic damage."
 							}
 							, {
-								"trigger": "11-15"
+								"trigger": "11–15"
 								, "effect": "Until the end of the battle, each ally in the warbanner’s band gains a +2 cumulative bonus to damage on hits with melee attacks."
 							}
 							, {
-								"trigger": "16-20"
+								"trigger": "16–20"
 								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
 							}
 						]
@@ -22712,19 +22712,19 @@
 						, "target": ""
 						, "damage": "Roll 2d20 and use each roll (or a lower result of your choice) to determine one effect"
 						, "extraEffects": [{
-								"trigger": "1-5"
+								"trigger": "1–5"
 								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
 							}
 							, {
-								"trigger": "6-10"
+								"trigger": "6–10"
 								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d10 psychic damage."
 							}
 							, {
-								"trigger": "11-15"
+								"trigger": "11–15"
 								, "effect": "If any mooks in the warbanner’s band have dropped this battle, return one of those mooks to the battle next to the warbanner.  (If the warbanner has no mooks in its band, choose a lower result.)"
 							}
 							, {
-								"trigger": "16-20"
+								"trigger": "16–20"
 								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
 							}
 						]
@@ -22803,19 +22803,19 @@
 						, "target": ""
 						, "damage": "Roll 2d20 and use each roll (or a lower result of your choice) to determine one effect"
 						, "extraEffects": [{
-								"trigger": "1-5"
+								"trigger": "1–5"
 								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
 							}
 							, {
-								"trigger": "6-10"
+								"trigger": "6–10"
 								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d6 psychic damage."
 							}
 							, {
-								"trigger": "11-15"
+								"trigger": "11–15"
 								, "effect": "If any mooks in the warbanner’s band have dropped this battle, return one of those mooks to the battle next to the warbanner.  (If the warbanner has no mooks in its band, choose a lower result.)"
 							}
 							, {
-								"trigger": "16-20"
+								"trigger": "16–20"
 								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
 							}
 						]
@@ -22925,19 +22925,19 @@
 						, "target": ""
 						, "damage": "Roll 2d20 and use each roll (or lower result of your choice) to determine one effect"
 						, "extraEffects": [{
-								"trigger": "1-5"
+								"trigger": "1–5"
 								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
 							}
 							, {
-								"trigger": "6-10"
+								"trigger": "6–10"
 								, "effect": "Add a 3<sup>rd</sup> level orc mook to the warbanner’s band."
 							}
 							, {
-								"trigger": "11-15"
+								"trigger": "11–15"
 								, "effect": "The warbanner can make a <em>flagspear</em> attack as a free action."
 							}
 							, {
-								"trigger": "16-20"
+								"trigger": "16–20"
 								, "effect": "The warbanner can make a <em>false rally</em> attack as a free action."
 							}
 						]
@@ -23133,15 +23133,15 @@
 								, "effect": "Until the target saves, roll a d6 at the start of each of its turns.  It takes the corresponding action for its full turn instead of its normal turn:"
 							}
 							, {
-								"trigger": "1-2"
+								"trigger": "1–2"
 								, "effect": "The target takes 10 damage as it bites itself."
 							}
 							, {
-								"trigger": "3-4"
+								"trigger": "3–4"
 								, "effect": "The target makes a basic attack against its nearest or most vulnerable ally (moving to that target if necessary)."
 							}
 							, {
-								"trigger": "5-6"
+								"trigger": "5–6"
 								, "effect": "The target attacks the wendigo if it can; otherwise, it does nothing."
 							}
 						]
@@ -23202,7 +23202,7 @@
 					}
 					, {
 						"name": "Cursed bite (hybrid or animal form only)"
-						, "description": "While the moon is full, the first time each battle a creature takes damage from a werebeast melee attack, it takes 10 extra damage (champion: 20 damage; epic: 40 damage).  The malignant curse, transmitted through the attack, shocks the mortal flesh.  Further attacks, even from weres of different types, don’t cause extra damage.  Unless blessed, purged, or otherwise cured, the damaged creature will turn into a werebeast on the night of the next full moon.  Heroes powerful enough to fight werebeasts can usually find benefactors or rituals to cure them, but there’s an exception to every rule.  GM, if you’re unsure whether it’s a full moon, roll a d10.  On a 1-3, the moon is full enough."
+						, "description": "While the moon is full, the first time each battle a creature takes damage from a werebeast melee attack, it takes 10 extra damage (champion: 20 damage; epic: 40 damage).  The malignant curse, transmitted through the attack, shocks the mortal flesh.  Further attacks, even from weres of different types, don’t cause extra damage.  Unless blessed, purged, or otherwise cured, the damaged creature will turn into a werebeast on the night of the next full moon.  Heroes powerful enough to fight werebeasts can usually find benefactors or rituals to cure them, but there’s an exception to every rule.  GM, if you’re unsure whether it’s a full moon, roll a d10.  On a 1–3, the moon is full enough."
 					}
 					, {
 						"name": "Resilient shifting (all three forms)"
@@ -23573,7 +23573,7 @@
 			]
 			, "abilities": [{
 					"name": "Saw it coming"
-					, "effect": "Twice per battle as a free action, the prophet can try to avoid a non-critical attack that hits it.  The attacker must reroll the attack roll with a -4 penalty."
+					, "effect": "Twice per battle as a free action, the prophet can try to avoid a non-critical attack that hits it.  The attacker must reroll the attack roll with a –4 penalty."
 				}
 				, {
 					"name": "Knows the angles"
@@ -23633,7 +23633,7 @@
 				}
 				, {
 					"name": "Whiff and wibble"
-					, "effect": "When a creature makes a non-spell attack against a wibble and rolls a natural 1-2, 1d3 new wibbles are created in the same area.  These new wibbles typically melt back into their “parent” at the end of a battle if not destroyed, but sometimes they remain separate and drift off on their own."
+					, "effect": "When a creature makes a non-spell attack against a wibble and rolls a natural 1–2, 1d3 new wibbles are created in the same area.  These new wibbles typically melt back into their “parent” at the end of a battle if not destroyed, but sometimes they remain separate and drift off on their own."
 				}
 			]
 			, "nastierSpecials": []
@@ -24251,7 +24251,7 @@
 								, "effect": "The target can’t heal using its own recoveries (save ends)."
 							}
 							, {
-								"trigger": "Natural 1-5"
+								"trigger": "Natural 1–5"
 								, "effect": "The dusk zorigami can make a <em>shaking the hourglass</em> attack against a single target as a free action."
 							}
 						]
