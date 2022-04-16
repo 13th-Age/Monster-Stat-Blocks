@@ -793,7 +793,7 @@
 						, "modifier": 8
 						, "defence": "MD"
 						, "target": ""
-						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
 						, "extraEffects": [{
 								"trigger": "Failed save"
 								, "effect": "The target’s blood begins to coagulate and harden, and dust puffs out of their lungs through their mouth."
@@ -858,7 +858,7 @@
 						, "modifier": 8
 						, "defence": "MD"
 						, "target": ""
-						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
 						, "extraEffects": [{
 								"trigger": "Failed save"
 								, "effect": "The target takes 25 poison damage as its blood turns to poison."
@@ -923,7 +923,7 @@
 						, "modifier": 8
 						, "defence": "MD"
 						, "target": ""
-						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
 						, "extraEffects": [{
 								"trigger": "Failed save"
 								, "effect": "The target takes 15 fire damage, and each of the target’s nearby allies takes 5 fire damage as the target’s blood boils under their skin and sprays outward in gouts of liquid fire."
@@ -988,7 +988,7 @@
 						, "modifier": 8
 						, "defence": "MD"
 						, "target": ""
-						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves depending on the basilisk’s type as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
+						, "damage": "5 ongoing poison damage, and the target must start making last gasp saves as it accidently takes a full look at the basilisk.  Constructs and undead are immune to this effect"
 						, "extraEffects": [{
 								"trigger": "Failed save"
 								, "effect": "The target begins to evapourate.  The target must make an immediate normal save (11+) or it loses a chunk of flesh or a limb, whatever is dramatic but will allow the creature to survive (perhaps with minuses until healed)."
@@ -1053,7 +1053,7 @@
 				}]
 				, "abilities": [{
 						"name": "Resist ranged damage 16+"
-						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.  (Shifty spinning bats are hard to hit unless they’re grounded or stuck.)"
+						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
 					}
 					, {
 						"name": "Skittish"
@@ -1124,7 +1124,7 @@
 				]
 				, "abilities": [{
 						"name": "Resist ranged damage 16+"
-						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage.  (Shifty spinning bats are hard to hit unless they’re grounded or stuck.)"
+						, "effect": "When a ranged attack targets this creature while it’s flying, the attacker must roll a natural 16+ on the attack roll or it only deals half damage."
 					}
 					, {
 						"name": "Skittish"
@@ -1269,7 +1269,7 @@
 				, "MD": 11
 				, "HP": 30
 				, "attacks": [{
-					"name": "Swarming bits"
+					"name": "Swarming bites"
 					, "specialTrigger": false
 					, "type": "close"
 					, "modifier": 7
@@ -1293,7 +1293,7 @@
 				, "nastierSpecials": []
 			}
 			, {
-				"name": "Thunder bat"
+				"name": "Thunder Bat"
 				, "source": "Bestiary"
 				, "page": 15
 				, "sizeStrength": "normal"
@@ -1371,7 +1371,7 @@
 						, "modifier": 14
 						, "defence": "PD"
 						, "target": ""
-						, "damage": "25 negative energy damage, and the target takes +1d8 negative energy damage for each relationship point it has with the Lich King"
+						, "damage": "25 negative energy damage, and the target takes +1d8 negative energy damage for each relationship point it has with the bat’s associated icon"
 						, "extraEffects": []
 					}
 					, {
@@ -1537,7 +1537,7 @@
 				}]
 				, "abilities": [{
 						"name": "Into the earth"
-						, "effect": "The first time each round an attack hits the bulette, it can choose to hunker down as a free action.  If it does, it gains a +3 bonus to AC and PD until the start of its next turn.  Force attacks and opporunity attacks don’t trigger this ability.  If the green bulette hunkers down while it’s moving (for example, from a readied action), its movement ends that turn."
+						, "effect": "The first time each round an attack hits the bulette, it can choose to hunker down as a free action.  If it does, it gains a +3 bonus to AC and PD until the start of its next turn.  Force attacks and opportunity attacks don’t trigger this ability.  If the green bulette hunkers down while it’s moving (for example, from a readied action), its movement ends that turn."
 					}
 					, {
 						"name": "Blood-frenzy escalator"
@@ -1599,7 +1599,7 @@
 					}
 					, {
 						"name": "Nowhere to run"
-						, "effect": "The dist-fisher deals double damage against creatures engaged with it in its pit."
+						, "effect": "The dirt-fisher deals double damage against creatures engaged with it in its pit."
 					}
 				]
 				, "nastierSpecials": []
@@ -1706,7 +1706,7 @@
 				]
 				, "nastierSpecials": [{
 						"name": "Chief’s challenge"
-						, "effect": "When the champion issues a <em>champion’s challenge</em>, it only takes a -2 attack penalty against other enemies than its chosen for, but that enemy still takes the -4 attack penalty.  In addition, the champion can use <em>champion’s challenge</em> as a free action when it becomes staggered."
+						, "effect": "When the champion issues a <em>champion’s challenge</em>, it only takes a -2 attack penalty against other enemies than its chosen foe, but that enemy still takes the -4 attack penalty.  In addition, the champion can use <em>champion’s challenge</em> as a free action when it becomes staggered."
 					}
 					, {
 						"name": "Champion’s scorn"
@@ -3161,7 +3161,7 @@
 				]
 				, "abilities": [{
 						"name": "Corruption aura"
-						, "effect": "When an enemy missed the cambion katar with a melee attack, it suffers one of the following effects:"
+						, "effect": "When an enemy misses the cambion katar with a melee attack, it suffers one of the following effects:"
 					}
 					, {
 						"name": "Natural even miss"
@@ -6469,10 +6469,10 @@
 						, "modifier": 7
 						, "defence": "PD"
 						, "target": "1d3 nearby enemies"
-						, "damage": "10 acid damge, 5 ongoing acid damage, and the target is caught in an acidic haze (see below) with an effect that depends on the roll"
+						, "damage": "10 acid damage, 5 ongoing acid damage, and the target is caught in an acidic haze (see below) with an effect that depends on the roll"
 						, "extraEffects": [{
 								"trigger": "Natural even hit"
-								, "effect": "While in the haze, the target is fazzed from choking or blinding."
+								, "effect": "While in the haze, the target is dazed from choking or blinding."
 							}
 							, {
 								"trigger": "Natural odd hit"
@@ -13276,7 +13276,7 @@
 						, "damage": "8 damage"
 						, "extraEffects": [{
 								"trigger": "Natural even hit or miss"
-								, "effect": "Each of the bugbear schemer’s next turn."
+								, "effect": "Each of the bugbear schemer’s nearby humanoid allies gains a +2 bonus to melee attacks until the start of the schemer’s next turn."
 							}
 							, {
 								"trigger": "Natural odd miss"
