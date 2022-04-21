@@ -2084,7 +2084,7 @@
 					, "damage": "3 ongoing damage, or 10 damage if the target is already taking ongoing damage"
 					, "extraEffects": [{
 						"trigger": "Miss"
-						, "effect": "The chaos glorp pops free from all enemies and moves as a free action to engage a nerby enemy taking ongoing damage."
+						, "effect": "The chaos glorp pops free from all enemies and moves as a free action to engage a nearby enemy taking ongoing damage."
 					}]
 				}]
 				, "abilities": [{
@@ -2221,55 +2221,55 @@
 						, "effect": "At the start of the battle each PC rolls one icon relationship die of their choice and one die chosen from their relationships by the GM.  A roll of 6 means the chimera has shifted in a manner that gives it a chimerical flaw (F) that the adventurers can exploit.  A roll of a 5 indicates that the chimera gains both a flaw and a benefit associated with that icon.  A result of 1 or 2 means that the chimera gains the icon’s chimerical benefit (B) without the flaw.  Actual benefits and flaws are up to the GM, and should reflect the icons with which the players have relationships."
 					}
 					, {
-						"name": "Archmage"
+						"name": "Magic Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Bearded spell-eating head</em>: When a spell attack misses the chimera, it has no miss effect and the chimera heals 40 hp.<br>&emsp;<strong>(F)</strong> <em>Vulnerability, melee</em>: The crit range of melee attacks against the chimera expands by 2."
 					}
 					, {
-						"name": "Crusader"
+						"name": "Zealous Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Skin of indomitable faces</em>: When the chimera saves against a condition, it becomes immune to that condition until the end of the battle.<br>&emsp;<strong>(F)</strong> <em>Vulnerability, spells</em>: The crit range of spell attacks against the chimera expands by 2."
 					}
 					, {
-						"name": "Diabolist"
+						"name": "Demonic Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Flaming oil glands</em>: When a creature is engaged with the chimera at the start of its turn, it takes 20 fire damage.<br>&emsp;<strong>(F)</strong> <em>Overconfident predator</em>: Each time the chimera scores a critical hit, it takes a cumulative –2 penalty to all defences."
 					}
 					, {
-						"name": "Dwarf King"
+						"name": "Underground Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Stone-studded dermis</em>: Any damage dice that roll maximum damage against the chimera count as 1s.<br>&emsp;<strong>(F)</strong> <em>Stubborn beast</em>: The chimera won’t willingly disengage from a creature engaged with it."
 					}
 					, {
-						"name": "Elf Queen"
+						"name": "Graceful Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Springing stag legs</em>: When the escalation die is odd, the chimera gains an additional standard action that turn.<br>&emsp;<strong>(F)</strong> <em>Overly gracile</em>: The chimera’s form is unusually frail, and any damage dice that roll 1s against the chimera count as 2s."
 					}
 					, {
-						"name": "Emperor"
+						"name": "Leader Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Mane of scorpion tails</em>: The chimera has a <em>fear aura</em>: Enemies engaged with the chimear who are below 48 hit points are dazed and can’t use the escalation die.<br>&emsp;<strong>(F)</strong> <em>Golden fleece</em>: The chimera has transformed itself into a form that’s gem encrusted with golden fur.  When slain it will yield 1d6 × 100 gp per adventurer in gems and precious metals.  At the GM’s say-so, knowledge of this bounty may grant particularly mercenary characters a +1 attack bonus against the chimera once it’s staggered."
 					}
 					, {
-						"name": "Great Gold Wyrm"
+						"name": "Protector Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Inferno belly</em>: When the chimera makes a <em>fiery breath</em> attack, it can make another <em>fiery breath</em> attack that turn as a quick action.<br>&emsp;<strong>(F)</strong> <em>Flammable blood</em>: When the chimera rolls a natural odd miss with <em>fiery breath</em>, it takes 20 fire damage."
 					}
 					, {
-						"name": "High Druid"
+						"name": "Nature Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Wild heart</em>: The chimera is constantly evolving and changing.  When an enemy rolls a natural 1–5 on an attack roll against it, the chimera adds the escalation die to its attack rolls until the end of its next turn.<br>&emsp;<strong>(F)</strong> <em>Vilnerability, poison</em>: The crit range of poison attacks against the chimera expands by 2."
 					}
 					, {
-						"name": "Lich King"
+						"name": "Undead Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Bone plates</em>: When an enemy rolls a natural even miss with a melee attack against the chimera, the weapon temporarily loses all its bonuses and powers and the wielder is weakened (save ends both).<br>&emsp;<strong>(F)</strong> <em>Vulnerability, holy</em>: The crit range of holy attacks against the chimera expands by 2."
 					}
 					, {
-						"name": "Orc Lord"
+						"name": "Brute Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Mighty tusks</em>: As a standard action, the chimera can make a <em>tusk charge</em> attack.  It can’t make any other attacks the same turn.<br>&emsp;<strong>(F)</strong> <em>Too many horns</em>: The horns and tusks of the chimera lock together at inopportune moments.  When it rolls a natural 1–5 with an attack against multiple targets, it loses any further attacks that turn."
 					}
 					, {
-						"name": "Priestess"
+						"name": "Religious Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Eagle wings</em>: The chimera can fly like an eagle, swooping in and out of the battle.<br>&emsp;<strong>(F)</strong> <em>Vulnerability, negative energy</em>: The crit range of negative energy attacks against the chimera expands by 2."
 					}
 					, {
-						"name": "Prince of Shadows"
+						"name": "Trickster Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Poison fangs</em>: When the chimera rolls a natural 1–5 with an attack and misses, the target takes 20 ongoing poison damage.<br>&emsp;<strong>(F)</strong> <em>Bickering heads</em>: The first time each turn the chimera hits with an attack, it rerolls the attack and takes the lower roll."
 					}
 					, {
-						"name": "The Three"
+						"name": "Draconic Icon"
 						, "effect": "<br>&emsp;<strong>(B)</strong> <em>Draconic sinews</em>: While not staggered, the chimera rolls 2d20 with its melee attacks and uses the higher roll.<br>&emsp;<strong>(F)</strong> <em>Too many wings</em>: Whenever the chimera moves, it rolls an easy save (6+).  On a failure, it provokes opportunity attacks from each nearby enemy."
 					}
 				]
@@ -2386,30 +2386,30 @@
 						, "defence": "PD"
 						, "target": ""
 						, "damage": "The target is weakened (save ends)"
-						, "extraEffects": [{
-								"trigger": "Chuulish Slave Mutations"
-								, "effect": "Choose ONE:"
-							}
-							, {
-								"trigger": "Chitinous plates"
-								, "effect": "The slave gains a +2 AC bonus."
-							}
-							, {
-								"trigger": "Acid saliva"
-								, "effect": "The <em>writhing tentacles</em> attack also deals 10 acid damage on a hit."
-							}
-							, {
-								"trigger": "Poisonous blood"
-								, "effect": "When a melee attack hits the chuulish slave, the attacker takes 10 poison damage."
-							}
-							, {
-								"trigger": "Grossness"
-								, "effect": "The slave is a large blob-like mess.  It has 72 hp but takes a –2 penalty to all defences."
-							}
-						]
+						, "extraEffects": []
 					}
 				]
-				, "abilities": []
+				, "abilities": [{
+						"name": "Chuulish Slave Mutations"
+						, "effect": "Choose ONE:"
+					}
+					, {
+						"name": "Chitinous plates"
+						, "effect": "The slave gains a +2 AC bonus."
+					}
+					, {
+						"name": "Acid saliva"
+						, "effect": "The <em>writhing tentacles</em> attack also deals 10 acid damage on a hit."
+					}
+					, {
+						"name": "Poisonous blood"
+						, "effect": "When a melee attack hits the chuulish slave, the attacker takes 10 poison damage."
+					}
+					, {
+						"name": "Grossness"
+						, "effect": "The slave is a large blob-like mess.  It has 72 hp but takes a –2 penalty to all defences."
+					}
+				]
 				, "nastierSpecials": []
 			}
 			, {
@@ -2581,7 +2581,7 @@
 					}
 					, {
 						"name": "Whipping tentacles"
-						, "effect": "The <em>crippling tentacles</em> attack is not a close attack against 1d3 enemies in a group."
+						, "effect": "The <em>crippling tentacles</em> attack is now a close attack against 1d3 enemies in a group."
 					}
 				]
 				, "nastierSpecials": []
@@ -2593,7 +2593,7 @@
 		, "groupTraits": [{
 			"name": "Icon-centred Abilities"
 			, "traits": [{
-					"name": "Archmage"
+					"name": "Magic Icon"
 					, "description": ""
 				}
 				, {
@@ -2605,28 +2605,28 @@
 					, "description": "<br><strong>C: Comet strike +17 vs. PD (each nearby creature)</strong> - 70 damage<br>&emsp;<em>Natural even miss</em>: The target is weakened (save ends).<br>&emsp;<em>Natural odd miss</em>: 35 damage.<br>&emsp;<em>Limited use</em>: 1/battle, when the escalation die is 2+."
 				}
 				, {
-					"name": "Crusader"
+					"name": "Zealous Icon"
 					, "description": "The couatl gains a +1 bonus to AC and PD.  In addition, all the couatl’s melee attacks deal half damage when they miss."
 				}
 				, {
-					"name": "Diabolist"
+					"name": "Demonic Icon"
 					, "description": "Roll a d6 and a d8 on the Demon Ability table.  If you get the same result, reroll the d8 until you have two <em>different</em> demonic abilities for the couatl."
 				}
 				, {
-					"name": "Dwarf King"
-					, "description": "Secretly roll a d6 at the start of each battle.  If the roll is odd, the PCs can’t use any of their magic items’ powers when the escalation die is odd this battle.  If the roll is even, the PCs can’t use their magic items’ powers when the escalation die is even this battle.  Defauly chakra bonuses still function, but powers don’t.  And for the fun of it, once they’ve been powered off for a turn, all the PCs’ magic items will be freaking out and creating roleplaying havoc by forcing their quirks to the forefront for the rest of the battle."
+					"name": "Underground Icon"
+					, "description": "Secretly roll a d6 at the start of each battle.  If the roll is odd, the PCs can’t use any of their magic items’ powers when the escalation die is odd this battle.  If the roll is even, the PCs can’t use their magic items’ powers when the escalation die is even this battle.  Default chakra bonuses still function, but powers don’t.  And for the fun of it, once they’ve been powered off for a turn, all the PCs’ magic items will be freaking out and creating roleplaying havoc by forcing their quirks to the forefront for the rest of the battle."
 				}
 				, {
-					"name": "Elf Queen"
+					"name": "Graceful Icon"
 					, "description": "At the start of each battle, the couatl gains 1d4 powers of its choice from this list:<br><ul><li><em>Cruel</em>: Once per battle, deal ongoing damage to a target you hit with a natural even attack roll as a free action.  The ongoing damage equals 5 times your level.  As usual, a normal save (11+) ends the damage.  A critical hit doesn’t double this ongoing damage.</li><li><em>Highblood Teleport</em>: Once per battle as a move action, place yourself in a nearby location you can see.</li><li><em>Elven Grace</em>: At the start of each of your turns, roll a die to see if you get an extra standard action.  If your roll is equal to or lower than the escalation die, you get an extra standard action that turn.  At the start of the battle, you roll a d6.  Each time you successfully gain an extra action, the size of the die you roll increases by one step on the following progression: (d4), d6, d8, d10, d12, d20.  If you get an extra action after rolling a d20, you can’t get any more extra actions that battle.</li><li><em>Surprising</em>: Once per batte, subtract one from the natural result of one of your own d20 rolls.</li></ul>"
 				}
 				, {
-					"name": "Emperor"
-					, "description": "The couatl gains a +4 bonus to MD.  It also gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the icon(s) associated with the Lich King or Orc Lord."
+					"name": "Leader Icon"
+					, "description": "The couatl gains a +4 bonus to MD.  It also gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Undead or Brute Icons."
 				}
 				, {
-					"name": "Great Gold Wyrm"
-					, "description": "The couatl gains a +1 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Diabolist or the Three.  In addition, the couatl can use the following attack once per battle:"
+					"name": "Protector Icon"
+					, "description": "The couatl gains a +1 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Demonic or Draconic Icons.  In addition, the couatl can use the following attack once per battle:"
 				}
 				, {
 					"name": "8<sup>th</sup> level"
@@ -2637,19 +2637,19 @@
 					, "description": "<br><strong>C: Golden dragon breath +17 vs. PD (2d4 nearby enemies)</strong> - 90 fire damage<br>&emsp;<em>Miss</em>: Half damage."
 				}
 				, {
-					"name": "High Druid"
-					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with Archmage or Emperor.  In addition, the couatl regenerates 10% of its maximum hit points at the start of its turn when the escalation die is even and it has taken damage."
+					"name": "Nature Icon"
+					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with Magic or Leader Icons.  In addition, the couatl regenerates 10% of its maximum hit points at the start of its turn when the escalation die is even and it has taken damage."
 				}
 				, {
-					"name": "Lich King"
-					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Emperor.  In addtion, all PCs take a –4 penalty to death saves this battle."
+					"name": "Undead Icon"
+					, "description": "The couatl gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Leader Icon.  In addition, all PCs take a –4 penalty to death saves this battle."
 				}
 				, {
-					"name": "Orc Lord"
-					, "description": "The couatl gains a +4 bonus to PD.  It also gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Dwarf King or Elf Queen."
+					"name": "Brute Icon"
+					, "description": "The couatl gains a +4 bonus to PD.  It also gains a +2 bonus to attacks and to all defences against each PC who has one or more icon relationship points with the Underground or Graceful Icon."
 				}
 				, {
-					"name": "Priestess"
+					"name": "Religious Icon"
 					, "description": ""
 				}
 				, {
@@ -2661,8 +2661,8 @@
 					, "description": "<br><strong>C: Visions of a higher plane +17 vs. MD (1d4 nearby enemies)</strong> - 50 psychic damage<br>&emsp;<em>Natural even hit</em>: The target is confused (save ends).<br>&emsp;<em>Natural odd hit</em>: The target treats the escalation die as if it was 0 (not in effect) for its attacks and effects (save ends)."
 				}
 				, {
-					"name": "The Three"
-					, "description": "<em>Intermittent dragon breath</em>: A couatl can use <em>dragon breath</em> 1d3 times per battle, but never two turns in a row.  The couatl’s personal relationship with the Three determines whether the damage is acid, fire, or lightning."
+					"name": "Draconic Icon"
+					, "description": "<em>Intermittent dragon breath</em>: A couatl can use <em>dragon breath</em> 1d3 times per battle, but never two turns in a row.  The couatl’s personal relationship with the Draconic Icon determines whether the damage is acid, fire, or lightning."
 				}
 				, {
 					"name": "8<sup>th</sup> level"
@@ -2675,85 +2675,6 @@
 			]
 		}]
 		, "monsters": [{
-				"name": "Elder Couatl"
-				, "source": "Bestiary"
-				, "page": 53
-				, "sizeStrength": "large"
-				, "threat": "normal"
-				, "level": 11
-				, "role": "spoiler"
-				, "type": "beast"
-				, "initiative": 16
-				, "vulnerability": ""
-				, "AC": 27
-				, "PD": 24
-				, "MD": 24
-				, "HP": 600
-				, "attacks": [{
-						"name": "Rippling scales"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 17
-						, "defence": "PD"
-						, "target": "each enemy engaged with it"
-						, "damage": "25 damage, and the couatl must pop free from the target"
-						, "extraEffects": [{
-							"trigger": "Quick use"
-							, "effect": "This attack only requires a quick action (once per round) to use."
-						}]
-					}
-					, {
-						"name": "Serpert strike"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 17
-						, "defence": "AC"
-						, "target": "one dazed, confused, staggered, or stunned enemy"
-						, "damage": "110 damage, and 40 ongoing poison damage"
-						, "extraEffects": []
-					}
-					, {
-						"name": "Forked devastation"
-						, "specialTrigger": false
-						, "type": "ranged"
-						, "modifier": 17
-						, "defence": "PD"
-						, "target": "one nearby or far away enemy"
-						, "damage": "90 damage of the following type (couatl’s choice): fire, holy, or lightning"
-						, "extraEffects": [{
-							"trigger": "Natural even hit or miss"
-							, "effect": "The couatl can make a <em>forked devastation</em> attack against a different enemy as a free action."
-						}]
-					}
-				]
-				, "abilities": [{
-						"name": "Cyclic salvation escalator"
-						, "effect": "When the escalation die is even, the couatl adds the escalation die to its attack rolls and saves."
-					}
-					, {
-						"name": "Flight"
-						, "effect": "Couatls fly and hover so smoothly on their multi-coloured wings that other fliers get jealous."
-					}
-					, {
-						"name": "One or two icon-centric abilities"
-						, "effect": "Choose each appropriate ability from the couatl’s Icon-centered Abilities list."
-					}
-					, {
-						"name": "Resist holy and poison 16+"
-						, "effect": "When a holy or poison attack targets this creature, the attacker must roll a natural 16+ on the attack roll or only deals half damage."
-					}
-				]
-				, "nastierSpecials": [{
-						"name": "Ever-rippling"
-						, "effect": "The couatl can use more than one <em>rippling scales</em> attack during its turn."
-					}
-					, {
-						"name": "Flee"
-						, "effect": "Once per campaign, the couatl can take a “campaign loss” similar to the PC-orientated flee special action to escape from certain death, along with its allies."
-					}
-				]
-			}
-			, {
 				"name": "Couatl"
 				, "source": "Bestiary"
 				, "page": 52
@@ -2798,7 +2719,7 @@
 						, "modifier": 13
 						, "defence": "PD"
 						, "target": "one nearby or far away enemy"
-						, "damage": "50 damage of the following type (couatl’s choice): fire, holy, or lightning"
+						, "damage": "50 damage of the following type (couatl’s choice): Fire, holy, or lightning"
 						, "extraEffects": [{
 							"trigger": "Natural even hit or miss"
 							, "effect": "The couatl can make a <em>forked devastation</em> attack against a different enemy as a free action."
@@ -2829,6 +2750,85 @@
 					, {
 						"name": "One or two icon-centric abilities"
 						, "effect": "Choose each appropriate ability from the couatl’s Icon-centered Abilities list."
+					}
+				]
+			}
+			, {
+				"name": "Elder Couatl"
+				, "source": "Bestiary"
+				, "page": 53
+				, "sizeStrength": "large"
+				, "threat": "normal"
+				, "level": 11
+				, "role": "spoiler"
+				, "type": "beast"
+				, "initiative": 16
+				, "vulnerability": ""
+				, "AC": 27
+				, "PD": 24
+				, "MD": 24
+				, "HP": 600
+				, "attacks": [{
+						"name": "Rippling scales"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "each enemy engaged with it"
+						, "damage": "25 damage, and the couatl must pop free from the target"
+						, "extraEffects": [{
+							"trigger": "Quick use"
+							, "effect": "This attack only requires a quick action (once per round) to use."
+						}]
+					}
+					, {
+						"name": "Serpert strike"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 17
+						, "defence": "AC"
+						, "target": "one dazed, confused, staggered, or stunned enemy"
+						, "damage": "110 damage, and 40 ongoing poison damage"
+						, "extraEffects": []
+					}
+					, {
+						"name": "Forked devastation"
+						, "specialTrigger": false
+						, "type": "ranged"
+						, "modifier": 17
+						, "defence": "PD"
+						, "target": "one nearby or far away enemy"
+						, "damage": "90 damage of the following type (couatl’s choice): Fire, holy, or lightning"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The couatl can make a <em>forked devastation</em> attack against a different enemy as a free action."
+						}]
+					}
+				]
+				, "abilities": [{
+						"name": "Cyclic salvation escalator"
+						, "effect": "When the escalation die is even, the couatl adds the escalation die to its attack rolls and saves."
+					}
+					, {
+						"name": "Flight"
+						, "effect": "Couatls fly and hover so smoothly on their multi-coloured wings that other fliers get jealous."
+					}
+					, {
+						"name": "One or two icon-centric abilities"
+						, "effect": "Choose each appropriate ability from the couatl’s Icon-centered Abilities list."
+					}
+					, {
+						"name": "Resist holy and poison 16+"
+						, "effect": "When a holy or poison attack targets this creature, the attacker must roll a natural 16+ on the attack roll or only deals half damage."
+					}
+				]
+				, "nastierSpecials": [{
+						"name": "Ever-rippling"
+						, "effect": "The couatl can use more than one <em>rippling scales</em> attack during its turn."
+					}
+					, {
+						"name": "Flee"
+						, "effect": "Once per campaign, the couatl can take a “campaign loss” similar to the PC-orientated flee special action to escape from certain death, along with its allies."
 					}
 				]
 			}
