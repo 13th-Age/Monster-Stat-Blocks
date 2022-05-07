@@ -3947,7 +3947,7 @@
 					}
 					, {
 						"name": "Special Dybbuk Abilities"
-						, "effect": "Choose ONE of <em>visage of innocence</em>, <em>horrific visage</em>, or <em>puppet strings</em>."
+						, "effect": "Choose ONE of <em>visage of innocence</em>, <em>horrific visage</em>, <em>puppet strings</em>, <em>scratching nails</em>, or <em>warped flesh</em>."
 					}
 					, {
 						"name": "Scratching nails"
@@ -8682,7 +8682,7 @@
 						, "description": "Choose an ability for all non-mook drow in a battle to have."
 					}
 					, {
-						"name": "Potions and Potions"
+						"name": "Poisons and Potions"
 						, "description": "Drinking a potion, applying a poison, or using a substance requires only a quick action for a drow with one of these options.  Characters who acquire any of these drow items must use a standard action to drink/apply them."
 					}
 				]
@@ -8758,7 +8758,7 @@
 						, "modifier": 14
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "75 (90/25) daage, and the target pops free from the cavalry and is weakened (save ends)"
+						, "damage": "75 (90/25) damage, and the target pops free from the cavalry and is weakened (save ends)"
 						, "extraEffects": [{
 							"trigger": "Limited use"
 							, "effect": "1/battle, during a surprise round or the first round of battle."
@@ -8785,7 +8785,7 @@
 					}
 					, {
 						"name": "Spider mount"
-						, "effect": "Whenever the drow cavalry rolls a natural 1–10 on an attack roll, its spider mount acts independently, choosing one of the following options<br>&emsp;<strong>Bite</strong> - The spide makes a <em>bite</em> attack.<br>&emsp;<strong>Jump & Scuttle</strong> - The spider and its rider pop free from all enemies and can move somewhere nearby.<br>&emsp;<strong>Web</strong> - The spider makes a <em>web</em> attack."
+						, "effect": "Whenever the drow cavalry rolls a natural 1–10 on an attack roll, its spider mount acts independently, choosing one of the following options<br>&emsp;<strong>Bite</strong> - The spider makes a <em>bite</em> attack.<br>&emsp;<strong>Jump & Scuttle</strong> - The spider and its rider pop free from all enemies and can move somewhere nearby.<br>&emsp;<strong>Web</strong> - The spider makes a <em>web</em> attack."
 					}
 				]
 				, "nastierSpecials": []
@@ -8806,7 +8806,7 @@
 				, "MD": 17
 				, "HP": 100
 				, "attacks": [{
-						"name": "Dagger and spidersilk link"
+						"name": "Dagger and spidersilk line"
 						, "specialTrigger": false
 						, "type": "normal"
 						, "modifier": 12
@@ -8852,7 +8852,7 @@
 				, "page": 58
 				, "sizeStrength": "normal"
 				, "threat": "normal"
-				, "level": 2
+				, "level": 3
 				, "role": "caster"
 				, "type": "humanoid"
 				, "initiative": 8
@@ -9297,7 +9297,7 @@
 						"name": "Consume"
 						, "specialTrigger": true
 						, "type": "normal"
-						, "modifier": 18
+						, "modifier": 12
 						, "defence": "PD"
 						, "target": "one stuck enemy"
 						, "damage": "50 damage, and the target takes 10 ongoing acid damage and is absorbed into the umluppuk (hard save ends both, 16+); while inside the umluppuk, the target is vulnerable to the umluppuk’s <em>pods of mouths and eyes</em> attacks (<em>attacks vs. it have crit range expanded by 2</em>), and it’s stuck."
@@ -9332,7 +9332,7 @@
 						"name": "Tentacle maw"
 						, "specialTrigger": false
 						, "type": "normal"
-						, "modifier": 19
+						, "modifier": 10
 						, "defence": "AC"
 						, "target": ""
 						, "damage": "16 damage"
@@ -10790,8 +10790,8 @@
 		, "groupTraits": [{
 			"name": "Fungal Attacks"
 			, "traits": [{
-				"name": "Some fungaloids can make special attacks.  For thsoe, add the fungaloid’s level to attacks and damage, as indicated"
-				, "description": "<br><strong>C: Poison tentacles 5 + level vs. PD (1d3 nearby enemies)</strong> - 3 + level poison damage, and the target is vulnerable to <em>fungal attacks</em> (save ends)<br><strong>C: Brown noise 5 + level vs. PD (1d3 nearby enemies)</strong> - 3 + level ongoing thunder damage<br><strong>C: Hallucinogenia 3 + level vs. MD (one nearby enemy)</strong> - The target is confused (easy save ends, 6+)<br><strong>C: Infectious spores 5 + level vs. PD (1d3 nearby enemies)</strong> - 3 + level ongoing poison damage<br><strong>C: Piercing shriek 5 + level vs. PD (1d3 nearby enemies)</strong> - 4 + level psychic damage"
+				"name": "Some fungaloids can make special attacks.  For those, add the fungaloid’s level to attacks and damage, as indicated"
+				, "description": "<br><strong>C: Poison tentacles 5 + level vs. PD (1d3 nearby enemies)</strong> – 3 + level poison damage, and the target is vulnerable to <em>fungal attacks</em> (save ends)<br><strong>C: Brown noise 5 + level vs. PD (1d3 nearby enemies)</strong> – 3 + level ongoing thunder damage<br><strong>C: Hallucinogenia 3 + level vs. MD (one nearby enemy)</strong> – The target is confused (easy save ends, 6+)<br><strong>C: Infectious spores 5 + level vs. PD (1d3 nearby enemies)</strong> – 3 + level ongoing poison damage<br><strong>C: Piercing shriek 5 + level vs. PD (1d3 nearby enemies)</strong> – 4 + level psychic damage"
 			}]
 		}]
 		, "monsters": [{
@@ -10957,7 +10957,7 @@
 						}
 						, {
 							"trigger": "Natural 1–5"
-							, "effect": "Both the fungaloid and its target take 1d4 damge."
+							, "effect": "Both the fungaloid and its target take 1d4 damage."
 						}
 					]
 				}]
@@ -11279,7 +11279,7 @@
 					}
 					, {
 						"name": "4"
-						, "effect": "The cubahedron flattens itself slightly and crawls up a wall and possibly across the ceiling.  The cube fall at the end of its turn.  Each creature engulfed by the cubes takes 30 damage, and it makes a <em>gel drop</em> attack against enemies below it.<br><strong>Gel drop +10 vs. PD (1d3 nearby enemies)</strong> - 15 damage, and the cube engulfs the target if it’s smaller than the cube"
+						, "effect": "The cubahedron flattens itself slightly and crawls up a wall and possibly across the ceiling.  The cube fall at the end of its turn.  Each creature engulfed by the cubes takes 30 damage, and it makes a <em>gel drop</em> attack against enemies below it.<br><strong>Gel drop +10 vs. PD (1d3 nearby enemies)</strong> – 15 damage, and the cube engulfs the target if it’s smaller than the cube"
 					}
 					, {
 						"name": "5"
@@ -11337,15 +11337,15 @@
 					}
 					, {
 						"name": "Instinctive actions"
-						, "effect": "Gelationous creatures have no brains, sometimes they just <em>do things</em>.  When the escalation die is odd, instead of making an attack or moving, roll a d12 to see what the dodecahedron does.  If an option is not available (you roll a 1 but there are no nearby enemies), reroll until you get a valid option."
+						, "effect": "Gelatinous creatures have no brains, sometimes they just <em>do things</em>.  When the escalation die is odd, instead of making an attack or moving, roll a d12 to see what the dodecahedron does.  If an option is not available (you roll a 1 but there are no nearby enemies), reroll until you get a valid option."
 					}
 					, {
 						"name": "1"
-						, "effect": "The dodecahedron makes a <em>squash</em> attack against 1d4 nearby enemies as it rolls and shlorps around the area.  Any enemies already engulfed by the dodecahedron take 10 thunder damage.<br><strong>C: Squash +10 vs. PD (1d4 nearby enemies)</strong> - 20 damage, and the target is stunned (easy save ends, 6+)"
+						, "effect": "The dodecahedron makes a <em>squash</em> attack against 1d4 nearby enemies as it rolls and shlorps around the area.  Any enemies already engulfed by the dodecahedron take 10 thunder damage.<br><strong>C: Squash +10 vs. PD (1d4 nearby enemies)</strong> – 20 damage, and the target is stunned (easy save ends, 6+)"
 					}
 					, {
 						"name": "2"
-						, "effect": "The dodecahedron throws out whip-like tendrils and makes a <em>sudden orifice</em> attack against each enemy engaged with it.  Then it pulls each nearby enemy next to it and engages that creature.<br><strong>Sudden orifice +12 vs. PD (each enemy engaged with it)</strong> - The dodecahedron engulfs the target it it’s smaller than the dodecahedron"
+						, "effect": "The dodecahedron throws out whip-like tendrils and makes a <em>sudden orifice</em> attack against each enemy engaged with it.  Then it pulls each nearby enemy next to it and engages that creature.<br><strong>Sudden orifice +12 vs. PD (each enemy engaged with it)</strong> – The dodecahedron engulfs the target it it’s smaller than the dodecahedron"
 					}
 					, {
 						"name": "3"
@@ -11365,15 +11365,15 @@
 					}
 					, {
 						"name": "7"
-						, "effect": "The dodecahedron makes a <em>spasms</em> attack.  If it misses with either attack roll, after the attacks, it can make a <em>stretch and engulf</em> attack as a free action.<br><strong>C: Stretch and engulf +12 vs. PD (one nearby or far away enemy)</strong> - 30 acid damage, and the dodecahedron engulfs the target if it’s smaller than the dodecahedron"
+						, "effect": "The dodecahedron makes a <em>spasms</em> attack.  If it misses with either attack roll, after the attacks, it can make a <em>stretch and engulf</em> attack as a free action.<br><strong>C: Stretch and engulf +12 vs. PD (one nearby or far away enemy)</strong> – 30 acid damage, and the dodecahedron engulfs the target if it’s smaller than the dodecahedron"
 					}
 					, {
 						"name": "8"
-						, "effect": "<strong>C: Pseudopod slaps +10 vs. AC (one nearby enemy)</strong> - 25 thunder damage<br>&emsp;<em>Natural odd hit</em>: The target pops free from the dodecahedron and is knocked far away, and the ooze makes the attack again against a different nearby enemy as a free action.<br>&emsp;<em>Natural even hit</em>: The dodecahedron engulfs the target if it’s smaller than the dodecahedron."
+						, "effect": "<strong>C: Pseudopod slaps +10 vs. AC (one nearby enemy)</strong> – 25 thunder damage<br>&emsp;<em>Natural odd hit</em>: The target pops free from the dodecahedron and is knocked far away, and the ooze makes the attack again against a different nearby enemy as a free action.<br>&emsp;<em>Natural even hit</em>: The dodecahedron engulfs the target if it’s smaller than the dodecahedron."
 					}
 					, {
 						"name": "9"
-						, "effect": "Each enemy engulfed by the dodecahedron takes 40 acid damge, and the dodecahedron heals 40 hp for each enemy it has engulfed."
+						, "effect": "Each enemy engulfed by the dodecahedron takes 40 acid damage, and the dodecahedron heals 40 hp for each enemy it has engulfed."
 					}
 					, {
 						"name": "10"
@@ -11439,7 +11439,7 @@
 					}
 					, {
 						"name": "1"
-						, "effect": "<strong>C: Acid splash +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> - 8 ongoing acid damage<br>&emsp;<em>Each failed save</em>: Acid destroys one of the target’s non-magical items.  The target takes a cumulative –1 attack penalty until the end of the battle (boots fall apart, shield straps snap, etc.).<br>&emsp;<em>Miss</em>: 5 ongoing acid damage."
+						, "effect": "<strong>C: Acid splash +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> – 8 ongoing acid damage<br>&emsp;<em>Each failed save</em>: Acid destroys one of the target’s non-magical items.  The target takes a cumulative –1 attack penalty until the end of the battle (boots fall apart, shield straps snap, etc.).<br>&emsp;<em>Miss</em>: 5 ongoing acid damage."
 					}
 					, {
 						"name": "2"
@@ -11451,7 +11451,7 @@
 					}
 					, {
 						"name": "4"
-						, "effect": "The octahedron makes a <em>fire gout</em> attack as it splashes out a gel that ignites in the air and sticks to skin and clothing.<br><strong>C: Fire gout +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> - 8 ongoing fire damage<br>&emsp;<em>Each failed save</em>: The ongoing damage for all enemies hit by the attack increases by 1."
+						, "effect": "The octahedron makes a <em>fire gout</em> attack as it splashes out a gel that ignites in the air and sticks to skin and clothing.<br><strong>C: Fire gout +11 vs. PD (1d3 nearby or far away enemies in a group)</strong> – 8 ongoing fire damage<br>&emsp;<em>Each failed save</em>: The ongoing damage for all enemies hit by the attack increases by 1."
 					}
 					, {
 						"name": "5"
@@ -11459,11 +11459,11 @@
 					}
 					, {
 						"name": "6"
-						, "effect": "<strong>C: Acid jet +11 vs. PD (one nearby or far away enemy)</strong> - 45 acid damage<br>&emsp;<em>Miss</em>: 8 ongoing acid damage."
+						, "effect": "<strong>C: Acid jet +11 vs. PD (one nearby or far away enemy)</strong> – 45 acid damage<br>&emsp;<em>Miss</em>: 8 ongoing acid damage."
 					}
 					, {
 						"name": "7"
-						, "effect": "<strong>C: Acid geyser + 11 vs. PD (1d3 nearby or far away enemies)</strong> - 30 acid damage, and the octahedron is propelled uncontrollably about the area, passing next to each of its enemies.  Unlike normal, each enemy can make an opportunity attack against the ooze as it moves this way, but the ooze can make a <em>glomp</em> attack against those who do as a free action as it passes.  (Tell the PCs that the ooze will get a counter-attack.)<br><strong>Glomp +9 vs. PD</strong> - 10 acid damage, and the cube engulfs the target if it’s smaller than the cube"
+						, "effect": "<strong>C: Acid geyser + 11 vs. PD (1d3 nearby or far away enemies)</strong> – 30 acid damage, and the octahedron is propelled uncontrollably about the area, passing next to each of its enemies.  Unlike normal, each enemy can make an opportunity attack against the ooze as it moves this way, but the ooze can make a <em>glomp</em> attack against those who do as a free action as it passes.  (Tell the PCs that the ooze will get a counter-attack.)<br><strong>Glomp +9 vs. PD</strong> – 10 acid damage, and the cube engulfs the target if it’s smaller than the cube"
 					}
 					, {
 						"name": "8"
@@ -11521,15 +11521,15 @@
 					}
 					, {
 						"name": "1"
-						, "effect": "<strong>C: Fling +9 vs. PD (one engaged enemy)</strong> - 14 damage, and the target pops free from the ooze and must roll an easy save (6+); on a failure, it loses its next move action"
+						, "effect": "<strong>C: Fling +9 vs. PD (one engaged enemy)</strong> – 14 damage, and the target pops free from the ooze and must roll an easy save (6+); on a failure, it loses its next move action"
 					}
 					, {
 						"name": "2"
-						, "effect": "<strong>C: Fling +9 vs. PD (one nearby enemy not engaged with the ooze)</strong> - 28 damage, and the target is flung somewhere nearby and must roll an easy save (6+); on a failure, it loses its next move action"
+						, "effect": "<strong>C: Fling +9 vs. PD (one nearby enemy not engaged with the ooze)</strong> – 28 damage, and the target is flung somewhere nearby and must roll an easy save (6+); on a failure, it loses its next move action"
 					}
 					, {
 						"name": "3"
-						, "effect": "<strong>C: Fling +9 vs. PD (one far away enemy)</strong> - 42 damage, and the target is flung somewhere far away and must roll an easy save (6+); on a failure, it loses its next move action"
+						, "effect": "<strong>C: Fling +9 vs. PD (one far away enemy)</strong> – 42 damage, and the target is flung somewhere far away and must roll an easy save (6+); on a failure, it loses its next move action"
 					}
 					, {
 						"name": "4"
@@ -11604,35 +11604,35 @@
 					}
 				]
 				, "nastierSpecials": [{
-						"name": "Protection boon (Archmage or Priestess)"
-						, "effect": "While not staggered, the djinn gains <em>resist spell damage 16+</em> against all spells except those cast by a PC that has at least a one point icon relationship with the icon that is channeling the djinn."
+						"name": "Protection boon (Magic or Religious Icon)"
+						, "effect": "While not staggered, the djinn gains <em>resist spell damage 16+</em> against all spells except those cast by a PC that has at least a one point icon relationship with the Magic or Religious Icons."
 					}
 					, {
-						"name": "Spiky bits (Crusader)"
+						"name": "Spiky bits (Zealous Icon)"
 						, "effect": "When an enemy makes a melee attack against the djinn and misses, it takes 2d20 damage."
 					}
 					, {
-						"name": "Demonic taint (Diabolist)"
-						, "effect": "The djinn gains a random demonic feature (see Demon)."
+						"name": "Demonic taint (Demonic Icon)"
+						, "effect": "The djinn gains a random demonic feature from the Demonic Abilities table."
 					}
 					, {
-						"name": "Unwelcome resonance (Dwarf King)"
+						"name": "Unwelcome resonance (Underground Icon)"
 						, "effect": "Whenever a nearby enemy attempts to trigger a magic item power, there’s a 50% chance that the power fails.  If it does, the item refuses to let its owner use that power until the end of the battle."
 					}
 					, {
-						"name": "Sorcerous reach (Elf Queen or the Three)"
+						"name": "Sorcerous reach (Graceful or Draconic Icons)"
 						, "effect": "The djinn’s <em>assault of the whirlwind</em> attack can also target far away enemies."
 					}
 					, {
-						"name": "Aura of command (Emperor or Lich King)"
+						"name": "Aura of command (Leader or Undead Icon)"
 						, "effect": "Twice per battle as a free action, the djinn can turn an ally’s normal save into an easy save (6+), or an enemy’s normal save into a hard save (16+)."
 					}
 					, {
-						"name": "Wind/Shadow form (High Druid or Prince of Shadows)"
+						"name": "Wind/Shadow form (Nature or Trickster Icon)"
 						, "effect": "While not staggered, the djinn has <em>resist melee damage 16+</em>."
 					}
 					, {
-						"name": "Frenzied (Orc Lord)"
+						"name": "Frenzied (Brute Icon)"
 						, "effect": "The djinn takes a –1 penalty to all defences.  While not staggered, its crit range expands by 3."
 					}
 				]
@@ -11693,35 +11693,35 @@
 					}
 				]
 				, "nastierSpecials": [{
-						"name": "Reinfordced aura/spirit (Archmage or Priestess)"
+						"name": "Reinforced aura/spirit (Magic or Religious Icons)"
 						, "effect": "The efreet gains a +1 bonus to MD and has no vulnerability to cold while staggered."
 					}
 					, {
-						"name": "Spiky bits (Crusader)"
+						"name": "Spiky bits (Zealous Icon)"
 						, "effect": "When an enemy makes a melee attack against the efreet and misses, it takes 2d20 damage."
 					}
 					, {
-						"name": "Demonic taint (Diabolist)"
-						, "effect": "The efreet gains a random demonic feature (see Demon)."
+						"name": "Demonic taint (Demonic Icon)"
+						, "effect": "The efreet gains a random demonic feature from the Demonic Abilities table."
 					}
 					, {
-						"name": "Stone slumbers (Dwarf King or Lich King)"
+						"name": "Stone slumbers (Underground or Undead Icon)"
 						, "effect": "When the escalation die is 4+ at the start of a round, reset the escalation value by rolling it."
 					}
 					, {
-						"name": "Energy transformation (Elf Queen or the Three)"
+						"name": "Energy transformation (Graceful or Draconic Icon)"
 						, "effect": "The efreet can choose to deal lightning damage instead of fire damage with its attacks."
 					}
 					, {
-						"name": "Imperial mark (Emperor)"
+						"name": "Iconic mark (Leader Icon)"
 						, "effect": "While not staggered, the efreet gains <em>resist damage 16+</em> against enemies that have a positive or conflicted relationship with the Emperor."
 					}
 					, {
-						"name": "Wind/Shadow form (High Druid or Prince of Shadows)"
+						"name": "Wind/Shadow form (Nature or Trickster Icon)"
 						, "effect": "While not staggered, the efreet gains <em>resist melee damage 16+</em>."
 					}
 					, {
-						"name": "Frenzied (Orc Lord)"
+						"name": "Frenzied (Brute Icon)"
 						, "effect": "The efreet takes a –1 penalty to all defences.  While not staggered, its crit range expands by 3."
 					}
 				]
@@ -11866,7 +11866,7 @@
 				, "sizeStrength": "normal"
 				, "threat": "normal"
 				, "level": 4
-				, "role": "wrecker"
+				, "role": "blocker"
 				, "type": "undead"
 				, "initiative": 8
 				, "vulnerability": "holy"
@@ -12051,7 +12051,7 @@
 				, "initiative": 10
 				, "vulnerability": "fire"
 				, "AC": 21
-				, "PD": 21
+				, "PD": 20
 				, "MD": 18
 				, "HP": 270
 				, "attacks": [{
@@ -12655,7 +12655,7 @@
 						, "specialTrigger": false
 						, "type": "normal"
 						, "modifier": 11
-						, "defence": "AC"
+						, "defence": "PD"
 						, "target": ""
 						, "damage": "9 cold damage, and the target is vulnerable to cold attacks (save ends)"
 						, "extraEffects": []
@@ -14023,7 +14023,7 @@
 					}
 					, {
 						"name": "Death curse"
-						, "description": "When a hag dies she curses the one who killed her.  The only known way to remove the curse is to seek the aid of another had, though there may be some ways to end such a curse that are not readily known.<br>&emsp;Create one curse per hag.  A good curse makes life horribly weird for a character, but isn’t something that debilitates them.  Avoid ones that blid, deafen, cripple, or mute characters.  Odd habits, ugly features, unusual smells, strange and digusting giets - all these are good.  They should make the character and the story more interesting."
+						, "description": "When a hag dies she curses the one who killed her.  The only known way to remove the curse is to seek the aid of another hag, though there may be some ways to end such a curse that are not readily known.<br>&emsp;Create one curse per hag.  A good curse makes life horribly weird for a character, but isn’t something that debilitates them.  Avoid ones that blind, deafen, cripple, or mute characters.  Odd habits, ugly features, unusual smells, strange and digusting diets - all these are good.  They should make the character and the story more interesting."
 					}
 				]
 			}
@@ -14031,55 +14031,55 @@
 				"name": "Abilities"
 				, "traits": [{
 						"name": "Adept Illusionist"
-						, "description": "The hag gains a +5 bonus to initiative checks due to being not quite where she seems.<br><em>Hag abilitiy</em>: As a distraction, the hag creates an illusion of her doing one thing, when she is in fact setting a trap.  The hag throws out a bear-trap or other impediment and one nearby enemy becomes stuck (save ends).  While stuck this way, the target takes 6 damage at the start of each of its turns."
+						, "description": "The hag gains a +5 bonus to initiative checks due to being not quite where she seems.<br>&emsp;<em>Hag abilitiy</em>: As a distraction, the hag creates an illusion of her doing one thing, when she is in fact setting a trap.  The hag throws out a bear-trap or other impediment and one nearby enemy becomes stuck (save ends).  While stuck this way, the target takes 6 damage at the start of each of its turns."
 					}
 					, {
 						"name": "Another skin"
-						, "description": "One the hag’s first round of combat each battle, she gains a +2 attack bonus due to her victims being shocked as she bursts out of her false outer skin.<br><em>Hag ability</em>: The hag coughs up a glob of liquid pseudo-flesh that globs onto a nearby enemy (no attack roll).  The glob solidifies causing an effect of the hag’s choice: the target is stuck (save ends); OR the target is unable to cast spells during its next turn (the pseudo-flesh covers their mouth and face)."
+						, "description": "On the hag’s first round of combat each battle, she gains a +2 attack bonus due to her victims being shocked as she bursts out of her false outer skin.<br>&emsp;<em>Hag ability:</em> The hag coughs up a glob of liquid pseudo-flesh that globs onto a nearby enemy (no attack roll).  The glob solidifies causing an effect of the hag’s choice: The target is stuck (save ends); OR the target is unable to cast spells during its next turn (the pseudo-flesh covers their mouth and face)."
 					}
 					, {
 						"name": "Blood pact"
-						, "description": "Each creature allied to the hag through a pact gains a +2 bonus with their first attack each battle if the hag is present.<br><em>Hag ability</em>: The hag spits blood in the face of the target and makes a command.  The target must roll an immediate save; on a failure, as a free action it makes basic attack against an ally or against itself (target’s choice)."
+						, "description": "Each creature allied to the hag through a pact gains a +2 bonus with their first attack each battle if the hag is present.<br>&emsp;<em>Hag ability:</em> The hag spits blood in the face of the target and makes a command.  The target must roll an immediate save; on a failure, as a free action it makes basic attack against an ally or against itself (target’s choice)."
 					}
 					, {
 						"name": "Breath stealing"
-						, "description": "The hag starts combat with 10 temporary hit points.<br><em>Hag ability</em>: The hag steals a recovery from the target and heals 20 hp."
+						, "description": "The hag starts combat with 10 temporary hit points.<br>&emsp;<em>Hag ability:</em> The hag steals a recovery from the target and heals 20 hp."
 					}
 					, {
 						"name": "Death shriek"
-						, "description": "When a melee attack hits the hag, she lets out a shriek as a free action and the attacker takes 2d4 thunder damage.<br><em>Hag ability</em>: The hag begins to shriek, and each enemy in the battle takes a –4 attack penalty with spells until the start of her next turn."
+						, "description": "When a melee attack hits the hag, she lets out a shriek as a free action and the attacker takes 2d4 thunder damage.<br>&emsp;<em>Hag ability:</em> The hag begins to shriek, and each enemy in the battle takes a –4 attack penalty with spells until the start of her next turn."
 					}
 					, {
 						"name": "Dusk walk"
-						, "description": "Once per day the hag can implant a suggestion in the mind of a target sleeping within a day’s travel of her.  The hag rolls an attack: <strong>+10 vs. MD</strong>; on a hit, she implants a suggestion in the target that they must obey when a condition she chooses is met.  Suggested actions can’t cause direct harm (the target can’t be forced to fight another or harm themselves), can be no longer than 12 words, and affects the target for a week or until triggered.  GM keeps the roll hidden.<br><em>Hag ability</em>: The hag becomes immaterial, pops free from all enemies engaged with her, and enters the land of dreams re-appearing next to any nearby conscious creature (or a nearby or far away creature that is unconscious).  The hag then makes the following attack: <strong>C: +10 vs. MD (eacn nearby unconscious enemy)</strong> - The hag implants a suggestion in the target that they must obey when they become conscious (unusually “When you awake, flee this fight and discard your equipment.”).  Suggested actions can’t cause direct harm.  The round after the target acts on the implanted suggestion it can start rolling normal saves to throw off the effect."
+						, "description": "Once per day the hag can implant a suggestion in the mind of a target sleeping within a day’s travel of her.  The hag rolls an attack: <strong>+10 vs. MD</strong>; on a hit, she implants a suggestion in the target that they must obey when a condition she chooses is met.  Suggested actions can’t cause direct harm (the target can’t be forced to fight another or harm themselves), can be no longer than 12 words, and affects the target for a week or until triggered.  GM keeps the roll hidden.<br>&emsp;<em>Hag ability:</em> The hag becomes immaterial, pops free from all enemies engaged with her, and enters the land of dreams re-appearing next to any nearby conscious creature (or a nearby or far away creature that is unconscious).  The hag then makes the following attack: <strong>C: +10 vs. MD (each nearby unconscious enemy)</strong> - The hag implants a suggestion in the target that they must obey when they become conscious (usually “When you awake, flee this fight and discard your equipment.”).  Suggested actions can’t cause direct harm.  The round after the target acts on the implanted suggestion it can start rolling normal saves to throw off the effect."
 					}
 					, {
 						"name": "Fateful visions"
-						, "description": "The hag uses a +2 magical weapon traded to her for her services (she gains a +2 bonus to attack and damage with melee attacks).<br><em>Hag ability</em>: The had has seen this fight in a vision.  Her crit range expands by 2 until the end of the battle.  Each increase is cumulative."
+						, "description": "The hag uses a +2 magical weapon traded to her for her services (she gains a +2 bonus to attack and damage with melee attacks).<br>&emsp;<em>Hag ability:</em> The had has seen this fight in a vision.  Her crit range expands by 2 until the end of the battle.  Each increase is cumulative."
 					}
 					, {
 						"name": "Foul-touched"
-						, "description": "When an enemy is battling the hag, at the start of each of its turns, it takes 2d6 psychic damage from the horror of the hag’s visage unless it takes precautions to avoid directly glancing at her terribly face (mirror, blindfold, etc., which might cause attack penalties).<br><em>Hag ability</em>: The hag choose a nearby enemy and glares at it.  That target must roll an immediate; on a failure the target is stricken blind by her ugliness.  While blinded this way, the target is hampered, weakened, and can’t make ranged attacks.  The target can end the effect by splashing liquid into their eyes or using a similar act to clear the ugly out as a standard action."
+						, "description": "When an enemy is battling the hag, at the start of each of its turns, it takes 2d6 psychic damage from the horror of the hag’s visage unless it takes precautions to avoid directly glancing at her terrible face (mirror, blindfold, etc., which might cause attack penalties).<br>&emsp;<em>Hag ability:</em> The hag choose a nearby enemy and glares at it.  That target must roll an immediate save; on a failure the target is stricken blind by her ugliness.  While blinded this way, the target is hampered, weakened, and can’t make ranged attacks.  The target can end the effect by splashing liquid into their eyes or using a similar act to clear the ugly out as a standard action."
 					}
 					, {
 						"name": "Song of dreams"
-						, "description": "Enemies take a –4 penalty to their initiative rolls in battles with the hag.<br><em>Hag ability</em>: The hag begins to sing and the two enemies closest to her (even if far away) must roll an immediate save; on a failure, the target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save end).  If the weakened target fails its second save, instead it’s helpless (save ends)."
+						, "description": "Enemies take a –4 penalty to their initiative rolls in battles with the hag.<br>&emsp;<em>Hag ability:</em> The hag begins to sing and the two enemies closest to her (even if far away) must roll an immediate save; on a failure, the target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save ends).  If the weakened target fails its second save, instead it’s helpless (save ends)."
 					}
 					, {
 						"name": "Thief of mist"
-						, "description": "The hag ignores opportunity attacks and can’t be intercepted while moving.<br><em>Hag ability</em>: The hag becomes a mist until the start of her next turn.  While a mist, only spells cast with a +3 implement and attacks using a +3 magical weapon can harm her.  (Some special story item might also allow attacks to hit of no PC has a +3 item.)"
+						, "description": "The hag ignores opportunity attacks and can’t be intercepted while moving.<br>&emsp;<em>Hag ability:</em> The hag becomes a mist until the start of her next turn.  While a mist, only spells cast with a +3 implement and attacks using a +3 magical weapon can harm her.  (Some special story item might also allow attacks to hit of no PC has a +3 item.)"
 					}
 					, {
 						"name": "Twist the path"
-						, "description": "Once per day the hag can enspell an area to attract visitors, causing those travelling nearby to get lost and wander to that location.  Alternatively, the hag can cause the location to repel visitors.  Finding the correct path to that location requires a DC 20 check if it is a familiar place, a DC 25 check if the travellers only have a map or guide, or a DC 30 check if the travellers are unfamiliar with the area.<br><em>Hag ability</em>: The target is also confused (easy save ends, 6+)."
+						, "description": "Once per day the hag can enspell an area to attract visitors, causing those travelling nearby to get lost and wander to that location.  Alternatively, the hag can cause the location to repel visitors.  Finding the correct path to that location requires a DC 20 check if it is a familiar place, a DC 25 check if the travellers only have a map or guide, or a DC 30 check if the travellers are unfamiliar with the area.<br>&emsp;<em>Hag ability:</em> The target is also confused (easy save ends, 6+)."
 					}
 					, {
 						"name": "Weakening touch"
-						, "description": "Each enemy fighting the hag must roll a normal save at the start of the battle; on a failure, that creature starts the battle weakened (easy save ends, 6+).<br><em>Hag ability</em>: The target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save ends).  When the target saves against this effect, it takes a –2 attack penalty until the end of its next turn."
+						, "description": "Each enemy fighting the hag must roll a normal save at the start of the battle; on a failure, that creature starts the battle weakened (easy save ends, 6+).<br>&emsp;<em>Hag ability:</em> The target is dazed (save ends).  If the dazed target fails its first save, instead it’s weakened (save ends).  When the target saves against this effect, it takes a –2 attack penalty until the end of its next turn."
 					}
 					, {
 						"name": "Winter breath"
-						, "description": "The hag’s attacks deal cold damage.<br><em>Hag ability</em>: The target takes 6 ongoing cold damage."
+						, "description": "The hag’s attacks deal cold damage.<br>&emsp;<em>Hag ability:</em> The target takes 6 ongoing cold damage."
 					}
 				]
 			}
@@ -14092,7 +14092,7 @@
 			, "threat": "normal"
 			, "level": 6
 			, "role": "spoiler"
-			, "type": "undead"
+			, "type": "humanoid"
 			, "initiative": 10
 			, "vulnerability": ""
 			, "AC": 21
@@ -14109,11 +14109,11 @@
 					, "damage": "9 damage"
 					, "extraEffects": [{
 							"trigger": "Natural 14+"
-							, "effect": "The hag triggers on <em>hag ability</em> as a free action."
+							, "effect": "The hag triggers one <em>hag ability</em> as a free action."
 						}
 						, {
 							"trigger": "Natural 18+"
-							, "effect": "The hag triggers two <em>hag abilities</em> as a free action (can’t by the same ability twice)."
+							, "effect": "The hag triggers two <em>hag abilities</em> as a free action (can’t be the same ability twice)."
 						}
 					]
 				}
@@ -14127,7 +14127,7 @@
 					, "damage": "Ongoing 12 damage (hard save ends, 16+)"
 					, "extraEffects": [{
 							"trigger": "Natural 16+"
-							, "effect": "The attack roll also targets a second different enemy of the hag’s choice (but a third with another 16+)."
+							, "effect": "The attack roll also targets a second different enemy of the hag’s choice (but not a third with another 16+)."
 						}
 						, {
 							"trigger": "Natural 18+"
