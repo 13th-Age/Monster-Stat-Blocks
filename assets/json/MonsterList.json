@@ -14404,14 +14404,24 @@
 					, "target": "1d3 nearby enemies"
 					, "damage": "28 force damage"
 					, "extraEffects": [{
-						"trigger": "Natural even hit"
-						, "effect": "The target is stuck (save ends)."
-					}]
+							"trigger": "Natural even hit"
+							, "effect": "The target is stuck (save ends)."
+						}
+						, {
+							"trigger": "Telekinetic crush"
+							, "effect": "When the escalation die is even, one enemy of the skull’s choice that is stuck from its <em>telekinetic grasp</em> takes 18 force damage at the start of the skull’s turn.  When the escalation die is odd, one such stuck enemy of its choice is hampered (save ends)."
+						}
+					]
 				}]
 				, "abilities": [{
-					"name": "Telekinetic crush"
-					, "effect": "When the escalation die is even, one enemy of the skull’s choice that is stuck from its <em>telekinetic grasp</em> takes 18 force damage at the start of the skull’s turn.  When the escalation die is odd, one such stuck enemy of its choice is hampered (save ends)."
-				}]
+						"name": "Limited flight"
+						, "effect": "The haunted skull glides and hovers, always within seven or eight feet of the ground.  If the skull is incognito, its empty clothing moves around beneath it, held in shape of a person by telekinesis and it stays closer to the ground to appear normal."
+					}
+					, {
+						"name": "Lost opportunity"
+						, "effect": "This creature can’t make opportunity attacks."
+					}
+				]
 				, "nastierSpecials": []
 			}
 			, {
@@ -14491,13 +14501,12 @@
 					, "defence": "PD"
 					, "target": "1d4 nearby enemies"
 					, "damage": "5 psychic damage, plus 1d6 ongoing psychic damage if the GM makes a horrible pun while rolling the attacks"
-					, "extraEffects": []
+					, "extraEffects": [{
+						"trigger": "Bad puns"
+						, "effect": "Creatures that can’t hear or that have attempted to reduce their hearing are only affected by a jest bones’ <em>pun</em> attack if the natural roll is odd."
+					}]
 				}]
 				, "abilities": [{
-						"name": "Bad puns"
-						, "effect": "Creatures that can’t hear or that have attempted to reduce their hearing are only affected by a jest bones’ <em>pun</em> attack if the natural roll is odd."
-					}
-					, {
 						"name": "Limited flight"
 						, "effect": "The haunted skull can glide and hover, always within seven or eight feet of the ground.  It also performs barrel rolls."
 					}
@@ -14706,7 +14715,7 @@
 					}
 					, {
 						"name": "Gem eyes"
-						, "effect": "The skull can sense the unseen and things from beyong the world.  A wizard using a <em>blur</em> spell, a rogue shadow walking, and other similar abilities offer no protection from the skull and its <em>screech</em> attack.  (If the PCs come up with a plausible tactic to bypass the skull, give the skull a normal save to detect them.)"
+						, "effect": "The skull can sense the unseen and things from beyond the world.  A wizard using a <em>blur</em> spell, a rogue shadow walking, and other similar abilities offer no protection from the skull and its <em>screech</em> attack.  (If the PCs come up with a plausible tactic to bypass the skull, give the skull a normal save to detect them.)"
 					}
 					, {
 						"name": "Move-triggered"
@@ -14743,14 +14752,9 @@
 						, "target": ""
 						, "damage": "5 damage"
 						, "extraEffects": [{
-								"trigger": "Miss"
-								, "effect": "2 damage."
-							}
-							, {
-								"trigger": "Puff go boom"
-								, "effect": "When an enemy’s attack hits the boombug and leaves it staggered with an odd number of hit points, it explodes and dies.  (Even hit points does nothing.)  When it explodes, each nearby creature not engaged with it takes 1d4 thunder damage, and it makes a <em>thunderous explosion</em> attack against each creature engaged with it."
-							}
-						]
+							"trigger": "Miss"
+							, "effect": "2 damage."
+						}]
 					}
 					, {
 						"name": "Thunderous explosion"
@@ -14766,7 +14770,10 @@
 						}]
 					}
 				]
-				, "abilities": []
+				, "abilities": [{
+					"name": "Puff go boom"
+					, "effect": "When an enemy’s attack hits the boombug and leaves it staggered with an odd number of hit points, it explodes and dies.  (Even hit points does nothing.)  When it explodes, each nearby creature not engaged with it takes 1d4 thunder damage, and it makes a <em>thunderous explosion</em> attack against each creature engaged with it."
+				}]
 				, "nastierSpecials": [{
 					"name": "Latches on"
 					, "effect": "When the boombug hits with <em>gnawing teeth</em>, the target takes a –5 penalty to disengage checks until it’s no longer engaged with the boombug."
@@ -15320,7 +15327,7 @@
 				, "MD": 20
 				, "HP": 90
 				, "attacks": [{
-						"name": "Formless first"
+						"name": "Formless fist"
 						, "specialTrigger": false
 						, "type": "normal"
 						, "modifier": 9
@@ -15339,7 +15346,7 @@
 						, "modifier": 11
 						, "defence": "MD"
 						, "target": "one enemy"
-						, "damage": "14 damage, and the opponent is locked in a psychic duel with the assassin (see below)"
+						, "damage": "14 damage, and the opponent is locked in a <em>psychic duel</em> with the assassin (see below)"
 						, "extraEffects": []
 					}
 					, {
@@ -15363,7 +15370,7 @@
 					}
 					, {
 						"name": "Psychovore"
-						, "effect": "An intellect devourer remembers the cur"
+						, "effect": "An intellect devourer remembers the current escalation die value the first time it becomes unhosted in a battle and gains a bonus equal to that value to all attacks and defences until the end of the battle."
 					}
 					, {
 						"name": "Psychic duel"
@@ -15539,12 +15546,12 @@
 				]
 				, "abilities": [{
 					"name": "Give me your heart"
-					, "effect": "When the binding bride drops an enemy to 0 hit points or lower, she will move next to that creature as a free action and attempt to remove the target’s heart.  The creature must begin making last gasp saves as she cuts its chest open.  On the fourth failed save, the bride takes the heart and the target dies and becomes undead under her control.  If the bridge is stunned or moved away from the creature and can’t return to it on her turn, the creature doesn’t have to make a last gasp save that turn."
+					, "effect": "When the binding bride drops an enemy to 0 hit points or lower, she will move next to that creature as a free action and attempt to remove the target’s heart.  The creature must begin making last gasp saves as she cuts its chest open.  On the fourth failed save, the bride takes the heart and the target dies and becomes undead under her control.  If the bride is stunned or moved away from the creature and can’t return to it on her turn, the creature doesn’t have to make a last gasp save that turn."
 				}]
 				, "nastierSpecials": []
 			}
 			, {
-				"name": "Leathal Lothario"
+				"name": "Lethal Lothario"
 				, "source": "Bestiary"
 				, "page": 121
 				, "sizeStrength": "normal"
@@ -15568,7 +15575,7 @@
 						, "damage": "10 damage"
 						, "extraEffects": [{
 							"trigger": "Natural even hit"
-							, "effect": "Any woven engaged with the target can attack it as a free action."
+							, "effect": "Any Woven engaged with the target can attack it as a free action."
 						}]
 					}
 					, {
@@ -15587,7 +15594,7 @@
 				]
 				, "abilities": [{
 					"name": "Give me your heart"
-					, "effect": "When the lothario drops an enemy to 0 hit points or lower, he will move next to that creature and attempt to remove the target’s heart.  The creature must begin making last gasp saves as he cuts their chest open.  On the fourth failure, the lothario takes the heart and the target dies and becomes undead under her control.  If the lothario is stunned or moved away from the creature and can’t return to it on his turn, the creature doesn’t have to make a last gasp save that turn."
+					, "effect": "When the lothario drops an enemy to 0 hit points or lower, he will move next to that creature and attempt to remove the target’s heart.  The creature must begin making last gasp saves as he cuts their chest open.  On the fourth failure, the lothario takes the heart and the target dies and becomes undead under his control.  If the lothario is stunned or moved away from the creature and can’t return to it on his turn, the creature doesn’t have to make a last gasp save that turn."
 				}]
 				, "nastierSpecials": []
 			}
@@ -15626,7 +15633,7 @@
 						, "modifier": 8
 						, "defence": "MD"
 						, "target": "one <em>infatuated</em> enemy"
-						, "damage": "The target chooses one: it takes 6d6 psychic damage; OR as a free action, it mvoes next to the spinneret doxy (possibly provoking opportunity attacks), who engages it"
+						, "damage": "The target chooses one: it takes 6d6 psychic damage; OR as a free action, it moves next to the spinneret doxy (possibly provoking opportunity attacks), who engages it"
 						, "extraEffects": []
 					}
 					, {
@@ -15847,7 +15854,7 @@
 						, "damage": "13 damage"
 						, "extraEffects": [{
 							"trigger": "Natural roll is above target’s Wisdom (trapster)"
-							, "effect": "The kobold pushes or trips the target into a trap.  See Trapster Kobold ability."
+							, "effect": "The kobold pushes or trips the target into a trap.  See <em>trapster</em> kobold ability."
 						}]
 					}
 					, {
@@ -15910,7 +15917,7 @@
 						, "damage": "9 damage, and the kobold and its steed can move as a free action."
 						, "extraEffects": [{
 							"trigger": "Natural roll is above target’s Wisdom (trapster)"
-							, "effect": "There is a line tied to the barbed dart, pulling/tripping the target into a trap.  See Trapster Kobold ability."
+							, "effect": "There is a line tied to the barbed dart, pulling/tripping the target into a trap.  See <em>trapster</em> kobold ability."
 						}]
 					}
 				]
@@ -16003,7 +16010,7 @@
 						, "damage": "13 damage"
 						, "extraEffects": [{
 							"trigger": "Natural roll is above target’s Wisdom (trapster)"
-							, "effect": "The kobold drags the target into a trap.  See Trapster Kobold ability."
+							, "effect": "The kobold drags the target into a trap.  See <em>trapster</em> kobold ability."
 						}]
 					}
 					, {
@@ -16016,7 +16023,7 @@
 						, "damage": "26 damage"
 						, "extraEffects": [{
 								"trigger": "Natural roll is above target’s Wisdom (trapster)"
-								, "effect": "The kobold summons a trap that was not previously there, which the target triggers.  See Trapster Kobold ability."
+								, "effect": "The kobold summons a trap that was not previously there, which the target triggers.  See <em>trapster</em> kobold ability."
 							}
 							, {
 								"trigger": "Miss"
@@ -16062,14 +16069,14 @@
 					, {
 						"name": "Explosive flask"
 						, "specialTrigger": false
-						, "type": "normal"
+						, "type": "ranged"
 						, "modifier": 5
 						, "defence": "PD"
 						, "target": ""
 						, "damage": "The target is vulnerable to non-magical attacks (easy save ends, 6+)"
 						, "extraEffects": [{
 								"trigger": "Natural roll is above the target’s Wisdom (trapster)"
-								, "effect": "The blast knocks the target into a trap.  See Trapster Kobold ability."
+								, "effect": "The blast knocks the target into a trap.  See <em>trapster</em> kobold ability."
 							}
 							, {
 								"trigger": "Evasive"
@@ -16282,6 +16289,10 @@
 						"name": "Evasive"
 						, "effect": "Kobolds take no damage from missed attacks."
 					}
+					, {
+						"name": "Mook"
+						, "effect": "If an attack roll against a skyclaw is a natural 20 or a skyclaw rolls a natural 1 attack roll or flight roll, it triggers a chain reaction that ripples through all nearby skyclaws in the mob; each one makes an <em>alchemical flask</em> attack as a free action as it explodes and dies."
+					}
 				]
 				, "nastierSpecials": []
 			}
@@ -16387,7 +16398,7 @@
 						, "damage": "20 fire damage"
 						, "extraEffects": [{
 								"trigger": "Natural even hit against an ally"
-								, "effect": "The target takes 10 ongoing fire damage instead of 20 fire damge, and until that ally saves against that damage, it adds the escalation die to its attacks."
+								, "effect": "The target takes 10 ongoing fire damage instead of 20 fire damage, and until that ally saves against that damage, it adds the escalation die to its attacks."
 							}
 							, {
 								"trigger": "Natural even hit against an enemy"
@@ -16437,7 +16448,7 @@
 				, "AC": 25
 				, "PD": 17
 				, "MD": 23
-				, "HP": 230
+				, "HP": 330
 				, "attacks": [{
 						"name": "Hooves of command"
 						, "specialTrigger": false
@@ -16458,7 +16469,7 @@
 						, "damage": "80 holy damage"
 						, "extraEffects": [{
 							"trigger": "Natural 16+"
-							, "effect": "The lammasu priest can make a <em>righteous ray of faith</em> attack against a differeent target."
+							, "effect": "The lammasu priest can make a <em>righteous ray of faith</em> attack against a different target."
 						}]
 					}
 					, {
@@ -16503,7 +16514,7 @@
 					}
 					, {
 						"name": "Refuge of stone"
-						, "effect": "When the lammasu fails a save, it becomes a creature of living stone until the end of its next turn.  While made of living stone, the lammasu wizard gains <em>resist damage 16+</em> to all attacks against AC and PD.  If it’s flying when it becomes living stone, its magic allows it to remain in the air if it wishes."
+						, "effect": "When the lammasu fails a save, it becomes a creature of living stone until the end of its next turn.  While made of living stone, the lammasu priest gains <em>resist damage 16+</em> to all attacks against AC and PD.  If it’s flying when it becomes living stone, its magic allows it to remain in the air if it wishes."
 					}
 				]
 				, "nastierSpecials": []
@@ -16694,8 +16705,8 @@
 						, "effect": "When the lich baroness scores a critical hit, the target loses a death save until the end of the battle (effectively, it now dies after failing three death saves, and the effect is cumulative).  In addition, the crit range of attacks by the lich against the target expands by the escalation die."
 					}
 					, {
-						"name": "Immortaility"
-						, "effect": "When the lich drops to 0 hit points, it crumbles to dust but does not die.  It begins to reform near it phylactery, taking a number of days to regain its full strength equal to its level.  If the phylactery has been destroyed, the lich dies when it drops to 0 hit points."
+						"name": "Immortality"
+						, "effect": "When the lich drops to 0 hit points, it crumbles to dust but does not die.  It begins to reform near its phylactery, taking a number of days to regain its full strength equal to its level.  If the phylactery has been destroyed, the lich dies when it drops to 0 hit points."
 					}
 				]
 				, "nastierSpecials": []
@@ -17554,7 +17565,7 @@
 			"name": "Nastier Special"
 			, "traits": [{
 				"name": "Arcane balance"
-				, "description": "Whenever the naga rolls a natural 1–5 with an attack roll, it can cancel one magical effect created by a spell or magic item that is affecting the naga or a nearby creature (including beneficial effect on a PC).  It can be an ongoing effect, an effect that only lasts a round, or even an effect that was supposed to last until the end of the battle.  Use your sense of what is magical and what isn’t: a bard’s song is clearly magical, but a rogue’s Shadow Walk talent probably isn’t, despite the wazard’s arguments that it <em>should</em> be."
+				, "description": "Whenever the naga rolls a natural 1–5 with an attack roll, it can cancel one magical effect created by a spell or magic item that is affecting the naga or a nearby creature (including beneficial effect on a PC).  It can be an ongoing effect, an effect that only lasts a round, or even an effect that was supposed to last until the end of the battle.  Use your sense of what is magical and what isn’t: a bard’s song is clearly magical, but a rogue’s Shadow Walk talent probably isn’t, despite the wizard’s arguments that it <em>should</em> be."
 			}]
 		}]
 		, "monsters": [{
@@ -17596,7 +17607,7 @@
 						, "type": "ranged"
 						, "modifier": 0
 						, "defence": ""
-						, "target": ""
+						, "target": "1d4 nearby or far away enemies"
 						, "damage": "45 force damage"
 						, "extraEffects": [{
 							"trigger": "Limited use"
@@ -17990,18 +18001,18 @@
 						, "defence": "MD"
 						, "target": "one nearby enemy, or one nearby enemy per point of esc. die if <em>mystic escalator</em> benefit is active"
 						, "damage": "10 psychic damage, and the target is hampered (save ends)"
-						, "extraEffects": [{
-								"trigger": "Arcane mirror"
-								, "effect": "When an enemy targets the swaysong naga with a spell, the naga regains the use of <em>song of reversals</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spellcaster doesn’t expend the spell."
-							}
-							, {
-								"trigger": "Mystic escalator"
-								, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy’s spell since its last turn."
-							}
-						]
+						, "extraEffects": []
 					}
 				]
-				, "abilities": []
+				, "abilities": [{
+						"name": "Arcane mirror"
+						, "effect": "When an enemy targets the swaysong naga with a spell, the naga regains the use of <em>song of reversals</em> if it’s expended.  In addition, if that spell is a recharge spell, roll its recharge check immediately after the spell is cast.  If the spell is a per-battle or daily spell, roll a hard save (16+) immediately after the spell is cast; on a success, the spellcaster doesn’t expend the spell."
+					}
+					, {
+						"name": "Mystic escalator"
+						, "effect": "The naga and each of its nearby allies can use the escalation die unless the naga has been targeted by an enemy’s spell since its last turn."
+					}
+				]
 				, "nastierSpecials": []
 			}
 		]
@@ -18010,7 +18021,7 @@
 		"name": "Ogre"
 		, "groupTraits": []
 		, "monsters": [{
-				"name": "Demonis Ogre"
+				"name": "Demonic Ogre"
 				, "source": "Bestiary"
 				, "page": 149
 				, "sizeStrength": "large"
@@ -18062,7 +18073,7 @@
 					}
 					, {
 						"name": "Demonic eruption"
-						, "effect": "When the escalation die is 6+, the demonic ogre rolls a normal save at the start of each of its turns.  On a success, roll a d6 and replace the demonic ogre with a new undamged demon.  1–2: Imp; 3–4: Despoiler; 5: Frenzy demon; 6: Cambion sickle."
+						, "effect": "When the escalation die is 6+, the demonic ogre rolls a normal save at the start of each of its turns.  On a success, roll a d6 and replace the demonic ogre with a new undamaged demon.  1–2: Imp; 3–4: Despoiler; 5: Frenzy demon; 6: Cambion sickle."
 					}
 				]
 				, "nastierSpecials": [{
@@ -18214,7 +18225,7 @@
 					}
 				]
 				, "abilities": [{
-						"name": "Orc Lord’s enemies"
+						"name": "Brute icon’s enemies"
 						, "effect": "Whenever a nearby dwarf or elf enemy attempts to use their racial power, they must roll a hard save (16+).  On a failure, the power fails and has no effect that turn (but they can try again next turn)."
 					}
 					, {
@@ -18283,7 +18294,7 @@
 				]
 				, "abilities": [{
 					"name": "Special hate"
-					, "effect": "When the ogre crusader attacks an enemy that has a positive or conflicted relationship with either the Diabolist or the Great Gold Wyrm, it adds the escalation die to the attack roll."
+					, "effect": "When the ogre crusader attacks an enemy that has a positive or conflicted relationship with either the demonic or protector icon, it adds the escalation die to the attack roll."
 				}]
 				, "nastierSpecials": []
 			}
@@ -18635,7 +18646,7 @@
 					}
 					, {
 						"name": "Trollish regeneration 15"
-						, "effect": "While an ogre mage is damaged, its uncanny flesh heals 15 hit points at the start of the ogre mage’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of regeneration doesn’t count against the five-use limit.<br>&emsp;When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping an ogre mage to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
+						, "effect": "While an ogre mage is damaged, its uncanny flesh heals 15 hit points at the start of the ogre mage’s turn.  It can regenerate five times per battle.  If it heals to its maximum hit points, then that use of <em>regeneration</em> doesn’t count against the five-use limit.<br>&emsp;When the ogre mage is hit by an attack that deals fire or acid damage, it loses one use of its <em>regeneration</em>, and it can’t regenerate during its next turn.<br>&emsp;Dropping an ogre mage to 0 hp doesn’t kill it if it has any uses of <em>regeneration</em> left."
 					}
 				]
 				, "nastierSpecials": [{
@@ -18694,7 +18705,7 @@
 						, "damage": "Roll a d8 against each hit target to determine the type of ray and effect"
 						, "extraEffects": [{
 								"trigger": "1. Red"
-								, "effect": "75 fire damage; <em>Miss</em: 40 fire damage."
+								, "effect": "75 fire damage; <em>Miss:</em> 40 fire damage."
 							}
 							, {
 								"trigger": "2. Orange"
@@ -18710,7 +18721,7 @@
 							}
 							, {
 								"trigger": "5. Blue"
-								, "effect": "60 lightning damage, and make a secondary attack:<br><strong>+15 vs. PD (one enemy near the target)</strong> - 20 lightning damage."
+								, "effect": "60 lightning damage, and make a secondary attack:<br>&emsp;<strong>+15 vs. PD (one enemy near the target)</strong> - 20 lightning damage."
 							}
 							, {
 								"trigger": "6. Cyan"
@@ -18733,7 +18744,7 @@
 					}
 					, {
 						"name": "Warp"
-						, "effect": "The prismatic ogre mage warps reality with its presence.  Each character hit by the <em>prismatic blast</em> attack during battle must write down one true personal trait or preference about their character such as: “Yellow hair”, “Afraid of spiders”, “Prefers white wine to red”, or “Tatto of a halfling on left bicep”.  These personal traits are shuffled, and randomly distributed equally by the GM after the battle is over.  Whichever trait each player receives is now true for their character as well as for the character fo the player who wrote it down (unless there has somehow turned out to be a swap…).  These traits don’t alter game mechanics (feats, powers, backgrounds, icon relationships, attributes, bonuses, etc.).  They are personal details that have been warped and scrambled by the prismatic ogre mage’s magic."
+						, "effect": "The prismatic ogre mage warps reality with its presence.  Each character hit by the <em>prismatic blast</em> attack during battle must write down one true personal trait or preference about their character such as: “Yellow hair”, “Afraid of spiders”, “Prefers white wine to red”, or “Tattoo of a halfling on left bicep”.  These personal traits are shuffled, and randomly distributed equally by the GM after the battle is over.  Whichever trait each player receives is now true for their character as well as for the character fo the player who wrote it down (unless there has somehow turned out to be a swap…).  These traits don’t alter game mechanics (feats, powers, backgrounds, icon relationships, attributes, bonuses, etc.).  They are personal details that have been warped and scrambled by the prismatic ogre mage’s magic."
 					}
 				]
 				, "nastierSpecials": []
