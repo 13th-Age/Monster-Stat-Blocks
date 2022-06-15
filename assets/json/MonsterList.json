@@ -6885,7 +6885,7 @@
 				]
 				, "nastierSpecials": [{
 					"name": "Iconic comparisons"
-					, "effect": "The dragon is enamoured/envious of the icons with the greatest hoards: the Dwarf King, Elf Queen, Emperor, Prince of Shadows, and the Three.  For each PC who has at least one positive or conflicted relationship point with one or more of these icons, the greathoard elder gains an extra use of <em>treasury master</em> this battle."
+					, "effect": "The dragon is enamoured/envious of the icons with the greatest hoards: the Underground Icon, Graceful Icon, Leader Icon, Trickster Icon, and the Draconic Icon.  For each PC who has at least one positive or conflicted relationship point with one or more of these icons, the greathoard elder gains an extra use of <em>treasury master</em> this battle."
 				}]
 			}
 			, {
@@ -18969,27 +18969,27 @@
 					}
 					, {
 						"name": "Disease Type (d4)"
-						, "effect": "<ul><li><em>1.</em> Filthy Fever (d6 roll for symptoms that day)</li><li><em>2.</em> Chatter Pox (d6 roll for symptoms that day)</li><li><em>3.</em> Slug Scourge (d6 roll for symptoms that day)</li><li><em>4.</em> Red Fever (d6 roll for symptoms that day)</li></ul>"
-					}
-					, {
-						"name": "Filthy Fever Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Slight temperature</li><li><em>2–3.</em> The runs.  You gain 1 less recovery than normal after a full heal-up due to fluid loss</li><li><em>4+.</em> You have a hacking cough that sounds like insane laughter and are losing fluids.  You gain 2 fewer recoveries than normal after a full heal-up and can’t remain silent</li></ul>"
-					}
-					, {
-						"name": "Chatter Pox Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Unsightly and painful sores, occasional shivers</li><li><em>2–3.</em> Running sores, shivering and chattering teeth.  You take a –3 penalty to social skill checks and to attack rolls with spells</li><li><em>4.</em> Infected sores, fever dreams.  Your constitution is weakened.  After each full heal-up, roll 1d4 + 3 to determine your starting maximum recoveries for that day.  Each time you cast a spell that isn’t a at-will, there’s a 25% chance it fails (but you don’t expend the spell)</li></ul>"
-					}
-					, {
-						"name": "Slug Scourge Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Extreme appetite, nausea</li><li><em>2–3.</em> Vomiting up slugs.  Whenever you make a non-combat Charisma check, roll 2d20 and take the lower result</li><li><em>4+.</em> The slugs are inside your lungs!  After each quick rest, you lost 25% of your maximum hit points.  If you drop this way, you enter into a coma until the next day</li></ul>"
-					}
-					, {
-						"name": "Red Fever Symptoms (d6)"
-						, "effect": "<ul><li><em>1.</em> Scarlet stripes on the eyeballs, itching, buzzing in ears</li><li><em>2–3.</em> Blurred vision.  You take a –3 penalty to ranged attacks</li><li><em>4+.</em> Fever, rage, and confusion.  Whenever you roll a natural odd attack roll, you are confused until the end of your next turn.  Ranged attacks have a 25% chance of accidently targeting an ally (check before making the attack roll)</li></ul>"
+						, "effect": "<ul><li><em>1.</em> Filthy Fever</li><li><em>2.</em> Chatter Pox</li><li><em>3.</em> Slug Scourge</li><li><em>4.</em> Red Fever</li></ul>"
 					}
 					, {
 						"name": "Disease Severity"
 						, "effect": "Con check each day; result affects d6 symptoms roll.<ul><li><em>1–14.</em> d6 + 3</li><li><em>15–19.</em> d6 + 2</li><li><em>20–24.</em> d6 + 1</li><li><em>25–29.</em> d6 + 0</li><li><em>30+.</em> Cured</li></ul>"
+					}
+					, {
+						"name": "Filthy Fever Symptoms (d6 roll for symptoms that day)"
+						, "effect": "<ul><li><em>1.</em> Slight temperature</li><li><em>2–3.</em> The runs.  You gain 1 less recovery than normal after a full heal-up due to fluid loss</li><li><em>4+.</em> You have a hacking cough that sounds like insane laughter and are losing fluids.  You gain 2 fewer recoveries than normal after a full heal-up and can’t remain silent</li></ul>"
+					}
+					, {
+						"name": "Chatter Pox Symptoms (d6 roll for symptoms that day)"
+						, "effect": "<ul><li><em>1.</em> Unsightly and painful sores, occasional shivers</li><li><em>2–3.</em> Running sores, shivering and chattering teeth.  You take a –3 penalty to social skill checks and to attack rolls with spells</li><li><em>4.</em> Infected sores, fever dreams.  Your constitution is weakened.  After each full heal-up, roll 1d4 + 3 to determine your starting maximum recoveries for that day.  Each time you cast a spell that isn’t a at-will, there’s a 25% chance it fails (but you don’t expend the spell)</li></ul>"
+					}
+					, {
+						"name": "Slug Scourge Symptoms (d6 roll for symptoms that day)"
+						, "effect": "<ul><li><em>1.</em> Extreme appetite, nausea</li><li><em>2–3.</em> Vomiting up slugs.  Whenever you make a non-combat Charisma check, roll 2d20 and take the lower result</li><li><em>4+.</em> The slugs are inside your lungs!  After each quick rest, you lost 25% of your maximum hit points.  If you drop to 0 hp this way, you enter into a coma until the next day</li></ul>"
+					}
+					, {
+						"name": "Red Fever Symptoms (d6 roll for symptoms that day)"
+						, "effect": "<ul><li><em>1.</em> Scarlet stripes on the eyeballs, itching, buzzing in ears</li><li><em>2–3.</em> Blurred vision.  You take a –3 penalty to ranged attacks</li><li><em>4+.</em> Fever, rage, and confusion.  Whenever you roll a natural odd attack roll, you are confused until the end of your next turn.  Ranged attacks have a 25% chance of accidently targeting a random ally (check before making the attack roll)</li></ul>"
 					}
 				]
 				, "nastierSpecials": []
@@ -19079,7 +19079,7 @@
 						, "modifier": 7
 						, "defence": "MD"
 						, "target": ""
-						, "damage": "8 damage, and as a free action, one nearby orc ally can mvoe or make a basic attack (doesn’t trigger special abilities)"
+						, "damage": "8 damage, and as a free action, one nearby orc ally can move or make a basic attack (doesn’t trigger special abilities)"
 						, "extraEffects": []
 					}
 					, {
@@ -19786,7 +19786,7 @@
 				, "abilities": []
 				, "nastierSpecials": [{
 					"name": "Flight"
-					, "effect": "The podling that can fly, hovering out of reach and firing arrows."
+					, "effect": "The podling that can fly, hovering out of reach and firing arrows, can be a real pain in the pate."
 				}]
 			}
 		]
@@ -19865,7 +19865,7 @@
 				]
 				, "abilities": [{
 						"name": "Swallow whole"
-						, "effect": "While a creature is swallwed whole, it takes 10d12 acid damage at the start of its turn and is stuck, hampered, and unable to attack or affect anything outside the worm’s stomach (and vice versa).  Most teleport abilites don’t work because you’re hampered <em>and</em> you can’t see the location out of the worm you want to teleport to.  There are two ways out.<br>&emsp;<strong>Cut your way out</strong>: Deal 80 damage to the worm with a single attack and you can cut your way out.  All edged or bladed weapons are reduced to d6 damage dice (at most) instead the worm’s gullet, so good luck.  At least you’ll be damaging the worm attacking it from within.<br>&emsp;<strong>Get upchucked</strong>: While the worm is staggered, you can use a standard action to try and crawl out of its mouth.  Roll a hard save (16+); on a success, the worm vomits you out and spits you somewhere nearby.  The worm also vomits out all creatures it has swallowed when it drops to 0 hp."
+						, "effect": "While a creature is swallwed whole, it takes 10d12 acid damage at the start of its turn and is stuck, hampered, and unable to attack or affect anything outside the worm’s stomach (and vice versa).  Most teleport abilities don’t work because you’re hampered <em>and</em> you can’t see the location out of the worm you want to teleport to.  There are two ways out.<br>&emsp;<strong>Cut your way out</strong>: Deal 80 damage to the worm with a single attack and you can cut your way out.  All edged or bladed weapons are reduced to d6 damage dice (at most) inside the worm’s gullet, so good luck.  At least you’ll be damaging the worm attacking it from within.<br>&emsp;<strong>Get upchucked</strong>: While the worm is staggered, you can use a standard action to try and crawl out of its mouth.  Roll a hard save (16+); on a success, the worm vomits you out and spits you somewhere nearby.  The worm also vomits out all creatures it has swallowed when it drops to 0 hp."
 					}
 					, {
 						"name": "Burrow"
@@ -19874,53 +19874,8 @@
 				]
 				, "nastierSpecials": [{
 					"name": "Resist most energy damage 16+"
-					, "effect": "Purple worms generate weird energy resistances thanks to underworld radiation and their odd diets.  Roll a d8 twice, in secret, to determine what energy types the worm is not resistant to.  The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm.<br>&emsp;<strong>1</strong>: acid; <strong>2</strong>: cold; <strong>3</strong>: fire; <strong>4</strong>: lightning; <strong>5</strong>: thunder; <strong>6</strong>: holy; <strong>7</strong>: negative energy; <strong>8</strong>: poison."
+					, "effect": "Purple worms generate weird energy resistances thanks to underworld radiation and their odd diets.  Roll a d8 twice, in secret, to determine what energy types the worm is not resistant to.  The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm.<br>&emsp;<strong>1:</strong> acid; <strong>2:</strong> cold; <strong>3:</strong> fire; <strong>4:</strong> lightning; <strong>5:</strong> thunder; <strong>6:</strong> holy; <strong>7:</strong> negative energy; <strong>8:</strong> poison."
 				}]
-			}
-			, {
-				"name": "Purple Larvae"
-				, "source": "Bestiary"
-				, "page": 165
-				, "sizeStrength": "normal"
-				, "threat": "normal"
-				, "level": 8
-				, "role": "mook"
-				, "type": "beast"
-				, "initiative": 9
-				, "vulnerability": ""
-				, "AC": 22
-				, "PD": 20
-				, "MD": 16
-				, "HP": 44
-				, "attacks": [{
-						"name": "Bitey maw"
-						, "specialTrigger": false
-						, "type": "normal"
-						, "modifier": 13
-						, "defence": "AC"
-						, "target": ""
-						, "damage": "20 damage"
-						, "extraEffects": [{
-							"trigger": "Natural even hit or miss"
-							, "effect": "The larvae can make <em>tail stinger</em> attack against a random enemy engaged with it as a free action."
-						}]
-					}
-					, {
-						"name": "Tail sting"
-						, "specialTrigger": true
-						, "type": "normal"
-						, "modifier": 13
-						, "defence": "AC"
-						, "target": ""
-						, "damage": "5 damage, and 10 ongoing poison damage"
-						, "extraEffects": []
-					}
-				]
-				, "abilities": [{
-					"name": "Merge with worm"
-					, "effect": "Purple larvae can dig quickly in and out of the skin of the purple worm as if they were burrowing but without needing die rolls to succeed."
-				}]
-				, "nastierSpecials": []
 			}
 			, {
 				"name": "Parasitic Lightning Beetle"
@@ -19973,6 +19928,51 @@
 						, "effect": "Whenever one or more parasitic lightning beetles drop to 0 hp, roll a d6.  If you roll less than or equal to the number of beetles that were destroyed by that attack, all beetles in the battle stop fighting, using all their actions during their next turn to disengage and fly away."
 					}
 				]
+				, "nastierSpecials": []
+			}
+			, {
+				"name": "Purple Larvae"
+				, "source": "Bestiary"
+				, "page": 165
+				, "sizeStrength": "normal"
+				, "threat": "normal"
+				, "level": 8
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 9
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 20
+				, "MD": 16
+				, "HP": 44
+				, "attacks": [{
+						"name": "Bitey maw"
+						, "specialTrigger": false
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "20 damage"
+						, "extraEffects": [{
+							"trigger": "Natural even hit or miss"
+							, "effect": "The larvae can make <em>tail sting</em> attack against a random enemy engaged with it as a free action."
+						}]
+					}
+					, {
+						"name": "Tail sting"
+						, "specialTrigger": true
+						, "type": "normal"
+						, "modifier": 13
+						, "defence": "AC"
+						, "target": ""
+						, "damage": "5 damage, and 10 ongoing poison damage"
+						, "extraEffects": []
+					}
+				]
+				, "abilities": [{
+					"name": "Merge with worm"
+					, "effect": "Purple larvae can dig quickly in and out of the skin of the purple worm as if they were burrowing but without needing die rolls to succeed."
+				}]
 				, "nastierSpecials": []
 			}
 			, {
@@ -20056,7 +20056,7 @@
 					}
 					, {
 						"name": "Resist most energy damage 16+"
-						, "effect": "Purple worms generate weird energy resistance thanks to underworld radiation and their odd diets.  Roll a d8 twice, in secret, to determine what energy types the worm is not resistant to.  The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm.<br>&emsp;<strong>1</strong>: acid; <strong>2</strong>: cold; <strong>3</strong>: fire; <strong>4</strong>: lightning; <strong>5</strong>: thunder; <strong>6</strong>: holy; <strong>7</strong>: negative energy; <strong>8</strong>: poison."
+						, "effect": "Purple worms generate weird energy resistance thanks to underworld radiation and their odd diets.  Roll a d8 twice, in secret, to determine what energy types the worm is not resistant to.  The PCs probably have to find out what energy works best against the worm the hard way, though you might have mercy and allow a DC 35 Wisdom skill check to figure out what energy types work against the worm.<br>&emsp;<strong>1:</strong> acid; <strong>2:</strong> cold; <strong>3:</strong> fire; <strong>4:</strong> lightning; <strong>5:</strong> thunder; <strong>6:</strong> holy; <strong>7:</strong> negative energy; <strong>8:</strong> poison."
 					}
 				]
 			}
