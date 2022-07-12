@@ -20798,6 +20798,49 @@
 		"name": "Sahuagin"
 		, "groupTraits": []
 		, "monsters": [{
+				"name": "Iron Sea Shark"
+				, "source": "Bestiary"
+				, "page": 188
+				, "sizeStrength": "double-strength"
+				, "threat": "normal"
+				, "level": 5
+				, "role": "mook"
+				, "type": "beast"
+				, "initiative": 6
+				, "vulnerability": ""
+				, "AC": 22
+				, "PD": 19
+				, "MD": 14
+				, "HP": 32
+				, "attacks": [{
+					"name": "Massive iron jaws"
+					, "specialTrigger": false
+					, "type": "normal"
+					, "modifier": 10
+					, "defence": "AC"
+					, "target": ""
+					, "damage": "14 damage"
+					, "extraEffects": [{
+						"trigger": "Miss"
+						, "effect": "2d6 damage."
+					}]
+				}]
+				, "abilities": [{
+						"name": "Frenzy"
+						, "effect": "While staggered, if the iron sea shark is unengaged at the start of its turn, it must roll an easy save (6+).  On a failure, the shark must move and attack a random nearby enemy that’s staggered, or a random nearby creature if there are no staggered enemies."
+					}
+					, {
+						"name": "Shredder"
+						, "effect": "When an enemy misses with a melee attack against an iron sea shark and rolls a natural 1–5, the attacker takes 2d6 damage."
+					}
+					, {
+						"name": "Water breather"
+						, "effect": "Sharks breathe underwater and swim very well.  They’re not so good out of sea water (even if they jump), so treat them as semi-hazardous terrain while they’re busy thrashing to death outside the water."
+					}
+				]
+				, "nastierSpecials": []
+			}
+			, {
 				"name": "Razor Shark"
 				, "source": "Bestiary"
 				, "page": 187
@@ -20956,7 +20999,7 @@
 				, "nastierSpecials": []
 			}
 			, {
-				"name": "Sahaugin Mutant"
+				"name": "Sahuagin Mutant"
 				, "source": "13th Age"
 				, "page": 189
 				, "sizeStrength": "large"
@@ -21074,49 +21117,6 @@
 					, {
 						"name": "Water breather"
 						, "effect": "Sahuagin breathe underwater and swim very well."
-					}
-				]
-				, "nastierSpecials": []
-			}
-			, {
-				"name": "Iron Sea Shark"
-				, "source": "Bestiary"
-				, "page": 188
-				, "sizeStrength": "double-strength"
-				, "threat": "normal"
-				, "level": 5
-				, "role": "mook"
-				, "type": "beast"
-				, "initiative": 6
-				, "vulnerability": ""
-				, "AC": 22
-				, "PD": 19
-				, "MD": 14
-				, "HP": 32
-				, "attacks": [{
-					"name": "Massive iron jaws"
-					, "specialTrigger": false
-					, "type": "normal"
-					, "modifier": 10
-					, "defence": "AC"
-					, "target": ""
-					, "damage": "14 damage"
-					, "extraEffects": [{
-						"trigger": "Miss"
-						, "effect": "2d6 damage."
-					}]
-				}]
-				, "abilities": [{
-						"name": "Frenzy"
-						, "effect": "While staggered, if the iron sea shark is unengaged at the start of its turn, it must roll an easy save (6+).  On a failure, the shark must move and attack a random nearby enemy that’s staggered, or a random nearby if there are no staggered enemies."
-					}
-					, {
-						"name": "Shredder"
-						, "effect": "When an enemy misses with a melee attack against an iron sea shark and rolls a natural 1–5, the attacker takes 2d6 damage."
-					}
-					, {
-						"name": "Water breather"
-						, "effect": "Sharks breathe underwater and swim very well.  They’re not so good out of sea water (even if they jump), so treat them as semi-hazardous terrain while they’re busy thrashing to death outside the water."
 					}
 				]
 				, "nastierSpecials": []
@@ -21253,7 +21253,7 @@
 					}]
 				}]
 				, "abilities": [{
-						"name": "Auguished interceptor"
+						"name": "Anguished interceptor"
 						, "effect": "When an enduring shield is engaged and an enemy attempts to move past it, the enduring shield can roll a disengage check to intercept it as an interrupt action (once per round).  If the attempt fails, the enduring shield takes 1d6 psychic damage."
 					}
 					, {
@@ -21841,7 +21841,7 @@
 						, "modifier": 7
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "2 damage, and the stirge make a <em>draining probe</em> attack against the target during its next turn if it’s still engaged with the target"
+						, "damage": "2 damage, and the stirge can make a <em>draining probe</em> attack against the target during its next turn if it’s still engaged with the target"
 						, "extraEffects": []
 					}
 					, {
@@ -21970,7 +21970,7 @@
 					, "damage": "155 damage"
 					, "extraEffects": [{
 							"trigger": "Natural 16+"
-							, "effect": "The target is vulnerable (save ends)."
+							, "effect": "The target is stunned (save ends)."
 						}
 						, {
 							"trigger": "Miss"
@@ -22596,9 +22596,9 @@
 		"name": "Warbanner"
 		, "groupTraits": []
 		, "monsters": [{
-				"name": "Crusader Warbanner"
+				"name": "Brute’s Warbanner"
 				, "source": "Bestiary"
-				, "page": 208
+				, "page": 209
 				, "sizeStrength": "double-strength"
 				, "threat": "normal"
 				, "level": 3
@@ -22606,21 +22606,21 @@
 				, "type": "construct"
 				, "initiative": 8
 				, "vulnerability": ""
-				, "AC": 19
-				, "PD": 15
-				, "MD": 15
-				, "HP": 86
+				, "AC": 18
+				, "PD": 16
+				, "MD": 13
+				, "HP": 100
 				, "attacks": [{
-						"name": "Whipping hook"
+						"name": "Flagspear"
 						, "specialTrigger": false
 						, "type": "normal"
-						, "modifier": 8
+						, "modifier": 9
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "10 damage, and 10 ongoing damage"
+						, "damage": "18 damage"
 						, "extraEffects": [{
 							"trigger": "Miss"
-							, "effect": "5 damage."
+							, "effect": "8 damage."
 						}]
 					}
 					, {
@@ -22637,11 +22637,11 @@
 							}
 							, {
 								"trigger": "6–10"
-								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d8 psychic damage."
+								, "effect": "Add a 3<sup>rd</sup> level orc mook to the warbanner’s band."
 							}
 							, {
 								"trigger": "11–15"
-								, "effect": "Until the end of the battle, each ally in the warbanner’s band gains a +2 cumulative bonus to damage on hits with melee attacks."
+								, "effect": "The warbanner can make a <em>flagspear</em> attack as a free action."
 							}
 							, {
 								"trigger": "16–20"
@@ -22677,7 +22677,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can still target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
 					}
 					, {
 						"name": "Mook morale"
@@ -22768,7 +22768,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can still target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
 					}
 					, {
 						"name": "Mook morale"
@@ -22859,7 +22859,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can still target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
 					}
 					, {
 						"name": "Mook morale"
@@ -22900,9 +22900,9 @@
 				, "nastierSpecials": []
 			}
 			, {
-				"name": "Orc Lord Warbanner"
+				"name": "Zealot’s Warbanner"
 				, "source": "Bestiary"
-				, "page": 209
+				, "page": 208
 				, "sizeStrength": "double-strength"
 				, "threat": "normal"
 				, "level": 3
@@ -22910,21 +22910,21 @@
 				, "type": "construct"
 				, "initiative": 8
 				, "vulnerability": ""
-				, "AC": 18
-				, "PD": 16
-				, "MD": 13
-				, "HP": 100
+				, "AC": 19
+				, "PD": 15
+				, "MD": 15
+				, "HP": 86
 				, "attacks": [{
-						"name": "Flagspear"
+						"name": "Whipping hook"
 						, "specialTrigger": false
 						, "type": "normal"
-						, "modifier": 9
+						, "modifier": 8
 						, "defence": "AC"
 						, "target": ""
-						, "damage": "18 damage"
+						, "damage": "10 damage, and 10 ongoing damage"
 						, "extraEffects": [{
 							"trigger": "Miss"
-							, "effect": "8 damage."
+							, "effect": "5 damage."
 						}]
 					}
 					, {
@@ -22934,18 +22934,18 @@
 						, "modifier": 0
 						, "defence": ""
 						, "target": ""
-						, "damage": "Roll 2d20 and use each roll (or lower result of your choice) to determine one effect"
+						, "damage": "Roll 2d20 and use each roll (or a lower result of your choice) to determine one effect"
 						, "extraEffects": [{
 								"trigger": "1–5"
 								, "effect": "The warbanner’s bearer can make a basic attack with a +2 attack bonus as a free action."
 							}
 							, {
 								"trigger": "6–10"
-								, "effect": "Add a 3<sup>rd</sup> level orc mook to the warbanner’s band."
+								, "effect": "Each different enemy engaged with a creature in the warbanner’s band takes 1d8 psychic damage."
 							}
 							, {
 								"trigger": "11–15"
-								, "effect": "The warbanner can make a <em>flagspear</em> attack as a free action."
+								, "effect": "Until the end of the battle, each ally in the warbanner’s band gains a +2 cumulative bonus to damage on hits with melee attacks."
 							}
 							, {
 								"trigger": "16–20"
@@ -22981,7 +22981,7 @@
 					}
 					, {
 						"name": "Flight"
-						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can stillt target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
+						, "effect": "Warbanners fly quickly, fluttering in winds only they can feel, preferably never touching the ground.  They can’t fly off the ground higher than a flag on a pole can be carried into battle, so enemies on the ground can still target them.  At best, a warbanner might gain a +2 bonus to defences against attacks made by small PCs like halflings and gnomes."
 					}
 					, {
 						"name": "Mook morale"
@@ -23141,7 +23141,7 @@
 						, "damage": "36 psychic damage, and the target is affected by <em>wendigo’s hunger</em> (save ends)"
 						, "extraEffects": [{
 								"trigger": "Wendigo’s hunger"
-								, "effect": "Until the target saves, roll a d6 at the start of each of its turns.  It takes the corresponding action for its full turn instead of its normal turn:"
+								, "effect": "Until the target saves, roll 1d6 at the start of each of its turns.  It takes the corresponding action for its full turn instead of its normal turn:"
 							}
 							, {
 								"trigger": "1–2"
