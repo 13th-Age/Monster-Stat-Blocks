@@ -7101,7 +7101,7 @@
 				]
 				, "abilities": [{
 						"name": "Lunar resonance"
-						, "effect": "A moon dragon gains a +1 bonus to attacks when the full moon is within seven days or when within its lair.  A moon dragon takes a –1 penalty to all defences and gains <em>vulnerability: fire</em> when the new moon is within seven days."
+						, "effect": "A moon dragon gains a +1 bonus to attacks when the full moon is within seven days.  A moon dragon takes a –1 penalty to all defences and gains <em>vulnerability: fire</em> when the new moon is within seven days."
 					}
 					, {
 						"name": "Resist cold 18+"
@@ -24128,7 +24128,7 @@
 		"name": "Zorigami"
 		, "groupTraits": []
 		, "monsters": [{
-				"name": "Alex Zorigami"
+				"name": "Apex Zorigami"
 				, "source": "Bestiary"
 				, "page": 225
 				, "sizeStrength": "normal"
